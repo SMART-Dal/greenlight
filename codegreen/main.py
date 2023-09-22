@@ -3,10 +3,10 @@ from rich import print
 from rich.markdown import Markdown
 
 
-app = typer.Typer(rich_markup_mode="markdown" ,help = Markdown("[green]🍃 Awesome CLI user manager. 🍃[/green]"))
+app = typer.Typer(rich_markup_mode="markdown")
 
 
-@app.callback()
+@app.callback(help = Markdown("[green]🍃 Awesome CLI user manager. 🍃[/green]"))
 def callback():
     """
     Awesome Portal Gun
