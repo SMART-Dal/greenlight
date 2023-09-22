@@ -1,21 +1,27 @@
-#!/usr/bin/env python3
-
 import typer
-from rich import print
-
-data = {
-    "name": "Rick",
-    "age": 42,
-    "items": [{"name": "Portal Gun"}, {"name": "Plumbus"}],
-    "active": True,
-    "affiliation": None,
-}
 
 
-def main():
-    print("Here's the data")
-    print(data)
+app = typer.Typer()
 
 
-if __name__ == "__main__":
-    typer.run(main)
+@app.callback()
+def callback():
+    """
+    Awesome Portal Gun
+    """
+
+
+@app.command()
+def shoot():
+    """
+    Shoot the portal gun
+    """
+    typer.echo("Shooting portal gun")
+
+
+@app.command()
+def load():
+    """
+    Load the portal gun
+    """
+    typer.echo("Loading portal gun")
