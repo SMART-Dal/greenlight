@@ -14,4 +14,4 @@ dependencies = [
 ]
 
 [project.scripts]
-codegreen = "codegreen.main:main"
+codegreen = "codegreen.main"
