@@ -8,3 +8,6 @@ authors = [{name = "Saurabhsingh Rajput", email = "saurabh@dal.ca"}]
 license = {file = "LICENSE"}
 classifiers = ["License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)"]
 dynamic = ["version", "description"]
+
+[project.scripts]
+codegreen = "codegreen.main:main"
