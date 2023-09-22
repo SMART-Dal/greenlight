@@ -1,7 +1,9 @@
 import typer
+from rich import print
+from rich.markdown import Markdown
 
 
-app = typer.Typer()
+app = typer.Typer(help = Markdown("[green]🍃 Awesome CLI user manager. 🍃[/green]"))
 
 
 @app.callback()
@@ -16,7 +18,7 @@ def shoot():
     """
     Shoot the portal gun
     """
-    typer.echo("Shooting portal gun")
+    print("Shooting portal gun")
 
 
 @app.command()
@@ -24,4 +26,4 @@ def load():
     """
     Load the portal gun
     """
-    typer.echo("Loading portal gun")
+    print("Loading portal gun")
