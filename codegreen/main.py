@@ -1,6 +1,7 @@
 import typer
 from rich import print
 from rich.markdown import Markdown
+from codegreen.fecom.measurement import start_measurement
 
 
 app = typer.Typer(rich_markup_mode="rich",help="[green]🍃 CodeGreen: Your Passport to a Greener Code! 🍃[/green]")
@@ -20,11 +21,12 @@ def setup():
     print("Shooting portal gun")
 
 @app.command()
-def start_measurement():
+def start_energy_profiler():
     """
     This command will start the energy measurement server
     """
-    print("Shooting portal gun")
+    print("Starting measurement...")
+    start_measurement.main()
 
 
 # @app.command()

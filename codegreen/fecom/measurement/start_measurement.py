@@ -14,11 +14,11 @@ import time
 import os
 import sys
 
-from idle_stats import calc_ratios_from_data
-from measurement_config import MEASUREMENT_INTERVAL_MS, CPU_FILE_SEPARATOR, WAIT_UNTIL_PRINTING_STATS_S
-from measurement_config import ENERGY_DATA_DIR, NVIDIA_SMI_FILE, PERF_FILE, START_TIMES_FILE, EXECUTION_LOG_FILE, CPU_TEMPERATURE_MODULE
-from measurement_config import CHECK_LAST_N_POINTS, CPU_STD_TO_MEAN, RAM_STD_TO_MEAN, GPU_STD_TO_MEAN, STABLE_CHECK_TOLERANCE
-from utilities import custom_print
+from codegreen.fecom.measurement.idle_stats import calc_ratios_from_data
+from codegreen.fecom.measurement.measurement_config import MEASUREMENT_INTERVAL_MS, CPU_FILE_SEPARATOR, WAIT_UNTIL_PRINTING_STATS_S
+from codegreen.fecom.measurement.measurement_config import ENERGY_DATA_DIR, NVIDIA_SMI_FILE, PERF_FILE, START_TIMES_FILE, EXECUTION_LOG_FILE, CPU_TEMPERATURE_MODULE
+from codegreen.fecom.measurement.measurement_config import CHECK_LAST_N_POINTS, CPU_STD_TO_MEAN, RAM_STD_TO_MEAN, GPU_STD_TO_MEAN, STABLE_CHECK_TOLERANCE
+from codegreen.fecom.measurement.utilities import custom_print
 
 def print_main(message: str):
     custom_print("main", message)
@@ -134,7 +134,7 @@ def print_experiment_settings():
     Print the most important experiment settings such that the user
     can confirm they are correct when starting the measurement tools.
     """
-    from measurement_config import WAIT_PER_STABLE_CHECK_LOOP_S, MEASUREMENT_INTERVAL_S, CPU_MAXIMUM_TEMPERATURE, GPU_MAXIMUM_TEMPERATURE, CPU_TEMPERATURE_INTERVAL_S
+    from codegreen.fecom.measurement.measurement_config import WAIT_PER_STABLE_CHECK_LOOP_S, MEASUREMENT_INTERVAL_S, CPU_MAXIMUM_TEMPERATURE, GPU_MAXIMUM_TEMPERATURE, CPU_TEMPERATURE_INTERVAL_S
     print_main(f"""
     ### Experiment Settings ###
     "wait_per_stable_check_loop_s": {WAIT_PER_STABLE_CHECK_LOOP_S},
@@ -159,8 +159,7 @@ def print_stdev_mean_ratios(wait_until_printing_stats: int):
     """
     )
 
-
-if __name__ == "__main__":
+def main():
     print_experiment_settings()
     atexit.register(print_main, "Successfully terminated the measurement application")
 
@@ -206,4 +205,8 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         print_main("\n\nKeyboardInterrupt by User. Shutting down the measurement application.\n")
 
+
+
+if __name__ == "__main__":
+    main()
     

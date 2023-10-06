@@ -2,8 +2,8 @@ from pathlib import Path
 
 import pandas as pd
 
-from measurement_parse import parse_nvidia_smi, parse_perf
-from measurement_config import CHECK_LAST_N_POINTS
+from codegreen.fecom.measurement.measurement_parse import parse_nvidia_smi, parse_perf
+from codegreen.fecom.measurement.measurement_config import CHECK_LAST_N_POINTS
 
 def split_df_into_n(df: pd.DataFrame, n: int) -> list:
     """
