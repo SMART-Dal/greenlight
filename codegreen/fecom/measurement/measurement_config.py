@@ -1,5 +1,5 @@
 from pathlib import Path
-from ...fecom.patching.patching_config import PROJECT_PATH
+from codegreen.fecom.patching.patching_config import PROJECT_PATH
 
 # set this to False to surpress some print outs
 DEBUG = True
