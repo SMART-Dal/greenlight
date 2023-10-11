@@ -148,7 +148,7 @@ def print_experiment_settings():
     )
 
 def print_stdev_mean_ratios(wait_until_printing_stats: int):
-    cpu_std_mean, ram_std_mean, gpu_std_mean = calc_ratios_from_data(CHECK_LAST_N_POINTS, directory=Path("out"))
+    cpu_std_mean, ram_std_mean, gpu_std_mean = calc_ratios_from_data(CHECK_LAST_N_POINTS, directory=ENERGY_DATA_DIR)
     print_main(
     f"""
     Stats after {wait_until_printing_stats} seconds:
