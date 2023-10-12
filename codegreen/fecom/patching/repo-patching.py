@@ -75,35 +75,41 @@ def get_python_scripts_path(directory):
     return method_level_scripts_path , project_level_scripts_path
 
 
-# delete all the files in the output directory before running the script
-for filename in os.listdir(PATCHED_REPO_DIR):
-    file_path = os.path.join(PATCHED_REPO_DIR, filename)
-    try:
-        if os.path.isfile(file_path) or os.path.islink(file_path):
-            os.unlink(file_path)
-    except Exception as e:
-        print('Failed to delete %s ,for the Reason: %s' % (file_path, e))
+def patch_project(patched_repo_dir,original_repo_dir):
+    # delete all the files in the output directory before running the script
+    for filename in os.listdir(patched_repo_dir):
+        file_path = os.path.join(patched_repo_dir, filename)
+        try:
+            if os.path.isfile(file_path) or os.path.islink(file_path):
+                os.unlink(file_path)
+        except Exception as e:
+            print('Failed to delete %s ,for the Reason: %s' % (file_path, e))
 
-#Create a copy of repository in the output directory
-copy_directory_contents(SOURCE_REPO_DIR, PATCHED_REPO_DIR)
+    #Create a copy of repository in the output directory
+    copy_directory_contents(original_repo_dir, patched_repo_dir)
 
-# run the script for all the files in the input directory and save the patched files in the output directory
-method_level_python_scripts, project_level_python_scripts = get_python_scripts_path(PATCHED_REPO_DIR)
-for input_file_path in method_level_python_scripts:
+    # run the script for all the files in the input directory and save the patched files in the output directory
+    method_level_python_scripts, project_level_python_scripts = get_python_scripts_path(patched_repo_dir)
+    for input_file_path in method_level_python_scripts:
 
-    result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    with open(input_file_path, 'w') as f:
-        f.write(result.stdout.decode())
-        f.write(result.stderr.decode())
+        with open(input_file_path, 'w') as f:
+            f.write(result.stdout.decode())
+            f.write(result.stderr.decode())
 
-for input_file_path in project_level_python_scripts:
- 
-    result = subprocess.run(['python3', PROJECT_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    for input_file_path in project_level_python_scripts:
+    
+        result = subprocess.run(['python3', PROJECT_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-    with open(input_file_path, 'w') as f:
-        f.write(result.stdout.decode())
-        f.write(result.stderr.decode())
+        with open(input_file_path, 'w') as f:
+            f.write(result.stdout.decode())
+            f.write(result.stderr.decode())
 
 
-print("done....")
+    print("done....")
+
+
+
+if __name__ == "__main__":
+    patch_project(PATCHED_REPO_DIR,SOURCE_REPO_DIR)

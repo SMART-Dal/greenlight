@@ -8,19 +8,21 @@ from typing import List
 
 import subprocess
 from codegreen.fecom.patching.patching_config import METHOD_LEVEL_PATCHING_SCRIPT_PATH
+# from codegreen.fecom.patching.
 
 
 app = typer.Typer(rich_markup_mode="rich",help="[green]🍃 CodeGreen: Your Passport to a Greener Code! 🍃[/green]")
 
 @app.command()
 def start_energy_profiler(
-    files : Annotated[List[Path],typer.Option(help="List of paths to the source code to be measured.")]
+    project : Annotated[Path,typer.Option(help="Path to the source code of the project to be measured.")],
+    scripts : Annotated[List[Path],typer.Option(help="List of paths to the project scripts to be measured.")],
 ):
     """
     This command will start the energy measurement server
     """
     # Start patching all the files in the argument and store them in the same location as the original file with suffix "_patched"
-    result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, files], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, project], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     with open(files, 'w') as f:
         f.write(result.stdout.decode())
