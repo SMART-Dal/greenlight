@@ -10,9 +10,9 @@ import subprocess
 from abc import ABC, abstractmethod
 from pathlib import Path
 
-from fecom.measurement.execution import before_execution, after_execution
-from fecom.measurement.utilities import custom_print
-from fecom.experiment.experiment_kinds import ExperimentKinds
+from codegreen.fecom.measurement.execution import before_execution, after_execution
+from codegreen.fecom.measurement.utilities import custom_print
+from codegreen.fecom.experiment.experiment_kinds import ExperimentKinds
 
 
 def print_exp(message: str):

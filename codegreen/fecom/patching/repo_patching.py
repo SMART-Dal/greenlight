@@ -9,7 +9,10 @@ import importlib
 import re
 from pathlib import Path
 
-from patching_config import PATCHED_REPO_DIR, SOURCE_REPO_DIR, METHOD_LEVEL_PATCHING_SCRIPT_PATH, PROJECT_LEVEL_PATCHING_SCRIPT_PATH
+from codegreen.fecom.patching.patching_config import PATCHED_REPO_DIR, SOURCE_REPO_DIR, METHOD_LEVEL_PATCHING_SCRIPT_PATH, PROJECT_LEVEL_PATCHING_SCRIPT_PATH
+from codegreen.fecom.patching.method_level_script_patcher import method_level_patcher
+from codegreen.fecom.patching.project_level_script_patcher import project_level_patcher
+
 
 
 def copy_directory_contents(src, dst):
@@ -47,13 +50,16 @@ def ipynb_to_py(ipynb_file):
 
 def get_python_scripts_path(directory):
     python_scripts_path = []
+    og_scripts_path = []
     for root, sub_dirs, files in os.walk(directory):
         for file in files:
             if file.endswith('.py'):
+                og_scripts_path.append(os.path.join(root, file))
                 python_scripts_path.append(os.path.join(root, file))
             elif file.endswith('.ipynb'):
                 py_file = ipynb_to_py(os.path.join(root, file))
                 if py_file is not None:
+                    og_scripts_path.append(os.path.join(root, file))
                     python_scripts_path.append(py_file)
             else:
                 continue
@@ -72,10 +78,12 @@ def get_python_scripts_path(directory):
         method_level_scripts_path.append(method_level_patched_path)
         project_level_scripts_path.append(project_level_patched_path)
         
-    return method_level_scripts_path , project_level_scripts_path
+    return method_level_scripts_path , project_level_scripts_path, og_scripts_path
 
+def patch_project(patched_repo_dir,original_repo_dir,metadata):
+    # Create the output directory if it doesn't exist
+    os.makedirs(patched_repo_dir, exist_ok=True)
 
-def patch_project(patched_repo_dir,original_repo_dir):
     # delete all the files in the output directory before running the script
     for filename in os.listdir(patched_repo_dir):
         file_path = os.path.join(patched_repo_dir, filename)
@@ -89,25 +97,30 @@ def patch_project(patched_repo_dir,original_repo_dir):
     copy_directory_contents(original_repo_dir, patched_repo_dir)
 
     # run the script for all the files in the input directory and save the patched files in the output directory
-    method_level_python_scripts, project_level_python_scripts = get_python_scripts_path(patched_repo_dir)
-    for input_file_path in method_level_python_scripts:
+    method_level_python_scripts, project_level_python_scripts, og_python_scripts = get_python_scripts_path(patched_repo_dir)
+    for idx, input_file_path in enumerate(method_level_python_scripts):
+        metadata["script_path"] = og_python_scripts[idx]
+        method_level_patcher(input_file_path,metadata)
 
-        result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        # result = subprocess.run(['python3', METHOD_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        with open(input_file_path, 'w') as f:
-            f.write(result.stdout.decode())
-            f.write(result.stderr.decode())
+        # with open(input_file_path, 'w') as f:
+        #     f.write(result.stdout.decode())
+        #     f.write(result.stderr.decode())
 
     for input_file_path in project_level_python_scripts:
+        metadata["script_path"] = og_python_scripts[idx]
+        project_level_patcher(input_file_path,metadata)
     
-        result = subprocess.run(['python3', PROJECT_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+        # result = subprocess.run(['python3', PROJECT_LEVEL_PATCHING_SCRIPT_PATH, input_file_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
-        with open(input_file_path, 'w') as f:
-            f.write(result.stdout.decode())
-            f.write(result.stderr.decode())
+        # with open(input_file_path, 'w') as f:
+        #     f.write(result.stdout.decode())
+        #     f.write(result.stderr.decode())
 
 
     print("done....")
+    return method_level_python_scripts, project_level_python_scripts, og_python_scripts
 
 
 

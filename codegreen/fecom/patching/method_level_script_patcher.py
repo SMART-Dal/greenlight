@@ -5,10 +5,12 @@ import copy
 import json
 import argparse
 from typing import Any
+import os
+from codegreen.fecom.patching.patching_config import PROJECT_PATH
 
-parser = argparse.ArgumentParser()
-parser.add_argument("input_files", type=argparse.FileType("r"))
-args = parser.parse_args()
+# parser = argparse.ArgumentParser()
+# parser.add_argument("input_files", type=argparse.FileType("r"))
+# args = parser.parse_args()
 
 requiredLibraries = ["tensorflow"]
 requiredAlias = []
@@ -20,11 +22,12 @@ importScriptList = ""
 sourceCode = ""
 
 
-def main():
+def method_level_patcher(script_path_to_be_patched,metadata):
     # Step1: Create an AST from the client python code
     global sourceCode
-    global args
-    sourceCode = args.input_files.read()
+    # global args
+    with open(script_path_to_be_patched, 'r') as file:
+        sourceCode = file.read()
     tree = ast.parse(sourceCode)
     # print('+'*100)
     # print(ast.dump(tree, indent=4))
@@ -80,9 +83,10 @@ def main():
     # print(ast.dump(before_execution_call_node))
 
     # Step5: Tranform the client script by adding custom method calls
-    transf = TransformCall()
+    transf = TransformCall(metadata)
     transf.visit(tree)
-    with open("method_level_patch_imports.py", "r") as source:
+
+    with open(PROJECT_PATH / 'fecom/patching/method_level_patch_imports.py', "r") as source:
         cm = source.read()
         cm_node = ast.parse(cm)
 
@@ -109,7 +113,12 @@ def main():
     # print('_'*100)
 
     # Step6: Unparse and convert AST to final code
-    print(ast.unparse(tree))
+    # print(ast.unparse(tree))
+    patched_code = ast.unparse(tree)
+
+    # Write the patched code back to the file
+    with open(script_path_to_be_patched, 'w') as file:
+        file.write(patched_code)
 
 
 class FuncCallVisitor(ast.NodeVisitor):
@@ -137,7 +146,7 @@ class FuncCallVisitor(ast.NodeVisitor):
 
 
 class TransformCall(ast.NodeTransformer):
-    def __init__(self):
+    def __init__(self, metadata):
         global requiredAlias
         global sourceCode
         global requiredObjects
@@ -148,6 +157,7 @@ class TransformCall(ast.NodeTransformer):
         global before_execution_call_node
         global importMap
         self.objectname = None
+        self.metadata = metadata
 
     def get_target_id(self, target):
         if isinstance(target, ast.Name):
@@ -263,6 +273,9 @@ class TransformCall(ast.NodeTransformer):
         callvisitor = FuncCallVisitor()
         callvisitor.visit(node.func)
         callvisitor_list = callvisitor.get_name_list()
+
+        self.metadata["api_call_line"] = node.lineno
+
         # print("callvisitor_list :",callvisitor_list,"requiredObjectsSignature :",requiredObjectsSignature,"requiredAlias :",requiredAlias,"requiredObjects :",requiredObjects)
         if any(lib in callvisitor.get_name_list() for lib in requiredAlias) and (
             importMap.get(callvisitor_list[0])
@@ -301,6 +314,11 @@ class TransformCall(ast.NodeTransformer):
                                 1,
                             )
                         ),
+                    ),
+                    ast.keyword(
+                        arg="project_metadata",
+                        value=ast.Dict(keys=[ast.Constant(value=key) for key, _ in self.metadata.items()],
+                              values=[ast.Constant(value=value) for _, value in self.metadata.items()]),
                     ),
                     ast.keyword(arg="method_object", value=ast.Constant(None)),
                     ast.keyword(
@@ -396,6 +414,11 @@ class TransformCall(ast.NodeTransformer):
                         ),
                     ),
                     ast.keyword(
+                        arg="project_metadata",
+                        value=ast.Dict(keys=[ast.Constant(value=key) for key, _ in self.metadata.items()],
+                              values=[ast.Constant(value=value) for _, value in self.metadata.items()]),
+                    ),
+                    ast.keyword(
                         arg="method_object", value=ast.Name(callvisitor_list[0])
                     ),
                     ast.keyword(
@@ -485,6 +508,11 @@ class TransformCall(ast.NodeTransformer):
                                 1,
                             )
                         ),
+                    ),
+                    ast.keyword(
+                        arg="project_metadata",
+                        value=ast.Dict(keys=[ast.Constant(value=key) for key, _ in self.metadata.items()],
+                              values=[ast.Constant(value=value) for _, value in self.metadata.items()]),
                     ),
                     ast.keyword(
                         arg="method_object", value=ast.Name(callvisitor_list[0])
@@ -623,5 +651,5 @@ class ObjectAnalyzer(ast.NodeVisitor):
         self.generic_visit(node)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     method_level_patcher(script_to_be_patched)

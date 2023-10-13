@@ -10,21 +10,21 @@ import psutil
 from pathlib import Path
 from datetime import datetime
 
-from fecom.measurement.utilities import custom_print
-from fecom.measurement.start_measurement import start_sensors, quit_process, unregister_and_quit_process
+from codegreen.fecom.measurement.utilities import custom_print
+from codegreen.fecom.measurement.start_measurement import start_sensors, quit_process, unregister_and_quit_process
 
-from fecom.measurement.stable_check import run_check_loop, machine_is_stable_check, temperature_is_low_check
-from fecom.measurement.measurement_parse import get_current_times, get_energy_data, get_cpu_temperature_data
+from codegreen.fecom.measurement.stable_check import run_check_loop, machine_is_stable_check, temperature_is_low_check
+from codegreen.fecom.measurement.measurement_parse import get_current_times, get_energy_data, get_cpu_temperature_data
 
-from fecom.measurement.measurement_config import DEBUG, SKIP_CALLS_FILE_NAME, MEASUREMENT_MODULE_NAME
+from codegreen.fecom.measurement.measurement_config import DEBUG, SKIP_CALLS_FILE_NAME, MEASUREMENT_MODULE_NAME
 # stable state constants
-from fecom.measurement.measurement_config import MAX_WAIT_S, WAIT_AFTER_RUN_S, CPU_STD_TO_MEAN, RAM_STD_TO_MEAN, GPU_STD_TO_MEAN, CPU_MAXIMUM_TEMPERATURE, GPU_MAXIMUM_TEMPERATURE
+from codegreen.fecom.measurement.measurement_config import MAX_WAIT_S, WAIT_AFTER_RUN_S, CPU_STD_TO_MEAN, RAM_STD_TO_MEAN, GPU_STD_TO_MEAN, CPU_MAXIMUM_TEMPERATURE, GPU_MAXIMUM_TEMPERATURE
 # stable state settings
-from fecom.measurement.measurement_config import WAIT_PER_STABLE_CHECK_LOOP_S, CHECK_LAST_N_POINTS, STABLE_CHECK_TOLERANCE, CPU_TEMPERATURE_INTERVAL_S, MEASUREMENT_INTERVAL_S
+from codegreen.fecom.measurement.measurement_config import WAIT_PER_STABLE_CHECK_LOOP_S, CHECK_LAST_N_POINTS, STABLE_CHECK_TOLERANCE, CPU_TEMPERATURE_INTERVAL_S, MEASUREMENT_INTERVAL_S
 # file paths and separators
-from fecom.measurement.measurement_config import PERF_FILE, NVIDIA_SMI_FILE, EXECUTION_LOG_FILE, START_TIMES_FILE, CPU_TEMPERATURE_FILE
+from codegreen.fecom.measurement.measurement_config import PERF_FILE, NVIDIA_SMI_FILE, EXECUTION_LOG_FILE, START_TIMES_FILE, CPU_TEMPERATURE_FILE
 
-from fecom.experiment.experiment_kinds import ExperimentKinds
+from codegreen.fecom.experiment.experiment_kinds import ExperimentKinds
 
 
 def print_exec(message: str):
@@ -167,7 +167,7 @@ def before_execution(experiment_file_path: str, function_to_run: str = None, ena
 
 
 def after_execution(
-        start_times: dict, experiment_file_path: str, function_to_run: str = None,
+        start_times: dict, experiment_file_path: str, function_to_run: str = None,project_metadata: dict = None,
         method_object: str = None, function_args: list = None, function_kwargs: dict = None,
         enable_skip_calls: bool = True):
     """
@@ -290,7 +290,8 @@ def after_execution(
             "times": times,
             "cpu_temperatures": cpu_temperatures,
             "settings": settings,
-            "input_sizes": input_sizes
+            "input_sizes": input_sizes,
+            "project_metadata": project_metadata
         }
     }
         
