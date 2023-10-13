@@ -86,7 +86,7 @@ def method_level_patcher(script_path_to_be_patched,metadata):
     transf = TransformCall(metadata)
     transf.visit(tree)
 
-    with open(PROJECT_PATH / 'fecom/patching/method_level_patch_imports.py', "r") as source:
+    with open(PROJECT_PATH / 'codegreen/fecom/patching/method_level_patch_imports.py', "r") as source:
         cm = source.read()
         cm_node = ast.parse(cm)
 
