@@ -1,6 +1,6 @@
 import ast
 import argparse
-from codegreen.fecom.patching.patching_config import PROJECT_PATH
+from codegreen.fecom.patching.patching_config import PROJECT_PATH, TOOL_INSTALLATION_PATH
 
 # parser = argparse.ArgumentParser()
 # parser.add_argument("input_files", type=argparse.FileType("r"))
@@ -26,7 +26,7 @@ def project_level_patcher(script_path_to_be_patched,meta_data):
     )
     global after_execution_call_node
     after_execution_call_node = ast.parse(after_execution_call)
-    with open(PROJECT_PATH / 'fecom/patching/project_level_patch_imports.py', "r") as source:
+    with open(TOOL_INSTALLATION_PATH / 'patching/project_level_patch_imports.py', "r") as source:
         cm = source.read()
         cm_node = ast.parse(cm)
         tree.body.insert(0, before_execution_call_node)

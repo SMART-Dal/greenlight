@@ -52,6 +52,12 @@ def get_repo_metadata(repo_dir):
 
   return metadata
 
+def get_script_path(script_name, method_level_python_scripts):
+    for script_path in method_level_python_scripts:
+        if script_name in script_path:
+            return script_path
+    return None
+
 @app.command()
 def run_energy_profiler():
     """
@@ -74,15 +80,20 @@ def start_energy_measurement(
     metadata = get_repo_metadata(project)
     print("metadata",metadata)
     method_level_python_scripts, project_level_python_scripts, og_python_scripts = patch_project(patched_dir,project,metadata)
+    print("method_level_python_scripts",method_level_python_scripts)
 
     # run the patched files in the provided sequence in arguments
-    for idx, script in enumerate(method_level_python_scripts):
+    for idx, script in enumerate(scripts):
         # script = script.resolve()
         print(f"Running {script}...")
-        base_path, ext = os.path.splitext(og_python_scripts[idx])
+        base_path, ext = os.path.splitext(script)
+
+        print("script path is: ",str(patched_dir/(base_path+ "_method-level.py"))," method level script is: ", method_level_python_scripts)
+
+        script_to_run = get_script_path(str(base_path+ "_method-level.py"), method_level_python_scripts)
         
         # Start the subprocess
-        process = subprocess.Popen(['python3', script,"1",base_path], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        process = subprocess.Popen(['python3', script_to_run,"1",base_path], stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
         # Capture and print the output in real-time
         for line in process.stdout:

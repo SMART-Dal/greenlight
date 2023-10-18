@@ -1,2 +1,0 @@
-function_executed;time_stamp
-START_MEASUREMENTS;1697226501772406144

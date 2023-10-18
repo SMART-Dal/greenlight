@@ -6,7 +6,7 @@ import json
 import argparse
 from typing import Any
 import os
-from codegreen.fecom.patching.patching_config import PROJECT_PATH
+from codegreen.fecom.patching.patching_config import PROJECT_PATH, TOOL_INSTALLATION_PATH
 
 # parser = argparse.ArgumentParser()
 # parser.add_argument("input_files", type=argparse.FileType("r"))
@@ -86,7 +86,7 @@ def method_level_patcher(script_path_to_be_patched,metadata):
     transf = TransformCall(metadata)
     transf.visit(tree)
 
-    with open(PROJECT_PATH / 'codegreen/fecom/patching/method_level_patch_imports.py', "r") as source:
+    with open(TOOL_INSTALLATION_PATH / 'patching/method_level_patch_imports.py', "r") as source:
         cm = source.read()
         cm_node = ast.parse(cm)
 

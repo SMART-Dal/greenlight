@@ -1,4 +1,5 @@
 from pathlib import Path
+import sys
 
 """
 PATCHING CONFIG
@@ -15,6 +16,11 @@ project_path_tim_falcon = Path('/home/tim/GreenAI-extension/')
 
 # raise NotImplementedError("Change this to the absolute path to the top-level project directory on your machine before running anything")
 your_project_path = Path.cwd()
+# Get the path of the module that was imported 
+module_path = Path(sys.modules[__name__].__file__).resolve().parent 
+
+# Set the project path to the parent directory of the tools installed location
+TOOL_INSTALLATION_PATH = module_path.parent
 
 # (!) Change this to the relevant path variable (!)
 PROJECT_PATH = your_project_path

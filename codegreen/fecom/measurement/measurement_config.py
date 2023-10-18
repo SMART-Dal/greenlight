@@ -1,5 +1,5 @@
 from pathlib import Path
-from codegreen.fecom.patching.patching_config import PROJECT_PATH
+from codegreen.fecom.patching.patching_config import PROJECT_PATH, TOOL_INSTALLATION_PATH
 
 # set this to False to surpress some print outs
 DEBUG = True
@@ -48,7 +48,7 @@ MEASUREMENT_INTERVAL_MS = 500
 # having the measurement interval in seconds is useful for converting power to energy and vice versa
 MEASUREMENT_INTERVAL_S = MEASUREMENT_INTERVAL_MS / 1000
 # path to find energy data relative to the measurement package
-ENERGY_DATA_DIR = PROJECT_PATH / "fecom/measurement/out"
+ENERGY_DATA_DIR = TOOL_INSTALLATION_PATH / "measurement/out"
 # store perf & nvidia-smi output here
 PERF_FILE = ENERGY_DATA_DIR/"perf.txt"
 NVIDIA_SMI_FILE = ENERGY_DATA_DIR/"nvidia_smi.txt"
@@ -67,7 +67,7 @@ SKIP_CALLS_FILE_NAME = "skip_calls.json"
 """
 TEMPERATURE MEASUREMENT CONFIG
 """
-CPU_TEMPERATURE_MODULE = PROJECT_PATH / "fecom/measurement/cpu_temperature.py"
+CPU_TEMPERATURE_MODULE = TOOL_INSTALLATION_PATH / "measurement/cpu_temperature.py"
 # set cpu temperature measurement interval for sensors in seconds
 # the actual interval will be a few milliseconds greater, due to processing time
 CPU_TEMPERATURE_INTERVAL_S = 1
