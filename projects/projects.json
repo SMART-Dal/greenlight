@@ -11591,6 +11591,86 @@
             "topics": []
         },
         {
+            "id": 94480489,
+            "name": "tensorflow/docs",
+            "isFork": false,
+            "commits": 10760,
+            "branches": 1,
+            "defaultBranch": "master",
+            "releases": 1,
+            "contributors": 872,
+            "license": "MIT License",
+            "watchers": 216,
+            "stargazers": 5924,
+            "forks": 5284,
+            "size": 438,
+            "createdAt": "2017-05-06T03:01:31",
+            "pushedAt": "2023-07-17T08:57:14",
+            "updatedAt": "2023-07-20T11:22:14",
+            "homepage": "https://mofanpy.com/tutorials/machine-learning/reinforcement-learning/",
+            "mainLanguage": "Python",
+            "totalIssues": 189,
+            "openIssues": 63,
+            "totalPullRequests": 9,
+            "openPullRequests": 0,
+            "blankLines": 1703,
+            "codeLines": 6168,
+            "commentLines": 945,
+            "metrics": [
+                {
+                    "language": "Markdown",
+                    "blankLines": 28,
+                    "codeLines": 81,
+                    "commentLines": 0
+                },
+                {
+                    "language": "Python",
+                    "blankLines": 1675,
+                    "codeLines": 6087,
+                    "commentLines": 945
+                }
+            ],
+            "lastCommit": "2023-07-29T07:57:55",
+            "lastCommitSHA": "03190f3b6f327a1dbaba9a712bdf102616010cfc",
+            "hasWiki": true,
+            "isArchived": false,
+            "languages": {
+                "Python": 327177
+            },
+            "labels": [
+                "bug",
+                "duplicate",
+                "enhancement",
+                "help wanted",
+                "invalid",
+                "question",
+                "wontfix"
+            ],
+            "topics": [
+                "a3c",
+                "actor-critic",
+                "asynchronous-advantage-actor-critic",
+                "ddpg",
+                "deep-deterministic-policy-gradient",
+                "deep-q-network",
+                "double-dqn",
+                "dqn",
+                "dueling-dqn",
+                "machine-learning",
+                "policy-gradient",
+                "ppo",
+                "prioritized-replay",
+                "proximal-policy-optimization",
+                "q-learning",
+                "reinforcement-learning",
+                "sarsa",
+                "sarsa-lambda",
+                "tensorflow-tutorials",
+                "tutorial"
+            ]
+        }
+        ,
+        {
             "id": 44743579,
             "name": "tensorflow/similarity",
             "isFork": false,

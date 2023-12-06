@@ -53,3 +53,5 @@ with open(file_path, 'r', newline='') as file:
 
 # Print the number of rows
 print(f"Number of rows in {file_path}: {num_rows}")
+
+

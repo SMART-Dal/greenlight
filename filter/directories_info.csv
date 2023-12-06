@@ -1,147 +1,148 @@
 Directory Name,Directory Path,Status
-yunyang1994_tensorflow-yolov3,../projects/yunyang1994_tensorflow-yolov3,Pending
-tensorflow_gnn,../projects/tensorflow_gnn,Pending
-saafke_edsr_tensorflow,../projects/saafke_edsr_tensorflow,Pending
-daviddao_spatial-transformer-tensorflow,../projects/daviddao_spatial-transformer-tensorflow,uses_tf1
-tensorflow_graphics,../projects/tensorflow_graphics,Pending
-tensorflow_compression,../projects/tensorflow_compression,Pending
-kwotsin_tensorflow-xception,../projects/kwotsin_tensorflow-xception,Pending
-himanshurawlani_keras-and-tensorflow-serving,../projects/himanshurawlani_keras-and-tensorflow-serving,no
-tensorflow_models,../projects/tensorflow_models,Pending
-z-yq_tensorflowasr,../projects/z-yq_tensorflowasr,Pending
-tensorflow_privacy,../projects/tensorflow_privacy,Pending
-lynnho_eigengan-tensorflow,../projects/lynnho_eigengan-tensorflow,Pending
-byronnar_tensorflow-serving-yolov3,../projects/byronnar_tensorflow-serving-yolov3,"uses_tf1"
-yzhou359_visemenet_tensorflow,../projects/yzhou359_visemenet_tensorflow,Pending
-tensorflow_mesh,../projects/tensorflow_mesh,Pending
-easy-tensorflow_easy-tensorflow,../projects/easy-tensorflow_easy-tensorflow,can
-edjeelectronics_tensorflow-object-detection-api-tutorial-train-multiple-objects-windows-10,../projects/edjeelectronics_tensorflow-object-detection-api-tutorial-train-multiple-objects-windows-10,uses_tf1
-dbeker_faster-rcnn-tensorflow-python3,../projects/dbeker_faster-rcnn-tensorflow-python3,uses_tf1
-yeyupiaoling_voiceprintrecognition-tensorflow,../projects/yeyupiaoling_voiceprintrecognition-tensorflow,Pending
-stick-to_centernet-tensorflow,../projects/stick-to_centernet-tensorflow,Pending
-ahmetozlu_tensorflow_object_counting_api,../projects/ahmetozlu_tensorflow_object_counting_api,uses_tf1
-bmw-innovationlab_bmw-tensorflow-inference-api-gpu,../projects/bmw-innovationlab_bmw-tensorflow-inference-api-gpu,Pending
-google-research_tensorflow_constrained_optimization,../projects/google-research_tensorflow_constrained_optimization,no
-lynnho_cyclegan-tensorflow-2,../projects/lynnho_cyclegan-tensorflow-2,Pending
-packtpublishing_deep-learning-with-tensorflow,../projects/packtpublishing_deep-learning-with-tensorflow,Pending
-marload_deeprl-tensorflow2,../projects/marload_deeprl-tensorflow2,Pending
-onnx_onnx-tensorflow,../projects/onnx_onnx-tensorflow,Pending
-xggiou_centernet_tensorflow_wilderface_voc,../projects/xggiou_centernet_tensorflow_wilderface_voc,Pending
-tensorflow_decision-forests,../projects/tensorflow_decision-forests,Pending
-sushant097_handwritten-line-text-recognition-using-deep-learning-with-tensorflow,../projects/sushant097_handwritten-line-text-recognition-using-deep-learning-with-tensorflow,Pending
-xiao9616_yolo4_tensorflow2,../projects/xiao9616_yolo4_tensorflow2,Pending
-spotify_spotify-tensorflow,../projects/spotify_spotify-tensorflow,Pending
-drsleep_tensorflow-deeplab-lfov,../projects/drsleep_tensorflow-deeplab-lfov,uses_tf1
-packtpublishing_tensorflow-machine-learning-cookbook,../projects/packtpublishing_tensorflow-machine-learning-cookbook,Pending
-divamgupta_stable-diffusion-tensorflow,../projects/divamgupta_stable-diffusion-tensorflow,can
-tensorflow_lattice,../projects/tensorflow_lattice,Pending
-maybeshewill-cv_bisenetv2-tensorflow,../projects/maybeshewill-cv_bisenetv2-tensorflow,Pending
-yenchenlin_pix2pix-tensorflow,../projects/yenchenlin_pix2pix-tensorflow,Pending
-mnicnc404_cartoongan-tensorflow,../projects/mnicnc404_cartoongan-tensorflow,Pending
-google_tensorflow-recorder,../projects/google_tensorflow-recorder,no
-akanyaani_gpt-2-tensorflow2.0,../projects/akanyaani_gpt-2-tensorflow2.0,replicated
-aws_sagemaker-tensorflow-training-toolkit,../projects/aws_sagemaker-tensorflow-training-toolkit,no
-tensorflow_datasets,../projects/tensorflow_datasets,Pending
-pudae_tensorflow-densenet,../projects/pudae_tensorflow-densenet,Pending
-tensorflow_gan,../projects/tensorflow_gan,Pending
-googlecloudplatform_tensorflow-object-detection-example,../projects/googlecloudplatform_tensorflow-object-detection-example,no
-tensorflow_skflow,../projects/tensorflow_skflow,Pending
-vladkryvoruchko_pspnet-keras-tensorflow,../projects/vladkryvoruchko_pspnet-keras-tensorflow,Pending
-tensorflow_ranking,../projects/tensorflow_ranking,Pending
-martinsbruveris_tensorflow-image-models,../projects/martinsbruveris_tensorflow-image-models,Pending
-tensorflow_model-optimization,../projects/tensorflow_model-optimization,Pending
-calmisential_tensorflow2.0_resnet,../projects/calmisential_tensorflow2.0_resnet,can
-zhangqianhui_progressive_growing_of_gans_tensorflow,../projects/zhangqianhui_progressive_growing_of_gans_tensorflow,Pending
-leimao_frozen-graph-tensorflow,../projects/leimao_frozen-graph-tensorflow,Pending
-tensorflow_estimator,../projects/tensorflow_estimator,Pending
-ckmarkoh_neuralart_tensorflow,../projects/ckmarkoh_neuralart_tensorflow,uses_tf1
-taki0112_tensorflow-cookbook,../projects/taki0112_tensorflow-cookbook,Pending
-clovaai_stargan-v2-tensorflow,../projects/clovaai_stargan-v2-tensorflow,can
-tensorflow_data-validation,../projects/tensorflow_data-validation,Pending
-taki0112_stargan_v2-tensorflow,../projects/taki0112_stargan_v2-tensorflow,Pending
-ibm_tensorflow-hangul-recognition,../projects/ibm_tensorflow-hangul-recognition,Pending
-tensorflow_quantum,../projects/tensorflow_quantum,Pending
-rishizek_tensorflow-deeplab-v3-plus,../projects/rishizek_tensorflow-deeplab-v3-plus,Pending
-bmw-innovationlab_bmw-tensorflow-training-gui,../projects/bmw-innovationlab_bmw-tensorflow-training-gui,uses_tf1
-janmarcelkezmann_tensorflow-advanced-segmentation-models,../projects/janmarcelkezmann_tensorflow-advanced-segmentation-models,Pending
-tensorflow_tfx,../projects/tensorflow_tfx,Pending
-tensorflow_kfac,../projects/tensorflow_kfac,Pending
-packtpublishing_hands-on-neural-networks-with-tensorflow-2.0,../projects/packtpublishing_hands-on-neural-networks-with-tensorflow-2.0,Pending
-hunglc007_tensorflow-yolov4-tflite,../projects/hunglc007_tensorflow-yolov4-tflite,Pending
-taki0112_stylegan-tensorflow,../projects/taki0112_stylegan-tensorflow,Pending
-tensorflow_transform,../projects/tensorflow_transform,Pending
-mystic123_tensorflow-yolo-v3,../projects/mystic123_tensorflow-yolo-v3,Pending
-pinto0309_openvino2tensorflow,../projects/pinto0309_openvino2tensorflow,Pending
-aws_sagemaker-tensorflow-serving-container,../projects/aws_sagemaker-tensorflow-serving-container,no
-lyhue1991_eat_tensorflow2_in_30_days,../projects/lyhue1991_eat_tensorflow2_in_30_days,Pending
-tensorflow_model-card-toolkit,../projects/tensorflow_model-card-toolkit,Pending
-taki0112_tensorflow2-cookbook,../projects/taki0112_tensorflow2-cookbook,Pending
-tobegit3hub_tensorflow_template_application,../projects/tobegit3hub_tensorflow_template_application,Pending
-ahmetozlu_vehicle_counting_tensorflow,../projects/ahmetozlu_vehicle_counting_tensorflow,uses_tf1
-tobegit3hub_tensorflow_examples,../projects/tobegit3hub_tensorflow_examples,Pending
-tensorspeech_tensorflowtts,../projects/tensorspeech_tensorflowtts,Pending
-cagbal_ros_people_object_detection_tensorflow,../projects/cagbal_ros_people_object_detection_tensorflow,uses_tf1
-tensorflow_recommenders-addons,../projects/tensorflow_recommenders-addons,Pending
-tensorflow_addons,../projects/tensorflow_addons,Pending
-pannous_tensorflow-speech-recognition,../projects/pannous_tensorflow-speech-recognition,Pending
-maybeshewill-cv_crnn_tensorflow,../projects/maybeshewill-cv_crnn_tensorflow,Pending
-tensorflow_cloud,../projects/tensorflow_cloud,Pending
-tensorflow_tensor2tensor,../projects/tensorflow_tensor2tensor,Pending
-tensorflow_federated,../projects/tensorflow_federated,Pending
-tensorflow_lingvo,../projects/tensorflow_lingvo,Pending
-lynnho_attgan-tensorflow,../projects/lynnho_attgan-tensorflow,Pending
-tensorflow_moonlight,../projects/tensorflow_moonlight,Pending
-google-research_tensorflow-coder,../projects/google-research_tensorflow-coder,no
-paulpauls_tensorflow-neuroevolution,../projects/paulpauls_tensorflow-neuroevolution,Pending
-thunlp_tensorflow-transx,../projects/thunlp_tensorflow-transx,Pending
-tensorflow_model-analysis,../projects/tensorflow_model-analysis,Pending
-bmw-innovationlab_bmw-tensorflow-inference-api-cpu,../projects/bmw-innovationlab_bmw-tensorflow-inference-api-cpu,uses_tf1
-astorfi_tensorflow-world,../projects/astorfi_tensorflow-world,can
-kentsommer_tensorflow-posenet,../projects/kentsommer_tensorflow-posenet,Pending
-getnamo_tensorflow-ue4-examples,../projects/getnamo_tensorflow-ue4-examples,uses_tf1
-tensorflow_agents,../projects/tensorflow_agents,Pending
-detectionteamucas_r2cnn_faster-rcnn_tensorflow,../projects/detectionteamucas_r2cnn_faster-rcnn_tensorflow,uses_tf1
-kwotsin_tensorflow-enet,../projects/kwotsin_tensorflow-enet,Pending
-zhengyang-wang_deeplab-v2--resnet-101--tensorflow,../projects/zhengyang-wang_deeplab-v2--resnet-101--tensorflow,Pending
-calmisential_basic_cnns_tensorflow2,../projects/calmisential_basic_cnns_tensorflow2,can
-mingtaoguo_dcgan_wgan_wgan-gp_lsgan_sngan_rsgan_began_acgan_pggan_tensorflow,../projects/mingtaoguo_dcgan_wgan_wgan-gp_lsgan_sngan_rsgan_began_acgan_pggan_tensorflow,Pending
-vahidk_tensorflowframework,../projects/vahidk_tensorflowframework,Pending
-tensorflow_neural-structured-learning,../projects/tensorflow_neural-structured-learning,Pending
-yeephycho_tensorflow-face-detection,../projects/yeephycho_tensorflow-face-detection,Pending
-sullychen_autopilot-tensorflow,../projects/sullychen_autopilot-tensorflow,Pending
-wizyoung_yolov3_tensorflow,../projects/wizyoung_yolov3_tensorflow,Pending
-manicman1999_stylegan2-tensorflow-2.0,../projects/manicman1999_stylegan2-tensorflow-2.0,Pending
-zhengyang-wang_3d-unet--tensorflow,../projects/zhengyang-wang_3d-unet--tensorflow,Pending
-thinklab-sjtu_r3det_tensorflow,../projects/thinklab-sjtu_r3det_tensorflow,Pending
-drsleep_tensorflow-deeplab-resnet,../projects/drsleep_tensorflow-deeplab-resnet,uses_tf1
-rafiqhasan_auto-tensorflow,../projects/rafiqhasan_auto-tensorflow,Pending
-philipperemy_tensorflow-class-activation-mapping,../projects/philipperemy_tensorflow-class-activation-mapping,Pending
-getnamo_tensorflow-unreal-examples,../projects/getnamo_tensorflow-unreal-examples,uses_tf1
-tensorflow_recommenders,../projects/tensorflow_recommenders,Pending
-stick-to_object-detection-api-tensorflow,../projects/stick-to_object-detection-api-tensorflow,Pending
-detectionteamucas_retinanet_tensorflow_rotation,../projects/detectionteamucas_retinanet_tensorflow_rotation,uses_tf1
-dgurkaynak_tensorflow-cnn-finetune,../projects/dgurkaynak_tensorflow-cnn-finetune,uses_tf1
-morvanzhou_reinforcement-learning-with-tensorflow,../projects/morvanzhou_reinforcement-learning-with-tensorflow,Pending
-tensorspeech_tensorflowasr,../projects/tensorspeech_tensorflowasr,Pending
-instillai_tensorflow-course,../projects/instillai_tensorflow-course,Pending
-jason9693_musictransformer-tensorflow2.0,../projects/jason9693_musictransformer-tensorflow2.0,Pending
-georgesung_ssd_tensorflow_traffic_sign_detection,../projects/georgesung_ssd_tensorflow_traffic_sign_detection,uses_tf1
-tensorflow_graphics_patched,../projects/tensorflow_graphics_patched,Pending
-lynnho_dcgan-lsgan-wgan-gp-dragan-tensorflow-2,../projects/lynnho_dcgan-lsgan-wgan-gp-dragan-tensorflow-2,Pending
-drewnf_tensorflow_object_tracking_video,../projects/drewnf_tensorflow_object_tracking_video,uses_tf1
-googlecloudplatform_tensorflow-recommendation-wals,../projects/googlecloudplatform_tensorflow-recommendation-wals,no
-tensorflow_benchmarks,../projects/tensorflow_benchmarks,Pending
-morvanzhou_tensorflow-tutorial,../projects/morvanzhou_tensorflow-tutorial,Pending
-amir-abdi_keras_to_tensorflow,../projects/amir-abdi_keras_to_tensorflow,uses_tf1
-yahoo_tensorflowonspark,../projects/yahoo_tensorflowonspark,Pending
-morvanzhou_tensorflow2-tutorial,../projects/morvanzhou_tensorflow2-tutorial,Pending
-detectionteamucas_r2cnn-plus-plus_tensorflow,../projects/detectionteamucas_r2cnn-plus-plus_tensorflow,uses_tf1
-bilylee_siamfc-tensorflow,../projects/bilylee_siamfc-tensorflow,uses_tf1
-tensorflow_similarity,../projects/tensorflow_similarity,Pending
-tensorflow_hub,../projects/tensorflow_hub,Pending
-pinto0309_tflite2tensorflow,../projects/pinto0309_tflite2tensorflow,Pending
-carlthome_tensorflow-convlstm-cell,../projects/carlthome_tensorflow-convlstm-cell,can
-thinklab-sjtu_csl_retinanet_tensorflow,../projects/thinklab-sjtu_csl_retinanet_tensorflow,Pending
-vanhuyz_cyclegan-tensorflow,../projects/vanhuyz_cyclegan-tensorflow,Pending
-philipperemy_tensorflow-ctc-speech-recognition,../projects/philipperemy_tensorflow-ctc-speech-recognition,Pending
-edjeelectronics_tensorflow-object-detection-on-the-raspberry-pi,../projects/edjeelectronics_tensorflow-object-detection-on-the-raspberry-pi,uses_tf1
+yunyang1994_tensorflow-yolov3,/home/saurabh/method-energy-dataset/projects/yunyang1994_tensorflow-yolov3,Notebooks exist
+tensorflow_gnn,/home/saurabh/method-energy-dataset/projects/tensorflow_gnn,Notebooks exist
+saafke_edsr_tensorflow,/home/saurabh/method-energy-dataset/projects/saafke_edsr_tensorflow,No Notebooks
+daviddao_spatial-transformer-tensorflow,/home/saurabh/method-energy-dataset/projects/daviddao_spatial-transformer-tensorflow,No Notebooks
+tensorflow_graphics,/home/saurabh/method-energy-dataset/projects/tensorflow_graphics,Notebooks exist
+tensorflow_compression,/home/saurabh/method-energy-dataset/projects/tensorflow_compression,Notebooks exist
+kwotsin_tensorflow-xception,/home/saurabh/method-energy-dataset/projects/kwotsin_tensorflow-xception,No Notebooks
+himanshurawlani_keras-and-tensorflow-serving,/home/saurabh/method-energy-dataset/projects/himanshurawlani_keras-and-tensorflow-serving,No Notebooks
+tensorflow_models,/home/saurabh/method-energy-dataset/projects/tensorflow_models,Notebooks exist
+z-yq_tensorflowasr,/home/saurabh/method-energy-dataset/projects/z-yq_tensorflowasr,No Notebooks
+tensorflow_privacy,/home/saurabh/method-energy-dataset/projects/tensorflow_privacy,Notebooks exist
+lynnho_eigengan-tensorflow,/home/saurabh/method-energy-dataset/projects/lynnho_eigengan-tensorflow,No Notebooks
+byronnar_tensorflow-serving-yolov3,/home/saurabh/method-energy-dataset/projects/byronnar_tensorflow-serving-yolov3,No Notebooks
+yzhou359_visemenet_tensorflow,/home/saurabh/method-energy-dataset/projects/yzhou359_visemenet_tensorflow,No Notebooks
+tensorflow_mesh,/home/saurabh/method-energy-dataset/projects/tensorflow_mesh,No Notebooks
+easy-tensorflow_easy-tensorflow,/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow,Notebooks exist
+edjeelectronics_tensorflow-object-detection-api-tutorial-train-multiple-objects-windows-10,/home/saurabh/method-energy-dataset/projects/edjeelectronics_tensorflow-object-detection-api-tutorial-train-multiple-objects-windows-10,No Notebooks
+dbeker_faster-rcnn-tensorflow-python3,/home/saurabh/method-energy-dataset/projects/dbeker_faster-rcnn-tensorflow-python3,Notebooks exist
+yeyupiaoling_voiceprintrecognition-tensorflow,/home/saurabh/method-energy-dataset/projects/yeyupiaoling_voiceprintrecognition-tensorflow,No Notebooks
+stick-to_centernet-tensorflow,/home/saurabh/method-energy-dataset/projects/stick-to_centernet-tensorflow,No Notebooks
+ahmetozlu_tensorflow_object_counting_api,/home/saurabh/method-energy-dataset/projects/ahmetozlu_tensorflow_object_counting_api,Notebooks exist
+bmw-innovationlab_bmw-tensorflow-inference-api-gpu,/home/saurabh/method-energy-dataset/projects/bmw-innovationlab_bmw-tensorflow-inference-api-gpu,No Notebooks
+google-research_tensorflow_constrained_optimization,/home/saurabh/method-energy-dataset/projects/google-research_tensorflow_constrained_optimization,Notebooks exist
+lynnho_cyclegan-tensorflow-2,/home/saurabh/method-energy-dataset/projects/lynnho_cyclegan-tensorflow-2,No Notebooks
+packtpublishing_deep-learning-with-tensorflow,/home/saurabh/method-energy-dataset/projects/packtpublishing_deep-learning-with-tensorflow,No Notebooks
+marload_deeprl-tensorflow2,/home/saurabh/method-energy-dataset/projects/marload_deeprl-tensorflow2,No Notebooks
+onnx_onnx-tensorflow,/home/saurabh/method-energy-dataset/projects/onnx_onnx-tensorflow,No Notebooks
+xggiou_centernet_tensorflow_wilderface_voc,/home/saurabh/method-energy-dataset/projects/xggiou_centernet_tensorflow_wilderface_voc,No Notebooks
+tensorflow_decision-forests,/home/saurabh/method-energy-dataset/projects/tensorflow_decision-forests,Notebooks exist
+sushant097_handwritten-line-text-recognition-using-deep-learning-with-tensorflow,/home/saurabh/method-energy-dataset/projects/sushant097_handwritten-line-text-recognition-using-deep-learning-with-tensorflow,No Notebooks
+xiao9616_yolo4_tensorflow2,/home/saurabh/method-energy-dataset/projects/xiao9616_yolo4_tensorflow2,No Notebooks
+spotify_spotify-tensorflow,/home/saurabh/method-energy-dataset/projects/spotify_spotify-tensorflow,No Notebooks
+drsleep_tensorflow-deeplab-lfov,/home/saurabh/method-energy-dataset/projects/drsleep_tensorflow-deeplab-lfov,No Notebooks
+packtpublishing_tensorflow-machine-learning-cookbook,/home/saurabh/method-energy-dataset/projects/packtpublishing_tensorflow-machine-learning-cookbook,No Notebooks
+divamgupta_stable-diffusion-tensorflow,/home/saurabh/method-energy-dataset/projects/divamgupta_stable-diffusion-tensorflow,No Notebooks
+tensorflow_lattice,/home/saurabh/method-energy-dataset/projects/tensorflow_lattice,Notebooks exist
+maybeshewill-cv_bisenetv2-tensorflow,/home/saurabh/method-energy-dataset/projects/maybeshewill-cv_bisenetv2-tensorflow,No Notebooks
+yenchenlin_pix2pix-tensorflow,/home/saurabh/method-energy-dataset/projects/yenchenlin_pix2pix-tensorflow,No Notebooks
+mnicnc404_cartoongan-tensorflow,/home/saurabh/method-energy-dataset/projects/mnicnc404_cartoongan-tensorflow,No Notebooks
+google_tensorflow-recorder,/home/saurabh/method-energy-dataset/projects/google_tensorflow-recorder,Notebooks exist
+akanyaani_gpt-2-tensorflow2.0,/home/saurabh/method-energy-dataset/projects/akanyaani_gpt-2-tensorflow2.0,No Notebooks
+aws_sagemaker-tensorflow-training-toolkit,/home/saurabh/method-energy-dataset/projects/aws_sagemaker-tensorflow-training-toolkit,Notebooks exist
+tensorflow_datasets,/home/saurabh/method-energy-dataset/projects/tensorflow_datasets,Notebooks exist
+pudae_tensorflow-densenet,/home/saurabh/method-energy-dataset/projects/pudae_tensorflow-densenet,No Notebooks
+tensorflow_gan,/home/saurabh/method-energy-dataset/projects/tensorflow_gan,Notebooks exist
+googlecloudplatform_tensorflow-object-detection-example,/home/saurabh/method-energy-dataset/projects/googlecloudplatform_tensorflow-object-detection-example,No Notebooks
+tensorflow_skflow,/home/saurabh/method-energy-dataset/projects/tensorflow_skflow,No Notebooks
+vladkryvoruchko_pspnet-keras-tensorflow,/home/saurabh/method-energy-dataset/projects/vladkryvoruchko_pspnet-keras-tensorflow,No Notebooks
+tensorflow_ranking,/home/saurabh/method-energy-dataset/projects/tensorflow_ranking,Notebooks exist
+martinsbruveris_tensorflow-image-models,/home/saurabh/method-energy-dataset/projects/martinsbruveris_tensorflow-image-models,Notebooks exist
+tensorflow_model-optimization,/home/saurabh/method-energy-dataset/projects/tensorflow_model-optimization,Notebooks exist
+calmisential_tensorflow2.0_resnet,/home/saurabh/method-energy-dataset/projects/calmisential_tensorflow2.0_resnet,No Notebooks
+zhangqianhui_progressive_growing_of_gans_tensorflow,/home/saurabh/method-energy-dataset/projects/zhangqianhui_progressive_growing_of_gans_tensorflow,No Notebooks
+leimao_frozen-graph-tensorflow,/home/saurabh/method-energy-dataset/projects/leimao_frozen-graph-tensorflow,No Notebooks
+tensorflow_estimator,/home/saurabh/method-energy-dataset/projects/tensorflow_estimator,Notebooks exist
+ckmarkoh_neuralart_tensorflow,/home/saurabh/method-energy-dataset/projects/ckmarkoh_neuralart_tensorflow,No Notebooks
+taki0112_tensorflow-cookbook,/home/saurabh/method-energy-dataset/projects/taki0112_tensorflow-cookbook,No Notebooks
+clovaai_stargan-v2-tensorflow,/home/saurabh/method-energy-dataset/projects/clovaai_stargan-v2-tensorflow,No Notebooks
+tensorflow_data-validation,/home/saurabh/method-energy-dataset/projects/tensorflow_data-validation,No Notebooks
+taki0112_stargan_v2-tensorflow,/home/saurabh/method-energy-dataset/projects/taki0112_stargan_v2-tensorflow,No Notebooks
+ibm_tensorflow-hangul-recognition,/home/saurabh/method-energy-dataset/projects/ibm_tensorflow-hangul-recognition,No Notebooks
+tensorflow_quantum,/home/saurabh/method-energy-dataset/projects/tensorflow_quantum,Notebooks exist
+rishizek_tensorflow-deeplab-v3-plus,/home/saurabh/method-energy-dataset/projects/rishizek_tensorflow-deeplab-v3-plus,No Notebooks
+bmw-innovationlab_bmw-tensorflow-training-gui,/home/saurabh/method-energy-dataset/projects/bmw-innovationlab_bmw-tensorflow-training-gui,No Notebooks
+janmarcelkezmann_tensorflow-advanced-segmentation-models,/home/saurabh/method-energy-dataset/projects/janmarcelkezmann_tensorflow-advanced-segmentation-models,Notebooks exist
+tensorflow_tfx,/home/saurabh/method-energy-dataset/projects/tensorflow_tfx,Notebooks exist
+tensorflow_kfac,/home/saurabh/method-energy-dataset/projects/tensorflow_kfac,Notebooks exist
+packtpublishing_hands-on-neural-networks-with-tensorflow-2.0,/home/saurabh/method-energy-dataset/projects/packtpublishing_hands-on-neural-networks-with-tensorflow-2.0,No Notebooks
+hunglc007_tensorflow-yolov4-tflite,/home/saurabh/method-energy-dataset/projects/hunglc007_tensorflow-yolov4-tflite,No Notebooks
+taki0112_stylegan-tensorflow,/home/saurabh/method-energy-dataset/projects/taki0112_stylegan-tensorflow,No Notebooks
+tensorflow_transform,/home/saurabh/method-energy-dataset/projects/tensorflow_transform,Notebooks exist
+mystic123_tensorflow-yolo-v3,/home/saurabh/method-energy-dataset/projects/mystic123_tensorflow-yolo-v3,No Notebooks
+pinto0309_openvino2tensorflow,/home/saurabh/method-energy-dataset/projects/pinto0309_openvino2tensorflow,No Notebooks
+aws_sagemaker-tensorflow-serving-container,/home/saurabh/method-energy-dataset/projects/aws_sagemaker-tensorflow-serving-container,No Notebooks
+lyhue1991_eat_tensorflow2_in_30_days,/home/saurabh/method-energy-dataset/projects/lyhue1991_eat_tensorflow2_in_30_days,No Notebooks
+tensorflow_model-card-toolkit,/home/saurabh/method-energy-dataset/projects/tensorflow_model-card-toolkit,Notebooks exist
+taki0112_tensorflow2-cookbook,/home/saurabh/method-energy-dataset/projects/taki0112_tensorflow2-cookbook,No Notebooks
+tobegit3hub_tensorflow_template_application,/home/saurabh/method-energy-dataset/projects/tobegit3hub_tensorflow_template_application,No Notebooks
+ahmetozlu_vehicle_counting_tensorflow,/home/saurabh/method-energy-dataset/projects/ahmetozlu_vehicle_counting_tensorflow,Notebooks exist
+tobegit3hub_tensorflow_examples,/home/saurabh/method-energy-dataset/projects/tobegit3hub_tensorflow_examples,No Notebooks
+tensorspeech_tensorflowtts,/home/saurabh/method-energy-dataset/projects/tensorspeech_tensorflowtts,Notebooks exist
+cagbal_ros_people_object_detection_tensorflow,/home/saurabh/method-energy-dataset/projects/cagbal_ros_people_object_detection_tensorflow,Notebooks exist
+tensorflow_recommenders-addons,/home/saurabh/method-energy-dataset/projects/tensorflow_recommenders-addons,Notebooks exist
+tensorflow_addons,/home/saurabh/method-energy-dataset/projects/tensorflow_addons,Notebooks exist
+pannous_tensorflow-speech-recognition,/home/saurabh/method-energy-dataset/projects/pannous_tensorflow-speech-recognition,No Notebooks
+maybeshewill-cv_crnn_tensorflow,/home/saurabh/method-energy-dataset/projects/maybeshewill-cv_crnn_tensorflow,No Notebooks
+tensorflow_cloud,/home/saurabh/method-energy-dataset/projects/tensorflow_cloud,Notebooks exist
+tensorflow_tensor2tensor,/home/saurabh/method-energy-dataset/projects/tensorflow_tensor2tensor,Notebooks exist
+tensorflow_federated,/home/saurabh/method-energy-dataset/projects/tensorflow_federated,Notebooks exist
+tensorflow_lingvo,/home/saurabh/method-energy-dataset/projects/tensorflow_lingvo,Notebooks exist
+lynnho_attgan-tensorflow,/home/saurabh/method-energy-dataset/projects/lynnho_attgan-tensorflow,No Notebooks
+tensorflow_moonlight,/home/saurabh/method-energy-dataset/projects/tensorflow_moonlight,No Notebooks
+google-research_tensorflow-coder,/home/saurabh/method-energy-dataset/projects/google-research_tensorflow-coder,Notebooks exist
+paulpauls_tensorflow-neuroevolution,/home/saurabh/method-energy-dataset/projects/paulpauls_tensorflow-neuroevolution,No Notebooks
+thunlp_tensorflow-transx,/home/saurabh/method-energy-dataset/projects/thunlp_tensorflow-transx,No Notebooks
+tensorflow_model-analysis,/home/saurabh/method-energy-dataset/projects/tensorflow_model-analysis,No Notebooks
+bmw-innovationlab_bmw-tensorflow-inference-api-cpu,/home/saurabh/method-energy-dataset/projects/bmw-innovationlab_bmw-tensorflow-inference-api-cpu,No Notebooks
+astorfi_tensorflow-world,/home/saurabh/method-energy-dataset/projects/astorfi_tensorflow-world,Notebooks exist
+kentsommer_tensorflow-posenet,/home/saurabh/method-energy-dataset/projects/kentsommer_tensorflow-posenet,No Notebooks
+getnamo_tensorflow-ue4-examples,/home/saurabh/method-energy-dataset/projects/getnamo_tensorflow-ue4-examples,No Notebooks
+tensorflow_agents,/home/saurabh/method-energy-dataset/projects/tensorflow_agents,Notebooks exist
+detectionteamucas_r2cnn_faster-rcnn_tensorflow,/home/saurabh/method-energy-dataset/projects/detectionteamucas_r2cnn_faster-rcnn_tensorflow,No Notebooks
+kwotsin_tensorflow-enet,/home/saurabh/method-energy-dataset/projects/kwotsin_tensorflow-enet,No Notebooks
+zhengyang-wang_deeplab-v2--resnet-101--tensorflow,/home/saurabh/method-energy-dataset/projects/zhengyang-wang_deeplab-v2--resnet-101--tensorflow,No Notebooks
+calmisential_basic_cnns_tensorflow2,/home/saurabh/method-energy-dataset/projects/calmisential_basic_cnns_tensorflow2,No Notebooks
+mingtaoguo_dcgan_wgan_wgan-gp_lsgan_sngan_rsgan_began_acgan_pggan_tensorflow,/home/saurabh/method-energy-dataset/projects/mingtaoguo_dcgan_wgan_wgan-gp_lsgan_sngan_rsgan_began_acgan_pggan_tensorflow,No Notebooks
+vahidk_tensorflowframework,/home/saurabh/method-energy-dataset/projects/vahidk_tensorflowframework,No Notebooks
+tensorflow_neural-structured-learning,/home/saurabh/method-energy-dataset/projects/tensorflow_neural-structured-learning,Notebooks exist
+yeephycho_tensorflow-face-detection,/home/saurabh/method-energy-dataset/projects/yeephycho_tensorflow-face-detection,No Notebooks
+sullychen_autopilot-tensorflow,/home/saurabh/method-energy-dataset/projects/sullychen_autopilot-tensorflow,No Notebooks
+wizyoung_yolov3_tensorflow,/home/saurabh/method-energy-dataset/projects/wizyoung_yolov3_tensorflow,No Notebooks
+manicman1999_stylegan2-tensorflow-2.0,/home/saurabh/method-energy-dataset/projects/manicman1999_stylegan2-tensorflow-2.0,No Notebooks
+zhengyang-wang_3d-unet--tensorflow,/home/saurabh/method-energy-dataset/projects/zhengyang-wang_3d-unet--tensorflow,No Notebooks
+thinklab-sjtu_r3det_tensorflow,/home/saurabh/method-energy-dataset/projects/thinklab-sjtu_r3det_tensorflow,No Notebooks
+drsleep_tensorflow-deeplab-resnet,/home/saurabh/method-energy-dataset/projects/drsleep_tensorflow-deeplab-resnet,No Notebooks
+rafiqhasan_auto-tensorflow,/home/saurabh/method-energy-dataset/projects/rafiqhasan_auto-tensorflow,Notebooks exist
+philipperemy_tensorflow-class-activation-mapping,/home/saurabh/method-energy-dataset/projects/philipperemy_tensorflow-class-activation-mapping,No Notebooks
+getnamo_tensorflow-unreal-examples,/home/saurabh/method-energy-dataset/projects/getnamo_tensorflow-unreal-examples,No Notebooks
+tensorflow_recommenders,/home/saurabh/method-energy-dataset/projects/tensorflow_recommenders,Notebooks exist
+stick-to_object-detection-api-tensorflow,/home/saurabh/method-energy-dataset/projects/stick-to_object-detection-api-tensorflow,No Notebooks
+detectionteamucas_retinanet_tensorflow_rotation,/home/saurabh/method-energy-dataset/projects/detectionteamucas_retinanet_tensorflow_rotation,No Notebooks
+dgurkaynak_tensorflow-cnn-finetune,/home/saurabh/method-energy-dataset/projects/dgurkaynak_tensorflow-cnn-finetune,No Notebooks
+morvanzhou_reinforcement-learning-with-tensorflow,/home/saurabh/method-energy-dataset/projects/morvanzhou_reinforcement-learning-with-tensorflow,No Notebooks
+tensorspeech_tensorflowasr,/home/saurabh/method-energy-dataset/projects/tensorspeech_tensorflowasr,Notebooks exist
+instillai_tensorflow-course,/home/saurabh/method-energy-dataset/projects/instillai_tensorflow-course,Notebooks exist
+jason9693_musictransformer-tensorflow2.0,/home/saurabh/method-energy-dataset/projects/jason9693_musictransformer-tensorflow2.0,Notebooks exist
+georgesung_ssd_tensorflow_traffic_sign_detection,/home/saurabh/method-energy-dataset/projects/georgesung_ssd_tensorflow_traffic_sign_detection,No Notebooks
+tensorflow_graphics_patched,/home/saurabh/method-energy-dataset/projects/tensorflow_graphics_patched,No Notebooks
+lynnho_dcgan-lsgan-wgan-gp-dragan-tensorflow-2,/home/saurabh/method-energy-dataset/projects/lynnho_dcgan-lsgan-wgan-gp-dragan-tensorflow-2,No Notebooks
+drewnf_tensorflow_object_tracking_video,/home/saurabh/method-energy-dataset/projects/drewnf_tensorflow_object_tracking_video,No Notebooks
+googlecloudplatform_tensorflow-recommendation-wals,/home/saurabh/method-energy-dataset/projects/googlecloudplatform_tensorflow-recommendation-wals,Notebooks exist
+tensorflow_benchmarks,/home/saurabh/method-energy-dataset/projects/tensorflow_benchmarks,No Notebooks
+morvanzhou_tensorflow-tutorial,/home/saurabh/method-energy-dataset/projects/morvanzhou_tensorflow-tutorial,No Notebooks
+amir-abdi_keras_to_tensorflow,/home/saurabh/method-energy-dataset/projects/amir-abdi_keras_to_tensorflow,Notebooks exist
+yahoo_tensorflowonspark,/home/saurabh/method-energy-dataset/projects/yahoo_tensorflowonspark,No Notebooks
+morvanzhou_tensorflow2-tutorial,/home/saurabh/method-energy-dataset/projects/morvanzhou_tensorflow2-tutorial,No Notebooks
+detectionteamucas_r2cnn-plus-plus_tensorflow,/home/saurabh/method-energy-dataset/projects/detectionteamucas_r2cnn-plus-plus_tensorflow,No Notebooks
+bilylee_siamfc-tensorflow,/home/saurabh/method-energy-dataset/projects/bilylee_siamfc-tensorflow,Notebooks exist
+tensorflow_similarity,/home/saurabh/method-energy-dataset/projects/tensorflow_similarity,Notebooks exist
+tensorflow_hub,/home/saurabh/method-energy-dataset/projects/tensorflow_hub,No Notebooks
+pinto0309_tflite2tensorflow,/home/saurabh/method-energy-dataset/projects/pinto0309_tflite2tensorflow,No Notebooks
+carlthome_tensorflow-convlstm-cell,/home/saurabh/method-energy-dataset/projects/carlthome_tensorflow-convlstm-cell,No Notebooks
+thinklab-sjtu_csl_retinanet_tensorflow,/home/saurabh/method-energy-dataset/projects/thinklab-sjtu_csl_retinanet_tensorflow,No Notebooks
+vanhuyz_cyclegan-tensorflow,/home/saurabh/method-energy-dataset/projects/vanhuyz_cyclegan-tensorflow,No Notebooks
+philipperemy_tensorflow-ctc-speech-recognition,/home/saurabh/method-energy-dataset/projects/philipperemy_tensorflow-ctc-speech-recognition,No Notebooks
+edjeelectronics_tensorflow-object-detection-on-the-raspberry-pi,/home/saurabh/method-energy-dataset/projects/edjeelectronics_tensorflow-object-detection-on-the-raspberry-pi,No Notebooks
+tection-on-the-raspberry-pi,/home/saurabh/method-energy-dataset/projects/edjeelectronics_tensorflow-object-detection-on-the-raspberry-pi,No Notebooks
