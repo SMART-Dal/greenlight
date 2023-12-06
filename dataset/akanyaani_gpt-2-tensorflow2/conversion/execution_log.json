@@ -1,0 +1,23 @@
+2023-12-03 03:36:23.826541: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:36:23.866063: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:36:23.866103: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:36:23.866132: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:36:23.874073: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:36:24.627285: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [03:36:25] Waiting before running function for 10 seconds.
+[EXECUTION] [03:36:35] Sensors started
+[STABLE CHECK] [03:36:38] Success: temperature is below threshold.
+[MAIN] [03:36:38] Terminated sensors
+[STABLE CHECK] [03:36:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:36:58] Success: Machine is stable.
+[EXECUTION] [03:36:58] Successfully reached stable state
+[EXECUTION] [03:36:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:37:28] Performed tensorflow.python.autograph.pyct.cache.UnboundInstanceCache() on input and will now save energy data.
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/autograph/impl/conversion_method-level.py", line 22, in <module>
+    after_execution_INSERTED_INTO_SCRIPT(start_times=start_times_INSERTED_INTO_SCRIPT, experiment_file_path=EXPERIMENT_FILE_PATH, function_to_run='tensorflow.python.autograph.pyct.cache.UnboundInstanceCache()', project_metadata={'project_name': 'akanyaani_gpt-2-tensorflow2', 'project_repository': 'https://github.com/akanyaani/gpt-2-tensorflow2.0.git', 'project_owner': 'akanyaani', 'project_branch': 'master', 'project_commit': 'ab93122396a02bfd76530ac6b414a525970bba96', 'project_commit_date': '2022-12-28T12:35:54+05:30', 'script_path': '/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/autograph/impl/conversion.py', 'api_call_line': 30}, method_object=None, function_args=None, function_kwargs=None)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/codegreen/fecom/measurement/execution.py", line 267, in after_execution
+    with open(skip_calls_file_path, 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/saurabh/method-energy-dataset/dataset/conversion/skip_calls.json'

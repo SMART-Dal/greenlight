@@ -1,0 +1,35 @@
+2023-12-03 03:03:44.140483: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:03:44.171453: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:03:44.171479: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:03:44.171500: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:03:44.177257: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:03:44.921769: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-03 03:03:46.020650: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2211] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+[EXECUTION] [03:03:46] Waiting before running function for 10 seconds.
+[EXECUTION] [03:03:56] Sensors started
+[STABLE CHECK] [03:03:59] Success: temperature is below threshold.
+[MAIN] [03:03:59] Terminated sensors
+[STABLE CHECK] [03:03:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:04:19] Not stable: stdev/mean is 0.0342299708709012, which is greater than 0.03
+[STABLE CHECK] [03:04:19] Machine is not stable yet.
+[STABLE CHECK] [03:04:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:04:39] Success: Machine is stable.
+[EXECUTION] [03:04:39] Successfully reached stable state
+[EXECUTION] [03:04:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:05:09] Performed tensorflow.core.protobuf.tensorflow_server_pb2.ServerDef() on input and will now save energy data.
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/debug/lib/grpc_tensorflow_server_method-level.py", line 98, in <module>
+    app.run(main=main, argv=[sys.argv[0]] + unparsed)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/debug/lib/grpc_tensorflow_server_method-level.py", line 72, in main
+    after_execution_INSERTED_INTO_SCRIPT(start_times=start_times_INSERTED_INTO_SCRIPT, experiment_file_path=EXPERIMENT_FILE_PATH, function_to_run='tensorflow.core.protobuf.tensorflow_server_pb2.ServerDef()', project_metadata={'project_name': 'akanyaani_gpt-2-tensorflow2', 'project_repository': 'https://github.com/akanyaani/gpt-2-tensorflow2.0.git', 'project_owner': 'akanyaani', 'project_branch': 'master', 'project_commit': 'ab93122396a02bfd76530ac6b414a525970bba96', 'project_commit_date': '2022-12-28T12:35:54+05:30', 'script_path': '/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/debug/lib/grpc_tensorflow_server.py', 'api_call_line': 90}, method_object=None, function_args=None, function_kwargs={'protocol': 'grpc'})
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/codegreen/fecom/measurement/execution.py", line 267, in after_execution
+    with open(skip_calls_file_path, 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/saurabh/method-energy-dataset/dataset/grpc_tensorflow_server/skip_calls.json'

@@ -5,7 +5,7 @@ import os
 json_file_path = "projects/projects.json"  # Replace with the actual path to your JSON file
 
 # Define the target directory where repositories will be cloned
-target_dir = "projects/"  # Replace with your target directory
+target_dir = "projects/0_owner"  # Replace with your target directory
 
 # Make the target directory if it doesn't exist
 # os.makedirs(target_dir, exist_ok=True)

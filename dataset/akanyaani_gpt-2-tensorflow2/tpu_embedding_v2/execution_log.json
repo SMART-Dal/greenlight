@@ -1,0 +1,29 @@
+2023-12-03 03:13:12.196890: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:13:12.234993: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:13:12.235030: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:13:12.235061: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:13:12.242952: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:13:13.203869: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [03:13:14] Waiting before running function for 10 seconds.
+[EXECUTION] [03:13:24] Sensors started
+[STABLE CHECK] [03:13:27] Success: temperature is below threshold.
+[MAIN] [03:13:27] Terminated sensors
+[STABLE CHECK] [03:13:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:13:47] Not stable: stdev/mean is 0.04763275266397849, which is greater than 0.03
+[STABLE CHECK] [03:13:47] Machine is not stable yet.
+[STABLE CHECK] [03:13:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:14:07] Success: Machine is stable.
+[EXECUTION] [03:14:07] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/tpu/tpu_embedding_v2_method-level.py", line 1182, in <module>
+    registration.register_tf_checkpoint_saver('TPUEmbeddingCallback', predicate=lambda x: isinstance(x, TPUEmbedding), save_fn=_save_callback, restore_fn=_restore_callback, strict_predicate_restore=False)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/saved_model/registration/__init__.py", line 43, in register_tf_checkpoint_saver
+    return register_checkpoint_saver(
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/saved_model/registration/registration.py", line 327, in register_checkpoint_saver
+    _saver_registry.register(package, name, predicate, (save_fn, restore_fn,
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/saved_model/registration/registration.py", line 77, in register
+    raise ValueError(
+ValueError: The name 'tf.TPUEmbeddingCallback' has already been registered to a checkpoint saver. Found: (<function _save_callback at 0x7ff6dddddea0>, <function _restore_callback at 0x7ff6dddddfc0>, False)

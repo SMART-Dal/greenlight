@@ -1,0 +1,19 @@
+2023-12-03 04:27:31.051553: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 04:27:31.090738: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 04:27:31.090777: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 04:27:31.090807: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 04:27:31.098693: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 04:27:32.078968: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [04:27:33] Waiting before running function for 10 seconds.
+[EXECUTION] [04:27:43] Sensors started
+[STABLE CHECK] [04:27:46] Success: temperature is below threshold.
+[MAIN] [04:27:46] Terminated sensors
+[STABLE CHECK] [04:27:46] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:28:06] Success: Machine is stable.
+[EXECUTION] [04:28:06] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/debug/__init___method-level.py", line 58, in <module>
+    after_execution_INSERTED_INTO_SCRIPT(start_times=start_times_INSERTED_INTO_SCRIPT, experiment_file_path=EXPERIMENT_FILE_PATH, function_to_run='tensorflow.python.util.all_util.remove_undocumented()', project_metadata={'project_name': 'akanyaani_gpt-2-tensorflow2', 'project_repository': 'https://github.com/akanyaani/gpt-2-tensorflow2.0.git', 'project_owner': 'akanyaani', 'project_branch': 'master', 'project_commit': 'ab93122396a02bfd76530ac6b414a525970bba96', 'project_commit_date': '2022-12-28T12:35:54+05:30', 'script_path': '/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/debug/__init__.py', 'api_call_line': 71}, method_object=None, function_args=[__name__], function_kwargs=None)
+NameError: name 'after_execution_INSERTED_INTO_SCRIPT' is not defined

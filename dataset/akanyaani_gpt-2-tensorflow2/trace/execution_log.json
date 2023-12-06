@@ -1,0 +1,27 @@
+2023-12-03 03:40:16.143946: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:40:16.183109: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:40:16.183147: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:40:16.183177: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:40:16.191078: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:40:16.962926: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [03:40:18] Waiting before running function for 10 seconds.
+[EXECUTION] [03:40:28] Sensors started
+[STABLE CHECK] [03:40:31] Success: temperature is below threshold.
+[MAIN] [03:40:31] Terminated sensors
+[STABLE CHECK] [03:40:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:40:51] Not stable: stdev/mean is 0.049472861028184746, which is greater than 0.03
+[STABLE CHECK] [03:40:51] Machine is not stable yet.
+[STABLE CHECK] [03:40:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:41:11] Success: Machine is stable.
+[EXECUTION] [03:41:11] Successfully reached stable state
+[EXECUTION] [03:41:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:41:41] Performed tensorflow.python.util.tf_export.tf_export('types.experimental.SupportsTracingProtocol', v1=[]).expo on input and will now save energy data.
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/types/trace_method-level.py", line 288, in <module>
+    after_execution_INSERTED_INTO_SCRIPT(start_times=start_times_INSERTED_INTO_SCRIPT, experiment_file_path=EXPERIMENT_FILE_PATH, function_to_run="tensorflow.python.util.tf_export.tf_export('types.experimental.SupportsTracingProtocol', v1=[]).export_constant()", project_metadata={'project_name': 'akanyaani_gpt-2-tensorflow2', 'project_repository': 'https://github.com/akanyaani/gpt-2-tensorflow2.0.git', 'project_owner': 'akanyaani', 'project_branch': 'master', 'project_commit': 'ab93122396a02bfd76530ac6b414a525970bba96', 'project_commit_date': '2022-12-28T12:35:54+05:30', 'script_path': '/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/types/trace.py', 'api_call_line': 307}, method_object=None, function_args=[__name__, 'SupportsTracingProtocol'], function_kwargs=None)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/codegreen/fecom/measurement/execution.py", line 267, in after_execution
+    with open(skip_calls_file_path, 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/saurabh/method-energy-dataset/dataset/trace/skip_calls.json'

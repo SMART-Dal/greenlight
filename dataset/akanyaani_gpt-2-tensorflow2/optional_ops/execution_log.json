@@ -1,0 +1,25 @@
+2023-12-03 03:21:48.903289: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:21:48.943411: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:21:48.943453: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:21:48.943484: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:21:48.951546: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:21:49.947575: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [03:21:51] Waiting before running function for 10 seconds.
+[EXECUTION] [03:22:01] Sensors started
+[STABLE CHECK] [03:22:04] Success: temperature is below threshold.
+[MAIN] [03:22:04] Terminated sensors
+[STABLE CHECK] [03:22:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:22:24] Not stable: stdev/mean is 0.04426648408777332, which is greater than 0.03
+[STABLE CHECK] [03:22:24] Machine is not stable yet.
+[STABLE CHECK] [03:22:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:22:44] Success: Machine is stable.
+[EXECUTION] [03:22:44] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/data/ops/optional_ops_method-level.py", line 243, in <module>
+    nested_structure_coder.register_codec(nested_structure_coder.BuiltInTypeSpecCodec(OptionalSpec, struct_pb2.TypeSpecProto.OPTIONAL_SPEC))
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/saved_model/nested_structure_coder.py", line 387, in __init__
+    raise ValueError(
+ValueError: The proto value '7' is already registered.

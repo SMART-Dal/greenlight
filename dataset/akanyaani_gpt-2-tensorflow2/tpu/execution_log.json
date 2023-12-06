@@ -1,0 +1,15 @@
+2023-12-03 03:13:09.583019: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:13:09.615739: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:13:09.615765: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:13:09.615786: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:13:09.621715: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:13:10.289295: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/tpu/tpu_method-level.py", line 148, in <module>
+    def tpu_replicated_input_resolver(op: ops.Operation, resource_reads: object_identity.ObjectIdentitySet, resource_writes: object_identity.ObjectIdentitySet) -> bool:
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/auto_control_deps.py", line 583, in register_acd_resource_resolver
+    _acd_resource_resolvers_registry.register(f)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/registry.py", line 57, in register
+    raise KeyError(
+KeyError: "Registering two acd_resource_resolvers with name 'tpu_replicated_input_resolver'! (Previous registration was in register /home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/registry.py:65)"

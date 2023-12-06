@@ -1,0 +1,21 @@
+2023-12-03 03:06:56.206669: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:06:56.237334: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:06:56.237357: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:06:56.237380: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:06:56.243190: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:06:56.998482: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[EXECUTION] [03:06:58] Waiting before running function for 10 seconds.
+[EXECUTION] [03:07:08] Sensors started
+[STABLE CHECK] [03:07:11] Success: temperature is below threshold.
+[MAIN] [03:07:11] Terminated sensors
+[STABLE CHECK] [03:07:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:07:31] Success: Machine is stable.
+[EXECUTION] [03:07:31] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/saved_model/signature_serialization_method-level.py", line 204, in <module>
+    revived_types.register_revived_type('signature_map', lambda obj: isinstance(obj, _SignatureMap), versions=[revived_types.VersionedTypeRegistration(object_factory=lambda proto: _SignatureMap(), version=1, min_producer_version=1, min_consumer_version=1, setter=_SignatureMap._add_signature)])
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/tensorflow/python/saved_model/revived_types.py", line 136, in register_revived_type
+    raise AssertionError(f"Duplicate registrations for type '{identifier}'")
+AssertionError: Duplicate registrations for type 'signature_map'

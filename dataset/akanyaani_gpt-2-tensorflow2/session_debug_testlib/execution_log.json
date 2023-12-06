@@ -1,0 +1,36 @@
+2023-12-03 03:02:54.217184: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:02:54.259227: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:02:54.259272: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:02:54.259304: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:02:54.267464: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:02:55.018058: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-03 03:03:29.195853: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2211] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+Running tests under Python 3.10.8: /home/saurabh/miniconda3/bin/python3
+[EXECUTION] [03:02:56] Waiting before running function for 10 seconds.
+[EXECUTION] [03:03:06] Sensors started
+[STABLE CHECK] [03:03:09] Success: temperature is below threshold.
+[MAIN] [03:03:09] Terminated sensors
+[STABLE CHECK] [03:03:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:03:29] Success: Machine is stable.
+[EXECUTION] [03:03:29] Successfully reached stable state
+[ RUN      ] unittest.loader._FailedTest.1
+[  FAILED  ] unittest.loader._FailedTest.1
+[ RUN      ] unittest.loader._FailedTest.session_debug_testlib
+[  FAILED  ] unittest.loader._FailedTest.session_debug_testlib
+======================================================================
+ERROR: 1 (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute '1'
+
+======================================================================
+ERROR: session_debug_testlib (unittest.loader._FailedTest)
+----------------------------------------------------------------------
+AttributeError: module '__main__' has no attribute 'session_debug_testlib'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.000s
+
+FAILED (errors=2)

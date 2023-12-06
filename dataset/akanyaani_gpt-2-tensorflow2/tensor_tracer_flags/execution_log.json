@@ -1,0 +1,19 @@
+2023-12-03 03:16:07.396087: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:16:07.426637: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:16:07.426660: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:16:07.426680: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:16:07.432437: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:16:08.176895: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/tpu/tensor_tracer_flags_method-level.py", line 75, in <module>
+    DELTA_THRESHOLD = flags.DEFINE_float('delta_threshold', default=0.5, help='Log if history based diff crosses this threshold.')
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/flags/_defines.py", line 362, in DEFINE_float
+    result = DEFINE(
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/flags/_defines.py", line 100, in DEFINE
+    return DEFINE_flag(
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/flags/_defines.py", line 136, in DEFINE_flag
+    fv[flag.name] = flag
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/absl/flags/_flagvalues.py", line 429, in __setitem__
+    raise _exceptions.DuplicateFlagError.from_flag(name, self)
+absl.flags._exceptions.DuplicateFlagError: The flag 'delta_threshold' is defined twice. First from tensorflow.python.tpu.tensor_tracer_flags, Second from /home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/tpu/tensor_tracer_flags_method-level.py.  Description from first occurrence: Log if history based diff crosses this threshold.

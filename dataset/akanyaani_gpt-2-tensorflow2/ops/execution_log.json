@@ -1,0 +1,24 @@
+2023-12-03 03:42:24.484217: I tensorflow/core/util/port.cc:111] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-03 03:42:24.515061: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-12-03 03:42:24.515086: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-12-03 03:42:24.515107: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-12-03 03:42:24.520923: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-03 03:42:25.189344: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2023-12-03 03:42:59.530498: W tensorflow/tsl/lib/monitoring/collection_registry.cc:81] Trying to register 2 metrics with the same name: /tensorflow/api/ops_eager_execution. The old value will be erased in order to register a new one. Please check if you link the metric more than once, or if the name is already used by other metrics.
+[EXECUTION] [03:42:26] Waiting before running function for 10 seconds.
+[EXECUTION] [03:42:36] Sensors started
+[STABLE CHECK] [03:42:39] Success: temperature is below threshold.
+[MAIN] [03:42:39] Terminated sensors
+[STABLE CHECK] [03:42:39] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:42:59] Success: Machine is stable.
+[EXECUTION] [03:42:59] Successfully reached stable state
+[EXECUTION] [03:42:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:43:29] Performed tensorflow.python.eager.monitoring.BoolGauge() on input and will now save energy data.
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/framework/ops_method-level.py", line 73, in <module>
+    after_execution_INSERTED_INTO_SCRIPT(start_times=start_times_INSERTED_INTO_SCRIPT, experiment_file_path=EXPERIMENT_FILE_PATH, function_to_run='tensorflow.python.eager.monitoring.BoolGauge()', project_metadata={'project_name': 'akanyaani_gpt-2-tensorflow2', 'project_repository': 'https://github.com/akanyaani/gpt-2-tensorflow2.0.git', 'project_owner': 'akanyaani', 'project_branch': 'master', 'project_commit': 'ab93122396a02bfd76530ac6b414a525970bba96', 'project_commit_date': '2022-12-28T12:35:54+05:30', 'script_path': '/home/saurabh/method-energy-dataset/projects/1_done/akanyaani_gpt-2-tensorflow2_patched/venv/lib64/python3.10/site-packages/tensorflow/python/framework/ops.py', 'api_call_line': 90}, method_object=None, function_args=['/tensorflow/api/ops_eager_execution', 'Whether ops.enable_eager_execution() is called.'], function_kwargs=None)
+  File "/home/saurabh/miniconda3/lib/python3.10/site-packages/codegreen/fecom/measurement/execution.py", line 267, in after_execution
+    with open(skip_calls_file_path, 'w') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/home/saurabh/method-energy-dataset/dataset/ops/skip_calls.json'
