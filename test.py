@@ -1,13 +1,7 @@
-import requests
-from bs4 import BeautifulSoup
+import os
+from pathlib import Path
 
-url = "https://github.com/orgs/tensorflow/repositories"
-
-response = requests.get(url)
-soup = BeautifulSoup(response.text, 'html.parser')
-
-repo_names = []
-for repo in soup.select(".lh-condensed a"):
-    repo_names.append(repo.text.strip())
-
-print(repo_names)
+script = "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level.py"
+base_path = os.path.basename(Path(script)).replace("_method-level.py","")
+# base_path, ext = os.path.splitext(Path(script))
+print(base_path)

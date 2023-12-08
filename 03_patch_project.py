@@ -111,6 +111,7 @@ def project_patcher(
 #         with open(os.path.join(data_dir, repo_name, "git_metadata.json"), "w") as git_metadata_file:
 #             json.dump(git_metadata, git_metadata_file)
 
+directory_names = ["tensorflow_docs"]
 for repo_name in directory_names:
 # repo_name = "akanyaani_gpt-2-tensorflow2"
     repo_dir = os.path.join(repositories_dir, repo_name)

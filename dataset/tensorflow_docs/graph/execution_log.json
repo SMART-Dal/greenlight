@@ -1,0 +1,281 @@
+2023-12-08 04:26:47.319432: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [04:26:13] Waiting before running function for 10 seconds.
+[EXECUTION] [04:26:23] Sensors started
+[STABLE CHECK] [04:26:26] Success: temperature is below threshold.
+[MAIN] [04:26:26] Terminated sensors
+[STABLE CHECK] [04:26:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:26:46] Success: Machine is stable.
+[EXECUTION] [04:26:46] Successfully reached stable state
+[EXECUTION] [04:26:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:27:17] Performed tensorflow.constant() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:27:17] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:27:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+[EXECUTION] [04:27:17] Waiting before running function for 10 seconds.
+[EXECUTION] [04:27:27] Sensors started
+[STABLE CHECK] [04:27:30] Success: temperature is below threshold.
+[MAIN] [04:27:30] Terminated sensors
+[STABLE CHECK] [04:27:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:27:50] Success: Machine is stable.
+[EXECUTION] [04:27:50] Successfully reached stable state
+[EXECUTION] [04:27:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:28:20] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [04:28:20] skipping call added, current list is: ['tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 48.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:28:20] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:28:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+Multiple a of shape (1, 2) with b of shape (2, 1)
+[[5.5]]
+Add a of shape (1, 2) with b of shape (2, 1)
+[[10.5 10.5]
+ [ 1.5  1.5]]
+[EXECUTION] [04:28:21] Waiting before running function for 10 seconds.
+[EXECUTION] [04:28:31] Sensors started
+[STABLE CHECK] [04:28:34] Success: temperature is below threshold.
+[MAIN] [04:28:34] Terminated sensors
+[STABLE CHECK] [04:28:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:28:54] Success: Machine is stable.
+[EXECUTION] [04:28:54] Successfully reached stable state
+[EXECUTION] [04:28:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:29:24] Performed tensorflow.keras.layers.Dense() on input and will now save energy data.
+[EXECUTION] [04:29:24] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.keras.layers.Dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:29:24] Result: {'tensorflow.keras.layers.Dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [04:29:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+[EXECUTION] [04:29:24] Waiting before running function for 10 seconds.
+[EXECUTION] [04:29:34] Sensors started
+[STABLE CHECK] [04:29:37] Success: temperature is below threshold.
+[MAIN] [04:29:37] Terminated sensors
+[STABLE CHECK] [04:29:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:29:57] Success: Machine is stable.
+[EXECUTION] [04:29:57] Successfully reached stable state
+[EXECUTION] [04:29:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:30:27] Performed tensorflow.keras.layers.Dropout() on input and will now save energy data.
+[EXECUTION] [04:30:27] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.layers.Dropout()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:30:27] Result: {'tensorflow.keras.layers.Dropout()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [04:30:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+[EXECUTION] [04:30:27] Waiting before running function for 10 seconds.
+[EXECUTION] [04:30:37] Sensors started
+[STABLE CHECK] [04:30:40] Success: temperature is below threshold.
+[MAIN] [04:30:40] Terminated sensors
+[STABLE CHECK] [04:30:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:31:00] Not stable: stdev/mean is 0.03648166659714353, which is greater than 0.03
+[STABLE CHECK] [04:31:00] Machine is not stable yet.
+[STABLE CHECK] [04:31:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:31:20] Success: Machine is stable.
+[EXECUTION] [04:31:20] Successfully reached stable state
+[EXECUTION] [04:31:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:31:51] Performed tensorflow.function() on input and will now save energy data.
+[EXECUTION] [04:31:51] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.layers.Dropout()', 'tensorflow.function()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 43792.0
+4-size 43792.0
+++++++5++++++
+5-size 43792.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:31:51] Result: {'tensorflow.function()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:31:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+[EXECUTION] [04:31:51] Waiting before running function for 10 seconds.
+[EXECUTION] [04:32:01] Sensors started
+[STABLE CHECK] [04:32:04] Success: temperature is below threshold.
+[MAIN] [04:32:04] Terminated sensors
+[STABLE CHECK] [04:32:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:32:24] Success: Machine is stable.
+[EXECUTION] [04:32:24] Successfully reached stable state
+[EXECUTION] [04:32:24] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:32:54] Performed tensorflow.random.uniform() on input and will now save energy data.
+[EXECUTION] [04:32:54] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.layers.Dropout()', 'tensorflow.function()', 'tensorflow.random.uniform()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:32:54] Result: {'tensorflow.random.uniform()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"i
+[EXECUTION] [04:32:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph/experiment-1.json
+Shallow Model - Eager execution time: 1.9556596449692734
+Shallow Model - Graph-based execution time: 1.217231829999946
+Deep Model - Eager execution time: 2.008462462981697
+Deep Model - Graph-based execution time: 1.642798557993956

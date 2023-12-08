@@ -1,0 +1,1944 @@
+2023-12-08 02:50:25.832400: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-08 02:50:25.967969: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-08 02:50:26.600169: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 02:50:26.600222: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 02:50:26.600227: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-08 02:51:01.448697: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 02:51:01.448747: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[EXECUTION] [02:50:27] Waiting before running function for 10 seconds.
+[EXECUTION] [02:50:37] Sensors started
+[STABLE CHECK] [02:50:40] Success: temperature is below threshold.
+[MAIN] [02:50:40] Terminated sensors
+[STABLE CHECK] [02:50:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:51:00] Success: Machine is stable.
+[EXECUTION] [02:51:00] Successfully reached stable state
+[EXECUTION] [02:51:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:51:31] Performed tensorflow.ragged.constant() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+4-size 256.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+4-size 256.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+4-size 256.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+4-size 0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:51:31] Result: {'tensorflow.ragged.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [02:51:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [02:51:31] Waiting before running function for 10 seconds.
+[EXECUTION] [02:51:41] Sensors started
+[STABLE CHECK] [02:51:44] Success: temperature is below threshold.
+[MAIN] [02:51:44] Terminated sensors
+[STABLE CHECK] [02:51:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:52:04] Success: Machine is stable.
+[EXECUTION] [02:52:04] Successfully reached stable state
+[EXECUTION] [02:52:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:52:34] Performed tensorflow.ragged.constant() on input and will now save energy data.
+[EXECUTION] [02:52:34] skipping call added, current list is: ['tensorflow.ragged.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 280.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 392.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 280.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 392.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 280.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 392.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 280.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:52:34] Result: {'tensorflow.ragged.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [02:52:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[6, 4, 7, 4], [], [8, 12, 5], [9], []]>
+tf.Tensor([2.25              nan 5.33333333 6.                nan], shape=(5,), dtype=float64)
+<tf.RaggedTensor [[3, 1, 4, 1], [], [5, 9, 2], [6], [], [5, 3]]>
+<tf.RaggedTensor [[3, 1, 4, 1, 3, 1, 4, 1], [], [5, 9, 2, 5, 9, 2], [6, 6], []]>
+<tf.RaggedTensor [[b'So', b'lo'], [b'th', b'fo', b'al', b'th', b'fi']]>
+<tf.RaggedTensor [[9, 1, 16, 1], [], [25, 81, 4], [36], []]>
+tf.Tensor([3 1 4 1], shape=(4,), dtype=int32)
+<tf.RaggedTensor [[3, 1], [], [5, 9], [6], []]>
+<tf.RaggedTensor [[4, 1], [], [9, 2], [6], []]>
+<tf.RaggedTensor [[6, 4, 7, 4], [], [8, 12, 5], [9], []]>
+<tf.RaggedTensor [[4, 3, 7, 5], [], [10, 15, 9], [14], []]>
+<tf.RaggedTensor [[7, 3, 9, 3], [], [11, 19, 5], [13], []]>
+[EXECUTION] [02:52:35] Waiting before running function for 10 seconds.
+[EXECUTION] [02:52:45] Sensors started
+[STABLE CHECK] [02:52:48] Temperature too high: mean is 40.3, which is greater than 40
+[STABLE CHECK] [02:52:48] Temperature is too high.
+[STABLE CHECK] [02:52:48] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:53:08] Success: temperature is below threshold.
+[MAIN] [02:53:08] Terminated sensors
+[STABLE CHECK] [02:53:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:53:28] Success: Machine is stable.
+[EXECUTION] [02:53:28] Successfully reached stable state
+[EXECUTION] [02:53:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:53:58] Performed tensorflow.ragged.constant.to_list() on input and will now save energy data.
+[EXECUTION] [02:53:58] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1400.0
+outside_object_size
+[EXECUTION] [02:53:58] Result: {'tensorflow.ragged.constant.to_list()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [02:53:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [02:53:58] Waiting before running function for 10 seconds.
+[EXECUTION] [02:54:08] Sensors started
+[STABLE CHECK] [02:54:11] Success: temperature is below threshold.
+[MAIN] [02:54:11] Terminated sensors
+[STABLE CHECK] [02:54:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:54:31] Not stable: stdev/mean is 0.038748628926573124, which is greater than 0.03
+[STABLE CHECK] [02:54:31] Machine is not stable yet.
+[STABLE CHECK] [02:54:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:54:51] Success: Machine is stable.
+[EXECUTION] [02:54:51] Successfully reached stable state
+[EXECUTION] [02:54:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:55:21] Performed tensorflow.ragged.constant.numpy() on input and will now save energy data.
+[EXECUTION] [02:55:21] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1400.0
+outside_object_size
+[EXECUTION] [02:55:21] Result: {'tensorflow.ragged.constant.numpy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [02:55:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[b"Let's", b'build', b'some', b'ragged', b'tensors', b'!'],
+ [b'We', b'can', b'use', b'tf.ragged.constant', b'.']]>
+<tf.RaggedTensor [[[b'I', b'have', b'a', b'cat'], [b'His', b'name', b'is', b'Mat']],
+ [[b'Do', b'you', b'want', b'to', b'come', b'visit'],
+  [b"I'm", b'free', b'tomorrow']]]>
+<tf.RaggedTensor [[3, 1, 4, 1], [], [5, 9], [2]]>
+<tf.RaggedTensor [[3, 1, 4, 1], [], [5, 9], [2]]>
+<tf.RaggedTensor [[3, 1, 4, 1], [], [5, 9], [2]]>
+<tf.RaggedTensor [[b'Hi'], [b'How', b'are', b'you']]>
+<tf.RaggedTensor [[[1, 2], [3]], [[4, 5]]]>
+Can't convert Python sequence with mixed types to Tensor.
+all scalar values must have the same nesting depth
+[EXECUTION] [02:55:21] Waiting before running function for 10 seconds.
+[EXECUTION] [02:55:31] Sensors started
+[STABLE CHECK] [02:55:34] Success: temperature is below threshold.
+[MAIN] [02:55:34] Terminated sensors
+[STABLE CHECK] [02:55:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:55:54] Success: Machine is stable.
+[EXECUTION] [02:55:54] Successfully reached stable state
+[EXECUTION] [02:55:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:56:24] Performed tensorflow.Variable() on input and will now save energy data.
+[EXECUTION] [02:56:24] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 16384.0
+4-size 16384.0
+++++++1++++++
+1-size 16384.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:56:24] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:56:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [02:56:24] Waiting before running function for 10 seconds.
+[EXECUTION] [02:56:34] Sensors started
+[STABLE CHECK] [02:56:37] Temperature too high: mean is 40.73684210526316, which is greater than 40
+[STABLE CHECK] [02:56:37] Temperature is too high.
+[STABLE CHECK] [02:56:37] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:56:57] Success: temperature is below threshold.
+[MAIN] [02:56:57] Terminated sensors
+[STABLE CHECK] [02:56:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:57:17] Success: Machine is stable.
+[EXECUTION] [02:57:17] Successfully reached stable state
+[EXECUTION] [02:57:17] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:57:47] Performed tensorflow.strings.to_hash_bucket_fast() on input and will now save energy data.
+[EXECUTION] [02:57:47] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 32.0
+4-size 1432.0
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:57:47] Result: {'tensorflow.strings.to_hash_bucket_fast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
+[EXECUTION] [02:57:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [02:57:47] Waiting before running function for 10 seconds.
+[EXECUTION] [02:57:58] Sensors started
+[STABLE CHECK] [02:58:01] Success: temperature is below threshold.
+[MAIN] [02:58:01] Terminated sensors
+[STABLE CHECK] [02:58:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:58:21] Success: Machine is stable.
+[EXECUTION] [02:58:21] Successfully reached stable state
+[EXECUTION] [02:58:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:58:51] Performed tensorflow.nn.embedding_lookup() on input and will now save energy data.
+[EXECUTION] [02:58:51] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 3672.0
+++++++5++++++
+5-size 1400.0
+4-size 5072.0
+++++++5++++++
+5-size 3672.0
+++++++5++++++
+5-size 1400.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:58:51] Result: {'tensorflow.nn.embedding_lookup()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [02:58:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [02:58:51] Waiting before running function for 10 seconds.
+[EXECUTION] [02:59:01] Sensors started
+[STABLE CHECK] [02:59:04] Success: temperature is below threshold.
+[MAIN] [02:59:04] Terminated sensors
+[STABLE CHECK] [02:59:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:59:24] Not stable: stdev/mean is 0.038583399199624065, which is greater than 0.03
+[STABLE CHECK] [02:59:24] Machine is not stable yet.
+[STABLE CHECK] [02:59:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:59:44] Success: Machine is stable.
+[EXECUTION] [02:59:44] Successfully reached stable state
+[EXECUTION] [02:59:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:00:14] Performed tensorflow.fill() on input and will now save energy data.
+[EXECUTION] [03:00:14] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++1++++++
+1-size 8.0
+++++++5++++++
+5-size 32.0
+4-size 40.0
+++++++1++++++
+1-size 8.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 56.0
+4-size 96.0
+++++++4++++++
+++++++1++++++
+1-size 8.0
+++++++5++++++
+5-size 32.0
+4-size 40.0
+++++++1++++++
+1-size 8.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:00:14] Result: {'tensorflow.fill()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
+[EXECUTION] [03:00:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:00:14] Waiting before running function for 10 seconds.
+[EXECUTION] [03:00:24] Sensors started
+[STABLE CHECK] [03:00:27] Temperature too high: mean is 40.94444444444444, which is greater than 40
+[STABLE CHECK] [03:00:27] Temperature is too high.
+[STABLE CHECK] [03:00:27] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:00:47] Success: temperature is below threshold.
+[MAIN] [03:00:47] Terminated sensors
+[STABLE CHECK] [03:00:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:01:07] Success: Machine is stable.
+[EXECUTION] [03:01:07] Successfully reached stable state
+[EXECUTION] [03:01:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:01:37] Performed tensorflow.concat() on input and will now save energy data.
+[EXECUTION] [03:01:37] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++1++++++
+1-size 24.0
+++++++5++++++
+5-size 1400.0
+++++++1++++++
+1-size 24.0
+4-size 1448.0
+++++++1++++++
+1-size 24.0
+++++++5++++++
+5-size 1400.0
+++++++1++++++
+1-size 24.0
+4-size 1448.0
+++++++4++++++
+++++++1++++++
+1-size 24.0
+++++++5++++++
+5-size 1400.0
+++++++1++++++
+1-size 24.0
+4-size 1448.0
+++++++1++++++
+1-size 24.0
+++++++5++++++
+5-size 1400.0
+++++++1++++++
+1-size 24.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:01:37] Result: {'tensorflow.concat()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
+[EXECUTION] [03:01:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:01:37] Waiting before running function for 10 seconds.
+[EXECUTION] [03:01:47] Sensors started
+[STABLE CHECK] [03:01:50] Success: temperature is below threshold.
+[MAIN] [03:01:50] Terminated sensors
+[STABLE CHECK] [03:01:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:02:10] Success: Machine is stable.
+[EXECUTION] [03:02:10] Successfully reached stable state
+[EXECUTION] [03:02:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:02:40] Performed tensorflow.strings.join() on input and will now save energy data.
+[EXECUTION] [03:02:40] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 1400.0
+4-size 2800.0
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 1400.0
+4-size 2800.0
+++++++4++++++
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 1400.0
+4-size 2800.0
+++++++5++++++
+5-size 1400.0
+++++++5++++++
+5-size 1400.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:02:40] Result: {'tensorflow.strings.join()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [03:02:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:02:40] Waiting before running function for 10 seconds.
+[EXECUTION] [03:02:51] Sensors started
+[STABLE CHECK] [03:02:54] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [03:02:54] Temperature is too high.
+[STABLE CHECK] [03:02:54] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:03:14] Success: temperature is below threshold.
+[MAIN] [03:03:14] Terminated sensors
+[STABLE CHECK] [03:03:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:03:34] Not stable: stdev/mean is 0.032432601389157004, which is greater than 0.03
+[STABLE CHECK] [03:03:34] Machine is not stable yet.
+[STABLE CHECK] [03:03:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:03:54] Success: Machine is stable.
+[EXECUTION] [03:03:54] Successfully reached stable state
+[EXECUTION] [03:03:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:04:24] Performed tensorflow.reduce_mean() on input and will now save energy data.
+[EXECUTION] [03:04:24] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1400.0
+4-size 1400.0
+++++++5++++++
+5-size 1400.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:04:24] Result: {'tensorflow.reduce_mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [03:04:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+tf.Tensor(
+[[-0.01274517  0.00775507  0.03177014 -0.09797693]
+ [-0.18158303 -0.06052594 -0.0454514  -0.14299972]
+ [ 0.1307861   0.07732766  0.116537    0.1242734 ]], shape=(3, 4), dtype=float32)
+tf.Tensor([2 3], shape=(2,), dtype=int64)
+<tf.RaggedTensor [[b'John', b'fell', b'asleep'], [b'a', b'big', b'dog', b'barked'],
+ [b'my', b'cat', b'is', b'fuzzy']]>
+[EXECUTION] [03:04:24] Waiting before running function for 10 seconds.
+[EXECUTION] [03:04:34] Sensors started
+[STABLE CHECK] [03:04:37] Success: temperature is below threshold.
+[MAIN] [03:04:37] Terminated sensors
+[STABLE CHECK] [03:04:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:04:57] Success: Machine is stable.
+[EXECUTION] [03:04:57] Successfully reached stable state
+[EXECUTION] [03:04:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:05:27] Performed tensorflow.ragged.constant.to_sparse() on input and will now save energy data.
+[EXECUTION] [03:05:27] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1400.0
+outside_object_size
+[EXECUTION] [03:05:27] Result: {'tensorflow.ragged.constant.to_sparse()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [03:05:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:05:27] Waiting before running function for 10 seconds.
+[EXECUTION] [03:05:37] Sensors started
+[STABLE CHECK] [03:05:40] Temperature too high: mean is 41.15, which is greater than 40
+[STABLE CHECK] [03:05:40] Temperature is too high.
+[STABLE CHECK] [03:05:40] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:06:00] Success: temperature is below threshold.
+[MAIN] [03:06:00] Terminated sensors
+[STABLE CHECK] [03:06:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:06:20] Success: Machine is stable.
+[EXECUTION] [03:06:20] Successfully reached stable state
+[EXECUTION] [03:06:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:06:50] Performed tensorflow.sparse.concat() on input and will now save energy data.
+WARNING:tensorflow:Layer lstm will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+WARNING:tensorflow:Layer lstm_1 will not use cuDNN kernels since it doesn't meet the criteria. It will use a generic GPU kernel as fallback when running on GPU.
+[EXECUTION] [03:06:50] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:06:50] Result: {'tensorflow.sparse.concat()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [03:06:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+tf.Tensor(
+[[b'John' b'' b'' b'fell' b'asleep']
+ [b'a' b'big' b'dog' b'barked' b'']
+ [b'my' b'cat' b'' b'is' b'fuzzy']], shape=(3, 5), dtype=string)
+[EXECUTION] [03:06:50] Waiting before running function for 10 seconds.
+[EXECUTION] [03:07:00] Sensors started
+[STABLE CHECK] [03:07:03] Success: temperature is below threshold.
+[MAIN] [03:07:03] Terminated sensors
+[STABLE CHECK] [03:07:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:07:23] Success: Machine is stable.
+[EXECUTION] [03:07:23] Successfully reached stable state
+[EXECUTION] [03:07:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:07:53] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [03:07:53] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 296.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 296.0
+++++++4++++++
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 296.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:07:53] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [03:07:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:07:53] Waiting before running function for 10 seconds.
+[EXECUTION] [03:08:04] Sensors started
+[STABLE CHECK] [03:08:07] Temperature too high: mean is 40.65, which is greater than 40
+[STABLE CHECK] [03:08:07] Temperature is too high.
+[STABLE CHECK] [03:08:07] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:08:27] Success: temperature is below threshold.
+[MAIN] [03:08:27] Terminated sensors
+[STABLE CHECK] [03:08:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:08:47] Success: Machine is stable.
+[EXECUTION] [03:08:47] Successfully reached stable state
+[EXECUTION] [03:08:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:09:17] Performed tensorflow.strings.split() on input and will now save energy data.
+[EXECUTION] [03:09:17] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 32.0
+++++++5++++++
+5-size 56.0
+4-size 88.0
+++++++1++++++
+1-size 32.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:09:17] Result: {'tensorflow.strings.split()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [03:09:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:09:17] Waiting before running function for 10 seconds.
+[EXECUTION] [03:09:27] Sensors started
+[STABLE CHECK] [03:09:30] Success: temperature is below threshold.
+[MAIN] [03:09:30] Terminated sensors
+[STABLE CHECK] [03:09:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:09:50] Success: Machine is stable.
+[EXECUTION] [03:09:50] Successfully reached stable state
+[EXECUTION] [03:09:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:10:20] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 16136.0
+++++++5++++++
+5-size 10248.0
+++++++5++++++
+5-size 30840.0
+++++++5++++++
+5-size 11464.0
+++++++5++++++
+5-size 6912.0
+++++++5++++++
+5-size 11432.0
+4-size 87032.0
+++++++5++++++
+5-size 16136.0
+++++++5++++++
+5-size 10248.0
+++++++5++++++
+5-size 30840.0
+++++++5++++++
+5-size 11464.0
+++++++5++++++
+5-size 6912.0
+++++++5++++++
+5-size 11432.0
+4-size 87032.0
+++++++4++++++
+++++++5++++++
+5-size 16136.0
+++++++5++++++
+5-size 10248.0
+++++++5++++++
+5-size 30840.0
+++++++5++++++
+5-size 11464.0
+++++++5++++++
+5-size 6912.0
+++++++5++++++
+5-size 11432.0
+4-size 87032.0
+++++++5++++++
+5-size 16136.0
+++++++5++++++
+5-size 10248.0
+++++++5++++++
+5-size 30840.0
+++++++5++++++
+5-size 11464.0
+++++++5++++++
+5-size 6912.0
+++++++5++++++
+5-size 11432.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:10:20] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [03:10:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:10:20] Waiting before running function for 10 seconds.
+[EXECUTION] [03:10:30] Sensors started
+[STABLE CHECK] [03:10:33] Success: temperature is below threshold.
+[MAIN] [03:10:33] Terminated sensors
+[STABLE CHECK] [03:10:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:10:53] Success: Machine is stable.
+[EXECUTION] [03:10:53] Successfully reached stable state
+[EXECUTION] [03:10:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:11:23] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
+[EXECUTION] [03:11:23] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 120.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 150328.0
+outside_object_size
+[EXECUTION] [03:11:23] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [03:11:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:11:23] Waiting before running function for 10 seconds.
+[EXECUTION] [03:11:33] Sensors started
+[STABLE CHECK] [03:11:36] Success: temperature is below threshold.
+[MAIN] [03:11:36] Terminated sensors
+[STABLE CHECK] [03:11:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:11:56] Success: Machine is stable.
+[EXECUTION] [03:11:56] Successfully reached stable state
+Epoch 1/5
+2023-12-08 03:11:59.362530: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+
+1/1 [==============================] - ETA: 0s - loss: 7.7125
+1/1 [==============================] - 3s 3s/step - loss: 7.7125
+Epoch 2/5
+
+1/1 [==============================] - ETA: 0s - loss: 7.7125
+1/1 [==============================] - 0s 15ms/step - loss: 7.7125
+Epoch 3/5
+
+1/1 [==============================] - ETA: 0s - loss: 7.7125
+1/1 [==============================] - 0s 16ms/step - loss: 7.7125
+Epoch 4/5
+
+1/1 [==============================] - ETA: 0s - loss: 7.7125
+1/1 [==============================] - 0s 13ms/step - loss: 7.7125
+Epoch 5/5
+
+1/1 [==============================] - ETA: 0s - loss: 7.7125
+1/1 [==============================] - 0s 12ms/step - loss: 7.7125
+[EXECUTION] [03:12:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:12:30] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 2016.0
+++++++1++++++
+1-size 4.0
+4-size 2020.0
+++++++5++++++
+5-size 2016.0
+++++++1++++++
+1-size 4.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [03:12:30] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [03:12:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 212ms/step
+[[-0.00542469]
+ [-0.00253907]
+ [-0.00016338]
+ [-0.00187061]]
+[EXECUTION] [03:12:30] Waiting before running function for 10 seconds.
+[EXECUTION] [03:12:40] Sensors started
+[STABLE CHECK] [03:12:43] Temperature too high: mean is 41.611111111111114, which is greater than 40
+[STABLE CHECK] [03:12:43] Temperature is too high.
+[STABLE CHECK] [03:12:43] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:13:03] Success: temperature is below threshold.
+[MAIN] [03:13:03] Terminated sensors
+[STABLE CHECK] [03:13:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:13:23] Success: Machine is stable.
+[EXECUTION] [03:13:23] Successfully reached stable state
+[EXECUTION] [03:13:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:13:53] Performed tensorflow.io.parse_example() on input and will now save energy data.
+[EXECUTION] [03:13:53] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+4-size 320.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 432.0
+++++++4++++++
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+4-size 320.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 88.0
+++++++5++++++
+5-size 80.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:13:53] Result: {'tensorflow.io.parse_example()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [03:13:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+colors=<tf.RaggedTensor [[b'red', b'blue'], [b'orange'], [b'black', b'yellow'], [b'green']]>
+lengths=<tf.RaggedTensor [[7], [], [1, 3], [3, 5, 2]]>
+[EXECUTION] [03:13:53] Waiting before running function for 10 seconds.
+[EXECUTION] [03:14:03] Sensors started
+[STABLE CHECK] [03:14:06] Success: temperature is below threshold.
+[MAIN] [03:14:06] Terminated sensors
+[STABLE CHECK] [03:14:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:14:26] Success: Machine is stable.
+[EXECUTION] [03:14:26] Successfully reached stable state
+[EXECUTION] [03:14:26] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:14:56] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
+[EXECUTION] [03:14:56] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:14:56] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [03:14:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+Element 0:
+        colors = [b'red' b'blue']
+       lengths = [7]
+Element 1:
+        colors = [b'orange']
+       lengths = []
+Element 2:
+        colors = [b'black' b'yellow']
+       lengths = [1 3]
+Element 3:
+        colors = [b'green']
+       lengths = [3 5 2]
+[EXECUTION] [03:14:56] Waiting before running function for 10 seconds.
+[EXECUTION] [03:15:07] Sensors started
+[STABLE CHECK] [03:15:10] Success: temperature is below threshold.
+[MAIN] [03:15:10] Terminated sensors
+[STABLE CHECK] [03:15:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:15:30] Success: Machine is stable.
+[EXECUTION] [03:15:30] Successfully reached stable state
+[EXECUTION] [03:15:30] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:16:00] Performed tensorflow.data.Dataset.from_tensor_slices.batch() on input and will now save energy data.
+[EXECUTION] [03:16:00] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 15704.0
+outside_object_size
+[EXECUTION] [03:16:00] Result: {'tensorflow.data.Dataset.from_tensor_slices.batch()': {'energy_data': {'cpu': '{"columns":["time_el
+[EXECUTION] [03:16:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+Element 0:
+        colors = <tf.RaggedTensor [[b'red', b'blue'], [b'orange']]>
+       lengths = <tf.RaggedTensor [[7], []]>
+Element 1:
+        colors = <tf.RaggedTensor [[b'black', b'yellow'], [b'green']]>
+       lengths = <tf.RaggedTensor [[1, 3], [3, 5, 2]]>
+[EXECUTION] [03:16:00] Waiting before running function for 10 seconds.
+[EXECUTION] [03:16:10] Sensors started
+[STABLE CHECK] [03:16:13] Success: temperature is below threshold.
+[MAIN] [03:16:13] Terminated sensors
+[STABLE CHECK] [03:16:13] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:16:33] Success: Machine is stable.
+[EXECUTION] [03:16:33] Successfully reached stable state
+[EXECUTION] [03:16:33] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:17:03] Performed tensorflow.data.Dataset.from_tensor_slices.batch.unbatch() on input and will now save energy data.
+2023-12-08 03:19:10.125727: W tensorflow/core/grappler/optimizers/loop_optimizer.cc:907] Skipping loop optimization for Merge node with control input: RaggedConcat/assert_equal_1/Assert/AssertGuard/branch_executed/_9
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_1 in the SavedModel.
+[EXECUTION] [03:17:03] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 19112.0
+outside_object_size
+[EXECUTION] [03:17:03] Result: {'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()': {'energy_data': {'cpu': '{"columns":[
+[EXECUTION] [03:17:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+Element 0:
+        colors = [b'red' b'blue']
+       lengths = [7]
+Element 1:
+        colors = [b'orange']
+       lengths = []
+Element 2:
+        colors = [b'black' b'yellow']
+       lengths = [1 3]
+Element 3:
+        colors = [b'green']
+       lengths = [3 5 2]
+[EXECUTION] [03:17:03] Waiting before running function for 10 seconds.
+[EXECUTION] [03:17:13] Sensors started
+[STABLE CHECK] [03:17:16] Success: temperature is below threshold.
+[MAIN] [03:17:16] Terminated sensors
+[STABLE CHECK] [03:17:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:17:36] Success: Machine is stable.
+[EXECUTION] [03:17:36] Successfully reached stable state
+[EXECUTION] [03:17:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:18:06] Performed tensorflow.data.Dataset.from_tensor_slices.map() on input and will now save energy data.
+[EXECUTION] [03:18:06] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 48584.0
+outside_object_size
+[EXECUTION] [03:18:06] Result: {'tensorflow.data.Dataset.from_tensor_slices.map()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [03:18:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:18:06] Waiting before running function for 10 seconds.
+[EXECUTION] [03:18:16] Sensors started
+[STABLE CHECK] [03:18:19] Success: temperature is below threshold.
+[MAIN] [03:18:19] Terminated sensors
+[STABLE CHECK] [03:18:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:18:39] Success: Machine is stable.
+[EXECUTION] [03:18:39] Successfully reached stable state
+[EXECUTION] [03:18:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:19:09] Performed tensorflow.data.Dataset.from_tensor_slices.map.apply() on input and will now save energy data.
+[EXECUTION] [03:19:09] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 48584.0
+outside_object_size
+[EXECUTION] [03:19:09] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.apply()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [03:19:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[0], [0, 1, 2, 3, 4]]>
+<tf.RaggedTensor [[0, 1, 2], [0, 1]]>
+<tf.RaggedTensor [[0, 1, 2, 3, 4, 5, 6, 7]]>
+Element 0:
+   mean_length = 7
+ length_ranges = <tf.RaggedTensor [[0, 1, 2, 3, 4, 5, 6]]>
+Element 1:
+   mean_length = 0
+ length_ranges = <tf.RaggedTensor []>
+Element 2:
+   mean_length = 2
+ length_ranges = <tf.RaggedTensor [[0], [0, 1, 2]]>
+Element 3:
+   mean_length = 3
+ length_ranges = <tf.RaggedTensor [[0, 1, 2], [0, 1, 2, 3, 4], [0, 1]]>
+<tf.RaggedTensor [[2, 3], [4], [5, 6, 7]]>
+[EXECUTION] [03:19:10] Waiting before running function for 10 seconds.
+[EXECUTION] [03:19:20] Sensors started
+[STABLE CHECK] [03:19:23] Success: temperature is below threshold.
+[MAIN] [03:19:23] Terminated sensors
+[STABLE CHECK] [03:19:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:19:43] Success: Machine is stable.
+[EXECUTION] [03:19:43] Successfully reached stable state
+[EXECUTION] [03:19:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:20:14] Performed tensorflow.saved_model.save() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+++++++5++++++
+5-size 72.0
+4-size 120.0
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:20:14] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [03:20:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:20:14] Waiting before running function for 10 seconds.
+[EXECUTION] [03:20:24] Sensors started
+[STABLE CHECK] [03:20:27] Success: temperature is below threshold.
+[MAIN] [03:20:27] Terminated sensors
+[STABLE CHECK] [03:20:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:20:47] Success: Machine is stable.
+[EXECUTION] [03:20:47] Successfully reached stable state
+[EXECUTION] [03:20:48] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:21:18] Performed tensorflow.saved_model.load() on input and will now save energy data.
+[EXECUTION] [03:21:18] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:21:18] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [03:21:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:21:18] Waiting before running function for 10 seconds.
+[EXECUTION] [03:21:28] Sensors started
+[STABLE CHECK] [03:21:31] Success: temperature is below threshold.
+[MAIN] [03:21:31] Terminated sensors
+[STABLE CHECK] [03:21:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:21:51] Success: Machine is stable.
+[EXECUTION] [03:21:51] Successfully reached stable state
+[EXECUTION] [03:21:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:22:21] Performed tensorflow.Module.grow.get_concrete_function() on input and will now save energy data.
+[EXECUTION] [03:22:21] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1048.0
+4-size 1048.0
+++++++5++++++
+5-size 1048.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 7000.0
+outside_object_size
+[EXECUTION] [03:22:21] Result: {'tensorflow.Module.grow.get_concrete_function()': {'energy_data': {'cpu': '{"columns":["time_elapse
+[EXECUTION] [03:22:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:22:21] Waiting before running function for 10 seconds.
+[EXECUTION] [03:22:31] Sensors started
+[STABLE CHECK] [03:22:34] Success: temperature is below threshold.
+[MAIN] [03:22:34] Terminated sensors
+[STABLE CHECK] [03:22:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:22:54] Success: Machine is stable.
+[EXECUTION] [03:22:54] Successfully reached stable state
+[EXECUTION] [03:22:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:23:24] Performed tensorflow.saved_model.save() on input and will now save energy data.
+[EXECUTION] [03:23:24] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 7000.0
+++++++5++++++
+5-size 72.0
+4-size 7072.0
+++++++5++++++
+5-size 7000.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:23:24] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [03:23:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:23:24] Waiting before running function for 10 seconds.
+[EXECUTION] [03:23:34] Sensors started
+[STABLE CHECK] [03:23:37] Success: temperature is below threshold.
+[MAIN] [03:23:37] Terminated sensors
+[STABLE CHECK] [03:23:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:23:58] Success: Machine is stable.
+[EXECUTION] [03:23:58] Successfully reached stable state
+[EXECUTION] [03:23:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:24:28] Performed tensorflow.saved_model.load.grow() on input and will now save energy data.
+[EXECUTION] [03:24:28] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1320.0
+4-size 1320.0
+++++++5++++++
+5-size 1320.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [03:24:28] Result: {'tensorflow.saved_model.load.grow()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [03:24:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[2, 3], [5], [7, 8, 9]]>
+<tf.RaggedTensor [[4, 5], [6], [7, 8, 9]]>
+tf.Tensor([b'What' b'is' b'the' b'weather' b'tomorrow'], shape=(5,), dtype=string)
+tf.Tensor(b'the', shape=(), dtype=string)
+<tf.RaggedTensor [[b'What', b'is', b'the', b'weather', b'tomorrow'], [b'Goodnight']]>
+<tf.RaggedTensor [[b'Who', b'is', b'George'], [b'What', b'is', b'the'], [b'Goodnight']]>
+<tf.RaggedTensor [[b'George', b'Washington'], [b'weather', b'tomorrow'], [b'Goodnight']]>
+<tf.RaggedTensor [[5], [], [6]]>
+tf.Tensor([8 9], shape=(2,), dtype=int32)
+<tf.RaggedTensor [[[4]], [[], [6]], [], [[10]]]>
+<tf.RaggedTensor [[[4]],
+
+ [[6]],
+
+ [[7]],
+
+ [[10]]]>
+tf.Tensor(
+[[b'Hi' b'' b'' b'' b'' b'' b'' b'' b'' b'']
+ [b'Welcome' b'to' b'the' b'fair' b'' b'' b'' b'' b'' b'']
+ [b'Have' b'fun' b'' b'' b'' b'' b'' b'' b'' b'']], shape=(3, 10), dtype=string)
+<tf.RaggedTensor [[1, 3], [2], [4, 5, 8, 9]]>
+SparseTensor(indices=tf.Tensor(
+[[0 0]
+ [1 0]
+ [1 1]
+ [1 2]
+ [1 3]
+ [2 0]
+ [2 1]], shape=(7, 2), dtype=int64), values=tf.Tensor([b'Hi' b'Welcome' b'to' b'the' b'fair' b'Have' b'fun'], shape=(7,), dtype=string), dense_shape=tf.Tensor([3 4], shape=(2,), dtype=int64))
+[EXECUTION] [03:24:28] Waiting before running function for 10 seconds.
+[EXECUTION] [03:24:38] Sensors started
+[STABLE CHECK] [03:24:41] Temperature too high: mean is 41.5, which is greater than 40
+[STABLE CHECK] [03:24:41] Temperature is too high.
+[STABLE CHECK] [03:24:41] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:25:01] Success: temperature is below threshold.
+[MAIN] [03:25:01] Terminated sensors
+[STABLE CHECK] [03:25:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:25:21] Success: Machine is stable.
+[EXECUTION] [03:25:21] Successfully reached stable state
+[EXECUTION] [03:25:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:25:51] Performed tensorflow.SparseTensor() on input and will now save energy data.
+[EXECUTION] [03:25:51] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:25:51] Result: {'tensorflow.SparseTensor()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [03:25:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[b'a'], [], [b'b', b'c']]>
+Python list: [[1, 2], [3, 4, 5], [6], [], [7]]
+NumPy array: [array([1, 2], dtype=int32) array([3, 4, 5], dtype=int32)
+ array([6], dtype=int32) array([], dtype=int32) array([7], dtype=int32)]
+Values: [1 2 3 4 5 6 7]
+Splits: [0 2 5 6 6 7]
+Indexed value: [3 4 5]
+[EXECUTION] [03:25:51] Waiting before running function for 10 seconds.
+[EXECUTION] [03:26:01] Sensors started
+[STABLE CHECK] [03:26:04] Temperature too high: mean is 43.94736842105263, which is greater than 40
+[STABLE CHECK] [03:26:04] Temperature is too high.
+[STABLE CHECK] [03:26:04] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:26:24] Success: temperature is below threshold.
+[MAIN] [03:26:24] Terminated sensors
+[STABLE CHECK] [03:26:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:26:44] Success: Machine is stable.
+[EXECUTION] [03:26:44] Successfully reached stable state
+[EXECUTION] [03:26:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:27:14] Performed tensorflow.shape() on input and will now save energy data.
+[EXECUTION] [03:27:14] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 48.0
+4-size 48.0
+++++++1++++++
+1-size 48.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:27:14] Result: {'tensorflow.shape()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
+[EXECUTION] [03:27:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<DynamicRaggedShape lengths=[4, (1, 3, 0, 2)] num_row_partitions=1>
+tf.reshape(x, rt_shape) = <tf.RaggedTensor [[b'a'], [b'b', b'c', b'd'], [], [b'e', b'f']]>
+tf.zeros(rt_shape) = <tf.RaggedTensor [[0.0], [0.0, 0.0, 0.0], [], [0.0, 0.0]]>
+tf.ones(rt_shape) = <tf.RaggedTensor [[1.0], [1.0, 1.0, 1.0], [], [1.0, 1.0]]>
+tf.fill(rt_shape, 9) = <tf.RaggedTensor [[b'x'], [b'x', b'x', b'x'], [], [b'x', b'x']]>
+Got expected ValueError: Index 1 is not uniform
+[EXECUTION] [03:27:14] Waiting before running function for 10 seconds.
+[EXECUTION] [03:27:25] Sensors started
+[STABLE CHECK] [03:27:28] Temperature too high: mean is 40.95, which is greater than 40
+[STABLE CHECK] [03:27:28] Temperature is too high.
+[STABLE CHECK] [03:27:28] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:27:48] Success: temperature is below threshold.
+[MAIN] [03:27:48] Terminated sensors
+[STABLE CHECK] [03:27:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:28:08] Success: Machine is stable.
+[EXECUTION] [03:28:08] Successfully reached stable state
+[EXECUTION] [03:28:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:28:38] Performed tensorflow.experimental.DynamicRaggedShape() on input and will now save energy data.
+[EXECUTION] [03:28:38] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()', 'tensorflow.experimental.DynamicRaggedShape()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:28:38] Result: {'tensorflow.experimental.DynamicRaggedShape()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [03:28:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+[EXECUTION] [03:28:38] Waiting before running function for 10 seconds.
+[EXECUTION] [03:28:48] Sensors started
+[STABLE CHECK] [03:28:51] Success: temperature is below threshold.
+[MAIN] [03:28:51] Terminated sensors
+[STABLE CHECK] [03:28:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:29:11] Success: Machine is stable.
+[EXECUTION] [03:29:11] Successfully reached stable state
+[EXECUTION] [03:29:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:29:41] Performed tensorflow.experimental.DynamicRaggedShape.from_lengths() on input and will now save energy data.
+[EXECUTION] [03:29:41] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()', 'tensorflow.experimental.DynamicRaggedShape()', 'tensorflow.experimental.DynamicRaggedShape.from_lengths()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 120.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 184.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 120.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 184.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 120.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 184.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 120.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:29:41] Result: {'tensorflow.experimental.DynamicRaggedShape.from_lengths()': {'energy_data': {'cpu': '{"columns":["
+[EXECUTION] [03:29:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[4, 5], [6]]>
+<tf.RaggedTensor [[1010, 1087, 1012], [2019, 2053], [3012, 3032]]>
+<tf.RaggedTensor [[[11, 12],
+  [13, 14],
+  [15, 16]], [[17, 18]]]>
+<tf.RaggedTensor [[[[11, 21, 31],
+   [12, 22, 32]], [], [[13, 23, 33]], [[14, 24, 34]]],
+ [[[15, 25, 35],
+   [16, 26, 36]], [[17, 27, 37]]]]>
+Condition x == y did not hold.
+Indices of first 3 different values:
+[[1]
+ [2]
+ [3]]
+Corresponding x values:
+[ 4  8 12]
+Corresponding y values:
+[2 6 7]
+First 3 elements of x:
+[0 4 8]
+First 3 elements of y:
+[0 2 6]
+Condition x == y did not hold.
+Indices of first 2 different values:
+[[1]
+ [3]]
+Corresponding x values:
+[3 6]
+Corresponding y values:
+[2 5]
+First 3 elements of x:
+[0 3 4]
+First 3 elements of y:
+[0 2 4]
+Condition x == y did not hold.
+Indices of first 3 different values:
+[[1]
+ [2]
+ [3]]
+Corresponding x values:
+[2 4 6]
+Corresponding y values:
+[3 6 9]
+First 3 elements of x:
+[0 2 4]
+First 3 elements of y:
+[0 3 6]
+[EXECUTION] [03:29:41] Waiting before running function for 10 seconds.
+[EXECUTION] [03:29:51] Sensors started
+[STABLE CHECK] [03:29:54] Temperature too high: mean is 42.666666666666664, which is greater than 40
+[STABLE CHECK] [03:29:54] Temperature is too high.
+[STABLE CHECK] [03:29:54] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:30:14] Success: temperature is below threshold.
+[MAIN] [03:30:14] Terminated sensors
+[STABLE CHECK] [03:30:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:30:34] Success: Machine is stable.
+[EXECUTION] [03:30:34] Successfully reached stable state
+[EXECUTION] [03:30:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:31:04] Performed tensorflow.RaggedTensor.from_row_splits() on input and will now save energy data.
+[EXECUTION] [03:31:04] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()', 'tensorflow.experimental.DynamicRaggedShape()', 'tensorflow.experimental.DynamicRaggedShape.from_lengths()', 'tensorflow.RaggedTensor.from_row_splits()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 120.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:31:04] Result: {'tensorflow.RaggedTensor.from_row_splits()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
+[EXECUTION] [03:31:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[3, 1, 4, 1], [], [5, 9], [2]]>
+<tf.RaggedTensor [[[10, 11, 12]], [], [[], [13, 14], [15, 16, 17, 18], [19]]]>
+Shape: (3, None, None)
+Number of partitioned dimensions: 2
+[EXECUTION] [03:31:04] Waiting before running function for 10 seconds.
+[EXECUTION] [03:31:15] Sensors started
+[STABLE CHECK] [03:31:18] Temperature too high: mean is 44.4, which is greater than 40
+[STABLE CHECK] [03:31:18] Temperature is too high.
+[STABLE CHECK] [03:31:18] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:31:38] Temperature too high: mean is 41.95, which is greater than 40
+[STABLE CHECK] [03:31:38] Temperature is too high.
+[STABLE CHECK] [03:31:38] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:31:58] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:31:58] Temperature is too high.
+[STABLE CHECK] [03:31:58] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:32:18] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:32:18] Temperature is too high.
+[STABLE CHECK] [03:32:18] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:32:38] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:32:38] Temperature is too high.
+[STABLE CHECK] [03:32:38] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:32:58] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:32:58] Temperature is too high.
+[STABLE CHECK] [03:32:58] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:33:18] Temperature too high: mean is 40.7, which is greater than 40
+[STABLE CHECK] [03:33:18] Temperature is too high.
+[MAIN] [03:33:18] Terminated sensors
+[EXECUTION] [03:33:48] Waiting before running function for 10 seconds.
+[EXECUTION] [03:33:58] Sensors started
+[STABLE CHECK] [03:34:01] Success: temperature is below threshold.
+[MAIN] [03:34:01] Terminated sensors
+[STABLE CHECK] [03:34:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:34:21] Success: Machine is stable.
+[EXECUTION] [03:34:21] Successfully reached stable state
+[EXECUTION] [03:34:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:34:51] Performed tensorflow.RaggedTensor.from_nested_row_splits() on input and will now save energy data.
+[EXECUTION] [03:34:51] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()', 'tensorflow.experimental.DynamicRaggedShape()', 'tensorflow.experimental.DynamicRaggedShape.from_lengths()', 'tensorflow.RaggedTensor.from_row_splits()', 'tensorflow.RaggedTensor.from_nested_row_splits()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+4-size 136.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:34:51] Result: {'tensorflow.RaggedTensor.from_nested_row_splits()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [03:34:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[[10, 11, 12]], [], [[], [13, 14], [15, 16, 17, 18], [19]]]>
+[EXECUTION] [03:34:51] Waiting before running function for 10 seconds.
+[EXECUTION] [03:35:01] Sensors started
+[STABLE CHECK] [03:35:04] Temperature too high: mean is 45.705882352941174, which is greater than 40
+[STABLE CHECK] [03:35:04] Temperature is too high.
+[STABLE CHECK] [03:35:04] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:35:24] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [03:35:24] Temperature is too high.
+[STABLE CHECK] [03:35:24] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:35:44] Temperature too high: mean is 42.2, which is greater than 40
+[STABLE CHECK] [03:35:44] Temperature is too high.
+[STABLE CHECK] [03:35:44] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:36:04] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [03:36:04] Temperature is too high.
+[STABLE CHECK] [03:36:04] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:36:24] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [03:36:24] Temperature is too high.
+[STABLE CHECK] [03:36:24] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:36:44] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [03:36:44] Temperature is too high.
+[STABLE CHECK] [03:36:44] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:37:04] Temperature too high: mean is 41.2, which is greater than 40
+[STABLE CHECK] [03:37:04] Temperature is too high.
+[MAIN] [03:37:04] Terminated sensors
+[EXECUTION] [03:37:34] Waiting before running function for 10 seconds.
+[EXECUTION] [03:37:44] Sensors started
+[STABLE CHECK] [03:37:47] Success: temperature is below threshold.
+[MAIN] [03:37:47] Terminated sensors
+[STABLE CHECK] [03:37:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:38:07] Success: Machine is stable.
+[EXECUTION] [03:38:07] Successfully reached stable state
+[EXECUTION] [03:38:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:38:37] Performed tensorflow.ragged.constant.flat_values.numpy() on input and will now save energy data.
+[EXECUTION] [03:38:37] skipping call added, current list is: ['tensorflow.ragged.constant()', 'tensorflow.ragged.constant.to_list()', 'tensorflow.ragged.constant.numpy()', 'tensorflow.Variable()', 'tensorflow.strings.to_hash_bucket_fast()', 'tensorflow.nn.embedding_lookup()', 'tensorflow.fill()', 'tensorflow.concat()', 'tensorflow.strings.join()', 'tensorflow.reduce_mean()', 'tensorflow.ragged.constant.to_sparse()', 'tensorflow.sparse.concat()', 'tensorflow.constant()', 'tensorflow.strings.split()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.io.parse_example()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.apply()', 'tensorflow.saved_model.load()', 'tensorflow.Module.grow.get_concrete_function()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load.grow()', 'tensorflow.SparseTensor()', 'tensorflow.shape()', 'tensorflow.experimental.DynamicRaggedShape()', 'tensorflow.experimental.DynamicRaggedShape.from_lengths()', 'tensorflow.RaggedTensor.from_row_splits()', 'tensorflow.RaggedTensor.from_nested_row_splits()', 'tensorflow.ragged.constant.flat_values.numpy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 2472.0
+outside_object_size
+[EXECUTION] [03:38:37] Result: {'tensorflow.ragged.constant.flat_values.numpy()': {'energy_data': {'cpu': '{"columns":["time_elapse
+[EXECUTION] [03:38:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[[1, 3],
+  [0, 0],
+  [1, 3]], [[5, 3]], [[3, 3],
+                      [1, 2]]]>
+Shape: (3, None, 2)
+Number of partitioned dimensions: 1
+Flat values shape: (6, 2)
+Flat values:
+[[1 3]
+ [0 0]
+ [1 3]
+ [5 3]
+ [3 3]
+ [1 2]]
+[EXECUTION] [03:38:38] Waiting before running function for 10 seconds.
+[EXECUTION] [03:38:48] Sensors started
+[STABLE CHECK] [03:38:51] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:38:51] Temperature is too high.
+[STABLE CHECK] [03:38:51] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:39:11] Success: temperature is below threshold.
+[MAIN] [03:39:11] Terminated sensors
+[STABLE CHECK] [03:39:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:39:31] Success: Machine is stable.
+[EXECUTION] [03:39:31] Successfully reached stable state
+[EXECUTION] [03:39:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:40:01] Performed tensorflow.RaggedTensor.from_uniform_row_length() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 128.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [03:40:01] Result: {'tensorflow.RaggedTensor.from_uniform_row_length()': {'energy_data': {'cpu': '{"columns":["time_ela
+[EXECUTION] [03:40:01] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/ragged_tensor/experiment-1.json
+<tf.RaggedTensor [[[10, 11, 12], [13, 14]],
+ [[15, 16, 17, 18], [19]]]>
+Shape: (2, 2, None)
+Number of partitioned dimensions: 2

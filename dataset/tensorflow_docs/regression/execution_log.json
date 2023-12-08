@@ -1,0 +1,540 @@
+2023-12-07 23:47:38.697476: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 23:47:38.802491: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-07 23:47:39.331692: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 23:47:39.331742: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 23:47:39.331747: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-07 23:49:18.805602: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-07 23:49:18.805655: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+2.11.0
+[EXECUTION] [23:47:41] Waiting before running function for 10 seconds.
+[EXECUTION] [23:47:51] Sensors started
+[STABLE CHECK] [23:47:54] Success: temperature is below threshold.
+[MAIN] [23:47:54] Terminated sensors
+[STABLE CHECK] [23:47:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:48:14] Success: Machine is stable.
+[EXECUTION] [23:48:14] Successfully reached stable state
+[EXECUTION] [23:48:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:48:44] Performed tensorflow.keras.layers.Normalization() on input and will now save energy data.
+[EXECUTION] [23:48:45] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:48:45] Result: {'tensorflow.keras.layers.Normalization()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [23:48:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:48:45] Waiting before running function for 10 seconds.
+[EXECUTION] [23:48:55] Sensors started
+[STABLE CHECK] [23:48:58] Success: temperature is below threshold.
+[MAIN] [23:48:58] Terminated sensors
+[STABLE CHECK] [23:48:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:49:18] Success: Machine is stable.
+[EXECUTION] [23:49:18] Successfully reached stable state
+[EXECUTION] [23:49:19] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:49:49] Performed tensorflow.keras.layers.Normalization.adapt() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 22752.0
+4-size 22752.0
+++++++5++++++
+5-size 22752.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 352264.0
+outside_object_size
+[EXECUTION] [23:49:49] Result: {'tensorflow.keras.layers.Normalization.adapt()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [23:49:49] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[[   5.478  195.318  104.869 2990.252   15.559   75.898    0.178    0.197
+     0.624]]
+First example: [[   4.    90.    75.  2125.    14.5   74.     0.     0.     1. ]]
+
+Normalized: [[-0.87 -1.01 -0.79 -1.03 -0.38 -0.52 -0.47 -0.5   0.78]]
+[EXECUTION] [23:49:49] Waiting before running function for 10 seconds.
+[EXECUTION] [23:49:59] Sensors started
+[STABLE CHECK] [23:50:02] Success: temperature is below threshold.
+[MAIN] [23:50:02] Terminated sensors
+[STABLE CHECK] [23:50:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:50:22] Success: Machine is stable.
+[EXECUTION] [23:50:22] Successfully reached stable state
+[EXECUTION] [23:50:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:50:52] Performed tensorflow.keras.layers.Normalization.adapt() on input and will now save energy data.
+[EXECUTION] [23:50:52] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 2640.0
+4-size 2640.0
+++++++5++++++
+5-size 2640.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 352096.0
+outside_object_size
+[EXECUTION] [23:50:52] Result: {'tensorflow.keras.layers.Normalization.adapt()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [23:50:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:50:52] Waiting before running function for 10 seconds.
+[EXECUTION] [23:51:02] Sensors started
+[STABLE CHECK] [23:51:05] Success: temperature is below threshold.
+[MAIN] [23:51:05] Terminated sensors
+[STABLE CHECK] [23:51:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:51:25] Success: Machine is stable.
+[EXECUTION] [23:51:25] Successfully reached stable state
+[EXECUTION] [23:51:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:51:55] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+[EXECUTION] [23:51:55] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 379760.0
+++++++5++++++
+5-size 11344.0
+4-size 391104.0
+++++++5++++++
+5-size 379760.0
+++++++5++++++
+5-size 11344.0
+4-size 391104.0
+++++++4++++++
+++++++5++++++
+5-size 379760.0
+++++++5++++++
+5-size 11344.0
+4-size 391104.0
+++++++5++++++
+5-size 379760.0
+++++++5++++++
+5-size 11344.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:51:55] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [23:51:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:51:55] Waiting before running function for 10 seconds.
+[EXECUTION] [23:52:05] Sensors started
+[STABLE CHECK] [23:52:08] Success: temperature is below threshold.
+[MAIN] [23:52:08] Terminated sensors
+[STABLE CHECK] [23:52:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:52:28] Success: Machine is stable.
+[EXECUTION] [23:52:28] Successfully reached stable state
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ normalization_1 (Normalizat  (None, 1)                3         
+ ion)                                                            
+                                                                 
+ dense (Dense)               (None, 1)                 2         
+                                                                 
+=================================================================
+Total params: 5
+Trainable params: 2
+Non-trainable params: 3
+_________________________________________________________________
+[EXECUTION] [23:52:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:52:58] Performed tensorflow.keras.Sequential.summary() on input and will now save energy data.
+[EXECUTION] [23:52:59] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 399496.0
+outside_object_size
+[EXECUTION] [23:52:59] Result: {'tensorflow.keras.Sequential.summary()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [23:52:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:52:59] Waiting before running function for 10 seconds.
+[EXECUTION] [23:53:09] Sensors started
+[STABLE CHECK] [23:53:12] Success: temperature is below threshold.
+[MAIN] [23:53:12] Terminated sensors
+[STABLE CHECK] [23:53:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:53:32] Success: Machine is stable.
+[EXECUTION] [23:53:32] Successfully reached stable state
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 1s 904ms/step
+[EXECUTION] [23:53:33] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:54:03] Performed tensorflow.keras.Sequential.predict() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 2752.0
+4-size 2752.0
+++++++5++++++
+5-size 2752.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 474008.0
+outside_object_size
+[EXECUTION] [23:54:03] Result: {'tensorflow.keras.Sequential.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [23:54:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:54:03] Waiting before running function for 10 seconds.
+[EXECUTION] [23:54:13] Sensors started
+[STABLE CHECK] [23:54:16] Success: temperature is below threshold.
+[MAIN] [23:54:16] Terminated sensors
+[STABLE CHECK] [23:54:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:54:36] Success: Machine is stable.
+[EXECUTION] [23:54:36] Successfully reached stable state
+[EXECUTION] [23:54:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:55:06] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 500520.0
+outside_object_size
+[EXECUTION] [23:55:06] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [23:55:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:55:06] Waiting before running function for 10 seconds.
+[EXECUTION] [23:55:16] Sensors started
+[STABLE CHECK] [23:55:19] Temperature too high: mean is 40.8421052631579, which is greater than 40
+[STABLE CHECK] [23:55:19] Temperature is too high.
+[STABLE CHECK] [23:55:19] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [23:55:39] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [23:55:39] Temperature is too high.
+[STABLE CHECK] [23:55:39] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [23:55:59] Success: temperature is below threshold.
+[MAIN] [23:55:59] Terminated sensors
+[STABLE CHECK] [23:55:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:56:19] Success: Machine is stable.
+[EXECUTION] [23:56:19] Successfully reached stable state
+[EXECUTION] [23:56:24] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:56:54] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 82160.0
+++++++5++++++
+5-size 88856.0
+4-size 171016.0
+++++++5++++++
+5-size 82160.0
+++++++5++++++
+5-size 88856.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 184.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [23:56:54] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [23:56:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:56:54] Waiting before running function for 10 seconds.
+[EXECUTION] [23:57:04] Sensors started
+[STABLE CHECK] [23:57:07] Success: temperature is below threshold.
+[MAIN] [23:57:07] Terminated sensors
+[STABLE CHECK] [23:57:07] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:57:27] Success: Machine is stable.
+[EXECUTION] [23:57:27] Successfully reached stable state
+[EXECUTION] [23:57:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:57:58] Performed tensorflow.keras.Sequential.evaluate() on input and will now save energy data.
+[EXECUTION] [23:57:58] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.evaluate()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 34264.0
+++++++5++++++
+5-size 37600.0
+4-size 71864.0
+++++++5++++++
+5-size 34264.0
+++++++5++++++
+5-size 37600.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [23:57:58] Result: {'tensorflow.keras.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [23:57:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:57:58] Waiting before running function for 10 seconds.
+[EXECUTION] [23:58:08] Sensors started
+[STABLE CHECK] [23:58:11] Success: temperature is below threshold.
+[MAIN] [23:58:11] Terminated sensors
+[STABLE CHECK] [23:58:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:58:31] Success: Machine is stable.
+[EXECUTION] [23:58:31] Successfully reached stable state
+[EXECUTION] [23:58:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:59:01] Performed tensorflow.linspace() on input and will now save energy data.
+[EXECUTION] [23:59:01] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.linspace()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 88.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:59:01] Result: {'tensorflow.linspace()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [23:59:01] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [23:59:01] Waiting before running function for 10 seconds.
+[EXECUTION] [23:59:11] Sensors started
+[STABLE CHECK] [23:59:14] Success: temperature is below threshold.
+[MAIN] [23:59:14] Terminated sensors
+[STABLE CHECK] [23:59:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:59:34] Not stable: stdev/mean is 0.337104560341323, which is greater than 0.03
+[STABLE CHECK] [23:59:34] Machine is not stable yet.
+[STABLE CHECK] [23:59:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:59:54] Not stable: stdev/mean is 0.04826643198474261, which is greater than 0.03
+[STABLE CHECK] [23:59:54] Machine is not stable yet.
+[STABLE CHECK] [23:59:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:00:14] Success: Machine is stable.
+[EXECUTION] [00:00:14] Successfully reached stable state
+
+1/8 [==>...........................] - ETA: 0s
+8/8 [==============================] - 0s 1ms/step
+[EXECUTION] [00:00:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:00:44] Performed tensorflow.keras.Sequential.predict() on input and will now save energy data.
+[EXECUTION] [00:00:44] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.linspace()', 'tensorflow.keras.Sequential.predict()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 1004.0
+4-size 1004.0
+++++++1++++++
+1-size 1004.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:00:44] Result: {'tensorflow.keras.Sequential.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [00:00:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 43ms/step
+[EXECUTION] [00:00:44] Waiting before running function for 10 seconds.
+[EXECUTION] [00:00:54] Sensors started
+[STABLE CHECK] [00:00:57] Temperature too high: mean is 40.3, which is greater than 40
+[STABLE CHECK] [00:00:57] Temperature is too high.
+[STABLE CHECK] [00:00:57] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:01:17] Success: temperature is below threshold.
+[MAIN] [00:01:17] Terminated sensors
+[STABLE CHECK] [00:01:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:01:38] Success: Machine is stable.
+[EXECUTION] [00:01:38] Successfully reached stable state
+[EXECUTION] [00:01:38] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:02:08] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
+[EXECUTION] [00:02:08] skipping call added, current list is: ['tensorflow.keras.layers.Normalization()', 'tensorflow.keras.layers.Normalization.adapt()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.linspace()', 'tensorflow.keras.Sequential.predict()', 'tensorflow.keras.Sequential.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 500608.0
+outside_object_size
+[EXECUTION] [00:02:08] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [00:02:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+[EXECUTION] [00:02:08] Waiting before running function for 10 seconds.
+[EXECUTION] [00:02:18] Sensors started
+[STABLE CHECK] [00:02:21] Success: temperature is below threshold.
+[MAIN] [00:02:21] Terminated sensors
+[STABLE CHECK] [00:02:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:02:41] Success: Machine is stable.
+[EXECUTION] [00:02:41] Successfully reached stable state
+[EXECUTION] [00:02:46] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:03:16] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 82160.0
+++++++5++++++
+5-size 88856.0
+4-size 171016.0
+++++++5++++++
+5-size 82160.0
+++++++5++++++
+5-size 88856.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 184.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:03:16] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [00:03:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/regression/experiment-1.json
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ normalization_1 (Normalizat  (None, 1)                3         
+ ion)                                                            
+                                                                 
+ dense_4 (Dense)             (None, 64)                128       
+                                                                 
+ dense_5 (Dense)             (None, 64)                4160      
+                                                                 
+ dense_6 (Dense)             (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 4,356
+Trainable params: 4,353
+Non-trainable params: 3
+_________________________________________________________________
+2023-12-08 00:03:17.344534: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+
+1/8 [==>...........................] - ETA: 0s
+8/8 [==============================] - 0s 2ms/step
+Model: "sequential_3"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ normalization (Normalizatio  (None, 9)                19        
+ n)                                                              
+                                                                 
+ dense_10 (Dense)            (None, 64)                640       
+                                                                 
+ dense_11 (Dense)            (None, 64)                4160      
+                                                                 
+ dense_12 (Dense)            (None, 1)                 65        
+                                                                 
+=================================================================
+Total params: 4,884
+Trainable params: 4,865
+Non-trainable params: 19
+_________________________________________________________________
+
+1/3 [=========>....................] - ETA: 0s
+3/3 [==============================] - 0s 2ms/step
+[EXECUTION] [00:03:30] Waiting before running function for 10 seconds.
+[EXECUTION] [00:03:40] Sensors started
+[STABLE CHECK] [00:03:43] Temperature too high: mean is 41.5, which is greater than 40
+[STABLE CHECK] [00:03:43] Temperature is too high.
+[STABLE CHECK] [00:03:43] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:04:04] Success: temperature is below threshold.
+[MAIN] [00:04:04] Terminated sensors
+[STABLE CHECK] [00:04:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:04:24] Not stable: stdev/mean is 0.047919378847179166, which is greater than 0.03
+[STABLE CHECK] [00:04:24] Machine is not stable yet.
+[STABLE CHECK] [00:04:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:04:44] Success: Machine is stable.
+[EXECUTION] [00:04:44] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/keras/regression_method-level.py", line 159, in <module>
+    reloaded = tf.keras.models.load_model('dnn_model.keras')
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/layers/preprocessing/normalization.py", line 187, in build
+    raise ValueError(
+ValueError: All `axis` values to be kept must have known shape. Got axis: (-1,), input shape: [None, None], with unknown axis at index: 1

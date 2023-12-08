@@ -1,0 +1,1 @@
+["tensorflow.Variable()", "tensorflow.reduce_mean()", "tensorflow.keras.layers.Dense()", "tensorflow.constant()", "tensorflow.math.sin()", "tensorflow.nn.softplus()", "tensorflow.reduce_sum()", "tensorflow.linspace()", "tensorflow.nn.sigmoid()", "tensorflow.Variable.assign_add()", "tensorflow.image.adjust_contrast()"]

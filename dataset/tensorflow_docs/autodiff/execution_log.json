@@ -1,0 +1,500 @@
+2023-12-08 02:27:14.918501: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-08 02:27:15.056333: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-08 02:27:15.661469: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 02:27:15.661528: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 02:27:15.661534: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-08 02:27:50.191307: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 02:27:50.191356: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+2023-12-08 02:30:24.331501: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+[EXECUTION] [02:27:16] Waiting before running function for 10 seconds.
+[EXECUTION] [02:27:26] Sensors started
+[STABLE CHECK] [02:27:29] Success: temperature is below threshold.
+[MAIN] [02:27:29] Terminated sensors
+[STABLE CHECK] [02:27:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:27:49] Success: Machine is stable.
+[EXECUTION] [02:27:49] Successfully reached stable state
+[EXECUTION] [02:27:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:28:20] Performed tensorflow.Variable() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:28:20] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:28:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:28:20] Waiting before running function for 10 seconds.
+[EXECUTION] [02:28:30] Sensors started
+[STABLE CHECK] [02:28:33] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [02:28:33] Temperature is too high.
+[STABLE CHECK] [02:28:33] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:28:53] Temperature too high: mean is 40.5, which is greater than 40
+[STABLE CHECK] [02:28:53] Temperature is too high.
+[STABLE CHECK] [02:28:53] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:29:13] Success: temperature is below threshold.
+[MAIN] [02:29:13] Terminated sensors
+[STABLE CHECK] [02:29:13] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:29:33] Not stable: stdev/mean is 0.0404289676494096, which is greater than 0.03
+[STABLE CHECK] [02:29:33] Machine is not stable yet.
+[STABLE CHECK] [02:29:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:29:53] Success: Machine is stable.
+[EXECUTION] [02:29:53] Successfully reached stable state
+[EXECUTION] [02:29:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:30:23] Performed tensorflow.Variable() on input and will now save energy data.
+[EXECUTION] [02:30:23] skipping call added, current list is: ['tensorflow.Variable()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 24.0
+4-size 24.0
+++++++1++++++
+1-size 24.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:30:23] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:30:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:30:24] Waiting before running function for 10 seconds.
+[EXECUTION] [02:30:34] Sensors started
+[STABLE CHECK] [02:30:37] Temperature too high: mean is 45.6, which is greater than 40
+[STABLE CHECK] [02:30:37] Temperature is too high.
+[STABLE CHECK] [02:30:37] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:30:57] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [02:30:57] Temperature is too high.
+[STABLE CHECK] [02:30:57] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:31:17] Temperature too high: mean is 42.1, which is greater than 40
+[STABLE CHECK] [02:31:17] Temperature is too high.
+[STABLE CHECK] [02:31:17] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:31:37] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [02:31:37] Temperature is too high.
+[STABLE CHECK] [02:31:37] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:31:57] Success: temperature is below threshold.
+[MAIN] [02:31:57] Terminated sensors
+[STABLE CHECK] [02:31:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:32:17] Not stable: stdev/mean is 0.0387735227326403, which is greater than 0.03
+[STABLE CHECK] [02:32:17] Machine is not stable yet.
+[STABLE CHECK] [02:32:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:32:37] Not stable: stdev/mean is 0.03687255543890709, which is greater than 0.03
+[STABLE CHECK] [02:32:37] Machine is not stable yet.
+[STABLE CHECK] [02:32:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:32:57] Success: Machine is stable.
+[EXECUTION] [02:32:57] Successfully reached stable state
+[EXECUTION] [02:32:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:33:27] Performed tensorflow.reduce_mean() on input and will now save energy data.
+[EXECUTION] [02:33:27] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 8.0
+4-size 8.0
+++++++1++++++
+1-size 8.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:33:27] Result: {'tensorflow.reduce_mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [02:33:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+(3, 2)
+(3, 2)
+[EXECUTION] [02:33:27] Waiting before running function for 10 seconds.
+[EXECUTION] [02:33:37] Sensors started
+[STABLE CHECK] [02:33:40] Temperature too high: mean is 41.73684210526316, which is greater than 40
+[STABLE CHECK] [02:33:40] Temperature is too high.
+[STABLE CHECK] [02:33:40] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:34:00] Success: temperature is below threshold.
+[MAIN] [02:34:00] Terminated sensors
+[STABLE CHECK] [02:34:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:34:20] Success: Machine is stable.
+[EXECUTION] [02:34:20] Successfully reached stable state
+[EXECUTION] [02:34:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:34:50] Performed tensorflow.keras.layers.Dense() on input and will now save energy data.
+[EXECUTION] [02:34:50] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:34:50] Result: {'tensorflow.keras.layers.Dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [02:34:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:34:50] Waiting before running function for 10 seconds.
+[EXECUTION] [02:35:01] Sensors started
+[STABLE CHECK] [02:35:04] Success: temperature is below threshold.
+[MAIN] [02:35:04] Terminated sensors
+[STABLE CHECK] [02:35:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:35:24] Success: Machine is stable.
+[EXECUTION] [02:35:24] Successfully reached stable state
+[EXECUTION] [02:35:24] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:35:54] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [02:35:54] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++WARNING:tensorflow:The dtype of the watched tensor must be floating (e.g. tf.float32), got tf.int32
+
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:35:54] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:35:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+dense/kernel:0, shape: (3, 2)
+dense/bias:0, shape: (2,)
+tf.Tensor(6.0, shape=(), dtype=float32)
+None
+None
+None
+6.0
+[EXECUTION] [02:35:54] Waiting before running function for 10 seconds.
+[EXECUTION] [02:36:04] Sensors started
+[STABLE CHECK] [02:36:07] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [02:36:07] Temperature is too high.
+[STABLE CHECK] [02:36:07] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:36:27] Success: temperature is below threshold.
+[MAIN] [02:36:27] Terminated sensors
+[STABLE CHECK] [02:36:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:36:47] Success: Machine is stable.
+[EXECUTION] [02:36:47] Successfully reached stable state
+[EXECUTION] [02:36:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:37:17] Performed tensorflow.math.sin() on input and will now save energy data.
+[EXECUTION] [02:37:17] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 4128.0
+4-size 4128.0
+++++++5++++++
+5-size 4128.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:37:17] Result: {'tensorflow.math.sin()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:37:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:37:17] Waiting before running function for 10 seconds.
+[EXECUTION] [02:37:27] Sensors started
+[STABLE CHECK] [02:37:30] Success: temperature is below threshold.
+[MAIN] [02:37:30] Terminated sensors
+[STABLE CHECK] [02:37:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:37:50] Success: Machine is stable.
+[EXECUTION] [02:37:50] Successfully reached stable state
+[EXECUTION] [02:37:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:38:20] Performed tensorflow.nn.softplus() on input and will now save energy data.
+[EXECUTION] [02:38:20] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 4128.0
+4-size 4128.0
+++++++5++++++
+5-size 4128.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:38:20] Result: {'tensorflow.nn.softplus()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [02:38:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:38:20] Waiting before running function for 10 seconds.
+[EXECUTION] [02:38:30] Sensors started
+[STABLE CHECK] [02:38:33] Temperature too high: mean is 41.9, which is greater than 40
+[STABLE CHECK] [02:38:33] Temperature is too high.
+[STABLE CHECK] [02:38:33] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:38:53] Success: temperature is below threshold.
+[MAIN] [02:38:53] Terminated sensors
+[STABLE CHECK] [02:38:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:39:13] Not stable: stdev/mean is 0.03158037111009078, which is greater than 0.03
+[STABLE CHECK] [02:39:13] Machine is not stable yet.
+[STABLE CHECK] [02:39:13] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:39:33] Success: Machine is stable.
+[EXECUTION] [02:39:33] Successfully reached stable state
+[EXECUTION] [02:39:33] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:40:03] Performed tensorflow.reduce_sum() on input and will now save energy data.
+[EXECUTION] [02:40:03] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()', 'tensorflow.reduce_sum()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4.0
+4-size 4.0
+++++++1++++++
+1-size 4.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:40:03] Result: {'tensorflow.reduce_sum()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
+[EXECUTION] [02:40:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+dy/dx0: None
+dy/dx1: 0.9999546
+18.0
+[  4. 108.]
+[2. 6.]
+4.0
+-0.25
+3.75
+7.0
+[EXECUTION] [02:40:03] Waiting before running function for 10 seconds.
+[EXECUTION] [02:40:14] Sensors started
+[STABLE CHECK] [02:40:17] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [02:40:17] Temperature is too high.
+[STABLE CHECK] [02:40:17] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:40:37] Success: temperature is below threshold.
+[MAIN] [02:40:37] Terminated sensors
+[STABLE CHECK] [02:40:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:40:57] Success: Machine is stable.
+[EXECUTION] [02:40:57] Successfully reached stable state
+[EXECUTION] [02:40:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:41:27] Performed tensorflow.linspace() on input and will now save energy data.
+[EXECUTION] [02:41:27] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()', 'tensorflow.reduce_sum()', 'tensorflow.linspace()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 80.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:41:27] Result: {'tensorflow.linspace()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:41:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+[EXECUTION] [02:41:27] Waiting before running function for 10 seconds.
+[EXECUTION] [02:41:37] Sensors started
+[STABLE CHECK] [02:41:40] Success: temperature is below threshold.
+[MAIN] [02:41:40] Terminated sensors
+[STABLE CHECK] [02:41:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:42:00] Success: Machine is stable.
+[EXECUTION] [02:42:00] Successfully reached stable state
+[EXECUTION] [02:42:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:42:30] Performed tensorflow.nn.sigmoid() on input and will now save energy data.
+[EXECUTION] [02:42:30] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()', 'tensorflow.reduce_sum()', 'tensorflow.linspace()', 'tensorflow.nn.sigmoid()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 804.0
+4-size 804.0
+++++++1++++++
+1-size 804.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:42:30] Result: {'tensorflow.nn.sigmoid()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
+[EXECUTION] [02:42:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+tf.Tensor(1.0, shape=(), dtype=float32)
+None
+None
+None
+ResourceVariable : tf.Tensor(1.0, shape=(), dtype=float32)
+EagerTensor : None
+None
+None
+[EXECUTION] [02:42:30] Waiting before running function for 10 seconds.
+[EXECUTION] [02:42:40] Sensors started
+[STABLE CHECK] [02:42:43] Temperature too high: mean is 41.6, which is greater than 40
+[STABLE CHECK] [02:42:43] Temperature is too high.
+[STABLE CHECK] [02:42:43] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:43:03] Success: temperature is below threshold.
+[MAIN] [02:43:03] Terminated sensors
+[STABLE CHECK] [02:43:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:43:23] Success: Machine is stable.
+[EXECUTION] [02:43:23] Successfully reached stable state
+[EXECUTION] [02:43:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:43:53] Performed tensorflow.Variable.assign_add() on input and will now save energy data.
+[EXECUTION] [02:43:53] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()', 'tensorflow.reduce_sum()', 'tensorflow.linspace()', 'tensorflow.nn.sigmoid()', 'tensorflow.Variable.assign_add()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 4128.0
+4-size 4128.0
+++++++5++++++
+5-size 4128.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4128.0
+outside_object_size
+[EXECUTION] [02:43:53] Result: {'tensorflow.Variable.assign_add()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [02:43:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+None
+[EXECUTION] [02:43:53] Waiting before running function for 10 seconds.
+[EXECUTION] [02:44:03] Sensors started
+[STABLE CHECK] [02:44:06] Temperature too high: mean is 43.68421052631579, which is greater than 40
+[STABLE CHECK] [02:44:06] Temperature is too high.
+[STABLE CHECK] [02:44:06] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:44:26] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [02:44:26] Temperature is too high.
+[STABLE CHECK] [02:44:26] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:44:46] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [02:44:46] Temperature is too high.
+[STABLE CHECK] [02:44:46] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:45:07] Temperature too high: mean is 40.75, which is greater than 40
+[STABLE CHECK] [02:45:07] Temperature is too high.
+[STABLE CHECK] [02:45:07] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:45:27] Temperature too high: mean is 40.1, which is greater than 40
+[STABLE CHECK] [02:45:27] Temperature is too high.
+[STABLE CHECK] [02:45:27] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:45:47] Success: temperature is below threshold.
+[MAIN] [02:45:47] Terminated sensors
+[STABLE CHECK] [02:45:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:46:07] Success: Machine is stable.
+[EXECUTION] [02:46:07] Successfully reached stable state
+[EXECUTION] [02:46:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:46:37] Performed tensorflow.image.adjust_contrast() on input and will now save energy data.
+[EXECUTION] [02:46:37] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.reduce_mean()', 'tensorflow.keras.layers.Dense()', 'tensorflow.constant()', 'tensorflow.math.sin()', 'tensorflow.nn.softplus()', 'tensorflow.reduce_sum()', 'tensorflow.linspace()', 'tensorflow.nn.sigmoid()', 'tensorflow.Variable.assign_add()', 'tensorflow.image.adjust_contrast()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 4216.0
+++++++5++++++
+5-size 4128.0
+4-size 8344.0
+++++++5++++++
+5-size 4216.0
+++++++5++++++
+5-size 4128.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:46:37] Result: {'tensorflow.image.adjust_contrast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [02:46:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/autodiff/experiment-1.json
+LookupError: gradient registry has no entry for: AdjustContrastv2
+tf.Tensor([0. 0.], shape=(2,), dtype=float32)

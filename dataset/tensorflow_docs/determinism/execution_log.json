@@ -1,0 +1,14 @@
+2023-12-08 06:36:28.703558: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+imagenet has 1024 shards (1281167 examples)
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_datasets_patched/docs/determinism_method-level.py", line 38, in <module>
+    print_ex_ids(imagenet, split='train', take=20)
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_datasets_patched/docs/determinism_method-level.py", line 24, in print_ex_ids
+    ds = load_dataset(builder, **as_dataset_kwargs)
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_datasets_patched/docs/determinism_method-level.py", line 14, in load_dataset
+    return builder.as_dataset(read_config=read_config, **as_dataset_kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/logging/__init__.py", line 169, in __call__
+    return function(*args, **kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_builder.py", line 809, in as_dataset
+    raise AssertionError(
+AssertionError: Dataset imagenet2012: could not find data in /home/saurabh/tensorflow_datasets. Please make sure to call dataset_builder.download_and_prepare(), or pass download=True to tfds.load() before trying to access the tf.data.Dataset object.

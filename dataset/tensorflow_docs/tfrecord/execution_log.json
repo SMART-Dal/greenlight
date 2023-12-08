@@ -1,0 +1,36 @@
+2023-12-08 00:45:13.571005: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-08 00:45:13.693309: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-08 00:45:14.311217: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 00:45:14.311269: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 00:45:14.311273: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-08 00:45:15.964055: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 00:45:15.964087: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+bytes_list {
+  value: "test_string"
+}
+
+bytes_list {
+  value: "test_bytes"
+}
+
+float_list {
+  value: 2.7182817459106445
+}
+
+int64_list {
+  value: 1
+}
+
+int64_list {
+  value: 1
+}
+
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/load_data/tfrecord_method-level.py", line 40, in <module>
+    @tf.py_function(Tout=tf.string)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 1170, in op_dispatch_handler
+    result = api_dispatcher.Dispatch(args, kwargs)
+TypeError: Missing required positional argument

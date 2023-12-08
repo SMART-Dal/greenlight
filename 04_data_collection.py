@@ -8,7 +8,7 @@ import json
 #  loop through the dataset folder and read git_metadata.json files
 
 # Define the directory where repositories are cloned
-repositories_dir = "/home/saurabh/method-energy-dataset/projects/1_done"  # Replace with the actual directory
+repositories_dir = "/home/saurabh/method-energy-dataset/projects"  # Replace with the actual directory
 data_dir = "/home/saurabh/method-energy-dataset/dataset"  # Replace with the actual directory
 
 # set environment variable for data and project folder
@@ -20,7 +20,7 @@ os.environ["PROJECTS_DIR"] = repositories_dir
 
 # Iterate through the cloned repositories and check if repo_name is a directory not file
 # for repo_name in os.listdir(repositories_dir):
-repo_name = "akanyaani_gpt-2-tensorflow2"
+repo_name = "tensorflow_docs"
 repo_dir = os.path.join(repositories_dir, repo_name)
 
 # Check if repo_name is a directory not file
@@ -36,20 +36,21 @@ if os.path.isdir(repo_dir):
     if "status" in git_metadata:
         activate_script = os.path.join(repositories_dir, repo_name,  "venv","bin", "activate")
         activate_cmd = f". {activate_script}" if os.name != "nt" else f"{activate_script}"
-        try:
-            subprocess.run(activate_cmd, shell=True, check=True)
-            print(f"Activated venv for {repo_dir}")
-            # print current active environment name
-            subprocess.run("echo $VIRTUAL_ENV", shell=True, check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"Error while activating venv for {repo_dir}: {e}")
-            raise e
+        # try:
+        #     subprocess.run(activate_cmd, shell=True, check=True)
+        #     print(f"Activated venv for {repo_dir}")
+        #     # print current active environment name
+        #     subprocess.run("echo $VIRTUAL_ENV", shell=True, check=True)
+        # except subprocess.CalledProcessError as e:
+        #     print(f"Error while activating venv for {repo_dir}: {e}")
+        #     raise e
 
         # get current time in execution_metadata
         # execution_metadata["start_time"] = datetime.datetime.now().isoformat()
         # subprocess to run cli tool
-        process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
-        
+        script_to_run = "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py"
+        process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir, "--scripts", script_to_run] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+
         # keep track of files that were successful to skip next time
 
         # create a list to store process output

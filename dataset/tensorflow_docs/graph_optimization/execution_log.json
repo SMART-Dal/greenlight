@@ -1,0 +1,256 @@
+2023-12-08 07:50:23.478882: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fc02c387e50> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+[EXECUTION] [07:43:20] Waiting before running function for 10 seconds.
+[EXECUTION] [07:43:30] Sensors started
+[STABLE CHECK] [07:43:33] Success: temperature is below threshold.
+[MAIN] [07:43:33] Terminated sensors
+[STABLE CHECK] [07:43:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:43:53] Success: Machine is stable.
+[EXECUTION] [07:43:53] Successfully reached stable state
+[EXECUTION] [07:43:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:44:23] Performed tensorflow.config.optimizer.get_experimental_options() on input and will now save energy data.
+[EXECUTION] [07:44:23] skipping call added, current list is: ['tensorflow.config.optimizer.get_experimental_options()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:44:23] Result: {'tensorflow.config.optimizer.get_experimental_options()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [07:44:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json
+[EXECUTION] [07:44:23] Waiting before running function for 10 seconds.
+[EXECUTION] [07:44:33] Sensors started
+[STABLE CHECK] [07:44:36] Success: temperature is below threshold.
+[MAIN] [07:44:36] Terminated sensors
+[STABLE CHECK] [07:44:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:44:56] Not stable: stdev/mean is 0.05192517063262089, which is greater than 0.03
+[STABLE CHECK] [07:44:56] Machine is not stable yet.
+[STABLE CHECK] [07:44:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:45:16] Not stable: stdev/mean is 0.3194228877082976, which is greater than 0.03
+[STABLE CHECK] [07:45:16] Machine is not stable yet.
+[STABLE CHECK] [07:45:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:45:36] Not stable: stdev/mean is 0.0736461823770381, which is greater than 0.03
+[STABLE CHECK] [07:45:36] Machine is not stable yet.
+[STABLE CHECK] [07:45:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:45:56] Not stable: stdev/mean is 0.04645302010546689, which is greater than 0.03
+[STABLE CHECK] [07:45:56] Machine is not stable yet.
+[STABLE CHECK] [07:45:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:46:16] Not stable: stdev/mean is 0.04993590197562927, which is greater than 0.03
+[STABLE CHECK] [07:46:16] Machine is not stable yet.
+[STABLE CHECK] [07:46:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:46:36] Not stable: stdev/mean is 0.06789234150447075, which is greater than 0.03
+[STABLE CHECK] [07:46:36] Machine is not stable yet.
+[EXECUTION] [07:47:06] Waiting before running function for 10 seconds.
+[EXECUTION] [07:47:16] Sensors started
+[STABLE CHECK] [07:47:19] Success: temperature is below threshold.
+[MAIN] [07:47:19] Terminated sensors
+[STABLE CHECK] [07:47:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:47:39] Success: Machine is stable.
+[EXECUTION] [07:47:39] Successfully reached stable state
+[EXECUTION] [07:47:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:48:09] Performed tensorflow.config.optimizer.set_experimental_options() on input and will now save energy data.
+[EXECUTION] [07:48:09] skipping call added, current list is: ['tensorflow.config.optimizer.get_experimental_options()', 'tensorflow.config.optimizer.set_experimental_options()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:48:09] Result: {'tensorflow.config.optimizer.set_experimental_options()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [07:48:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json
+{'constant_folding': False, 'disable_model_pruning': False, 'disable_meta_optimizer': False}
+[EXECUTION] [07:48:09] Waiting before running function for 10 seconds.
+[EXECUTION] [07:48:19] Sensors started
+[STABLE CHECK] [07:48:22] Success: temperature is below threshold.
+[MAIN] [07:48:22] Terminated sensors
+[STABLE CHECK] [07:48:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:48:42] Not stable: stdev/mean is 0.06525607886239809, which is greater than 0.03
+[STABLE CHECK] [07:48:42] Machine is not stable yet.
+[STABLE CHECK] [07:48:42] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:49:02] Not stable: stdev/mean is 0.055184185353524734, which is greater than 0.03
+[STABLE CHECK] [07:49:02] Machine is not stable yet.
+[STABLE CHECK] [07:49:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:49:22] Not stable: stdev/mean is 0.057682455112697574, which is greater than 0.03
+[STABLE CHECK] [07:49:22] Machine is not stable yet.
+[STABLE CHECK] [07:49:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:49:42] Not stable: stdev/mean is 0.07474514830565258, which is greater than 0.03
+[STABLE CHECK] [07:49:42] Machine is not stable yet.
+[STABLE CHECK] [07:49:42] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:50:02] Not stable: stdev/mean is 0.06678463444642672, which is greater than 0.03
+[STABLE CHECK] [07:50:02] Machine is not stable yet.
+[STABLE CHECK] [07:50:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:50:22] Success: Machine is stable.
+[EXECUTION] [07:50:22] Successfully reached stable state
+[EXECUTION] [07:50:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:50:53] Performed tensorflow.constant() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:50:53] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [07:50:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json
+Tracing!
+[EXECUTION] [07:50:54] Waiting before running function for 10 seconds.
+[EXECUTION] [07:51:04] Sensors started
+[STABLE CHECK] [07:51:07] Success: temperature is below threshold.
+[MAIN] [07:51:08] Terminated sensors
+[STABLE CHECK] [07:51:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:51:28] Not stable: stdev/mean is 0.07919223108393655, which is greater than 0.03
+[STABLE CHECK] [07:51:28] Machine is not stable yet.
+[STABLE CHECK] [07:51:28] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:51:48] Not stable: stdev/mean is 0.07784857304092702, which is greater than 0.03
+[STABLE CHECK] [07:51:48] Machine is not stable yet.
+[STABLE CHECK] [07:51:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:52:08] Success: Machine is stable.
+[EXECUTION] [07:52:08] Successfully reached stable state
+[EXECUTION] [07:52:09] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:52:39] Performed tensorflow.constant() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fc0ed1d78b0> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32000144.0
+4-size 32000144.0
+++++++5++++++
+5-size 32000144.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:52:40] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+2023-12-08 07:55:19.923259: E tensorflow/core/kernels/check_numerics_op.cc:292] abnormal_detected_host @0x7fbf40e00100 = {0, 1} Bad!
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py", line 75, in <module>
+    test_func(p1)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+tensorflow.python.framework.errors_impl.InvalidArgumentError:  Bad! : Tensor had Inf values
+	 [[node CheckNumerics
+ (defined at /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py:66)
+]] [Op:__inference_simple_func_165]
+
+Errors may have originated from an input operation.
+Input Source operations connected to node CheckNumerics:
+In[0] input_arg (defined at /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py:75)
+
+Operation defined at: (most recent call last)
+>>>   File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py", line 75, in <module>
+>>>     test_func(p1)
+>>> 
+>>>   File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py", line 66, in simple_func
+>>>     tf.debugging.check_numerics(output, 'Bad!')
+>>> 
+[EXECUTION] [07:52:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json
+Vanilla execution: 0.002540541987400502 s
+{'constant_folding': True, 'disable_model_pruning': False, 'disable_meta_optimizer': False}
+[EXECUTION] [07:52:46] Waiting before running function for 10 seconds.
+[EXECUTION] [07:52:56] Sensors started
+[STABLE CHECK] [07:52:59] Temperature too high: mean is 40.85, which is greater than 40
+[STABLE CHECK] [07:52:59] Temperature is too high.
+[STABLE CHECK] [07:52:59] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [07:53:19] Success: temperature is below threshold.
+[MAIN] [07:53:19] Terminated sensors
+[STABLE CHECK] [07:53:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:53:39] Success: Machine is stable.
+[EXECUTION] [07:53:39] Successfully reached stable state
+[EXECUTION] [07:53:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:54:09] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [07:54:09] skipping call added, current list is: ['tensorflow.config.optimizer.get_experimental_options()', 'tensorflow.config.optimizer.set_experimental_options()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:54:09] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [07:54:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json
+Tracing!
+Constant folded execution: 0.0006797550013288856 s
+[EXECUTION] [07:54:11] Waiting before running function for 10 seconds.
+[EXECUTION] [07:54:21] Sensors started
+[STABLE CHECK] [07:54:24] Success: temperature is below threshold.
+[MAIN] [07:54:24] Terminated sensors
+[STABLE CHECK] [07:54:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:54:44] Success: Machine is stable.
+[EXECUTION] [07:54:44] Successfully reached stable state
+[EXECUTION] [07:54:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:55:14] Performed tensorflow.debugging.check_numerics() on input and will now save energy data.
+[EXECUTION] [07:55:14] skipping call added, current list is: ['tensorflow.config.optimizer.get_experimental_options()', 'tensorflow.config.optimizer.set_experimental_options()', 'tensorflow.constant()', 'tensorflow.debugging.check_numerics()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 23840.0
+++++++5++++++
+5-size 56.0
+4-size 23896.0
+++++++5++++++
+5-size 23840.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:55:19] Result: {'tensorflow.debugging.check_numerics()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [07:55:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_optimization/experiment-1.json

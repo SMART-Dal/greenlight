@@ -24,8 +24,9 @@ for root, dirs, files in os.walk(root_dir):
                 "Patching_status": "Pending"
             }
             
-            # Append row to list
-            notebook_rows.append(row)
+            # Append row to list if os.path.join(root, file) doesnot contain "_patched"
+            if os.path.join(root, file).find("_patched") == -1:
+                notebook_rows.append(row)
 
 # Write rows to CSV             
 with open("notebooks.csv", 'w', newline='') as csvfile:

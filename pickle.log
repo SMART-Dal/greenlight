@@ -1,1 +1,621 @@
-Deleting projects/yunyang1994_tensorflow-yolov3_patched
+metadata
+{
+    'project_name': 'tensorflow_similarity',
+    'project_repository': 
+'https://github.com/tensorflow/similarity.git',
+    'project_owner': 'tensorflow',
+    'project_branch': 'master',
+    'project_commit': 
+'dc506d63d05d012d3496041c25c1c54981d39565',
+    'project_commit_date': 
+'2023-10-23T10:55:16-07:00',
+    'script_path': None,
+    'api_call_line': None
+}
+done....
+method_level_python_scripts
+[
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/setup_method-level.p
+y',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/hyper_parameter_search_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/create_datasets_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/train_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/optimizers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/architectures_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/metrics_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/losses_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/augmentations_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/experiments_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/datasets/types_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/datasets/tfds_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/datasets/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/datasets/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/benchmark/supervised
+/components/datasets/dataset_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_schedules
+_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/__init___metho
+d-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_layers_me
+thod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_utils_met
+hod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_types_met
+hod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_callbacks
+_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_distances
+_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/conftest_metho
+d-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_indexer_m
+ethod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/test_algebra_m
+ethod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/evaluators/__i
+nit___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/evaluators/tes
+t_memory_evaluator_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/stores/__init_
+__method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/stores/test_me
+mory_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/stores/test_re
+dis_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/stores/test_ca
+ched_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/test_retrieval_metric_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/test_bndcg_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/test_map_at_k_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/test_precision_at_k_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/retrieval_metr
+ics/test_recall_at_k_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/data/generate_
+calibration_data_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/training_metri
+cs/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/training_metri
+cs/test_distance_metrics_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmenters_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmentation_utils/test_solarize_method-level.py
+',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmentation_utils/test_crop_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmentation_utils/test_color_jitter_method-leve
+l.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmentation_utils/test_blur_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/augmenters/tes
+t_augmentation_utils/test_flip_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/search/__init_
+__method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/search/test_nm
+slib_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/search/test_li
+near_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/search/test_fa
+iss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/integration/te
+st_multihead_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/integration/te
+st_basic_flow_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/integration/te
+st_readme_minimal_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/classification
+_metrics/test_classification_metrics_method-level.
+py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/classification
+_metrics/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/models/__init_
+__method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/models/test_si
+milarity_model_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/models/test_co
+ntrastive_model_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/architectures/
+test_resnet50_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/architectures/
+test_resnet18_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/architectures/
+__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/architectures/
+test_efficientnet_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/visualization/
+__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/visualization/
+test_neighbors_viz_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/visualization/
+test_confusion_matrix_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/matchers/__ini
+t___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/matchers/test_
+classification_match_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/matchers/test_
+match_nearest_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/matchers/test_
+majority_vote_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/__ini
+t___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/test_
+tfdata_sampler_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/test_
+tfrecord_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/test_
+tfdataset_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/test_
+memory_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/samplers/test_
+file_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/__init_
+__method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/test_so
+ftnn_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/utils_m
+ethod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/test_tr
+iplet_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/test_xb
+m_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/test_pn
+_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tests/losses/test_li
+fted_structure_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/scripts/increment_ve
+rsion_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/scripts/gen_api_doc_
+method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/supervised_
+hello_world_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/indexing_se
+arch_and_store_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/unsupervise
+d_hello_world_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/sampler_io_
+cookbook_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/multimodal_
+example_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/examples/visualizati
+on_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/types_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/layers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/indexer_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/schedules_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/callbacks_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/algebra_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/base_indexer_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/evaluators/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/evaluators/evaluator_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/evaluators/memory_evaluator_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/stores/cached_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/stores/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/stores/redis_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/stores/store_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/stores/memory_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/bndcg_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/map_at_k_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/retrieval_metric_method-level.
+py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/recall_at_k_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/retrieval_metrics/precision_at_k_method-level.py
+',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/training_metrics/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/training_metrics/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/training_metrics/distance_metrics_method-level.p
+y',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/inner_product_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/euclidean_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/snr_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/distance_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/cosine_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/distances/manhattan_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/contrastive_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/barlow_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmenter_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/simclr_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/flip_method-level.
+py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/__init___method-le
+vel.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/solarize_method-le
+vel.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/blur_method-level.
+py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/color_jitter_metho
+d-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/cropping_method-le
+vel.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/augmenters/augmentation_utils/random_apply_metho
+d-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/search/nmslib_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/search/search_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/search/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/search/faiss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/search/linear_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/false_positive_rate_metho
+d-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/__init___method-level.py'
+,
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/recall_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/binary_accuracy_method-le
+vel.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/f1_score_method-level.py'
+,
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/negative_predictive_value
+_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/classification_metric_met
+hod-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/classification_metrics/precision_method-level.py
+',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/api/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/models/similarity_model_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/models/contrastive_model_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/models/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/architectures/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/architectures/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/architectures/resnet18_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/architectures/efficientnet_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/architectures/resnet50_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/visualization/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/visualization/neighbors_viz_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/visualization/confusion_matrix_viz_method-level.
+py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/visualization/projector_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/visualization/vizualize_views_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/matchers/classification_match_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/matchers/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/matchers/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/matchers/match_nearest_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/matchers/match_majority_vote_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/tfdata_sampler_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/file_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/tfrecords_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/memory_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/tfdataset_samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/samplers/samplers_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/barlow_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/multisim_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/lifted_structure_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/__init___method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/circle_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/utils_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/pn_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/xbm_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/triplet_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/simclr_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/simsiam_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/metric_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/softnn_loss_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/vicreg_method-level.py',
+    '/home/saurabh/method-energy-dataset/projects/
+tensorflow_similarity_patched/tensorflow_similarit
+y/losses/multinegrank_loss_method-level.py'
+]

@@ -1,0 +1,1146 @@
+2023-12-07 16:14:18.804336: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 16:14:18.942624: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-07 16:14:19.562155: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 16:14:19.562206: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 16:14:19.562210: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-07 16:14:22.078557: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-07 16:14:22.078595: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[EXECUTION] [16:14:24] Waiting before running function for 10 seconds.
+[EXECUTION] [16:14:34] Sensors started
+[STABLE CHECK] [16:14:37] Temperature too high: mean is 41.85, which is greater than 40
+[STABLE CHECK] [16:14:37] Temperature is too high.
+[STABLE CHECK] [16:14:37] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:14:57] Success: temperature is below threshold.
+[MAIN] [16:14:57] Terminated sensors
+[STABLE CHECK] [16:14:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:15:17] Success: Machine is stable.
+[EXECUTION] [16:15:17] Successfully reached stable state
+Downloading data from https://storage.googleapis.com/audioset/miaow_16k.wav
+
+  8192/215546 [>.............................] - ETA: 0s
+139264/215546 [==================>...........] - ETA: 0s
+215546/215546 [==============================] - 0s 0us/step
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7f74b5798c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7f74b5798c10> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7f75765123a0> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7f75765123a0> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+2023-12-07 16:20:18.350633: W tensorflow_io/core/kernels/audio_video_mp3_kernels.cc:271] libmp3lame.so.0 or lame functions are not available
+2023-12-07 16:20:18.354723: I tensorflow_io/core/kernels/cpu_check.cc:128] Your CPU supports instructions that this TensorFlow IO binary was not compiled to use: AVX2 AVX512F FMA
+WARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+2023-12-07 16:20:20.096892: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+2023-12-07 16:20:20.549899: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8100
+2023-12-07 16:20:21.281680: W tensorflow/tsl/framework/bfc_allocator.cc:360] Garbage collection: deallocate free memory regions (i.e., allocations) so that we can re-allocate a larger region to avoid OOM due to memory fragmentation. If you see this message frequently, you are running near the threshold of the available device memory and re-allocation may incur great performance overhead. You may try smaller batch sizes to observe the performance impact. Set TF_ENABLE_GPU_GARBAGE_COLLECTION=false if you'd like to disable this feature.
+[EXECUTION] [16:15:17] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:15:47] Performed tensorflow.keras.utils.get_file() on input and will now save energy data.
+[EXECUTION] [16:15:47] skipping call added, current list is: ['tensorflow.keras.utils.get_file()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 104.0
+4-size 168.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 104.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:15:47] Result: {'tensorflow.keras.utils.get_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [16:15:47] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+./test_data/miaow_16k.wav
+[EXECUTION] [16:15:48] Waiting before running function for 10 seconds.
+[EXECUTION] [16:15:58] Sensors started
+[STABLE CHECK] [16:16:02] Success: temperature is below threshold.
+[MAIN] [16:16:02] Terminated sensors
+[STABLE CHECK] [16:16:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:16:22] Success: Machine is stable.
+[EXECUTION] [16:16:22] Successfully reached stable state
+[EXECUTION] [16:16:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:16:53] Performed tensorflow.io.read_file() on input and will now save energy data.
+[EXECUTION] [16:16:53] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 80.0
+4-size 80.0
+++++++5++++++
+5-size 80.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:16:55] Result: {'tensorflow.io.read_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [16:16:55] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:16:55] Waiting before running function for 10 seconds.
+[EXECUTION] [16:17:05] Sensors started
+[STABLE CHECK] [16:17:08] Success: temperature is below threshold.
+[MAIN] [16:17:08] Terminated sensors
+[STABLE CHECK] [16:17:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:17:28] Success: Machine is stable.
+[EXECUTION] [16:17:28] Successfully reached stable state
+[EXECUTION] [16:17:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:17:58] Performed tensorflow.audio.decode_wav() on input and will now save energy data.
+[EXECUTION] [16:17:58] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 28984.0
+4-size 28984.0
+++++++5++++++
+5-size 28984.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:18:03] Result: {'tensorflow.audio.decode_wav()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:18:03] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:18:03] Waiting before running function for 10 seconds.
+[EXECUTION] [16:18:13] Sensors started
+[STABLE CHECK] [16:18:16] Success: temperature is below threshold.
+[MAIN] [16:18:16] Terminated sensors
+[STABLE CHECK] [16:18:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:18:36] Success: Machine is stable.
+[EXECUTION] [16:18:36] Successfully reached stable state
+[EXECUTION] [16:18:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:19:06] Performed tensorflow.squeeze() on input and will now save energy data.
+[EXECUTION] [16:19:06] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 30160.0
+4-size 30160.0
+++++++5++++++
+5-size 30160.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:19:10] Result: {'tensorflow.squeeze()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[
+[EXECUTION] [16:19:10] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:19:10] Waiting before running function for 10 seconds.
+[EXECUTION] [16:19:20] Sensors started
+[STABLE CHECK] [16:19:23] Success: temperature is below threshold.
+[MAIN] [16:19:23] Terminated sensors
+[STABLE CHECK] [16:19:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:19:43] Success: Machine is stable.
+[EXECUTION] [16:19:43] Successfully reached stable state
+[EXECUTION] [16:19:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:20:13] Performed tensorflow.cast() on input and will now save energy data.
+[EXECUTION] [16:20:13] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 31592.0
+4-size 31592.0
+++++++5++++++
+5-size 31592.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:20:18] Result: {'tensorflow.cast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
+[EXECUTION] [16:20:18] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+Speech
+Child speech, kid speaking
+Conversation
+Narration, monologue
+Babbling
+Speech synthesizer
+Shout
+Bellow
+Whoop
+Yell
+Children shouting
+Screaming
+Whispering
+Laughter
+Baby laughter
+Giggle
+Snicker
+Belly laugh
+Chuckle, chortle
+Crying, sobbing
+...
+[EXECUTION] [16:20:21] Waiting before running function for 10 seconds.
+[EXECUTION] [16:20:31] Sensors started
+[STABLE CHECK] [16:20:34] Success: temperature is below threshold.
+[MAIN] [16:20:34] Terminated sensors
+[STABLE CHECK] [16:20:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:20:54] Success: Machine is stable.
+[EXECUTION] [16:20:54] Successfully reached stable state
+[EXECUTION] [16:20:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:21:24] Performed tensorflow.reduce_mean() on input and will now save energy data.
+[EXECUTION] [16:21:24] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 27092.0
+4-size 27092.0
+++++++1++++++
+1-size 27092.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:21:24] Result: {'tensorflow.reduce_mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [16:21:24] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:21:24] Waiting before running function for 10 seconds.
+[EXECUTION] [16:21:34] Sensors started
+[STABLE CHECK] [16:21:37] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [16:21:37] Temperature is too high.
+[STABLE CHECK] [16:21:37] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:21:57] Success: temperature is below threshold.
+[MAIN] [16:21:57] Terminated sensors
+[STABLE CHECK] [16:21:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:22:17] Not stable: stdev/mean is 0.04595973992924291, which is greater than 0.03
+[STABLE CHECK] [16:22:17] Machine is not stable yet.
+[STABLE CHECK] [16:22:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:22:37] Success: Machine is stable.
+[EXECUTION] [16:22:37] Successfully reached stable state
+[EXECUTION] [16:22:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:23:07] Performed tensorflow.math.argmax() on input and will now save energy data.
+[EXECUTION] [16:23:07] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 2084.0
+4-size 2084.0
+++++++1++++++
+1-size 2084.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:23:07] Result: {'tensorflow.math.argmax()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [16:23:07] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+The main sound is: Animal
+The embeddings shape: (13, 1024)
+Downloading data from https://github.com/karoldvl/ESC-50/archive/master.zip
+
+   8192/Unknown - 0s 0us/stepWARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+[EXECUTION] [16:24:06] Waiting before running function for 10 seconds.
+[EXECUTION] [16:24:16] Sensors started
+[STABLE CHECK] [16:24:19] Success: temperature is below threshold.
+[MAIN] [16:24:19] Terminated sensors
+[STABLE CHECK] [16:24:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:24:39] Not stable: stdev/mean is 0.10546625003601527, which is greater than 0.03
+[STABLE CHECK] [16:24:39] Machine is not stable yet.
+[STABLE CHECK] [16:24:39] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:24:59] Success: Machine is stable.
+[EXECUTION] [16:24:59] Successfully reached stable state
+[EXECUTION] [16:24:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:25:29] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
+[EXECUTION] [16:25:29] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 61936.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+4-size 186168.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+4-size 186168.0
+++++++4++++++
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+4-size 186168.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+++++++5++++++
+5-size 62056.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:25:29] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [16:25:29] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:25:29] Waiting before running function for 10 seconds.
+[EXECUTION] [16:25:40] Sensors started
+[STABLE CHECK] [16:25:43] Success: temperature is below threshold.
+[MAIN] [16:25:43] Terminated sensors
+[STABLE CHECK] [16:25:43] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:26:03] Success: Machine is stable.
+[EXECUTION] [16:26:03] Successfully reached stable state
+[EXECUTION] [16:26:03] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:26:33] Performed tensorflow.data.Dataset.from_tensor_slices.map() on input and will now save energy data.
+[EXECUTION] [16:26:33] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 475936.0
+outside_object_size
+[EXECUTION] [16:26:33] Result: {'tensorflow.data.Dataset.from_tensor_slices.map()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [16:26:33] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:26:33] Waiting before running function for 10 seconds.
+[EXECUTION] [16:26:43] Sensors started
+[STABLE CHECK] [16:26:46] Success: temperature is below threshold.
+[MAIN] [16:26:46] Terminated sensors
+[STABLE CHECK] [16:26:46] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:27:06] Success: Machine is stable.
+[EXECUTION] [16:27:06] Successfully reached stable state
+[EXECUTION] [16:27:06] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:27:36] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch() on input and will now save energy data.
+[EXECUTION] [16:27:36] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22608824.0
+outside_object_size
+[EXECUTION] [16:27:38] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()': {'energy_data': 
+[EXECUTION] [16:27:38] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:27:38] Waiting before running function for 10 seconds.
+[EXECUTION] [16:27:48] Sensors started
+[STABLE CHECK] [16:27:51] Success: temperature is below threshold.
+[MAIN] [16:27:51] Terminated sensors
+[STABLE CHECK] [16:27:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:28:11] Success: Machine is stable.
+[EXECUTION] [16:28:11] Successfully reached stable state
+[EXECUTION] [16:28:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:28:41] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache() on input and will now save energy data.
+[EXECUTION] [16:28:41] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22608824.0
+outside_object_size
+[EXECUTION] [16:28:43] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()': {'energy_d
+[EXECUTION] [16:28:43] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:28:43] Waiting before running function for 10 seconds.
+[EXECUTION] [16:28:53] Sensors started
+[STABLE CHECK] [16:28:56] Success: temperature is below threshold.
+[MAIN] [16:28:56] Terminated sensors
+[STABLE CHECK] [16:28:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:29:16] Success: Machine is stable.
+[EXECUTION] [16:29:16] Successfully reached stable state
+[EXECUTION] [16:29:16] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:29:46] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter() on input and will now save energy data.
+[EXECUTION] [16:29:46] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22610792.0
+outside_object_size
+[EXECUTION] [16:29:48] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()': {'e
+[EXECUTION] [16:29:48] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:29:49] Waiting before running function for 10 seconds.
+[EXECUTION] [16:29:59] Sensors started
+[STABLE CHECK] [16:30:02] Success: temperature is below threshold.
+[MAIN] [16:30:02] Terminated sensors
+[STABLE CHECK] [16:30:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:30:22] Success: Machine is stable.
+[EXECUTION] [16:30:22] Successfully reached stable state
+[EXECUTION] [16:30:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:30:52] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map() on input and will now save energy data.
+[EXECUTION] [16:30:52] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22672624.0
+outside_object_size
+[EXECUTION] [16:30:54] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()':
+[EXECUTION] [16:30:54] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:30:54] Waiting before running function for 10 seconds.
+[EXECUTION] [16:31:04] Sensors started
+[STABLE CHECK] [16:31:07] Success: temperature is below threshold.
+[MAIN] [16:31:07] Terminated sensors
+[STABLE CHECK] [16:31:07] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:31:27] Success: Machine is stable.
+[EXECUTION] [16:31:27] Successfully reached stable state
+[EXECUTION] [16:31:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:31:57] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache on input and will now save energy data.
+[EXECUTION] [16:31:57] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22682096.0
+outside_object_size
+[EXECUTION] [16:31:59] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cac
+[EXECUTION] [16:31:59] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:31:59] Waiting before running function for 10 seconds.
+[EXECUTION] [16:32:09] Sensors started
+[STABLE CHECK] [16:32:12] Success: temperature is below threshold.
+[MAIN] [16:32:12] Terminated sensors
+[STABLE CHECK] [16:32:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:32:32] Success: Machine is stable.
+[EXECUTION] [16:32:32] Successfully reached stable state
+[EXECUTION] [16:32:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:33:02] Performed tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache on input and will now save energy data.
+[EXECUTION] [16:33:02] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22679592.0
+outside_object_size
+[EXECUTION] [16:33:04] Result: {'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cac
+[EXECUTION] [16:33:04] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:33:04] Waiting before running function for 10 seconds.
+[EXECUTION] [16:33:14] Sensors started
+[STABLE CHECK] [16:33:17] Success: temperature is below threshold.
+[MAIN] [16:33:17] Terminated sensors
+[STABLE CHECK] [16:33:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:33:37] Success: Machine is stable.
+[EXECUTION] [16:33:37] Successfully reached stable state
+[EXECUTION] [16:33:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:34:07] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+[EXECUTION] [16:34:07] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 11928.0
+++++++5++++++
+5-size 11520.0
+++++++5++++++
+5-size 11432.0
+4-size 34880.0
+++++++5++++++
+5-size 11928.0
+++++++5++++++
+5-size 11520.0
+++++++5++++++
+5-size 11432.0
+4-size 34880.0
+++++++4++++++
+++++++5++++++
+5-size 11928.0
+++++++5++++++
+5-size 11520.0
+++++++5++++++
+5-size 11432.0
+4-size 34880.0
+++++++5++++++
+5-size 11928.0
+++++++5++++++
+5-size 11520.0
+++++++5++++++
+5-size 11432.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:34:07] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:34:07] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:34:07] Waiting before running function for 10 seconds.
+[EXECUTION] [16:34:17] Sensors started
+[STABLE CHECK] [16:34:20] Success: temperature is below threshold.
+[MAIN] [16:34:20] Terminated sensors
+[STABLE CHECK] [16:34:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:34:40] Success: Machine is stable.
+[EXECUTION] [16:34:40] Successfully reached stable state
+Model: "my_model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 512)               524800    
+                                                                 
+ dense_1 (Dense)             (None, 2)                 1026      
+                                                                 
+=================================================================
+Total params: 525,826
+Trainable params: 525,826
+Non-trainable params: 0
+_________________________________________________________________
+[EXECUTION] [16:34:40] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:35:10] Performed tensorflow.keras.Sequential.summary() on input and will now save energy data.
+[EXECUTION] [16:35:10] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 67816.0
+outside_object_size
+[EXECUTION] [16:35:10] Result: {'tensorflow.keras.Sequential.summary()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [16:35:10] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:35:10] Waiting before running function for 10 seconds.
+[EXECUTION] [16:35:20] Sensors started
+[STABLE CHECK] [16:35:23] Success: temperature is below threshold.
+[MAIN] [16:35:23] Terminated sensors
+[STABLE CHECK] [16:35:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:35:43] Success: Machine is stable.
+[EXECUTION] [16:35:43] Successfully reached stable state
+[EXECUTION] [16:35:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:36:14] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
+[EXECUTION] [16:36:14] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 97088.0
+outside_object_size
+[EXECUTION] [16:36:14] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [16:36:14] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:36:14] Waiting before running function for 10 seconds.
+[EXECUTION] [16:36:24] Sensors started
+[STABLE CHECK] [16:36:27] Success: temperature is below threshold.
+[MAIN] [16:36:27] Terminated sensors
+[STABLE CHECK] [16:36:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:36:47] Success: Machine is stable.
+[EXECUTION] [16:36:47] Successfully reached stable state
+[EXECUTION] [16:36:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:37:17] Performed tensorflow.keras.callbacks.EarlyStopping() on input and will now save energy data.
+[EXECUTION] [16:37:17] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:37:17] Result: {'tensorflow.keras.callbacks.EarlyStopping()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [16:37:17] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:37:17] Waiting before running function for 10 seconds.
+[EXECUTION] [16:37:27] Sensors started
+[STABLE CHECK] [16:37:30] Success: temperature is below threshold.
+[MAIN] [16:37:30] Terminated sensors
+[STABLE CHECK] [16:37:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:37:50] Not stable: stdev/mean is 0.1358507749186805, which is greater than 0.03
+[STABLE CHECK] [16:37:50] Machine is not stable yet.
+[STABLE CHECK] [16:37:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:38:10] Not stable: stdev/mean is 0.049629884802188426, which is greater than 0.03
+[STABLE CHECK] [16:38:10] Machine is not stable yet.
+[STABLE CHECK] [16:38:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:38:30] Success: Machine is stable.
+[EXECUTION] [16:38:30] Successfully reached stable state
+Epoch 1/20
+
+      1/Unknown - 4s 4s/step - loss: 0.7995 - accuracy: 0.3750
+     12/Unknown - 4s 5ms/step - loss: 0.9708 - accuracy: 0.7995
+15/15 [==============================] - 5s 38ms/step - loss: 0.9387 - accuracy: 0.8167 - val_loss: 0.1922 - val_accuracy: 0.9187
+Epoch 2/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.3932 - accuracy: 0.7188
+15/15 [==============================] - 0s 3ms/step - loss: 0.4470 - accuracy: 0.8771 - val_loss: 0.4644 - val_accuracy: 0.8687
+Epoch 3/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.0743 - accuracy: 0.9688
+15/15 [==============================] - 0s 2ms/step - loss: 0.3381 - accuracy: 0.8792 - val_loss: 0.6546 - val_accuracy: 0.8687
+Epoch 4/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.2694 - accuracy: 0.9688
+15/15 [==============================] - 0s 2ms/step - loss: 0.3162 - accuracy: 0.9104 - val_loss: 0.2797 - val_accuracy: 0.9187
+Epoch 5/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.3462 - accuracy: 0.9062
+15/15 [==============================] - 0s 2ms/step - loss: 0.4247 - accuracy: 0.9125 - val_loss: 0.2537 - val_accuracy: 0.9062
+Epoch 6/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.3413 - accuracy: 0.8750
+15/15 [==============================] - 0s 2ms/step - loss: 0.3151 - accuracy: 0.9292 - val_loss: 0.2549 - val_accuracy: 0.8750
+Epoch 7/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.0831 - accuracy: 0.9688
+15/15 [==============================] - 0s 2ms/step - loss: 0.2597 - accuracy: 0.9125 - val_loss: 0.5752 - val_accuracy: 0.8750
+Epoch 8/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.1979 - accuracy: 0.9688
+15/15 [==============================] - 0s 2ms/step - loss: 0.5322 - accuracy: 0.9271 - val_loss: 0.5398 - val_accuracy: 0.8750
+Epoch 9/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.5012 - accuracy: 0.9062
+15/15 [==============================] - 0s 2ms/step - loss: 0.2121 - accuracy: 0.9333 - val_loss: 0.2403 - val_accuracy: 0.9125
+Epoch 10/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.3933 - accuracy: 0.8438
+15/15 [==============================] - 0s 2ms/step - loss: 0.1760 - accuracy: 0.9208 - val_loss: 0.2814 - val_accuracy: 0.8813
+Epoch 11/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.1456 - accuracy: 0.9375
+15/15 [==============================] - 0s 2ms/step - loss: 0.1851 - accuracy: 0.9187 - val_loss: 0.5462 - val_accuracy: 0.8687
+Epoch 12/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.5190 - accuracy: 0.8750
+15/15 [==============================] - 0s 2ms/step - loss: 0.2362 - accuracy: 0.9438 - val_loss: 0.7467 - val_accuracy: 0.8687
+Epoch 13/20
+
+ 1/15 [=>............................] - ETA: 0s - loss: 0.4912 - accuracy: 0.9375
+15/15 [==============================] - 0s 2ms/step - loss: 0.2965 - accuracy: 0.9208 - val_loss: 0.2924 - val_accuracy: 0.8750
+[EXECUTION] [16:38:35] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:39:05] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 22682264.0
+4-size 22682264.0
+++++++5++++++
+5-size 22682264.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 184.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:39:09] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [16:39:09] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:39:09] Waiting before running function for 10 seconds.
+[EXECUTION] [16:39:19] Sensors started
+[STABLE CHECK] [16:39:22] Success: temperature is below threshold.
+[MAIN] [16:39:22] Terminated sensors
+[STABLE CHECK] [16:39:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:39:42] Success: Machine is stable.
+[EXECUTION] [16:39:42] Successfully reached stable state
+
+      1/Unknown - 0s 142ms/step - loss: 0.0741 - accuracy: 0.9688
+5/5 [==============================] - 0s 3ms/step - loss: 0.3767 - accuracy: 0.8125
+[EXECUTION] [16:39:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:40:12] Performed tensorflow.keras.Sequential.evaluate() on input and will now save energy data.
+[EXECUTION] [16:40:12] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 22679760.0
+4-size 22679760.0
+++++++5++++++
+5-size 22679760.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:40:16] Result: {'tensorflow.keras.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [16:40:16] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+Loss:  0.3766859769821167
+Accuracy:  0.8125
+[EXECUTION] [16:40:16] Waiting before running function for 10 seconds.
+[EXECUTION] [16:40:26] Sensors started
+[STABLE CHECK] [16:40:29] Temperature too high: mean is 40.526315789473685, which is greater than 40
+[STABLE CHECK] [16:40:29] Temperature is too high.
+[STABLE CHECK] [16:40:29] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:40:49] Success: temperature is below threshold.
+[MAIN] [16:40:49] Terminated sensors
+[STABLE CHECK] [16:40:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:41:09] Success: Machine is stable.
+[EXECUTION] [16:41:09] Successfully reached stable state
+[EXECUTION] [16:41:09] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:41:39] Performed tensorflow.keras.Sequential(embeddings).numpy() on input and will now save energy data.
+[EXECUTION] [16:41:39] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:41:39] Result: {'tensorflow.keras.Sequential(embeddings).numpy()': {'energy_data': {'cpu': '{"columns":["time_elaps
+[EXECUTION] [16:41:39] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+The main sound is: cat
+[EXECUTION] [16:41:39] Waiting before running function for 10 seconds.
+[EXECUTION] [16:41:49] Sensors started
+[STABLE CHECK] [16:41:52] Success: temperature is below threshold.
+[MAIN] [16:41:52] Terminated sensors
+[STABLE CHECK] [16:41:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:42:12] Success: Machine is stable.
+[EXECUTION] [16:42:12] Successfully reached stable state
+[EXECUTION] [16:42:12] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:42:42] Performed tensorflow.keras.layers.Input() on input and will now save energy data.
+[EXECUTION] [16:42:42] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:42:42] Result: {'tensorflow.keras.layers.Input()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [16:42:42] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:42:46] Waiting before running function for 10 seconds.
+[EXECUTION] [16:42:56] Sensors started
+[STABLE CHECK] [16:42:59] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [16:42:59] Temperature is too high.
+[STABLE CHECK] [16:42:59] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:43:19] Success: temperature is below threshold.
+[MAIN] [16:43:19] Terminated sensors
+[STABLE CHECK] [16:43:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:43:39] Success: Machine is stable.
+[EXECUTION] [16:43:39] Successfully reached stable state
+[EXECUTION] [16:43:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:44:09] Performed tensorflow.keras.Model() on input and will now save energy data.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[EXECUTION] [16:44:09] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()', 'tensorflow.keras.Model()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+4-size 96.0
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:44:09] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [16:44:09] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:44:09] Waiting before running function for 10 seconds.
+[EXECUTION] [16:44:19] Sensors started
+[STABLE CHECK] [16:44:22] Success: temperature is below threshold.
+[MAIN] [16:44:22] Terminated sensors
+[STABLE CHECK] [16:44:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:44:42] Success: Machine is stable.
+[EXECUTION] [16:44:42] Successfully reached stable state
+[EXECUTION] [16:44:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:45:17] Performed tensorflow.keras.Model.save() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:45:17] Result: {'tensorflow.keras.Model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:45:17] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:45:17] Waiting before running function for 10 seconds.
+[EXECUTION] [16:45:27] Sensors started
+[STABLE CHECK] [16:45:30] Success: temperature is below threshold.
+[MAIN] [16:45:30] Terminated sensors
+[STABLE CHECK] [16:45:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:45:50] Not stable: stdev/mean is 0.0530873621604721, which is greater than 0.03
+[STABLE CHECK] [16:45:50] Machine is not stable yet.
+[STABLE CHECK] [16:45:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:46:10] Not stable: stdev/mean is 0.15056756596356777, which is greater than 0.03
+[STABLE CHECK] [16:46:10] Machine is not stable yet.
+[STABLE CHECK] [16:46:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:46:30] Success: Machine is stable.
+[EXECUTION] [16:46:30] Successfully reached stable state
+You must install pydot (`pip install pydot`) and install graphviz (see instructions at https://graphviz.gitlab.io/download/) for plot_model to work.
+WARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+WARNING:tensorflow:Using a while_loop for converting IO>AudioResample cause there is no registered converter for this op.
+[EXECUTION] [16:46:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:47:01] Performed tensorflow.keras.utils.plot_model() on input and will now save energy data.
+[EXECUTION] [16:47:01] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()', 'tensorflow.keras.Model()', 'tensorflow.keras.utils.plot_model()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+4-size 48.0
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:47:01] Result: {'tensorflow.keras.utils.plot_model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [16:47:01] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:47:01] Waiting before running function for 10 seconds.
+[EXECUTION] [16:47:11] Sensors started
+[STABLE CHECK] [16:47:14] Success: temperature is below threshold.
+[MAIN] [16:47:14] Terminated sensors
+[STABLE CHECK] [16:47:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:47:34] Not stable: stdev/mean is 0.3485007806261673, which is greater than 0.03
+[STABLE CHECK] [16:47:34] Machine is not stable yet.
+[STABLE CHECK] [16:47:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:47:54] Success: Machine is stable.
+[EXECUTION] [16:47:54] Successfully reached stable state
+[EXECUTION] [16:47:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:48:28] Performed tensorflow.saved_model.load() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:48:28] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:48:28] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:48:28] Waiting before running function for 10 seconds.
+[EXECUTION] [16:48:38] Sensors started
+[STABLE CHECK] [16:48:41] Success: temperature is below threshold.
+[MAIN] [16:48:41] Terminated sensors
+[STABLE CHECK] [16:48:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:49:01] Success: Machine is stable.
+[EXECUTION] [16:49:01] Successfully reached stable state
+[EXECUTION] [16:49:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:49:31] Performed tensorflow.saved_model.load() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 430792.0
+4-size 430792.0
+++++++1++++++
+1-size 430792.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:49:31] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:49:31] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+The main sound is: cat
+[EXECUTION] [16:49:31] Waiting before running function for 10 seconds.
+[EXECUTION] [16:49:42] Sensors started
+[STABLE CHECK] [16:49:45] Temperature too high: mean is 40.05555555555556, which is greater than 40
+[STABLE CHECK] [16:49:45] Temperature is too high.
+[STABLE CHECK] [16:49:45] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:50:05] Success: temperature is below threshold.
+[MAIN] [16:50:05] Terminated sensors
+[STABLE CHECK] [16:50:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:50:25] Success: Machine is stable.
+[EXECUTION] [16:50:25] Successfully reached stable state
+[EXECUTION] [16:50:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:50:55] Performed tensorflow.saved_model.load.signatures['serving_default']() on input and will now save energy data.
+[EXECUTION] [16:50:55] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()', 'tensorflow.keras.Model()', 'tensorflow.keras.utils.plot_model()', "tensorflow.saved_model.load.signatures['serving_default']()"]
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 430792.0
+4-size 430792.0
+++++++1++++++
+1-size 430792.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:50:55] Result: {"tensorflow.saved_model.load.signatures['serving_default']()": {'energy_data': {'cpu': '{"columns":
+[EXECUTION] [16:50:55] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+The main sound is: cat
+./datasets/ESC-50-master/audio/5-259169-A-5.wav
+Waveform values: [-8.0852863e-07  2.0340074e-06  1.6904494e-06 ...  0.0000000e+00
+  0.0000000e+00  0.0000000e+00]
+[YAMNet] The main sound is: Silence (0.8000855445861816)
+[EXECUTION] [16:50:55] Waiting before running function for 10 seconds.
+[EXECUTION] [16:51:05] Sensors started
+[STABLE CHECK] [16:51:08] Temperature too high: mean is 40.35, which is greater than 40
+[STABLE CHECK] [16:51:08] Temperature is too high.
+[STABLE CHECK] [16:51:08] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:51:28] Success: temperature is below threshold.
+[MAIN] [16:51:28] Terminated sensors
+[STABLE CHECK] [16:51:28] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:51:48] Success: Machine is stable.
+[EXECUTION] [16:51:48] Successfully reached stable state
+[EXECUTION] [16:51:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:52:19] Performed tensorflow.saved_model.load() on input and will now save energy data.
+[EXECUTION] [16:52:19] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()', 'tensorflow.keras.Model()', 'tensorflow.keras.utils.plot_model()', "tensorflow.saved_model.load.signatures['serving_default']()", 'tensorflow.saved_model.load()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 320000.0
+4-size 320000.0
+++++++1++++++
+1-size 320000.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [16:52:19] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [16:52:19] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[EXECUTION] [16:52:19] Waiting before running function for 10 seconds.
+[EXECUTION] [16:52:29] Sensors started
+[STABLE CHECK] [16:52:32] Temperature too high: mean is 40.45, which is greater than 40
+[STABLE CHECK] [16:52:32] Temperature is too high.
+[STABLE CHECK] [16:52:32] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:52:52] Success: temperature is below threshold.
+[MAIN] [16:52:52] Terminated sensors
+[STABLE CHECK] [16:52:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:53:12] Success: Machine is stable.
+[EXECUTION] [16:53:12] Successfully reached stable state
+[EXECUTION] [16:53:12] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:53:42] Performed tensorflow.nn.softmax() on input and will now save energy data.
+[EXECUTION] [16:53:42] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.audio.decode_wav()', 'tensorflow.squeeze()', 'tensorflow.cast()', 'tensorflow.reduce_mean()', 'tensorflow.math.argmax()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().shuffle(1000).batch(32).prefetch()', 'tensorflow.data.Dataset.from_tensor_slices.map.map(extract_embedding).unbatch.cache.filter.map.cache().batch(32).prefetch()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.summary()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.EarlyStopping()', 'tensorflow.keras.Sequential.evaluate()', 'tensorflow.keras.Sequential(embeddings).numpy()', 'tensorflow.keras.layers.Input()', 'tensorflow.keras.Model()', 'tensorflow.keras.utils.plot_model()', "tensorflow.saved_model.load.signatures['serving_default']()", 'tensorflow.saved_model.load()', 'tensorflow.nn.softmax()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 8.0
+4-size 8.0
+++++++1++++++
+1-size 8.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:53:42] Result: {'tensorflow.nn.softmax()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
+[EXECUTION] [16:53:42] Data written to file /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/transfer_learning_audio_method-level/experiment-1.json
+[Your model] The main sound is: cat (0.6888927221298218)

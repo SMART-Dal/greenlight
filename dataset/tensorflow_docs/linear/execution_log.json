@@ -1,0 +1,673 @@
+2023-12-07 19:11:18.418790: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 19:11:18.557435: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-07 19:11:19.105667: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 19:11:19.105708: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 19:11:19.105712: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-07 19:11:53.846234: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-07 19:11:53.846288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[EXECUTION] [19:11:20] Waiting before running function for 10 seconds.
+[EXECUTION] [19:11:30] Sensors started
+[STABLE CHECK] [19:11:33] Success: temperature is below threshold.
+[MAIN] [19:11:33] Terminated sensors
+[STABLE CHECK] [19:11:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:11:53] Success: Machine is stable.
+[EXECUTION] [19:11:53] Successfully reached stable state
+[EXECUTION] [19:11:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:12:23] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:12:23] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [19:12:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:12:23] Waiting before running function for 10 seconds.
+[EXECUTION] [19:12:34] Sensors started
+[STABLE CHECK] [19:12:37] Success: temperature is below threshold.
+[MAIN] [19:12:37] Terminated sensors
+[STABLE CHECK] [19:12:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:12:57] Success: Machine is stable.
+[EXECUTION] [19:12:57] Successfully reached stable state
+[EXECUTION] [19:12:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:13:27] Performed tensorflow.data.Dataset.from_tensor_slices.shuffle() on input and will now save energy data.
+[EXECUTION] [19:13:27] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 21224.0
+outside_object_size
+[EXECUTION] [19:13:27] Result: {'tensorflow.data.Dataset.from_tensor_slices.shuffle()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [19:13:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:13:27] Waiting before running function for 10 seconds.
+[EXECUTION] [19:13:37] Sensors started
+[STABLE CHECK] [19:13:40] Success: temperature is below threshold.
+[MAIN] [19:13:40] Terminated sensors
+[STABLE CHECK] [19:13:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:14:00] Success: Machine is stable.
+[EXECUTION] [19:14:00] Successfully reached stable state
+[EXECUTION] [19:14:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:14:30] Performed tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat() on input and will now save energy data.
+[EXECUTION] [19:14:30] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 29904.0
+outside_object_size
+[EXECUTION] [19:14:30] Result: {'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()': {'energy_data': {'
+[EXECUTION] [19:14:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+Some feature keys: ['sex', 'age', 'n_siblings_spouses', 'parch', 'fare', 'class', 'deck', 'embark_town', 'alone']
+
+A batch of class: [b'Third' b'Third' b'Third' b'Second' b'Third' b'Third' b'First' b'Third'
+ b'Third' b'Third']
+
+A batch of Labels: [0 0 0 1 0 0 1 0 0 1]
+[EXECUTION] [19:14:30] Waiting before running function for 10 seconds.
+[EXECUTION] [19:14:40] Sensors started
+[STABLE CHECK] [19:14:43] Success: temperature is below threshold.
+[MAIN] [19:14:43] Terminated sensors
+[STABLE CHECK] [19:14:43] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:15:03] Success: Machine is stable.
+[EXECUTION] [19:15:03] Successfully reached stable state
+[EXECUTION] [19:15:03] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:15:33] Performed tensorflow.keras.layers.DenseFeatures([age_column])(feature_batch).numpy() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:15:33] Result: {'tensorflow.keras.layers.DenseFeatures([age_column])(feature_batch).numpy()': {'energy_data': {'cpu
+[EXECUTION] [19:15:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:15:33] Waiting before running function for 10 seconds.
+[EXECUTION] [19:15:43] Sensors started
+[STABLE CHECK] [19:15:46] Success: temperature is below threshold.
+[MAIN] [19:15:46] Terminated sensors
+[STABLE CHECK] [19:15:46] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:16:06] Success: Machine is stable.
+[EXECUTION] [19:16:06] Successfully reached stable state
+[EXECUTION] [19:16:06] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:16:36] Performed tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature_b on input and will now save energy data.
+[EXECUTION] [19:16:36] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()', 'tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature_batch).numpy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:16:36] Result: {'tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpzzzp5sdq
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:396: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/optimizers/optimizer_v2/ftrl.py:173: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-12-07 19:19:17.824039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+2023-12-07 19:20:48.101205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[EXECUTION] [19:16:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:16:36] Waiting before running function for 10 seconds.
+[EXECUTION] [19:16:47] Sensors started
+[STABLE CHECK] [19:16:50] Success: temperature is below threshold.
+[MAIN] [19:16:50] Terminated sensors
+[STABLE CHECK] [19:16:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:17:10] Success: Machine is stable.
+[EXECUTION] [19:17:10] Successfully reached stable state
+[EXECUTION] [19:17:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:17:40] Performed tensorflow.estimator.LinearClassifier() on input and will now save energy data.
+[EXECUTION] [19:17:40] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()', 'tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature_batch).numpy()', 'tensorflow.estimator.LinearClassifier()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:17:40] Result: {'tensorflow.estimator.LinearClassifier()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [19:17:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:17:40] Waiting before running function for 10 seconds.
+[EXECUTION] [19:17:50] Sensors started
+[STABLE CHECK] [19:17:53] Success: temperature is below threshold.
+[MAIN] [19:17:53] Terminated sensors
+[STABLE CHECK] [19:17:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:18:13] Success: Machine is stable.
+[EXECUTION] [19:18:13] Successfully reached stable state
+[EXECUTION] [19:18:13] Waiting before running function for 10 seconds.
+[EXECUTION] [19:18:23] Sensors started
+[STABLE CHECK] [19:18:26] Success: temperature is below threshold.
+[MAIN] [19:18:26] Terminated sensors
+[STABLE CHECK] [19:18:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:18:46] Success: Machine is stable.
+[EXECUTION] [19:18:46] Successfully reached stable state
+[EXECUTION] [19:18:46] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:19:16] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
+[EXECUTION] [19:19:16] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()', 'tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature_batch).numpy()', 'tensorflow.estimator.LinearClassifier()', 'tensorflow.data.Dataset.from_tensor_slices()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+4-size 466224.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 528.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 465696.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:19:16] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [19:19:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:19:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:19:53] Performed tensorflow.estimator.LinearClassifier.train() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [19:19:53] Result: {'tensorflow.estimator.LinearClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [19:19:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:19:53] Waiting before running function for 10 seconds.
+[EXECUTION] [19:20:03] Sensors started
+[STABLE CHECK] [19:20:06] Success: temperature is below threshold.
+[MAIN] [19:20:06] Terminated sensors
+[STABLE CHECK] [19:20:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:20:26] Not stable: stdev/mean is 0.08395739913417748, which is greater than 0.03
+[STABLE CHECK] [19:20:26] Machine is not stable yet.
+[STABLE CHECK] [19:20:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:20:46] Success: Machine is stable.
+[EXECUTION] [19:20:46] Successfully reached stable state
+[EXECUTION] [19:20:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:21:19] Performed tensorflow.estimator.LinearClassifier.evaluate() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [19:21:19] Result: {'tensorflow.estimator.LinearClassifier.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [19:21:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[2K
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpukd4i33g
+2023-12-07 19:22:56.769328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+2023-12-07 19:24:07.111493: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[2K
+{'accuracy': 0.75, 'accuracy_baseline': 0.625, 'auc': 0.8314968, 'auc_precision_recall': 0.7985462, 'average_loss': 0.4763322, 'label/mean': 0.375, 'loss': 0.46816853, 'precision': 0.67368424, 'prediction/mean': 0.3831488, 'recall': 0.64646465, 'global_step': 200}
+[EXECUTION] [19:21:19] Waiting before running function for 10 seconds.
+[EXECUTION] [19:21:29] Sensors started
+[STABLE CHECK] [19:21:32] Success: temperature is below threshold.
+[MAIN] [19:21:32] Terminated sensors
+[STABLE CHECK] [19:21:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:21:52] Success: Machine is stable.
+[EXECUTION] [19:21:52] Successfully reached stable state
+[EXECUTION] [19:21:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:22:22] Performed tensorflow.feature_column.crossed_column() on input and will now save energy data.
+[EXECUTION] [19:22:22] skipping call added, current list is: ['tensorflow.data.Dataset.from_tensor_slices.shuffle()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle.batch(batch_size).repeat()', 'tensorflow.keras.layers.DenseFeatures([tf.feature_column.indicator_column(gender_column)])(feature_batch).numpy()', 'tensorflow.estimator.LinearClassifier()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.feature_column.crossed_column()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:22:22] Result: {'tensorflow.feature_column.crossed_column()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [19:22:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:22:22] Waiting before running function for 10 seconds.
+[EXECUTION] [19:22:32] Sensors started
+[STABLE CHECK] [19:22:35] Success: temperature is below threshold.
+[MAIN] [19:22:35] Terminated sensors
+[STABLE CHECK] [19:22:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:22:55] Success: Machine is stable.
+[EXECUTION] [19:22:55] Successfully reached stable state
+[EXECUTION] [19:23:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:23:32] Performed tensorflow.estimator.LinearClassifier.train() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [19:23:32] Result: {'tensorflow.estimator.LinearClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [19:23:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[EXECUTION] [19:23:32] Waiting before running function for 10 seconds.
+[EXECUTION] [19:23:42] Sensors started
+[STABLE CHECK] [19:23:45] Success: temperature is below threshold.
+[MAIN] [19:23:45] Terminated sensors
+[STABLE CHECK] [19:23:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:24:05] Success: Machine is stable.
+[EXECUTION] [19:24:05] Successfully reached stable state
+[EXECUTION] [19:24:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:24:38] Performed tensorflow.estimator.LinearClassifier.evaluate() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [19:24:38] Result: {'tensorflow.estimator.LinearClassifier.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [19:24:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/linear/experiment-1.json
+[2K
+2023-12-07 19:24:38.589797: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[2K
+{'accuracy': 0.7537879, 'accuracy_baseline': 0.625, 'auc': 0.84230185, 'auc_precision_recall': 0.7595425, 'average_loss': 0.52214974, 'label/mean': 0.375, 'loss': 0.51481074, 'precision': 0.79310346, 'prediction/mean': 0.25960538, 'recall': 0.46464646, 'global_step': 200}

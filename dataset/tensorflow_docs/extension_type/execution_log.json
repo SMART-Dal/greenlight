@@ -1,0 +1,74 @@
+2023-12-08 06:59:48.464244: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow.python.framework.immutable_dict.ImmutableDict'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow.python.framework.immutable_dict.ImmutableDict'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow.python.framework.immutable_dict.ImmutableDict'>
+tf.Tensor(
+[[1 2 3]
+ [4 5 6]], shape=(2, 3), dtype=int32)
+Got expected TypeError: mask: expected a Tensor, got None
+MaskedTensor(values=<tf.Tensor: shape=(3,), dtype=int32, numpy=array([1, 2, 3], dtype=int32)>, mask=<tf.Tensor: shape=(3,), dtype=bool, numpy=array([ True,  True, False])>)
+a == a: True
+a == b: False
+a == a.values: False
+Got expected AssertionError: mask.dtype must be bool
+Got expected ValueError: Shapes (3,) and (2,) are incompatible
+Got expected AttributeError: Cannot mutate attribute `mask` outside the custom constructor of ExtensionType.
+Got expected TypeError: 'tensorflow.python.framework.ops.EagerTensor' object does not support item assignment
+Got expected AttributeError: Cannot mutate attribute `mask` outside the custom constructor of ExtensionType.
+TensorSpec(shape=(), dtype=tf.string, name=None)
+ImmutableDict({'height': TensorSpec(shape=(), dtype=tf.float32, name=None), 'speed': TensorSpec(shape=(), dtype=tf.float32, name=None)})
+<<TRACING>>
+<<TRACING>>
+<MaskedTensor [[1, 2, _], [4, _, 6]]>
+Toy(name='ball', price=<tf.Tensor: shape=(), dtype=float32, numpy=4.0>)
+Toy(name='ball', price=<tf.Tensor: shape=(), dtype=float32, numpy=4.0>)
+tf.Tensor(True, shape=(), dtype=bool)
+Original features: tf.Tensor([10.  0.  2.  5. -1.  0.], shape=(6,), dtype=float32)
+After propagating: tf.Tensor([10. 12.  4.  4. -1.  0.], shape=(6,), dtype=float32)
+<MaskedTensor [1, _, 3]>
+<MaskedTensor [1.0, _, 1.0]>
+net1=<Network shape=() work=[5. 3. 8.] bandwidth=[[0. 2. 0.] [2. 0. 3.] [0. 3. 0.]]>
+net2=<Network shape=() work=[3. 4. 2.] bandwidth=[[0. 2. 2.] [2. 0. 2.] [2. 2. 0.]]>
+batch=<Network shape=(2,) work=[[5. 3. 8.] [3. 4. 2.]] bandwidth=[[[0. 2. 0.] [2. 0. 3.] [0. 3. 0.]] [[0. 2. 2.] [2. 0. 2.] [2. 2. 0.]]]>
+Batch element 0: <Network shape=() work=[5. 3. 8.] bandwidth=[[0. 2. 0.] [2. 0. 3.] [0. 3. 0.]]>
+Batch element 1: <Network shape=() work=[3. 4. 2.] bandwidth=[[0. 2. 2.] [2. 0. 2.] [2. 2. 0.]]>
+<MaskedTensor [1.0, _, 3.0]>
+<MaskedTensor [26.285717, 37.285698, 112.285736, _]>
+<MaskedTensor [_, 0.5, _]>
+<MaskedTensor [4.5, _, 6.5]>
+Epoch 1/3
+
+1/1 [==============================] - ETA: 0s - loss: 10.4658
+1/1 [==============================] - 1s 1s/step - loss: 10.4658
+Epoch 2/3
+
+1/1 [==============================] - ETA: 0s - loss: 10.4320
+1/1 [==============================] - 0s 3ms/step - loss: 10.4320
+Epoch 3/3
+
+1/1 [==============================] - ETA: 0s - loss: 10.4099
+1/1 [==============================] - 0s 2ms/step - loss: 10.4099
+2023-12-08 06:59:50.200785: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+WARNING:absl:Function `_wrapped_model` contains input name(s) args_0 with unsupported characters which will be renamed to args_0_1 in the SavedModel.
+tf.Tensor(
+[[-0.15475905]
+ [ 0.28108016]
+ [-1.3470069 ]], shape=(3, 1), dtype=float32)
+<MaskedTensor [0, 1, 2, 3]>
+<MaskedTensor [4, 5, 6, 7]>
+<MaskedTensor [8, 9, 10, 11]>
+<MaskedTensor [12, 13, 14, 15]>
+<MaskedTensor [16, 17, 18, 19]>
+<MaskedTensor [_, 1, _, 3, _, 5, _, 7, _, 9]>
+<MaskedTensor [_, 1, 2, _, 4, 5, _, 7, 8, _]>
+<MaskedTensor [_, 1, 2, 3, _, 5, 6, 7, _, 9]>
+<MaskedTensor [_, 1, 2, 3, 4, _, 6, 7, 8, 9]>
+<MaskedTensor [_, 1, 2, 3, 4, 5, _, 7, 8, 9]>
+<MaskedTensor [[_, 1, _, 3, _, 5, _, 7, _, 9], [_, 1, 2, _, 4, 5, _, 7, 8, _]]>
+<MaskedTensor [[_, 1, 2, 3, _, 5, 6, 7, _, 9], [_, 1, 2, 3, 4, _, 6, 7, 8, 9]]>
+<MaskedTensor [[_, 1, 2, 3, 4, 5, _, 7, 8, 9]]>
+<MaskedTensor [_, 1, _, 3, _, 5, _, 7, _, 9]>
+<MaskedTensor [_, 1, 2, _, 4, 5, _, 7, 8, _]>
+<MaskedTensor [_, 1, 2, 3, _, 5, 6, 7, _, 9]>
+<MaskedTensor [_, 1, 2, 3, 4, _, 6, 7, 8, 9]>
+<MaskedTensor [_, 1, 2, 3, 4, 5, _, 7, 8, 9]>

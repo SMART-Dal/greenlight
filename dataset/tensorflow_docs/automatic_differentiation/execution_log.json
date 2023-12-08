@@ -1,0 +1,141 @@
+2023-12-08 04:46:02.421022: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [04:41:45] Waiting before running function for 10 seconds.
+[EXECUTION] [04:41:55] Sensors started
+[STABLE CHECK] [04:41:58] Success: temperature is below threshold.
+[MAIN] [04:41:58] Terminated sensors
+[STABLE CHECK] [04:41:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:42:18] Not stable: stdev/mean is 0.16895262698666338, which is greater than 0.03
+[STABLE CHECK] [04:42:18] Machine is not stable yet.
+[STABLE CHECK] [04:42:18] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:42:38] Not stable: stdev/mean is 0.12094809772330968, which is greater than 0.03
+[STABLE CHECK] [04:42:38] Machine is not stable yet.
+[STABLE CHECK] [04:42:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:42:58] Not stable: stdev/mean is 0.07343549005189058, which is greater than 0.03
+[STABLE CHECK] [04:42:58] Machine is not stable yet.
+[STABLE CHECK] [04:42:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:43:18] Not stable: stdev/mean is 0.11619881130828659, which is greater than 0.03
+[STABLE CHECK] [04:43:18] Machine is not stable yet.
+[STABLE CHECK] [04:43:18] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:43:38] Not stable: stdev/mean is 0.056926169704911454, which is greater than 0.03
+[STABLE CHECK] [04:43:38] Machine is not stable yet.
+[STABLE CHECK] [04:43:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:43:58] Not stable: stdev/mean is 0.0442100943706873, which is greater than 0.03
+[STABLE CHECK] [04:43:58] Machine is not stable yet.
+[EXECUTION] [04:44:28] Waiting before running function for 10 seconds.
+[EXECUTION] [04:44:38] Sensors started
+[STABLE CHECK] [04:44:41] Success: temperature is below threshold.
+[MAIN] [04:44:41] Terminated sensors
+[STABLE CHECK] [04:44:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:45:01] Not stable: stdev/mean is 0.24577771719054492, which is greater than 0.03
+[STABLE CHECK] [04:45:01] Machine is not stable yet.
+[STABLE CHECK] [04:45:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:45:21] Not stable: stdev/mean is 0.37037383896252685, which is greater than 0.03
+[STABLE CHECK] [04:45:21] Machine is not stable yet.
+[STABLE CHECK] [04:45:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:45:41] Not stable: stdev/mean is 0.03195332572167062, which is greater than 0.03
+[STABLE CHECK] [04:45:41] Machine is not stable yet.
+[STABLE CHECK] [04:45:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:46:01] Success: Machine is stable.
+[EXECUTION] [04:46:01] Successfully reached stable state
+[EXECUTION] [04:46:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:46:32] Performed tensorflow.constant() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:46:32] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:46:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/automatic_differentiation/experiment-1.json
+The gradient df/dx where f=(x^2):
+ None
+[EXECUTION] [04:46:32] Waiting before running function for 10 seconds.
+[EXECUTION] [04:46:42] Sensors started
+[STABLE CHECK] [04:46:45] Success: temperature is below threshold.
+[MAIN] [04:46:45] Terminated sensors
+[STABLE CHECK] [04:46:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:47:05] Success: Machine is stable.
+[EXECUTION] [04:47:05] Successfully reached stable state
+[EXECUTION] [04:47:05] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:47:35] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [04:47:35] skipping call added, current list is: ['tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:47:35] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:47:35] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/automatic_differentiation/experiment-1.json
+[EXECUTION] [04:47:35] Waiting before running function for 10 seconds.
+[EXECUTION] [04:47:45] Sensors started
+[STABLE CHECK] [04:47:48] Success: temperature is below threshold.
+[MAIN] [04:47:48] Terminated sensors
+[STABLE CHECK] [04:47:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [04:48:08] Success: Machine is stable.
+[EXECUTION] [04:48:08] Successfully reached stable state
+[EXECUTION] [04:48:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [04:48:38] Performed tensorflow.Variable() on input and will now save energy data.
+[EXECUTION] [04:48:38] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.Variable()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 9080.0
+4-size 9080.0
+++++++5++++++
+5-size 9080.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [04:48:38] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [04:48:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/automatic_differentiation/experiment-1.json
+The gradient df/dx where f=(x^2):
+ tf.Tensor([4.], shape=(1,), dtype=float32)
+The gradient df/dx where f=(x^2):
+ tf.Tensor([4.], shape=(1,), dtype=float32)
+The gradient df/dx where f=(x^2):
+ tf.Tensor([4.], shape=(1,), dtype=float32)
+The gradient dh/dx where h=(x^3):
+ tf.Tensor([12.], shape=(1,), dtype=float32)

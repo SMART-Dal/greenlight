@@ -1,0 +1,473 @@
+2023-12-07 18:21:56.884810: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-07 18:21:57.018735: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-07 18:21:57.655058: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 18:21:57.655115: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-07 18:21:57.655120: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-07 18:22:32.436509: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-07 18:22:32.436548: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+[EXECUTION] [18:21:58] Waiting before running function for 10 seconds.
+[EXECUTION] [18:22:08] Sensors started
+[STABLE CHECK] [18:22:11] Success: temperature is below threshold.
+[MAIN] [18:22:11] Terminated sensors
+[STABLE CHECK] [18:22:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:22:31] Success: Machine is stable.
+[EXECUTION] [18:22:31] Successfully reached stable state
+[EXECUTION] [18:22:33] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:23:03] Performed tensorflow.keras.applications.MobileNetV2() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:23:03] Result: {'tensorflow.keras.applications.MobileNetV2()': {'energy_data': {'cpu': '{"columns":["time_elapsed",
+[EXECUTION] [18:23:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:23:03] Waiting before running function for 10 seconds.
+[EXECUTION] [18:23:13] Sensors started
+[STABLE CHECK] [18:23:16] Success: temperature is below threshold.
+[MAIN] [18:23:16] Terminated sensors
+[STABLE CHECK] [18:23:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:23:36] Success: Machine is stable.
+[EXECUTION] [18:23:36] Successfully reached stable state
+[EXECUTION] [18:23:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:24:06] Performed tensorflow.keras.utils.get_file() on input and will now save energy data.
+[EXECUTION] [18:24:06] skipping call added, current list is: ['tensorflow.keras.utils.get_file()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 152.0
+4-size 232.0
+++++++5++++++
+5-size 80.0
+++++++5++++++
+5-size 152.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:24:06] Result: {'tensorflow.keras.utils.get_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [18:24:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:24:06] Waiting before running function for 10 seconds.
+[EXECUTION] [18:24:16] Sensors started
+[STABLE CHECK] [18:24:19] Success: temperature is below threshold.
+[MAIN] [18:24:19] Terminated sensors
+[STABLE CHECK] [18:24:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:24:39] Success: Machine is stable.
+[EXECUTION] [18:24:39] Successfully reached stable state
+[EXECUTION] [18:24:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:25:09] Performed tensorflow.io.read_file() on input and will now save energy data.
+[EXECUTION] [18:25:09] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 112.0
+4-size 112.0
+++++++5++++++
+5-size 112.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:25:09] Result: {'tensorflow.io.read_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [18:25:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:25:09] Waiting before running function for 10 seconds.
+[EXECUTION] [18:25:19] Sensors started
+[STABLE CHECK] [18:25:22] Success: temperature is below threshold.
+[MAIN] [18:25:22] Terminated sensors
+[STABLE CHECK] [18:25:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:25:42] Success: Machine is stable.
+[EXECUTION] [18:25:42] Successfully reached stable state
+[EXECUTION] [18:25:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:26:12] Performed tensorflow.image.decode_image() on input and will now save energy data.
+[EXECUTION] [18:26:13] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+[EXECUTION] [18:26:13] get_size_error: 
+ 'bytes' object has no attribute 'nbytes' 
+ 
+[EXECUTION] [18:26:13] get_size_error: 
+ unsupported operand type(s) for +: 'int' and 'NoneType' 
+ 
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:26:13] Result: {'tensorflow.image.decode_image()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [18:26:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:26:13] Waiting before running function for 10 seconds.
+[EXECUTION] [18:26:23] Sensors started
+[STABLE CHECK] [18:26:26] Success: temperature is below threshold.
+[MAIN] [18:26:26] Terminated sensors
+[STABLE CHECK] [18:26:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:26:46] Success: Machine is stable.
+[EXECUTION] [18:26:46] Successfully reached stable state
+[EXECUTION] [18:26:46] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:27:16] Performed tensorflow.cast() on input and will now save energy data.
+[EXECUTION] [18:27:16] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4846800.0
+++++++5++++++
+5-size 336.0
+4-size 4847136.0
+++++++1++++++
+1-size 4846800.0
+++++++5++++++
+5-size 336.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:27:16] Result: {'tensorflow.cast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
+[EXECUTION] [18:27:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:27:16] Waiting before running function for 10 seconds.
+[EXECUTION] [18:27:26] Sensors started
+[STABLE CHECK] [18:27:29] Success: temperature is below threshold.
+[MAIN] [18:27:29] Terminated sensors
+[STABLE CHECK] [18:27:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:27:49] Success: Machine is stable.
+[EXECUTION] [18:27:49] Successfully reached stable state
+[EXECUTION] [18:27:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:28:19] Performed tensorflow.image.resize() on input and will now save energy data.
+[EXECUTION] [18:28:19] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 602176.0
+++++++1++++++
+1-size 602112.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:28:19] Result: {'tensorflow.image.resize()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [18:28:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:28:19] Waiting before running function for 10 seconds.
+[EXECUTION] [18:28:29] Sensors started
+[STABLE CHECK] [18:28:32] Temperature too high: mean is 41.65, which is greater than 40
+[STABLE CHECK] [18:28:32] Temperature is too high.
+[STABLE CHECK] [18:28:32] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:28:52] Success: temperature is below threshold.
+[MAIN] [18:28:52] Terminated sensors
+[STABLE CHECK] [18:28:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:29:12] Success: Machine is stable.
+[EXECUTION] [18:29:12] Successfully reached stable state
+2023-12-07 18:30:57.456983: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8100
+2023-12-07 18:30:59.156911: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+[EXECUTION] [18:29:12] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:29:42] Performed tensorflow.keras.applications.mobilenet_v2.preprocess_input() on input and will now save energy data.
+[EXECUTION] [18:29:42] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+4-size 602112.0
+++++++1++++++
+1-size 602112.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:29:42] Result: {'tensorflow.keras.applications.mobilenet_v2.preprocess_input()': {'energy_data': {'cpu': '{"columns
+[EXECUTION] [18:29:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:29:42] Waiting before running function for 10 seconds.
+[EXECUTION] [18:29:52] Sensors started
+[STABLE CHECK] [18:29:55] Temperature too high: mean is 44.3, which is greater than 40
+[STABLE CHECK] [18:29:55] Temperature is too high.
+[STABLE CHECK] [18:29:55] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:30:15] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [18:30:15] Temperature is too high.
+[STABLE CHECK] [18:30:15] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:30:35] Success: temperature is below threshold.
+[MAIN] [18:30:35] Terminated sensors
+[STABLE CHECK] [18:30:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:30:55] Success: Machine is stable.
+[EXECUTION] [18:30:55] Successfully reached stable state
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 3s 3s/step
+[EXECUTION] [18:30:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:31:29] Performed tensorflow.keras.applications.MobileNetV2.predict() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+4-size 602112.0
+++++++1++++++
+1-size 602112.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3655656.0
+outside_object_size
+[EXECUTION] [18:31:29] Result: {'tensorflow.keras.applications.MobileNetV2.predict()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [18:31:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:31:29] Waiting before running function for 10 seconds.
+[EXECUTION] [18:31:39] Sensors started
+[STABLE CHECK] [18:31:42] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [18:31:42] Temperature is too high.
+[STABLE CHECK] [18:31:42] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:32:02] Success: temperature is below threshold.
+[MAIN] [18:32:02] Terminated sensors
+[STABLE CHECK] [18:32:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:32:22] Success: Machine is stable.
+[EXECUTION] [18:32:22] Successfully reached stable state
+[EXECUTION] [18:32:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:32:52] Performed tensorflow.keras.losses.CategoricalCrossentropy() on input and will now save energy data.
+[EXECUTION] [18:32:52] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:32:52] Result: {'tensorflow.keras.losses.CategoricalCrossentropy()': {'energy_data': {'cpu': '{"columns":["time_ela
+[EXECUTION] [18:32:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:32:52] Waiting before running function for 10 seconds.
+[EXECUTION] [18:33:02] Sensors started
+[STABLE CHECK] [18:33:05] Success: temperature is below threshold.
+[MAIN] [18:33:05] Terminated sensors
+[STABLE CHECK] [18:33:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:33:25] Not stable: stdev/mean is 0.06825690002554562, which is greater than 0.03
+[STABLE CHECK] [18:33:25] Machine is not stable yet.
+[STABLE CHECK] [18:33:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:33:45] Success: Machine is stable.
+[EXECUTION] [18:33:45] Successfully reached stable state
+[EXECUTION] [18:33:45] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:34:15] Performed tensorflow.one_hot() on input and will now save energy data.
+[EXECUTION] [18:34:16] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.one_hot()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:34:16] Result: {'tensorflow.one_hot()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[
+[EXECUTION] [18:34:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:34:16] Waiting before running function for 10 seconds.
+[EXECUTION] [18:34:26] Sensors started
+[STABLE CHECK] [18:34:29] Success: temperature is below threshold.
+[MAIN] [18:34:29] Terminated sensors
+[STABLE CHECK] [18:34:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:34:49] Not stable: stdev/mean is 0.22333873473622487, which is greater than 0.03
+[STABLE CHECK] [18:34:49] Machine is not stable yet.
+[STABLE CHECK] [18:34:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:35:09] Not stable: stdev/mean is 0.033958979209017685, which is greater than 0.03
+[STABLE CHECK] [18:35:09] Machine is not stable yet.
+[STABLE CHECK] [18:35:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:35:29] Success: Machine is stable.
+[EXECUTION] [18:35:29] Successfully reached stable state
+[EXECUTION] [18:35:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:35:59] Performed tensorflow.reshape() on input and will now save energy data.
+[EXECUTION] [18:35:59] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.one_hot()', 'tensorflow.reshape()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4000.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 4064.0
+++++++1++++++
+1-size 4000.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:35:59] Result: {'tensorflow.reshape()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[
+[EXECUTION] [18:35:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:35:59] Waiting before running function for 10 seconds.
+[EXECUTION] [18:36:09] Sensors started
+[STABLE CHECK] [18:36:12] Success: temperature is below threshold.
+[MAIN] [18:36:12] Terminated sensors
+[STABLE CHECK] [18:36:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:36:32] Success: Machine is stable.
+[EXECUTION] [18:36:32] Successfully reached stable state
+[EXECUTION] [18:36:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:37:02] Performed tensorflow.keras.applications.MobileNetV2() on input and will now save energy data.
+[EXECUTION] [18:37:02] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.one_hot()', 'tensorflow.reshape()', 'tensorflow.keras.applications.MobileNetV2()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+4-size 602112.0
+++++++1++++++
+1-size 602112.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3655656.0
+outside_object_size
+[EXECUTION] [18:37:02] Result: {'tensorflow.keras.applications.MobileNetV2()': {'energy_data': {'cpu': '{"columns":["time_elapsed",
+[EXECUTION] [18:37:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:37:03] Waiting before running function for 10 seconds.
+[EXECUTION] [18:37:13] Sensors started
+[STABLE CHECK] [18:37:16] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [18:37:16] Temperature is too high.
+[STABLE CHECK] [18:37:16] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:37:36] Success: temperature is below threshold.
+[MAIN] [18:37:36] Terminated sensors
+[STABLE CHECK] [18:37:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:37:56] Success: Machine is stable.
+[EXECUTION] [18:37:56] Successfully reached stable state
+[EXECUTION] [18:37:56] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:38:26] Performed tensorflow.sign() on input and will now save energy data.
+[EXECUTION] [18:38:26] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.one_hot()', 'tensorflow.reshape()', 'tensorflow.keras.applications.MobileNetV2()', 'tensorflow.sign()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+4-size 602112.0
+++++++1++++++
+1-size 602112.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:38:26] Result: {'tensorflow.sign()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
+[EXECUTION] [18:38:26] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+[EXECUTION] [18:38:26] Waiting before running function for 10 seconds.
+[EXECUTION] [18:38:36] Sensors started
+[STABLE CHECK] [18:38:39] Temperature too high: mean is 40.95, which is greater than 40
+[STABLE CHECK] [18:38:39] Temperature is too high.
+[STABLE CHECK] [18:38:39] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:38:59] Success: temperature is below threshold.
+[MAIN] [18:38:59] Terminated sensors
+[STABLE CHECK] [18:38:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:39:19] Success: Machine is stable.
+[EXECUTION] [18:39:19] Successfully reached stable state
+[EXECUTION] [18:39:19] waiting idle for 30 seconds after function execution
+[EXECUTION] [18:39:49] Performed tensorflow.clip_by_value() on input and will now save energy data.
+[EXECUTION] [18:39:49] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.io.read_file()', 'tensorflow.image.decode_image()', 'tensorflow.cast()', 'tensorflow.image.resize()', 'tensorflow.keras.applications.mobilenet_v2.preprocess_input()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.one_hot()', 'tensorflow.reshape()', 'tensorflow.keras.applications.MobileNetV2()', 'tensorflow.sign()', 'tensorflow.clip_by_value()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 602112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 602176.0
+++++++1++++++
+1-size 602112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [18:39:49] Result: {'tensorflow.clip_by_value()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [18:39:49] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/adversarial_fgsm/experiment-1.json
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 41ms/step
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 31ms/step
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 29ms/step
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 0s 24ms/step

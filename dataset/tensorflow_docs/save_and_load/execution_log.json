@@ -1,0 +1,672 @@
+2023-12-08 00:08:46.278787: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-12-08 00:08:46.413687: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-12-08 00:08:47.047075: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 00:08:47.047131: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
+2023-12-08 00:08:47.047136: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-12-08 00:10:25.060440: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 00:10:25.060491: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
+2.11.0
+[EXECUTION] [00:08:47] Waiting before running function for 10 seconds.
+[EXECUTION] [00:08:57] Sensors started
+[STABLE CHECK] [00:09:00] Success: temperature is below threshold.
+[MAIN] [00:09:00] Terminated sensors
+[STABLE CHECK] [00:09:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:09:21] Success: Machine is stable.
+[EXECUTION] [00:09:21] Successfully reached stable state
+[EXECUTION] [00:09:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:09:51] Performed tensorflow.keras.datasets.mnist.load_data() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:09:51] Result: {'tensorflow.keras.datasets.mnist.load_data()': {'energy_data': {'cpu': '{"columns":["time_elapsed",
+[EXECUTION] [00:09:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+[EXECUTION] [00:09:51] Waiting before running function for 10 seconds.
+[EXECUTION] [00:10:01] Sensors started
+[STABLE CHECK] [00:10:04] Success: temperature is below threshold.
+[MAIN] [00:10:04] Terminated sensors
+[STABLE CHECK] [00:10:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:10:24] Success: Machine is stable.
+[EXECUTION] [00:10:24] Successfully reached stable state
+[EXECUTION] [00:10:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:10:55] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++4++++++
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:10:55] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [00:10:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+[EXECUTION] [00:10:55] Waiting before running function for 10 seconds.
+[EXECUTION] [00:11:05] Sensors started
+[STABLE CHECK] [00:11:08] Success: temperature is below threshold.
+[MAIN] [00:11:08] Terminated sensors
+[STABLE CHECK] [00:11:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:11:28] Success: Machine is stable.
+[EXECUTION] [00:11:28] Successfully reached stable state
+[EXECUTION] [00:11:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:11:58] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
+[EXECUTION] [00:11:58] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 176.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:11:58] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [00:11:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+Model: "sequential"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense (Dense)               (None, 512)               401920    
+                                                                 
+ dropout (Dropout)           (None, 512)               0         
+                                                                 
+ dense_1 (Dense)             (None, 10)                5130      
+                                                                 
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________
+[EXECUTION] [00:11:58] Waiting before running function for 10 seconds.
+[EXECUTION] [00:12:08] Sensors started
+[STABLE CHECK] [00:12:11] Success: temperature is below threshold.
+[MAIN] [00:12:11] Terminated sensors
+[STABLE CHECK] [00:12:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:12:31] Success: Machine is stable.
+[EXECUTION] [00:12:31] Successfully reached stable state
+[EXECUTION] [00:12:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:13:01] Performed tensorflow.keras.callbacks.ModelCheckpoint() on input and will now save energy data.
+[EXECUTION] [00:13:01] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+4-size 192.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:13:01] Result: {'tensorflow.keras.callbacks.ModelCheckpoint()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [00:13:01] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+Epoch 1/10
+2023-12-08 00:13:02.885879: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
+
+ 1/32 [..............................] - ETA: 50s - loss: 2.3951 - sparse_categorical_accuracy: 0.0938
+11/32 [=========>....................] - ETA: 0s - loss: 1.8444 - sparse_categorical_accuracy: 0.4261 
+20/32 [=================>............] - ETA: 0s - loss: 1.4842 - sparse_categorical_accuracy: 0.5656
+29/32 [==========================>...] - ETA: 0s - loss: 1.2364 - sparse_categorical_accuracy: 0.6401
+Epoch 1: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 2s 17ms/step - loss: 1.2003 - sparse_categorical_accuracy: 0.6500 - val_loss: 0.7855 - val_sparse_categorical_accuracy: 0.7690
+Epoch 2/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.4972 - sparse_categorical_accuracy: 0.8438
+17/32 [==============>...............] - ETA: 0s - loss: 0.4620 - sparse_categorical_accuracy: 0.8732
+32/32 [==============================] - ETA: 0s - loss: 0.4392 - sparse_categorical_accuracy: 0.8740
+Epoch 2: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 7ms/step - loss: 0.4392 - sparse_categorical_accuracy: 0.8740 - val_loss: 0.5557 - val_sparse_categorical_accuracy: 0.8230
+Epoch 3/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.3080 - sparse_categorical_accuracy: 0.9375
+20/32 [=================>............] - ETA: 0s - loss: 0.3033 - sparse_categorical_accuracy: 0.9219
+Epoch 3: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 7ms/step - loss: 0.2890 - sparse_categorical_accuracy: 0.9250 - val_loss: 0.4932 - val_sparse_categorical_accuracy: 0.8450
+Epoch 4/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.2092 - sparse_categorical_accuracy: 0.9375
+15/32 [=============>................] - ETA: 0s - loss: 0.2152 - sparse_categorical_accuracy: 0.9438
+31/32 [============================>.] - ETA: 0s - loss: 0.2252 - sparse_categorical_accuracy: 0.9405
+Epoch 4: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 7ms/step - loss: 0.2252 - sparse_categorical_accuracy: 0.9400 - val_loss: 0.5209 - val_sparse_categorical_accuracy: 0.8330
+Epoch 5/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.2054 - sparse_categorical_accuracy: 0.9375
+16/32 [==============>...............] - ETA: 0s - loss: 0.1811 - sparse_categorical_accuracy: 0.9609
+Epoch 5: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 7ms/step - loss: 0.1690 - sparse_categorical_accuracy: 0.9580 - val_loss: 0.4507 - val_sparse_categorical_accuracy: 0.8570
+Epoch 6/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.2941 - sparse_categorical_accuracy: 0.9062
+19/32 [================>.............] - ETA: 0s - loss: 0.1192 - sparse_categorical_accuracy: 0.9770
+Epoch 6: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 7ms/step - loss: 0.1137 - sparse_categorical_accuracy: 0.9810 - val_loss: 0.4277 - val_sparse_categorical_accuracy: 0.8600
+Epoch 7/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.0956 - sparse_categorical_accuracy: 1.0000
+16/32 [==============>...............] - ETA: 0s - loss: 0.0985 - sparse_categorical_accuracy: 0.9863
+30/32 [===========================>..] - ETA: 0s - loss: 0.0896 - sparse_categorical_accuracy: 0.9844
+Epoch 7: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 8ms/step - loss: 0.0888 - sparse_categorical_accuracy: 0.9850 - val_loss: 0.4536 - val_sparse_categorical_accuracy: 0.8580
+Epoch 8/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.0644 - sparse_categorical_accuracy: 1.0000
+13/32 [===========>..................] - ETA: 0s - loss: 0.0611 - sparse_categorical_accuracy: 0.9928
+25/32 [======================>.......] - ETA: 0s - loss: 0.0628 - sparse_categorical_accuracy: 0.9937
+Epoch 8: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 8ms/step - loss: 0.0660 - sparse_categorical_accuracy: 0.9910 - val_loss: 0.4166 - val_sparse_categorical_accuracy: 0.8640
+Epoch 9/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.0841 - sparse_categorical_accuracy: 0.9688
+24/32 [=====================>........] - ETA: 0s - loss: 0.0455 - sparse_categorical_accuracy: 0.9974
+Epoch 9: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 5ms/step - loss: 0.0484 - sparse_categorical_accuracy: 0.9980 - val_loss: 0.4054 - val_sparse_categorical_accuracy: 0.8690
+Epoch 10/10
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.0343 - sparse_categorical_accuracy: 1.0000
+22/32 [===================>..........] - ETA: 0s - loss: 0.0413 - sparse_categorical_accuracy: 0.9986
+Epoch 10: saving model to training_1/cp.ckpt
+
+32/32 [==============================] - 0s 6ms/step - loss: 0.0406 - sparse_categorical_accuracy: 0.9990 - val_loss: 0.4020 - val_sparse_categorical_accuracy: 0.8710
+[EXECUTION] [00:13:05] Waiting before running function for 10 seconds.
+[EXECUTION] [00:13:15] Sensors started
+[STABLE CHECK] [00:13:18] Success: temperature is below threshold.
+[MAIN] [00:13:18] Terminated sensors
+[STABLE CHECK] [00:13:18] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:13:39] Success: Machine is stable.
+[EXECUTION] [00:13:39] Successfully reached stable state
+[EXECUTION] [00:13:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:14:09] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+[EXECUTION] [00:14:09] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()', 'tensorflow.keras.Sequential()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++4++++++
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+4-size 32576.0
+++++++5++++++
+5-size 11792.0
+++++++5++++++
+5-size 9320.0
+++++++5++++++
+5-size 11464.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:14:09] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [00:14:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+32/32 - 0s - loss: 2.3709 - sparse_categorical_accuracy: 0.0950 - 145ms/epoch - 5ms/step
+Untrained model, accuracy:  9.50%
+32/32 - 0s - loss: 0.4020 - sparse_categorical_accuracy: 0.8710 - 52ms/epoch - 2ms/step
+Restored model, accuracy: 87.10%
+
+Epoch 5: saving model to training_2/cp-0005.ckpt
+
+Epoch 10: saving model to training_2/cp-0010.ckpt
+
+Epoch 15: saving model to training_2/cp-0015.ckpt
+
+Epoch 20: saving model to training_2/cp-0020.ckpt
+
+Epoch 25: saving model to training_2/cp-0025.ckpt
+
+Epoch 30: saving model to training_2/cp-0030.ckpt
+
+Epoch 35: saving model to training_2/cp-0035.ckpt
+
+Epoch 40: saving model to training_2/cp-0040.ckpt
+
+Epoch 45: saving model to training_2/cp-0045.ckpt
+
+Epoch 50: saving model to training_2/cp-0050.ckpt
+[EXECUTION] [00:14:16] Waiting before running function for 10 seconds.
+[EXECUTION] [00:14:26] Sensors started
+[STABLE CHECK] [00:14:29] Temperature too high: mean is 40.6, which is greater than 40
+[STABLE CHECK] [00:14:29] Temperature is too high.
+[STABLE CHECK] [00:14:29] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:14:49] Success: temperature is below threshold.
+[MAIN] [00:14:49] Terminated sensors
+[STABLE CHECK] [00:14:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:15:09] Success: Machine is stable.
+[EXECUTION] [00:15:09] Successfully reached stable state
+[EXECUTION] [00:15:09] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:15:39] Performed tensorflow.train.latest_checkpoint() on input and will now save energy data.
+[EXECUTION] [00:15:39] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()', 'tensorflow.keras.Sequential()', 'tensorflow.train.latest_checkpoint()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:15:39] Result: {'tensorflow.train.latest_checkpoint()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [00:15:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+32/32 - 0s - loss: 0.4784 - sparse_categorical_accuracy: 0.8780 - 202ms/epoch - 6ms/step
+Restored model, accuracy: 87.80%
+32/32 - 0s - loss: 0.4784 - sparse_categorical_accuracy: 0.8780 - 162ms/epoch - 5ms/step
+WARNING:tensorflow:Detecting that an object or model or tf.train.Checkpoint is being deleted with unrestored values. See the following logs for the specific values in question. To silence these warnings, use `status.expect_partial()`. See https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint#restorefor details about the status object returned by the restore function.
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.8
+Restored model, accuracy: 87.80%
+Epoch 1/5
+
+ 1/32 [..............................] - ETA: 20s - loss: 2.3511 - sparse_categorical_accuracy: 0.1562
+12/32 [==========>...................] - ETA: 0s - loss: 1.6839 - sparse_categorical_accuracy: 0.4688 
+22/32 [===================>..........] - ETA: 0s - loss: 1.3347 - sparse_categorical_accuracy: 0.6094
+31/32 [============================>.] - ETA: 0s - loss: 1.1426 - sparse_categorical_accuracy: 0.6653
+32/32 [==============================] - 1s 6ms/step - loss: 1.1389 - sparse_categorical_accuracy: 0.6660
+Epoch 2/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.5240 - sparse_categorical_accuracy: 0.8125
+10/32 [========>.....................] - ETA: 0s - loss: 0.4602 - sparse_categorical_accuracy: 0.8687
+19/32 [================>.............] - ETA: 0s - loss: 0.4526 - sparse_categorical_accuracy: 0.8651
+28/32 [=========================>....] - ETA: 0s - loss: 0.4477 - sparse_categorical_accuracy: 0.8694
+32/32 [==============================] - 0s 6ms/step - loss: 0.4349 - sparse_categorical_accuracy: 0.8760
+Epoch 3/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.3794 - sparse_categorical_accuracy: 0.9062
+10/32 [========>.....................] - ETA: 0s - loss: 0.3202 - sparse_categorical_accuracy: 0.9281
+19/32 [================>.............] - ETA: 0s - loss: 0.2869 - sparse_categorical_accuracy: 0.9342
+28/32 [=========================>....] - ETA: 0s - loss: 0.2721 - sparse_categorical_accuracy: 0.9386
+32/32 [==============================] - 0s 6ms/step - loss: 0.2766 - sparse_categorical_accuracy: 0.9350
+Epoch 4/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.3125 - sparse_categorical_accuracy: 0.8750
+10/32 [========>.....................] - ETA: 0s - loss: 0.2134 - sparse_categorical_accuracy: 0.9375
+19/32 [================>.............] - ETA: 0s - loss: 0.1981 - sparse_categorical_accuracy: 0.9457
+28/32 [=========================>....] - ETA: 0s - loss: 0.2119 - sparse_categorical_accuracy: 0.9420
+32/32 [==============================] - 0s 6ms/step - loss: 0.2028 - sparse_categorical_accuracy: 0.9460
+Epoch 5/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.2357 - sparse_categorical_accuracy: 0.8750
+10/32 [========>.....................] - ETA: 0s - loss: 0.1492 - sparse_categorical_accuracy: 0.9594
+19/32 [================>.............] - ETA: 0s - loss: 0.1607 - sparse_categorical_accuracy: 0.9622
+32/32 [==============================] - ETA: 0s - loss: 0.1511 - sparse_categorical_accuracy: 0.9650
+32/32 [==============================] - 0s 5ms/step - loss: 0.1511 - sparse_categorical_accuracy: 0.9650
+[EXECUTION] [00:15:41] Waiting before running function for 10 seconds.
+[EXECUTION] [00:15:52] Sensors started
+[STABLE CHECK] [00:15:55] Temperature too high: mean is 41.1, which is greater than 40
+[STABLE CHECK] [00:15:55] Temperature is too high.
+[STABLE CHECK] [00:15:55] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:16:15] Success: temperature is below threshold.
+[MAIN] [00:16:15] Terminated sensors
+[STABLE CHECK] [00:16:15] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:16:35] Success: Machine is stable.
+[EXECUTION] [00:16:35] Successfully reached stable state
+[EXECUTION] [00:16:35] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:17:05] Performed tensorflow.keras.models.load_model() on input and will now save energy data.
+[EXECUTION] [00:17:05] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()', 'tensorflow.keras.Sequential()', 'tensorflow.train.latest_checkpoint()', 'tensorflow.keras.models.load_model()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [00:17:05] Result: {'tensorflow.keras.models.load_model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [00:17:05] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+[EXECUTION] [00:17:05] Waiting before running function for 10 seconds.
+[EXECUTION] [00:17:15] Sensors started
+[STABLE CHECK] [00:17:18] Success: temperature is below threshold.
+[MAIN] [00:17:18] Terminated sensors
+[STABLE CHECK] [00:17:18] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:17:38] Success: Machine is stable.
+[EXECUTION] [00:17:38] Successfully reached stable state
+Model: "sequential_5"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_20 (Dense)            (None, 512)               401920    
+                                                                 
+ dropout_10 (Dropout)        (None, 512)               0         
+                                                                 
+ dense_21 (Dense)            (None, 10)                5130      
+                                                                 
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________
+[EXECUTION] [00:17:38] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:18:08] Performed tensorflow.keras.models.load_model.summary() on input and will now save energy data.
+[EXECUTION] [00:18:08] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()', 'tensorflow.keras.Sequential()', 'tensorflow.train.latest_checkpoint()', 'tensorflow.keras.models.load_model()', 'tensorflow.keras.models.load_model.summary()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:18:08] Result: {'tensorflow.keras.models.load_model.summary()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [00:18:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+[EXECUTION] [00:18:08] Waiting before running function for 10 seconds.
+[EXECUTION] [00:18:18] Sensors started
+[STABLE CHECK] [00:18:21] Success: temperature is below threshold.
+[MAIN] [00:18:21] Terminated sensors
+[STABLE CHECK] [00:18:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:18:41] Success: Machine is stable.
+[EXECUTION] [00:18:41] Successfully reached stable state
+32/32 - 0s - loss: 0.4181 - sparse_categorical_accuracy: 0.8720 - 201ms/epoch - 6ms/step
+[EXECUTION] [00:18:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:19:11] Performed tensorflow.keras.models.load_model.evaluate() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 6272144.0
+++++++5++++++
+5-size 10240.0
+4-size 6282384.0
+++++++5++++++
+5-size 6272144.0
+++++++5++++++
+5-size 10240.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:19:11] Result: {'tensorflow.keras.models.load_model.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [00:19:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+Restored model, accuracy: 87.20%
+
+ 1/32 [..............................] - ETA: 2s
+30/32 [===========================>..] - ETA: 0s
+32/32 [==============================] - 0s 2ms/step
+WARNING:tensorflow:Detecting that an object or model or tf.train.Checkpoint is being deleted with unrestored values. See the following logs for the specific values in question. To silence these warnings, use `status.expect_partial()`. See https://www.tensorflow.org/api_docs/python/tf/train/Checkpoint#restorefor details about the status object returned by the restore function.
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.1
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.2
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.3
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.4
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.5
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.6
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.7
+WARNING:tensorflow:Value in checkpoint could not be found in the restored object: (root).optimizer._variables.8
+(1000, 10)
+Epoch 1/5
+
+ 1/32 [..............................] - ETA: 21s - loss: 2.3776 - sparse_categorical_accuracy: 0.0938
+11/32 [=========>....................] - ETA: 0s - loss: 1.7624 - sparse_categorical_accuracy: 0.4830 
+21/32 [==================>...........] - ETA: 0s - loss: 1.3854 - sparse_categorical_accuracy: 0.6101
+30/32 [===========================>..] - ETA: 0s - loss: 1.1509 - sparse_categorical_accuracy: 0.6792
+32/32 [==============================] - 1s 6ms/step - loss: 1.1279 - sparse_categorical_accuracy: 0.6850
+Epoch 2/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.5147 - sparse_categorical_accuracy: 0.9062
+10/32 [========>.....................] - ETA: 0s - loss: 0.4973 - sparse_categorical_accuracy: 0.8687
+19/32 [================>.............] - ETA: 0s - loss: 0.4524 - sparse_categorical_accuracy: 0.8734
+28/32 [=========================>....] - ETA: 0s - loss: 0.4228 - sparse_categorical_accuracy: 0.8906
+32/32 [==============================] - 0s 6ms/step - loss: 0.4123 - sparse_categorical_accuracy: 0.8930
+Epoch 3/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.2539 - sparse_categorical_accuracy: 0.9375
+10/32 [========>.....................] - ETA: 0s - loss: 0.2665 - sparse_categorical_accuracy: 0.9438
+19/32 [================>.............] - ETA: 0s - loss: 0.2679 - sparse_categorical_accuracy: 0.9375
+28/32 [=========================>....] - ETA: 0s - loss: 0.2711 - sparse_categorical_accuracy: 0.9308
+32/32 [==============================] - 0s 6ms/step - loss: 0.2761 - sparse_categorical_accuracy: 0.9300
+Epoch 4/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.1439 - sparse_categorical_accuracy: 0.9688
+10/32 [========>.....................] - ETA: 0s - loss: 0.2066 - sparse_categorical_accuracy: 0.9406
+19/32 [================>.............] - ETA: 0s - loss: 0.2018 - sparse_categorical_accuracy: 0.9457
+28/32 [=========================>....] - ETA: 0s - loss: 0.2096 - sparse_categorical_accuracy: 0.9408
+32/32 [==============================] - 0s 6ms/step - loss: 0.2037 - sparse_categorical_accuracy: 0.9440
+Epoch 5/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.1200 - sparse_categorical_accuracy: 1.0000
+10/32 [========>.....................] - ETA: 0s - loss: 0.1355 - sparse_categorical_accuracy: 0.9750
+19/32 [================>.............] - ETA: 0s - loss: 0.1407 - sparse_categorical_accuracy: 0.9770
+28/32 [=========================>....] - ETA: 0s - loss: 0.1400 - sparse_categorical_accuracy: 0.9732
+32/32 [==============================] - 0s 6ms/step - loss: 0.1395 - sparse_categorical_accuracy: 0.9730
+Model: "sequential_6"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_24 (Dense)            (None, 512)               401920    
+                                                                 
+ dropout_12 (Dropout)        (None, 512)               0         
+                                                                 
+ dense_25 (Dense)            (None, 10)                5130      
+                                                                 
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________
+[EXECUTION] [00:19:14] Waiting before running function for 10 seconds.
+[EXECUTION] [00:19:24] Sensors started
+[STABLE CHECK] [00:19:27] Temperature too high: mean is 44.35, which is greater than 40
+[STABLE CHECK] [00:19:27] Temperature is too high.
+[STABLE CHECK] [00:19:27] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:19:47] Temperature too high: mean is 41.7, which is greater than 40
+[STABLE CHECK] [00:19:47] Temperature is too high.
+[STABLE CHECK] [00:19:47] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:20:07] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [00:20:07] Temperature is too high.
+[STABLE CHECK] [00:20:07] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:20:27] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [00:20:27] Temperature is too high.
+[STABLE CHECK] [00:20:27] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:20:47] Temperature too high: mean is 40.85, which is greater than 40
+[STABLE CHECK] [00:20:47] Temperature is too high.
+[STABLE CHECK] [00:20:47] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [00:21:07] Success: temperature is below threshold.
+[MAIN] [00:21:07] Terminated sensors
+[STABLE CHECK] [00:21:07] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [00:21:27] Success: Machine is stable.
+[EXECUTION] [00:21:27] Successfully reached stable state
+32/32 - 0s - loss: 0.4119 - sparse_categorical_accuracy: 0.8700 - 232ms/epoch - 7ms/step
+[EXECUTION] [00:21:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [00:21:58] Performed tensorflow.keras.models.load_model.evaluate() on input and will now save energy data.
+[EXECUTION] [00:21:58] skipping call added, current list is: ['tensorflow.keras.Sequential.compile()', 'tensorflow.keras.callbacks.ModelCheckpoint()', 'tensorflow.keras.Sequential()', 'tensorflow.train.latest_checkpoint()', 'tensorflow.keras.models.load_model()', 'tensorflow.keras.models.load_model.summary()', 'tensorflow.keras.models.load_model.evaluate()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 6272144.0
+++++++5++++++
+5-size 10240.0
+4-size 6282384.0
+++++++5++++++
+5-size 6272144.0
+++++++5++++++
+5-size 10240.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [00:21:58] Result: {'tensorflow.keras.models.load_model.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [00:21:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/save_and_load/experiment-1.json
+Restored model, accuracy: 87.00%
+
+ 1/32 [..............................] - ETA: 1s
+27/32 [========================>.....] - ETA: 0s
+32/32 [==============================] - 0s 2ms/step
+(1000, 10)
+Epoch 1/5
+
+ 1/32 [..............................] - ETA: 21s - loss: 2.3448 - sparse_categorical_accuracy: 0.0625
+10/32 [========>.....................] - ETA: 0s - loss: 1.9235 - sparse_categorical_accuracy: 0.4344 
+19/32 [================>.............] - ETA: 0s - loss: 1.5121 - sparse_categorical_accuracy: 0.5905
+29/32 [==========================>...] - ETA: 0s - loss: 1.2394 - sparse_categorical_accuracy: 0.6595
+32/32 [==============================] - 1s 6ms/step - loss: 1.2006 - sparse_categorical_accuracy: 0.6690
+Epoch 2/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.8894 - sparse_categorical_accuracy: 0.7188
+11/32 [=========>....................] - ETA: 0s - loss: 0.4902 - sparse_categorical_accuracy: 0.8693
+21/32 [==================>...........] - ETA: 0s - loss: 0.4716 - sparse_categorical_accuracy: 0.8750
+31/32 [============================>.] - ETA: 0s - loss: 0.4445 - sparse_categorical_accuracy: 0.8780
+32/32 [==============================] - 0s 5ms/step - loss: 0.4453 - sparse_categorical_accuracy: 0.8780
+Epoch 3/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.5151 - sparse_categorical_accuracy: 0.8750
+11/32 [=========>....................] - ETA: 0s - loss: 0.3096 - sparse_categorical_accuracy: 0.9261
+20/32 [=================>............] - ETA: 0s - loss: 0.3055 - sparse_categorical_accuracy: 0.9187
+30/32 [===========================>..] - ETA: 0s - loss: 0.3010 - sparse_categorical_accuracy: 0.9219
+32/32 [==============================] - 0s 6ms/step - loss: 0.2998 - sparse_categorical_accuracy: 0.9220
+Epoch 4/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.1627 - sparse_categorical_accuracy: 1.0000
+10/32 [========>.....................] - ETA: 0s - loss: 0.1759 - sparse_categorical_accuracy: 0.9625
+19/32 [================>.............] - ETA: 0s - loss: 0.1826 - sparse_categorical_accuracy: 0.9556
+28/32 [=========================>....] - ETA: 0s - loss: 0.2103 - sparse_categorical_accuracy: 0.9487
+32/32 [==============================] - 0s 6ms/step - loss: 0.2150 - sparse_categorical_accuracy: 0.9490
+Epoch 5/5
+
+ 1/32 [..............................] - ETA: 0s - loss: 0.1558 - sparse_categorical_accuracy: 0.9688
+10/32 [========>.....................] - ETA: 0s - loss: 0.1755 - sparse_categorical_accuracy: 0.9656
+19/32 [================>.............] - ETA: 0s - loss: 0.1680 - sparse_categorical_accuracy: 0.9720
+28/32 [=========================>....] - ETA: 0s - loss: 0.1679 - sparse_categorical_accuracy: 0.9688
+32/32 [==============================] - 0s 6ms/step - loss: 0.1660 - sparse_categorical_accuracy: 0.9680
+Model: "sequential_7"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ dense_28 (Dense)            (None, 512)               401920    
+                                                                 
+ dropout_14 (Dropout)        (None, 512)               0         
+                                                                 
+ dense_29 (Dense)            (None, 10)                5130      
+                                                                 
+=================================================================
+Total params: 407,050
+Trainable params: 407,050
+Non-trainable params: 0
+_________________________________________________________________
+32/32 - 0s - loss: 0.4198 - sparse_categorical_accuracy: 0.8620 - 181ms/epoch - 6ms/step
+Restored model, accuracy: 86.20%
