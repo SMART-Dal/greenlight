@@ -1,11 +1,11 @@
-[EXECUTION] [18:05:25] Waiting before running function for 10 seconds.
-[EXECUTION] [18:05:35] Sensors started
-[STABLE CHECK] [18:05:38] Success: temperature is below threshold.
-[MAIN] [18:05:38] Terminated sensors
-[STABLE CHECK] [18:05:38] Waiting 20 seconds to reach stable state.
+[EXECUTION] [06:04:25] Waiting before running function for 10 seconds.
+[EXECUTION] [06:04:35] Sensors started
+[STABLE CHECK] [06:04:38] Success: temperature is below threshold.
+[MAIN] [06:04:38] Terminated sensors
+[STABLE CHECK] [06:04:38] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [18:05:58] Success: Machine is stable.
-[EXECUTION] [18:05:58] Successfully reached stable state
+[STABLE CHECK] [06:04:58] Success: Machine is stable.
+[EXECUTION] [06:04:58] Successfully reached stable state
 Traceback (most recent call last):
   File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/tpu_estimator_method-level.py", line 49, in <module>
     cluster_resolver = tf1.distribute.cluster_resolver.TPUClusterResolver(tpu='')

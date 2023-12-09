@@ -1,0 +1,86 @@
+2023-12-09 01:39:08.414219: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 01:39:40.171453: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+TensorFlow version: 2.7.0
+[EXECUTION] [01:38:34] Waiting before running function for 10 seconds.
+[EXECUTION] [01:38:44] Sensors started
+[STABLE CHECK] [01:38:47] Success: temperature is below threshold.
+[MAIN] [01:38:47] Terminated sensors
+[STABLE CHECK] [01:38:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:39:07] Success: Machine is stable.
+[EXECUTION] [01:39:07] Successfully reached stable state
+[EXECUTION] [01:39:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:39:38] Performed tensorflow.convert_to_tensor() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 101600.0
+4-size 101720.0
+++++++5++++++
+5-size 101720.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:39:38] Result: {'tensorflow.convert_to_tensor()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
+[EXECUTION] [01:39:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/quickstart_core/experiment-5.json
+Mean squared error for step 0: 2.866
+Mean squared error for step 10: 0.453
+Mean squared error for step 20: 0.285
+Mean squared error for step 30: 0.231
+Mean squared error for step 40: 0.209
+Mean squared error for step 50: 0.203
+Mean squared error for step 60: 0.194
+Mean squared error for step 70: 0.184
+Mean squared error for step 80: 0.186
+Mean squared error for step 90: 0.176
+
+Final train loss: 0.177
+Final test loss: 0.157
+[EXECUTION] [01:39:41] Waiting before running function for 10 seconds.
+[EXECUTION] [01:39:51] Sensors started
+[STABLE CHECK] [01:39:54] Temperature too high: mean is 41.7, which is greater than 40
+[STABLE CHECK] [01:39:54] Temperature is too high.
+[STABLE CHECK] [01:39:54] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:40:14] Success: temperature is below threshold.
+[MAIN] [01:40:14] Terminated sensors
+[STABLE CHECK] [01:40:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:40:34] Not stable: stdev/mean is 0.04097854369272108, which is greater than 0.03
+[STABLE CHECK] [01:40:34] Machine is not stable yet.
+[STABLE CHECK] [01:40:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:40:54] Not stable: stdev/mean is 0.24798986019825017, which is greater than 0.03
+[STABLE CHECK] [01:40:54] Machine is not stable yet.
+[STABLE CHECK] [01:40:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:41:14] Success: Machine is stable.
+[EXECUTION] [01:41:14] Successfully reached stable state
+[EXECUTION] [01:41:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:41:45] Performed tensorflow.saved_model.save() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 20240.0
+++++++5++++++
+5-size 80.0
+4-size 20320.0
+++++++5++++++
+5-size 20240.0
+++++++5++++++
+5-size 80.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:41:45] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [01:41:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/quickstart_core/experiment-5.json

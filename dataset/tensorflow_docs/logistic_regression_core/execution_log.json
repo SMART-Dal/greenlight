@@ -1,0 +1,88 @@
+2023-12-09 01:41:50.257781: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 01:41:52.811331: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+2.7.0
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 569 entries, 0 to 568
+Data columns (total 32 columns):
+ #   Column                     Non-Null Count  Dtype  
+---  ------                     --------------  -----  
+ 0   id                         569 non-null    int64  
+ 1   diagnosis                  569 non-null    object 
+ 2   radius_mean                569 non-null    float64
+ 3   texture_mean               569 non-null    float64
+ 4   perimeter_mean             569 non-null    float64
+ 5   area_mean                  569 non-null    float64
+ 6   smoothness_mean            569 non-null    float64
+ 7   compactness_mean           569 non-null    float64
+ 8   concavity_mean             569 non-null    float64
+ 9   concave_poinits_mean       569 non-null    float64
+ 10  symmetry_mean              569 non-null    float64
+ 11  fractal_dimension_mean     569 non-null    float64
+ 12  radius_ste                 569 non-null    float64
+ 13  texture_ste                569 non-null    float64
+ 14  perimeter_ste              569 non-null    float64
+ 15  area_ste                   569 non-null    float64
+ 16  smoothness_ste             569 non-null    float64
+ 17  compactness_ste            569 non-null    float64
+ 18  concavity_ste              569 non-null    float64
+ 19  concave_poinits_ste        569 non-null    float64
+ 20  symmetry_ste               569 non-null    float64
+ 21  fractal_dimension_ste      569 non-null    float64
+ 22  radius_largest             569 non-null    float64
+ 23  texture_largest            569 non-null    float64
+ 24  perimeter_largest          569 non-null    float64
+ 25  area_largest               569 non-null    float64
+ 26  smoothness_largest         569 non-null    float64
+ 27  compactness_largest        569 non-null    float64
+ 28  concavity_largest          569 non-null    float64
+ 29  concave_poinits_largest    569 non-null    float64
+ 30  symmetry_largest           569 non-null    float64
+ 31  fractal_dimension_largest  569 non-null    float64
+dtypes: float64(30), int64(1), object(1)
+memory usage: 142.4+ KB
+Epoch: 0, Training log loss: 0.661
+Epoch: 20, Training log loss: 0.418
+Epoch: 40, Training log loss: 0.269
+Epoch: 60, Training log loss: 0.178
+Epoch: 80, Training log loss: 0.137
+Epoch: 100, Training log loss: 0.116
+Epoch: 120, Training log loss: 0.106
+Epoch: 140, Training log loss: 0.096
+Epoch: 160, Training log loss: 0.094
+Epoch: 180, Training log loss: 0.089
+Final training log loss: 0.089
+Final testing log Loss: 0.077
+Final training accuracy: 0.968
+Final testing accuracy: 0.979
+[EXECUTION] [01:41:59] Waiting before running function for 10 seconds.
+[EXECUTION] [01:42:09] Sensors started
+[STABLE CHECK] [01:42:12] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [01:42:12] Temperature is too high.
+[STABLE CHECK] [01:42:12] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:42:32] Success: temperature is below threshold.
+[MAIN] [01:42:32] Terminated sensors
+[STABLE CHECK] [01:42:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:42:52] Success: Machine is stable.
+[EXECUTION] [01:42:52] Successfully reached stable state
+[EXECUTION] [01:42:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:43:23] Performed tensorflow.saved_model.save() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 21440.0
+++++++5++++++
+5-size 80.0
+4-size 21520.0
+++++++5++++++
+5-size 21440.0
+++++++5++++++
+5-size 80.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:43:23] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [01:43:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/logistic_regression_core/experiment-5.json

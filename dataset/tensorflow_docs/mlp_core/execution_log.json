@@ -1,0 +1,90 @@
+2023-12-09 01:43:27.488666: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 01:43:29.866178: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+2.7.0
+Epoch: 0
+Training loss: 0.223, Training accuracy: 0.934
+Validation loss: 0.122, Validation accuracy: 0.963
+Epoch: 1
+Training loss: 0.080, Training accuracy: 0.976
+Validation loss: 0.096, Validation accuracy: 0.971
+Epoch: 2
+Training loss: 0.047, Training accuracy: 0.986
+Validation loss: 0.093, Validation accuracy: 0.974
+Epoch: 3
+Training loss: 0.032, Training accuracy: 0.990
+Validation loss: 0.084, Validation accuracy: 0.977
+Epoch: 4
+Training loss: 0.027, Training accuracy: 0.992
+Validation loss: 0.106, Validation accuracy: 0.973
+Epoch: 5
+Training loss: 0.021, Training accuracy: 0.993
+Validation loss: 0.099, Validation accuracy: 0.976
+Epoch: 6
+Training loss: 0.020, Training accuracy: 0.994
+Validation loss: 0.102, Validation accuracy: 0.976
+Epoch: 7
+Training loss: 0.018, Training accuracy: 0.994
+Validation loss: 0.098, Validation accuracy: 0.977
+Epoch: 8
+Training loss: 0.014, Training accuracy: 0.995
+Validation loss: 0.103, Validation accuracy: 0.979
+Epoch: 9
+Training loss: 0.012, Training accuracy: 0.996
+Validation loss: 0.127, Validation accuracy: 0.973
+[EXECUTION] [01:43:59] Waiting before running function for 10 seconds.
+[EXECUTION] [01:44:09] Sensors started
+[STABLE CHECK] [01:44:12] Temperature too high: mean is 45, which is greater than 40
+[STABLE CHECK] [01:44:12] Temperature is too high.
+[STABLE CHECK] [01:44:12] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:44:32] Temperature too high: mean is 41.7, which is greater than 40
+[STABLE CHECK] [01:44:32] Temperature is too high.
+[STABLE CHECK] [01:44:32] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:44:52] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [01:44:52] Temperature is too high.
+[STABLE CHECK] [01:44:52] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:45:12] Success: temperature is below threshold.
+[MAIN] [01:45:12] Terminated sensors
+[STABLE CHECK] [01:45:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:45:32] Not stable: stdev/mean is 0.03130372844009029, which is greater than 0.03
+[STABLE CHECK] [01:45:32] Machine is not stable yet.
+[STABLE CHECK] [01:45:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:45:52] Success: Machine is stable.
+[EXECUTION] [01:45:52] Successfully reached stable state
+[EXECUTION] [01:45:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:46:23] Performed tensorflow.saved_model.save() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32384.0
+++++++5++++++
+5-size 88.0
+4-size 32472.0
+++++++5++++++
+5-size 32384.0
+++++++5++++++
+5-size 88.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:46:23] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [01:46:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mlp_core/experiment-5.json
+Test Accuracy: 0.976
+Accuracy breakdown by digit:
+---------------------------
+Digit 8: 0.953
+Digit 3: 0.962
+Digit 7: 0.969
+Digit 6: 0.970
+Digit 4: 0.970
+Digit 2: 0.978
+Digit 9: 0.984
+Digit 5: 0.984
+Digit 0: 0.991
+Digit 1: 0.999

@@ -1,74 +1,5 @@
-2023-12-08 12:00:08.783745: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 03:03:22.191929: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
 Using TensorFlow version 2.7.0
-[EXECUTION] [11:58:11] Waiting before running function for 10 seconds.
-[EXECUTION] [11:58:21] Sensors started
-[STABLE CHECK] [11:58:24] Temperature too high: mean is 40.4, which is greater than 40
-[STABLE CHECK] [11:58:24] Temperature is too high.
-[STABLE CHECK] [11:58:24] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:58:44] Success: temperature is below threshold.
-[MAIN] [11:58:44] Terminated sensors
-[STABLE CHECK] [11:58:44] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [11:59:04] Success: Machine is stable.
-[EXECUTION] [11:59:04] Successfully reached stable state
-[EXECUTION] [11:59:04] waiting idle for 30 seconds after function execution
-[EXECUTION] [11:59:34] Performed tensorflow.experimental.numpy.experimental_enable_numpy_behavior() on input and will now save energy data.
-[EXECUTION] [11:59:35] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [11:59:35] Result: {'tensorflow.experimental.numpy.experimental_enable_numpy_behavior()': {'energy_data': {'cpu': '{"co
-[EXECUTION] [11:59:35] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
-[EXECUTION] [11:59:35] Waiting before running function for 10 seconds.
-[EXECUTION] [11:59:45] Sensors started
-[STABLE CHECK] [11:59:48] Success: temperature is below threshold.
-[MAIN] [11:59:48] Terminated sensors
-[STABLE CHECK] [11:59:48] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:00:08] Success: Machine is stable.
-[EXECUTION] [12:00:08] Successfully reached stable state
-[EXECUTION] [12:00:08] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:00:38] Performed tensorflow.experimental.numpy.ones() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:00:38] Result: {'tensorflow.experimental.numpy.ones()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [12:00:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 Created ND array with shape = (5, 3), rank = 2, dtype = <dtype: 'float32'> on device = /job:localhost/replica:0/task:0/device:GPU:0
 
 Is `ones` an instance of tf.Tensor: True
@@ -92,89 +23,7 @@ tnp.add(1., 2.).dtype == tnp.float32
 When prefer_float32 is False:
 tnp.asarray(1.).dtype == tnp.float64
 tnp.add(1., 2.).dtype == tnp.float64
-[EXECUTION] [12:00:38] Waiting before running function for 10 seconds.
-[EXECUTION] [12:00:48] Sensors started
-[STABLE CHECK] [12:00:51] Temperature too high: mean is 40.6, which is greater than 40
-[STABLE CHECK] [12:00:51] Temperature is too high.
-[STABLE CHECK] [12:00:51] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:01:11] Success: temperature is below threshold.
-[MAIN] [12:01:11] Terminated sensors
-[STABLE CHECK] [12:01:11] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:01:31] Success: Machine is stable.
-[EXECUTION] [12:01:31] Successfully reached stable state
-[EXECUTION] [12:01:31] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:02:02] Performed tensorflow.experimental.numpy.ones() on input and will now save energy data.
-[EXECUTION] [12:02:02] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:02:02] Result: {'tensorflow.experimental.numpy.ones()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [12:02:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 Broadcasting shapes (2, 3), (3,) and (1, 2, 1) gives shape (1, 2, 3)
-[EXECUTION] [12:02:02] Waiting before running function for 10 seconds.
-[EXECUTION] [12:02:12] Sensors started
-[STABLE CHECK] [12:02:15] Temperature too high: mean is 42.55, which is greater than 40
-[STABLE CHECK] [12:02:15] Temperature is too high.
-[STABLE CHECK] [12:02:15] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:02:35] Success: temperature is below threshold.
-[MAIN] [12:02:35] Terminated sensors
-[STABLE CHECK] [12:02:35] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:02:55] Success: Machine is stable.
-[EXECUTION] [12:02:55] Successfully reached stable state
-[EXECUTION] [12:02:55] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:03:25] Performed tensorflow.experimental.numpy.arange(24).reshape() on input and will now save energy data.
-[EXECUTION] [12:03:25] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 96.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:03:25] Result: {'tensorflow.experimental.numpy.arange(24).reshape()': {'energy_data': {'cpu': '{"columns":["time_el
-[EXECUTION] [12:03:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 Basic indexing
 tf.Tensor(
 [[[16 17 18 19]
@@ -191,244 +40,17 @@ tf.Tensor(
 Advanced indexing
 tf.Tensor([12 13 17], shape=(3,), dtype=int64)
 Currently, TensorFlow NumPy does not support mutation.
-[EXECUTION] [12:03:25] Waiting before running function for 10 seconds.
-[EXECUTION] [12:03:35] Sensors started
-[STABLE CHECK] [12:03:38] Temperature too high: mean is 44.95, which is greater than 40
-[STABLE CHECK] [12:03:38] Temperature is too high.
-[STABLE CHECK] [12:03:38] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:03:58] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [12:03:58] Temperature is too high.
-[STABLE CHECK] [12:03:58] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:04:18] Temperature too high: mean is 40.3, which is greater than 40
-[STABLE CHECK] [12:04:18] Temperature is too high.
-[STABLE CHECK] [12:04:18] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:04:38] Success: temperature is below threshold.
-[MAIN] [12:04:38] Terminated sensors
-[STABLE CHECK] [12:04:38] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:04:58] Success: Machine is stable.
-[EXECUTION] [12:04:58] Successfully reached stable state
-[EXECUTION] [12:04:58] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:05:28] Performed tensorflow.experimental.numpy.sqrt(size).astype() on input and will now save energy data.
-[EXECUTION] [12:05:28] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:05:28] Result: {'tensorflow.experimental.numpy.sqrt(size).astype()': {'energy_data': {'cpu': '{"columns":["time_ela
-[EXECUTION] [12:05:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
-[EXECUTION] [12:05:28] Waiting before running function for 10 seconds.
-[EXECUTION] [12:05:38] Sensors started
-[STABLE CHECK] [12:05:41] Temperature too high: mean is 41.526315789473685, which is greater than 40
-[STABLE CHECK] [12:05:41] Temperature is too high.
-[STABLE CHECK] [12:05:41] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:06:01] Success: temperature is below threshold.
-[MAIN] [12:06:01] Terminated sensors
-[STABLE CHECK] [12:06:01] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:06:21] Success: Machine is stable.
-[EXECUTION] [12:06:21] Successfully reached stable state
-[EXECUTION] [12:06:21] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:06:51] Performed tensorflow.experimental.numpy.random.randn(64).astype() on input and will now save energy data.
-[EXECUTION] [12:06:51] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:06:51] Result: {'tensorflow.experimental.numpy.random.randn(64).astype()': {'energy_data': {'cpu': '{"columns":["ti
-[EXECUTION] [12:06:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
-[EXECUTION] [12:06:52] Waiting before running function for 10 seconds.
-[EXECUTION] [12:07:02] Sensors started
-[STABLE CHECK] [12:07:05] Temperature too high: mean is 42.95, which is greater than 40
-[STABLE CHECK] [12:07:05] Temperature is too high.
-[STABLE CHECK] [12:07:05] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:07:25] Success: temperature is below threshold.
-[MAIN] [12:07:25] Terminated sensors
-[STABLE CHECK] [12:07:25] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:07:45] Success: Machine is stable.
-[EXECUTION] [12:07:45] Successfully reached stable state
-[EXECUTION] [12:07:45] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:08:15] Performed tensorflow.experimental.numpy.maximum() on input and will now save energy data.
-[EXECUTION] [12:08:15] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 512.0
-++++++5++++++
-5-size 24.0
-4-size 536.0
-++++++1++++++
-1-size 512.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:08:15] Result: {'tensorflow.experimental.numpy.maximum()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
-[EXECUTION] [12:08:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 tf.Tensor(
-[[1.4830465  0.96791565]
- [1.4830465  0.96791565]], shape=(2, 2), dtype=float32)
+[[0.00352951 0.03881054]
+ [0.00352951 0.03881054]], shape=(2, 2), dtype=float32)
 sum = 6.0. Class: <class 'numpy.float64'>
-[EXECUTION] [12:08:15] Waiting before running function for 10 seconds.
-[EXECUTION] [12:08:25] Sensors started
-[STABLE CHECK] [12:08:28] Temperature too high: mean is 44.95, which is greater than 40
-[STABLE CHECK] [12:08:28] Temperature is too high.
-[STABLE CHECK] [12:08:28] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:08:48] Temperature too high: mean is 41.35, which is greater than 40
-[STABLE CHECK] [12:08:48] Temperature is too high.
-[STABLE CHECK] [12:08:48] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:09:08] Success: temperature is below threshold.
-[MAIN] [12:09:08] Terminated sensors
-[STABLE CHECK] [12:09:08] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:09:28] Success: Machine is stable.
-[EXECUTION] [12:09:28] Successfully reached stable state
-[EXECUTION] [12:09:28] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:09:59] Performed tensorflow.experimental.numpy.sum() on input and will now save energy data.
-[EXECUTION] [12:09:59] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 192.0
-4-size 192.0
-++++++5++++++
-5-size 192.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:09:59] Result: {'tensorflow.experimental.numpy.sum()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
-[EXECUTION] [12:09:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 sum = 6.0. Class: <class 'tensorflow.python.framework.ops.EagerTensor'>
 x = tf.Tensor([2. 2.], shape=(2,), dtype=float64)
 class = <class 'tensorflow.python.framework.ops.EagerTensor'>
-[EXECUTION] [12:09:59] Waiting before running function for 10 seconds.
-[EXECUTION] [12:10:09] Sensors started
-[STABLE CHECK] [12:10:12] Temperature too high: mean is 42.10526315789474, which is greater than 40
-[STABLE CHECK] [12:10:12] Temperature is too high.
-[STABLE CHECK] [12:10:12] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:10:32] Success: temperature is below threshold.
-[MAIN] [12:10:32] Terminated sensors
-[STABLE CHECK] [12:10:32] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:10:52] Success: Machine is stable.
-[EXECUTION] [12:10:52] Successfully reached stable state
-[EXECUTION] [12:10:52] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:11:22] Performed tensorflow.constant() on input and will now save energy data.
-[EXECUTION] [12:11:22] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()', 'tensorflow.constant()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:11:22] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [12:11:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 tf.Tensor([1 2], shape=(2,), dtype=int32)
-[EXECUTION] [12:11:22] Waiting before running function for 10 seconds.
-[EXECUTION] [12:11:32] Sensors started
-[STABLE CHECK] [12:11:35] Success: temperature is below threshold.
-[MAIN] [12:11:35] Terminated sensors
-[STABLE CHECK] [12:11:35] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:11:55] Success: Machine is stable.
-[EXECUTION] [12:11:55] Successfully reached stable state
-[EXECUTION] [12:11:55] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:12:25] Performed tensorflow.experimental.numpy.asarray() on input and will now save energy data.
-[EXECUTION] [12:12:25] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()', 'tensorflow.constant()', 'tensorflow.experimental.numpy.asarray()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 8.0
-4-size 8.0
-++++++1++++++
-1-size 8.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:12:25] Result: {'tensorflow.experimental.numpy.asarray()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
-[EXECUTION] [12:12:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 tf.Tensor([1 2], shape=(2,), dtype=int32)
 tf.Tensor([1 2], shape=(2,), dtype=int32)
 [1 2] <class 'numpy.ndarray'>
-[EXECUTION] [12:12:25] Waiting before running function for 10 seconds.
-[EXECUTION] [12:12:35] Sensors started
-[STABLE CHECK] [12:12:38] Success: temperature is below threshold.
-[MAIN] [12:12:38] Terminated sensors
-[STABLE CHECK] [12:12:38] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:12:58] Success: Machine is stable.
-[EXECUTION] [12:12:58] Successfully reached stable state
-[EXECUTION] [12:12:58] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:13:28] Performed tensorflow.reduce_sum() on input and will now save energy data.
-[EXECUTION] [12:13:28] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()', 'tensorflow.constant()', 'tensorflow.experimental.numpy.asarray()', 'tensorflow.reduce_sum()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 24.0
-4-size 24.0
-++++++1++++++
-1-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:13:28] Result: {'tensorflow.reduce_sum()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
-[EXECUTION] [12:13:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 Output = tf.Tensor(6.0, shape=(), dtype=float32)
 Output = tf.Tensor(6.0, shape=(), dtype=float32)
 Parameter shapes: [TensorShape([32, 64]), TensorShape([64]), TensorShape([64, 2])]
@@ -436,79 +58,21 @@ Gradient shapes: [TensorShape([32, 64]), TensorShape([64]), TensorShape([64, 2])
 Output shape: (16, 2), input shape: (16, 32)
 Batch jacobian shape: (16, 2, 32)
 Eager performance
-1.738580601522699 ms
+1.7767849029041827 ms
 
 tf.function compiled performance
-[EXECUTION] [12:13:29] Waiting before running function for 10 seconds.
-[EXECUTION] [12:13:39] Sensors started
-[STABLE CHECK] [12:13:42] Temperature too high: mean is 40.10526315789474, which is greater than 40
-[STABLE CHECK] [12:13:42] Temperature is too high.
-[STABLE CHECK] [12:13:42] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:14:02] Success: temperature is below threshold.
-[MAIN] [12:14:02] Terminated sensors
-[STABLE CHECK] [12:14:02] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:14:22] Success: Machine is stable.
-[EXECUTION] [12:14:22] Successfully reached stable state
-[EXECUTION] [12:14:22] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:14:52] Performed tensorflow.function() on input and will now save energy data.
-[EXECUTION] [12:14:52] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()', 'tensorflow.constant()', 'tensorflow.experimental.numpy.asarray()', 'tensorflow.reduce_sum()', 'tensorflow.function()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:14:52] Result: {'tensorflow.function()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [12:14:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
-0.9373267006594688 ms
+0.45535049866884947 ms
 Weight shape: (32, 64), batch size: 128, per example gradient shape: (128, 32, 64) 
 Weight shape: (64,), batch size: 128, per example gradient shape: (128, 64) 
 Weight shape: (64, 2), batch size: 128, per example gradient shape: (128, 64, 2) 
 Running vectorized computation
-0.9882892016321421 ms
+0.7850405003409833 ms
 
 Running unvectorized computation
-122.82467660261318 ms
+83.10201749554835 ms
 All logical devices: [LogicalDevice(name='/device:CPU:0', device_type='CPU'), LogicalDevice(name='/device:GPU:0', device_type='GPU')]
 All physical devices: [PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 Using device: LogicalDevice(name='/device:GPU:0', device_type='GPU')
 prediction is placed on /job:localhost/replica:0/task:0/device:GPU:0
-[EXECUTION] [12:14:54] Waiting before running function for 10 seconds.
-[EXECUTION] [12:15:05] Sensors started
-[STABLE CHECK] [12:15:08] Temperature too high: mean is 41.2, which is greater than 40
-[STABLE CHECK] [12:15:08] Temperature is too high.
-[STABLE CHECK] [12:15:08] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [12:15:28] Success: temperature is below threshold.
-[MAIN] [12:15:28] Terminated sensors
-[STABLE CHECK] [12:15:28] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [12:15:48] Success: Machine is stable.
-[EXECUTION] [12:15:48] Successfully reached stable state
-[EXECUTION] [12:15:48] waiting idle for 30 seconds after function execution
-[EXECUTION] [12:16:18] Performed tensorflow.experimental.numpy.copy() on input and will now save energy data.
-[EXECUTION] [12:16:18] skipping call added, current list is: ['tensorflow.experimental.numpy.experimental_enable_numpy_behavior()', 'tensorflow.experimental.numpy.ones()', 'tensorflow.experimental.numpy.arange(24).reshape()', 'tensorflow.experimental.numpy.sqrt(size).astype()', 'tensorflow.experimental.numpy.random.randn(64).astype()', 'tensorflow.experimental.numpy.maximum()', 'tensorflow.experimental.numpy.sum()', 'tensorflow.constant()', 'tensorflow.experimental.numpy.asarray()', 'tensorflow.reduce_sum()', 'tensorflow.function()', 'tensorflow.experimental.numpy.copy()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 40.0
-4-size 40.0
-++++++1++++++
-1-size 40.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [12:16:18] Result: {'tensorflow.experimental.numpy.copy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [12:16:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf_numpy/experiment-1.json
 /job:localhost/replica:0/task:0/device:GPU:0
 /job:localhost/replica:0/task:0/device:CPU:0

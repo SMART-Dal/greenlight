@@ -1,0 +1,1 @@
+["tensorflow.random.set_seed()", "tensorflow.squeeze()", "tensorflow.reshape()", "tensorflow.linspace()", "tensorflow.cast()", "tensorflow.random.uniform()", "tensorflow.Variable()", "tensorflow.add()", "tensorflow.nn.sparse_softmax_cross_entropy_with_logits()", "tensorflow.argmax()", "tensorflow.equal()", "tensorflow.saved_model.load()"]

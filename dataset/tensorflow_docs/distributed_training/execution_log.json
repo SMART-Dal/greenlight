@@ -1,153 +1,8 @@
-2023-12-08 09:21:47.009275: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-WARNING:tensorflow:Some requested devices in `tf.distribute.Strategy` are not visible to TensorFlow: /job:localhost/replica:0/task:0/device:GPU:0,/job:localhost/replica:0/task:0/device:GPU:1
+2023-12-09 02:30:03.651520: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:Some requested devices in `tf.distribute.Strategy` are not visible to TensorFlow: /job:localhost/replica:0/task:0/device:GPU:1,/job:localhost/replica:0/task:0/device:GPU:0
 WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
 WARNING:tensorflow:Collective ops is not configured at program startup. Some performance features may not be enabled.
-[EXECUTION] [09:21:13] Waiting before running function for 10 seconds.
-[EXECUTION] [09:21:23] Sensors started
-[STABLE CHECK] [09:21:26] Success: temperature is below threshold.
-[MAIN] [09:21:26] Terminated sensors
-[STABLE CHECK] [09:21:26] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:21:46] Success: Machine is stable.
-[EXECUTION] [09:21:46] Successfully reached stable state
-[EXECUTION] [09:21:47] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:22:17] Performed tensorflow.distribute.MirroredStrategy() on input and will now save energy data.
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:22:17] Result: {'tensorflow.distribute.MirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
-[EXECUTION] [09:22:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:22:17] Waiting before running function for 10 seconds.
-[EXECUTION] [09:22:27] Sensors started
-[STABLE CHECK] [09:22:30] Success: temperature is below threshold.
-[MAIN] [09:22:30] Terminated sensors
-[STABLE CHECK] [09:22:30] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:22:50] Not stable: stdev/mean is 0.08610303734307294, which is greater than 0.03
-[STABLE CHECK] [09:22:50] Machine is not stable yet.
-[STABLE CHECK] [09:22:50] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:23:10] Not stable: stdev/mean is 0.09412082652684979, which is greater than 0.03
-[STABLE CHECK] [09:23:10] Machine is not stable yet.
-[STABLE CHECK] [09:23:10] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:23:30] Success: Machine is stable.
-[EXECUTION] [09:23:30] Successfully reached stable state
-[EXECUTION] [09:23:30] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:24:00] Performed tensorflow.distribute.MirroredStrategy() on input and will now save energy data.
-[EXECUTION] [09:24:00] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:24:00] Result: {'tensorflow.distribute.MirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
-[EXECUTION] [09:24:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:24:00] Waiting before running function for 10 seconds.
-[EXECUTION] [09:24:10] Sensors started
-[STABLE CHECK] [09:24:13] Success: temperature is below threshold.
-[MAIN] [09:24:13] Terminated sensors
-[STABLE CHECK] [09:24:13] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:24:33] Success: Machine is stable.
-[EXECUTION] [09:24:33] Successfully reached stable state
-[EXECUTION] [09:24:33] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:25:03] Performed tensorflow.distribute.MultiWorkerMirroredStrategy() on input and will now save energy data.
-[EXECUTION] [09:25:03] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:25:03] Result: {'tensorflow.distribute.MultiWorkerMirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_e
-[EXECUTION] [09:25:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:25:03] Waiting before running function for 10 seconds.
-[EXECUTION] [09:25:13] Sensors started
-[STABLE CHECK] [09:25:16] Success: temperature is below threshold.
-[MAIN] [09:25:16] Terminated sensors
-[STABLE CHECK] [09:25:16] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:25:36] Success: Machine is stable.
-[EXECUTION] [09:25:36] Successfully reached stable state
-[EXECUTION] [09:25:36] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:26:06] Performed tensorflow.distribute.experimental.CommunicationOptions() on input and will now save energy data.
-[EXECUTION] [09:26:06] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:26:06] Result: {'tensorflow.distribute.experimental.CommunicationOptions()': {'energy_data': {'cpu': '{"columns":["
-[EXECUTION] [09:26:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:26:06] Waiting before running function for 10 seconds.
-[EXECUTION] [09:26:16] Sensors started
-[STABLE CHECK] [09:26:19] Success: temperature is below threshold.
-[MAIN] [09:26:19] Terminated sensors
-[STABLE CHECK] [09:26:19] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:26:39] Success: Machine is stable.
-[EXECUTION] [09:26:39] Successfully reached stable state
-[EXECUTION] [09:26:39] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:27:09] Performed tensorflow.distribute.experimental.CentralStorageStrategy() on input and will now save energy data.
-[EXECUTION] [09:27:09] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:27:09] Result: {'tensorflow.distribute.experimental.CentralStorageStrategy()': {'energy_data': {'cpu': '{"columns":
-[EXECUTION] [09:27:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:27:09] Waiting before running function for 10 seconds.
-[EXECUTION] [09:27:19] Sensors started
-[STABLE CHECK] [09:27:22] Success: temperature is below threshold.
-[MAIN] [09:27:22] Terminated sensors
-[STABLE CHECK] [09:27:22] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:27:42] Success: Machine is stable.
-[EXECUTION] [09:27:42] Successfully reached stable state
-[EXECUTION] [09:27:42] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:28:12] Performed tensorflow.distribute.get_strategy() on input and will now save energy data.
-[EXECUTION] [09:28:12] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:28:12] Result: {'tensorflow.distribute.get_strategy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [09:28:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:28:12] Waiting before running function for 10 seconds.
-[EXECUTION] [09:28:23] Sensors started
-[STABLE CHECK] [09:28:26] Success: temperature is below threshold.
-[MAIN] [09:28:26] Terminated sensors
-[STABLE CHECK] [09:28:26] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:28:46] Not stable: stdev/mean is 0.08167833982309354, which is greater than 0.03
-[STABLE CHECK] [09:28:46] Machine is not stable yet.
-[STABLE CHECK] [09:28:46] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:29:06] Success: Machine is stable.
-[EXECUTION] [09:29:06] Successfully reached stable state
-2023-12-08 09:33:59.196812: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
+2023-12-09 02:30:03.742972: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
 op: "TensorDataset"
 input: "Placeholder/_0"
 input: "Placeholder/_1"
@@ -190,152 +45,18 @@ attr {
   }
 }
 
-[EXECUTION] [09:29:06] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:29:36] Performed tensorflow.distribute.get_strategy.reduce() on input and will now save energy data.
-[EXECUTION] [09:29:36] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 24.0
-4-size 80.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 1208.0
-outside_object_size
-[EXECUTION] [09:29:36] Result: {'tensorflow.distribute.get_strategy.reduce()': {'energy_data': {'cpu': '{"columns":["time_elapsed",
-[EXECUTION] [09:29:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
 MirroredVariable:{
   0: <tf.Variable 'Variable:0' shape=() dtype=float32, numpy=1.0>
 }
-[EXECUTION] [09:29:36] Waiting before running function for 10 seconds.
-[EXECUTION] [09:29:46] Sensors started
-[STABLE CHECK] [09:29:49] Success: temperature is below threshold.
-[MAIN] [09:29:49] Terminated sensors
-[STABLE CHECK] [09:29:49] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:30:09] Success: Machine is stable.
-[EXECUTION] [09:30:09] Successfully reached stable state
-[EXECUTION] [09:30:09] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:30:39] Performed tensorflow.keras.Sequential() on input and will now save energy data.
-[EXECUTION] [09:30:39] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 9864.0
-4-size 9864.0
-++++++5++++++
-5-size 9864.0
-4-size 9864.0
-++++++4++++++
-++++++5++++++
-5-size 9864.0
-4-size 9864.0
-++++++5++++++
-5-size 9864.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:30:39] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
-[EXECUTION] [09:30:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:30:39] Waiting before running function for 10 seconds.
-[EXECUTION] [09:30:49] Sensors started
-[STABLE CHECK] [09:30:52] Success: temperature is below threshold.
-[MAIN] [09:30:52] Terminated sensors
-[STABLE CHECK] [09:30:52] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:31:12] Success: Machine is stable.
-[EXECUTION] [09:31:12] Successfully reached stable state
-[EXECUTION] [09:31:12] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:31:42] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
-[EXECUTION] [09:31:42] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 95088.0
-outside_object_size
-[EXECUTION] [09:31:42] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
-[EXECUTION] [09:31:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:31:42] Waiting before running function for 10 seconds.
-[EXECUTION] [09:31:52] Sensors started
-[STABLE CHECK] [09:31:55] Temperature too high: mean is 43, which is greater than 40
-[STABLE CHECK] [09:31:55] Temperature is too high.
-[STABLE CHECK] [09:31:55] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:32:15] Temperature too high: mean is 40.1, which is greater than 40
-[STABLE CHECK] [09:32:15] Temperature is too high.
-[STABLE CHECK] [09:32:15] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:32:35] Success: temperature is below threshold.
-[MAIN] [09:32:35] Terminated sensors
-[STABLE CHECK] [09:32:35] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:32:55] Success: Machine is stable.
-[EXECUTION] [09:32:55] Successfully reached stable state
-[EXECUTION] [09:32:55] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:33:25] Performed tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch() on input and will now save energy data.
-[EXECUTION] [09:33:25] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:33:25] Result: {'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()': {'energy_data': {'cpu':
-[EXECUTION] [09:33:26] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:33:26] Waiting before running function for 10 seconds.
-[EXECUTION] [09:33:36] Sensors started
-[STABLE CHECK] [09:33:39] Success: temperature is below threshold.
-[MAIN] [09:33:39] Terminated sensors
-[STABLE CHECK] [09:33:39] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:33:59] Success: Machine is stable.
-[EXECUTION] [09:33:59] Successfully reached stable state
 Epoch 1/2
 
- 1/10 [==>...........................] - ETA: 10s - loss: 5.0179
-10/10 [==============================] - 1s 4ms/step - loss: 3.5714
+ 1/10 [==>...........................] - ETA: 9s - loss: 1.2966
+10/10 [==============================] - 1s 6ms/step - loss: 0.9228
 Epoch 2/2
 
- 1/10 [==>...........................] - ETA: 0s - loss: 2.2179
-10/10 [==============================] - 0s 2ms/step - loss: 1.5785
-2023-12-08 09:35:23.874073: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.5731
+10/10 [==============================] - 0s 3ms/step - loss: 0.4079
+2023-12-09 02:30:58.270547: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
 op: "TensorDataset"
 input: "Placeholder/_0"
 input: "Placeholder/_1"
@@ -378,46 +99,22 @@ attr {
   }
 }
 
-[EXECUTION] [09:34:00] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:34:30] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 26696.0
-4-size 26696.0
-++++++5++++++
-5-size 26696.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 929112.0
-outside_object_size
-[EXECUTION] [09:34:30] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [09:34:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:34:30] Waiting before running function for 10 seconds.
-[EXECUTION] [09:34:40] Sensors started
-[STABLE CHECK] [09:34:43] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [09:34:43] Temperature is too high.
-[STABLE CHECK] [09:34:43] Waiting 20 seconds to reach low temperature.
+[EXECUTION] [02:30:05] Waiting before running function for 10 seconds.
+[EXECUTION] [02:30:15] Sensors started
+[STABLE CHECK] [02:30:18] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [02:30:18] Temperature is too high.
+[STABLE CHECK] [02:30:18] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [09:35:03] Success: temperature is below threshold.
-[MAIN] [09:35:03] Terminated sensors
-[STABLE CHECK] [09:35:03] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [02:30:38] Success: temperature is below threshold.
+[MAIN] [02:30:38] Terminated sensors
+[STABLE CHECK] [02:30:38] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [09:35:23] Success: Machine is stable.
-[EXECUTION] [09:35:23] Successfully reached stable state
+[STABLE CHECK] [02:30:58] Success: Machine is stable.
+[EXECUTION] [02:30:58] Successfully reached stable state
 
- 1/10 [==>...........................] - ETA: 2s - loss: 0.9803
-10/10 [==============================] - 0s 4ms/step - loss: 0.9803
-2023-12-08 09:36:47.534682: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
+ 1/10 [==>...........................] - ETA: 2s - loss: 0.2533
+10/10 [==============================] - 0s 4ms/step - loss: 0.2533
+2023-12-09 02:31:28.800629: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Did not find a shardable source, walked to a node which is not a dataset: name: "FlatMapDataset/_9"
 op: "FlatMapDataset"
 input: "PrefetchDataset/_8"
 attr {
@@ -437,7 +134,7 @@ attr {
   key: "f"
   value {
     func {
-      name: "__inference_Dataset_flat_map_slice_batch_indices_1212"
+      name: "__inference_Dataset_flat_map_slice_batch_indices_1170"
     }
   }
 }
@@ -468,8 +165,9 @@ attr {
   }
 }
 . Consider either turning off auto-sharding or switching the auto_shard_policy to DATA to shard this dataset. You can do this by creating a new `tf.data.Options()` object then setting `options.experimental_distribute.auto_shard_policy = AutoShardPolicy.DATA` before applying the options object to the dataset via `dataset.with_options(options)`.
-[EXECUTION] [09:35:24] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:35:54] Performed tensorflow.keras.Sequential.evaluate() on input and will now save energy data.
+[EXECUTION] [02:30:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:31:28] Performed tensorflow.keras.Sequential.evaluate() on input and will now save energy data.
+[EXECUTION] [02:31:28] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()', 'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()', 'tensorflow.keras.losses.BinaryCrossentropy()', 'tensorflow.nn.compute_average_loss()', 'tensorflow.keras.optimizers.SGD.apply_gradients()', 'tensorflow.distribute.MirroredStrategy.run()', 'tensorflow.keras.Sequential.fit()', 'tensorflow.keras.Sequential.evaluate()']
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -482,163 +180,19 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 ++++++5++++++
-5-size 1188344.0
+5-size 1188336.0
 outside_object_size
-[EXECUTION] [09:35:54] Result: {'tensorflow.keras.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
-[EXECUTION] [09:35:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:35:54] Waiting before running function for 10 seconds.
-[EXECUTION] [09:36:04] Sensors started
-[STABLE CHECK] [09:36:07] Temperature too high: mean is 42.6, which is greater than 40
-[STABLE CHECK] [09:36:07] Temperature is too high.
-[STABLE CHECK] [09:36:07] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:36:27] Success: temperature is below threshold.
-[MAIN] [09:36:27] Terminated sensors
-[STABLE CHECK] [09:36:27] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:36:47] Success: Machine is stable.
-[EXECUTION] [09:36:47] Successfully reached stable state
+[EXECUTION] [02:31:28] Result: {'tensorflow.keras.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [02:31:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-5.json
 Epoch 1/2
 
- 1/10 [==>...........................] - ETA: 1s - loss: 0.9803
-10/10 [==============================] - 0s 4ms/step - loss: 0.6977
+ 1/10 [==>...........................] - ETA: 1s - loss: 0.2533
+10/10 [==============================] - 0s 3ms/step - loss: 0.1803
 Epoch 2/2
 
- 1/10 [==>...........................] - ETA: 0s - loss: 0.4333
-10/10 [==============================] - 0s 4ms/step - loss: 0.3084
-[EXECUTION] [09:36:47] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:37:17] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 944.0
-++++++5++++++
-5-size 944.0
-4-size 1888.0
-++++++5++++++
-5-size 944.0
-++++++5++++++
-5-size 944.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 1424784.0
-outside_object_size
-[EXECUTION] [09:37:18] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [09:37:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:37:18] Waiting before running function for 10 seconds.
-[EXECUTION] [09:37:28] Sensors started
-[STABLE CHECK] [09:37:31] Temperature too high: mean is 44.45, which is greater than 40
-[STABLE CHECK] [09:37:31] Temperature is too high.
-[STABLE CHECK] [09:37:31] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:37:51] Temperature too high: mean is 41.95, which is greater than 40
-[STABLE CHECK] [09:37:51] Temperature is too high.
-[STABLE CHECK] [09:37:51] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:38:11] Temperature too high: mean is 40.35, which is greater than 40
-[STABLE CHECK] [09:38:11] Temperature is too high.
-[STABLE CHECK] [09:38:11] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:38:31] Success: temperature is below threshold.
-[MAIN] [09:38:31] Terminated sensors
-[STABLE CHECK] [09:38:31] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:38:51] Success: Machine is stable.
-[EXECUTION] [09:38:51] Successfully reached stable state
-[EXECUTION] [09:38:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:39:21] Performed tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat() on input and will now save energy data.
-[EXECUTION] [09:39:21] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:39:21] Result: {'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()': {'energy_data': {'cpu': '{"columns
-[EXECUTION] [09:39:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:39:21] Waiting before running function for 10 seconds.
-[EXECUTION] [09:39:31] Sensors started
-[STABLE CHECK] [09:39:34] Success: temperature is below threshold.
-[MAIN] [09:39:34] Terminated sensors
-[STABLE CHECK] [09:39:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:39:54] Success: Machine is stable.
-[EXECUTION] [09:39:54] Successfully reached stable state
-[EXECUTION] [09:39:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:40:24] Performed tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch() on input and will now save energy data.
-[EXECUTION] [09:40:24] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 26696.0
-outside_object_size
-[EXECUTION] [09:40:24] Result: {'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()': {'energy_data': {'cpu': '{"col
-[EXECUTION] [09:40:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:40:24] Waiting before running function for 10 seconds.
-[EXECUTION] [09:40:34] Sensors started
-[STABLE CHECK] [09:40:37] Temperature too high: mean is 41.9, which is greater than 40
-[STABLE CHECK] [09:40:37] Temperature is too high.
-[STABLE CHECK] [09:40:37] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [09:40:57] Success: temperature is below threshold.
-[MAIN] [09:40:57] Terminated sensors
-[STABLE CHECK] [09:40:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:41:17] Success: Machine is stable.
-[EXECUTION] [09:41:17] Successfully reached stable state
-[EXECUTION] [09:41:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:41:47] Performed tensorflow.keras.optimizers.SGD() on input and will now save energy data.
-[EXECUTION] [09:41:47] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:41:47] Result: {'tensorflow.keras.optimizers.SGD()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [09:41:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:41:47] Waiting before running function for 10 seconds.
-[EXECUTION] [09:41:57] Sensors started
-[STABLE CHECK] [09:42:00] Success: temperature is below threshold.
-[MAIN] [09:42:00] Terminated sensors
-[STABLE CHECK] [09:42:00] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:42:20] Success: Machine is stable.
-[EXECUTION] [09:42:20] Successfully reached stable state
-[EXECUTION] [09:42:20] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:42:50] Performed tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch() on input and will now save energy data.
-[EXECUTION] [09:42:51] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()']
-inside_arg_size
-++++++4++++++
-2023-12-08 09:43:24.211556: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
+ 1/10 [==>...........................] - ETA: 0s - loss: 0.1120
+10/10 [==============================] - 0s 3ms/step - loss: 0.0797
+2023-12-09 02:31:29.062920: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorDataset/_2"
 op: "TensorDataset"
 input: "Placeholder/_0"
 input: "Placeholder/_1"
@@ -681,408 +235,213 @@ attr {
   }
 }
 
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7f89ee1dda60> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:42:51] Result: {'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()': {'energy_data': {'cpu'
-[EXECUTION] [09:42:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:42:51] Waiting before running function for 10 seconds.
-[EXECUTION] [09:43:01] Sensors started
-[STABLE CHECK] [09:43:04] Success: temperature is below threshold.
-[MAIN] [09:43:04] Terminated sensors
-[STABLE CHECK] [09:43:04] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:43:24] Success: Machine is stable.
-[EXECUTION] [09:43:24] Successfully reached stable state
-[EXECUTION] [09:43:24] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:43:54] Performed tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset() on input and will now save energy data.
-[EXECUTION] [09:43:54] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()', 'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 26696.0
-4-size 26696.0
-++++++5++++++
-5-size 26696.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 24736.0
-outside_object_size
-[EXECUTION] [09:43:54] Result: {'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()': {'energy_data': {'cpu':
-[EXECUTION] [09:43:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:43:54] Waiting before running function for 10 seconds.
-[EXECUTION] [09:44:04] Sensors started
-[STABLE CHECK] [09:44:07] Success: temperature is below threshold.
-[MAIN] [09:44:07] Terminated sensors
-[STABLE CHECK] [09:44:07] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:44:27] Success: Machine is stable.
-[EXECUTION] [09:44:27] Successfully reached stable state
-[EXECUTION] [09:44:27] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:44:57] Performed tensorflow.keras.losses.BinaryCrossentropy() on input and will now save energy data.
-[EXECUTION] [09:44:57] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()', 'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()', 'tensorflow.keras.losses.BinaryCrossentropy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 128.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:44:57] Result: {'tensorflow.keras.losses.BinaryCrossentropy()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [09:44:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:44:58] Waiting before running function for 10 seconds.
-[EXECUTION] [09:45:08] Sensors started
-[STABLE CHECK] [09:45:12] Success: temperature is below threshold.
-[MAIN] [09:45:12] Terminated sensors
-[STABLE CHECK] [09:45:12] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:45:32] Success: Machine is stable.
-[EXECUTION] [09:45:32] Successfully reached stable state
-[EXECUTION] [09:45:33] Waiting before running function for 10 seconds.
-[EXECUTION] [09:45:43] Sensors started
-[STABLE CHECK] [09:45:46] Success: temperature is below threshold.
-[MAIN] [09:45:46] Terminated sensors
-[STABLE CHECK] [09:45:46] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:46:06] Not stable: stdev/mean is 0.29958565847685975, which is greater than 0.03
-[STABLE CHECK] [09:46:06] Machine is not stable yet.
-[STABLE CHECK] [09:46:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:46:26] Success: Machine is stable.
-[EXECUTION] [09:46:26] Successfully reached stable state
-[EXECUTION] [09:46:26] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:46:56] Performed tensorflow.nn.compute_average_loss() on input and will now save energy data.
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7f8ab290b310> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[EXECUTION] [09:46:56] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()', 'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()', 'tensorflow.keras.losses.BinaryCrossentropy()', 'tensorflow.nn.compute_average_loss()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 149168.0
-4-size 149168.0
-++++++5++++++
-5-size 149168.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [09:47:23] Result: {'tensorflow.nn.compute_average_loss()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [09:47:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:47:23] Waiting before running function for 10 seconds.
-[EXECUTION] [09:47:33] Sensors started
-[STABLE CHECK] [09:47:36] Success: temperature is below threshold.
-[MAIN] [09:47:36] Terminated sensors
-[STABLE CHECK] [09:47:36] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:47:56] Success: Machine is stable.
-[EXECUTION] [09:47:56] Successfully reached stable state
-[EXECUTION] [09:47:56] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:48:26] Performed tensorflow.keras.optimizers.SGD.apply_gradients() on input and will now save energy data.
-[EXECUTION] [09:48:26] skipping call added, current list is: ['tensorflow.distribute.MirroredStrategy()', 'tensorflow.distribute.MultiWorkerMirroredStrategy()', 'tensorflow.distribute.experimental.CommunicationOptions()', 'tensorflow.distribute.experimental.CentralStorageStrategy()', 'tensorflow.distribute.get_strategy()', 'tensorflow.distribute.get_strategy.reduce()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(100).batch()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat()', 'tensorflow.data.Dataset.from_tensors(([1.], [1.])).repeat.batch()', 'tensorflow.keras.optimizers.SGD()', 'tensorflow.data.Dataset.from_tensors(([1.0], [1.0])).repeat(1000).batch()', 'tensorflow.distribute.MirroredStrategy.experimental_distribute_dataset()', 'tensorflow.keras.losses.BinaryCrossentropy()', 'tensorflow.nn.compute_average_loss()', 'tensorflow.keras.optimizers.SGD.apply_gradients()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 48576.0
-outside_object_size
-[EXECUTION] [09:48:30] Result: {'tensorflow.keras.optimizers.SGD.apply_gradients()': {'energy_data': {'cpu': '{"columns":["time_ela
-[EXECUTION] [09:48:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:48:30] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:49:01] Performed tensorflow.distribute.MirroredStrategy.run() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 24736.0
-outside_object_size
-[EXECUTION] [09:49:03] Result: {'tensorflow.distribute.MirroredStrategy.run()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [09:49:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-[EXECUTION] [09:49:03] Waiting before running function for 10 seconds.
-[EXECUTION] [09:49:13] Sensors started
-[STABLE CHECK] [09:49:16] Success: temperature is below threshold.
-[MAIN] [09:49:16] Terminated sensors
-[STABLE CHECK] [09:49:16] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [09:49:36] Success: Machine is stable.
-[EXECUTION] [09:49:36] Successfully reached stable state
-[EXECUTION] [09:49:36] waiting idle for 30 seconds after function execution
-[EXECUTION] [09:50:06] Performed tensorflow.distribute.MirroredStrategy.run() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 24736.0
-outside_object_size
-[EXECUTION] [09:50:08] Result: {'tensorflow.distribute.MirroredStrategy.run()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [09:50:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/distributed_training/experiment-1.json
-tf.Tensor(0.22390391, shape=(), dtype=float32)
-tf.Tensor(0.22310269, shape=(), dtype=float32)
-tf.Tensor(0.22230658, shape=(), dtype=float32)
-tf.Tensor(0.2215155, shape=(), dtype=float32)
-tf.Tensor(0.22072947, shape=(), dtype=float32)
-tf.Tensor(0.21994843, shape=(), dtype=float32)
-tf.Tensor(0.21917231, shape=(), dtype=float32)
-tf.Tensor(0.21840113, shape=(), dtype=float32)
-tf.Tensor(0.21763478, shape=(), dtype=float32)
-tf.Tensor(0.21687329, shape=(), dtype=float32)
-tf.Tensor(0.21611653, shape=(), dtype=float32)
-tf.Tensor(0.21536453, shape=(), dtype=float32)
-tf.Tensor(0.21461722, shape=(), dtype=float32)
-tf.Tensor(0.21387455, shape=(), dtype=float32)
-tf.Tensor(0.21313652, shape=(), dtype=float32)
-tf.Tensor(0.21240303, shape=(), dtype=float32)
-tf.Tensor(0.21167412, shape=(), dtype=float32)
-tf.Tensor(0.21094967, shape=(), dtype=float32)
-tf.Tensor(0.21022968, shape=(), dtype=float32)
-tf.Tensor(0.20951413, shape=(), dtype=float32)
-tf.Tensor(0.20880297, shape=(), dtype=float32)
-tf.Tensor(0.20809612, shape=(), dtype=float32)
-tf.Tensor(0.2073936, shape=(), dtype=float32)
-tf.Tensor(0.20669532, shape=(), dtype=float32)
-tf.Tensor(0.2060013, shape=(), dtype=float32)
-tf.Tensor(0.20531149, shape=(), dtype=float32)
-tf.Tensor(0.2046258, shape=(), dtype=float32)
-tf.Tensor(0.20394428, shape=(), dtype=float32)
-tf.Tensor(0.20326684, shape=(), dtype=float32)
-tf.Tensor(0.20259349, shape=(), dtype=float32)
-tf.Tensor(0.20192413, shape=(), dtype=float32)
-tf.Tensor(0.20125876, shape=(), dtype=float32)
-tf.Tensor(0.20059738, shape=(), dtype=float32)
-tf.Tensor(0.19993995, shape=(), dtype=float32)
-tf.Tensor(0.1992864, shape=(), dtype=float32)
-tf.Tensor(0.1986367, shape=(), dtype=float32)
-tf.Tensor(0.19799088, shape=(), dtype=float32)
-tf.Tensor(0.1973488, shape=(), dtype=float32)
-tf.Tensor(0.19671053, shape=(), dtype=float32)
-tf.Tensor(0.19607596, shape=(), dtype=float32)
-tf.Tensor(0.19544512, shape=(), dtype=float32)
-tf.Tensor(0.19481796, shape=(), dtype=float32)
-tf.Tensor(0.19419448, shape=(), dtype=float32)
-tf.Tensor(0.19357456, shape=(), dtype=float32)
-tf.Tensor(0.1929583, shape=(), dtype=float32)
-tf.Tensor(0.19234553, shape=(), dtype=float32)
-tf.Tensor(0.19173633, shape=(), dtype=float32)
-tf.Tensor(0.19113065, shape=(), dtype=float32)
-tf.Tensor(0.19052844, shape=(), dtype=float32)
-tf.Tensor(0.18992965, shape=(), dtype=float32)
-tf.Tensor(0.18933432, shape=(), dtype=float32)
-tf.Tensor(0.18874235, shape=(), dtype=float32)
-tf.Tensor(0.18815379, shape=(), dtype=float32)
-tf.Tensor(0.18756856, shape=(), dtype=float32)
-tf.Tensor(0.18698663, shape=(), dtype=float32)
-tf.Tensor(0.18640798, shape=(), dtype=float32)
-tf.Tensor(0.18583257, shape=(), dtype=float32)
-tf.Tensor(0.18526047, shape=(), dtype=float32)
-tf.Tensor(0.18469152, shape=(), dtype=float32)
-tf.Tensor(0.18412578, shape=(), dtype=float32)
-tf.Tensor(0.18356319, shape=(), dtype=float32)
-tf.Tensor(0.18300377, shape=(), dtype=float32)
-tf.Tensor(0.18244742, shape=(), dtype=float32)
-tf.Tensor(0.1818942, shape=(), dtype=float32)
-tf.Tensor(0.18134402, shape=(), dtype=float32)
-tf.Tensor(0.18079686, shape=(), dtype=float32)
-tf.Tensor(0.18025273, shape=(), dtype=float32)
-tf.Tensor(0.17971162, shape=(), dtype=float32)
-tf.Tensor(0.17917345, shape=(), dtype=float32)
-tf.Tensor(0.17863826, shape=(), dtype=float32)
-tf.Tensor(0.17810598, shape=(), dtype=float32)
-tf.Tensor(0.17757659, shape=(), dtype=float32)
-tf.Tensor(0.17705008, shape=(), dtype=float32)
-tf.Tensor(0.17652644, shape=(), dtype=float32)
-tf.Tensor(0.17600563, shape=(), dtype=float32)
-tf.Tensor(0.17548767, shape=(), dtype=float32)
-tf.Tensor(0.17497246, shape=(), dtype=float32)
-tf.Tensor(0.17446005, shape=(), dtype=float32)
-tf.Tensor(0.17395036, shape=(), dtype=float32)
-tf.Tensor(0.17344344, shape=(), dtype=float32)
-tf.Tensor(0.1729392, shape=(), dtype=float32)
-tf.Tensor(0.17243768, shape=(), dtype=float32)
-tf.Tensor(0.17193879, shape=(), dtype=float32)
-tf.Tensor(0.17144257, shape=(), dtype=float32)
-tf.Tensor(0.17094898, shape=(), dtype=float32)
-tf.Tensor(0.17045802, shape=(), dtype=float32)
-tf.Tensor(0.16996962, shape=(), dtype=float32)
-tf.Tensor(0.16948383, shape=(), dtype=float32)
-tf.Tensor(0.16900057, shape=(), dtype=float32)
-tf.Tensor(0.16851984, shape=(), dtype=float32)
-tf.Tensor(0.16804163, shape=(), dtype=float32)
-tf.Tensor(0.16756591, shape=(), dtype=float32)
-tf.Tensor(0.16709268, shape=(), dtype=float32)
-tf.Tensor(0.16662192, shape=(), dtype=float32)
-tf.Tensor(0.1661536, shape=(), dtype=float32)
-tf.Tensor(0.1656877, shape=(), dtype=float32)
-tf.Tensor(0.16522421, shape=(), dtype=float32)
-tf.Tensor(0.16476312, shape=(), dtype=float32)
-tf.Tensor(0.16430438, shape=(), dtype=float32)
-tf.Tensor(0.16384798, shape=(), dtype=float32)
-tf.Tensor(0.16339396, shape=(), dtype=float32)
-tf.Tensor(0.16294225, shape=(), dtype=float32)
-tf.Tensor(0.16249284, shape=(), dtype=float32)
-tf.Tensor(0.16204567, shape=(), dtype=float32)
-tf.Tensor(0.16160081, shape=(), dtype=float32)
-tf.Tensor(0.16115822, shape=(), dtype=float32)
-tf.Tensor(0.16071789, shape=(), dtype=float32)
-tf.Tensor(0.16027974, shape=(), dtype=float32)
-tf.Tensor(0.15984382, shape=(), dtype=float32)
-tf.Tensor(0.15941006, shape=(), dtype=float32)
-tf.Tensor(0.1589785, shape=(), dtype=float32)
-tf.Tensor(0.15854913, shape=(), dtype=float32)
-tf.Tensor(0.15812187, shape=(), dtype=float32)
-tf.Tensor(0.15769674, shape=(), dtype=float32)
-tf.Tensor(0.15727374, shape=(), dtype=float32)
-tf.Tensor(0.15685286, shape=(), dtype=float32)
-tf.Tensor(0.15643403, shape=(), dtype=float32)
-tf.Tensor(0.15601727, shape=(), dtype=float32)
-tf.Tensor(0.1556026, shape=(), dtype=float32)
-tf.Tensor(0.15518996, shape=(), dtype=float32)
-tf.Tensor(0.15477934, shape=(), dtype=float32)
-tf.Tensor(0.15437074, shape=(), dtype=float32)
-tf.Tensor(0.15396415, shape=(), dtype=float32)
-tf.Tensor(0.15355952, shape=(), dtype=float32)
-tf.Tensor(0.15315689, shape=(), dtype=float32)
-tf.Tensor(0.15275621, shape=(), dtype=float32)
-tf.Tensor(0.15235749, shape=(), dtype=float32)
-tf.Tensor(0.1519607, shape=(), dtype=float32)
-tf.Tensor(0.15156579, shape=(), dtype=float32)
-tf.Tensor(0.15117282, shape=(), dtype=float32)
-tf.Tensor(0.15078172, shape=(), dtype=float32)
-tf.Tensor(0.1503925, shape=(), dtype=float32)
-tf.Tensor(0.15000518, shape=(), dtype=float32)
-tf.Tensor(0.14961967, shape=(), dtype=float32)
-tf.Tensor(0.14923602, shape=(), dtype=float32)
-tf.Tensor(0.14885421, shape=(), dtype=float32)
-tf.Tensor(0.14847422, shape=(), dtype=float32)
-tf.Tensor(0.14809601, shape=(), dtype=float32)
-tf.Tensor(0.1477196, shape=(), dtype=float32)
-tf.Tensor(0.147345, shape=(), dtype=float32)
-tf.Tensor(0.14697216, shape=(), dtype=float32)
-tf.Tensor(0.14660104, shape=(), dtype=float32)
-tf.Tensor(0.14623171, shape=(), dtype=float32)
-tf.Tensor(0.14586408, shape=(), dtype=float32)
-tf.Tensor(0.14549819, shape=(), dtype=float32)
-tf.Tensor(0.14513405, shape=(), dtype=float32)
-tf.Tensor(0.14477153, shape=(), dtype=float32)
-tf.Tensor(0.14441073, shape=(), dtype=float32)
-tf.Tensor(0.14405161, shape=(), dtype=float32)
-tf.Tensor(0.14369415, shape=(), dtype=float32)
-tf.Tensor(0.1433384, shape=(), dtype=float32)
-tf.Tensor(0.14298423, shape=(), dtype=float32)
-tf.Tensor(0.14263171, shape=(), dtype=float32)
-tf.Tensor(0.14228082, shape=(), dtype=float32)
-tf.Tensor(0.14193153, shape=(), dtype=float32)
-tf.Tensor(0.14158382, shape=(), dtype=float32)
-tf.Tensor(0.14123775, shape=(), dtype=float32)
-tf.Tensor(0.14089324, shape=(), dtype=float32)
-tf.Tensor(0.14055029, shape=(), dtype=float32)
-tf.Tensor(0.14020891, shape=(), dtype=float32)
-tf.Tensor(0.13986908, shape=(), dtype=float32)
-tf.Tensor(0.1395308, shape=(), dtype=float32)
-tf.Tensor(0.13919403, shape=(), dtype=float32)
-tf.Tensor(0.13885878, shape=(), dtype=float32)
-tf.Tensor(0.13852505, shape=(), dtype=float32)
-tf.Tensor(0.13819282, shape=(), dtype=float32)
-tf.Tensor(0.13786209, shape=(), dtype=float32)
-tf.Tensor(0.13753285, shape=(), dtype=float32)
-tf.Tensor(0.13720505, shape=(), dtype=float32)
-tf.Tensor(0.13687873, shape=(), dtype=float32)
-tf.Tensor(0.13655387, shape=(), dtype=float32)
-tf.Tensor(0.13623044, shape=(), dtype=float32)
-tf.Tensor(0.13590844, shape=(), dtype=float32)
-tf.Tensor(0.13558789, shape=(), dtype=float32)
-tf.Tensor(0.13526875, shape=(), dtype=float32)
-tf.Tensor(0.134951, shape=(), dtype=float32)
-tf.Tensor(0.13463467, shape=(), dtype=float32)
-tf.Tensor(0.13431968, shape=(), dtype=float32)
-tf.Tensor(0.13400614, shape=(), dtype=float32)
-tf.Tensor(0.13369396, shape=(), dtype=float32)
-tf.Tensor(0.13338314, shape=(), dtype=float32)
-tf.Tensor(0.13307364, shape=(), dtype=float32)
-tf.Tensor(0.1327655, shape=(), dtype=float32)
-tf.Tensor(0.13245873, shape=(), dtype=float32)
-tf.Tensor(0.13215332, shape=(), dtype=float32)
-tf.Tensor(0.13184918, shape=(), dtype=float32)
-tf.Tensor(0.13154635, shape=(), dtype=float32)
-tf.Tensor(0.13124487, shape=(), dtype=float32)
-tf.Tensor(0.13094462, shape=(), dtype=float32)
-tf.Tensor(0.1306457, shape=(), dtype=float32)
-tf.Tensor(0.13034809, shape=(), dtype=float32)
-tf.Tensor(0.13005172, shape=(), dtype=float32)
-tf.Tensor(0.12975661, shape=(), dtype=float32)
-tf.Tensor(0.12946278, shape=(), dtype=float32)
-tf.Tensor(0.1291702, shape=(), dtype=float32)
-tf.Tensor(0.12887885, shape=(), dtype=float32)
-tf.Tensor(0.12858875, shape=(), dtype=float32)
-tf.Tensor(0.12829986, shape=(), dtype=float32)
-tf.Tensor(0.12801221, shape=(), dtype=float32)
-tf.Tensor(0.1277258, shape=(), dtype=float32)
-tf.Tensor(0.12744056, shape=(), dtype=float32)
-tf.Tensor(0.12715651, shape=(), dtype=float32)
-tf.Tensor(0.12687367, shape=(), dtype=float32)
-tf.Tensor(0.126592, shape=(), dtype=float32)
-tf.Tensor(0.12631153, shape=(), dtype=float32)
-tf.Tensor(0.12603223, shape=(), dtype=float32)
-tf.Tensor(0.12575409, shape=(), dtype=float32)
-tf.Tensor(0.12547708, shape=(), dtype=float32)
-tf.Tensor(0.12520126, shape=(), dtype=float32)
-tf.Tensor(0.124926575, shape=(), dtype=float32)
+tf.Tensor(1.2831749, shape=(), dtype=float32)
+tf.Tensor(1.2727439, shape=(), dtype=float32)
+tf.Tensor(1.2623966, shape=(), dtype=float32)
+tf.Tensor(1.2521329, shape=(), dtype=float32)
+tf.Tensor(1.241953, shape=(), dtype=float32)
+tf.Tensor(1.2318565, shape=(), dtype=float32)
+tf.Tensor(1.2218429, shape=(), dtype=float32)
+tf.Tensor(1.2119123, shape=(), dtype=float32)
+tf.Tensor(1.2020646, shape=(), dtype=float32)
+tf.Tensor(1.1922996, shape=(), dtype=float32)
+tf.Tensor(1.1826167, shape=(), dtype=float32)
+tf.Tensor(1.1730157, shape=(), dtype=float32)
+tf.Tensor(1.1634969, shape=(), dtype=float32)
+tf.Tensor(1.1540592, shape=(), dtype=float32)
+tf.Tensor(1.1447029, shape=(), dtype=float32)
+tf.Tensor(1.1354277, shape=(), dtype=float32)
+tf.Tensor(1.1262331, shape=(), dtype=float32)
+tf.Tensor(1.1171187, shape=(), dtype=float32)
+tf.Tensor(1.1080844, shape=(), dtype=float32)
+tf.Tensor(1.0991299, shape=(), dtype=float32)
+tf.Tensor(1.0902544, shape=(), dtype=float32)
+tf.Tensor(1.0814582, shape=(), dtype=float32)
+tf.Tensor(1.0727406, shape=(), dtype=float32)
+tf.Tensor(1.0641011, shape=(), dtype=float32)
+tf.Tensor(1.0555395, shape=(), dtype=float32)
+tf.Tensor(1.0470552, shape=(), dtype=float32)
+tf.Tensor(1.0386482, shape=(), dtype=float32)
+tf.Tensor(1.0303179, shape=(), dtype=float32)
+tf.Tensor(1.0220639, shape=(), dtype=float32)
+tf.Tensor(1.0138855, shape=(), dtype=float32)
+tf.Tensor(1.0057826, shape=(), dtype=float32)
+tf.Tensor(0.9977546, shape=(), dtype=float32)
+tf.Tensor(0.9898011, shape=(), dtype=float32)
+tf.Tensor(0.9819218, shape=(), dtype=float32)
+tf.Tensor(0.974116, shape=(), dtype=float32)
+tf.Tensor(0.9663836, shape=(), dtype=float32)
+tf.Tensor(0.9587236, shape=(), dtype=float32)
+tf.Tensor(0.951136, shape=(), dtype=float32)
+tf.Tensor(0.9436202, shape=(), dtype=float32)
+tf.Tensor(0.93617547, shape=(), dtype=float32)
+tf.Tensor(0.9288016, shape=(), dtype=float32)
+tf.Tensor(0.9214981, shape=(), dtype=float32)
+tf.Tensor(0.9142643, shape=(), dtype=float32)
+tf.Tensor(0.90709984, shape=(), dtype=float32)
+tf.Tensor(0.9000042, shape=(), dtype=float32)
+tf.Tensor(0.89297676, shape=(), dtype=float32)
+tf.Tensor(0.88601714, shape=(), dtype=float32)
+tf.Tensor(0.8791248, shape=(), dtype=float32)
+tf.Tensor(0.87229925, shape=(), dtype=float32)
+tf.Tensor(0.86553997, shape=(), dtype=float32)
+tf.Tensor(0.8588463, shape=(), dtype=float32)
+tf.Tensor(0.8522179, shape=(), dtype=float32)
+tf.Tensor(0.8456542, shape=(), dtype=float32)
+tf.Tensor(0.8391546, shape=(), dtype=float32)
+tf.Tensor(0.83271873, shape=(), dtype=float32)
+tf.Tensor(0.82634586, shape=(), dtype=float32)
+tf.Tensor(0.8200356, shape=(), dtype=float32)
+tf.Tensor(0.81378734, shape=(), dtype=float32)
+tf.Tensor(0.8076007, shape=(), dtype=float32)
+tf.Tensor(0.80147505, shape=(), dtype=float32)
+tf.Tensor(0.7954097, shape=(), dtype=float32)
+tf.Tensor(0.7894042, shape=(), dtype=float32)
+tf.Tensor(0.7834583, shape=(), dtype=float32)
+tf.Tensor(0.77757126, shape=(), dtype=float32)
+tf.Tensor(0.7717426, shape=(), dtype=float32)
+tf.Tensor(0.7659716, shape=(), dtype=float32)
+tf.Tensor(0.76025796, shape=(), dtype=float32)
+tf.Tensor(0.75460106, shape=(), dtype=float32)
+tf.Tensor(0.74900043, shape=(), dtype=float32)
+tf.Tensor(0.7434554, shape=(), dtype=float32)
+tf.Tensor(0.7379657, shape=(), dtype=float32)
+tf.Tensor(0.73253065, shape=(), dtype=float32)
+tf.Tensor(0.7271496, shape=(), dtype=float32)
+tf.Tensor(0.7218222, shape=(), dtype=float32)
+tf.Tensor(0.7165479, shape=(), dtype=float32)
+tf.Tensor(0.71132636, shape=(), dtype=float32)
+tf.Tensor(0.70615673, shape=(), dtype=float32)
+tf.Tensor(0.7010387, shape=(), dtype=float32)
+tf.Tensor(0.6959718, shape=(), dtype=float32)
+tf.Tensor(0.69095546, shape=(), dtype=float32)
+tf.Tensor(0.685989, shape=(), dtype=float32)
+tf.Tensor(0.6810722, shape=(), dtype=float32)
+tf.Tensor(0.6762045, shape=(), dtype=float32)
+tf.Tensor(0.6713852, shape=(), dtype=float32)
+tf.Tensor(0.66661406, shape=(), dtype=float32)
+tf.Tensor(0.6618905, shape=(), dtype=float32)
+tf.Tensor(0.657214, shape=(), dtype=float32)
+tf.Tensor(0.6525841, shape=(), dtype=float32)
+tf.Tensor(0.6480003, shape=(), dtype=float32)
+tf.Tensor(0.64346224, shape=(), dtype=float32)
+tf.Tensor(0.63896924, shape=(), dtype=float32)
+tf.Tensor(0.63452095, shape=(), dtype=float32)
+tf.Tensor(0.63011694, shape=(), dtype=float32)
+tf.Tensor(0.62575656, shape=(), dtype=float32)
+tf.Tensor(0.6214396, shape=(), dtype=float32)
+tf.Tensor(0.6171655, shape=(), dtype=float32)
+tf.Tensor(0.61293364, shape=(), dtype=float32)
+tf.Tensor(0.60874385, shape=(), dtype=float32)
+tf.Tensor(0.6045955, shape=(), dtype=float32)
+tf.Tensor(0.6004882, shape=(), dtype=float32)
+tf.Tensor(0.5964215, shape=(), dtype=float32)
+tf.Tensor(0.59239495, shape=(), dtype=float32)
+tf.Tensor(0.5884082, shape=(), dtype=float32)
+tf.Tensor(0.5844606, shape=(), dtype=float32)
+tf.Tensor(0.580552, shape=(), dtype=float32)
+tf.Tensor(0.5766818, shape=(), dtype=float32)
+tf.Tensor(0.57284963, shape=(), dtype=float32)
+tf.Tensor(0.56905514, shape=(), dtype=float32)
+tf.Tensor(0.56529784, shape=(), dtype=float32)
+tf.Tensor(0.5615773, shape=(), dtype=float32)
+tf.Tensor(0.5578932, shape=(), dtype=float32)
+tf.Tensor(0.5542451, shape=(), dtype=float32)
+tf.Tensor(0.5506326, shape=(), dtype=float32)
+tf.Tensor(0.5470553, shape=(), dtype=float32)
+tf.Tensor(0.5435128, shape=(), dtype=float32)
+tf.Tensor(0.54000485, shape=(), dtype=float32)
+tf.Tensor(0.53653085, shape=(), dtype=float32)
+tf.Tensor(0.53309053, shape=(), dtype=float32)
+tf.Tensor(0.52968353, shape=(), dtype=float32)
+tf.Tensor(0.52630943, shape=(), dtype=float32)
+tf.Tensor(0.52296793, shape=(), dtype=float32)
+tf.Tensor(0.5196587, shape=(), dtype=float32)
+tf.Tensor(0.5163812, shape=(), dtype=float32)
+tf.Tensor(0.5131352, shape=(), dtype=float32)
+tf.Tensor(0.50992036, shape=(), dtype=float32)
+tf.Tensor(0.5067364, shape=(), dtype=float32)
+tf.Tensor(0.5035829, shape=(), dtype=float32)
+tf.Tensor(0.5004594, shape=(), dtype=float32)
+tf.Tensor(0.49736562, shape=(), dtype=float32)
+tf.Tensor(0.4943014, shape=(), dtype=float32)
+tf.Tensor(0.49126628, shape=(), dtype=float32)
+tf.Tensor(0.48825988, shape=(), dtype=float32)
+tf.Tensor(0.485282, shape=(), dtype=float32)
+tf.Tensor(0.48233223, shape=(), dtype=float32)
+tf.Tensor(0.47941026, shape=(), dtype=float32)
+tf.Tensor(0.4765159, shape=(), dtype=float32)
+tf.Tensor(0.47364858, shape=(), dtype=float32)
+tf.Tensor(0.4708083, shape=(), dtype=float32)
+tf.Tensor(0.46799454, shape=(), dtype=float32)
+tf.Tensor(0.46520713, shape=(), dtype=float32)
+tf.Tensor(0.46244574, shape=(), dtype=float32)
+tf.Tensor(0.45970997, shape=(), dtype=float32)
+tf.Tensor(0.45699975, shape=(), dtype=float32)
+tf.Tensor(0.4543146, shape=(), dtype=float32)
+tf.Tensor(0.45165431, shape=(), dtype=float32)
+tf.Tensor(0.44901854, shape=(), dtype=float32)
+tf.Tensor(0.44640717, shape=(), dtype=float32)
+tf.Tensor(0.4438198, shape=(), dtype=float32)
+tf.Tensor(0.44125617, shape=(), dtype=float32)
+tf.Tensor(0.43871608, shape=(), dtype=float32)
+tf.Tensor(0.43619916, shape=(), dtype=float32)
+tf.Tensor(0.4337052, shape=(), dtype=float32)
+tf.Tensor(0.431234, shape=(), dtype=float32)
+tf.Tensor(0.4287853, shape=(), dtype=float32)
+tf.Tensor(0.4263588, shape=(), dtype=float32)
+tf.Tensor(0.42395425, shape=(), dtype=float32)
+tf.Tensor(0.42157137, shape=(), dtype=float32)
+tf.Tensor(0.41921, shape=(), dtype=float32)
+tf.Tensor(0.41686988, shape=(), dtype=float32)
+tf.Tensor(0.41455075, shape=(), dtype=float32)
+tf.Tensor(0.4122524, shape=(), dtype=float32)
+tf.Tensor(0.40997458, shape=(), dtype=float32)
+tf.Tensor(0.40771708, shape=(), dtype=float32)
+tf.Tensor(0.4054796, shape=(), dtype=float32)
+tf.Tensor(0.40326205, shape=(), dtype=float32)
+tf.Tensor(0.40106416, shape=(), dtype=float32)
+tf.Tensor(0.3988856, shape=(), dtype=float32)
+tf.Tensor(0.39672634, shape=(), dtype=float32)
+tf.Tensor(0.39458603, shape=(), dtype=float32)
+tf.Tensor(0.3924645, shape=(), dtype=float32)
+tf.Tensor(0.39036155, shape=(), dtype=float32)
+tf.Tensor(0.38827696, shape=(), dtype=float32)
+tf.Tensor(0.3862106, shape=(), dtype=float32)
+tf.Tensor(0.38416216, shape=(), dtype=float32)
+tf.Tensor(0.38213152, shape=(), dtype=float32)
+tf.Tensor(0.38011843, shape=(), dtype=float32)
+tf.Tensor(0.37812272, shape=(), dtype=float32)
+tf.Tensor(0.37614423, shape=(), dtype=float32)
+tf.Tensor(0.3741828, shape=(), dtype=float32)
+tf.Tensor(0.3722381, shape=(), dtype=float32)
+tf.Tensor(0.37031007, shape=(), dtype=float32)
+tf.Tensor(0.36839855, shape=(), dtype=float32)
+tf.Tensor(0.36650324, shape=(), dtype=float32)
+tf.Tensor(0.3646241, shape=(), dtype=float32)
+tf.Tensor(0.36276084, shape=(), dtype=float32)
+tf.Tensor(0.3609134, shape=(), dtype=float32)
+tf.Tensor(0.3590815, shape=(), dtype=float32)
+tf.Tensor(0.357265, shape=(), dtype=float32)
+tf.Tensor(0.35546377, shape=(), dtype=float32)
+tf.Tensor(0.35367766, shape=(), dtype=float32)
+tf.Tensor(0.35190642, shape=(), dtype=float32)
+tf.Tensor(0.35015, shape=(), dtype=float32)
+tf.Tensor(0.34840813, shape=(), dtype=float32)
+tf.Tensor(0.3466807, shape=(), dtype=float32)
+tf.Tensor(0.34496757, shape=(), dtype=float32)
+tf.Tensor(0.34326863, shape=(), dtype=float32)
+tf.Tensor(0.34158364, shape=(), dtype=float32)
+tf.Tensor(0.3399125, shape=(), dtype=float32)
+tf.Tensor(0.33825508, shape=(), dtype=float32)
+tf.Tensor(0.3366112, shape=(), dtype=float32)
+tf.Tensor(0.33498073, shape=(), dtype=float32)
+tf.Tensor(0.33336353, shape=(), dtype=float32)
+tf.Tensor(0.33175945, shape=(), dtype=float32)
+tf.Tensor(0.3301683, shape=(), dtype=float32)
+tf.Tensor(0.32859007, shape=(), dtype=float32)
+tf.Tensor(0.32702452, shape=(), dtype=float32)
+tf.Tensor(0.32547155, shape=(), dtype=float32)
+tf.Tensor(0.32393107, shape=(), dtype=float32)
+tf.Tensor(0.32240283, shape=(), dtype=float32)
+tf.Tensor(0.32088682, shape=(), dtype=float32)

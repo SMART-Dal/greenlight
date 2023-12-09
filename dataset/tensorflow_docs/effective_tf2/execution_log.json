@@ -1,211 +1,48 @@
-2023-12-08 13:35:56.457182: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fd96c2fc160> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fd96c2fc160> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[EXECUTION] [13:35:56] Waiting before running function for 10 seconds.
-[EXECUTION] [13:36:07] Sensors started
-[STABLE CHECK] [13:36:10] Temperature too high: mean is 42.05, which is greater than 40
-[STABLE CHECK] [13:36:10] Temperature is too high.
-[STABLE CHECK] [13:36:10] Waiting 20 seconds to reach low temperature.
+2023-12-09 03:45:50.611218: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 03:45:51.367062: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [03:45:51] Waiting before running function for 10 seconds.
+[EXECUTION] [03:46:01] Sensors started
+[STABLE CHECK] [03:46:04] Temperature too high: mean is 43.45, which is greater than 40
+[STABLE CHECK] [03:46:04] Temperature is too high.
+[STABLE CHECK] [03:46:04] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [13:36:30] Success: temperature is below threshold.
-[MAIN] [13:36:30] Terminated sensors
-[STABLE CHECK] [13:36:30] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [03:46:24] Temperature too high: mean is 40.5, which is greater than 40
+[STABLE CHECK] [03:46:24] Temperature is too high.
+[STABLE CHECK] [03:46:24] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [13:36:51] Success: Machine is stable.
-[EXECUTION] [13:36:51] Successfully reached stable state
-[EXECUTION] [13:36:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:37:21] Performed tensorflow.cast() on input and will now save energy data.
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fda3b7fe5e0> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fda3b7fe5e0> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-2023-12-08 13:37:28.332476: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-[EXECUTION] [13:37:21] skipping call added, current list is: ['tensorflow.cast()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 25976.0
-++++++5++++++
-5-size 72.0
-4-size 26048.0
-++++++5++++++
-5-size 25976.0
-++++++5++++++
-5-size 72.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:37:28] Result: {'tensorflow.cast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
-[EXECUTION] [13:37:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:37:28] Waiting before running function for 10 seconds.
-[EXECUTION] [13:37:38] Sensors started
-[STABLE CHECK] [13:37:41] Temperature too high: mean is 41.3, which is greater than 40
-[STABLE CHECK] [13:37:41] Temperature is too high.
-[STABLE CHECK] [13:37:41] Waiting 20 seconds to reach low temperature.
+[STABLE CHECK] [03:46:44] Success: temperature is below threshold.
+[MAIN] [03:46:44] Terminated sensors
+[STABLE CHECK] [03:46:44] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [13:38:01] Success: temperature is below threshold.
-[MAIN] [13:38:01] Terminated sensors
-[STABLE CHECK] [13:38:01] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:38:21] Success: Machine is stable.
-[EXECUTION] [13:38:21] Successfully reached stable state
-[EXECUTION] [13:38:21] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:38:51] Performed tensorflow.keras.Sequential() on input and will now save energy data.
-[EXECUTION] [13:38:51] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 11576.0
-++++++5++++++
-5-size 6936.0
-++++++5++++++
-5-size 6488.0
-++++++5++++++
-5-size 5760.0
-++++++5++++++
-5-size 9408.0
-++++++5++++++
-5-size 9272.0
-++++++5++++++
-5-size 9408.0
-4-size 58848.0
-++++++5++++++
-5-size 11576.0
-++++++5++++++
-5-size 6936.0
-++++++5++++++
-5-size 6488.0
-++++++5++++++
-5-size 5760.0
-++++++5++++++
-5-size 9408.0
-++++++5++++++
-5-size 9272.0
-++++++5++++++
-5-size 9408.0
-4-size 58848.0
-++++++4++++++
-++++++5++++++
-5-size 11576.0
-++++++5++++++
-5-size 6936.0
-++++++5++++++
-5-size 6488.0
-++++++5++++++
-5-size 5760.0
-++++++5++++++
-5-size 9408.0
-++++++5++++++
-5-size 9272.0
-++++++5++++++
-5-size 9408.0
-4-size 58848.0
-++++++5++++++
-5-size 11576.0
-++++++5++++++
-5-size 6936.0
-++++++5++++++
-5-size 6488.0
-++++++5++++++
-5-size 5760.0
-++++++5++++++
-5-size 9408.0
-++++++5++++++
-5-size 9272.0
-++++++5++++++
-5-size 9408.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:38:51] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
-[EXECUTION] [13:38:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:38:51] Waiting before running function for 10 seconds.
-[EXECUTION] [13:39:01] Sensors started
-[STABLE CHECK] [13:39:04] Success: temperature is below threshold.
-[MAIN] [13:39:04] Terminated sensors
-[STABLE CHECK] [13:39:04] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:39:24] Success: Machine is stable.
-[EXECUTION] [13:39:24] Successfully reached stable state
-[EXECUTION] [13:39:24] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:39:54] Performed tensorflow.keras.Sequential.compile() on input and will now save energy data.
-[EXECUTION] [13:39:54] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-4-size 176.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 141928.0
-outside_object_size
-[EXECUTION] [13:39:54] Result: {'tensorflow.keras.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
-[EXECUTION] [13:39:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:39:54] Waiting before running function for 10 seconds.
-[EXECUTION] [13:40:04] Sensors started
-[STABLE CHECK] [13:40:07] Temperature too high: mean is 40.11764705882353, which is greater than 40
-[STABLE CHECK] [13:40:07] Temperature is too high.
-[STABLE CHECK] [13:40:07] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [13:40:27] Success: temperature is below threshold.
-[MAIN] [13:40:27] Terminated sensors
-[STABLE CHECK] [13:40:27] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:40:47] Success: Machine is stable.
-[EXECUTION] [13:40:47] Successfully reached stable state
+[STABLE CHECK] [03:47:04] Success: Machine is stable.
+[EXECUTION] [03:47:04] Successfully reached stable state
 Epoch 1/5
 
-1/5 [=====>........................] - ETA: 12s - loss: 2.8867 - accuracy: 0.0781
-5/5 [==============================] - 3s 7ms/step - loss: 1.6366 - accuracy: 0.5063
-2023-12-08 13:40:51.203580: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+1/5 [=====>........................] - ETA: 10s - loss: 2.6950 - accuracy: 0.1406
+5/5 [==============================] - 3s 7ms/step - loss: 1.5789 - accuracy: 0.5063
+2023-12-09 03:47:07.310474: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 Epoch 2/5
 
-1/5 [=====>........................] - ETA: 0s - loss: 0.6639 - accuracy: 0.7969
-5/5 [==============================] - 0s 4ms/step - loss: 0.5085 - accuracy: 0.8813
-2023-12-08 13:40:51.269497: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+1/5 [=====>........................] - ETA: 0s - loss: 0.5856 - accuracy: 0.8594
+5/5 [==============================] - 0s 3ms/step - loss: 0.4764 - accuracy: 0.9062
+2023-12-09 03:47:07.366592: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 Epoch 3/5
 
-1/5 [=====>........................] - ETA: 0s - loss: 0.4061 - accuracy: 0.9375
-5/5 [==============================] - 0s 4ms/step - loss: 0.3173 - accuracy: 0.9688
-2023-12-08 13:40:51.328709: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+1/5 [=====>........................] - ETA: 0s - loss: 0.3572 - accuracy: 0.9531
+5/5 [==============================] - 0s 3ms/step - loss: 0.3092 - accuracy: 0.9625
+2023-12-09 03:47:07.412806: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 Epoch 4/5
 
-1/5 [=====>........................] - ETA: 0s - loss: 0.2710 - accuracy: 0.9844
-5/5 [==============================] - 0s 4ms/step - loss: 0.2419 - accuracy: 0.9812
-2023-12-08 13:40:51.403739: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+1/5 [=====>........................] - ETA: 0s - loss: 0.2327 - accuracy: 1.0000
+5/5 [==============================] - 0s 2ms/step - loss: 0.2367 - accuracy: 0.9719
+2023-12-09 03:47:07.464536: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
 Epoch 5/5
 
-1/5 [=====>........................] - ETA: 0s - loss: 0.2150 - accuracy: 0.9844
-5/5 [==============================] - 0s 4ms/step - loss: 0.2005 - accuracy: 0.9812
-2023-12-08 13:40:51.455866: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-[EXECUTION] [13:40:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:41:21] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+1/5 [=====>........................] - ETA: 0s - loss: 0.1921 - accuracy: 1.0000
+5/5 [==============================] - 0s 2ms/step - loss: 0.1941 - accuracy: 0.9875
+2023-12-09 03:47:07.511500: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [03:47:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:47:37] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -227,620 +64,70 @@ inside_object_size
 ++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
 6-size 48.0
 outside_object_size
-[EXECUTION] [13:41:21] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [13:41:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:41:21] Waiting before running function for 10 seconds.
-[EXECUTION] [13:41:31] Sensors started
-[STABLE CHECK] [13:41:34] Success: temperature is below threshold.
-[MAIN] [13:41:34] Terminated sensors
-[STABLE CHECK] [13:41:34] Waiting 20 seconds to reach stable state.
+[EXECUTION] [03:47:37] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [03:47:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-5.json
 
-[STABLE CHECK] [13:41:54] Success: Machine is stable.
-[EXECUTION] [13:41:54] Successfully reached stable state
-
-1/5 [=====>........................] - ETA: 0s - loss: 1.5156 - accuracy: 0.7344
-5/5 [==============================] - 0s 3ms/step - loss: 1.5182 - accuracy: 0.7437
-2023-12-08 13:41:55.016715: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 13:48:24.633087: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 13:48:24.679419: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 13:48:24.722179: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 13:48:24.766671: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 13:48:24.811520: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-[EXECUTION] [13:41:55] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:42:25] Performed tensorflow.keras.Sequential.evaluate() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 192576.0
-4-size 192576.0
-++++++5++++++
-5-size 192576.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [13:42:25] Result: {'tensorflow.keras.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
-[EXECUTION] [13:42:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-Loss 1.5182451009750366, Accuracy 0.7437499761581421
-[EXECUTION] [13:42:25] Waiting before running function for 10 seconds.
-[EXECUTION] [13:42:35] Sensors started
-[STABLE CHECK] [13:42:38] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [13:42:38] Temperature is too high.
-[STABLE CHECK] [13:42:38] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [13:42:58] Success: temperature is below threshold.
-[MAIN] [13:42:58] Terminated sensors
-[STABLE CHECK] [13:42:58] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:43:18] Not stable: stdev/mean is 0.0314954815652091, which is greater than 0.03
-[STABLE CHECK] [13:43:18] Machine is not stable yet.
-[STABLE CHECK] [13:43:18] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:43:38] Success: Machine is stable.
-[EXECUTION] [13:43:38] Successfully reached stable state
-[EXECUTION] [13:43:38] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:44:08] Performed tensorflow.keras.optimizers.Adam() on input and will now save energy data.
-[EXECUTION] [13:44:08] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:44:08] Result: {'tensorflow.keras.optimizers.Adam()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
-[EXECUTION] [13:44:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:44:08] Waiting before running function for 10 seconds.
-[EXECUTION] [13:44:18] Sensors started
-[STABLE CHECK] [13:44:21] Success: temperature is below threshold.
-[MAIN] [13:44:21] Terminated sensors
-[STABLE CHECK] [13:44:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:44:41] Success: Machine is stable.
-[EXECUTION] [13:44:41] Successfully reached stable state
-[EXECUTION] [13:44:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:45:11] Performed tensorflow.keras.losses.SparseCategoricalCrossentropy() on input and will now save energy data.
-[EXECUTION] [13:45:11] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:45:11] Result: {'tensorflow.keras.losses.SparseCategoricalCrossentropy()': {'energy_data': {'cpu': '{"columns":["ti
-[EXECUTION] [13:45:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:45:11] Waiting before running function for 10 seconds.
-[EXECUTION] [13:45:21] Sensors started
-[STABLE CHECK] [13:45:24] Success: temperature is below threshold.
-[MAIN] [13:45:24] Terminated sensors
-[STABLE CHECK] [13:45:24] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:45:45] Success: Machine is stable.
-[EXECUTION] [13:45:45] Successfully reached stable state
-[EXECUTION] [13:45:45] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:46:15] Performed tensorflow.math.add_n() on input and will now save energy data.
-[EXECUTION] [13:46:15] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 184680.0
-4-size 184680.0
-++++++5++++++
-5-size 184680.0
-4-size 184680.0
-++++++4++++++
-++++++5++++++
-5-size 184680.0
-4-size 184680.0
-++++++5++++++
-5-size 184680.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:47:17] Result: {'tensorflow.math.add_n()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
-[EXECUTION] [13:47:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:47:17] Waiting before running function for 10 seconds.
-[EXECUTION] [13:47:27] Sensors started
-[STABLE CHECK] [13:47:30] Success: temperature is below threshold.
-[MAIN] [13:47:30] Terminated sensors
-[STABLE CHECK] [13:47:30] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:47:50] Success: Machine is stable.
-[EXECUTION] [13:47:50] Successfully reached stable state
-[EXECUTION] [13:47:50] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:48:20] Performed tensorflow.keras.optimizers.Adam.apply_gradients() on input and will now save energy data.
-[EXECUTION] [13:48:20] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 43792.0
-outside_object_size
-[EXECUTION] [13:48:24] Result: {'tensorflow.keras.optimizers.Adam.apply_gradients()': {'energy_data': {'cpu': '{"columns":["time_el
-[EXECUTION] [13:48:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
+1/5 [=====>........................] - ETA: 0s - loss: 1.5465 - accuracy: 0.5781
+5/5 [==============================] - 0s 2ms/step - loss: 1.5637 - accuracy: 0.6125
+2023-12-09 03:47:37.859963: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:38.401910: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:38.463435: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:38.517168: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:38.571954: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:38.628969: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:39.360066: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:39.420595: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:39.478726: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:39.534605: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-09 03:47:39.593804: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+Loss 1.5636804103851318, Accuracy 0.612500011920929
 Finished epoch 0
 Finished epoch 1
 Finished epoch 2
 Finished epoch 3
 Finished epoch 4
-[EXECUTION] [13:48:24] Waiting before running function for 10 seconds.
-[EXECUTION] [13:48:34] Sensors started
-[STABLE CHECK] [13:48:37] Success: temperature is below threshold.
-[MAIN] [13:48:37] Terminated sensors
-[STABLE CHECK] [13:48:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:48:57] Not stable: stdev/mean is 0.042052925794054015, which is greater than 0.03
-[STABLE CHECK] [13:48:57] Machine is not stable yet.
-[STABLE CHECK] [13:48:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:49:17] Success: Machine is stable.
-[EXECUTION] [13:49:17] Successfully reached stable state
-[EXECUTION] [13:49:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:49:47] Performed tensorflow.keras.layers.LSTMCell() on input and will now save energy data.
-[EXECUTION] [13:49:48] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:49:48] Result: {'tensorflow.keras.layers.LSTMCell()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
-[EXECUTION] [13:49:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:49:48] Waiting before running function for 10 seconds.
-[EXECUTION] [13:49:58] Sensors started
-[STABLE CHECK] [13:50:01] Success: temperature is below threshold.
-[MAIN] [13:50:01] Terminated sensors
-[STABLE CHECK] [13:50:01] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:50:21] Success: Machine is stable.
-[EXECUTION] [13:50:21] Successfully reached stable state
-[EXECUTION] [13:50:21] Waiting before running function for 10 seconds.
-[EXECUTION] [13:50:31] Sensors started
-[STABLE CHECK] [13:50:34] Success: temperature is below threshold.
-[MAIN] [13:50:34] Terminated sensors
-[STABLE CHECK] [13:50:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:50:54] Success: Machine is stable.
-[EXECUTION] [13:50:54] Successfully reached stable state
-[EXECUTION] [13:50:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:51:24] Performed tensorflow.transpose() on input and will now save energy data.
-[EXECUTION] [13:51:24] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 26832.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 32.0
-4-size 88.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 32.0
-4-size 26920.0
-++++++5++++++
-5-size 26832.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 32.0
-4-size 88.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:51:28] Result: {'tensorflow.transpose()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index"
-[EXECUTION] [13:51:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:51:28] Waiting before running function for 10 seconds.
-[EXECUTION] [13:51:38] Sensors started
-[STABLE CHECK] [13:51:41] Success: temperature is below threshold.
-[MAIN] [13:51:41] Terminated sensors
-[STABLE CHECK] [13:51:41] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:52:01] Success: Machine is stable.
-[EXECUTION] [13:52:01] Successfully reached stable state
-[EXECUTION] [13:52:01] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:52:32] Performed tensorflow.TensorArray() on input and will now save energy data.
-[EXECUTION] [13:52:32] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 44216.0
-4-size 44288.0
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 44216.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:52:39] Result: {'tensorflow.TensorArray()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
-[EXECUTION] [13:52:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:52:39] Waiting before running function for 10 seconds.
-[EXECUTION] [13:52:49] Sensors started
-[STABLE CHECK] [13:52:52] Success: temperature is below threshold.
-[MAIN] [13:52:52] Terminated sensors
-[STABLE CHECK] [13:52:52] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:53:12] Success: Machine is stable.
-[EXECUTION] [13:53:12] Successfully reached stable state
-[EXECUTION] [13:53:12] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:53:42] Performed tensorflow.TensorArray.write() on input and will now save energy data.
-[EXECUTION] [13:53:42] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 154576.0
-++++++5++++++
-5-size 154576.0
-4-size 309152.0
-++++++5++++++
-5-size 154576.0
-++++++5++++++
-5-size 154576.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 155624.0
-outside_object_size
-[EXECUTION] [13:54:50] Result: {'tensorflow.TensorArray.write()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
-[EXECUTION] [13:54:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:54:50] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:55:20] Performed tensorflow.keras.Model() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 2400.0
-4-size 2400.0
-++++++1++++++
-1-size 2400.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 44632.0
-outside_object_size
-[EXECUTION] [13:55:20] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
-[EXECUTION] [13:55:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
 (10, 20, 13)
-[EXECUTION] [13:55:20] Waiting before running function for 10 seconds.
-[EXECUTION] [13:55:30] Sensors started
-[STABLE CHECK] [13:55:33] Temperature too high: mean is 40.4, which is greater than 40
-[STABLE CHECK] [13:55:33] Temperature is too high.
-[STABLE CHECK] [13:55:33] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [13:55:53] Success: temperature is below threshold.
-[MAIN] [13:55:53] Terminated sensors
-[STABLE CHECK] [13:55:53] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:56:13] Success: Machine is stable.
-[EXECUTION] [13:56:13] Successfully reached stable state
-[EXECUTION] [13:56:13] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:56:43] Performed tensorflow.keras.losses.CategoricalCrossentropy() on input and will now save energy data.
-[EXECUTION] [13:56:43] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:56:43] Result: {'tensorflow.keras.losses.CategoricalCrossentropy()': {'energy_data': {'cpu': '{"columns":["time_ela
-[EXECUTION] [13:56:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:56:43] Waiting before running function for 10 seconds.
-[EXECUTION] [13:56:53] Sensors started
-[STABLE CHECK] [13:56:56] Success: temperature is below threshold.
-[MAIN] [13:56:56] Terminated sensors
-[STABLE CHECK] [13:56:56] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:57:17] Success: Machine is stable.
-[EXECUTION] [13:57:17] Successfully reached stable state
-[EXECUTION] [13:57:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:57:47] Performed tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy() on input and will now save energy data.
-[EXECUTION] [13:57:47] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 1240.0
-outside_object_size
-[EXECUTION] [13:57:47] Result: {'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()': {'energy_data':
-[EXECUTION] [13:57:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:57:47] Waiting before running function for 10 seconds.
-[EXECUTION] [13:57:57] Sensors started
-[STABLE CHECK] [13:58:00] Success: temperature is below threshold.
-[MAIN] [13:58:00] Terminated sensors
-[STABLE CHECK] [13:58:00] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:58:20] Success: Machine is stable.
-[EXECUTION] [13:58:20] Successfully reached stable state
-[EXECUTION] [13:58:20] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:58:50] Performed tensorflow.keras.metrics.Mean() on input and will now save energy data.
-[EXECUTION] [13:58:50] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:58:50] Result: {'tensorflow.keras.metrics.Mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
-[EXECUTION] [13:58:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:58:50] Waiting before running function for 10 seconds.
-[EXECUTION] [13:59:00] Sensors started
-[STABLE CHECK] [13:59:03] Success: temperature is below threshold.
-[MAIN] [13:59:03] Terminated sensors
-[STABLE CHECK] [13:59:03] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [13:59:23] Success: Machine is stable.
-[EXECUTION] [13:59:23] Successfully reached stable state
-[EXECUTION] [13:59:23] waiting idle for 30 seconds after function execution
-[EXECUTION] [13:59:53] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy() on input and will now save energy data.
-[EXECUTION] [13:59:53] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [13:59:53] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy()': {'energy_data': {'cpu': '{"columns":["time_
-[EXECUTION] [13:59:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [13:59:53] Waiting before running function for 10 seconds.
-[EXECUTION] [14:00:03] Sensors started
-[STABLE CHECK] [14:00:06] Success: temperature is below threshold.
-[MAIN] [14:00:06] Terminated sensors
-[STABLE CHECK] [14:00:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:00:26] Success: Machine is stable.
-[EXECUTION] [14:00:26] Successfully reached stable state
-[EXECUTION] [14:00:26] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:00:56] Performed tensorflow.keras.metrics.Mean.reset_states() on input and will now save energy data.
-[EXECUTION] [14:00:56] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 21256.0
-outside_object_size
-[EXECUTION] [14:00:56] Result: {'tensorflow.keras.metrics.Mean.reset_states()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [14:00:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:00:56] Waiting before running function for 10 seconds.
-[EXECUTION] [14:01:07] Sensors started
-[STABLE CHECK] [14:01:10] Success: temperature is below threshold.
-[MAIN] [14:01:10] Terminated sensors
-[STABLE CHECK] [14:01:10] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:01:30] Success: Machine is stable.
-[EXECUTION] [14:01:30] Successfully reached stable state
-[EXECUTION] [14:01:30] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:02:00] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states() on input and will now save energy data.
-[EXECUTION] [14:02:00] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.02023-12-08 14:09:18.372683: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-
-outside_object_size
-[EXECUTION] [14:02:00] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()': {'energy_data': {'cpu': '{"col
-[EXECUTION] [14:02:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:02:00] Waiting before running function for 10 seconds.
-[EXECUTION] [14:02:10] Sensors started
-[STABLE CHECK] [14:02:13] Temperature too high: mean is 40.95, which is greater than 40
-[STABLE CHECK] [14:02:13] Temperature is too high.
-[STABLE CHECK] [14:02:13] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [14:02:33] Success: temperature is below threshold.
-[MAIN] [14:02:33] Terminated sensors
-[STABLE CHECK] [14:02:33] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:02:53] Success: Machine is stable.
-[EXECUTION] [14:02:53] Successfully reached stable state
-[EXECUTION] [14:02:53] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:03:23] Performed tensorflow.keras.metrics.Mean.update_state() on input and will now save energy data.
-[EXECUTION] [14:03:23] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.metrics.Mean.update_state()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 528168.0
-4-size 528168.0
-++++++5++++++
-5-size 528168.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 21616.0
-outside_object_size
-[EXECUTION] [14:04:58] Result: {'tensorflow.keras.metrics.Mean.update_state()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [14:04:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:04:58] Waiting before running function for 10 seconds.
-[EXECUTION] [14:05:08] Sensors started
-[STABLE CHECK] [14:05:11] Success: temperature is below threshold.
-[MAIN] [14:05:11] Terminated sensors
-[STABLE CHECK] [14:05:11] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:05:31] Success: Machine is stable.
-[EXECUTION] [14:05:31] Successfully reached stable state
-[EXECUTION] [14:05:31] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:06:01] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state() on input and will now save energy data.
-[EXECUTION] [14:06:01] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.metrics.Mean.update_state()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 550904.0
-++++++5++++++
-5-size 550904.0
-4-size 1101808.0
-++++++5++++++
-5-size 550904.0
-++++++5++++++
-5-size 550904.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [14:09:18] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()': {'energy_data': {'cpu': '{"col
-[EXECUTION] [14:09:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:09:18] Waiting before running function for 10 seconds.
-[EXECUTION] [14:09:28] Sensors started
-[STABLE CHECK] [14:09:31] Success: temperature is below threshold.
-[MAIN] [14:09:31] Terminated sensors
-[STABLE CHECK] [14:09:31] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:09:51] Success: Machine is stable.
-[EXECUTION] [14:09:51] Successfully reached stable state
-[EXECUTION] [14:09:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:10:21] Performed tensorflow.keras.metrics.Mean.result() on input and will now save energy data.
-[EXECUTION] [14:10:21] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.metrics.Mean.update_state()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()', 'tensorflow.keras.metrics.Mean.result()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 21640.0
-outside_object_size
-[EXECUTION] [14:10:21] Result: {'tensorflow.keras.metrics.Mean.result()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
-[EXECUTION] [14:10:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:10:21] Waiting before running function for 10 seconds.
-[EXECUTION] [14:10:31] Sensors started
-[STABLE CHECK] [14:10:34] Success: temperature is below threshold.
-[MAIN] [14:10:34] Terminated sensors
-[STABLE CHECK] [14:10:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:10:54] Success: Machine is stable.
-[EXECUTION] [14:10:54] Successfully reached stable state
-[EXECUTION] [14:10:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:11:24] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy.result() on input and will now save energy data.
-[EXECUTION] [14:11:24] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.metrics.Mean.update_state()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()', 'tensorflow.keras.metrics.Mean.result()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.result()']
-2023-12-08 14:11:24.939329: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 14:11:25.008980: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 14:11:25.074976: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-2023-12-08 14:11:25.136720: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [14:11:24] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy.result()': {'energy_data': {'cpu': '{"columns":
-[EXECUTION] [14:11:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
 Epoch:  0
-  loss:     0.130
-  accuracy: 0.997
+  loss:     0.176
+  accuracy: 0.984
 Epoch:  1
-  loss:     0.111
-  accuracy: 1.000
+  loss:     0.154
+  accuracy: 0.991
 Epoch:  2
-  loss:     0.095
-  accuracy: 1.000
+  loss:     0.137
+  accuracy: 0.994
 Epoch:  3
-  loss:     0.086
-  accuracy: 1.000
+  loss:     0.121
+  accuracy: 0.991
 Epoch:  4
-  loss:     0.075
-  accuracy: 1.000
-[EXECUTION] [14:11:25] Waiting before running function for 10 seconds.
-[EXECUTION] [14:11:35] Sensors started
-[STABLE CHECK] [14:11:38] Success: temperature is below threshold.
-[MAIN] [14:11:38] Terminated sensors
-[STABLE CHECK] [14:11:38] Waiting 20 seconds to reach stable state.
+  loss:     0.105
+  accuracy: 0.997
+[EXECUTION] [03:47:39] Waiting before running function for 10 seconds.
+[EXECUTION] [03:47:49] Sensors started
+[STABLE CHECK] [03:47:52] Temperature too high: mean is 44.2, which is greater than 40
+[STABLE CHECK] [03:47:52] Temperature is too high.
+[STABLE CHECK] [03:47:52] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [14:11:58] Success: Machine is stable.
-[EXECUTION] [14:11:58] Successfully reached stable state
+[STABLE CHECK] [03:48:12] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [03:48:12] Temperature is too high.
+[STABLE CHECK] [03:48:12] Waiting 20 seconds to reach low temperature.
 
-1/5 [=====>........................] - ETA: 2s - loss: 0.0710 - acc: 1.0000 - accuracy: 1.0000 - my_accuracy: 1.0000
-5/5 [==============================] - 1s 5ms/step - loss: 0.0830 - acc: 0.9969 - accuracy: 0.9969 - my_accuracy: 0.9969
-2023-12-08 14:11:59.001220: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-[EXECUTION] [14:11:59] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:12:29] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
+[STABLE CHECK] [03:48:32] Temperature too high: mean is 40.5, which is greater than 40
+[STABLE CHECK] [03:48:32] Temperature is too high.
+[STABLE CHECK] [03:48:32] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [03:48:52] Success: temperature is below threshold.
+[MAIN] [03:48:52] Terminated sensors
+[STABLE CHECK] [03:48:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [03:49:12] Success: Machine is stable.
+[EXECUTION] [03:49:12] Successfully reached stable state
+
+1/5 [=====>........................] - ETA: 2s - loss: 0.0949 - acc: 1.0000 - accuracy: 1.0000 - my_accuracy: 1.0000
+5/5 [==============================] - 1s 5ms/step - loss: 0.1211 - acc: 0.9906 - accuracy: 0.9906 - my_accuracy: 0.9906
+2023-12-09 03:49:13.428174: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [03:49:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [03:49:43] Performed tensorflow.keras.Sequential.fit() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -856,27 +143,5 @@ inside_object_size
 ++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
 6-size 48.0
 outside_object_size
-[EXECUTION] [14:12:29] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [14:12:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
-[EXECUTION] [14:12:29] Waiting before running function for 10 seconds.
-[EXECUTION] [14:12:39] Sensors started
-[STABLE CHECK] [14:12:42] Success: temperature is below threshold.
-[MAIN] [14:12:42] Terminated sensors
-[STABLE CHECK] [14:12:42] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [14:13:02] Success: Machine is stable.
-[EXECUTION] [14:13:02] Successfully reached stable state
-[EXECUTION] [14:13:02] waiting idle for 30 seconds after function execution
-[EXECUTION] [14:13:32] Performed tensorflow.keras.Sequential.fit.history.keys() on input and will now save energy data.
-[EXECUTION] [14:13:32] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.Sequential.compile()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.math.add_n()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.layers.LSTMCell()', 'tensorflow.transpose()', 'tensorflow.TensorArray()', 'tensorflow.TensorArray.write()', 'tensorflow.keras.losses.CategoricalCrossentropy()', 'tensorflow.keras.losses.CategoricalCrossentropy([[1, 0]], [[-1.0, 3.0]]).numpy()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.metrics.Mean.update_state()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()', 'tensorflow.keras.metrics.Mean.result()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.result()', 'tensorflow.keras.Sequential.fit.history.keys()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [14:13:32] Result: {'tensorflow.keras.Sequential.fit.history.keys()': {'energy_data': {'cpu': '{"columns":["time_elapse
-[EXECUTION] [14:13:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-1.json
+[EXECUTION] [03:49:43] Result: {'tensorflow.keras.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [03:49:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/effective_tf2/experiment-5.json

@@ -1,0 +1,66 @@
+2023-12-09 01:47:00.726110: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/core/matrix_core_method-level.py:97: MatplotlibDeprecationWarning: Auto-removal of overlapping axes is deprecated since 3.6 and will be removed two minor releases later; explicitly call ax.remove() as needed.
+  ax_1 = plt.subplot(1, 2, 1)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/core/matrix_core_method-level.py:100: MatplotlibDeprecationWarning: Auto-removal of overlapping axes is deprecated since 3.6 and will be removed two minor releases later; explicitly call ax.remove() as needed.
+  ax_2 = plt.subplot(1, 2, 2)
+2.7.0
+[EXECUTION] [01:46:27] Waiting before running function for 10 seconds.
+[EXECUTION] [01:46:37] Sensors started
+[STABLE CHECK] [01:46:40] Success: temperature is below threshold.
+[MAIN] [01:46:40] Terminated sensors
+[STABLE CHECK] [01:46:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:47:00] Success: Machine is stable.
+[EXECUTION] [01:47:00] Successfully reached stable state
+[EXECUTION] [01:47:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:47:30] Performed tensorflow.random.uniform() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:47:30] Result: {'tensorflow.random.uniform()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"i
+[EXECUTION] [01:47:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/matrix_core/experiment-5.json
+
+Reconstructed Matrix, A_svd tf.Tensor(
+[[0.4557968  0.14873055 0.77312434 ... 0.5746597  0.4168577  0.43431777]
+ [0.9250289  0.814296   0.7540194  ... 0.6300778  0.7841007  0.8520286 ]
+ [0.48042563 0.5316663  0.9142192  ... 0.5306065  0.22688618 0.6389444 ]
+ ...
+ [0.528312   0.37294057 0.0025035  ... 0.25778052 0.5941799  0.6654807 ]
+ [0.31132203 0.79517066 0.66994303 ... 0.23253317 0.5847551  0.225121  ]
+ [0.69023794 0.75004375 0.45092112 ... 0.15761198 0.36271295 0.32050562]], shape=(40, 30), dtype=float32)
+Original Size of A: 1200
+Approximation Size: 1065
+Approximation Size: 213
+Input Image Shape: (1024, 1024, 3)
+Original size of image: 3145728
+Number of singular values used in compression: 100
+Compressed image size: 614700
+Proportion of original size: 0.195
+Original size of image: 3145728
+Number of singular values used in compression: 50
+Compressed image size: 307350
+Proportion of original size: 0.098
+Original size of image: 3145728
+Number of singular values used in compression: 10
+Compressed image size: 61470
+Proportion of original size: 0.020
+Original size of image: 3145728
+Number of singular values used in compression: 76
+Compressed image size: 467172
+Proportion of original size: 0.149
+Original size of image: 3145728
+Number of singular values used in compression: 35
+Compressed image size: 215145
+Proportion of original size: 0.068
+Proportion of energy captured by the first 35 singular values: 0.753
+Squared Frobenius norm: 33.766
+Sum of squared singular values left out: 33.766

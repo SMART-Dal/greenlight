@@ -1,0 +1,1 @@
+["tensorflow.linalg.diag()", "tensorflow.transpose()", "tensorflow.einsum()", "tensorflow.linalg.svd()", "tensorflow.size()", "tensorflow.reduce_mean()", "tensorflow.map_fn()", "tensorflow.reduce_sum()"]

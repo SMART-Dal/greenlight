@@ -1,0 +1,70 @@
+2023-12-09 01:37:44.859110: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2.7.0
+[EXECUTION] [01:37:11] Waiting before running function for 10 seconds.
+[EXECUTION] [01:37:21] Sensors started
+[STABLE CHECK] [01:37:24] Success: temperature is below threshold.
+[MAIN] [01:37:24] Terminated sensors
+[STABLE CHECK] [01:37:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:37:44] Success: Machine is stable.
+[EXECUTION] [01:37:44] Successfully reached stable state
+[EXECUTION] [01:37:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:38:14] Performed tensorflow.linspace() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:38:14] Result: {'tensorflow.linspace()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [01:38:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/optimizers_core/experiment-5.json
+Gradient descent optimizer: learning rate=0.001
+-------------------------------
+Exceeded maximum of 2000 iterations. Test terminated.
+
+Gradient descent optimizer: learning rate=0.01
+-------------------------------
+Exceeded maximum of 2000 iterations. Test terminated.
+
+Gradient descent optimizer: learning rate=0.1
+-------------------------------
+Gradient exploded at iteration 6
+
+Gradient descent optimizer: learning rate=0.001
+-------------------------------
+Exceeded maximum of 2000 iterations. Test terminated.
+
+Gradient descent optimizer: learning rate=0.01
+-------------------------------
+Converged in 80 iterations
+
+Gradient descent optimizer: learning rate=0.1
+-------------------------------
+Gradient exploded at iteration 6
+
+Adam: learning rate=0.001
+-------------------------------
+Exceeded maximum of 2000 iterations. Test terminated.
+
+Adam: learning rate=0.01
+-------------------------------
+Exceeded maximum of 2000 iterations. Test terminated.
+
+Adam: learning rate=0.1
+-------------------------------
+Converged in 1156 iterations
+

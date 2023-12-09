@@ -1,0 +1,1 @@
+["tensorflow.random.set_seed()", "tensorflow.cast()", "tensorflow.Variable()", "tensorflow.Variable.numpy()", "tensorflow.range()", "tensorflow.meshgrid()", "tensorflow.math.log()"]

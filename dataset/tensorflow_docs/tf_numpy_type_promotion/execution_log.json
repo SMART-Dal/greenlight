@@ -1,12 +1,12 @@
 Using TensorFlow version 2.7.0
-[EXECUTION] [10:37:03] Waiting before running function for 10 seconds.
-[EXECUTION] [10:37:13] Sensors started
-[STABLE CHECK] [10:37:16] Success: temperature is below threshold.
-[MAIN] [10:37:16] Terminated sensors
-[STABLE CHECK] [10:37:16] Waiting 20 seconds to reach stable state.
+[EXECUTION] [02:33:20] Waiting before running function for 10 seconds.
+[EXECUTION] [02:33:30] Sensors started
+[STABLE CHECK] [02:33:33] Success: temperature is below threshold.
+[MAIN] [02:33:33] Terminated sensors
+[STABLE CHECK] [02:33:33] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [10:37:36] Success: Machine is stable.
-[EXECUTION] [10:37:36] Successfully reached stable state
+[STABLE CHECK] [02:33:53] Success: Machine is stable.
+[EXECUTION] [02:33:53] Successfully reached stable state
 Traceback (most recent call last):
   File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/tf_numpy_type_promotion_method-level.py", line 14, in <module>
     tnp.experimental_enable_numpy_behavior(dtype_conversion_mode='all')

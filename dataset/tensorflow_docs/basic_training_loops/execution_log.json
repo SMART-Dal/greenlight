@@ -1,19 +1,15 @@
-2023-12-08 10:52:59.988094: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-2023-12-08 10:57:19.674737: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
-[EXECUTION] [10:52:06] Waiting before running function for 10 seconds.
-[EXECUTION] [10:52:16] Sensors started
-[STABLE CHECK] [10:52:19] Success: temperature is below threshold.
-[MAIN] [10:52:19] Terminated sensors
-[STABLE CHECK] [10:52:19] Waiting 20 seconds to reach stable state.
+2023-12-09 02:44:21.254857: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 02:44:51.345644: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+[EXECUTION] [02:43:47] Waiting before running function for 10 seconds.
+[EXECUTION] [02:43:57] Sensors started
+[STABLE CHECK] [02:44:00] Success: temperature is below threshold.
+[MAIN] [02:44:00] Terminated sensors
+[STABLE CHECK] [02:44:00] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [10:52:39] Not stable: stdev/mean is 0.044029871149609046, which is greater than 0.03
-[STABLE CHECK] [10:52:39] Machine is not stable yet.
-[STABLE CHECK] [10:52:39] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:52:59] Success: Machine is stable.
-[EXECUTION] [10:52:59] Successfully reached stable state
-[EXECUTION] [10:53:00] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:53:30] Performed tensorflow.linspace() on input and will now save energy data.
+[STABLE CHECK] [02:44:20] Success: Machine is stable.
+[EXECUTION] [02:44:20] Successfully reached stable state
+[EXECUTION] [02:44:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:44:51] Performed tensorflow.linspace() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -34,388 +30,91 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [10:53:30] Result: {'tensorflow.linspace()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [10:53:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
-[EXECUTION] [10:53:30] Waiting before running function for 10 seconds.
-[EXECUTION] [10:53:40] Sensors started
-[STABLE CHECK] [10:53:43] Success: temperature is below threshold.
-[MAIN] [10:53:43] Terminated sensors
-[STABLE CHECK] [10:53:43] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:54:03] Success: Machine is stable.
-[EXECUTION] [10:54:03] Successfully reached stable state
-[EXECUTION] [10:54:03] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:54:33] Performed tensorflow.cast() on input and will now save energy data.
-[EXECUTION] [10:54:33] skipping call added, current list is: ['tensorflow.cast()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 804.0
-++++++5++++++
-5-size 72.0
-4-size 876.0
-++++++1++++++
-1-size 804.0
-++++++5++++++
-5-size 72.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:54:33] Result: {'tensorflow.cast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
-[EXECUTION] [10:54:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
-[EXECUTION] [10:54:33] Waiting before running function for 10 seconds.
-[EXECUTION] [10:54:43] Sensors started
-[STABLE CHECK] [10:54:46] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [10:54:46] Temperature is too high.
-[STABLE CHECK] [10:54:46] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:55:06] Success: temperature is below threshold.
-[MAIN] [10:55:06] Terminated sensors
-[STABLE CHECK] [10:55:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:55:26] Success: Machine is stable.
-[EXECUTION] [10:55:26] Successfully reached stable state
-[EXECUTION] [10:55:26] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:55:56] Performed tensorflow.random.normal() on input and will now save energy data.
-[EXECUTION] [10:55:56] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:55:56] Result: {'tensorflow.random.normal()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
-[EXECUTION] [10:55:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
-[EXECUTION] [10:55:56] Waiting before running function for 10 seconds.
-[EXECUTION] [10:56:06] Sensors started
-[STABLE CHECK] [10:56:09] Temperature too high: mean is 40.65, which is greater than 40
-[STABLE CHECK] [10:56:09] Temperature is too high.
-[STABLE CHECK] [10:56:09] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:56:29] Success: temperature is below threshold.
-[MAIN] [10:56:29] Terminated sensors
-[STABLE CHECK] [10:56:29] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:56:49] Success: Machine is stable.
-[EXECUTION] [10:56:49] Successfully reached stable state
-[EXECUTION] [10:56:49] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:57:19] Performed tensorflow.Variable() on input and will now save energy data.
-[EXECUTION] [10:57:19] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:57:19] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [10:57:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
+[EXECUTION] [02:44:51] Result: {'tensorflow.linspace()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [02:44:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-5.json
 Variables: (<tf.Variable 'Variable:0' shape=() dtype=float32, numpy=0.0>, <tf.Variable 'Variable:0' shape=() dtype=float32, numpy=5.0>)
-Current loss: 10.080666
+Current loss: 10.378299
 Starting:
-     W = 5.00, b = 0.00, loss=10.08067
-[EXECUTION] [10:57:19] Waiting before running function for 10 seconds.
-[EXECUTION] [10:57:29] Sensors started
-[STABLE CHECK] [10:57:32] Temperature too high: mean is 42.2, which is greater than 40
-[STABLE CHECK] [10:57:32] Temperature is too high.
-[STABLE CHECK] [10:57:32] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:57:52] Success: temperature is below threshold.
-[MAIN] [10:57:52] Terminated sensors
-[STABLE CHECK] [10:57:52] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:58:12] Success: Machine is stable.
-[EXECUTION] [10:58:12] Successfully reached stable state
-[EXECUTION] [10:58:12] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:58:42] Performed tensorflow.Module.w.assign_sub() on input and will now save energy data.
-[EXECUTION] [10:58:42] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()', 'tensorflow.Module.w.assign_sub()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 4.0
-4-size 4.0
-++++++1++++++
-1-size 4.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 13352.0
-outside_object_size
-[EXECUTION] [10:58:42] Result: {'tensorflow.Module.w.assign_sub()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
-[EXECUTION] [10:58:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
-[EXECUTION] [10:58:42] Waiting before running function for 10 seconds.
-[EXECUTION] [10:58:53] Sensors started
-[STABLE CHECK] [10:58:56] Temperature too high: mean is 43.72222222222222, which is greater than 40
-[STABLE CHECK] [10:58:56] Temperature is too high.
-[STABLE CHECK] [10:58:56] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:59:16] Temperature too high: mean is 40.75, which is greater than 40
-[STABLE CHECK] [10:59:16] Temperature is too high.
-[STABLE CHECK] [10:59:16] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:59:36] Success: temperature is below threshold.
-[MAIN] [10:59:36] Terminated sensors
-[STABLE CHECK] [10:59:36] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:59:56] Success: Machine is stable.
-[EXECUTION] [10:59:56] Successfully reached stable state
-[EXECUTION] [10:59:56] waiting idle for 30 seconds after function execution
-[EXECUTION] [11:00:26] Performed tensorflow.Module.b.assign_sub() on input and will now save energy data.
-[EXECUTION] [11:00:26] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()', 'tensorflow.Module.w.assign_sub()', 'tensorflow.Module.b.assign_sub()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 4.0
-4-size 4.0
-++++++1++++++
-1-size 4.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 13352.0
-outside_object_size
-[EXECUTION] [11:00:26] Result: {'tensorflow.Module.b.assign_sub()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
-[EXECUTION] [11:00:26] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
+     W = 5.00, b = 0.00, loss=10.37830
 Epoch  0:
-     W = 4.45, b = 0.38, loss=6.20368
+     W = 4.47, b = 0.40, loss=6.49785
 Epoch  1:
-     W = 4.05, b = 0.68, loss=3.99928
+     W = 4.09, b = 0.73, loss=4.26988
 Epoch  2:
-     W = 3.76, b = 0.92, loss=2.73629
+     W = 3.81, b = 0.99, loss=2.98039
 Epoch  3:
-     W = 3.54, b = 1.11, loss=2.00688
+     W = 3.60, b = 1.19, loss=2.22794
 Epoch  4:
-     W = 3.39, b = 1.26, loss=1.58219
+     W = 3.45, b = 1.36, loss=1.78526
 Epoch  5:
-     W = 3.27, b = 1.38, loss=1.33288
+     W = 3.34, b = 1.49, loss=1.52270
 Epoch  6:
-     W = 3.19, b = 1.48, loss=1.18533
+     W = 3.26, b = 1.60, loss=1.36574
 Epoch  7:
-     W = 3.13, b = 1.56, loss=1.09731
+     W = 3.20, b = 1.68, loss=1.27121
 Epoch  8:
-     W = 3.08, b = 1.62, loss=1.04440
+     W = 3.16, b = 1.75, loss=1.21386
 Epoch  9:
-     W = 3.05, b = 1.68, loss=1.01236
-Current loss: 1.012365
+     W = 3.13, b = 1.81, loss=1.17885
+Current loss: 1.178850
 Epoch  0:
-     W = 4.45, b = 0.38, loss=6.20368
+     W = 4.47, b = 0.40, loss=6.49785
 Epoch  1:
-     W = 4.05, b = 0.68, loss=3.99928
+     W = 4.09, b = 0.73, loss=4.26988
 Epoch  2:
-     W = 3.76, b = 0.92, loss=2.73629
+     W = 3.81, b = 0.99, loss=2.98039
 Epoch  3:
-     W = 3.54, b = 1.11, loss=2.00688
+     W = 3.60, b = 1.19, loss=2.22794
 Epoch  4:
-     W = 3.39, b = 1.26, loss=1.58219
+     W = 3.45, b = 1.36, loss=1.78526
 Epoch  5:
-     W = 3.27, b = 1.38, loss=1.33288
+     W = 3.34, b = 1.49, loss=1.52270
 Epoch  6:
-     W = 3.19, b = 1.48, loss=1.18533
+     W = 3.26, b = 1.60, loss=1.36574
 Epoch  7:
-     W = 3.13, b = 1.56, loss=1.09731
+     W = 3.20, b = 1.68, loss=1.27121
 Epoch  8:
-     W = 3.08, b = 1.62, loss=1.04440
+     W = 3.16, b = 1.75, loss=1.21386
 Epoch  9:
-     W = 3.05, b = 1.68, loss=1.01236
-[EXECUTION] [11:00:26] Waiting before running function for 10 seconds.
-[EXECUTION] [11:00:36] Sensors started
-[STABLE CHECK] [11:00:39] Temperature too high: mean is 45.55, which is greater than 40
-[STABLE CHECK] [11:00:39] Temperature is too high.
-[STABLE CHECK] [11:00:39] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:00:59] Temperature too high: mean is 43, which is greater than 40
-[STABLE CHECK] [11:00:59] Temperature is too high.
-[STABLE CHECK] [11:00:59] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:01:19] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [11:01:19] Temperature is too high.
-[STABLE CHECK] [11:01:19] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:01:39] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [11:01:39] Temperature is too high.
-[STABLE CHECK] [11:01:39] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:01:59] Temperature too high: mean is 42, which is greater than 40
-[STABLE CHECK] [11:01:59] Temperature is too high.
-[STABLE CHECK] [11:01:59] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:02:19] Temperature too high: mean is 41.7, which is greater than 40
-[STABLE CHECK] [11:02:19] Temperature is too high.
-[STABLE CHECK] [11:02:19] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:02:39] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [11:02:39] Temperature is too high.
-[MAIN] [11:02:39] Terminated sensors
-[EXECUTION] [11:03:09] Waiting before running function for 10 seconds.
-[EXECUTION] [11:03:19] Sensors started
-[STABLE CHECK] [11:03:22] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [11:03:22] Temperature is too high.
-[STABLE CHECK] [11:03:22] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:03:42] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [11:03:42] Temperature is too high.
-[STABLE CHECK] [11:03:42] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:04:02] Temperature too high: mean is 40.05, which is greater than 40
-[STABLE CHECK] [11:04:02] Temperature is too high.
-[STABLE CHECK] [11:04:02] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [11:04:22] Success: temperature is below threshold.
-[MAIN] [11:04:22] Terminated sensors
-[STABLE CHECK] [11:04:22] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [11:04:42] Success: Machine is stable.
-[EXECUTION] [11:04:42] Successfully reached stable state
-[EXECUTION] [11:04:42] waiting idle for 30 seconds after function execution
-[EXECUTION] [11:05:12] Performed tensorflow.keras.Model.save_weights() on input and will now save energy data.
-[EXECUTION] [11:05:12] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()', 'tensorflow.Module.w.assign_sub()', 'tensorflow.Module.b.assign_sub()', 'tensorflow.keras.Model.save_weights()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 27760.0
-outside_object_size
-[EXECUTION] [11:05:12] Result: {'tensorflow.keras.Model.save_weights()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
-[EXECUTION] [11:05:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
-[EXECUTION] [11:05:12] Waiting before running function for 10 seconds.
-[EXECUTION] [11:05:23] Sensors started
-[STABLE CHECK] [11:05:26] Success: temperature is below threshold.
-[MAIN] [11:05:26] Terminated sensors
-[STABLE CHECK] [11:05:26] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [11:05:46] Success: Machine is stable.
-[EXECUTION] [11:05:46] Successfully reached stable state
-[EXECUTION] [11:05:46] waiting idle for 30 seconds after function execution
-[EXECUTION] [11:06:16] Performed tensorflow.keras.Model.compile() on input and will now save energy data.
-[EXECUTION] [11:06:16] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()', 'tensorflow.Module.w.assign_sub()', 'tensorflow.Module.b.assign_sub()', 'tensorflow.keras.Model.save_weights()', 'tensorflow.keras.Model.compile()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-4-size 184.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 40216.0
-outside_object_size
-[EXECUTION] [11:06:16] Result: {'tensorflow.keras.Model.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
-[EXECUTION] [11:06:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
+     W = 3.13, b = 1.81, loss=1.17885
 201
-[EXECUTION] [11:06:16] Waiting before running function for 10 seconds.
-[EXECUTION] [11:06:26] Sensors started
-[STABLE CHECK] [11:06:29] Success: temperature is below threshold.
-[MAIN] [11:06:29] Terminated sensors
-[STABLE CHECK] [11:06:29] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [11:06:49] Success: Machine is stable.
-[EXECUTION] [11:06:49] Successfully reached stable state
 Epoch 1/10
 
-1/1 [==============================] - ETA: 0s - loss: 10.0807
-1/1 [==============================] - 0s 234ms/step - loss: 10.0807
+1/1 [==============================] - ETA: 0s - loss: 10.3783
+1/1 [==============================] - 0s 192ms/step - loss: 10.3783
 Epoch 2/10
 
-1/1 [==============================] - ETA: 0s - loss: 6.2037
-1/1 [==============================] - 0s 3ms/step - loss: 6.2037
+1/1 [==============================] - ETA: 0s - loss: 6.4978
+1/1 [==============================] - 0s 2ms/step - loss: 6.4978
 Epoch 3/10
 
-1/1 [==============================] - ETA: 0s - loss: 3.9993
-1/1 [==============================] - 0s 3ms/step - loss: 3.9993
+1/1 [==============================] - ETA: 0s - loss: 4.2699
+1/1 [==============================] - 0s 2ms/step - loss: 4.2699
 Epoch 4/10
 
-1/1 [==============================] - ETA: 0s - loss: 2.7363
-1/1 [==============================] - 0s 3ms/step - loss: 2.7363
+1/1 [==============================] - ETA: 0s - loss: 2.9804
+1/1 [==============================] - 0s 2ms/step - loss: 2.9804
 Epoch 5/10
 
-1/1 [==============================] - ETA: 0s - loss: 2.0069
-1/1 [==============================] - 0s 3ms/step - loss: 2.0069
+1/1 [==============================] - ETA: 0s - loss: 2.2279
+1/1 [==============================] - 0s 2ms/step - loss: 2.2279
 Epoch 6/10
 
-1/1 [==============================] - ETA: 0s - loss: 1.5822
-1/1 [==============================] - 0s 2ms/step - loss: 1.5822
+1/1 [==============================] - ETA: 0s - loss: 1.7853
+1/1 [==============================] - 0s 2ms/step - loss: 1.7853
 Epoch 7/10
 
-1/1 [==============================] - ETA: 0s - loss: 1.3329
-1/1 [==============================] - 0s 3ms/step - loss: 1.3329
+1/1 [==============================] - ETA: 0s - loss: 1.5227
+1/1 [==============================] - 0s 2ms/step - loss: 1.5227
 Epoch 8/10
 
-1/1 [==============================] - ETA: 0s - loss: 1.1853
-1/1 [==============================] - 0s 3ms/step - loss: 1.1853
+1/1 [==============================] - ETA: 0s - loss: 1.3657
+1/1 [==============================] - 0s 2ms/step - loss: 1.3657
 Epoch 9/10
 
-1/1 [==============================] - ETA: 0s - loss: 1.0973
-1/1 [==============================] - 0s 3ms/step - loss: 1.0973
+1/1 [==============================] - ETA: 0s - loss: 1.2712
+1/1 [==============================] - 0s 2ms/step - loss: 1.2712
 Epoch 10/10
 
-1/1 [==============================] - ETA: 0s - loss: 1.0444
-1/1 [==============================] - 0s 3ms/step - loss: 1.0444
-[EXECUTION] [11:06:49] waiting idle for 30 seconds after function execution
-[EXECUTION] [11:07:19] Performed tensorflow.keras.Model.fit() on input and will now save energy data.
-[EXECUTION] [11:07:19] skipping call added, current list is: ['tensorflow.cast()', 'tensorflow.random.normal()', 'tensorflow.Variable()', 'tensorflow.Module.w.assign_sub()', 'tensorflow.Module.b.assign_sub()', 'tensorflow.keras.Model.save_weights()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.fit()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 804.0
-++++++1++++++
-1-size 804.0
-4-size 1608.0
-++++++1++++++
-1-size 804.0
-++++++1++++++
-1-size 804.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 511496.0
-outside_object_size
-[EXECUTION] [11:07:19] Result: {'tensorflow.keras.Model.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
-[EXECUTION] [11:07:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/basic_training_loops/experiment-1.json
+1/1 [==============================] - ETA: 0s - loss: 1.2139
+1/1 [==============================] - 0s 2ms/step - loss: 1.2139

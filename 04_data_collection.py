@@ -2,6 +2,7 @@ import datetime
 import os
 import subprocess
 import json
+from utils.script_paths import scripts
 # import codegreen.fecom.patching.patching_config
 
 
@@ -48,35 +49,10 @@ if os.path.isdir(repo_dir):
         # get current time in execution_metadata
         # execution_metadata["start_time"] = datetime.datetime.now().isoformat()
         # subprocess to run cli tool
-        scripts = [
-            "tpu_embedding",
-            "metrics_optimizers",
-            "model_mapping",
-            "migrating_estimator",
-            "validate_correctness",
-            "evaluator",
-            "tflite",
-            "canned_estimators",
-            "tpu_estimator",
-            "early_stopping",
-            "saved_model",
-            "tensorboard",
-            "migration_debugging",
-            "upgrade",
-            "fault_tolerance",
-            "multi_worker_cpu_gpu_training",
-            "migrating_feature_columns",
-            "logging_stop_hook",
-            "sessionrunhook_callback",
-            "checkpoint_saver",
-            "tf1_vs_tf2",
-            "migrating_checkpoints",
-            "mirrored_strategy",
-            ]
-        script_prefix = "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/"
+
         # script_to_run = "distributed_training_method-level.py"
         for script_to_run in scripts:
-            process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir, "--scripts", script_prefix+script_to_run+"_method-level.py"] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir, "--scripts", script_to_run, "--iterations", "5"] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
             # keep track of files that were successful to skip next time
 

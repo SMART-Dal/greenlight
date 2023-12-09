@@ -1,248 +1,18 @@
-2023-12-08 10:39:16.673416: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fd543e94700> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[EXECUTION] [10:37:39] Waiting before running function for 10 seconds.
-[EXECUTION] [10:37:49] Sensors started
-[STABLE CHECK] [10:37:52] Success: temperature is below threshold.
-[MAIN] [10:37:52] Terminated sensors
-[STABLE CHECK] [10:37:52] Waiting 20 seconds to reach stable state.
+2023-12-09 02:38:49.545502: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [02:38:50] Waiting before running function for 10 seconds.
+[EXECUTION] [02:39:00] Sensors started
+[STABLE CHECK] [02:39:03] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [02:39:03] Temperature is too high.
+[STABLE CHECK] [02:39:03] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [10:38:12] Success: Machine is stable.
-[EXECUTION] [10:38:12] Successfully reached stable state
-[EXECUTION] [10:38:12] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:38:42] Performed tensorflow.function() on input and will now save energy data.
-[EXECUTION] [10:38:42] skipping call added, current list is: ['tensorflow.function()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 0.0
-4-size 0.0
-++++++5++++++
-5-size 0.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:38:42] Result: {'tensorflow.function()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [10:38:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:38:42] Waiting before running function for 10 seconds.
-[EXECUTION] [10:38:53] Sensors started
-[STABLE CHECK] [10:38:56] Success: temperature is below threshold.
-[MAIN] [10:38:56] Terminated sensors
-[STABLE CHECK] [10:38:56] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [02:39:23] Success: temperature is below threshold.
+[MAIN] [02:39:23] Terminated sensors
+[STABLE CHECK] [02:39:23] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [10:39:16] Success: Machine is stable.
-[EXECUTION] [10:39:16] Successfully reached stable state
-[EXECUTION] [10:39:16] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:39:46] Performed tensorflow.constant() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++5++++++
-5-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:39:46] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [10:39:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:39:46] Waiting before running function for 10 seconds.
-[EXECUTION] [10:39:56] Sensors started
-[STABLE CHECK] [10:39:59] Success: temperature is below threshold.
-[MAIN] [10:39:59] Terminated sensors
-[STABLE CHECK] [10:39:59] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:40:19] Success: Machine is stable.
-[EXECUTION] [10:40:19] Successfully reached stable state
-[EXECUTION] [10:40:19] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:40:49] Performed tensorflow.constant() on input and will now save energy data.
-[EXECUTION] [10:40:49] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-4-size 48.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:40:49] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [10:40:49] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:40:49] Waiting before running function for 10 seconds.
-[EXECUTION] [10:40:59] Sensors started
-[STABLE CHECK] [10:41:02] Success: temperature is below threshold.
-[MAIN] [10:41:02] Terminated sensors
-[STABLE CHECK] [10:41:02] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:41:22] Success: Machine is stable.
-[EXECUTION] [10:41:22] Successfully reached stable state
-[EXECUTION] [10:41:23] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:41:53] Performed tensorflow.matmul() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 8.0
-4-size 12.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 8.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:41:53] Result: {'tensorflow.matmul()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
-[EXECUTION] [10:41:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:41:53] Waiting before running function for 10 seconds.
-[EXECUTION] [10:42:03] Sensors started
-[STABLE CHECK] [10:42:06] Success: temperature is below threshold.
-[MAIN] [10:42:06] Terminated sensors
-[STABLE CHECK] [10:42:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:42:26] Success: Machine is stable.
-[EXECUTION] [10:42:26] Successfully reached stable state
-[EXECUTION] [10:42:27] Waiting before running function for 10 seconds.
-[EXECUTION] [10:42:37] Sensors started
-[STABLE CHECK] [10:42:41] Success: temperature is below threshold.
-[MAIN] [10:42:41] Terminated sensors
-[STABLE CHECK] [10:42:41] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:43:01] Not stable: stdev/mean is 0.04240157599954042, which is greater than 0.03
-[STABLE CHECK] [10:43:01] Machine is not stable yet.
-[STABLE CHECK] [10:43:01] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:43:21] Not stable: stdev/mean is 0.03368504984954433, which is greater than 0.03
-[STABLE CHECK] [10:43:21] Machine is not stable yet.
-[STABLE CHECK] [10:43:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:43:41] Success: Machine is stable.
-[EXECUTION] [10:43:41] Successfully reached stable state
-[EXECUTION] [10:43:42] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:44:12] Performed tensorflow.matmul() on input and will now save energy data.
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fd608588f70> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[EXECUTION] [10:44:12] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 26664.0
-++++++5++++++
-5-size 26664.0
-4-size 53328.0
-++++++5++++++
-5-size 26664.0
-++++++5++++++
-5-size 26664.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:44:22] Result: {'tensorflow.matmul()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
-[EXECUTION] [10:44:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:44:22] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:44:52] Performed tensorflow.function(x1, y1, b1).numpy() on input and will now save energy data.
+[STABLE CHECK] [02:39:43] Success: Machine is stable.
+[EXECUTION] [02:39:43] Successfully reached stable state
+[EXECUTION] [02:39:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:40:14] Performed tensorflow.function(x1, y1, b1).numpy() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
@@ -251,8 +21,8 @@ inside_object_size
 ++++++5++++++
 5-size 54944.0
 outside_object_size
-[EXECUTION] [10:44:52] Result: {'tensorflow.function(x1, y1, b1).numpy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
-[EXECUTION] [10:44:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
+[EXECUTION] [02:40:14] Result: {'tensorflow.function(x1, y1, b1).numpy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [02:40:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-5.json
 First branch, with graph: 1
 Second branch, with graph: 0
 def tf__simple_relu(x):
@@ -264,11 +34,11 @@ def tf__simple_relu(x):
             return (do_return, retval_)
 
         def set_state(vars_):
-            nonlocal do_return, retval_
+            nonlocal retval_, do_return
             (do_return, retval_) = vars_
 
         def if_body():
-            nonlocal do_return, retval_
+            nonlocal retval_, do_return
             try:
                 do_return = True
                 retval_ = ag__.ld(x)
@@ -277,7 +47,7 @@ def tf__simple_relu(x):
                 raise
 
         def else_body():
-            nonlocal do_return, retval_
+            nonlocal retval_, do_return
             try:
                 do_return = True
                 retval_ = 0
@@ -388,7 +158,7 @@ node {
     key: "else_branch"
     value {
       func {
-        name: "cond_false_131"
+        name: "cond_false_34"
       }
     }
   }
@@ -407,7 +177,7 @@ node {
     key: "then_branch"
     value {
       func {
-        name: "cond_true_130"
+        name: "cond_true_33"
       }
     }
   }
@@ -448,95 +218,7 @@ node {
 library {
   function {
     signature {
-      name: "cond_true_130"
-      input_arg {
-        name: "cond_identity_1_x"
-        type: DT_INT32
-      }
-      output_arg {
-        name: "cond_identity"
-        type: DT_BOOL
-      }
-      output_arg {
-        name: "cond_identity_1"
-        type: DT_INT32
-      }
-    }
-    node_def {
-      name: "cond/Const"
-      op: "Const"
-      attr {
-        key: "dtype"
-        value {
-          type: DT_BOOL
-        }
-      }
-      attr {
-        key: "value"
-        value {
-          tensor {
-            dtype: DT_BOOL
-            tensor_shape {
-            }
-            bool_val: true
-          }
-        }
-      }
-    }
-    node_def {
-      name: "cond/Identity"
-      op: "Identity"
-      input: "cond/Const:output:0"
-      attr {
-        key: "T"
-        value {
-          type: DT_BOOL
-        }
-      }
-    }
-    node_def {
-      name: "cond/Identity_1"
-      op: "Identity"
-      input: "cond_identity_1_x"
-      attr {
-        key: "T"
-        value {
-          type: DT_INT32
-        }
-      }
-    }
-    ret {
-      key: "cond_identity"
-      value: "cond/Identity:output:0"
-    }
-    ret {
-      key: "cond_identity_1"
-      value: "cond/Identity_1:output:0"
-    }
-    attr {
-      key: "_construction_context"
-      value {
-        s: "kEagerRuntime"
-      }
-    }
-    arg_attr {
-      key: 0
-      value {
-        attr {
-          key: "_output_shapes"
-          value {
-            list {
-              shape {
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-  function {
-    signature {
-      name: "cond_false_131"
+      name: "cond_false_34"
       input_arg {
         name: "cond_placeholder"
         type: DT_INT32
@@ -706,6 +388,94 @@ library {
       }
     }
   }
+  function {
+    signature {
+      name: "cond_true_33"
+      input_arg {
+        name: "cond_identity_1_x"
+        type: DT_INT32
+      }
+      output_arg {
+        name: "cond_identity"
+        type: DT_BOOL
+      }
+      output_arg {
+        name: "cond_identity_1"
+        type: DT_INT32
+      }
+    }
+    node_def {
+      name: "cond/Const"
+      op: "Const"
+      attr {
+        key: "dtype"
+        value {
+          type: DT_BOOL
+        }
+      }
+      attr {
+        key: "value"
+        value {
+          tensor {
+            dtype: DT_BOOL
+            tensor_shape {
+            }
+            bool_val: true
+          }
+        }
+      }
+    }
+    node_def {
+      name: "cond/Identity"
+      op: "Identity"
+      input: "cond/Const:output:0"
+      attr {
+        key: "T"
+        value {
+          type: DT_BOOL
+        }
+      }
+    }
+    node_def {
+      name: "cond/Identity_1"
+      op: "Identity"
+      input: "cond_identity_1_x"
+      attr {
+        key: "T"
+        value {
+          type: DT_INT32
+        }
+      }
+    }
+    ret {
+      key: "cond_identity"
+      value: "cond/Identity:output:0"
+    }
+    ret {
+      key: "cond_identity_1"
+      value: "cond/Identity_1:output:0"
+    }
+    attr {
+      key: "_construction_context"
+      value {
+        s: "kEagerRuntime"
+      }
+    }
+    arg_attr {
+      key: 0
+      value {
+        attr {
+          key: "_output_shapes"
+          value {
+            list {
+              shape {
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 versions {
   producer: 898
@@ -732,201 +502,16 @@ my_relu(x)
     x: float32 Tensor, shape=(2,)
   Returns:
     float32 Tensor, shape=(2,)
-[EXECUTION] [10:44:52] Waiting before running function for 10 seconds.
-[EXECUTION] [10:45:03] Sensors started
-[STABLE CHECK] [10:45:06] Temperature too high: mean is 41.45, which is greater than 40
-[STABLE CHECK] [10:45:06] Temperature is too high.
-[STABLE CHECK] [10:45:06] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:45:26] Success: temperature is below threshold.
-[MAIN] [10:45:26] Terminated sensors
-[STABLE CHECK] [10:45:26] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:45:46] Success: Machine is stable.
-[EXECUTION] [10:45:46] Successfully reached stable state
-[EXECUTION] [10:45:46] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:46:16] Performed tensorflow.random.uniform() on input and will now save energy data.
-[EXECUTION] [10:46:16] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()', 'tensorflow.random.uniform()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-4-size 112.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:46:16] Result: {'tensorflow.random.uniform()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"i
-[EXECUTION] [10:46:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-tf.Tensor([5 1 5 3 1], shape=(5,), dtype=int32)
-tf.Tensor([8 9 6 7 9], shape=(5,), dtype=int32)
-[EXECUTION] [10:46:16] Waiting before running function for 10 seconds.
-[EXECUTION] [10:46:26] Sensors started
-[STABLE CHECK] [10:46:29] Temperature too high: mean is 43.25, which is greater than 40
-[STABLE CHECK] [10:46:29] Temperature is too high.
-[STABLE CHECK] [10:46:29] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:46:49] Temperature too high: mean is 40.15, which is greater than 40
-[STABLE CHECK] [10:46:49] Temperature is too high.
-[STABLE CHECK] [10:46:49] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:47:09] Success: temperature is below threshold.
-[MAIN] [10:47:09] Terminated sensors
-[STABLE CHECK] [10:47:09] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:47:29] Not stable: stdev/mean is 0.03774533415910631, which is greater than 0.03
-[STABLE CHECK] [10:47:29] Machine is not stable yet.
-[STABLE CHECK] [10:47:29] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:47:49] Success: Machine is stable.
-[EXECUTION] [10:47:49] Successfully reached stable state
-[EXECUTION] [10:47:49] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:48:19] Performed tensorflow.pow() on input and will now save energy data.
-[EXECUTION] [10:48:19] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()', 'tensorflow.random.uniform()', 'tensorflow.pow()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 29184.0
-++++++5++++++
-5-size 32.0
-4-size 29216.0
-++++++5++++++
-5-size 29184.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:48:23] Result: {'tensorflow.pow()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1,
-[EXECUTION] [10:48:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-[EXECUTION] [10:48:24] Waiting before running function for 10 seconds.
-[EXECUTION] [10:48:34] Sensors started
-[STABLE CHECK] [10:48:37] Success: temperature is below threshold.
-[MAIN] [10:48:37] Terminated sensors
-[STABLE CHECK] [10:48:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:48:57] Success: Machine is stable.
-[EXECUTION] [10:48:57] Successfully reached stable state
-[EXECUTION] [10:48:57] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:49:27] Performed tensorflow.config.run_functions_eagerly() on input and will now save energy data.
-[EXECUTION] [10:49:27] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()', 'tensorflow.random.uniform()', 'tensorflow.pow()', 'tensorflow.config.run_functions_eagerly()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:49:27] Result: {'tensorflow.config.run_functions_eagerly()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
-[EXECUTION] [10:49:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
+tf.Tensor([3 0 6 5 7], shape=(5,), dtype=int32)
+tf.Tensor([1 1 4 9 3], shape=(5,), dtype=int32)
 Calculating MSE!
 Calculating MSE!
 Calculating MSE!
 Calculating MSE!
-[EXECUTION] [10:49:27] Waiting before running function for 10 seconds.
-[EXECUTION] [10:49:37] Sensors started
-[STABLE CHECK] [10:49:40] Success: temperature is below threshold.
-[MAIN] [10:49:40] Terminated sensors
-[STABLE CHECK] [10:49:40] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:50:00] Success: Machine is stable.
-[EXECUTION] [10:50:00] Successfully reached stable state
-[EXECUTION] [10:50:00] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:50:30] Performed tensorflow.gather() on input and will now save energy data.
-[EXECUTION] [10:50:30] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()', 'tensorflow.random.uniform()', 'tensorflow.pow()', 'tensorflow.config.run_functions_eagerly()', 'tensorflow.gather()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 4.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 36.0
-++++++1++++++
-1-size 4.0
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:50:30] Result: {'tensorflow.gather()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
-[EXECUTION] [10:50:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
 tf.Tensor([0.], shape=(1,), dtype=float32)
 tf.Tensor([0.], shape=(1,), dtype=float32)
-[EXECUTION] [10:50:30] Waiting before running function for 10 seconds.
-[EXECUTION] [10:50:40] Sensors started
-[STABLE CHECK] [10:50:43] Temperature too high: mean is 41.55, which is greater than 40
-[STABLE CHECK] [10:50:43] Temperature is too high.
-[STABLE CHECK] [10:50:43] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [10:51:03] Success: temperature is below threshold.
-[MAIN] [10:51:03] Terminated sensors
-[STABLE CHECK] [10:51:03] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [10:51:23] Success: Machine is stable.
-[EXECUTION] [10:51:23] Successfully reached stable state
-[EXECUTION] [10:51:23] waiting idle for 30 seconds after function execution
-[EXECUTION] [10:51:53] Performed tensorflow.eye() on input and will now save energy data.
-[EXECUTION] [10:51:53] skipping call added, current list is: ['tensorflow.function()', 'tensorflow.constant()', 'tensorflow.matmul()', 'tensorflow.random.uniform()', 'tensorflow.pow()', 'tensorflow.config.run_functions_eagerly()', 'tensorflow.gather()', 'tensorflow.eye()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [10:51:53] Result: {'tensorflow.eye()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1,
-[EXECUTION] [10:51:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_graphs/experiment-1.json
-Eager execution: 90.90511949802749 seconds
-Graph execution: 1.6944040639791638 seconds
+Eager execution: 7.3966244630282745 seconds
+Graph execution: 1.9757255250005983 seconds
 Tracing!
 tf.Tensor(6, shape=(), dtype=int32)
 tf.Tensor(11, shape=(), dtype=int32)
