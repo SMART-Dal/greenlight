@@ -1,0 +1,19 @@
+Traceback (most recent call last):
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/jax/_src/lib/__init__.py", line 24, in <module>
+    import jaxlib as jaxlib
+ModuleNotFoundError: No module named 'jaxlib'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/jax2tf_method-level.py", line 3, in <module>
+    import jax
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/jax/__init__.py", line 35, in <module>
+    from jax import config as _config_module
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/jax/config.py", line 17, in <module>
+    from jax._src.config import config  # noqa: F401
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/jax/_src/config.py", line 24, in <module>
+    from jax._src import lib
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/jax/_src/lib/__init__.py", line 26, in <module>
+    raise ModuleNotFoundError(
+ModuleNotFoundError: jax requires jaxlib to be installed. See https://github.com/google/jax#installation for installation instructions.

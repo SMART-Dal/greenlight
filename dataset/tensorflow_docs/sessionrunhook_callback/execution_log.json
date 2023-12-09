@@ -1,0 +1,387 @@
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp4vnc4alx
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/adagrad.py:142: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2023-12-08 20:19:17.903738: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [20:13:28] Waiting before running function for 10 seconds.
+[EXECUTION] [20:13:38] Sensors started
+[STABLE CHECK] [20:13:41] Success: temperature is below threshold.
+[MAIN] [20:13:41] Terminated sensors
+[STABLE CHECK] [20:13:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:14:01] Success: Machine is stable.
+[EXECUTION] [20:14:01] Successfully reached stable state
+[EXECUTION] [20:14:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:14:31] Performed tensorflow.compat.v1.estimator.Estimator() on input and will now save energy data.
+[EXECUTION] [20:14:31] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:14:31] Result: {'tensorflow.compat.v1.estimator.Estimator()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [20:14:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:14:31] Waiting before running function for 10 seconds.
+[EXECUTION] [20:14:41] Sensors started
+[STABLE CHECK] [20:14:44] Success: temperature is below threshold.
+[MAIN] [20:14:44] Terminated sensors
+[STABLE CHECK] [20:14:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:15:04] Success: Machine is stable.
+[EXECUTION] [20:15:04] Successfully reached stable state
+[EXECUTION] [20:15:04] Waiting before running function for 10 seconds.
+[EXECUTION] [20:15:14] Sensors started
+[STABLE CHECK] [20:15:17] Success: temperature is below threshold.
+[MAIN] [20:15:17] Terminated sensors
+[STABLE CHECK] [20:15:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:15:37] Success: Machine is stable.
+[EXECUTION] [20:15:37] Successfully reached stable state
+[EXECUTION] [20:15:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:16:07] Performed tensorflow.compat.v1.layers.Dense(1)() on input and will now save energy data.
+[EXECUTION] [20:16:07] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 127744.0
+4-size 127744.0
+++++++5++++++
+5-size 127744.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:16:07] Result: {'tensorflow.compat.v1.layers.Dense(1)()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [20:16:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:16:07] Waiting before running function for 10 seconds.
+[EXECUTION] [20:16:17] Sensors started
+[STABLE CHECK] [20:16:20] Success: temperature is below threshold.
+[MAIN] [20:16:20] Terminated sensors
+[STABLE CHECK] [20:16:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:16:40] Success: Machine is stable.
+[EXECUTION] [20:16:40] Successfully reached stable state
+[EXECUTION] [20:16:40] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:17:10] Performed tensorflow.compat.v1.losses.mean_squared_error() on input and will now save energy data.
+[EXECUTION] [20:17:10] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 120.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:17:10] Result: {'tensorflow.compat.v1.losses.mean_squared_error()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [20:17:10] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:17:10] Waiting before running function for 10 seconds.
+[EXECUTION] [20:17:20] Sensors started
+[STABLE CHECK] [20:17:23] Success: temperature is below threshold.
+[MAIN] [20:17:23] Terminated sensors
+[STABLE CHECK] [20:17:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:17:43] Success: Machine is stable.
+[EXECUTION] [20:17:43] Successfully reached stable state
+[EXECUTION] [20:17:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:18:14] Performed tensorflow.compat.v1.train.AdagradOptimizer() on input and will now save energy data.
+[EXECUTION] [20:18:14] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:18:14] Result: {'tensorflow.compat.v1.train.AdagradOptimizer()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [20:18:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:18:14] Waiting before running function for 10 seconds.
+[EXECUTION] [20:18:24] Sensors started
+[STABLE CHECK] [20:18:27] Success: temperature is below threshold.
+[MAIN] [20:18:27] Terminated sensors
+[STABLE CHECK] [20:18:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:18:47] Success: Machine is stable.
+[EXECUTION] [20:18:47] Successfully reached stable state
+[EXECUTION] [20:18:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:19:17] Performed tensorflow.compat.v1.train.AdagradOptimizer.minimize() on input and will now save energy data.
+[EXECUTION] [20:19:17] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 333312.0
+4-size 333312.0
+++++++5++++++
+5-size 333312.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 334984.0
+outside_object_size
+[EXECUTION] [20:19:17] Result: {'tensorflow.compat.v1.train.AdagradOptimizer.minimize()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [20:19:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+Time: 2023-12-08 20:19:18.815450 , Step #: 0 , Examples per second: 7.030981684564141
+Time: 2023-12-08 20:19:18.855059 , Step #: 10 , Examples per second: 252.45752050993445
+Time: 2023-12-08 20:19:18.865206 , Step #: 20 , Examples per second: 985.341696619447
+Time: 2023-12-08 20:19:18.875712 , Step #: 30 , Examples per second: 951.8663761801017
+Time: 2023-12-08 20:19:18.887216 , Step #: 40 , Examples per second: 869.3038197682854
+Time: 2023-12-08 20:19:18.900941 , Step #: 50 , Examples per second: 728.607858805545
+Time: 2023-12-08 20:19:18.912891 , Step #: 60 , Examples per second: 836.7187998723268
+Time: 2023-12-08 20:19:18.925408 , Step #: 70 , Examples per second: 798.9607025163343
+Time: 2023-12-08 20:19:18.939552 , Step #: 80 , Examples per second: 707.0759790286418
+Time: 2023-12-08 20:19:18.959079 , Step #: 90 , Examples per second: 512.112524724671
+Time: 2023-12-08 20:19:18.977552 , Step #: 100 , Examples per second: 541.3192571273698
+Time: 2023-12-08 20:19:18.996537 , Step #: 110 , Examples per second: 526.7174843967802
+Time: 2023-12-08 20:19:19.017589 , Step #: 120 , Examples per second: 475.0330143269721
+Time: 2023-12-08 20:19:19.039189 , Step #: 130 , Examples per second: 462.9627912624038
+Time: 2023-12-08 20:19:19.060297 , Step #: 140 , Examples per second: 473.750649468001
+Time: 2023-12-08 20:19:19.080508 , Step #: 150 , Examples per second: 494.7980369950925
+Time: 2023-12-08 20:19:19.098330 , Step #: 160 , Examples per second: 561.0733730185271
+Time: 2023-12-08 20:19:19.112517 , Step #: 170 , Examples per second: 704.913194736223
+Time: 2023-12-08 20:19:19.126992 , Step #: 180 , Examples per second: 690.8411707542042
+Time: 2023-12-08 20:19:19.146238 , Step #: 190 , Examples per second: 519.5728761489482
+Time: 2023-12-08 20:19:19.167907 , Step #: 200 , Examples per second: 461.500814224726
+Time: 2023-12-08 20:19:19.185571 , Step #: 210 , Examples per second: 566.1016857648027
+Time: 2023-12-08 20:19:19.202779 , Step #: 220 , Examples per second: 581.1378058580652
+Time: 2023-12-08 20:19:19.218636 , Step #: 230 , Examples per second: 630.6180932477334
+Time: 2023-12-08 20:19:19.236613 , Step #: 240 , Examples per second: 556.266362515086
+Time: 2023-12-08 20:19:19.255380 , Step #: 250 , Examples per second: 532.8603915490453
+Time: 2023-12-08 20:19:19.274925 , Step #: 260 , Examples per second: 511.65023909436906
+Time: 2023-12-08 20:19:19.294966 , Step #: 270 , Examples per second: 498.96550083273854
+Time: 2023-12-08 20:19:19.314272 , Step #: 280 , Examples per second: 517.9623843807501
+Time: 2023-12-08 20:19:19.335845 , Step #: 290 , Examples per second: 463.546080479206
+[EXECUTION] [20:19:19] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:19:49] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [20:19:49] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [20:19:49] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:19:49] Waiting before running function for 10 seconds.
+[EXECUTION] [20:19:59] Sensors started
+[STABLE CHECK] [20:20:02] Success: temperature is below threshold.
+[MAIN] [20:20:02] Terminated sensors
+[STABLE CHECK] [20:20:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:20:22] Success: Machine is stable.
+[EXECUTION] [20:20:22] Successfully reached stable state
+[EXECUTION] [20:20:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:20:52] Performed tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat() on input and will now save energy data.
+[EXECUTION] [20:20:52] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:20:52] Result: {'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat()': {'energy_data':
+[EXECUTION] [20:20:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:20:52] Waiting before running function for 10 seconds.
+[EXECUTION] [20:21:02] Sensors started
+[STABLE CHECK] [20:21:05] Success: temperature is below threshold.
+[MAIN] [20:21:05] Terminated sensors
+[STABLE CHECK] [20:21:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:21:25] Success: Machine is stable.
+[EXECUTION] [20:21:25] Successfully reached stable state
+[EXECUTION] [20:21:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:21:56] Performed tensorflow.keras.models.Sequential() on input and will now save energy data.
+[EXECUTION] [20:21:56] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat()', 'tensorflow.keras.models.Sequential()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 9376.0
+4-size 9376.0
+++++++5++++++
+5-size 9376.0
+4-size 9376.0
+++++++4++++++
+++++++5++++++
+5-size 9376.0
+4-size 9376.0
+++++++5++++++
+5-size 9376.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:21:56] Result: {'tensorflow.keras.models.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [20:21:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:21:56] Waiting before running function for 10 seconds.
+[EXECUTION] [20:22:06] Sensors started
+[STABLE CHECK] [20:22:09] Success: temperature is below threshold.
+[MAIN] [20:22:09] Terminated sensors
+[STABLE CHECK] [20:22:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:22:29] Success: Machine is stable.
+[EXECUTION] [20:22:29] Successfully reached stable state
+[EXECUTION] [20:22:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:22:59] Performed tensorflow.keras.optimizers.Adagrad() on input and will now save energy data.
+[EXECUTION] [20:22:59] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat()', 'tensorflow.keras.models.Sequential()', 'tensorflow.keras.optimizers.Adagrad()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [20:22:59] Result: {'tensorflow.keras.optimizers.Adagrad()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [20:22:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:22:59] Waiting before running function for 10 seconds.
+[EXECUTION] [20:23:09] Sensors started
+[STABLE CHECK] [20:23:12] Success: temperature is below threshold.
+[MAIN] [20:23:12] Terminated sensors
+[STABLE CHECK] [20:23:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:23:32] Success: Machine is stable.
+[EXECUTION] [20:23:32] Successfully reached stable state
+[EXECUTION] [20:23:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:24:02] Performed tensorflow.keras.models.Sequential.compile() on input and will now save energy data.
+[EXECUTION] [20:24:02] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch(1).repeat()', 'tensorflow.keras.models.Sequential()', 'tensorflow.keras.optimizers.Adagrad()', 'tensorflow.keras.models.Sequential.compile()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 3784.0
+++++++5++++++
+5-size 56.0
+4-size 3840.0
+++++++5++++++
+5-size 3784.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 47064.0
+outside_object_size
+[EXECUTION] [20:24:02] Result: {'tensorflow.keras.models.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [20:24:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json
+[EXECUTION] [20:24:02] Waiting before running function for 10 seconds.
+[EXECUTION] [20:24:12] Sensors started
+[STABLE CHECK] [20:24:15] Success: temperature is below threshold.
+[MAIN] [20:24:15] Terminated sensors
+[STABLE CHECK] [20:24:15] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [20:24:35] Success: Machine is stable.
+[EXECUTION] [20:24:35] Successfully reached stable state
+Time: 2023-12-08 20:24:35.919547 , Step #: 0 , Examples per second: 44.34114198180178
+Time: 2023-12-08 20:24:35.950642 , Step #: 10 , Examples per second: 321.5775632719717
+Time: 2023-12-08 20:24:35.980976 , Step #: 20 , Examples per second: 329.6579476861167
+Time: 2023-12-08 20:24:36.010021 , Step #: 30 , Examples per second: 344.2977458915467
+Time: 2023-12-08 20:24:36.045692 , Step #: 40 , Examples per second: 280.3529223036201
+Time: 2023-12-08 20:24:36.079669 , Step #: 50 , Examples per second: 294.3247301867992
+Time: 2023-12-08 20:24:36.116838 , Step #: 60 , Examples per second: 269.0467301709484
+Time: 2023-12-08 20:24:36.155814 , Step #: 70 , Examples per second: 256.5684469374897
+Time: 2023-12-08 20:24:36.195990 , Step #: 80 , Examples per second: 248.9053468636876
+Time: 2023-12-08 20:24:36.235905 , Step #: 90 , Examples per second: 250.52735949922052
+Time: 2023-12-08 20:24:36.274924 , Step #: 100 , Examples per second: 256.2893892640005
+Time: 2023-12-08 20:24:36.316313 , Step #: 110 , Examples per second: 241.6073732718894
+Time: 2023-12-08 20:24:36.354248 , Step #: 120 , Examples per second: 263.61033247438877
+Time: 2023-12-08 20:24:36.392129 , Step #: 130 , Examples per second: 263.983635963118
+Time: 2023-12-08 20:24:36.431115 , Step #: 140 , Examples per second: 256.5025471046178
+Time: 2023-12-08 20:24:36.468045 , Step #: 150 , Examples per second: 270.78544036566944
+Time: 2023-12-08 20:24:36.507692 , Step #: 160 , Examples per second: 252.2252423447911
+Time: 2023-12-08 20:24:36.546499 , Step #: 170 , Examples per second: 257.68603165241325
+Time: 2023-12-08 20:24:36.584657 , Step #: 180 , Examples per second: 262.0670178135173
+Time: 2023-12-08 20:24:36.623912 , Step #: 190 , Examples per second: 254.74524285289132
+Time: 2023-12-08 20:24:36.660626 , Step #: 200 , Examples per second: 272.376858087266
+Time: 2023-12-08 20:24:36.697889 , Step #: 210 , Examples per second: 268.35645186057224
+Time: 2023-12-08 20:24:36.736888 , Step #: 220 , Examples per second: 256.41943608930626
+Time: 2023-12-08 20:24:36.775173 , Step #: 230 , Examples per second: 261.20204014273526
+Time: 2023-12-08 20:24:36.814820 , Step #: 240 , Examples per second: 252.21917544619234
+Time: 2023-12-08 20:24:36.851306 , Step #: 250 , Examples per second: 274.0837744233157
+Time: 2023-12-08 20:24:36.891419 , Step #: 260 , Examples per second: 249.29739368183303
+Time: 2023-12-08 20:24:36.931911 , Step #: 270 , Examples per second: 246.96201041004264
+Time: 2023-12-08 20:24:36.968938 , Step #: 280 , Examples per second: 270.07057126667695
+Time: 2023-12-08 20:24:37.008157 , Step #: 290 , Examples per second: 254.97908763738937
+[EXECUTION] [20:24:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [20:25:07] Performed tensorflow.keras.models.Sequential.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 25640.0
+4-size 25640.0
+++++++5++++++
+5-size 25640.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 566304.0
+outside_object_size
+[EXECUTION] [20:25:07] Result: {'tensorflow.keras.models.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
+[EXECUTION] [20:25:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sessionrunhook_callback/experiment-1.json

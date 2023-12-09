@@ -17,3 +17,7 @@ for root, dirs, files in os.walk('dataset'):
                 energy_data.extend(data)
 
 print(len(energy_data))
+
+# write energy_data list to a json file names final_dataset.json
+with open('final_dataset.json', 'w') as outfile:
+    json.dump(energy_data, outfile)

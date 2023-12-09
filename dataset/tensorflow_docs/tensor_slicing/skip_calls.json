@@ -1,0 +1,1 @@
+["tensorflow.constant()", "tensorflow.gather_nd()", "tensorflow.scatter_nd()", "tensorflow.SparseTensor()", "tensorflow.sparse.to_dense()", "tensorflow.tensor_scatter_nd_add()", "tensorflow.tensor_scatter_nd_sub()", "tensorflow.tensor_scatter_nd_min()", "tensorflow.tensor_scatter_nd_max()"]

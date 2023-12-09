@@ -1,0 +1,936 @@
+2023-12-08 12:40:34.207452: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [12:36:20] Waiting before running function for 10 seconds.
+[EXECUTION] [12:36:30] Sensors started
+[STABLE CHECK] [12:36:33] Success: temperature is below threshold.
+[MAIN] [12:36:33] Terminated sensors
+[STABLE CHECK] [12:36:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:36:53] Success: Machine is stable.
+[EXECUTION] [12:36:53] Successfully reached stable state
+[EXECUTION] [12:36:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:37:24] Performed tensorflow.keras.mixed_precision.Policy() on input and will now save energy data.
+[EXECUTION] [12:37:24] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:37:24] Result: {'tensorflow.keras.mixed_precision.Policy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
+[EXECUTION] [12:37:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:37:24] Waiting before running function for 10 seconds.
+[EXECUTION] [12:37:34] Sensors started
+[STABLE CHECK] [12:37:37] Success: temperature is below threshold.
+[MAIN] [12:37:37] Terminated sensors
+[STABLE CHECK] [12:37:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:37:57] Success: Machine is stable.
+[EXECUTION] [12:37:57] Successfully reached stable state
+[EXECUTION] [12:37:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:38:27] Performed tensorflow.keras.mixed_precision.set_global_policy() on input and will now save energy data.
+[EXECUTION] [12:38:27] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 512.0
+4-size 512.0
+++++++5++++++
+5-size 512.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:38:27] Result: {'tensorflow.keras.mixed_precision.set_global_policy()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [12:38:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+Compute dtype: float16
+Variable dtype: float32
+[EXECUTION] [12:38:27] Waiting before running function for 10 seconds.
+[EXECUTION] [12:38:37] Sensors started
+[STABLE CHECK] [12:38:40] Success: temperature is below threshold.
+[MAIN] [12:38:40] Terminated sensors
+[STABLE CHECK] [12:38:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:39:00] Success: Machine is stable.
+[EXECUTION] [12:39:00] Successfully reached stable state
+[EXECUTION] [12:39:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:39:30] Performed tensorflow.keras.Input() on input and will now save energy data.
+[EXECUTION] [12:39:30] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:39:30] Result: {'tensorflow.keras.Input()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [12:39:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+The model will run with 4096 units on a GPU
+[EXECUTION] [12:39:30] Waiting before running function for 10 seconds.
+[EXECUTION] [12:39:40] Sensors started
+[STABLE CHECK] [12:39:43] Success: temperature is below threshold.
+[MAIN] [12:39:43] Terminated sensors
+[STABLE CHECK] [12:39:43] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:40:03] Success: Machine is stable.
+[EXECUTION] [12:40:03] Successfully reached stable state
+[EXECUTION] [12:40:03] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:40:33] Performed tensorflow.keras.layers.Dense() on input and will now save energy data.
+[EXECUTION] [12:40:33] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:40:33] Result: {'tensorflow.keras.layers.Dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [12:40:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+<Policy "mixed_float16">
+x.dtype: float16
+dense1.kernel.dtype: float32
+[EXECUTION] [12:40:34] Waiting before running function for 10 seconds.
+[EXECUTION] [12:40:44] Sensors started
+[STABLE CHECK] [12:40:47] Success: temperature is below threshold.
+[MAIN] [12:40:47] Terminated sensors
+[STABLE CHECK] [12:40:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:41:07] Success: Machine is stable.
+[EXECUTION] [12:41:07] Successfully reached stable state
+[EXECUTION] [12:41:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:41:37] Performed tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')() on input and will now save energy data.
+[EXECUTION] [12:41:37] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()"]
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56024.0
+4-size 56024.0
+++++++5++++++
+5-size 56024.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:41:37] Result: {"tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()": {'energy_data': {'
+[EXECUTION] [12:41:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+Outputs dtype: float16
+[EXECUTION] [12:41:37] Waiting before running function for 10 seconds.
+[EXECUTION] [12:41:47] Sensors started
+[STABLE CHECK] [12:41:50] Success: temperature is below threshold.
+[MAIN] [12:41:50] Terminated sensors
+[STABLE CHECK] [12:41:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:42:10] Success: Machine is stable.
+[EXECUTION] [12:42:10] Successfully reached stable state
+[EXECUTION] [12:42:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:42:40] Performed tensorflow.keras.layers.Dense(10, name='dense_logits')() on input and will now save energy data.
+[EXECUTION] [12:42:40] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()"]
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 67520.0
+4-size 67520.0
+++++++5++++++
+5-size 67520.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:42:40] Result: {"tensorflow.keras.layers.Dense(10, name='dense_logits')()": {'energy_data': {'cpu': '{"columns":["t
+[EXECUTION] [12:42:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:42:40] Waiting before running function for 10 seconds.
+[EXECUTION] [12:42:50] Sensors started
+[STABLE CHECK] [12:42:53] Success: temperature is below threshold.
+[MAIN] [12:42:53] Terminated sensors
+[STABLE CHECK] [12:42:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:43:13] Success: Machine is stable.
+[EXECUTION] [12:43:13] Successfully reached stable state
+[EXECUTION] [12:43:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:43:43] Performed tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')() on input and will now save energy data.
+[EXECUTION] [12:43:43] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()"]
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 72120.0
+4-size 72120.0
+++++++5++++++
+5-size 72120.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:43:43] Result: {"tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()": {'energy_da
+[EXECUTION] [12:43:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+Outputs dtype: float32
+[EXECUTION] [12:43:43] Waiting before running function for 10 seconds.
+[EXECUTION] [12:43:53] Sensors started
+[STABLE CHECK] [12:43:56] Success: temperature is below threshold.
+[MAIN] [12:43:56] Terminated sensors
+[STABLE CHECK] [12:43:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:44:16] Success: Machine is stable.
+[EXECUTION] [12:44:16] Successfully reached stable state
+[EXECUTION] [12:44:16] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:44:46] Performed tensorflow.keras.layers.Activation('linear', dtype='float32')() on input and will now save energy data.
+[EXECUTION] [12:44:47] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()"]
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 76776.0
+4-size 76776.0
+++++++5++++++
+5-size 76776.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:44:47] Result: {"tensorflow.keras.layers.Activation('linear', dtype='float32')()": {'energy_data': {'cpu': '{"colum
+[EXECUTION] [12:44:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:44:47] Waiting before running function for 10 seconds.
+[EXECUTION] [12:44:57] Sensors started
+[STABLE CHECK] [12:45:00] Success: temperature is below threshold.
+[MAIN] [12:45:00] Terminated sensors
+[STABLE CHECK] [12:45:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:45:20] Success: Machine is stable.
+[EXECUTION] [12:45:20] Successfully reached stable state
+[EXECUTION] [12:45:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:45:50] Performed tensorflow.keras.Model() on input and will now save energy data.
+[EXECUTION] [12:45:50] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:45:50] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [12:45:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:45:50] Waiting before running function for 10 seconds.
+[EXECUTION] [12:46:00] Sensors started
+[STABLE CHECK] [12:46:03] Success: temperature is below threshold.
+[MAIN] [12:46:03] Terminated sensors
+[STABLE CHECK] [12:46:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:46:23] Success: Machine is stable.
+[EXECUTION] [12:46:23] Successfully reached stable state
+[EXECUTION] [12:46:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:46:53] Performed tensorflow.keras.Model.compile() on input and will now save energy data.
+[EXECUTION] [12:46:53] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 120584.0
+outside_object_size
+[EXECUTION] [12:46:53] Result: {'tensorflow.keras.Model.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [12:46:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:46:53] Waiting before running function for 10 seconds.
+[EXECUTION] [12:47:03] Sensors started
+[STABLE CHECK] [12:47:06] Success: temperature is below threshold.
+[MAIN] [12:47:06] Terminated sensors
+[STABLE CHECK] [12:47:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:47:26] Success: Machine is stable.
+[EXECUTION] [12:47:26] Successfully reached stable state
+[EXECUTION] [12:47:26] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:47:56] Performed tensorflow.keras.datasets.mnist.load_data() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:47:56] Result: {'tensorflow.keras.datasets.mnist.load_data()': {'energy_data': {'cpu': '{"columns":["time_elapsed",
+[EXECUTION] [12:47:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:47:57] Waiting before running function for 10 seconds.
+[EXECUTION] [12:48:07] Sensors started
+[STABLE CHECK] [12:48:10] Success: temperature is below threshold.
+[MAIN] [12:48:10] Terminated sensors
+[STABLE CHECK] [12:48:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:48:30] Not stable: stdev/mean is 0.11826877729913979, which is greater than 0.03
+[STABLE CHECK] [12:48:30] Machine is not stable yet.
+[STABLE CHECK] [12:48:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:48:50] Success: Machine is stable.
+[EXECUTION] [12:48:50] Successfully reached stable state
+[EXECUTION] [12:48:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:49:20] Performed tensorflow.keras.Model.get_weights() on input and will now save energy data.
+[EXECUTION] [12:49:20] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 120584.0
+outside_object_size
+[EXECUTION] [12:49:20] Result: {'tensorflow.keras.Model.get_weights()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [12:49:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:49:20] Waiting before running function for 10 seconds.
+[EXECUTION] [12:49:30] Sensors started
+[STABLE CHECK] [12:49:33] Success: temperature is below threshold.
+[MAIN] [12:49:33] Terminated sensors
+[STABLE CHECK] [12:49:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:49:53] Success: Machine is stable.
+[EXECUTION] [12:49:53] Successfully reached stable state
+Epoch 1/5
+
+1/6 [====>.........................] - ETA: 6s - loss: 2.3049 - accuracy: 0.0853
+3/6 [==============>...............] - ETA: 0s - loss: 5.0752 - accuracy: 0.3196
+5/6 [========================>.....] - ETA: 0s - loss: 4.6378 - accuracy: 0.3656
+6/6 [==============================] - 2s 101ms/step - loss: 4.1084 - accuracy: 0.4193 - val_loss: 0.7669 - val_accuracy: 0.7949
+Epoch 2/5
+
+1/6 [====>.........................] - ETA: 0s - loss: 0.7973 - accuracy: 0.7855
+3/6 [==============>...............] - ETA: 0s - loss: 0.6783 - accuracy: 0.7994
+5/6 [========================>.....] - ETA: 0s - loss: 0.6993 - accuracy: 0.7871
+6/6 [==============================] - 0s 55ms/step - loss: 0.6657 - accuracy: 0.7967 - val_loss: 0.3315 - val_accuracy: 0.9054
+Epoch 3/5
+
+1/6 [====>.........................] - ETA: 0s - loss: 0.3638 - accuracy: 0.8943
+3/6 [==============>...............] - ETA: 0s - loss: 0.3428 - accuracy: 0.8973
+5/6 [========================>.....] - ETA: 0s - loss: 0.3521 - accuracy: 0.8900
+6/6 [==============================] - 0s 56ms/step - loss: 0.3467 - accuracy: 0.8906 - val_loss: 0.2767 - val_accuracy: 0.9143
+Epoch 4/5
+
+1/6 [====>.........................] - ETA: 0s - loss: 0.2801 - accuracy: 0.9102
+3/6 [==============>...............] - ETA: 0s - loss: 0.2839 - accuracy: 0.9099
+5/6 [========================>.....] - ETA: 0s - loss: 0.3002 - accuracy: 0.9040
+6/6 [==============================] - 0s 56ms/step - loss: 0.2918 - accuracy: 0.9070 - val_loss: 0.2478 - val_accuracy: 0.9275
+Epoch 5/5
+
+1/6 [====>.........................] - ETA: 0s - loss: 0.2551 - accuracy: 0.9194
+3/6 [==============>...............] - ETA: 0s - loss: 0.3404 - accuracy: 0.8907
+5/6 [========================>.....] - ETA: 0s - loss: 0.3815 - accuracy: 0.8799
+6/6 [==============================] - 0s 56ms/step - loss: 0.3659 - accuracy: 0.8845 - val_loss: 0.2708 - val_accuracy: 0.9137
+[EXECUTION] [12:49:56] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:50:26] Performed tensorflow.keras.Model.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 188160144.0
+++++++5++++++
+5-size 60128.0
+4-size 188220272.0
+++++++5++++++
+5-size 188160144.0
+++++++5++++++
+5-size 60128.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+4-size 192.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [12:50:27] Result: {'tensorflow.keras.Model.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [12:50:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:50:27] Waiting before running function for 10 seconds.
+[EXECUTION] [12:50:37] Sensors started
+[STABLE CHECK] [12:50:40] Success: temperature is below threshold.
+[MAIN] [12:50:40] Terminated sensors
+[STABLE CHECK] [12:50:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:51:00] Success: Machine is stable.
+[EXECUTION] [12:51:00] Successfully reached stable state
+313/313 - 1s - loss: 0.2795 - accuracy: 0.9097 - 1s/epoch - 4ms/step
+[EXECUTION] [12:51:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:51:31] Performed tensorflow.keras.Model.evaluate() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 31360144.0
+++++++5++++++
+5-size 10128.0
+4-size 31370272.0
+++++++5++++++
+5-size 31360144.0
+++++++5++++++
+5-size 10128.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [12:51:31] Result: {'tensorflow.keras.Model.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [12:51:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+Test loss: 0.2795071005821228
+Test accuracy: 0.9096999764442444
+[EXECUTION] [12:51:31] Waiting before running function for 10 seconds.
+[EXECUTION] [12:51:41] Sensors started
+[STABLE CHECK] [12:51:44] Success: temperature is below threshold.
+[MAIN] [12:51:44] Terminated sensors
+[STABLE CHECK] [12:51:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:52:04] Success: Machine is stable.
+[EXECUTION] [12:52:04] Successfully reached stable state
+[EXECUTION] [12:52:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:52:34] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [12:52:34] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:52:34] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [12:52:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:52:34] Waiting before running function for 10 seconds.
+[EXECUTION] [12:52:45] Sensors started
+[STABLE CHECK] [12:52:48] Success: temperature is below threshold.
+[MAIN] [12:52:48] Terminated sensors
+[STABLE CHECK] [12:52:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:53:08] Success: Machine is stable.
+[EXECUTION] [12:53:08] Successfully reached stable state
+[EXECUTION] [12:53:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:53:38] Performed (tensorflow.constant ** 2).numpy() on input and will now save energy data.
+[EXECUTION] [12:53:38] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++1++++++
+1-size 2.0
+outside_object_size
+[EXECUTION] [12:53:38] Result: {'(tensorflow.constant ** 2).numpy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [12:53:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:53:38] Waiting before running function for 10 seconds.
+[EXECUTION] [12:53:48] Sensors started
+[STABLE CHECK] [12:53:51] Temperature too high: mean is 44.65, which is greater than 40
+[STABLE CHECK] [12:53:51] Temperature is too high.
+[STABLE CHECK] [12:53:51] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:54:11] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [12:54:11] Temperature is too high.
+[STABLE CHECK] [12:54:11] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:54:31] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [12:54:31] Temperature is too high.
+[STABLE CHECK] [12:54:31] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:54:51] Temperature too high: mean is 41.2, which is greater than 40
+[STABLE CHECK] [12:54:51] Temperature is too high.
+[STABLE CHECK] [12:54:51] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:55:11] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [12:55:11] Temperature is too high.
+[STABLE CHECK] [12:55:11] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:55:31] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [12:55:31] Temperature is too high.
+[STABLE CHECK] [12:55:31] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [12:55:51] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [12:55:51] Temperature is too high.
+[MAIN] [12:55:51] Terminated sensors
+[EXECUTION] [12:56:21] Waiting before running function for 10 seconds.
+[EXECUTION] [12:56:31] Sensors started
+[STABLE CHECK] [12:56:34] Success: temperature is below threshold.
+[MAIN] [12:56:34] Terminated sensors
+[STABLE CHECK] [12:56:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:56:54] Success: Machine is stable.
+[EXECUTION] [12:56:54] Successfully reached stable state
+[EXECUTION] [12:56:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:57:24] Performed tensorflow.keras.optimizers.RMSprop() on input and will now save energy data.
+[EXECUTION] [12:57:24] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:57:24] Result: {'tensorflow.keras.optimizers.RMSprop()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [12:57:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:57:24] Waiting before running function for 10 seconds.
+[EXECUTION] [12:57:34] Sensors started
+[STABLE CHECK] [12:57:37] Success: temperature is below threshold.
+[MAIN] [12:57:37] Terminated sensors
+[STABLE CHECK] [12:57:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:57:57] Success: Machine is stable.
+[EXECUTION] [12:57:57] Successfully reached stable state
+[EXECUTION] [12:57:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:58:27] Performed tensorflow.keras.mixed_precision.LossScaleOptimizer() on input and will now save energy data.
+[EXECUTION] [12:58:27] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 19928.0
+4-size 19928.0
+++++++5++++++
+5-size 19928.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:58:27] Result: {'tensorflow.keras.mixed_precision.LossScaleOptimizer()': {'energy_data': {'cpu': '{"columns":["time
+[EXECUTION] [12:58:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:58:27] Waiting before running function for 10 seconds.
+[EXECUTION] [12:58:38] Sensors started
+[STABLE CHECK] [12:58:41] Success: temperature is below threshold.
+[MAIN] [12:58:41] Terminated sensors
+[STABLE CHECK] [12:58:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [12:59:01] Success: Machine is stable.
+[EXECUTION] [12:59:01] Successfully reached stable state
+[EXECUTION] [12:59:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [12:59:31] Performed tensorflow.keras.losses.SparseCategoricalCrossentropy() on input and will now save energy data.
+[EXECUTION] [12:59:31] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [12:59:31] Result: {'tensorflow.keras.losses.SparseCategoricalCrossentropy()': {'energy_data': {'cpu': '{"columns":["ti
+[EXECUTION] [12:59:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [12:59:31] Waiting before running function for 10 seconds.
+[EXECUTION] [12:59:41] Sensors started
+[STABLE CHECK] [12:59:44] Success: temperature is below threshold.
+[MAIN] [12:59:44] Terminated sensors
+[STABLE CHECK] [12:59:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:00:04] Success: Machine is stable.
+[EXECUTION] [13:00:04] Successfully reached stable state
+[EXECUTION] [13:00:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:00:34] Performed tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch() on input and will now save energy data.
+[EXECUTION] [13:00:34] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:00:34] Result: {'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()': {'energy_d
+[EXECUTION] [13:00:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:00:34] Waiting before running function for 10 seconds.
+[EXECUTION] [13:00:44] Sensors started
+[STABLE CHECK] [13:00:47] Success: temperature is below threshold.
+[MAIN] [13:00:47] Terminated sensors
+[STABLE CHECK] [13:00:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:01:07] Success: Machine is stable.
+[EXECUTION] [13:01:07] Successfully reached stable state
+[EXECUTION] [13:01:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:01:37] Performed tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch() on input and will now save energy data.
+[EXECUTION] [13:01:37] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:01:37] Result: {'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()': {'energy_data': {'cpu': '{"
+[EXECUTION] [13:01:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:01:37] Waiting before running function for 10 seconds.
+[EXECUTION] [13:01:48] Sensors started
+[STABLE CHECK] [13:01:51] Success: temperature is below threshold.
+[MAIN] [13:01:51] Terminated sensors
+[STABLE CHECK] [13:01:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:02:11] Success: Machine is stable.
+[EXECUTION] [13:02:11] Successfully reached stable state
+[EXECUTION] [13:02:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:02:41] Performed tensorflow.keras.Model.set_weights() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7f685e9e40d0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+[EXECUTION] [13:02:41] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 12845200.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 67109008.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 163984.0
+++++++5++++++
+5-size 168.0
+4-size 80151384.0
+++++++5++++++
+5-size 12845200.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 67109008.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 163984.0
+++++++5++++++
+5-size 168.0
+4-size 80151384.0
+++++++4++++++
+++++++5++++++
+5-size 12845200.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 67109008.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 163984.0
+++++++5++++++
+5-size 168.0
+4-size 80151384.0
+++++++5++++++
+5-size 12845200.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 67109008.0
+++++++5++++++
+5-size 16512.0
+++++++5++++++
+5-size 163984.0
+++++++5++++++
+5-size 168.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [13:02:41] Result: {'tensorflow.keras.Model.set_weights()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [13:02:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:02:41] Waiting before running function for 10 seconds.
+[EXECUTION] [13:02:51] Sensors started
+[STABLE CHECK] [13:02:54] Success: temperature is below threshold.
+[MAIN] [13:02:54] Terminated sensors
+[STABLE CHECK] [13:02:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:03:14] Success: Machine is stable.
+[EXECUTION] [13:03:14] Successfully reached stable state
+[EXECUTION] [13:03:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:03:44] Performed tensorflow.keras.metrics.Mean() on input and will now save energy data.
+[EXECUTION] [13:03:44] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:03:44] Result: {'tensorflow.keras.metrics.Mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [13:03:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:03:44] Waiting before running function for 10 seconds.
+[EXECUTION] [13:03:54] Sensors started
+[STABLE CHECK] [13:03:57] Success: temperature is below threshold.
+[MAIN] [13:03:57] Terminated sensors
+[STABLE CHECK] [13:03:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:04:17] Success: Machine is stable.
+[EXECUTION] [13:04:17] Successfully reached stable state
+[EXECUTION] [13:04:17] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:04:47] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy() on input and will now save energy data.
+[EXECUTION] [13:04:47] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:04:47] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [13:04:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:04:48] Waiting before running function for 10 seconds.
+[EXECUTION] [13:04:59] Sensors started
+[STABLE CHECK] [13:05:02] Success: temperature is below threshold.
+[MAIN] [13:05:02] Terminated sensors
+[STABLE CHECK] [13:05:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:05:23] Not stable: stdev/mean is 0.04655202333681704, which is greater than 0.03
+[STABLE CHECK] [13:05:23] Machine is not stable yet.
+[STABLE CHECK] [13:05:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:05:43] Success: Machine is stable.
+[EXECUTION] [13:05:43] Successfully reached stable state
+[EXECUTION] [13:05:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:06:13] Performed tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7f6923139820> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+[EXECUTION] [13:06:13] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 127488.0
+4-size 127488.0
+++++++5++++++
+5-size 127488.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 20288.0
+outside_object_size
+[EXECUTION] [13:06:39] Result: {'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss()': {'energy_data': {'cpu': '{
+[EXECUTION] [13:06:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:06:39] Waiting before running function for 10 seconds.
+[EXECUTION] [13:06:49] Sensors started
+[STABLE CHECK] [13:06:52] Success: temperature is below threshold.
+[MAIN] [13:06:52] Terminated sensors
+[STABLE CHECK] [13:06:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:07:13] Success: Machine is stable.
+[EXECUTION] [13:07:13] Successfully reached stable state
+[EXECUTION] [13:07:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:07:43] Performed tensorflow.keras.mixed_precision.LossScaleOptimizer.get_unscaled_gradients() on input and will now save energy data.
+[EXECUTION] [13:07:43] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_unscaled_gradients()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+4-size 1262832.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+4-size 1262832.0
+++++++4++++++
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+4-size 1262832.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+++++++5++++++
+5-size 210472.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 20288.0
+outside_object_size
+[EXECUTION] [13:15:26] Result: {'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_unscaled_gradients()': {'energy_data': {'c
+[EXECUTION] [13:15:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:15:27] Waiting before running function for 10 seconds.
+[EXECUTION] [13:15:37] Sensors started
+[STABLE CHECK] [13:15:40] Success: temperature is below threshold.
+[MAIN] [13:15:40] Terminated sensors
+[STABLE CHECK] [13:15:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:16:00] Success: Machine is stable.
+[EXECUTION] [13:16:00] Successfully reached stable state
+[EXECUTION] [13:16:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:16:30] Performed tensorflow.keras.mixed_precision.LossScaleOptimizer.apply_gradients() on input and will now save energy data.
+[EXECUTION] [13:16:30] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_unscaled_gradients()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.apply_gradients()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 39056.0
+outside_object_size
+[EXECUTION] [13:16:33] Result: {'tensorflow.keras.mixed_precision.LossScaleOptimizer.apply_gradients()': {'energy_data': {'cpu': '{
+[EXECUTION] [13:16:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+[EXECUTION] [13:16:34] Waiting before running function for 10 seconds.
+[EXECUTION] [13:16:44] Sensors started
+[STABLE CHECK] [13:16:47] Success: temperature is below threshold.
+[MAIN] [13:16:47] Terminated sensors
+[STABLE CHECK] [13:16:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:17:07] Success: Machine is stable.
+[EXECUTION] [13:17:07] Successfully reached stable state
+[EXECUTION] [13:17:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:17:37] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state() on input and will now save energy data.
+[EXECUTION] [13:17:37] skipping call added, current list is: ['tensorflow.keras.mixed_precision.Policy()', 'tensorflow.keras.mixed_precision.set_global_policy()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense()', "tensorflow.keras.layers.Dense(10, activation='softmax', name='predictions')()", "tensorflow.keras.layers.Dense(10, name='dense_logits')()", "tensorflow.keras.layers.Activation('softmax', dtype='float32', name='predictions')()", "tensorflow.keras.layers.Activation('linear', dtype='float32')()", 'tensorflow.keras.Model()', 'tensorflow.keras.Model.compile()', 'tensorflow.keras.Model.get_weights()', 'tensorflow.constant()', '(tensorflow.constant ** 2).numpy()', 'tensorflow.keras.optimizers.RMSprop()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()', 'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()', 'tensorflow.keras.Model.set_weights()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_scaled_loss()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.get_unscaled_gradients()', 'tensorflow.keras.mixed_precision.LossScaleOptimizer.apply_gradients()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 8192.0
+++++++1++++++
+1-size 327680.0
+4-size 335872.0
+++++++1++++++
+1-size 8192.0
+++++++1++++++
+1-size 327680.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [13:17:37] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy.update_state()': {'energy_data': {'cpu': '{"col
+[EXECUTION] [13:17:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mixed_precision/experiment-1.json
+Epoch 0: loss=3.3154475688934326, test accuracy=0.8130000233650208
+Epoch 1: loss=0.552766740322113, test accuracy=0.9269999861717224
+Epoch 2: loss=0.3556870222091675, test accuracy=0.9319000244140625
+Epoch 3: loss=0.18250006437301636, test accuracy=0.9007999897003174
+Epoch 4: loss=0.3300406038761139, test accuracy=0.9575999975204468

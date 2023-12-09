@@ -1,0 +1,1 @@
+["tensorflow.TensorShape()", "tensorflow.compat.v1.disable_tensor_equality()", "tensorflow.Variable()", "tensorflow.compat.v1.enable_tensor_equality()", "tensorflow.Variable.ref().deref()"]

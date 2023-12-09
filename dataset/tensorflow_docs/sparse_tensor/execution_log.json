@@ -1,0 +1,950 @@
+2023-12-08 15:32:27.395934: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [15:31:53] Waiting before running function for 10 seconds.
+[EXECUTION] [15:32:03] Sensors started
+[STABLE CHECK] [15:32:06] Success: temperature is below threshold.
+[MAIN] [15:32:06] Terminated sensors
+[STABLE CHECK] [15:32:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:32:26] Success: Machine is stable.
+[EXECUTION] [15:32:26] Successfully reached stable state
+[EXECUTION] [15:32:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:32:57] Performed tensorflow.sparse.SparseTensor() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:32:57] Result: {'tensorflow.sparse.SparseTensor()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [15:32:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+SparseTensor(indices=tf.Tensor(
+[[0 3]
+ [2 4]], shape=(2, 2), dtype=int64), values=tf.Tensor([10 20], shape=(2,), dtype=int32), dense_shape=tf.Tensor([ 3 10], shape=(2,), dtype=int64))
+<SparseTensor shape=[3, 10] 
+ values={
+  [0, 3]: 10
+  [2, 4]: 20}>
+[EXECUTION] [15:32:57] Waiting before running function for 10 seconds.
+[EXECUTION] [15:33:07] Sensors started
+[STABLE CHECK] [15:33:10] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [15:33:10] Temperature is too high.
+[STABLE CHECK] [15:33:10] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:33:30] Success: temperature is below threshold.
+[MAIN] [15:33:30] Terminated sensors
+[STABLE CHECK] [15:33:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:33:50] Success: Machine is stable.
+[EXECUTION] [15:33:50] Successfully reached stable state
+[EXECUTION] [15:33:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:34:20] Performed tensorflow.sparse.from_dense() on input and will now save energy data.
+[EXECUTION] [15:34:20] skipping call added, current list is: ['tensorflow.sparse.from_dense()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 96.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 104.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 312.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 96.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 104.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 312.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 96.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 104.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 312.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 112.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 96.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 104.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:34:20] Result: {'tensorflow.sparse.from_dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
+[EXECUTION] [15:34:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[3, 4] 
+ values={
+  [0, 0]: 1
+  [0, 3]: 8
+  [2, 2]: 3}>
+[EXECUTION] [15:34:20] Waiting before running function for 10 seconds.
+[EXECUTION] [15:34:30] Sensors started
+[STABLE CHECK] [15:34:33] Temperature too high: mean is 40.55, which is greater than 40
+[STABLE CHECK] [15:34:33] Temperature is too high.
+[STABLE CHECK] [15:34:33] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:34:53] Success: temperature is below threshold.
+[MAIN] [15:34:53] Terminated sensors
+[STABLE CHECK] [15:34:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:35:13] Success: Machine is stable.
+[EXECUTION] [15:35:13] Successfully reached stable state
+[EXECUTION] [15:35:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:35:43] Performed tensorflow.sparse.to_dense() on input and will now save energy data.
+[EXECUTION] [15:35:43] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1496.0
+4-size 1496.0
+++++++5++++++
+5-size 1496.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:35:43] Result: {'tensorflow.sparse.to_dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [15:35:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+tf.Tensor(
+[[1 0 0 8]
+ [0 0 0 0]
+ [0 0 3 0]], shape=(3, 4), dtype=int32)
+[EXECUTION] [15:35:43] Waiting before running function for 10 seconds.
+[EXECUTION] [15:35:53] Sensors started
+[STABLE CHECK] [15:35:56] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [15:35:56] Temperature is too high.
+[STABLE CHECK] [15:35:56] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:36:17] Success: temperature is below threshold.
+[MAIN] [15:36:17] Terminated sensors
+[STABLE CHECK] [15:36:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:36:37] Success: Machine is stable.
+[EXECUTION] [15:36:37] Successfully reached stable state
+[EXECUTION] [15:36:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:37:07] Performed tensorflow.sparse.SparseTensor() on input and will now save energy data.
+[EXECUTION] [15:37:07] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:37:07] Result: {'tensorflow.sparse.SparseTensor()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [15:37:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:37:07] Waiting before running function for 10 seconds.
+[EXECUTION] [15:37:17] Sensors started
+[STABLE CHECK] [15:37:20] Temperature too high: mean is 40.75, which is greater than 40
+[STABLE CHECK] [15:37:20] Temperature is too high.
+[STABLE CHECK] [15:37:20] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:37:40] Success: temperature is below threshold.
+[MAIN] [15:37:40] Terminated sensors
+[STABLE CHECK] [15:37:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:38:00] Success: Machine is stable.
+[EXECUTION] [15:38:00] Successfully reached stable state
+[EXECUTION] [15:38:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:38:30] Performed tensorflow.sparse.add() on input and will now save energy data.
+[EXECUTION] [15:38:30] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1496.0
+++++++5++++++
+5-size 1496.0
+4-size 2992.0
+++++++5++++++
+5-size 1496.0
+++++++5++++++
+5-size 1496.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:38:30] Result: {'tensorflow.sparse.add()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
+[EXECUTION] [15:38:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[4, 10] 
+ values={
+  [0, 2]: 87
+  [3, 4]: 2
+  [7, 0]: 38}>
+[EXECUTION] [15:38:30] Waiting before running function for 10 seconds.
+[EXECUTION] [15:38:40] Sensors started
+[STABLE CHECK] [15:38:43] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [15:38:43] Temperature is too high.
+[STABLE CHECK] [15:38:43] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:39:03] Success: temperature is below threshold.
+[MAIN] [15:39:03] Terminated sensors
+[STABLE CHECK] [15:39:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:39:23] Success: Machine is stable.
+[EXECUTION] [15:39:23] Successfully reached stable state
+[EXECUTION] [15:39:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:39:53] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [15:39:53] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:39:53] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [15:39:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:39:53] Waiting before running function for 10 seconds.
+[EXECUTION] [15:40:03] Sensors started
+[STABLE CHECK] [15:40:06] Success: temperature is below threshold.
+[MAIN] [15:40:06] Terminated sensors
+[STABLE CHECK] [15:40:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:40:26] Success: Machine is stable.
+[EXECUTION] [15:40:26] Successfully reached stable state
+[EXECUTION] [15:40:26] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:40:56] Performed tensorflow.sparse.sparse_dense_matmul() on input and will now save energy data.
+[EXECUTION] [15:40:56] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1464.0
+++++++1++++++
+1-size 8.0
+4-size 1472.0
+++++++5++++++
+5-size 1464.0
+++++++1++++++
+1-size 8.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:40:56] Result: {'tensorflow.sparse.sparse_dense_matmul()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [15:40:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+tf.Tensor(
+[[ 78]
+ [162]], shape=(2, 1), dtype=int32)
+[EXECUTION] [15:40:56] Waiting before running function for 10 seconds.
+[EXECUTION] [15:41:06] Sensors started
+[STABLE CHECK] [15:41:09] Success: temperature is below threshold.
+[MAIN] [15:41:09] Terminated sensors
+[STABLE CHECK] [15:41:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:41:29] Success: Machine is stable.
+[EXECUTION] [15:41:29] Successfully reached stable state
+[EXECUTION] [15:41:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:41:59] Performed tensorflow.sparse.concat() on input and will now save energy data.
+[EXECUTION] [15:41:59] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 120.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:41:59] Result: {'tensorflow.sparse.concat()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [15:41:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+tf.Tensor(
+[[0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0]
+ [0 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0]
+ [0 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 0]
+ [0 0 0 1 1 0 0 0 0 0 1 1 0 0 0 0 0]
+ [0 0 0 0 1 1 0 0 0 1 1 0 0 0 0 0 0]
+ [0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0]
+ [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0]], shape=(8, 17), dtype=int32)
+[EXECUTION] [15:41:59] Waiting before running function for 10 seconds.
+[EXECUTION] [15:42:10] Sensors started
+[STABLE CHECK] [15:42:13] Temperature too high: mean is 40.05555555555556, which is greater than 40
+[STABLE CHECK] [15:42:13] Temperature is too high.
+[STABLE CHECK] [15:42:13] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:42:33] Success: temperature is below threshold.
+[MAIN] [15:42:33] Terminated sensors
+[STABLE CHECK] [15:42:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:42:53] Success: Machine is stable.
+[EXECUTION] [15:42:53] Successfully reached stable state
+[EXECUTION] [15:42:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:43:23] Performed tensorflow.sparse.slice() on input and will now save energy data.
+[EXECUTION] [15:43:23] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1496.0
+4-size 1496.0
+++++++5++++++
+5-size 1496.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:43:23] Result: {'tensorflow.sparse.slice()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [15:43:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+tf.Tensor(
+[[0 0 0 0 0]
+ [0 0 0 0 0]
+ [0 0 0 0 1]
+ [0 0 0 1 1]
+ [0 0 0 1 1]
+ [0 0 0 0 1]
+ [0 0 0 0 0]
+ [0 0 0 0 0]], shape=(8, 5), dtype=int32)
+tf.Tensor(
+[[0]
+ [0]
+ [1]
+ [1]
+ [1]
+ [1]
+ [0]
+ [0]], shape=(8, 1), dtype=int32)
+tf.Tensor([], shape=(8, 0), dtype=int32)
+[EXECUTION] [15:43:23] Waiting before running function for 10 seconds.
+[EXECUTION] [15:43:33] Sensors started
+[STABLE CHECK] [15:43:36] Temperature too high: mean is 41.85, which is greater than 40
+[STABLE CHECK] [15:43:36] Temperature is too high.
+[STABLE CHECK] [15:43:36] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:43:56] Success: temperature is below threshold.
+[MAIN] [15:43:56] Terminated sensors
+[STABLE CHECK] [15:43:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:44:16] Success: Machine is stable.
+[EXECUTION] [15:44:16] Successfully reached stable state
+[EXECUTION] [15:44:16] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:44:46] Performed tensorflow.sparse.map_values() on input and will now save energy data.
+[EXECUTION] [15:44:46] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+++++++5++++++
+5-size 1496.0
+++++++5++++++
+5-size 32.0
+4-size 1528.0
+++++++5++++++
+5-size 0.0
+++++++5++++++
+5-size 1496.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:44:46] Result: {'tensorflow.sparse.map_values()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
+[EXECUTION] [15:44:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+tf.Tensor(
+[[ 6  0  0 13]
+ [ 0  0  0  0]
+ [ 0  0  8  0]], shape=(3, 4), dtype=int32)
+tf.Tensor(
+[[ 6  0  0 13]
+ [ 0  0  0  0]
+ [ 0  0  8  0]], shape=(3, 4), dtype=int32)
+[EXECUTION] [15:44:46] Waiting before running function for 10 seconds.
+[EXECUTION] [15:44:56] Sensors started
+[STABLE CHECK] [15:44:59] Temperature too high: mean is 41.1, which is greater than 40
+[STABLE CHECK] [15:44:59] Temperature is too high.
+[STABLE CHECK] [15:44:59] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:45:19] Success: temperature is below threshold.
+[MAIN] [15:45:19] Terminated sensors
+[STABLE CHECK] [15:45:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:45:39] Success: Machine is stable.
+[EXECUTION] [15:45:39] Successfully reached stable state
+[EXECUTION] [15:45:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:46:09] Performed tensorflow.keras.Input() on input and will now save energy data.
+[EXECUTION] [15:46:09] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:46:09] Result: {'tensorflow.keras.Input()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [15:46:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:46:09] Waiting before running function for 10 seconds.
+[EXECUTION] [15:46:19] Sensors started
+[STABLE CHECK] [15:46:22] Success: temperature is below threshold.
+[MAIN] [15:46:22] Terminated sensors
+[STABLE CHECK] [15:46:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:46:42] Success: Machine is stable.
+[EXECUTION] [15:46:42] Successfully reached stable state
+[EXECUTION] [15:46:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:47:12] Performed tensorflow.keras.layers.Dense(4)() on input and will now save energy data.
+[EXECUTION] [15:47:12] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 31824.0
+4-size 31824.0
+++++++5++++++
+5-size 31824.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:47:12] Result: {'tensorflow.keras.layers.Dense(4)()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [15:47:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:47:12] Waiting before running function for 10 seconds.
+[EXECUTION] [15:47:22] Sensors started
+[STABLE CHECK] [15:47:25] Success: temperature is below threshold.
+[MAIN] [15:47:25] Terminated sensors
+[STABLE CHECK] [15:47:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:47:45] Success: Machine is stable.
+[EXECUTION] [15:47:45] Successfully reached stable state
+[EXECUTION] [15:47:45] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:48:15] Performed tensorflow.keras.Model() on input and will now save energy data.
+[EXECUTION] [15:48:15] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 31824.0
+++++++5++++++
+5-size 31824.0
+4-size 63648.0
+++++++5++++++
+5-size 31824.0
+++++++5++++++
+5-size 31824.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:48:16] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [15:48:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:48:16] Waiting before running function for 10 seconds.
+[EXECUTION] [15:48:26] Sensors started
+[STABLE CHECK] [15:48:29] Temperature too high: mean is 41.36842105263158, which is greater than 40
+[STABLE CHECK] [15:48:29] Temperature is too high.
+[STABLE CHECK] [15:48:29] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:48:49] Success: temperature is below threshold.
+[MAIN] [15:48:49] Terminated sensors
+[STABLE CHECK] [15:48:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:49:09] Not stable: stdev/mean is 0.04840466171000068, which is greater than 0.03
+[STABLE CHECK] [15:49:09] Machine is not stable yet.
+[STABLE CHECK] [15:49:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:49:29] Success: Machine is stable.
+[EXECUTION] [15:49:29] Successfully reached stable state
+[EXECUTION] [15:49:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:49:59] Performed tensorflow.keras.Model.predict() on input and will now save energy data.
+[EXECUTION] [15:49:59] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()', 'tensorflow.keras.Model.predict()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1576.0
+4-size 1576.0
+++++++5++++++
+5-size 1576.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 165456.0
+outside_object_size
+[EXECUTION] [15:49:59] Result: {'tensorflow.keras.Model.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [15:49:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+[EXECUTION] [15:49:59] Waiting before running function for 10 seconds.
+[EXECUTION] [15:50:09] Sensors started
+[STABLE CHECK] [15:50:12] Success: temperature is below threshold.
+[MAIN] [15:50:12] Terminated sensors
+[STABLE CHECK] [15:50:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:50:32] Success: Machine is stable.
+[EXECUTION] [15:50:32] Successfully reached stable state
+[EXECUTION] [15:50:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:51:02] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
+[EXECUTION] [15:51:02] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()', 'tensorflow.keras.Model.predict()', 'tensorflow.data.Dataset.from_tensor_slices()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1576.0
+4-size 1576.0
+++++++5++++++
+5-size 1576.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:51:02] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [15:51:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[4] 
+ values={
+  [0]: 1
+  [1]: 1
+  [2]: 1}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={
+  [3]: 1}>
+<SparseTensor shape=[4] 
+ values={
+  [0]: 1
+  [1]: 1}>
+[EXECUTION] [15:51:02] Waiting before running function for 10 seconds.
+[EXECUTION] [15:51:12] Sensors started
+[STABLE CHECK] [15:51:15] Success: temperature is below threshold.
+[MAIN] [15:51:15] Terminated sensors
+[STABLE CHECK] [15:51:15] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:51:35] Success: Machine is stable.
+[EXECUTION] [15:51:35] Successfully reached stable state
+[EXECUTION] [15:51:35] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:52:05] Performed tensorflow.data.Dataset.from_tensor_slices.batch() on input and will now save energy data.
+[EXECUTION] [15:52:05] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()', 'tensorflow.keras.Model.predict()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 16520.0
+outside_object_size
+[EXECUTION] [15:52:05] Result: {'tensorflow.data.Dataset.from_tensor_slices.batch()': {'energy_data': {'cpu': '{"columns":["time_el
+[EXECUTION] [15:52:05] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[2, 4] 
+ values={
+  [0, 0]: 1
+  [0, 1]: 1
+  [0, 2]: 1}>
+<SparseTensor shape=[2, 4] 
+ values={}>
+<SparseTensor shape=[2, 4] 
+ values={
+  [0, 3]: 1
+  [1, 0]: 1
+  [1, 1]: 1}>
+[EXECUTION] [15:52:05] Waiting before running function for 10 seconds.
+[EXECUTION] [15:52:15] Sensors started
+[STABLE CHECK] [15:52:18] Temperature too high: mean is 40.77777777777778, which is greater than 40
+[STABLE CHECK] [15:52:18] Temperature is too high.
+[STABLE CHECK] [15:52:18] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:52:39] Success: temperature is below threshold.
+[MAIN] [15:52:39] Terminated sensors
+[STABLE CHECK] [15:52:39] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:52:59] Success: Machine is stable.
+[EXECUTION] [15:52:59] Successfully reached stable state
+[EXECUTION] [15:52:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:53:29] Performed tensorflow.data.Dataset.from_tensor_slices.batch.unbatch() on input and will now save energy data.
+[EXECUTION] [15:53:29] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()', 'tensorflow.keras.Model.predict()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 20880.0
+outside_object_size
+[EXECUTION] [15:53:29] Result: {'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()': {'energy_data': {'cpu': '{"columns":[
+[EXECUTION] [15:53:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[4] 
+ values={
+  [0]: 1
+  [1]: 1
+  [2]: 1}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={
+  [3]: 1}>
+<SparseTensor shape=[4] 
+ values={
+  [0]: 1
+  [1]: 1}>
+[EXECUTION] [15:53:29] Waiting before running function for 10 seconds.
+[EXECUTION] [15:53:39] Sensors started
+[STABLE CHECK] [15:53:42] Temperature too high: mean is 40.5, which is greater than 40
+[STABLE CHECK] [15:53:42] Temperature is too high.
+[STABLE CHECK] [15:53:42] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:54:02] Success: temperature is below threshold.
+[MAIN] [15:54:02] Terminated sensors
+[STABLE CHECK] [15:54:02] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:54:22] Success: Machine is stable.
+[EXECUTION] [15:54:22] Successfully reached stable state
+[EXECUTION] [15:54:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:54:52] Performed tensorflow.data.Dataset.from_tensor_slices.map() on input and will now save energy data.
+[EXECUTION] [15:54:52] skipping call added, current list is: ['tensorflow.sparse.from_dense()', 'tensorflow.sparse.to_dense()', 'tensorflow.sparse.SparseTensor()', 'tensorflow.sparse.add()', 'tensorflow.constant()', 'tensorflow.sparse.sparse_dense_matmul()', 'tensorflow.sparse.concat()', 'tensorflow.sparse.slice()', 'tensorflow.sparse.map_values()', 'tensorflow.keras.Input()', 'tensorflow.keras.layers.Dense(4)()', 'tensorflow.keras.Model()', 'tensorflow.keras.Model.predict()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.batch()', 'tensorflow.data.Dataset.from_tensor_slices.batch.unbatch()', 'tensorflow.data.Dataset.from_tensor_slices.map()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 16520.0
+outside_object_size
+[EXECUTION] [15:54:52] Result: {'tensorflow.data.Dataset.from_tensor_slices.map()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [15:54:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/sparse_tensor/experiment-1.json
+<SparseTensor shape=[4] 
+ values={
+  [0]: 2
+  [1]: 2
+  [2]: 2}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={}>
+<SparseTensor shape=[4] 
+ values={
+  [3]: 2}>
+<SparseTensor shape=[4] 
+ values={
+  [0]: 2
+  [1]: 2}>
+tf.Tensor(
+[[225   0   0]
+ [  0   0   0]
+ [  0   0 625]], shape=(3, 3), dtype=int32)
+tf.Tensor(-3, shape=(), dtype=int32)
+tf.Tensor(0, shape=(), dtype=int32)

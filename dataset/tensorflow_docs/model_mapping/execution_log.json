@@ -1,0 +1,592 @@
+WARNING:tensorflow:From /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:21: The name tf.keras.utils.track_tf1_style_variables is deprecated. Please use tf.compat.v1.keras.utils.track_tf1_style_variables instead.
+
+2023-12-08 16:55:51.268369: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 17:01:14.877365: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+[EXECUTION] [16:55:17] Waiting before running function for 10 seconds.
+[EXECUTION] [16:55:27] Sensors started
+[STABLE CHECK] [16:55:30] Success: temperature is below threshold.
+[MAIN] [16:55:30] Terminated sensors
+[STABLE CHECK] [16:55:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:55:50] Success: Machine is stable.
+[EXECUTION] [16:55:50] Successfully reached stable state
+[EXECUTION] [16:55:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:56:21] Performed tensorflow.random.normal() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:56:21] Result: {'tensorflow.random.normal()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [16:56:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [16:56:21] Waiting before running function for 10 seconds.
+[EXECUTION] [16:56:31] Sensors started
+[STABLE CHECK] [16:56:34] Success: temperature is below threshold.
+[MAIN] [16:56:34] Terminated sensors
+[STABLE CHECK] [16:56:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:56:54] Success: Machine is stable.
+[EXECUTION] [16:56:54] Successfully reached stable state
+[EXECUTION] [16:56:54] Waiting before running function for 10 seconds.
+[EXECUTION] [16:57:04] Sensors started
+[STABLE CHECK] [16:57:07] Success: temperature is below threshold.
+[MAIN] [16:57:07] Terminated sensors
+[STABLE CHECK] [16:57:07] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:57:27] Success: Machine is stable.
+[EXECUTION] [16:57:27] Successfully reached stable state
+[EXECUTION] [16:57:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:57:57] Performed tensorflow.compat.v1.get_variable() on input and will now save energy data.
+[EXECUTION] [16:57:57] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 240.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:57:57] Result: {'tensorflow.compat.v1.get_variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [16:57:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [16:57:57] Waiting before running function for 10 seconds.
+[EXECUTION] [16:58:07] Sensors started
+[STABLE CHECK] [16:58:10] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [16:58:10] Temperature is too high.
+[STABLE CHECK] [16:58:10] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:58:30] Success: temperature is below threshold.
+[MAIN] [16:58:30] Terminated sensors
+[STABLE CHECK] [16:58:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:58:50] Success: Machine is stable.
+[EXECUTION] [16:58:50] Successfully reached stable state
+[EXECUTION] [16:58:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:59:21] Performed tensorflow.linalg.matmul() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10432.0
+4-size 10752.0
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10432.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:59:21] Result: {'tensorflow.linalg.matmul()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [16:59:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [16:59:21] Waiting before running function for 10 seconds.
+[EXECUTION] [16:59:31] Sensors started
+[STABLE CHECK] [16:59:34] Temperature too high: mean is 41.73684210526316, which is greater than 40
+[STABLE CHECK] [16:59:34] Temperature is too high.
+[STABLE CHECK] [16:59:34] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:59:54] Success: temperature is below threshold.
+[MAIN] [16:59:54] Terminated sensors
+[STABLE CHECK] [16:59:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:00:14] Success: Machine is stable.
+[EXECUTION] [17:00:14] Successfully reached stable state
+[EXECUTION] [17:00:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:00:44] Performed tensorflow.compat.v1.nn.bias_add() on input and will now save energy data.
+[EXECUTION] [17:00:44] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10360.0
+4-size 10680.0
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10360.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:00:44] Result: {'tensorflow.compat.v1.nn.bias_add()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [17:00:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:00:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:01:14] Performed tensorflow.keras.layers.Layer() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 640.0
+4-size 640.0
+++++++1++++++
+1-size 640.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [17:01:14] Result: {'tensorflow.keras.layers.Layer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [17:01:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+Resetting variables to zero: ['dense/bias:0', 'dense/kernel:0']
+layer.losses: [<tf.Tensor: shape=(), dtype=float32, numpy=0.0>]
+calling layer again.
+[EXECUTION] [17:01:14] Waiting before running function for 10 seconds.
+[EXECUTION] [17:01:25] Sensors started
+[STABLE CHECK] [17:01:28] Temperature too high: mean is 41.65, which is greater than 40
+[STABLE CHECK] [17:01:28] Temperature is too high.
+[STABLE CHECK] [17:01:28] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:01:48] Success: temperature is below threshold.
+[MAIN] [17:01:48] Terminated sensors
+[STABLE CHECK] [17:01:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:02:08] Success: Machine is stable.
+[EXECUTION] [17:02:08] Successfully reached stable state
+[EXECUTION] [17:02:08] Waiting before running function for 10 seconds.
+[EXECUTION] [17:02:18] Sensors started
+[STABLE CHECK] [17:02:21] Success: temperature is below threshold.
+[MAIN] [17:02:21] Terminated sensors
+[STABLE CHECK] [17:02:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:02:41] Success: Machine is stable.
+[EXECUTION] [17:02:41] Successfully reached stable state
+[EXECUTION] [17:02:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:03:11] Performed tensorflow.linalg.matmul() on input and will now save energy data.
+[EXECUTION] [17:03:11] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10432.0
+4-size 10752.0
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 10432.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:03:11] Result: {'tensorflow.linalg.matmul()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:83: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  out = tf.compat.v1.layers.conv2d(inputs, 3, 3, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/convolutional.py:563: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:86: UserWarning: `tf.layers.flatten` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Flatten` instead.
+  out = tf.compat.v1.layers.flatten(out)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:523: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[EXECUTION] [17:03:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:03:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:03:41] Performed tensorflow.keras.layers.Layer() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 640.0
+4-size 640.0
+++++++1++++++
+1-size 640.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [17:03:41] Result: {'tensorflow.keras.layers.Layer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [17:03:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+layer.losses:  [<tf.Tensor: shape=(), dtype=float32, numpy=0.0>]
+[EXECUTION] [17:03:41] Waiting before running function for 10 seconds.
+[EXECUTION] [17:03:51] Sensors started
+[STABLE CHECK] [17:03:54] Temperature too high: mean is 40.94444444444444, which is greater than 40
+[STABLE CHECK] [17:03:54] Temperature is too high.
+[STABLE CHECK] [17:03:54] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:04:14] Success: temperature is below threshold.
+[MAIN] [17:04:14] Terminated sensors
+[STABLE CHECK] [17:04:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:04:34] Success: Machine is stable.
+[EXECUTION] [17:04:34] Successfully reached stable state
+[EXECUTION] [17:04:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:05:04] Performed tensorflow.keras.Input() on input and will now save energy data.
+[EXECUTION] [17:05:04] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:05:04] Result: {'tensorflow.keras.Input()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [17:05:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:05:04] Waiting before running function for 10 seconds.
+[EXECUTION] [17:05:14] Sensors started
+[STABLE CHECK] [17:05:17] Success: temperature is below threshold.
+[MAIN] [17:05:17] Terminated sensors
+[STABLE CHECK] [17:05:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:05:37] Success: Machine is stable.
+[EXECUTION] [17:05:37] Successfully reached stable state
+[EXECUTION] [17:05:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:06:07] Performed tensorflow.keras.Model() on input and will now save energy data.
+[EXECUTION] [17:06:07] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()', 'tensorflow.keras.Model()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:06:07] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [17:06:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:06:07] Waiting before running function for 10 seconds.
+[EXECUTION] [17:06:18] Sensors started
+[STABLE CHECK] [17:06:21] Success: temperature is below threshold.
+[MAIN] [17:06:21] Terminated sensors
+[STABLE CHECK] [17:06:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:06:41] Success: Machine is stable.
+[EXECUTION] [17:06:41] Successfully reached stable state
+[EXECUTION] [17:06:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:07:11] Performed tensorflow.random.normal() on input and will now save energy data.
+[EXECUTION] [17:07:11] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()', 'tensorflow.keras.Model()', 'tensorflow.random.normal()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:07:11] Result: {'tensorflow.random.normal()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"in
+[EXECUTION] [17:07:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:07:11] Waiting before running function for 10 seconds.
+[EXECUTION] [17:07:21] Sensors started
+[STABLE CHECK] [17:07:24] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [17:07:24] Temperature is too high.
+[STABLE CHECK] [17:07:24] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:07:44] Success: temperature is below threshold.
+[MAIN] [17:07:44] Terminated sensors
+[STABLE CHECK] [17:07:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:08:04] Success: Machine is stable.
+[EXECUTION] [17:08:04] Successfully reached stable state
+[EXECUTION] [17:08:04] Waiting before running function for 10 seconds.
+[EXECUTION] [17:08:14] Sensors started
+[STABLE CHECK] [17:08:17] Success: temperature is below threshold.
+[MAIN] [17:08:17] Terminated sensors
+[STABLE CHECK] [17:08:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:08:37] Success: Machine is stable.
+[EXECUTION] [17:08:37] Successfully reached stable state
+[EXECUTION] [17:08:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:09:09] Performed tensorflow.compat.v1.layers.conv2d() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4000.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 4064.0
+++++++1++++++
+1-size 4000.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:09:09] Result: {'tensorflow.compat.v1.layers.conv2d()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [17:09:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:09:09] Waiting before running function for 10 seconds.
+[EXECUTION] [17:09:19] Sensors started
+[STABLE CHECK] [17:09:22] Temperature too high: mean is 40.2, which is greater than 40
+[STABLE CHECK] [17:09:22] Temperature is too high.
+[STABLE CHECK] [17:09:22] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:09:42] Success: temperature is below threshold.
+[MAIN] [17:09:42] Terminated sensors
+[STABLE CHECK] [17:09:42] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:10:02] Success: Machine is stable.
+[EXECUTION] [17:10:02] Successfully reached stable state
+[EXECUTION] [17:10:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:10:32] Performed tensorflow.compat.v1.layers.flatten() on input and will now save energy data.
+[EXECUTION] [17:10:32] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()', 'tensorflow.keras.Model()', 'tensorflow.random.normal()', 'tensorflow.compat.v1.layers.flatten()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 864.0
+4-size 864.0
+++++++1++++++
+1-size 864.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:89: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  out = tf.compat.v1.layers.dense(out, self.units, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:83: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  out = tf.compat.v1.layers.conv2d(inputs, 3, 3, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/convolutional.py:563: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:86: UserWarning: `tf.layers.flatten` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Flatten` instead.
+  out = tf.compat.v1.layers.flatten(out)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:523: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:89: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  out = tf.compat.v1.layers.dense(out, self.units, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:83: UserWarning: `tf.layers.conv2d` is deprecated and will be removed in a future version. Please Use `tf.keras.layers.Conv2D` instead.
+  out = tf.compat.v1.layers.conv2d(inputs, 3, 3, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/convolutional.py:563: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/base.py:573: UserWarning: `layer.updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  _add_elements_to_collection(self.updates, tf.compat.v1.GraphKeys.UPDATE_OPS)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:86: UserWarning: `tf.layers.flatten` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Flatten` instead.
+  out = tf.compat.v1.layers.flatten(out)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:523: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:89: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  out = tf.compat.v1.layers.dense(out, self.units, kernel_regularizer='l2')
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py:131: UserWarning: `tf.layers.batch_normalization` is deprecated and will be removed in a future version. Please use `tf.keras.layers.BatchNormalization` instead. In particular, `tf.control_dependencies(tf.GraphKeys.UPDATE_OPS)` should not be used (consult the `tf.keras.layers.BatchNormalization` documentation).
+  return v1.layers.batch_normalization(x, training=training)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/normalization.py:455: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs, training=training)
+[EXECUTION] [17:10:32] Result: {'tensorflow.compat.v1.layers.flatten()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [17:10:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:10:32] Waiting before running function for 10 seconds.
+[EXECUTION] [17:10:42] Sensors started
+[STABLE CHECK] [17:10:45] Temperature too high: mean is 40.473684210526315, which is greater than 40
+[STABLE CHECK] [17:10:45] Temperature is too high.
+[STABLE CHECK] [17:10:45] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:11:05] Success: temperature is below threshold.
+[MAIN] [17:11:05] Terminated sensors
+[STABLE CHECK] [17:11:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:11:25] Success: Machine is stable.
+[EXECUTION] [17:11:25] Successfully reached stable state
+[EXECUTION] [17:11:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:11:55] Performed tensorflow.compat.v1.layers.dense() on input and will now save energy data.
+[EXECUTION] [17:11:55] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()', 'tensorflow.keras.Model()', 'tensorflow.random.normal()', 'tensorflow.compat.v1.layers.flatten()', 'tensorflow.compat.v1.layers.dense()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 32.0
+4-size 352.0
+++++++1++++++
+1-size 320.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:11:55] Result: {'tensorflow.compat.v1.layers.dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [17:11:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:11:55] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:12:25] Performed tensorflow.keras.layers.Layer() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4000.0
+4-size 4000.0
+++++++1++++++
+1-size 4000.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [17:12:25] Result: {'tensorflow.keras.layers.Layer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [17:12:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+Resetting variables to zero: ['model/conv2d/bias:0', 'model/conv2d/kernel:0', 'model/dense/bias:0', 'model/dense/kernel:0']
+[EXECUTION] [17:12:25] Waiting before running function for 10 seconds.
+[EXECUTION] [17:12:35] Sensors started
+[STABLE CHECK] [17:12:38] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [17:12:38] Temperature is too high.
+[STABLE CHECK] [17:12:38] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:12:58] Success: temperature is below threshold.
+[MAIN] [17:12:58] Terminated sensors
+[STABLE CHECK] [17:12:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:13:18] Success: Machine is stable.
+[EXECUTION] [17:13:18] Successfully reached stable state
+[EXECUTION] [17:13:18] Waiting before running function for 10 seconds.
+[EXECUTION] [17:13:29] Sensors started
+[STABLE CHECK] [17:13:32] Success: temperature is below threshold.
+[MAIN] [17:13:32] Terminated sensors
+[STABLE CHECK] [17:13:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:13:52] Success: Machine is stable.
+[EXECUTION] [17:13:52] Successfully reached stable state
+[EXECUTION] [17:13:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:14:22] Performed tensorflow.compat.v1.layers.conv2d() on input and will now save energy data.
+[EXECUTION] [17:14:22] skipping call added, current list is: ['tensorflow.compat.v1.get_variable()', 'tensorflow.compat.v1.nn.bias_add()', 'tensorflow.linalg.matmul()', 'tensorflow.keras.Input()', 'tensorflow.keras.Model()', 'tensorflow.random.normal()', 'tensorflow.compat.v1.layers.flatten()', 'tensorflow.compat.v1.layers.dense()', 'tensorflow.compat.v1.layers.conv2d()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4000.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 4064.0
+++++++1++++++
+1-size 4000.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [17:14:22] Result: {'tensorflow.compat.v1.layers.conv2d()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [17:14:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+[EXECUTION] [17:14:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [17:14:52] Performed tensorflow.keras.layers.Layer() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4000.0
+4-size 4000.0
+++++++1++++++
+1-size 4000.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
+6-size 48.0
+outside_object_size
+[EXECUTION] [17:14:52] Result: {'tensorflow.keras.layers.Layer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [17:14:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/model_mapping/experiment-1.json
+layer.losses:  [<tf.Tensor: shape=(), dtype=float32, numpy=0.0>, <tf.Tensor: shape=(), dtype=float32, numpy=0.0>]
+Constructing model
+Forward pass called with `training` = None
+Calling model in inference mode
+Forward pass called with `training` = False
+Moving average variables before training:  {'batch_norm_layer/batch_normalization/moving_mean:0': <tf.Tensor: shape=(5,), dtype=float32, numpy=array([0., 0., 0., 0., 0.], dtype=float32)>, 'batch_norm_layer/batch_normalization/moving_variance:0': <tf.Tensor: shape=(5,), dtype=float32, numpy=array([1., 1., 1., 1., 1.], dtype=float32)>}
+calling model in training mode
+Forward pass called with `training` = True
+Moving average variables after training:  {'batch_norm_layer/batch_normalization/moving_mean:0': <tf.Tensor: shape=(5,), dtype=float32, numpy=
+array([-0.00078224,  0.00025668, -0.00070429,  0.00021227,  0.00016201],
+      dtype=float32)>, 'batch_norm_layer/batch_normalization/moving_variance:0': <tf.Tensor: shape=(5,), dtype=float32, numpy=
+array([0.9993551 , 1.0007919 , 1.0015681 , 0.99973595, 1.0010196 ],
+      dtype=float32)>}
+[EXECUTION] [17:14:52] Waiting before running function for 10 seconds.
+[EXECUTION] [17:15:02] Sensors started
+[STABLE CHECK] [17:15:05] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [17:15:05] Temperature is too high.
+[STABLE CHECK] [17:15:05] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [17:15:25] Success: temperature is below threshold.
+[MAIN] [17:15:25] Terminated sensors
+[STABLE CHECK] [17:15:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [17:15:45] Success: Machine is stable.
+[EXECUTION] [17:15:45] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py", line 180, in <module>
+    layer(tf.ones(shape=(5, 5)))
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 67, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/model_mapping_method-level.py", line 175, in call
+    model = tf.compat.v1.keras.utils.get_or_create_layer('dense_model', self.build_model)
+AttributeError: Exception encountered when calling layer "nested_model" (type NestedModel).
+
+module 'keras.api._v1.keras.utils' has no attribute 'get_or_create_layer'
+
+Call arguments received:
+  • inputs=tf.Tensor(shape=(5, 5), dtype=float32)

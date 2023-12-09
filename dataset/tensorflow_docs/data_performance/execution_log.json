@@ -1,0 +1,220 @@
+2023-12-08 15:05:03.910829: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fca2f8d6310> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Execution time: 0.28374326397897676
+Execution time: 0.2695075439987704
+Execution time: 0.5670190820237622
+Execution time: 0.34383599704597145
+[EXECUTION] [15:05:05] Waiting before running function for 10 seconds.
+[EXECUTION] [15:05:16] Sensors started
+[STABLE CHECK] [15:05:19] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [15:05:19] Temperature is too high.
+[STABLE CHECK] [15:05:19] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:05:39] Success: temperature is below threshold.
+[MAIN] [15:05:39] Terminated sensors
+[STABLE CHECK] [15:05:39] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:06:00] Success: Machine is stable.
+[EXECUTION] [15:06:00] Successfully reached stable state
+[EXECUTION] [15:06:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:06:30] Performed tensorflow.py_function() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fcaf3facaf0> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Execution time: 33.42734188598115
+Execution time: 0.047419408976566046
+WARNING:tensorflow:From /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/data_performance_method-level.py:84: calling DatasetV2.from_generator (from tensorflow.python.data.ops.dataset_ops) with output_types is deprecated and will be removed in a future version.
+Instructions for updating:
+Use output_signature instead
+WARNING:tensorflow:From /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/data_performance_method-level.py:84: calling DatasetV2.from_generator (from tensorflow.python.data.ops.dataset_ops) with output_shapes is deprecated and will be removed in a future version.
+Instructions for updating:
+Use output_signature instead
+Execution time: 98.31413655600045
+Execution time: 8.023316323000472
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/data_performance_method-level.py:147: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+  cmap = mpl.cm.get_cmap('plasma')
+[EXECUTION] [15:06:30] skipping call added, current list is: ['tensorflow.py_function()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+++++++4++++++
+4-size 0
+++++++4++++++
+4-size 0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+++++++4++++++
+4-size 0
+++++++4++++++
+4-size 0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:06:33] Result: {'tensorflow.py_function()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [15:06:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/data_performance/experiment-1.json
+Execution time: 0.4877819580142386
+Execution time: 0.3070897849975154
+Execution time: 0.43254808196797967
+[EXECUTION] [15:06:34] Waiting before running function for 10 seconds.
+[EXECUTION] [15:06:44] Sensors started
+[STABLE CHECK] [15:06:47] Success: temperature is below threshold.
+[MAIN] [15:06:47] Terminated sensors
+[STABLE CHECK] [15:06:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:07:07] Success: Machine is stable.
+[EXECUTION] [15:07:07] Successfully reached stable state
+[EXECUTION] [15:07:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:07:37] Performed tensorflow.data.Dataset.range() on input and will now save energy data.
+[EXECUTION] [15:07:37] skipping call added, current list is: ['tensorflow.py_function()', 'tensorflow.data.Dataset.range()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:07:37] Result: {'tensorflow.data.Dataset.range()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [15:07:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/data_performance/experiment-1.json
+[EXECUTION] [15:07:38] Waiting before running function for 10 seconds.
+[EXECUTION] [15:07:48] Sensors started
+[STABLE CHECK] [15:07:51] Success: temperature is below threshold.
+[MAIN] [15:07:51] Terminated sensors
+[STABLE CHECK] [15:07:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:08:11] Success: Machine is stable.
+[EXECUTION] [15:08:11] Successfully reached stable state
+[EXECUTION] [15:08:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:08:41] Performed tensorflow.print() on input and will now save energy data.
+[EXECUTION] [15:08:41] skipping call added, current list is: ['tensorflow.py_function()', 'tensorflow.data.Dataset.range()', 'tensorflow.print()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 24.0
+4-size 88.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:08:41] Result: {'tensorflow.print()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
+[EXECUTION] [15:08:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/data_performance/experiment-1.json
+[EXECUTION] [15:08:41] Waiting before running function for 10 seconds.
+[EXECUTION] [15:08:51] Sensors started
+[STABLE CHECK] [15:08:54] Temperature too high: mean is 40.2, which is greater than 40
+[STABLE CHECK] [15:08:54] Temperature is too high.
+[STABLE CHECK] [15:08:54] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:09:14] Success: temperature is below threshold.
+[MAIN] [15:09:14] Terminated sensors
+[STABLE CHECK] [15:09:14] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:09:34] Success: Machine is stable.
+[EXECUTION] [15:09:34] Successfully reached stable state
+[EXECUTION] [15:09:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:10:04] Performed tensorflow.zeros() on input and will now save energy data.
+[EXECUTION] [15:10:04] skipping call added, current list is: ['tensorflow.py_function()', 'tensorflow.data.Dataset.range()', 'tensorflow.print()', 'tensorflow.zeros()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 56.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 56.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:10:04] Result: {'tensorflow.zeros()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
+[EXECUTION] [15:10:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/data_performance/experiment-1.json
+[EXECUTION] [15:10:05] Waiting before running function for 10 seconds.
+[EXECUTION] [15:10:15] Sensors started
+[STABLE CHECK] [15:10:18] Temperature too high: mean is 41.15, which is greater than 40
+[STABLE CHECK] [15:10:18] Temperature is too high.
+[STABLE CHECK] [15:10:18] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:10:38] Success: temperature is below threshold.
+[MAIN] [15:10:38] Terminated sensors
+[STABLE CHECK] [15:10:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:10:58] Success: Machine is stable.
+[EXECUTION] [15:10:58] Successfully reached stable state
+[EXECUTION] [15:10:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:11:29] Performed tensorflow.concat() on input and will now save energy data.
+[EXECUTION] [15:11:29] skipping call added, current list is: ['tensorflow.py_function()', 'tensorflow.data.Dataset.range()', 'tensorflow.print()', 'tensorflow.zeros()', 'tensorflow.concat()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++1++++++
+1-size 24.0
+++++++1++++++
+1-size 24.0
+4-size 48.0
+++++++1++++++
+1-size 24.0
+++++++1++++++
+1-size 24.0
+4-size 48.0
+++++++4++++++
+++++++1++++++
+1-size 24.0
+++++++1++++++
+1-size 24.0
+4-size 48.0
+++++++1++++++
+1-size 24.0
+++++++1++++++
+1-size 24.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:11:29] Result: {'tensorflow.concat()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
+[EXECUTION] [15:11:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/data_performance/experiment-1.json

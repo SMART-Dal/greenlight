@@ -1,0 +1,13 @@
+Using TensorFlow version 2.7.0
+[EXECUTION] [10:37:03] Waiting before running function for 10 seconds.
+[EXECUTION] [10:37:13] Sensors started
+[STABLE CHECK] [10:37:16] Success: temperature is below threshold.
+[MAIN] [10:37:16] Terminated sensors
+[STABLE CHECK] [10:37:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [10:37:36] Success: Machine is stable.
+[EXECUTION] [10:37:36] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/tf_numpy_type_promotion_method-level.py", line 14, in <module>
+    tnp.experimental_enable_numpy_behavior(dtype_conversion_mode='all')
+TypeError: enable_numpy_behavior() got an unexpected keyword argument 'dtype_conversion_mode'

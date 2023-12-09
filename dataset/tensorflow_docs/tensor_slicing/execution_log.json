@@ -1,0 +1,842 @@
+2023-12-08 15:59:26.604137: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [15:58:52] Waiting before running function for 10 seconds.
+[EXECUTION] [15:59:02] Sensors started
+[STABLE CHECK] [15:59:05] Success: temperature is below threshold.
+[MAIN] [15:59:05] Terminated sensors
+[STABLE CHECK] [15:59:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:59:25] Success: Machine is stable.
+[EXECUTION] [15:59:25] Successfully reached stable state
+[EXECUTION] [15:59:26] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:59:56] Performed tensorflow.constant() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 248.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 248.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 248.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:59:56] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [15:59:56] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor([1 2 3], shape=(3,), dtype=int32)
+tf.Tensor([1 2 3], shape=(3,), dtype=int32)
+tf.Tensor([5 6 7], shape=(3,), dtype=int32)
+[EXECUTION] [15:59:56] Waiting before running function for 10 seconds.
+[EXECUTION] [16:00:06] Sensors started
+[STABLE CHECK] [16:00:09] Success: temperature is below threshold.
+[MAIN] [16:00:09] Terminated sensors
+[STABLE CHECK] [16:00:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:00:29] Success: Machine is stable.
+[EXECUTION] [16:00:29] Successfully reached stable state
+[EXECUTION] [16:00:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:00:59] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [16:00:59] skipping call added, current list is: ['tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 152.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 632.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 152.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 632.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 152.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 632.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 152.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:00:59] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [16:00:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[ 1  2]
+ [ 6  7]
+ [11 12]], shape=(3, 2), dtype=int32)
+tf.Tensor([[[25 27]]], shape=(1, 1, 2), dtype=int32)
+tf.Tensor([0 3 6], shape=(3,), dtype=int32)
+tf.Tensor([b'c' b'a' b't' b's'], shape=(4,), dtype=string)
+tf.Tensor(
+[[2 7]
+ [3 8]
+ [0 5]], shape=(3, 2), dtype=int32)
+tf.Tensor([ 0 16], shape=(2,), dtype=int64)
+tf.Tensor(
+[[[ 0  1  2]
+  [ 6  7  8]]
+
+ [[ 9 10 11]
+  [15 16 17]]], shape=(2, 2, 3), dtype=int64)
+tf.Tensor(
+[[ 0  1  2]
+ [ 6  7  8]
+ [ 9 10 11]
+ [15 16 17]], shape=(4, 3), dtype=int64)
+tf.Tensor([ 0  2  0  4  0  6  0  8  0 10], shape=(10,), dtype=int32)
+[EXECUTION] [16:00:59] Waiting before running function for 10 seconds.
+[EXECUTION] [16:01:09] Sensors started
+[STABLE CHECK] [16:01:12] Success: temperature is below threshold.
+[MAIN] [16:01:12] Terminated sensors
+[STABLE CHECK] [16:01:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:01:32] Success: Machine is stable.
+[EXECUTION] [16:01:32] Successfully reached stable state
+[EXECUTION] [16:01:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:02:02] Performed tensorflow.gather_nd() on input and will now save energy data.
+[EXECUTION] [16:02:02] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 80.0
+4-size 80.0
+++++++1++++++
+1-size 80.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:02:02] Result: {'tensorflow.gather_nd()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index"
+[EXECUTION] [16:02:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+[EXECUTION] [16:02:03] Waiting before running function for 10 seconds.
+[EXECUTION] [16:02:13] Sensors started
+[STABLE CHECK] [16:02:16] Success: temperature is below threshold.
+[MAIN] [16:02:16] Terminated sensors
+[STABLE CHECK] [16:02:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:02:36] Success: Machine is stable.
+[EXECUTION] [16:02:36] Successfully reached stable state
+[EXECUTION] [16:02:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:03:06] Performed tensorflow.scatter_nd() on input and will now save energy data.
+[EXECUTION] [16:03:06] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:03:06] Result: {'tensorflow.scatter_nd()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index
+[EXECUTION] [16:03:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[ 0  0  2  0  0]
+ [ 0  0  0  0  0]
+ [ 0 11  0  0  0]
+ [ 0  0  0 18  0]], shape=(4, 5), dtype=int32)
+[EXECUTION] [16:03:06] Waiting before running function for 10 seconds.
+[EXECUTION] [16:03:16] Sensors started
+[STABLE CHECK] [16:03:19] Success: temperature is below threshold.
+[MAIN] [16:03:19] Terminated sensors
+[STABLE CHECK] [16:03:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:03:39] Success: Machine is stable.
+[EXECUTION] [16:03:39] Successfully reached stable state
+[EXECUTION] [16:03:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:04:09] Performed tensorflow.SparseTensor() on input and will now save energy data.
+[EXECUTION] [16:04:09] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:04:09] Result: {'tensorflow.SparseTensor()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"ind
+[EXECUTION] [16:04:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+SparseTensor(indices=tf.Tensor(
+[[0 2]
+ [2 1]
+ [3 3]], shape=(3, 2), dtype=int64), values=tf.Tensor([ 2 11 18], shape=(3,), dtype=int32), dense_shape=tf.Tensor([4 5], shape=(2,), dtype=int64))
+[EXECUTION] [16:04:09] Waiting before running function for 10 seconds.
+[EXECUTION] [16:04:19] Sensors started
+[STABLE CHECK] [16:04:22] Temperature too high: mean is 44, which is greater than 40
+[STABLE CHECK] [16:04:22] Temperature is too high.
+[STABLE CHECK] [16:04:22] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:04:42] Temperature too high: mean is 41.05, which is greater than 40
+[STABLE CHECK] [16:04:42] Temperature is too high.
+[STABLE CHECK] [16:04:42] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:05:02] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [16:05:02] Temperature is too high.
+[STABLE CHECK] [16:05:02] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:05:22] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [16:05:22] Temperature is too high.
+[STABLE CHECK] [16:05:22] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:05:42] Temperature too high: mean is 40.8, which is greater than 40
+[STABLE CHECK] [16:05:42] Temperature is too high.
+[STABLE CHECK] [16:05:42] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:06:02] Temperature too high: mean is 40.1, which is greater than 40
+[STABLE CHECK] [16:06:02] Temperature is too high.
+[STABLE CHECK] [16:06:02] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:06:22] Success: temperature is below threshold.
+[MAIN] [16:06:22] Terminated sensors
+[STABLE CHECK] [16:06:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:06:42] Success: Machine is stable.
+[EXECUTION] [16:06:42] Successfully reached stable state
+[EXECUTION] [16:06:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:07:12] Performed tensorflow.sparse.to_dense() on input and will now save energy data.
+[EXECUTION] [16:07:12] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()', 'tensorflow.sparse.to_dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1496.0
+4-size 1496.0
+++++++5++++++
+5-size 1496.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:07:12] Result: {'tensorflow.sparse.to_dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [16:07:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[ 0  0  2  0  0]
+ [ 0  0  0  0  0]
+ [ 0 11  0  0  0]
+ [ 0  0  0 18  0]], shape=(4, 5), dtype=int32)
+[EXECUTION] [16:07:12] Waiting before running function for 10 seconds.
+[EXECUTION] [16:07:22] Sensors started
+[STABLE CHECK] [16:07:25] Temperature too high: mean is 45.578947368421055, which is greater than 40
+[STABLE CHECK] [16:07:25] Temperature is too high.
+[STABLE CHECK] [16:07:25] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:07:45] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [16:07:45] Temperature is too high.
+[STABLE CHECK] [16:07:45] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:08:05] Temperature too high: mean is 42.05, which is greater than 40
+[STABLE CHECK] [16:08:05] Temperature is too high.
+[STABLE CHECK] [16:08:05] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:08:25] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [16:08:25] Temperature is too high.
+[STABLE CHECK] [16:08:25] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:08:45] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [16:08:45] Temperature is too high.
+[STABLE CHECK] [16:08:45] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:09:05] Temperature too high: mean is 41.8, which is greater than 40
+[STABLE CHECK] [16:09:05] Temperature is too high.
+[STABLE CHECK] [16:09:05] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:09:25] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [16:09:25] Temperature is too high.
+[MAIN] [16:09:25] Terminated sensors
+[EXECUTION] [16:09:55] Waiting before running function for 10 seconds.
+[EXECUTION] [16:10:06] Sensors started
+[STABLE CHECK] [16:10:09] Temperature too high: mean is 40.85, which is greater than 40
+[STABLE CHECK] [16:10:09] Temperature is too high.
+[STABLE CHECK] [16:10:09] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [16:10:29] Success: temperature is below threshold.
+[MAIN] [16:10:29] Terminated sensors
+[STABLE CHECK] [16:10:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:10:49] Success: Machine is stable.
+[EXECUTION] [16:10:49] Successfully reached stable state
+[EXECUTION] [16:10:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:11:19] Performed tensorflow.tensor_scatter_nd_add() on input and will now save energy data.
+[EXECUTION] [16:11:19] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()', 'tensorflow.sparse.to_dense()', 'tensorflow.tensor_scatter_nd_add()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 36.0
+4-size 36.0
+++++++1++++++
+1-size 36.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:11:19] Result: {'tensorflow.tensor_scatter_nd_add()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [16:11:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[2 7 6]
+ [9 5 1]
+ [4 3 8]], shape=(3, 3), dtype=int32)
+[EXECUTION] [16:11:19] Waiting before running function for 10 seconds.
+[EXECUTION] [16:11:29] Sensors started
+[STABLE CHECK] [16:11:32] Success: temperature is below threshold.
+[MAIN] [16:11:32] Terminated sensors
+[STABLE CHECK] [16:11:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:11:52] Success: Machine is stable.
+[EXECUTION] [16:11:52] Successfully reached stable state
+[EXECUTION] [16:11:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:12:22] Performed tensorflow.tensor_scatter_nd_sub() on input and will now save energy data.
+[EXECUTION] [16:12:22] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()', 'tensorflow.sparse.to_dense()', 'tensorflow.tensor_scatter_nd_add()', 'tensorflow.tensor_scatter_nd_sub()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 36.0
+4-size 36.0
+++++++1++++++
+1-size 36.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:12:22] Result: {'tensorflow.tensor_scatter_nd_sub()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [16:12:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[1 0 0]
+ [0 1 0]
+ [0 0 1]], shape=(3, 3), dtype=int32)
+[EXECUTION] [16:12:22] Waiting before running function for 10 seconds.
+[EXECUTION] [16:12:32] Sensors started
+[STABLE CHECK] [16:12:35] Success: temperature is below threshold.
+[MAIN] [16:12:35] Terminated sensors
+[STABLE CHECK] [16:12:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:12:55] Success: Machine is stable.
+[EXECUTION] [16:12:55] Successfully reached stable state
+[EXECUTION] [16:12:55] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:13:25] Performed tensorflow.tensor_scatter_nd_min() on input and will now save energy data.
+[EXECUTION] [16:13:25] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()', 'tensorflow.sparse.to_dense()', 'tensorflow.tensor_scatter_nd_add()', 'tensorflow.tensor_scatter_nd_sub()', 'tensorflow.tensor_scatter_nd_min()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 36.0
+4-size 36.0
+++++++1++++++
+1-size 36.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:13:25] Result: {'tensorflow.tensor_scatter_nd_min()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [16:13:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[-2 -7 -6]
+ [-9 -5  1]
+ [-4 -3 -8]], shape=(3, 3), dtype=int32)
+[EXECUTION] [16:13:25] Waiting before running function for 10 seconds.
+[EXECUTION] [16:13:35] Sensors started
+[STABLE CHECK] [16:13:38] Success: temperature is below threshold.
+[MAIN] [16:13:38] Terminated sensors
+[STABLE CHECK] [16:13:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [16:13:58] Success: Machine is stable.
+[EXECUTION] [16:13:58] Successfully reached stable state
+[EXECUTION] [16:13:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [16:14:28] Performed tensorflow.tensor_scatter_nd_max() on input and will now save energy data.
+[EXECUTION] [16:14:28] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.gather_nd()', 'tensorflow.scatter_nd()', 'tensorflow.SparseTensor()', 'tensorflow.sparse.to_dense()', 'tensorflow.tensor_scatter_nd_add()', 'tensorflow.tensor_scatter_nd_sub()', 'tensorflow.tensor_scatter_nd_min()', 'tensorflow.tensor_scatter_nd_max()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 36.0
+4-size 36.0
+++++++1++++++
+1-size 36.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [16:14:28] Result: {'tensorflow.tensor_scatter_nd_max()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [16:14:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensor_slicing/experiment-1.json
+tf.Tensor(
+[[-2 -7  6]
+ [-9  5  1]
+ [ 4 -3 -8]], shape=(3, 3), dtype=int32)

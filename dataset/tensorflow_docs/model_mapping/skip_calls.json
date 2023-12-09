@@ -1,0 +1,1 @@
+["tensorflow.compat.v1.get_variable()", "tensorflow.compat.v1.nn.bias_add()", "tensorflow.linalg.matmul()", "tensorflow.keras.Input()", "tensorflow.keras.Model()", "tensorflow.random.normal()", "tensorflow.compat.v1.layers.flatten()", "tensorflow.compat.v1.layers.dense()", "tensorflow.compat.v1.layers.conv2d()"]

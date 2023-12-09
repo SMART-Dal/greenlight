@@ -1,0 +1,522 @@
+2023-12-08 13:18:18.446615: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-08 13:21:34.893043: W tensorflow/python/util/util.cc:368] Sets are not currently considered sequences, but this may change in the future, so consider avoiding using them.
+[EXECUTION] [13:17:44] Waiting before running function for 10 seconds.
+[EXECUTION] [13:17:54] Sensors started
+[STABLE CHECK] [13:17:57] Success: temperature is below threshold.
+[MAIN] [13:17:57] Terminated sensors
+[STABLE CHECK] [13:17:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:18:17] Success: Machine is stable.
+[EXECUTION] [13:18:17] Successfully reached stable state
+[EXECUTION] [13:18:18] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:18:48] Performed tensorflow.Variable() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:18:48] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [13:18:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:18:48] Waiting before running function for 10 seconds.
+[EXECUTION] [13:18:58] Sensors started
+[STABLE CHECK] [13:19:01] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [13:19:01] Temperature is too high.
+[STABLE CHECK] [13:19:01] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:19:21] Temperature too high: mean is 40.15, which is greater than 40
+[STABLE CHECK] [13:19:21] Temperature is too high.
+[STABLE CHECK] [13:19:21] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:19:41] Success: temperature is below threshold.
+[MAIN] [13:19:41] Terminated sensors
+[STABLE CHECK] [13:19:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:20:01] Success: Machine is stable.
+[EXECUTION] [13:20:01] Successfully reached stable state
+[EXECUTION] [13:20:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:20:31] Performed tensorflow.Variable() on input and will now save energy data.
+[EXECUTION] [13:20:31] skipping call added, current list is: ['tensorflow.Variable()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:20:31] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [13:20:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:20:31] Waiting before running function for 10 seconds.
+[EXECUTION] [13:20:41] Sensors started
+[STABLE CHECK] [13:20:44] Success: temperature is below threshold.
+[MAIN] [13:20:44] Terminated sensors
+[STABLE CHECK] [13:20:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:21:04] Success: Machine is stable.
+[EXECUTION] [13:21:04] Successfully reached stable state
+[EXECUTION] [13:21:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:21:34] Performed tensorflow.Module() on input and will now save energy data.
+[EXECUTION] [13:21:34] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()']
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 4.0
+4-size 4.0
+++++++1++++++
+1-size 4.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 13376.0
+outside_object_size
+[EXECUTION] [13:21:34] Result: {'tensorflow.Module()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0
+[EXECUTION] [13:21:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+trainable variables: (<tf.Variable 'train_me:0' shape=() dtype=float32, numpy=5.0>,)
+all variables: (<tf.Variable 'train_me:0' shape=() dtype=float32, numpy=5.0>, <tf.Variable 'do_not_train_me:0' shape=() dtype=float32, numpy=5.0>)
+Model results: tf.Tensor([[0.28767014 0.        ]], shape=(1, 2), dtype=float32)
+Submodules: (<__main__.Dense object at 0x7efc93076ac0>, <__main__.Dense object at 0x7efc93076040>)
+<tf.Variable 'b:0' shape=(3,) dtype=float32, numpy=array([0., 0., 0.], dtype=float32)> 
+
+<tf.Variable 'w:0' shape=(3, 3) dtype=float32, numpy=
+array([[-0.01215076,  0.6656412 , -0.6258108 ],
+       [ 0.38192266,  0.6742149 , -0.56185424],
+       [ 1.1327507 , -1.6161613 , -0.52414095]], dtype=float32)> 
+
+<tf.Variable 'b:0' shape=(2,) dtype=float32, numpy=array([0., 0.], dtype=float32)> 
+
+<tf.Variable 'w:0' shape=(3, 2) dtype=float32, numpy=
+array([[ 0.09572346, -0.08962166],
+       [-0.37470177, -0.52098924],
+       [ 1.5175571 ,  0.75891846]], dtype=float32)> 
+
+Model results: tf.Tensor([[0. 0.]], shape=(1, 2), dtype=float32)
+[EXECUTION] [13:21:35] Waiting before running function for 10 seconds.
+[EXECUTION] [13:21:45] Sensors started
+[STABLE CHECK] [13:21:48] Success: temperature is below threshold.
+[MAIN] [13:21:48] Terminated sensors
+[STABLE CHECK] [13:21:48] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:22:08] Success: Machine is stable.
+[EXECUTION] [13:22:08] Successfully reached stable state
+[EXECUTION] [13:22:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:22:38] Performed tensorflow.train.Checkpoint() on input and will now save energy data.
+[EXECUTION] [13:22:38] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:22:38] Result: {'tensorflow.train.Checkpoint()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [13:22:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:22:38] Waiting before running function for 10 seconds.
+[EXECUTION] [13:22:48] Sensors started
+[STABLE CHECK] [13:22:51] Success: temperature is below threshold.
+[MAIN] [13:22:51] Terminated sensors
+[STABLE CHECK] [13:22:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:23:11] Success: Machine is stable.
+[EXECUTION] [13:23:11] Successfully reached stable state
+[EXECUTION] [13:23:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:23:42] Performed tensorflow.train.Checkpoint.write() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 22544.0
+outside_object_size
+[EXECUTION] [13:23:42] Result: {'tensorflow.train.Checkpoint.write()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [13:23:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:23:42] Waiting before running function for 10 seconds.
+[EXECUTION] [13:23:52] Sensors started
+[STABLE CHECK] [13:23:55] Success: temperature is below threshold.
+[MAIN] [13:23:55] Terminated sensors
+[STABLE CHECK] [13:23:55] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:24:15] Success: Machine is stable.
+[EXECUTION] [13:24:15] Successfully reached stable state
+[EXECUTION] [13:24:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:24:45] Performed tensorflow.train.list_variables() on input and will now save energy data.
+[EXECUTION] [13:24:45] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:24:45] Result: {'tensorflow.train.list_variables()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [13:24:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:24:45] Waiting before running function for 10 seconds.
+[EXECUTION] [13:24:55] Sensors started
+[STABLE CHECK] [13:24:58] Success: temperature is below threshold.
+[MAIN] [13:24:58] Terminated sensors
+[STABLE CHECK] [13:24:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:25:18] Success: Machine is stable.
+[EXECUTION] [13:25:18] Successfully reached stable state
+[EXECUTION] [13:25:18] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:25:48] Performed tensorflow.train.Checkpoint.restore() on input and will now save energy data.
+[EXECUTION] [13:25:48] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 23128.0
+outside_object_size
+[EXECUTION] [13:25:48] Result: {'tensorflow.train.Checkpoint.restore()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
+[EXECUTION] [13:25:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+tf.Tensor([[1.2134018 0.       ]], shape=(1, 2), dtype=float32)
+tf.Tensor(
+[[[1.2134018 0.       ]
+  [1.2134018 0.       ]]], shape=(1, 2, 2), dtype=float32)
+[EXECUTION] [13:25:48] Waiting before running function for 10 seconds.
+[EXECUTION] [13:25:58] Sensors started
+[STABLE CHECK] [13:26:01] Success: temperature is below threshold.
+[MAIN] [13:26:01] Terminated sensors
+[STABLE CHECK] [13:26:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:26:21] Success: Machine is stable.
+[EXECUTION] [13:26:21] Successfully reached stable state
+[EXECUTION] [13:26:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:26:51] Performed tensorflow.summary.create_file_writer() on input and will now save energy data.
+[EXECUTION] [13:26:51] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 80.0
+4-size 80.0
+++++++5++++++
+5-size 80.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:26:51] Result: {'tensorflow.summary.create_file_writer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [13:26:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:26:51] Waiting before running function for 10 seconds.
+[EXECUTION] [13:27:01] Sensors started
+[STABLE CHECK] [13:27:04] Temperature too high: mean is 40.75, which is greater than 40
+[STABLE CHECK] [13:27:04] Temperature is too high.
+[STABLE CHECK] [13:27:04] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:27:24] Success: temperature is below threshold.
+[MAIN] [13:27:24] Terminated sensors
+[STABLE CHECK] [13:27:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:27:44] Success: Machine is stable.
+[EXECUTION] [13:27:44] Successfully reached stable state
+[EXECUTION] [13:27:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:28:14] Performed tensorflow.summary.trace_on() on input and will now save energy data.
+[EXECUTION] [13:28:15] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()', 'tensorflow.summary.trace_on()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:28:15] Result: {'tensorflow.summary.trace_on()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [13:28:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:28:15] Waiting before running function for 10 seconds.
+[EXECUTION] [13:28:25] Sensors started
+[STABLE CHECK] [13:28:28] Success: temperature is below threshold.
+[MAIN] [13:28:28] Terminated sensors
+[STABLE CHECK] [13:28:28] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:28:48] Success: Machine is stable.
+[EXECUTION] [13:28:48] Successfully reached stable state
+[EXECUTION] [13:28:48] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:29:18] Performed tensorflow.profiler.experimental.start() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 80.0
+4-size 80.0
+++++++5++++++
+5-size 80.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:29:18] Result: {'tensorflow.profiler.experimental.start()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
+[EXECUTION] [13:29:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+tf.Tensor([[0.25372005 0.        ]], shape=(1, 2), dtype=float32)
+[EXECUTION] [13:29:18] Waiting before running function for 10 seconds.
+[EXECUTION] [13:29:28] Sensors started
+[STABLE CHECK] [13:29:31] Temperature too high: mean is 42.55, which is greater than 40
+[STABLE CHECK] [13:29:31] Temperature is too high.
+[STABLE CHECK] [13:29:31] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:29:51] Success: temperature is below threshold.
+[MAIN] [13:29:51] Terminated sensors
+[STABLE CHECK] [13:29:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:30:11] Success: Machine is stable.
+[EXECUTION] [13:30:11] Successfully reached stable state
+[EXECUTION] [13:30:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:30:41] Performed tensorflow.summary.trace_export() on input and will now save energy data.
+[EXECUTION] [13:30:42] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()', 'tensorflow.summary.trace_on()', 'tensorflow.summary.trace_export()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 176.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:30:42] Result: {'tensorflow.summary.trace_export()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [13:30:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:30:42] Waiting before running function for 10 seconds.
+[EXECUTION] [13:30:52] Sensors started
+[STABLE CHECK] [13:30:55] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [13:30:55] Temperature is too high.
+[STABLE CHECK] [13:30:55] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:31:15] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [13:31:15] Temperature is too high.
+[STABLE CHECK] [13:31:15] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:31:35] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [13:31:35] Temperature is too high.
+[STABLE CHECK] [13:31:35] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:31:55] Temperature too high: mean is 40.7, which is greater than 40
+[STABLE CHECK] [13:31:55] Temperature is too high.
+[STABLE CHECK] [13:31:55] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:32:15] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [13:32:15] Temperature is too high.
+[STABLE CHECK] [13:32:15] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:32:35] Success: temperature is below threshold.
+[MAIN] [13:32:35] Terminated sensors
+[STABLE CHECK] [13:32:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:32:55] Success: Machine is stable.
+[EXECUTION] [13:32:55] Successfully reached stable state
+[EXECUTION] [13:32:55] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:33:25] Performed tensorflow.saved_model.save() on input and will now save energy data.
+[EXECUTION] [13:33:25] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()', 'tensorflow.summary.trace_on()', 'tensorflow.summary.trace_export()', 'tensorflow.saved_model.save()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 19528.0
+++++++5++++++
+5-size 64.0
+4-size 19592.0
+++++++5++++++
+5-size 19528.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:33:25] Result: {'tensorflow.saved_model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [13:33:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+[EXECUTION] [13:33:25] Waiting before running function for 10 seconds.
+[EXECUTION] [13:33:35] Sensors started
+[STABLE CHECK] [13:33:38] Success: temperature is below threshold.
+[MAIN] [13:33:38] Terminated sensors
+[STABLE CHECK] [13:33:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:33:58] Success: Machine is stable.
+[EXECUTION] [13:33:58] Successfully reached stable state
+[EXECUTION] [13:33:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:34:28] Performed tensorflow.saved_model.load() on input and will now save energy data.
+[EXECUTION] [13:34:28] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()', 'tensorflow.summary.trace_on()', 'tensorflow.summary.trace_export()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [13:34:28] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [13:34:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+tf.Tensor([[1.2134018 0.       ]], shape=(1, 2), dtype=float32)
+tf.Tensor(
+[[[1.2134018 0.       ]
+  [1.2134018 0.       ]]], shape=(1, 2, 2), dtype=float32)
+[EXECUTION] [13:34:28] Waiting before running function for 10 seconds.
+[EXECUTION] [13:34:38] Sensors started
+[STABLE CHECK] [13:34:41] Temperature too high: mean is 42.15, which is greater than 40
+[STABLE CHECK] [13:34:41] Temperature is too high.
+[STABLE CHECK] [13:34:41] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:35:01] Success: temperature is below threshold.
+[MAIN] [13:35:01] Terminated sensors
+[STABLE CHECK] [13:35:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:35:21] Success: Machine is stable.
+[EXECUTION] [13:35:21] Successfully reached stable state
+[EXECUTION] [13:35:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:35:51] Performed tensorflow.keras.layers.Layer() on input and will now save energy data.
+[EXECUTION] [13:35:51] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.Module()', 'tensorflow.train.Checkpoint()', 'tensorflow.train.list_variables()', 'tensorflow.train.Checkpoint.restore()', 'tensorflow.summary.create_file_writer()', 'tensorflow.summary.trace_on()', 'tensorflow.summary.trace_export()', 'tensorflow.saved_model.save()', 'tensorflow.saved_model.load()', 'tensorflow.keras.layers.Layer()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++4++++++
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+4-size 72.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 21088.0
+outside_object_size
+[EXECUTION] [13:35:52] Result: {'tensorflow.keras.layers.Layer()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [13:35:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_to_modules/experiment-1.json
+Model results: tf.Tensor(
+[[ 1.5820312  2.645874  -1.838623 ]
+ [ 2.3730469  3.968811  -2.7579346]], shape=(2, 3), dtype=float32)
+Failed: Exception encountered when calling layer "flexible_dense" (type FlexibleDense).
+
+Matrix size-incompatible: In[0]: [1,4], In[1]: [3,3] [Op:MatMul]
+
+Call arguments received:
+  • inputs=tf.Tensor(shape=(1, 4), dtype=float32)
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/intro_to_modules_method-level.py", line 201, in <module>
+    @keras.saving.register_keras_serializable()
+AttributeError: module 'keras.saving' has no attribute 'register_keras_serializable'

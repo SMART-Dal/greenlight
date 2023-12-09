@@ -48,35 +48,62 @@ if os.path.isdir(repo_dir):
         # get current time in execution_metadata
         # execution_metadata["start_time"] = datetime.datetime.now().isoformat()
         # subprocess to run cli tool
-        script_to_run = "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/graph_optimization_method-level.py"
-        process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir, "--scripts", script_to_run] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+        scripts = [
+            "tpu_embedding",
+            "metrics_optimizers",
+            "model_mapping",
+            "migrating_estimator",
+            "validate_correctness",
+            "evaluator",
+            "tflite",
+            "canned_estimators",
+            "tpu_estimator",
+            "early_stopping",
+            "saved_model",
+            "tensorboard",
+            "migration_debugging",
+            "upgrade",
+            "fault_tolerance",
+            "multi_worker_cpu_gpu_training",
+            "migrating_feature_columns",
+            "logging_stop_hook",
+            "sessionrunhook_callback",
+            "checkpoint_saver",
+            "tf1_vs_tf2",
+            "migrating_checkpoints",
+            "mirrored_strategy",
+            ]
+        script_prefix = "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/"
+        # script_to_run = "distributed_training_method-level.py"
+        for script_to_run in scripts:
+            process = subprocess.Popen(["codegreen", "start-energy-measurement", "--project", repo_dir, "--scripts", script_prefix+script_to_run+"_method-level.py"] ,stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
-        # keep track of files that were successful to skip next time
+            # keep track of files that were successful to skip next time
 
-        # create a list to store process output
-        # output = []
-        # write process stdoutput logs while running subprocess in a json file
-        # with open(os.path.join(data_dir, repo_name, "execution_metadata.json"), "w") as execution_metadata_file:
-        for line in process.stdout:
-            print(line, end='')
-                # execution_metadata_file.write(line)
-                # output.append(line)
+            # create a list to store process output
+            # output = []
+            # write process stdoutput logs while running subprocess in a json file
+            # with open(os.path.join(data_dir, repo_name, "execution_metadata.json"), "w") as execution_metadata_file:
+            for line in process.stdout:
+                print(line, end='')
+                    # execution_metadata_file.write(line)
+                    # output.append(line)
 
-        # Wait for the subprocess to complete
-        process.wait()
+            # Wait for the subprocess to complete
+            process.wait()
 
-        # execution_metadata["end_time"] = datetime.datetime.now().isoformat()
-        # execution_metadata["output"] = output
-        # execution_metadata["return_code"] = process.returncode
+            # execution_metadata["end_time"] = datetime.datetime.now().isoformat()
+            # execution_metadata["output"] = output
+            # execution_metadata["return_code"] = process.returncode
 
-        if process.returncode == 0:
-            print(f"{repo_name} completed successfully.")
-            git_metadata["status"] = "codegreen_completed_successfully"
-        else:
-            print(f"Error running {repo_name}. Return code: {process.returncode}")
-            # git_metadata["status"] = "codegreen_failed"
-        # Deactivate the virtual environment
-        subprocess.run("deactivate", shell=True, check=True)
+            if process.returncode == 0:
+                print(f"{repo_name} completed successfully.")
+                git_metadata["status"] = "codegreen_completed_successfully"
+            else:
+                print(f"Error running {repo_name}. Return code: {process.returncode}")
+                # git_metadata["status"] = "codegreen_failed"
+            # Deactivate the virtual environment
+            # subprocess.run("deactivate", shell=True, check=True)
     else:
         print(f"{repo_name} skipped.")
         # execution_metadata["start_time"] = None

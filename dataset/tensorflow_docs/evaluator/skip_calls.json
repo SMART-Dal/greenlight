@@ -1,0 +1,1 @@
+["tensorflow.compat.v1.estimator.inputs.numpy_input_fn()", "tensorflow.compat.v1.estimator.TrainSpec()", "tensorflow.compat.v1.estimator.EvalSpec()", "tensorflow.keras.losses.SparseCategoricalCrossentropy()", "tensorflow.keras.callbacks.ModelCheckpoint()", "tensorflow.data.Dataset.from_tensor_slices.batch()"]

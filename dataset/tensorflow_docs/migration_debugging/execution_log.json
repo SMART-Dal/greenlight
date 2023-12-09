@@ -1,0 +1,18 @@
+[EXECUTION] [18:53:05] Waiting before running function for 10 seconds.
+[EXECUTION] [18:53:15] Sensors started
+[STABLE CHECK] [18:53:18] Temperature too high: mean is 40.1, which is greater than 40
+[STABLE CHECK] [18:53:18] Temperature is too high.
+[STABLE CHECK] [18:53:18] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [18:53:38] Success: temperature is below threshold.
+[MAIN] [18:53:38] Terminated sensors
+[STABLE CHECK] [18:53:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [18:53:58] Success: Machine is stable.
+[EXECUTION] [18:53:58] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/migration_debugging_method-level.py", line 71, in <module>
+    random_tool = v1.keras.utils.DeterministicRandomTestTool(mode='num_random_ops')
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/util/module_wrapper.py", line 236, in _getattr
+    attr = getattr(self._tfmw_wrapped_module, name)
+AttributeError: module 'keras.api._v1.keras.utils' has no attribute 'DeterministicRandomTestTool'

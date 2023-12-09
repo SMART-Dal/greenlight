@@ -1,0 +1,1651 @@
+2023-12-08 19:18:43.848266: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [19:18:43] Waiting before running function for 10 seconds.
+[EXECUTION] [19:18:53] Sensors started
+[STABLE CHECK] [19:18:56] Success: temperature is below threshold.
+[MAIN] [19:18:56] Terminated sensors
+[STABLE CHECK] [19:18:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:19:16] Not stable: stdev/mean is 0.10818499729113122, which is greater than 0.03
+[STABLE CHECK] [19:19:16] Machine is not stable yet.
+[STABLE CHECK] [19:19:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:19:36] Success: Machine is stable.
+[EXECUTION] [19:19:36] Successfully reached stable state
+[EXECUTION] [19:19:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:20:07] Performed tensorflow.compat.v1.keras.layers.DenseFeatures() on input and will now save energy data.
+[EXECUTION] [19:20:07] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 576.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 576.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 576.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:20:07] Result: {'tensorflow.compat.v1.keras.layers.DenseFeatures()': {'energy_data': {'cpu': '{"columns":["time_ela
+[EXECUTION] [19:20:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:20:07] Waiting before running function for 10 seconds.
+[EXECUTION] [19:20:17] Sensors started
+[STABLE CHECK] [19:20:20] Success: temperature is below threshold.
+[MAIN] [19:20:20] Terminated sensors
+[STABLE CHECK] [19:20:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:20:40] Success: Machine is stable.
+[EXECUTION] [19:20:40] Successfully reached stable state
+[EXECUTION] [19:20:40] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:21:10] Performed tensorflow.keras.layers.Concatenate()() on input and will now save energy data.
+[EXECUTION] [19:21:10] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 40.0
+4-size 40.0
+++++++5++++++
+5-size 40.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:21:10] Result: {'tensorflow.keras.layers.Concatenate()()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [19:21:10] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:21:10] Waiting before running function for 10 seconds.
+[EXECUTION] [19:21:20] Sensors started
+[STABLE CHECK] [19:21:23] Success: temperature is below threshold.
+[MAIN] [19:21:23] Terminated sensors
+[STABLE CHECK] [19:21:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:21:43] Success: Machine is stable.
+[EXECUTION] [19:21:43] Successfully reached stable state
+[EXECUTION] [19:21:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:22:13] Performed tensorflow.keras.Model() on input and will now save energy data.
+[EXECUTION] [19:22:13] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 112.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:22:13] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [19:22:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:22:13] Waiting before running function for 10 seconds.
+[EXECUTION] [19:22:23] Sensors started
+[STABLE CHECK] [19:22:26] Success: temperature is below threshold.
+[MAIN] [19:22:26] Terminated sensors
+[STABLE CHECK] [19:22:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:22:46] Success: Machine is stable.
+[EXECUTION] [19:22:46] Successfully reached stable state
+[EXECUTION] [19:22:46] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:23:16] Performed tensorflow.compat.v1.feature_column.categorical_column_with_identity() on input and will now save energy data.
+[EXECUTION] [19:23:16] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:23:16] Result: {'tensorflow.compat.v1.feature_column.categorical_column_with_identity()': {'energy_data': {'cpu': '
+[EXECUTION] [19:23:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:23:16] Waiting before running function for 10 seconds.
+[EXECUTION] [19:23:26] Sensors started
+[STABLE CHECK] [19:23:29] Success: temperature is below threshold.
+[MAIN] [19:23:29] Terminated sensors
+[STABLE CHECK] [19:23:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:23:49] Success: Machine is stable.
+[EXECUTION] [19:23:49] Successfully reached stable state
+[EXECUTION] [19:23:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:24:19] Performed tensorflow.compat.v1.feature_column.indicator_column() on input and will now save energy data.
+[EXECUTION] [19:24:19] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+4-size 104.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+4-size 104.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+4-size 104.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:24:19] Result: {'tensorflow.compat.v1.feature_column.indicator_column()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [19:24:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:24:19] Waiting before running function for 10 seconds.
+[EXECUTION] [19:24:29] Sensors started
+[STABLE CHECK] [19:24:32] Success: temperature is below threshold.
+[MAIN] [19:24:32] Terminated sensors
+[STABLE CHECK] [19:24:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:24:53] Success: Machine is stable.
+[EXECUTION] [19:24:53] Successfully reached stable state
+[EXECUTION] [19:24:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:25:23] Performed tensorflow.keras.layers.CategoryEncoding() on input and will now save energy data.
+[EXECUTION] [19:25:23] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:25:23] Result: {'tensorflow.keras.layers.CategoryEncoding()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [19:25:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:25:23] Waiting before running function for 10 seconds.
+[EXECUTION] [19:25:33] Sensors started
+[STABLE CHECK] [19:25:36] Temperature too high: mean is 41.05263157894737, which is greater than 40
+[STABLE CHECK] [19:25:36] Temperature is too high.
+[STABLE CHECK] [19:25:36] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:25:56] Success: temperature is below threshold.
+[MAIN] [19:25:56] Terminated sensors
+[STABLE CHECK] [19:25:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:26:16] Success: Machine is stable.
+[EXECUTION] [19:26:16] Successfully reached stable state
+[EXECUTION] [19:26:16] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:26:46] Performed tensorflow.compat.v1.feature_column.numeric_column() on input and will now save energy data.
+[EXECUTION] [19:26:46] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:26:46] Result: {'tensorflow.compat.v1.feature_column.numeric_column()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [19:26:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:26:46] Waiting before running function for 10 seconds.
+[EXECUTION] [19:26:56] Sensors started
+[STABLE CHECK] [19:26:59] Temperature too high: mean is 40.4, which is greater than 40
+[STABLE CHECK] [19:26:59] Temperature is too high.
+[STABLE CHECK] [19:26:59] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:27:19] Success: temperature is below threshold.
+[MAIN] [19:27:19] Terminated sensors
+[STABLE CHECK] [19:27:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:27:39] Success: Machine is stable.
+[EXECUTION] [19:27:39] Successfully reached stable state
+[EXECUTION] [19:27:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:28:09] Performed tensorflow.keras.layers.Normalization() on input and will now save energy data.
+[EXECUTION] [19:28:09] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+4-size 120.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:28:09] Result: {'tensorflow.keras.layers.Normalization()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [19:28:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:28:09] Waiting before running function for 10 seconds.
+[EXECUTION] [19:28:19] Sensors started
+[STABLE CHECK] [19:28:22] Success: temperature is below threshold.
+[MAIN] [19:28:22] Terminated sensors
+[STABLE CHECK] [19:28:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:28:42] Success: Machine is stable.
+[EXECUTION] [19:28:42] Successfully reached stable state
+[EXECUTION] [19:28:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:29:12] Performed tensorflow.compat.v1.feature_column.bucketized_column() on input and will now save energy data.
+[EXECUTION] [19:29:12] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 288.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+4-size 192.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 16.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 96.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:29:12] Result: {'tensorflow.compat.v1.feature_column.bucketized_column()': {'energy_data': {'cpu': '{"columns":["ti
+[EXECUTION] [19:29:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:29:12] Waiting before running function for 10 seconds.
+[EXECUTION] [19:29:22] Sensors started
+[STABLE CHECK] [19:29:25] Success: temperature is below threshold.
+[MAIN] [19:29:25] Terminated sensors
+[STABLE CHECK] [19:29:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:29:45] Success: Machine is stable.
+[EXECUTION] [19:29:45] Successfully reached stable state
+[EXECUTION] [19:29:45] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:30:15] Performed tensorflow.keras.layers.Discretization() on input and will now save energy data.
+[EXECUTION] [19:30:16] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:30:16] Result: {'tensorflow.keras.layers.Discretization()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
+[EXECUTION] [19:30:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:30:16] Waiting before running function for 10 seconds.
+[EXECUTION] [19:30:26] Sensors started
+[STABLE CHECK] [19:30:29] Success: temperature is below threshold.
+[MAIN] [19:30:29] Terminated sensors
+[STABLE CHECK] [19:30:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:30:49] Success: Machine is stable.
+[EXECUTION] [19:30:49] Successfully reached stable state
+[EXECUTION] [19:30:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:31:19] Performed tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list() on input and will now save energy data.
+[EXECUTION] [19:31:19] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:31:19] Result: {'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()': {'energy_data': {'
+[EXECUTION] [19:31:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:31:19] Waiting before running function for 10 seconds.
+[EXECUTION] [19:31:29] Sensors started
+[STABLE CHECK] [19:31:32] Success: temperature is below threshold.
+[MAIN] [19:31:32] Terminated sensors
+[STABLE CHECK] [19:31:32] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:31:52] Success: Machine is stable.
+[EXECUTION] [19:31:52] Successfully reached stable state
+[EXECUTION] [19:31:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:32:22] Performed tensorflow.keras.layers.StringLookup() on input and will now save energy data.
+[EXECUTION] [19:32:22] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 192.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:32:22] Result: {'tensorflow.keras.layers.StringLookup()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [19:32:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:32:22] Waiting before running function for 10 seconds.
+[EXECUTION] [19:32:32] Sensors started
+[STABLE CHECK] [19:32:35] Temperature too high: mean is 42.23529411764706, which is greater than 40
+[STABLE CHECK] [19:32:35] Temperature is too high.
+[STABLE CHECK] [19:32:35] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:32:55] Success: temperature is below threshold.
+[MAIN] [19:32:55] Terminated sensors
+[STABLE CHECK] [19:32:55] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:33:15] Success: Machine is stable.
+[EXECUTION] [19:33:15] Successfully reached stable state
+[EXECUTION] [19:33:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:33:45] Performed tensorflow.compat.v1.feature_column.embedding_column() on input and will now save energy data.
+[EXECUTION] [19:33:45] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 352.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+4-size 384.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+4-size 352.0
+++++++5++++++
+5-size 56.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 72.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 24.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:33:45] Result: {'tensorflow.compat.v1.feature_column.embedding_column()': {'energy_data': {'cpu': '{"columns":["tim
+[EXECUTION] [19:33:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:33:45] Waiting before running function for 10 seconds.
+[EXECUTION] [19:33:55] Sensors started
+[STABLE CHECK] [19:33:58] Temperature too high: mean is 41.7, which is greater than 40
+[STABLE CHECK] [19:33:58] Temperature is too high.
+[STABLE CHECK] [19:33:58] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:34:18] Success: temperature is below threshold.
+[MAIN] [19:34:18] Terminated sensors
+[STABLE CHECK] [19:34:18] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:34:38] Success: Machine is stable.
+[EXECUTION] [19:34:38] Successfully reached stable state
+[EXECUTION] [19:34:38] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:35:08] Performed tensorflow.keras.layers.Embedding() on input and will now save energy data.
+[EXECUTION] [19:35:08] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:35:08] Result: {'tensorflow.keras.layers.Embedding()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [19:35:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:35:09] Waiting before running function for 10 seconds.
+[EXECUTION] [19:35:19] Sensors started
+[STABLE CHECK] [19:35:22] Success: temperature is below threshold.
+[MAIN] [19:35:22] Terminated sensors
+[STABLE CHECK] [19:35:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:35:42] Success: Machine is stable.
+[EXECUTION] [19:35:42] Successfully reached stable state
+[EXECUTION] [19:35:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:36:12] Performed tensorflow.constant() on input and will now save energy data.
+[EXECUTION] [19:36:12] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 160.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/feature_column/feature_column_v2.py:4202: sparse_merge (from tensorflow.python.ops.sparse_ops) is deprecated and will be removed in a future version.
+Instructions for updating:
+No similar op available at this time.
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:36:12] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [19:36:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:36:12] Waiting before running function for 10 seconds.
+[EXECUTION] [19:36:22] Sensors started
+[STABLE CHECK] [19:36:25] Temperature too high: mean is 40.7, which is greater than 40
+[STABLE CHECK] [19:36:25] Temperature is too high.
+[STABLE CHECK] [19:36:25] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:36:45] Success: temperature is below threshold.
+[MAIN] [19:36:45] Terminated sensors
+[STABLE CHECK] [19:36:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:37:05] Success: Machine is stable.
+[EXECUTION] [19:37:05] Successfully reached stable state
+[EXECUTION] [19:37:05] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:37:35] Performed tensorflow.compat.v1.feature_column.weighted_categorical_column() on input and will now save energy data.
+[EXECUTION] [19:37:35] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+4-size 104.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 56.0
+4-size 160.0
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+4-size 104.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 16.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:37:35] Result: {'tensorflow.compat.v1.feature_column.weighted_categorical_column()': {'energy_data': {'cpu': '{"col
+[EXECUTION] [19:37:35] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:37:35] Waiting before running function for 10 seconds.
+[EXECUTION] [19:37:45] Sensors started
+[STABLE CHECK] [19:37:48] Temperature too high: mean is 41.25, which is greater than 40
+[STABLE CHECK] [19:37:48] Temperature is too high.
+[STABLE CHECK] [19:37:48] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:38:08] Success: temperature is below threshold.
+[MAIN] [19:38:08] Terminated sensors
+[STABLE CHECK] [19:38:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:38:28] Success: Machine is stable.
+[EXECUTION] [19:38:28] Successfully reached stable state
+[EXECUTION] [19:38:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:38:58] Performed tensorflow.sparse.to_dense() on input and will now save energy data.
+[EXECUTION] [19:38:58] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 1376.0
+4-size 1376.0
+++++++5++++++
+5-size 1376.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:38:58] Result: {'tensorflow.sparse.to_dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [19:38:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:38:58] Waiting before running function for 10 seconds.
+[EXECUTION] [19:39:08] Sensors started
+[STABLE CHECK] [19:39:11] Temperature too high: mean is 44.111111111111114, which is greater than 40
+[STABLE CHECK] [19:39:11] Temperature is too high.
+[STABLE CHECK] [19:39:11] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:39:31] Temperature too high: mean is 41.45, which is greater than 40
+[STABLE CHECK] [19:39:31] Temperature is too high.
+[STABLE CHECK] [19:39:31] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:39:51] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [19:39:51] Temperature is too high.
+[STABLE CHECK] [19:39:51] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:40:11] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [19:40:11] Temperature is too high.
+[STABLE CHECK] [19:40:11] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:40:31] Success: temperature is below threshold.
+[MAIN] [19:40:31] Terminated sensors
+[STABLE CHECK] [19:40:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:40:52] Success: Machine is stable.
+[EXECUTION] [19:40:52] Successfully reached stable state
+[EXECUTION] [19:40:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:41:22] Performed tensorflow.keras.layers.Dense() on input and will now save energy data.
+[EXECUTION] [19:41:22] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:41:22] Result: {'tensorflow.keras.layers.Dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
+[EXECUTION] [19:41:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:41:22] Waiting before running function for 10 seconds.
+[EXECUTION] [19:41:32] Sensors started
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpp9zmscxe
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/adagrad.py:142: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+[STABLE CHECK] [19:41:35] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [19:41:35] Temperature is too high.
+[STABLE CHECK] [19:41:35] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:41:55] Success: temperature is below threshold.
+[MAIN] [19:41:55] Terminated sensors
+[STABLE CHECK] [19:41:55] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:42:15] Success: Machine is stable.
+[EXECUTION] [19:42:15] Successfully reached stable state
+[EXECUTION] [19:42:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:42:45] Performed tensorflow.compat.v1.estimator.DNNClassifier() on input and will now save energy data.
+[EXECUTION] [19:42:45] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:42:45] Result: {'tensorflow.compat.v1.estimator.DNNClassifier()': {'energy_data': {'cpu': '{"columns":["time_elapse
+[EXECUTION] [19:42:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:42:45] Waiting before running function for 10 seconds.
+[EXECUTION] [19:42:55] Sensors started
+[STABLE CHECK] [19:42:58] Success: temperature is below threshold.
+[MAIN] [19:42:58] Terminated sensors
+[STABLE CHECK] [19:42:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:43:18] Success: Machine is stable.
+[EXECUTION] [19:43:18] Successfully reached stable state
+[EXECUTION] [19:43:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:43:50] Performed tensorflow.compat.v1.estimator.DNNClassifier.train() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3912.0
+outside_object_size
+[EXECUTION] [19:43:50] Result: {'tensorflow.compat.v1.estimator.DNNClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [19:43:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:43:50] Waiting before running function for 10 seconds.
+[EXECUTION] [19:44:00] Sensors started
+[STABLE CHECK] [19:44:03] Temperature too high: mean is 41.6, which is greater than 40
+[STABLE CHECK] [19:44:03] Temperature is too high.
+[STABLE CHECK] [19:44:03] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:44:23] Success: temperature is below threshold.
+[MAIN] [19:44:23] Terminated sensors
+[STABLE CHECK] [19:44:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:44:43] Success: Machine is stable.
+[EXECUTION] [19:44:43] Successfully reached stable state
+[EXECUTION] [19:44:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:45:13] Performed tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')() on input and will now save energy data.
+[EXECUTION] [19:45:14] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()"]
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 15464.0
+4-size 15464.0
+++++++5++++++
+5-size 15464.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:45:14] Result: {"tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()": {'energy_data': 
+[EXECUTION] [19:45:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:45:14] Waiting before running function for 10 seconds.
+[EXECUTION] [19:45:24] Sensors started
+[STABLE CHECK] [19:45:27] Success: temperature is below threshold.
+[MAIN] [19:45:27] Terminated sensors
+[STABLE CHECK] [19:45:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:45:47] Success: Machine is stable.
+[EXECUTION] [19:45:47] Successfully reached stable state
+[EXECUTION] [19:45:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:46:17] Performed tensorflow.keras.layers.StringLookup(vocabulary=vocab)() on input and will now save energy data.
+[EXECUTION] [19:46:17] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 27096.0
+4-size 27096.0
+++++++5++++++
+5-size 27096.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:46:17] Result: {'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()': {'energy_data': {'cpu': '{"columns":["t
+[EXECUTION] [19:46:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:46:17] Waiting before running function for 10 seconds.
+[EXECUTION] [19:46:27] Sensors started
+[STABLE CHECK] [19:46:30] Success: temperature is below threshold.
+[MAIN] [19:46:30] Terminated sensors
+[STABLE CHECK] [19:46:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:46:50] Success: Machine is stable.
+[EXECUTION] [19:46:50] Successfully reached stable state
+[EXECUTION] [19:46:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:47:20] Performed tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)() on input and will now save energy data.
+[EXECUTION] [19:47:20] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 29416.0
+4-size 29416.0
+++++++5++++++
+5-size 29416.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:47:20] Result: {'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()': {
+[EXECUTION] [19:47:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:47:20] Waiting before running function for 10 seconds.
+[EXECUTION] [19:47:30] Sensors started
+[STABLE CHECK] [19:47:33] Success: temperature is below threshold.
+[MAIN] [19:47:33] Terminated sensors
+[STABLE CHECK] [19:47:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:47:53] Success: Machine is stable.
+[EXECUTION] [19:47:53] Successfully reached stable state
+[EXECUTION] [19:47:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:48:23] Performed tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch() on input and will now save energy data.
+[EXECUTION] [19:48:23] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:48:23] Result: {'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()': {'energy_data': {'cpu': '
+[EXECUTION] [19:48:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:48:23] Waiting before running function for 10 seconds.
+[EXECUTION] [19:48:33] Sensors started
+[STABLE CHECK] [19:48:36] Success: temperature is below threshold.
+[MAIN] [19:48:36] Terminated sensors
+[STABLE CHECK] [19:48:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:48:56] Success: Machine is stable.
+[EXECUTION] [19:48:56] Successfully reached stable state
+[EXECUTION] [19:48:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:49:27] Performed tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map() on input and will now save energy data.
+[EXECUTION] [19:49:27] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 72.0
+4-size 72.0
+++++++5++++++
+5-size 72.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 139448.0
+outside_object_size
+[EXECUTION] [19:49:27] Result: {'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()': {'energy_data': {'cpu
+[EXECUTION] [19:49:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:49:27] Waiting before running function for 10 seconds.
+[EXECUTION] [19:49:37] Sensors started
+[STABLE CHECK] [19:49:40] Temperature too high: mean is 41.05, which is greater than 40
+[STABLE CHECK] [19:49:40] Temperature is too high.
+[STABLE CHECK] [19:49:40] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [19:50:00] Success: temperature is below threshold.
+[MAIN] [19:50:00] Terminated sensors
+[STABLE CHECK] [19:50:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:50:20] Not stable: stdev/mean is 0.04708509802367536, which is greater than 0.03
+[STABLE CHECK] [19:50:20] Machine is not stable yet.
+[STABLE CHECK] [19:50:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:50:40] Success: Machine is stable.
+[EXECUTION] [19:50:40] Successfully reached stable state
+[EXECUTION] [19:50:40] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:51:10] Performed tensorflow.keras.layers.Dense(1)() on input and will now save energy data.
+[EXECUTION] [19:51:10] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 71184.0
+4-size 71184.0
+++++++5++++++
+5-size 71184.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:51:10] Result: {'tensorflow.keras.layers.Dense(1)()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [19:51:10] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:51:10] Waiting before running function for 10 seconds.
+[EXECUTION] [19:51:20] Sensors started
+[STABLE CHECK] [19:51:23] Success: temperature is below threshold.
+[MAIN] [19:51:23] Terminated sensors
+[STABLE CHECK] [19:51:23] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:51:43] Success: Machine is stable.
+[EXECUTION] [19:51:43] Successfully reached stable state
+[EXECUTION] [19:51:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:52:13] Performed tensorflow.keras.Model.compile() on input and will now save energy data.
+[EXECUTION] [19:52:13] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 111056.0
+outside_object_size
+[EXECUTION] [19:52:13] Result: {'tensorflow.keras.Model.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [19:52:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:52:13] Waiting before running function for 10 seconds.
+[EXECUTION] [19:52:23] Sensors started
+[STABLE CHECK] [19:52:26] Success: temperature is below threshold.
+[MAIN] [19:52:26] Terminated sensors
+[STABLE CHECK] [19:52:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:52:46] Success: Machine is stable.
+[EXECUTION] [19:52:46] Successfully reached stable state
+
+1/3 [=========>....................] - ETA: 0s - loss: 1.1594
+3/3 [==============================] - 0s 5ms/step - loss: 0.8788
+WARNING:tensorflow:Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.
+[EXECUTION] [19:52:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:53:17] Performed tensorflow.keras.Model.fit() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 139448.0
+4-size 139448.0
+++++++5++++++
+5-size 139448.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1052192.0
+outside_object_size
+[EXECUTION] [19:53:17] Result: {'tensorflow.keras.Model.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"
+[EXECUTION] [19:53:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:53:17] Waiting before running function for 10 seconds.
+[EXECUTION] [19:53:27] Sensors started
+[STABLE CHECK] [19:53:30] Success: temperature is below threshold.
+[MAIN] [19:53:30] Terminated sensors
+[STABLE CHECK] [19:53:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:53:50] Success: Machine is stable.
+[EXECUTION] [19:53:50] Successfully reached stable state
+[EXECUTION] [19:53:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:54:20] Performed tensorflow.data.Dataset.from_tensor_slices(predict_features).batch() on input and will now save energy data.
+[EXECUTION] [19:54:20] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()', 'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+4-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:54:20] Result: {'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()': {'energy_data': {'cpu': '{"
+[EXECUTION] [19:54:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:54:20] Waiting before running function for 10 seconds.
+[EXECUTION] [19:54:30] Sensors started
+[STABLE CHECK] [19:54:33] Success: temperature is below threshold.
+[MAIN] [19:54:33] Terminated sensors
+[STABLE CHECK] [19:54:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:54:53] Success: Machine is stable.
+[EXECUTION] [19:54:53] Successfully reached stable state
+[EXECUTION] [19:54:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:55:24] Performed tensorflow.keras.Model.predict() on input and will now save energy data.
+[EXECUTION] [19:55:24] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()', 'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()', 'tensorflow.keras.Model.predict()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 26176.0
+4-size 26176.0
+++++++5++++++
+5-size 26176.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1282968.0
+outside_object_size
+[EXECUTION] [19:55:24] Result: {'tensorflow.keras.Model.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [19:55:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:55:24] Waiting before running function for 10 seconds.
+[EXECUTION] [19:55:34] Sensors started
+[STABLE CHECK] [19:55:37] Success: temperature is below threshold.
+[MAIN] [19:55:37] Terminated sensors
+[STABLE CHECK] [19:55:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:55:57] Success: Machine is stable.
+[EXECUTION] [19:55:57] Successfully reached stable state
+[EXECUTION] [19:55:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:56:27] Performed tensorflow.keras.Model.save() on input and will now save energy data.
+[EXECUTION] [19:56:27] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()', 'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()', 'tensorflow.keras.Model.predict()', 'tensorflow.keras.Model.save()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+WARNING:tensorflow:No training configuration found in the save file, so the model was *not* compiled. Compile it manually.
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 1282968.0
+outside_object_size
+[EXECUTION] [19:56:27] Result: {'tensorflow.keras.Model.save()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [19:56:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:56:27] Waiting before running function for 10 seconds.
+[EXECUTION] [19:56:37] Sensors started
+[STABLE CHECK] [19:56:40] Success: temperature is below threshold.
+[MAIN] [19:56:40] Terminated sensors
+[STABLE CHECK] [19:56:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:57:00] Success: Machine is stable.
+[EXECUTION] [19:57:00] Successfully reached stable state
+[EXECUTION] [19:57:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:57:30] Performed tensorflow.keras.models.load_model() on input and will now save energy data.
+[EXECUTION] [19:57:30] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()', 'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()', 'tensorflow.keras.Model.predict()', 'tensorflow.keras.Model.save()', 'tensorflow.keras.models.load_model()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [19:57:30] Result: {'tensorflow.keras.models.load_model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [19:57:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json
+[EXECUTION] [19:57:30] Waiting before running function for 10 seconds.
+[EXECUTION] [19:57:40] Sensors started
+[STABLE CHECK] [19:57:43] Success: temperature is below threshold.
+[MAIN] [19:57:43] Terminated sensors
+[STABLE CHECK] [19:57:43] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [19:58:03] Success: Machine is stable.
+[EXECUTION] [19:58:03] Successfully reached stable state
+[EXECUTION] [19:58:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [19:58:34] Performed tensorflow.keras.models.load_model.predict() on input and will now save energy data.
+[EXECUTION] [19:58:34] skipping call added, current list is: ['tensorflow.compat.v1.keras.layers.DenseFeatures()', 'tensorflow.keras.layers.Concatenate()()', 'tensorflow.keras.Model()', 'tensorflow.compat.v1.feature_column.categorical_column_with_identity()', 'tensorflow.compat.v1.feature_column.indicator_column()', 'tensorflow.keras.layers.CategoryEncoding()', 'tensorflow.compat.v1.feature_column.numeric_column()', 'tensorflow.keras.layers.Normalization()', 'tensorflow.compat.v1.feature_column.bucketized_column()', 'tensorflow.keras.layers.Discretization()', 'tensorflow.compat.v1.feature_column.categorical_column_with_vocabulary_list()', 'tensorflow.keras.layers.StringLookup()', 'tensorflow.compat.v1.feature_column.embedding_column()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.constant()', 'tensorflow.compat.v1.feature_column.weighted_categorical_column()', 'tensorflow.sparse.to_dense()', 'tensorflow.keras.layers.Dense()', 'tensorflow.compat.v1.estimator.DNNClassifier()', "tensorflow.keras.layers.CategoryEncoding(one_hot_dims, output_mode='one_hot')()", 'tensorflow.keras.layers.StringLookup(vocabulary=vocab)()', 'tensorflow.keras.layers.Normalization(axis=None, mean=weight_mean, variance=weight_variance)()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch.map()', 'tensorflow.keras.layers.Dense(1)()', 'tensorflow.keras.Model.compile()', 'tensorflow.data.Dataset.from_tensor_slices(predict_features).batch()', 'tensorflow.keras.Model.predict()', 'tensorflow.keras.Model.save()', 'tensorflow.keras.models.load_model()', 'tensorflow.keras.models.load_model.predict()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 26176.0
+4-size 26176.0
+++++++5++++++
+5-size 26176.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 360552.0
+outside_object_size
+[EXECUTION] [19:58:34] Result: {'tensorflow.keras.models.load_model.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [19:58:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/migrating_feature_columns/experiment-1.json

@@ -1,0 +1,166 @@
+2023-12-08 15:54:56.658054: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [15:54:56] Waiting before running function for 10 seconds.
+[EXECUTION] [15:55:06] Sensors started
+[STABLE CHECK] [15:55:09] Success: temperature is below threshold.
+[MAIN] [15:55:09] Terminated sensors
+[STABLE CHECK] [15:55:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:55:29] Not stable: stdev/mean is 0.03111411606065462, which is greater than 0.03
+[STABLE CHECK] [15:55:29] Machine is not stable yet.
+[STABLE CHECK] [15:55:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:55:49] Success: Machine is stable.
+[EXECUTION] [15:55:49] Successfully reached stable state
+[EXECUTION] [15:55:49] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:56:19] Performed tensorflow.Variable() on input and will now save energy data.
+[EXECUTION] [15:56:19] skipping call added, current list is: ['tensorflow.Variable()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 24.0
+4-size 24.0
+++++++5++++++
+5-size 24.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:56:19] Result: {'tensorflow.Variable()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
+[EXECUTION] [15:56:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/function/experiment-1.json
+[EXECUTION] [15:56:20] Waiting before running function for 10 seconds.
+[EXECUTION] [15:56:30] Sensors started
+[STABLE CHECK] [15:56:33] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [15:56:33] Temperature is too high.
+[STABLE CHECK] [15:56:33] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [15:56:53] Success: temperature is below threshold.
+[MAIN] [15:56:53] Terminated sensors
+[STABLE CHECK] [15:56:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:57:13] Success: Machine is stable.
+[EXECUTION] [15:57:13] Successfully reached stable state
+[EXECUTION] [15:57:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:57:43] Performed tensorflow.keras.layers.Conv2D() on input and will now save energy data.
+[EXECUTION] [15:57:44] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.keras.layers.Conv2D()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:57:44] Result: {'tensorflow.keras.layers.Conv2D()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
+[EXECUTION] [15:57:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/function/experiment-1.json
+[EXECUTION] [15:57:44] Waiting before running function for 10 seconds.
+[EXECUTION] [15:57:54] Sensors started
+[STABLE CHECK] [15:57:57] Success: temperature is below threshold.
+[MAIN] [15:57:57] Terminated sensors
+[STABLE CHECK] [15:57:57] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:58:17] Success: Machine is stable.
+[EXECUTION] [15:58:17] Successfully reached stable state
+[EXECUTION] [15:58:17] waiting idle for 30 seconds after function execution
+[EXECUTION] [15:58:47] Performed tensorflow.zeros() on input and will now save energy data.
+[EXECUTION] [15:58:47] skipping call added, current list is: ['tensorflow.Variable()', 'tensorflow.keras.layers.Conv2D()', 'tensorflow.zeros()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 128.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [15:58:47] Result: {'tensorflow.zeros()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
+[EXECUTION] [15:58:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/function/experiment-1.json
+Eager conv: 0.004853208956774324
+Function conv: 0.009606931998860091
+Note how there's not much difference in performance for convolutions
+Tracing with Tensor("a:0", shape=(), dtype=int32)
+tf.Tensor(2, shape=(), dtype=int32)
+
+Tracing with Tensor("a:0", shape=(), dtype=float32)
+tf.Tensor(2.2, shape=(), dtype=float32)
+
+Tracing with Tensor("a:0", shape=(), dtype=string)
+tf.Tensor(b'aa', shape=(), dtype=string)
+
+tf.Tensor(b'bb', shape=(), dtype=string)
+double(a)
+  Args:
+    a: int32 Tensor, shape=()
+  Returns:
+    int32 Tensor, shape=()
+
+double(a)
+  Args:
+    a: float32 Tensor, shape=()
+  Returns:
+    float32 Tensor, shape=()
+
+double(a)
+  Args:
+    a: string Tensor, shape=()
+  Returns:
+    string Tensor, shape=()
+Tracing with Tensor("x:0", shape=(None,), dtype=int32)
+tf.Tensor([4 1], shape=(2,), dtype=int32)
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/function_method-level.py", line 78, in <module>
+    next_collatz(tf.constant([[1, 2], [3, 4]]))
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/eager/function.py", line 2982, in _convert_inputs_to_signature
+    raise ValueError("Python inputs incompatible with input_signature:\n"
+ValueError: Python inputs incompatible with input_signature:
+  inputs: (
+    tf.Tensor(
+[[1 2]
+ [3 4]], shape=(2, 2), dtype=int32))
+  input_signature: (
+    TensorSpec(shape=(None,), dtype=tf.int32, name=None)).
