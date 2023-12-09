@@ -77,12 +77,13 @@ The final dataset will be located in `dataset/`.
 
 ### 3. Explore Dataset
 
-Use the Jupyter notebooks in `analysis/` to explore the dataset.
-
+Use the script `05_data_analysis.py` to explore the dataset.
+<!--
 ## Contributing 
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding new projects to profile.
+-->
 
 ## License
 
-The Greenlight dataset is licensed under Apache 2.0. codegreen is licensed under the Apache 2.0. See [LICENSE](https://github.com/SMART-Dal/codegreen/blob/main/LICENSE) for more details.
+The Greenlight dataset is licensed under Apache 2.0. The tool Codegreen is licensed under the Apache 2.0. See [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) for more details.
