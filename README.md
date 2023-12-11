@@ -53,13 +53,13 @@ The patched source files are written to `projects/` with `_patched` suffix.
 
 This executes the patched project scripts and collects energy profiling data using codegreen's `start-energy-measurement` command.
 
-The energy profiles are saved as JSON to `dataset/project_name/script_name/experiment-n.json`; this script also get the execution logs of the scripts and execution status metadata, for debugging and further analysis. These json files can be used to perform further analysis of the energy profiles.
+The energy profiles are saved as JSON to `dataset/project_name/script_name/experiment-n.json`; this script also get the execution logs of the scripts and execution status metadata, for debugging and further analysis. The combined JSON files are at `analysis/cumulative_data`. These json files can be used to perform further analysis of the energy profiles.
 
 #### 05_data_analysis.py
 
 This analyzes the raw energy profiles to generate aggregated statistics and visualizations.
 
-The analysis report and visualization are output to `Dataset/analysis/`. 
+The analysis report and visualization are output to `Dataset/analysis/method-level/combined`. 
 
 Additional analysis and visualization scripts are available in `codegreen.fecom.experiment` package, that can be for instance used as:
 
