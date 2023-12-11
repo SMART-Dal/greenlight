@@ -23,11 +23,9 @@ Greenlight provides a workflow to profile Python projects and generate an energy
 
 ### 1. Add Projects
 
-Place projects to profile in `Projects/projects_to_measure/`. Each one should have its own subdirectory.
+Place projects to profile in `Projects/projects_to_measure/`. Each one should have its own subdirectory, which can be individial github repositories.
 
-See `Projects/projects_to_measure/README.md` for guidelines.
-
-Here is an expanded "Generate Dataset" section explaining each script individually:
+See `Projects/projects_to_measure/README.md` of the corresponding projects for guidelines.
 
 ### 2. Generate Dataset
 
@@ -37,7 +35,7 @@ The dataset generation involves 5 key scripts:
 
 This clones the projects to profile from their repositories into the `Projects/` directory. 
 
-By default, it will clone from `projects/projects.json`, which lists each project's git URL.
+By default, it will clone from `projects/projects.json`, which lists each project's git URL and other metadata.
 
 #### 02_create_environments.py
 
@@ -55,13 +53,17 @@ The patched source files are written to `projects/` with `_patched` suffix.
 
 This executes the patched project scripts and collects energy profiling data using codegreen's `start-energy-measurement` command.
 
-The energy profiles are saved as JSON to `dataset/project_name/script_name`; this script also get the execution logs of the scripts and execution status metadata.
+The energy profiles are saved as JSON to `dataset/project_name/script_name/experiment-n.json`; this script also get the execution logs of the scripts and execution status metadata, for debugging and further analysis. These json files can be used to perform further analysis of the energy profiles.
 
 #### 05_data_analysis.py
 
 This analyzes the raw energy profiles to generate aggregated statistics and visualizations.
 
-The final dataset json and plots are output to `Dataset/final_dataset/`.
+The analysis report and visualization are output to `Dataset/analysis/`. 
+
+Additional analysis and visualization scripts are available in `codegreen.fecom.experiment` package, that can be for instance used as:
+
+`from codegreen.fecom.experiment.analysis import init_project_energy_data, create_summary, export_summary_to_latex, build_total_energy_df`
 
 In summary, the scripts handle:
 
@@ -73,11 +75,11 @@ In summary, the scripts handle:
 
 The result is an end-to-end pipeline to generate an energy profile dataset for Python projects using codegreen.
 
-The final dataset will be located in `dataset/`.
+The final dataset json are output to `Dataset/final_dataset/`.
 
-### 3. Explore Dataset
+<!-- ### 3. Explore Dataset
 
-Use the script `05_data_analysis.py` to explore the dataset.
+Use the script `05_data_analysis.py` to explore the dataset. -->
 <!--
 ## Contributing 
 

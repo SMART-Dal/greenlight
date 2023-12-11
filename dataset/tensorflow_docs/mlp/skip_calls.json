@@ -1,1 +1,1 @@
-["tensorflow.keras.Sequential.compile()"]
+["tensorflow.keras.Sequential.compile()", "tensorflow.keras.datasets.mnist.load_data()"]

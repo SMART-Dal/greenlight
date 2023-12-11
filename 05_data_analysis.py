@@ -90,7 +90,7 @@ def energy_disribution():
 def get_func_signatures():
     # read final_dataset.json that has list of dictionaries and create a list of all keys
     # unique_func = 0
-    with open('dataset/final_dataset.json', 'r') as f:
+    with open('final_dataset.json', 'r') as f:
         data = json.load(f)
         keys = []
         for d in data:
