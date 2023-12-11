@@ -1,0 +1,6 @@
+[2K
+[2K
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_privacy_patched/tensorflow_privacy/privacy/privacy_tests/secret_sharer/secret_sharer_image_example_method-level.py", line 19, in <module>
+    from tensorflow_privacy.privacy.privacy_tests.secret_sharer.generate_secrets import SecretConfig, construct_secret, generate_random_sequences, construct_secret_dataset
+ModuleNotFoundError: No module named 'tensorflow_privacy'

@@ -1,0 +1,5 @@
+2023-12-10 08:31:01.466482: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/1_TensorFlow_Basics/Tutorials/3_Introduction_to_Tensorboard_method-level.py", line 19, in <module>
+    with tf.Session() as sess:
+AttributeError: module 'tensorflow' has no attribute 'Session'

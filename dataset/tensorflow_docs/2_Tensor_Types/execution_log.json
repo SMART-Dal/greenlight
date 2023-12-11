@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/1_TensorFlow_Basics/Tutorials/2_Tensor_Types_method-level.py", line 18
+    w = tf.Variable(<initial-value>, name=<optional-name>)
+                    ^
+SyntaxError: invalid syntax

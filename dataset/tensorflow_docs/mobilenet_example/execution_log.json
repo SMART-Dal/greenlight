@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/research/slim/nets/mobilenet/mobilenet_example_method-level.py", line 14
+    sys.path.append('/content/models/research/slim')!pip install tf_slim
+                                                    ^
+SyntaxError: invalid syntax

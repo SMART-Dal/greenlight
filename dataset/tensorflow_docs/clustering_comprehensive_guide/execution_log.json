@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_model-optimization_patched/tensorflow_model_optimization/g3doc/guide/clustering/clustering_comprehensive_guide_method-level.py", line 138
+    print("Size of gzipped clustered model with stripping: %.2f bytes" 
+    ^
+SyntaxError: invalid syntax

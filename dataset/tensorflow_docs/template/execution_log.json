@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_tfx_patched/docs/tutorials/tfx/template_method-level.py", line 2
+    shell_output=!gcloud config list --format 'value(core.project)' 2>/dev/null
+                 ^
+SyntaxError: invalid syntax

@@ -50,18 +50,58 @@ def energy_disribution():
 
     # Calculate standard deviation
     std_dev = df_merged['total'].std()
-    print("Standard deviation of total energy:", std_dev)
+    # print("Standard deviation of total energy:", std_dev)
 
-    # Create box plot
+    mean = df_merged['total'].mean()
+
+    # Print for validation
+    print("Standard deviation:", std_dev)
+    print("Mean:", mean)  
+    print("Std dev percentage of mean:", (std_dev/mean)*100)
+
+    # # Create box plot
+    # fig, ax = plt.subplots()
+    # ax.boxplot([df_ram['total'], df_cpu['total'], df_gpu['total']], labels=['RAM', 'CPU', 'GPU'])
+    # ax.set_title('Energy Consumption by Hardware')
+    # ax.set_ylabel('Energy (Joules)')
+    # # plt.show()
+    # plt.savefig('plot.pdf')
+
+    # Create figure 
     fig, ax = plt.subplots()
-    ax.boxplot([df_ram['total'], df_cpu['total'], df_gpu['total']], labels=['RAM', 'CPU', 'GPU'])
-    ax.set_title('Energy Consumption by Hardware')
-    ax.set_ylabel('Energy (Joules)')
-    # plt.show()
-    plt.savefig('plot.pdf')
+
+    # Generate violin plot
+    ax.violinplot([df_ram['total'], df_cpu['total'], df_gpu['total']], 
+                showmeans=False,
+                showmedians=True)
+
+    # Set axis labels
+    ax.set_ylabel('Energy (Joules)', fontsize=14)
+    ax.set_xticks([1, 2, 3]) 
+# ax.set_xticklabels(['RAM', 'CPU', 'GPU'], fontsize=14)
+    ax.set_xticklabels(['RAM', 'CPU', 'GPU'], fontsize=14)
+
+    # Remove title
+    ax.set_title('')
+
+    # Save figure
+    plt.savefig('plot_violin.pdf', bbox_inches='tight')
+
+def get_func_signatures():
+    # read final_dataset.json that has list of dictionaries and create a list of all keys
+    # unique_func = 0
+    with open('dataset/final_dataset.json', 'r') as f:
+        data = json.load(f)
+        keys = []
+        for d in data:
+            for k in d.keys():
+                if k not in keys:
+                    keys.append(k)
+    print(len(keys))
 
 # create a main block to call all the functions
 if __name__ == "__main__":
-    # get_energy_data()
-    energy_disribution()
+    get_energy_data()
+    # energy_disribution()
+    # get_func_signatures()
     pass

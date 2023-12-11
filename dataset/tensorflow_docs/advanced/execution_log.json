@@ -1,22 +1,31 @@
-2023-12-08 00:56:40.869449: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-08 00:56:41.004249: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-12-08 00:56:41.638293: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-08 00:56:41.638352: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-08 00:56:41.638357: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-2023-12-08 00:57:16.955743: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-2023-12-08 00:57:16.955793: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-TensorFlow version: 2.11.0
-[EXECUTION] [00:56:43] Waiting before running function for 10 seconds.
-[EXECUTION] [00:56:53] Sensors started
-[STABLE CHECK] [00:56:56] Success: temperature is below threshold.
-[MAIN] [00:56:56] Terminated sensors
-[STABLE CHECK] [00:56:56] Waiting 20 seconds to reach stable state.
+2023-12-09 14:29:30.337172: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+TensorFlow version: 2.7.0
+[EXECUTION] [14:27:36] Waiting before running function for 10 seconds.
+[EXECUTION] [14:27:46] Sensors started
+[STABLE CHECK] [14:27:49] Temperature too high: mean is 45, which is greater than 40
+[STABLE CHECK] [14:27:49] Temperature is too high.
+[STABLE CHECK] [14:27:49] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [00:57:16] Success: Machine is stable.
-[EXECUTION] [00:57:16] Successfully reached stable state
-[EXECUTION] [00:57:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [00:57:47] Performed tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch() on input and will now save energy data.
+[STABLE CHECK] [14:28:09] Temperature too high: mean is 43.7, which is greater than 40
+[STABLE CHECK] [14:28:09] Temperature is too high.
+[STABLE CHECK] [14:28:09] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [14:28:29] Temperature too high: mean is 41.95, which is greater than 40
+[STABLE CHECK] [14:28:29] Temperature is too high.
+[STABLE CHECK] [14:28:29] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [14:28:49] Temperature too high: mean is 40.35, which is greater than 40
+[STABLE CHECK] [14:28:49] Temperature is too high.
+[STABLE CHECK] [14:28:49] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [14:29:09] Success: temperature is below threshold.
+[MAIN] [14:29:09] Terminated sensors
+[STABLE CHECK] [14:29:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [14:29:29] Success: Machine is stable.
+[EXECUTION] [14:29:29] Successfully reached stable state
+[EXECUTION] [14:29:30] waiting idle for 30 seconds after function execution
+[EXECUTION] [14:30:00] Performed tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -29,369 +38,10 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [00:57:47] Result: {'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()': {'energy_d
-[EXECUTION] [00:57:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [00:57:47] Waiting before running function for 10 seconds.
-[EXECUTION] [00:57:57] Sensors started
-[STABLE CHECK] [00:58:00] Success: temperature is below threshold.
-[MAIN] [00:58:00] Terminated sensors
-[STABLE CHECK] [00:58:00] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [00:58:20] Not stable: stdev/mean is 0.043872203682593966, which is greater than 0.03
-[STABLE CHECK] [00:58:20] Machine is not stable yet.
-[STABLE CHECK] [00:58:20] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [00:58:40] Success: Machine is stable.
-[EXECUTION] [00:58:40] Successfully reached stable state
-[EXECUTION] [00:58:40] waiting idle for 30 seconds after function execution
-[EXECUTION] [00:59:10] Performed tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [00:59:10] Result: {'tensorflow.data.Dataset.from_tensor_slices((x_test, y_test)).batch()': {'energy_data': {'cpu': '{"
-[EXECUTION] [00:59:10] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [00:59:10] Waiting before running function for 10 seconds.
-[EXECUTION] [00:59:20] Sensors started
-[STABLE CHECK] [00:59:23] Success: temperature is below threshold.
-[MAIN] [00:59:23] Terminated sensors
-[STABLE CHECK] [00:59:23] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [00:59:43] Success: Machine is stable.
-[EXECUTION] [00:59:43] Successfully reached stable state
-[EXECUTION] [00:59:43] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:00:13] Performed tensorflow.keras.layers.Conv2D() on input and will now save energy data.
-[EXECUTION] [01:00:13] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-4-size 64.0
-++++++5++++++
-5-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:00:13] Result: {'tensorflow.keras.layers.Conv2D()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)
-[EXECUTION] [01:00:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:00:13] Waiting before running function for 10 seconds.
-[EXECUTION] [01:00:23] Sensors started
-[STABLE CHECK] [01:00:26] Success: temperature is below threshold.
-[MAIN] [01:00:26] Terminated sensors
-[STABLE CHECK] [01:00:26] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:00:46] Success: Machine is stable.
-[EXECUTION] [01:00:46] Successfully reached stable state
-[EXECUTION] [01:00:46] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:01:16] Performed tensorflow.keras.layers.Flatten() on input and will now save energy data.
-[EXECUTION] [01:01:16] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:01:16] Result: {'tensorflow.keras.layers.Flatten()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [01:01:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:01:16] Waiting before running function for 10 seconds.
-[EXECUTION] [01:01:27] Sensors started
-[STABLE CHECK] [01:01:30] Success: temperature is below threshold.
-[MAIN] [01:01:30] Terminated sensors
-[STABLE CHECK] [01:01:30] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:01:50] Success: Machine is stable.
-[EXECUTION] [01:01:50] Successfully reached stable state
-[EXECUTION] [01:01:50] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:02:20] Performed tensorflow.keras.layers.Dense() on input and will now save energy data.
-[EXECUTION] [01:02:20] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:02:20] Result: {'tensorflow.keras.layers.Dense()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
-[EXECUTION] [01:02:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:02:20] Waiting before running function for 10 seconds.
-[EXECUTION] [01:02:30] Sensors started
-[STABLE CHECK] [01:02:33] Success: temperature is below threshold.
-[MAIN] [01:02:33] Terminated sensors
-[STABLE CHECK] [01:02:33] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:02:53] Success: Machine is stable.
-[EXECUTION] [01:02:53] Successfully reached stable state
-[EXECUTION] [01:02:53] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:03:23] Performed tensorflow.keras.losses.SparseCategoricalCrossentropy() on input and will now save energy data.
-[EXECUTION] [01:03:23] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:03:23] Result: {'tensorflow.keras.losses.SparseCategoricalCrossentropy()': {'energy_data': {'cpu': '{"columns":["ti
-[EXECUTION] [01:03:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:03:23] Waiting before running function for 10 seconds.
-[EXECUTION] [01:03:33] Sensors started
-[STABLE CHECK] [01:03:36] Success: temperature is below threshold.
-[MAIN] [01:03:36] Terminated sensors
-[STABLE CHECK] [01:03:36] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:03:56] Success: Machine is stable.
-[EXECUTION] [01:03:56] Successfully reached stable state
-[EXECUTION] [01:03:56] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:04:26] Performed tensorflow.keras.optimizers.Adam() on input and will now save energy data.
-[EXECUTION] [01:04:26] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7f8fc1afc040> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
-Instructions for updating:
-Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7f9081657ee0> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:04:26] Result: {'tensorflow.keras.optimizers.Adam()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
-[EXECUTION] [01:04:26] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:04:26] Waiting before running function for 10 seconds.
-[EXECUTION] [01:04:36] Sensors started
-[STABLE CHECK] [01:04:39] Success: temperature is below threshold.
-[MAIN] [01:04:39] Terminated sensors
-[STABLE CHECK] [01:04:39] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:04:59] Success: Machine is stable.
-[EXECUTION] [01:04:59] Successfully reached stable state
-[EXECUTION] [01:04:59] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:05:29] Performed tensorflow.keras.metrics.Mean() on input and will now save energy data.
-[EXECUTION] [01:05:29] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:05:29] Result: {'tensorflow.keras.metrics.Mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"
-[EXECUTION] [01:05:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:05:29] Waiting before running function for 10 seconds.
-[EXECUTION] [01:05:39] Sensors started
-[STABLE CHECK] [01:05:42] Success: temperature is below threshold.
-[MAIN] [01:05:42] Terminated sensors
-[STABLE CHECK] [01:05:42] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:06:02] Success: Machine is stable.
-[EXECUTION] [01:06:02] Successfully reached stable state
-[EXECUTION] [01:06:02] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:06:32] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy() on input and will now save energy data.
-[EXECUTION] [01:06:32] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [01:06:32] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy()': {'energy_data': {'cpu': '{"columns":["time_
-[EXECUTION] [01:06:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:06:32] Waiting before running function for 10 seconds.
-[EXECUTION] [01:06:43] Sensors started
-[STABLE CHECK] [01:06:46] Success: temperature is below threshold.
-[MAIN] [01:06:46] Terminated sensors
-[STABLE CHECK] [01:06:46] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:07:06] Success: Machine is stable.
-[EXECUTION] [01:07:06] Successfully reached stable state
-[EXECUTION] [01:07:06] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:07:36] Performed tensorflow.keras.metrics.Mean.reset_states() on input and will now save energy data.
-[EXECUTION] [01:07:36] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 17576.0
-outside_object_size
-[EXECUTION] [01:07:36] Result: {'tensorflow.keras.metrics.Mean.reset_states()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [01:07:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:07:36] Waiting before running function for 10 seconds.
-[EXECUTION] [01:07:46] Sensors started
-[STABLE CHECK] [01:07:49] Success: temperature is below threshold.
-[MAIN] [01:07:49] Terminated sensors
-[STABLE CHECK] [01:07:49] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:08:09] Success: Machine is stable.
-[EXECUTION] [01:08:09] Successfully reached stable state
-[EXECUTION] [01:08:09] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:08:39] Performed tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states() on input and will now save energy data.
-[EXECUTION] [01:08:39] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [01:08:39] Result: {'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()': {'energy_data': {'cpu': '{"col
-[EXECUTION] [01:08:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:08:40] Waiting before running function for 10 seconds.
-[EXECUTION] [01:08:50] Sensors started
-[STABLE CHECK] [01:08:54] Temperature too high: mean is 40.35, which is greater than 40
-[STABLE CHECK] [01:08:54] Temperature is too high.
-[STABLE CHECK] [01:08:54] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [01:09:14] Success: temperature is below threshold.
-[MAIN] [01:09:14] Terminated sensors
-[STABLE CHECK] [01:09:14] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:09:34] Success: Machine is stable.
-[EXECUTION] [01:09:34] Successfully reached stable state
-[EXECUTION] [01:09:34] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:10:05] Performed tensorflow.keras.Model() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 77008.0
-4-size 77008.0
-++++++5++++++
-5-size 77008.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 66344.0
-outside_object_size
-[EXECUTION] [01:10:23] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
-[EXECUTION] [01:10:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:10:24] Waiting before running function for 10 seconds.
-[EXECUTION] [01:10:34] Sensors started
-[STABLE CHECK] [01:10:37] Success: temperature is below threshold.
-[MAIN] [01:10:37] Terminated sensors
-[STABLE CHECK] [01:10:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:10:57] Success: Machine is stable.
-[EXECUTION] [01:10:57] Successfully reached stable state
-[EXECUTION] [01:10:57] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:11:27] Performed tensorflow.keras.optimizers.Adam.apply_gradients() on input and will now save energy data.
-2023-12-08 01:12:48.931434: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8100
-2023-12-08 01:12:50.078414: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
-[EXECUTION] [01:11:27] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.optimizers.Adam.apply_gradients()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-++++++6++++++ this __dict__ descriptor does not support '_DictWrapper' objects
-6-size 48.0
-outside_object_size
-[EXECUTION] [01:11:28] Result: {'tensorflow.keras.optimizers.Adam.apply_gradients()': {'energy_data': {'cpu': '{"columns":["time_el
-[EXECUTION] [01:11:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-[EXECUTION] [01:11:29] Waiting before running function for 10 seconds.
-[EXECUTION] [01:11:39] Sensors started
-[STABLE CHECK] [01:11:42] Success: temperature is below threshold.
-[MAIN] [01:11:42] Terminated sensors
-[STABLE CHECK] [01:11:42] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [01:12:02] Success: Machine is stable.
-[EXECUTION] [01:12:02] Successfully reached stable state
-[EXECUTION] [01:12:02] waiting idle for 30 seconds after function execution
-[EXECUTION] [01:12:32] Performed tensorflow.keras.Model() on input and will now save energy data.
-[EXECUTION] [01:12:32] skipping call added, current list is: ['tensorflow.keras.layers.Conv2D()', 'tensorflow.keras.layers.Flatten()', 'tensorflow.keras.layers.Dense()', 'tensorflow.keras.losses.SparseCategoricalCrossentropy()', 'tensorflow.keras.optimizers.Adam()', 'tensorflow.keras.metrics.Mean()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy()', 'tensorflow.keras.metrics.Mean.reset_states()', 'tensorflow.keras.metrics.SparseCategoricalAccuracy.reset_states()', 'tensorflow.keras.optimizers.Adam.apply_gradients()', 'tensorflow.keras.Model()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 77040.0
-4-size 77040.0
-++++++5++++++
-5-size 77040.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 66344.0
-outside_object_size
-[EXECUTION] [01:12:48] Result: {'tensorflow.keras.Model()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
-[EXECUTION] [01:12:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-1.json
-Epoch 1, Loss: 0.1389063447713852, Accuracy: 95.8066635131836, Test Loss: 0.059651561081409454, Test Accuracy: 97.8699951171875
-Epoch 2, Loss: 0.04474438354372978, Accuracy: 98.63166809082031, Test Loss: 0.05296403542160988, Test Accuracy: 98.12999725341797
-Epoch 3, Loss: 0.023085108026862144, Accuracy: 99.26000213623047, Test Loss: 0.04544629156589508, Test Accuracy: 98.54000091552734
-Epoch 4, Loss: 0.01359483040869236, Accuracy: 99.55999755859375, Test Loss: 0.052878450602293015, Test Accuracy: 98.54999542236328
-Epoch 5, Loss: 0.010441726073622704, Accuracy: 99.62833404541016, Test Loss: 0.060082241892814636, Test Accuracy: 98.44999694824219
+[EXECUTION] [14:30:00] Result: {'tensorflow.data.Dataset.from_tensor_slices((x_train, y_train)).shuffle(10000).batch()': {'energy_d
+[EXECUTION] [14:30:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/advanced/experiment-5.json
+Epoch 1, Loss: 0.13770443201065063, Accuracy: 95.8983383178711, Test Loss: 0.06540901958942413, Test Accuracy: 97.8499984741211
+Epoch 2, Loss: 0.04410073906183243, Accuracy: 98.6433334350586, Test Loss: 0.06077486276626587, Test Accuracy: 98.05999755859375
+Epoch 3, Loss: 0.023273449391126633, Accuracy: 99.22666931152344, Test Loss: 0.05666548013687134, Test Accuracy: 98.27999877929688
+Epoch 4, Loss: 0.013896619901061058, Accuracy: 99.5616683959961, Test Loss: 0.0549699142575264, Test Accuracy: 98.3699951171875
+Epoch 5, Loss: 0.009930071420967579, Accuracy: 99.65666198730469, Test Loss: 0.07855831831693649, Test Accuracy: 98.16999816894531

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/cots_detector/crown_of_thorns_starfish_detection_pipeline_method-level.py", line 41, in <module>
+    img = cv2.imread(filenames[0])
+IndexError: list index out of range

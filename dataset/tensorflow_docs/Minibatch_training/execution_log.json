@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/google-research_tensorflow_constrained_optimization_patched/examples/jupyter/Minibatch_training_method-level.py", line 145
+    print("Proportion of positive protected group examples in training set = %.3f"
+    ^
+SyntaxError: invalid syntax

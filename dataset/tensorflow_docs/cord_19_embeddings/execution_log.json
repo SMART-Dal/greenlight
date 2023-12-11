@@ -1,0 +1,2776 @@
+2023-12-10 21:34:46.220575: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+2023-12-10 21:34:46.709127: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 21:34:47.121042: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:35:40.391793: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:35:42.394243: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:36:45.721780: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:37:50.292173: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:37:51.986739: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:38:55.339195: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:39:59.686470: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:40:01.353057: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:41:04.867011: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:42:09.215435: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:42:10.856155: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [21:34:47] Waiting before running function for 10 seconds.
+[EXECUTION] [21:34:57] Sensors started
+[STABLE CHECK] [21:35:00] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [21:35:00] Temperature is too high.
+[STABLE CHECK] [21:35:00] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [21:35:20] Success: temperature is below threshold.
+[MAIN] [21:35:20] Terminated sensors
+[STABLE CHECK] [21:35:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:35:40] Success: Machine is stable.
+[EXECUTION] [21:35:40] Successfully reached stable state
+[EXECUTION] [21:35:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:36:12] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:36:12] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:36:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:36:12] Waiting before running function for 10 seconds.
+[EXECUTION] [21:36:22] Sensors started
+[STABLE CHECK] [21:36:25] Success: temperature is below threshold.
+[MAIN] [21:36:25] Terminated sensors
+[STABLE CHECK] [21:36:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:36:45] Success: Machine is stable.
+[EXECUTION] [21:36:45] Successfully reached stable state
+[EXECUTION] [21:36:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:37:17] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:37:17] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:37:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 0: loss 0.817, accuracy 0.669
+[EXECUTION] [21:37:17] Waiting before running function for 10 seconds.
+[EXECUTION] [21:37:27] Sensors started
+[STABLE CHECK] [21:37:30] Success: temperature is below threshold.
+[MAIN] [21:37:30] Terminated sensors
+[STABLE CHECK] [21:37:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:37:50] Success: Machine is stable.
+[EXECUTION] [21:37:50] Successfully reached stable state
+[EXECUTION] [21:37:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:38:22] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:38:22] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:38:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:38:22] Waiting before running function for 10 seconds.
+[EXECUTION] [21:38:32] Sensors started
+[STABLE CHECK] [21:38:35] Success: temperature is below threshold.
+[MAIN] [21:38:35] Terminated sensors
+[STABLE CHECK] [21:38:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:38:55] Success: Machine is stable.
+[EXECUTION] [21:38:55] Successfully reached stable state
+[EXECUTION] [21:38:56] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:39:26] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:39:26] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:39:26] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 200: loss 0.729, accuracy 0.714
+[EXECUTION] [21:39:26] Waiting before running function for 10 seconds.
+[EXECUTION] [21:39:36] Sensors started
+[STABLE CHECK] [21:39:39] Success: temperature is below threshold.
+[MAIN] [21:39:39] Terminated sensors
+[STABLE CHECK] [21:39:39] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:39:59] Success: Machine is stable.
+[EXECUTION] [21:39:59] Successfully reached stable state
+[EXECUTION] [21:40:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:40:31] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:40:31] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:40:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:40:31] Waiting before running function for 10 seconds.
+[EXECUTION] [21:40:41] Sensors started
+[STABLE CHECK] [21:40:44] Success: temperature is below threshold.
+[MAIN] [21:40:44] Terminated sensors
+[STABLE CHECK] [21:40:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:41:04] Success: Machine is stable.
+[EXECUTION] [21:41:04] Successfully reached stable state
+[EXECUTION] [21:41:05] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:41:35] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:41:35] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:41:35] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 400: loss 0.677, accuracy 0.737
+[EXECUTION] [21:41:35] Waiting before running function for 10 seconds.
+[EXECUTION] [21:41:46] Sensors started
+[STABLE CHECK] [21:41:49] Success: temperature is below threshold.
+[MAIN] [21:41:49] Terminated sensors
+[STABLE CHECK] [21:41:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:42:09] Success: Machine is stable.
+[EXECUTION] [21:42:09] Successfully reached stable state
+[EXECUTION] [21:42:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:42:40] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:42:40] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:42:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:42:40] Waiting before running function for 10 seconds.2023-12-10 21:43:14.192352: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:44:18.488952: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:44:20.091109: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:45:23.413078: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:46:27.740874: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:46:29.352758: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:47:32.672919: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:48:37.049418: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:48:38.675123: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:49:41.981524: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+
+[EXECUTION] [21:42:51] Sensors started
+[STABLE CHECK] [21:42:54] Success: temperature is below threshold.
+[MAIN] [21:42:54] Terminated sensors
+[STABLE CHECK] [21:42:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:43:14] Success: Machine is stable.
+[EXECUTION] [21:43:14] Successfully reached stable state
+[EXECUTION] [21:43:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:43:45] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:43:45] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:43:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 600: loss 0.650, accuracy 0.754
+[EXECUTION] [21:43:45] Waiting before running function for 10 seconds.
+[EXECUTION] [21:43:55] Sensors started
+[STABLE CHECK] [21:43:58] Success: temperature is below threshold.
+[MAIN] [21:43:58] Terminated sensors
+[STABLE CHECK] [21:43:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:44:18] Success: Machine is stable.
+[EXECUTION] [21:44:18] Successfully reached stable state
+[EXECUTION] [21:44:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:44:50] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:44:50] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:44:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:44:50] Waiting before running function for 10 seconds.
+[EXECUTION] [21:45:00] Sensors started
+[STABLE CHECK] [21:45:03] Success: temperature is below threshold.
+[MAIN] [21:45:03] Terminated sensors
+[STABLE CHECK] [21:45:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:45:23] Success: Machine is stable.
+[EXECUTION] [21:45:23] Successfully reached stable state
+[EXECUTION] [21:45:24] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:45:54] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:45:54] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:45:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 800: loss 0.629, accuracy 0.758
+[EXECUTION] [21:45:54] Waiting before running function for 10 seconds.
+[EXECUTION] [21:46:04] Sensors started
+[STABLE CHECK] [21:46:07] Success: temperature is below threshold.
+[MAIN] [21:46:07] Terminated sensors
+[STABLE CHECK] [21:46:07] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:46:27] Success: Machine is stable.
+[EXECUTION] [21:46:27] Successfully reached stable state
+[EXECUTION] [21:46:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:46:59] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:46:59] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:46:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:46:59] Waiting before running function for 10 seconds.
+[EXECUTION] [21:47:09] Sensors started
+[STABLE CHECK] [21:47:12] Success: temperature is below threshold.
+[MAIN] [21:47:12] Terminated sensors
+[STABLE CHECK] [21:47:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:47:32] Success: Machine is stable.
+[EXECUTION] [21:47:32] Successfully reached stable state
+[EXECUTION] [21:47:33] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:48:03] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:48:03] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:48:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 1000: loss 0.621, accuracy 0.755
+[EXECUTION] [21:48:03] Waiting before running function for 10 seconds.
+[EXECUTION] [21:48:13] Sensors started
+[STABLE CHECK] [21:48:16] Success: temperature is below threshold.
+[MAIN] [21:48:16] Terminated sensors
+[STABLE CHECK] [21:48:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:48:36] Success: Machine is stable.
+[EXECUTION] [21:48:36] Successfully reached stable state
+[EXECUTION] [21:48:38] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:49:08] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:49:08] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:49:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:49:08] Waiting before running function for 10 seconds.
+[EXECUTION] [21:49:18] Sensors started
+[STABLE CHECK] [21:49:21] Success: temperature is below threshold.
+[MAIN] [21:49:21] Terminated sensors
+[STABLE CHECK] [21:49:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:49:41] Success: Machine is stable.
+[EXECUTION] [21:49:41] Successfully reached stable state
+[EXECUTION] [21:49:42] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:50:12] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:50:13] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:50:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 1200: loss 0.601, accuracy 0.768
+[EXECUTION] [21:50:13] Waiting before running function for 10 seconds.
+[EXECUTION] [21:50:23] Sensors started
+[STABLE CHECK] [21:50:26] Success: temperature is below threshold.
+[MAIN] [21:50:26] Terminated sensors
+[STABLE CHECK] [21:50:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:50:46] Success: Machine is stable.
+2023-12-10 21:50:46.320535: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:50:47.951417: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:51:51.289596: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:52:55.674280: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:52:57.295721: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:54:00.621296: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:55:04.931765: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:55:06.553165: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:56:09.879320: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:57:14.280528: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:57:15.884788: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 21:58:19.209257: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[EXECUTION] [21:50:46] Successfully reached stable state
+[EXECUTION] [21:50:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:51:17] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:51:18] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:51:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:51:18] Waiting before running function for 10 seconds.
+[EXECUTION] [21:51:28] Sensors started
+[STABLE CHECK] [21:51:31] Success: temperature is below threshold.
+[MAIN] [21:51:31] Terminated sensors
+[STABLE CHECK] [21:51:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:51:51] Success: Machine is stable.
+[EXECUTION] [21:51:51] Successfully reached stable state
+[EXECUTION] [21:51:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:52:22] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:52:22] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:52:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 1400: loss 0.592, accuracy 0.778
+[EXECUTION] [21:52:22] Waiting before running function for 10 seconds.
+[EXECUTION] [21:52:32] Sensors started
+[STABLE CHECK] [21:52:35] Success: temperature is below threshold.
+[MAIN] [21:52:35] Terminated sensors
+[STABLE CHECK] [21:52:35] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:52:55] Success: Machine is stable.
+[EXECUTION] [21:52:55] Successfully reached stable state
+[EXECUTION] [21:52:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:53:27] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:53:27] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:53:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:53:27] Waiting before running function for 10 seconds.
+[EXECUTION] [21:53:37] Sensors started
+[STABLE CHECK] [21:53:40] Success: temperature is below threshold.
+[MAIN] [21:53:40] Terminated sensors
+[STABLE CHECK] [21:53:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:54:00] Success: Machine is stable.
+[EXECUTION] [21:54:00] Successfully reached stable state
+[EXECUTION] [21:54:01] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:54:31] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:54:31] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:54:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 1600: loss 0.586, accuracy 0.775
+[EXECUTION] [21:54:31] Waiting before running function for 10 seconds.
+[EXECUTION] [21:54:41] Sensors started
+[STABLE CHECK] [21:54:44] Success: temperature is below threshold.
+[MAIN] [21:54:44] Terminated sensors
+[STABLE CHECK] [21:54:44] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:55:04] Success: Machine is stable.
+[EXECUTION] [21:55:04] Successfully reached stable state
+[EXECUTION] [21:55:06] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:55:36] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:55:36] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:55:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:55:36] Waiting before running function for 10 seconds.
+[EXECUTION] [21:55:46] Sensors started
+[STABLE CHECK] [21:55:49] Success: temperature is below threshold.
+[MAIN] [21:55:49] Terminated sensors
+[STABLE CHECK] [21:55:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:56:09] Success: Machine is stable.
+[EXECUTION] [21:56:09] Successfully reached stable state
+[EXECUTION] [21:56:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:56:40] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:56:40] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:56:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 1800: loss 0.579, accuracy 0.777
+[EXECUTION] [21:56:40] Waiting before running function for 10 seconds.
+[EXECUTION] [21:56:51] Sensors started
+[STABLE CHECK] [21:56:54] Success: temperature is below threshold.
+[MAIN] [21:56:54] Terminated sensors
+[STABLE CHECK] [21:56:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:57:14] Success: Machine is stable.
+[EXECUTION] [21:57:14] Successfully reached stable state
+[EXECUTION] [21:57:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:57:45] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:57:45] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:57:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:57:45] Waiting before running function for 10 seconds.
+[EXECUTION] [21:57:56] Sensors started
+[STABLE CHECK] [21:57:59] Success: temperature is below threshold.
+[MAIN] [21:57:59] Terminated sensors
+[STABLE CHECK] [21:57:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:58:19] Success: Machine is stable.
+[EXECUTION] [21:58:19] Successfully reached stable state
+[EXECUTION] [21:58:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:58:50] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+2023-12-10 21:59:23.554997: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 21:59:25.180794: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:00:28.520886: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:01:33.101845: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:01:34.587356: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:02:37.919448: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:03:42.322149: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:03:43.900036: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:04:47.221846: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:05:51.629793: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:05:53.237658: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:58:50] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [21:58:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 2000: loss 0.573, accuracy 0.780
+[EXECUTION] [21:58:50] Waiting before running function for 10 seconds.
+[EXECUTION] [21:59:00] Sensors started
+[STABLE CHECK] [21:59:03] Success: temperature is below threshold.
+[MAIN] [21:59:03] Terminated sensors
+[STABLE CHECK] [21:59:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [21:59:23] Success: Machine is stable.
+[EXECUTION] [21:59:23] Successfully reached stable state
+[EXECUTION] [21:59:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [21:59:55] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [21:59:55] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [21:59:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [21:59:55] Waiting before running function for 10 seconds.
+[EXECUTION] [22:00:05] Sensors started
+[STABLE CHECK] [22:00:08] Success: temperature is below threshold.
+[MAIN] [22:00:08] Terminated sensors
+[STABLE CHECK] [22:00:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:00:28] Success: Machine is stable.
+[EXECUTION] [22:00:28] Successfully reached stable state
+[EXECUTION] [22:00:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:00:59] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:00:59] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:00:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 2200: loss 0.566, accuracy 0.784
+[EXECUTION] [22:00:59] Waiting before running function for 10 seconds.
+[EXECUTION] [22:01:09] Sensors started
+[STABLE CHECK] [22:01:12] Success: temperature is below threshold.
+[MAIN] [22:01:12] Terminated sensors
+[STABLE CHECK] [22:01:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:01:32] Success: Machine is stable.
+[EXECUTION] [22:01:32] Successfully reached stable state
+[EXECUTION] [22:01:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:02:04] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:02:04] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:02:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:02:04] Waiting before running function for 10 seconds.
+[EXECUTION] [22:02:14] Sensors started
+[STABLE CHECK] [22:02:17] Success: temperature is below threshold.
+[MAIN] [22:02:17] Terminated sensors
+[STABLE CHECK] [22:02:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:02:37] Success: Machine is stable.
+[EXECUTION] [22:02:37] Successfully reached stable state
+[EXECUTION] [22:02:38] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:03:09] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:03:09] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:03:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 2400: loss 0.569, accuracy 0.774
+[EXECUTION] [22:03:09] Waiting before running function for 10 seconds.
+[EXECUTION] [22:03:19] Sensors started
+[STABLE CHECK] [22:03:22] Success: temperature is below threshold.
+[MAIN] [22:03:22] Terminated sensors
+[STABLE CHECK] [22:03:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:03:42] Success: Machine is stable.
+[EXECUTION] [22:03:42] Successfully reached stable state
+[EXECUTION] [22:03:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:04:13] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:04:13] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:04:13] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:04:13] Waiting before running function for 10 seconds.
+[EXECUTION] [22:04:24] Sensors started
+[STABLE CHECK] [22:04:27] Success: temperature is below threshold.
+[MAIN] [22:04:27] Terminated sensors
+[STABLE CHECK] [22:04:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:04:47] Success: Machine is stable.
+[EXECUTION] [22:04:47] Successfully reached stable state
+[EXECUTION] [22:04:48] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:05:18] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:05:18] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:05:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 2600: loss 0.564, accuracy 0.780
+[EXECUTION] [22:05:18] Waiting before running function for 10 seconds.
+[EXECUTION] [22:05:28] Sensors started
+[STABLE CHECK] [22:05:31] Success: temperature is below threshold.
+[MAIN] [22:05:31] Terminated sensors
+[STABLE CHECK] [22:05:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:05:51] Success: Machine is stable.
+[EXECUTION] [22:05:51] Successfully reached stable state
+[EXECUTION] [22:05:53] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:06:23] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+2023-12-10 22:06:56.574332: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:08:00.956121: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:08:02.501543: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:09:05.833045: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:10:30.240964: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:10:31.876129: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:11:35.236437: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:12:39.590955: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:12:41.204129: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:13:44.516850: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[EXECUTION] [22:06:23] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:06:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:06:23] Waiting before running function for 10 seconds.
+[EXECUTION] [22:06:33] Sensors started
+[STABLE CHECK] [22:06:36] Success: temperature is below threshold.
+[MAIN] [22:06:36] Terminated sensors
+[STABLE CHECK] [22:06:36] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:06:56] Success: Machine is stable.
+[EXECUTION] [22:06:56] Successfully reached stable state
+[EXECUTION] [22:06:57] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:07:27] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:07:27] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:07:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 2800: loss 0.561, accuracy 0.788
+[EXECUTION] [22:07:27] Waiting before running function for 10 seconds.
+[EXECUTION] [22:07:37] Sensors started
+[STABLE CHECK] [22:07:40] Success: temperature is below threshold.
+[MAIN] [22:07:40] Terminated sensors
+[STABLE CHECK] [22:07:40] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:08:00] Success: Machine is stable.
+[EXECUTION] [22:08:00] Successfully reached stable state
+[EXECUTION] [22:08:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:08:32] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:08:32] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:08:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:08:32] Waiting before running function for 10 seconds.
+[EXECUTION] [22:08:42] Sensors started
+[STABLE CHECK] [22:08:45] Success: temperature is below threshold.
+[MAIN] [22:08:45] Terminated sensors
+[STABLE CHECK] [22:08:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:09:05] Success: Machine is stable.
+[EXECUTION] [22:09:05] Successfully reached stable state
+[EXECUTION] [22:09:06] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:09:36] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:09:36] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:09:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 3000: loss 0.576, accuracy 0.765
+[EXECUTION] [22:09:36] Waiting before running function for 10 seconds.
+[EXECUTION] [22:09:47] Sensors started
+[STABLE CHECK] [22:09:50] Success: temperature is below threshold.
+[MAIN] [22:09:50] Terminated sensors
+[STABLE CHECK] [22:09:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:10:10] Not stable: stdev/mean is 0.03095229840804206, which is greater than 0.03
+[STABLE CHECK] [22:10:10] Machine is not stable yet.
+[STABLE CHECK] [22:10:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:10:30] Success: Machine is stable.
+[EXECUTION] [22:10:30] Successfully reached stable state
+[EXECUTION] [22:10:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:11:01] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:11:01] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:11:01] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:11:01] Waiting before running function for 10 seconds.
+[EXECUTION] [22:11:12] Sensors started
+[STABLE CHECK] [22:11:15] Success: temperature is below threshold.
+[MAIN] [22:11:15] Terminated sensors
+[STABLE CHECK] [22:11:15] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:11:35] Success: Machine is stable.
+[EXECUTION] [22:11:35] Successfully reached stable state
+[EXECUTION] [22:11:36] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:12:06] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:12:06] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:12:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 3200: loss 0.551, accuracy 0.790
+[EXECUTION] [22:12:06] Waiting before running function for 10 seconds.
+[EXECUTION] [22:12:16] Sensors started
+[STABLE CHECK] [22:12:19] Success: temperature is below threshold.
+[MAIN] [22:12:19] Terminated sensors
+[STABLE CHECK] [22:12:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:12:39] Success: Machine is stable.
+[EXECUTION] [22:12:39] Successfully reached stable state
+[EXECUTION] [22:12:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:13:11] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:13:11] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:13:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:13:11] Waiting before running function for 10 seconds.
+[EXECUTION] [22:13:21] Sensors started
+[STABLE CHECK] [22:13:24] Success: temperature is below threshold.
+[MAIN] [22:13:24] Terminated sensors
+[STABLE CHECK] [22:13:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:13:44] Success: Machine is stable.
+[EXECUTION] [22:13:44] Successfully reached stable state
+[EXECUTION] [22:13:45] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:14:15] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+2023-12-10 22:14:48.836933: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:14:50.454787: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:15:53.791877: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:16:58.097577: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:16:59.723505: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:18:03.037568: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:19:07.436341: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:19:09.070572: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:20:12.401321: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:21:16.907943: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:21:18.557067: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [22:14:15] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:14:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 3400: loss 0.551, accuracy 0.782
+[EXECUTION] [22:14:15] Waiting before running function for 10 seconds.
+[EXECUTION] [22:14:25] Sensors started
+[STABLE CHECK] [22:14:28] Success: temperature is below threshold.
+[MAIN] [22:14:28] Terminated sensors
+[STABLE CHECK] [22:14:28] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:14:48] Success: Machine is stable.
+[EXECUTION] [22:14:48] Successfully reached stable state
+[EXECUTION] [22:14:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:15:20] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:15:20] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:15:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:15:20] Waiting before running function for 10 seconds.
+[EXECUTION] [22:15:30] Sensors started
+[STABLE CHECK] [22:15:33] Success: temperature is below threshold.
+[MAIN] [22:15:33] Terminated sensors
+[STABLE CHECK] [22:15:33] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:15:53] Success: Machine is stable.
+[EXECUTION] [22:15:53] Successfully reached stable state
+[EXECUTION] [22:15:54] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:16:24] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:16:24] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:16:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 3600: loss 0.550, accuracy 0.784
+[EXECUTION] [22:16:24] Waiting before running function for 10 seconds.
+[EXECUTION] [22:16:34] Sensors started
+[STABLE CHECK] [22:16:37] Success: temperature is below threshold.
+[MAIN] [22:16:37] Terminated sensors
+[STABLE CHECK] [22:16:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:16:57] Success: Machine is stable.
+[EXECUTION] [22:16:57] Successfully reached stable state
+[EXECUTION] [22:16:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:17:29] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:17:29] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:17:29] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:17:29] Waiting before running function for 10 seconds.
+[EXECUTION] [22:17:39] Sensors started
+[STABLE CHECK] [22:17:42] Success: temperature is below threshold.
+[MAIN] [22:17:42] Terminated sensors
+[STABLE CHECK] [22:17:42] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:18:02] Success: Machine is stable.
+[EXECUTION] [22:18:02] Successfully reached stable state
+[EXECUTION] [22:18:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:18:34] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:18:34] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:18:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 3800: loss 0.555, accuracy 0.782
+[EXECUTION] [22:18:34] Waiting before running function for 10 seconds.
+[EXECUTION] [22:18:44] Sensors started
+[STABLE CHECK] [22:18:47] Success: temperature is below threshold.
+[MAIN] [22:18:47] Terminated sensors
+[STABLE CHECK] [22:18:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:19:07] Success: Machine is stable.
+[EXECUTION] [22:19:07] Successfully reached stable state
+[EXECUTION] [22:19:09] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:19:39] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:19:39] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:19:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:19:39] Waiting before running function for 10 seconds.
+[EXECUTION] [22:19:49] Sensors started
+[STABLE CHECK] [22:19:52] Success: temperature is below threshold.
+[MAIN] [22:19:52] Terminated sensors
+[STABLE CHECK] [22:19:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:20:12] Success: Machine is stable.
+[EXECUTION] [22:20:12] Successfully reached stable state
+[EXECUTION] [22:20:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:20:43] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:20:43] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:20:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 4000: loss 0.554, accuracy 0.779
+[EXECUTION] [22:20:43] Waiting before running function for 10 seconds.
+[EXECUTION] [22:20:53] Sensors started
+[STABLE CHECK] [22:20:56] Success: temperature is below threshold.
+[MAIN] [22:20:56] Terminated sensors
+[STABLE CHECK] [22:20:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:21:16] Success: Machine is stable.
+[EXECUTION] [22:21:16] Successfully reached stable state
+[EXECUTION] [22:21:18] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:21:48] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:21:48] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+2023-12-10 22:22:21.889461: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:23:26.297254: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:23:27.931852: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:24:31.263799: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:25:35.638960: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:25:37.289016: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:26:40.629860: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:27:45.013566: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:27:46.579849: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:28:49.882385: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[EXECUTION] [22:21:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:21:48] Waiting before running function for 10 seconds.
+[EXECUTION] [22:21:58] Sensors started
+[STABLE CHECK] [22:22:01] Success: temperature is below threshold.
+[MAIN] [22:22:01] Terminated sensors
+[STABLE CHECK] [22:22:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:22:21] Success: Machine is stable.
+[EXECUTION] [22:22:21] Successfully reached stable state
+[EXECUTION] [22:22:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:22:52] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:22:52] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:22:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 4200: loss 0.545, accuracy 0.793
+[EXECUTION] [22:22:53] Waiting before running function for 10 seconds.
+[EXECUTION] [22:23:03] Sensors started
+[STABLE CHECK] [22:23:06] Success: temperature is below threshold.
+[MAIN] [22:23:06] Terminated sensors
+[STABLE CHECK] [22:23:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:23:26] Success: Machine is stable.
+[EXECUTION] [22:23:26] Successfully reached stable state
+[EXECUTION] [22:23:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:23:57] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:23:57] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:23:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:23:57] Waiting before running function for 10 seconds.
+[EXECUTION] [22:24:08] Sensors started
+[STABLE CHECK] [22:24:11] Success: temperature is below threshold.
+[MAIN] [22:24:11] Terminated sensors
+[STABLE CHECK] [22:24:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:24:31] Success: Machine is stable.
+[EXECUTION] [22:24:31] Successfully reached stable state
+[EXECUTION] [22:24:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:25:02] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:25:02] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:25:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 4400: loss 0.543, accuracy 0.797
+[EXECUTION] [22:25:02] Waiting before running function for 10 seconds.
+[EXECUTION] [22:25:12] Sensors started
+[STABLE CHECK] [22:25:15] Success: temperature is below threshold.
+[MAIN] [22:25:15] Terminated sensors
+[STABLE CHECK] [22:25:15] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:25:35] Success: Machine is stable.
+[EXECUTION] [22:25:35] Successfully reached stable state
+[EXECUTION] [22:25:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:26:07] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:26:07] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:26:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:26:07] Waiting before running function for 10 seconds.
+[EXECUTION] [22:26:17] Sensors started
+[STABLE CHECK] [22:26:20] Success: temperature is below threshold.
+[MAIN] [22:26:20] Terminated sensors
+[STABLE CHECK] [22:26:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:26:40] Success: Machine is stable.
+[EXECUTION] [22:26:40] Successfully reached stable state
+[EXECUTION] [22:26:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:27:11] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:27:11] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:27:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 4600: loss 0.548, accuracy 0.785
+[EXECUTION] [22:27:11] Waiting before running function for 10 seconds.
+[EXECUTION] [22:27:21] Sensors started
+[STABLE CHECK] [22:27:24] Success: temperature is below threshold.
+[MAIN] [22:27:24] Terminated sensors
+[STABLE CHECK] [22:27:24] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:27:44] Success: Machine is stable.
+[EXECUTION] [22:27:44] Successfully reached stable state
+[EXECUTION] [22:27:46] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:28:16] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:28:16] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:28:16] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:28:16] Waiting before running function for 10 seconds.
+[EXECUTION] [22:28:26] Sensors started
+[STABLE CHECK] [22:28:29] Success: temperature is below threshold.
+[MAIN] [22:28:29] Terminated sensors
+[STABLE CHECK] [22:28:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:28:49] Success: Machine is stable.
+[EXECUTION] [22:28:49] Successfully reached stable state
+[EXECUTION] [22:28:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:29:20] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:29:21] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:29:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 4800: loss 0.548, accuracy 0.781
+[EXECUTION] [22:29:21] Waiting before running function for 10 seconds.
+[EXECUTION] [22:29:31] Sensors started
+2023-12-10 22:30:14.346049: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:30:15.980444: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:31:19.321975: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:32:23.681824: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:32:25.266832: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:33:28.606034: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:34:33.001317: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:34:34.579049: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:35:37.931013: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:36:42.379026: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:36:43.968860: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[STABLE CHECK] [22:29:34] Success: temperature is below threshold.
+[MAIN] [22:29:34] Terminated sensors
+[STABLE CHECK] [22:29:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:29:54] Not stable: stdev/mean is 0.10658351169290295, which is greater than 0.03
+[STABLE CHECK] [22:29:54] Machine is not stable yet.
+[STABLE CHECK] [22:29:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:30:14] Success: Machine is stable.
+[EXECUTION] [22:30:14] Successfully reached stable state
+[EXECUTION] [22:30:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:30:46] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:30:46] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:30:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:30:46] Waiting before running function for 10 seconds.
+[EXECUTION] [22:30:56] Sensors started
+[STABLE CHECK] [22:30:59] Success: temperature is below threshold.
+[MAIN] [22:30:59] Terminated sensors
+[STABLE CHECK] [22:30:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:31:19] Success: Machine is stable.
+[EXECUTION] [22:31:19] Successfully reached stable state
+[EXECUTION] [22:31:20] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:31:50] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:31:50] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:31:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 5000: loss 0.552, accuracy 0.780
+[EXECUTION] [22:31:50] Waiting before running function for 10 seconds.
+[EXECUTION] [22:32:00] Sensors started
+[STABLE CHECK] [22:32:03] Success: temperature is below threshold.
+[MAIN] [22:32:03] Terminated sensors
+[STABLE CHECK] [22:32:03] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:32:23] Success: Machine is stable.
+[EXECUTION] [22:32:23] Successfully reached stable state
+[EXECUTION] [22:32:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:32:55] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:32:55] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:32:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:32:55] Waiting before running function for 10 seconds.
+[EXECUTION] [22:33:05] Sensors started
+[STABLE CHECK] [22:33:08] Success: temperature is below threshold.
+[MAIN] [22:33:08] Terminated sensors
+[STABLE CHECK] [22:33:08] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:33:28] Success: Machine is stable.
+[EXECUTION] [22:33:28] Successfully reached stable state
+[EXECUTION] [22:33:29] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:33:59] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:33:59] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:33:59] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 5200: loss 0.554, accuracy 0.784
+[EXECUTION] [22:33:59] Waiting before running function for 10 seconds.
+[EXECUTION] [22:34:09] Sensors started
+[STABLE CHECK] [22:34:12] Success: temperature is below threshold.
+[MAIN] [22:34:12] Terminated sensors
+[STABLE CHECK] [22:34:12] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:34:32] Success: Machine is stable.
+[EXECUTION] [22:34:32] Successfully reached stable state
+[EXECUTION] [22:34:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:35:04] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:35:04] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:35:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:35:04] Waiting before running function for 10 seconds.
+[EXECUTION] [22:35:14] Sensors started
+[STABLE CHECK] [22:35:17] Success: temperature is below threshold.
+[MAIN] [22:35:17] Terminated sensors
+[STABLE CHECK] [22:35:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:35:37] Success: Machine is stable.
+[EXECUTION] [22:35:37] Successfully reached stable state
+[EXECUTION] [22:35:39] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:36:09] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:36:09] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:36:09] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 5400: loss 0.544, accuracy 0.787
+[EXECUTION] [22:36:09] Waiting before running function for 10 seconds.
+[EXECUTION] [22:36:19] Sensors started
+[STABLE CHECK] [22:36:22] Success: temperature is below threshold.
+[MAIN] [22:36:22] Terminated sensors
+[STABLE CHECK] [22:36:22] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:36:42] Success: Machine is stable.
+[EXECUTION] [22:36:42] Successfully reached stable state
+[EXECUTION] [22:36:43] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:37:14] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:37:14] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:37:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:37:14] Waiting before running function for 10 seconds.
+[EXECUTION] [22:37:24] Sensors started
+2023-12-10 22:38:07.344316: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:39:11.840624: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:39:13.389923: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:40:16.712508: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:41:21.086670: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:41:22.698407: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:43:06.107230: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:44:10.512249: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:44:12.128077: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:45:15.460718: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[STABLE CHECK] [22:37:27] Success: temperature is below threshold.
+[MAIN] [22:37:27] Terminated sensors
+[STABLE CHECK] [22:37:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:37:47] Not stable: stdev/mean is 0.10843864207480203, which is greater than 0.03
+[STABLE CHECK] [22:37:47] Machine is not stable yet.
+[STABLE CHECK] [22:37:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:38:07] Success: Machine is stable.
+[EXECUTION] [22:38:07] Successfully reached stable state
+[EXECUTION] [22:38:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:38:38] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:38:38] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:38:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 5600: loss 0.540, accuracy 0.797
+[EXECUTION] [22:38:38] Waiting before running function for 10 seconds.
+[EXECUTION] [22:38:48] Sensors started
+[STABLE CHECK] [22:38:51] Success: temperature is below threshold.
+[MAIN] [22:38:51] Terminated sensors
+[STABLE CHECK] [22:38:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:39:11] Success: Machine is stable.
+[EXECUTION] [22:39:11] Successfully reached stable state
+[EXECUTION] [22:39:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:39:43] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:39:43] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:39:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:39:43] Waiting before running function for 10 seconds.
+[EXECUTION] [22:39:53] Sensors started
+[STABLE CHECK] [22:39:56] Success: temperature is below threshold.
+[MAIN] [22:39:56] Terminated sensors
+[STABLE CHECK] [22:39:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:40:16] Success: Machine is stable.
+[EXECUTION] [22:40:16] Successfully reached stable state
+[EXECUTION] [22:40:17] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:40:47] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:40:47] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:40:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 5800: loss 0.538, accuracy 0.792
+[EXECUTION] [22:40:47] Waiting before running function for 10 seconds.
+[EXECUTION] [22:40:57] Sensors started
+[STABLE CHECK] [22:41:00] Success: temperature is below threshold.
+[MAIN] [22:41:00] Terminated sensors
+[STABLE CHECK] [22:41:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:41:20] Success: Machine is stable.
+[EXECUTION] [22:41:20] Successfully reached stable state
+[EXECUTION] [22:41:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:41:52] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:41:52] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:41:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:41:52] Waiting before running function for 10 seconds.
+[EXECUTION] [22:42:02] Sensors started
+[STABLE CHECK] [22:42:05] Temperature too high: mean is 40.95, which is greater than 40
+[STABLE CHECK] [22:42:05] Temperature is too high.
+[STABLE CHECK] [22:42:05] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [22:42:25] Temperature too high: mean is 40.05, which is greater than 40
+[STABLE CHECK] [22:42:25] Temperature is too high.
+[STABLE CHECK] [22:42:25] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [22:42:45] Success: temperature is below threshold.
+[MAIN] [22:42:45] Terminated sensors
+[STABLE CHECK] [22:42:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:43:05] Success: Machine is stable.
+[EXECUTION] [22:43:05] Successfully reached stable state
+[EXECUTION] [22:43:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:43:37] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:43:37] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:43:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 6000: loss 0.536, accuracy 0.792
+[EXECUTION] [22:43:37] Waiting before running function for 10 seconds.
+[EXECUTION] [22:43:47] Sensors started
+[STABLE CHECK] [22:43:50] Success: temperature is below threshold.
+[MAIN] [22:43:50] Terminated sensors
+[STABLE CHECK] [22:43:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:44:10] Success: Machine is stable.
+[EXECUTION] [22:44:10] Successfully reached stable state
+[EXECUTION] [22:44:12] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:44:42] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:44:42] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:44:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:44:42] Waiting before running function for 10 seconds.
+[EXECUTION] [22:44:52] Sensors started
+[STABLE CHECK] [22:44:55] Success: temperature is below threshold.
+[MAIN] [22:44:55] Terminated sensors
+[STABLE CHECK] [22:44:55] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:45:15] Success: Machine is stable.
+[EXECUTION] [22:45:15] Successfully reached stable state
+[EXECUTION] [22:45:16] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:45:46] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+2023-12-10 22:46:19.829185: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:46:21.448490: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:47:24.801602: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:48:49.233817: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:48:50.876677: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:49:54.195051: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:50:58.540170: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:51:00.131718: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:52:03.482876: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:53:07.732181: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:53:09.376854: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [22:45:46] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:45:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 6200: loss 0.541, accuracy 0.789
+[EXECUTION] [22:45:46] Waiting before running function for 10 seconds.
+[EXECUTION] [22:45:56] Sensors started
+[STABLE CHECK] [22:45:59] Success: temperature is below threshold.
+[MAIN] [22:45:59] Terminated sensors
+[STABLE CHECK] [22:45:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:46:19] Success: Machine is stable.
+[EXECUTION] [22:46:19] Successfully reached stable state
+[EXECUTION] [22:46:21] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:46:51] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:46:51] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:46:51] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:46:51] Waiting before running function for 10 seconds.
+[EXECUTION] [22:47:01] Sensors started
+[STABLE CHECK] [22:47:04] Success: temperature is below threshold.
+[MAIN] [22:47:04] Terminated sensors
+[STABLE CHECK] [22:47:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:47:24] Success: Machine is stable.
+[EXECUTION] [22:47:24] Successfully reached stable state
+[EXECUTION] [22:47:25] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:47:55] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:47:55] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:47:55] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 6400: loss 0.545, accuracy 0.781
+[EXECUTION] [22:47:55] Waiting before running function for 10 seconds.
+[EXECUTION] [22:48:06] Sensors started
+[STABLE CHECK] [22:48:09] Success: temperature is below threshold.
+[MAIN] [22:48:09] Terminated sensors
+[STABLE CHECK] [22:48:09] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:48:29] Not stable: stdev/mean is 0.12574478531671576, which is greater than 0.03
+[STABLE CHECK] [22:48:29] Machine is not stable yet.
+[STABLE CHECK] [22:48:29] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:48:49] Success: Machine is stable.
+[EXECUTION] [22:48:49] Successfully reached stable state
+[EXECUTION] [22:48:50] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:49:20] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:49:20] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:49:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:49:20] Waiting before running function for 10 seconds.
+[EXECUTION] [22:49:31] Sensors started
+[STABLE CHECK] [22:49:34] Success: temperature is below threshold.
+[MAIN] [22:49:34] Terminated sensors
+[STABLE CHECK] [22:49:34] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:49:54] Success: Machine is stable.
+[EXECUTION] [22:49:54] Successfully reached stable state
+[EXECUTION] [22:49:55] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:50:25] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:50:25] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:50:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 6600: loss 0.548, accuracy 0.782
+[EXECUTION] [22:50:25] Waiting before running function for 10 seconds.
+[EXECUTION] [22:50:35] Sensors started
+[STABLE CHECK] [22:50:38] Success: temperature is below threshold.
+[MAIN] [22:50:38] Terminated sensors
+[STABLE CHECK] [22:50:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:50:58] Success: Machine is stable.
+[EXECUTION] [22:50:58] Successfully reached stable state
+[EXECUTION] [22:51:00] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:51:30] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:51:30] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:51:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:51:30] Waiting before running function for 10 seconds.
+[EXECUTION] [22:51:40] Sensors started
+[STABLE CHECK] [22:51:43] Success: temperature is below threshold.
+[MAIN] [22:51:43] Terminated sensors
+[STABLE CHECK] [22:51:43] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:52:03] Success: Machine is stable.
+[EXECUTION] [22:52:03] Successfully reached stable state
+[EXECUTION] [22:52:04] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:52:34] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:52:34] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:52:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 6800: loss 0.537, accuracy 0.793
+[EXECUTION] [22:52:34] Waiting before running function for 10 seconds.
+[EXECUTION] [22:52:44] Sensors started
+[STABLE CHECK] [22:52:47] Success: temperature is below threshold.
+[MAIN] [22:52:47] Terminated sensors
+[STABLE CHECK] [22:52:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:53:07] Success: Machine is stable.
+[EXECUTION] [22:53:07] Successfully reached stable state
+[EXECUTION] [22:53:09] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:53:39] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+2023-12-10 22:54:12.715991: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:55:17.110665: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:55:18.751848: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:56:22.089217: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:57:26.592482: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 22:57:28.243516: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 22:59:31.710839: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 23:00:36.146771: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 23:00:37.773504: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+[EXECUTION] [22:53:39] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:53:39] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:53:39] Waiting before running function for 10 seconds.
+[EXECUTION] [22:53:49] Sensors started
+[STABLE CHECK] [22:53:52] Success: temperature is below threshold.
+[MAIN] [22:53:52] Terminated sensors
+[STABLE CHECK] [22:53:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:54:12] Success: Machine is stable.
+[EXECUTION] [22:54:12] Successfully reached stable state
+[EXECUTION] [22:54:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:54:43] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:54:43] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:54:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 7000: loss 0.544, accuracy 0.785
+[EXECUTION] [22:54:43] Waiting before running function for 10 seconds.
+[EXECUTION] [22:54:53] Sensors started
+[STABLE CHECK] [22:54:56] Success: temperature is below threshold.
+[MAIN] [22:54:56] Terminated sensors
+[STABLE CHECK] [22:54:56] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:55:16] Success: Machine is stable.
+[EXECUTION] [22:55:16] Successfully reached stable state
+[EXECUTION] [22:55:18] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:55:48] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:55:48] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:55:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:55:48] Waiting before running function for 10 seconds.
+[EXECUTION] [22:55:58] Sensors started
+[STABLE CHECK] [22:56:01] Success: temperature is below threshold.
+[MAIN] [22:56:01] Terminated sensors
+[STABLE CHECK] [22:56:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:56:21] Success: Machine is stable.
+[EXECUTION] [22:56:21] Successfully reached stable state
+[EXECUTION] [22:56:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:56:53] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:56:53] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [22:56:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 7200: loss 0.535, accuracy 0.793
+[EXECUTION] [22:56:53] Waiting before running function for 10 seconds.
+[EXECUTION] [22:57:03] Sensors started
+[STABLE CHECK] [22:57:06] Success: temperature is below threshold.
+[MAIN] [22:57:06] Terminated sensors
+[STABLE CHECK] [22:57:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:57:26] Success: Machine is stable.
+[EXECUTION] [22:57:26] Successfully reached stable state
+[EXECUTION] [22:57:28] waiting idle for 30 seconds after function execution
+[EXECUTION] [22:57:58] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [22:57:58] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [22:57:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [22:57:58] Waiting before running function for 10 seconds.
+[EXECUTION] [22:58:08] Sensors started
+[STABLE CHECK] [22:58:11] Success: temperature is below threshold.
+[MAIN] [22:58:11] Terminated sensors
+[STABLE CHECK] [22:58:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:58:31] Not stable: stdev/mean is 0.030313463321334895, which is greater than 0.03
+[STABLE CHECK] [22:58:31] Machine is not stable yet.
+[STABLE CHECK] [22:58:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:58:51] Not stable: stdev/mean is 0.20459944988132955, which is greater than 0.03
+[STABLE CHECK] [22:58:51] Machine is not stable yet.
+[STABLE CHECK] [22:58:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:59:11] Not stable: stdev/mean is 0.09906117971333009, which is greater than 0.03
+[STABLE CHECK] [22:59:11] Machine is not stable yet.
+[STABLE CHECK] [22:59:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [22:59:31] Success: Machine is stable.
+[EXECUTION] [22:59:31] Successfully reached stable state
+[EXECUTION] [22:59:32] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:00:02] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [23:00:02] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [23:00:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 7400: loss 0.532, accuracy 0.791
+[EXECUTION] [23:00:02] Waiting before running function for 10 seconds.
+[EXECUTION] [23:00:13] Sensors started
+[STABLE CHECK] [23:00:16] Success: temperature is below threshold.
+[MAIN] [23:00:16] Terminated sensors
+[STABLE CHECK] [23:00:16] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:00:36] Success: Machine is stable.
+[EXECUTION] [23:00:36] Successfully reached stable state
+[EXECUTION] [23:00:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:01:07] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [23:01:07] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [23:01:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [23:01:07] Waiting before running function for 10 seconds.
+[EXECUTION] [23:01:17] Sensors started
+[STABLE CHECK] [23:01:20] Success: temperature is below threshold.
+[MAIN] [23:01:20] Terminated sensors
+[STABLE CHECK] [23:01:20] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:01:41] Not stable: stdev/mean is 0.08548609526851465, which is greater than 0.03
+[STABLE CHECK] [23:01:41] Machine is not stable yet.
+2023-12-10 23:02:21.147710: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 23:03:25.516978: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 23:03:27.201462: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+2023-12-10 23:04:30.561120: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+2023-12-10 23:05:01.812783: W tensorflow/core/common_runtime/graph_constructor.cc:1511] Importing a graph with a lower producer version 27 into an existing graph with producer version 898. Shape inference will have run different parts of the graph with different producer versions.
+/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/cord_19_embeddings_method-level.py:124: UserWarning: `tf.layers.dense` is deprecated and will be removed in a future version. Please use `tf.keras.layers.Dense` instead.
+  logits = tf.layers.dense(embeddings, units=THE_DATASET.num_classes(), activation=None)
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/legacy_tf_layers/core.py:255: UserWarning: `layer.apply` is deprecated and will be removed in a future version. Please use `layer.__call__` method instead.
+  return layer.apply(inputs)
+[STABLE CHECK] [23:01:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:02:01] Not stable: stdev/mean is 0.06083609386652354, which is greater than 0.03
+[STABLE CHECK] [23:02:01] Machine is not stable yet.
+[STABLE CHECK] [23:02:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:02:21] Success: Machine is stable.
+[EXECUTION] [23:02:21] Successfully reached stable state
+[EXECUTION] [23:02:22] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:02:52] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [23:02:52] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [23:02:52] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 7600: loss 0.537, accuracy 0.790
+[EXECUTION] [23:02:52] Waiting before running function for 10 seconds.
+[EXECUTION] [23:03:02] Sensors started
+[STABLE CHECK] [23:03:05] Success: temperature is below threshold.
+[MAIN] [23:03:05] Terminated sensors
+[STABLE CHECK] [23:03:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:03:25] Success: Machine is stable.
+[EXECUTION] [23:03:25] Successfully reached stable state
+[EXECUTION] [23:03:27] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:03:57] Performed tensorflow.compat.v1.estimator.Estimator.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+4-size 120.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [23:03:57] Result: {'tensorflow.compat.v1.estimator.Estimator.train()': {'energy_data': {'cpu': '{"columns":["time_elap
+[EXECUTION] [23:03:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+[EXECUTION] [23:03:57] Waiting before running function for 10 seconds.
+[EXECUTION] [23:04:07] Sensors started
+[STABLE CHECK] [23:04:10] Success: temperature is below threshold.
+[MAIN] [23:04:10] Terminated sensors
+[STABLE CHECK] [23:04:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:04:30] Success: Machine is stable.
+[EXECUTION] [23:04:30] Successfully reached stable state
+[EXECUTION] [23:04:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:05:01] Performed tensorflow.compat.v1.estimator.Estimator.evaluate() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 4056.0
+outside_object_size
+[EXECUTION] [23:05:01] Result: {'tensorflow.compat.v1.estimator.Estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [23:05:01] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/cord_19_embeddings/experiment-5.json
+Global step 7800: loss 0.534, accuracy 0.790

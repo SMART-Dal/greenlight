@@ -1,0 +1,148 @@
+2023-12-10 08:57:50.018698: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 08:57:50.230270: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+Dataset collection: xtreme
+Version: 1.0.0
+Description: # Xtreme Benchmark
+
+The Cross-lingual TRansfer Evaluation of Multilingual Encoders (XTREME)
+benchmark is a benchmark for the evaluation of the cross-lingual generalization
+ability of pre-trained multilingual models. It covers 40 typologically diverse
+languages (spanning 12 language families) and includes nine tasks that
+collectively require reasoning about different levels of syntax and semantics.
+The languages in XTREME are selected to maximize language diversity, coverage
+in existing tasks, and availability of training data. Among these are many
+under-studied languages, such as the Dravidian languages Tamil (spoken in
+southern India, Sri Lanka, and Singapore), Telugu and Malayalam (spoken
+mainly in southern India), and the Niger-Congo languages Swahili and Yoruba,
+spoken in Africa.
+
+For a full description of the benchmark,
+see the [paper](https://arxiv.org/abs/2003.11080).
+
+Citation:
+@article{hu2020xtreme,
+    author    = {Junjie Hu and Sebastian Ruder and Aditya Siddhant and Graham
+                 Neubig and Orhan Firat and Melvin Johnson},
+    title     = {XTREME: A Massively Multilingual Multi-task Benchmark for
+                 Evaluating Cross-lingual Generalization},
+    journal   = {CoRR},
+    volume    = {abs/2003.11080},
+    year      = {2020},
+    archivePrefix = {arXiv},
+    eprint    = {2003.11080}
+}
+
+The dataset collection xtreme (version: 1.0.0) contains the datasets:
+ - xnli: DatasetReference(dataset_name='xtreme_xnli', namespace=None, config=None, version=Version('1.1.0'), data_dir=None, split_mapping=None)
+ - pawsx: DatasetReference(dataset_name='xtreme_pawsx', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+ - pos: DatasetReference(dataset_name='xtreme_pos', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+ - ner: DatasetReference(dataset_name='wikiann', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+ - xquad: DatasetReference(dataset_name='xquad', namespace=None, config=None, version=Version('3.0.0'), data_dir=None, split_mapping=None)
+ - mlqa: DatasetReference(dataset_name='mlqa', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+ - tydiqa: DatasetReference(dataset_name='tydi_qa', namespace=None, config=None, version=Version('3.0.0'), data_dir=None, split_mapping=None)
+ - bucc: DatasetReference(dataset_name='bucc', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+ - tatoeba: DatasetReference(dataset_name='tatoeba', namespace=None, config=None, version=Version('1.0.0'), data_dir=None, split_mapping=None)
+
+{'test': <PrefetchDataset shapes: {langs: (None,), spans: (None,), tags: (None,), tokens: (None,)}, types: {langs: tf.string, spans: tf.string, tags: tf.int64, tokens: tf.string}>,
+ 'train': <PrefetchDataset shapes: {langs: (None,), spans: (None,), tags: (None,), tokens: (None,)}, types: {langs: tf.string, spans: tf.string, tags: tf.int64, tokens: tf.string}>,
+ 'validation': <PrefetchDataset shapes: {langs: (None,), spans: (None,), tags: (None,), tokens: (None,)}, types: {langs: tf.string, spans: tf.string, tags: tf.int64, tokens: tf.string}>}
+{'bucc': {'test': <PrefetchDataset shapes: {source_id: (), source_sentence: (), target_id: (), target_sentence: ()}, types: {source_id: tf.string, source_sentence: tf.string, target_id: tf.string, target_sentence: tf.string}>,
+          'validation': <PrefetchDataset shapes: {source_id: (), source_sentence: (), target_id: (), target_sentence: ()}, types: {source_id: tf.string, source_sentence: tf.string, target_id: tf.string, target_sentence: tf.string}>},
+ 'xnli': {'train': <PrefetchDataset shapes: {hypothesis: {language: (None,), translation: (None,)}, label: (), premise: {ar: (), bg: (), de: (), el: (), en: (), es: (), fr: (), hi: (), ru: (), sw: (), th: (), tr: (), ur: (), vi: (), zh: ()}}, types: {hypothesis: {language: tf.string, translation: tf.string}, label: tf.int64, premise: {ar: tf.string, bg: tf.string, de: tf.string, el: tf.string, en: tf.string, es: tf.string, fr: tf.string, hi: tf.string, ru: tf.string, sw: tf.string, th: tf.string, tr: tf.string, ur: tf.string, vi: tf.string, zh: tf.string}}>}}
+Downloading and preparing dataset 338.76 MiB (download: 338.76 MiB, generated: 445.94 KiB, total: 339.20 MiB) to /home/saurabh/tensorflow_datasets/xtreme_pos/xtreme_pos_af/1.0.0...
+
+Dl Completed...: 0 url [00:00, ? url/s]
+
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:00<00:00, 309.95 url/s]
+
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:00<00:00, 281.18 url/s]
+
+Dl Size...:   0%|          | 0/355216681 [00:00<?, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:00<00:00, 255.58 url/s]
+
+Dl Size...: 100%|██████████| 355216681/355216681 [00:00<00:00, 96407839134.53 MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Extraction completed...: 0 file [00:00, ? file/s]
+
+Dl Size...: 100%|██████████| 355216681/355216681 [00:00<00:00, 65274337173.50 MiB/s]
+
+Dl Completed...: 100%|██████████| 1/1 [00:00<00:00, 165.24 url/s]
+
+Generating splits...:   0%|          | 0/3 [00:00<?, ? splits/s]
+
+Generating train examples...:   0%|          | 0/1315 [00:00<?, ? examples/s][A
+
+                                                                             [A
+                                                                
+Traceback (most recent call last):
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/lazy_imports_lib.py", line 30, in _try_import
+    mod = importlib.import_module(module_name)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 984, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'conllu'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_datasets_patched/docs/dataset_collections_method-level.py", line 21, in <module>
+    all_datasets = collection_loader.load_all_datasets()
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 426, in load_all_datasets
+    return self.load_datasets(  # pytype: disable=wrong-arg-types
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 402, in load_datasets
+    return {
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 403, in <dictcomp>
+    dataset_name: self.load_dataset(
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 352, in load_dataset
+    load_output = load(dataset_reference.tfds_name(), **loader_kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/logging/__init__.py", line 169, in __call__
+    return function(*args, **kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 640, in load
+    _download_and_prepare_builder(dbuilder, download, download_and_prepare_kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/load.py", line 499, in _download_and_prepare_builder
+    dbuilder.download_and_prepare(**download_and_prepare_kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/logging/__init__.py", line 169, in __call__
+    return function(*args, **kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_builder.py", line 646, in download_and_prepare
+    self._download_and_prepare(
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_builder.py", line 1535, in _download_and_prepare
+    future = split_builder.submit_split_generation(
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/split_builder.py", line 341, in submit_split_generation
+    return self._build_from_generator(**build_kwargs)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/split_builder.py", line 406, in _build_from_generator
+    for key, example in utils.tqdm(
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tqdm/std.py", line 1178, in __iter__
+    for obj in iterable:
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/dataset_builders/conll/conllu_dataset_builder.py", line 213, in _generate_examples
+    conllu = lazy_imports_lib.lazy_imports.conllu
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 154, in __get__
+    return self.fget.__get__(None, objtype)()  # pytype: disable=attribute-error
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/lazy_imports_lib.py", line 234, in conllu
+    return _try_import("conllu")
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/lazy_imports_lib.py", line 39, in _try_import
+    utils.reraise(e, suffix=err_msg)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_datasets/core/utils/py_utils.py", line 384, in reraise
+    raise exception from e
+ModuleNotFoundError: No module named 'conllu'
+Failed importing conllu. This likely means that the dataset requires additional dependencies that have to be manually installed (usually with `pip install conllu`). See setup.py extras_require.

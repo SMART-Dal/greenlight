@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_compression_patched/models/hific/colab_method-level.py", line 1, in <module>
+    import tfci
+ModuleNotFoundError: No module named 'tfci'

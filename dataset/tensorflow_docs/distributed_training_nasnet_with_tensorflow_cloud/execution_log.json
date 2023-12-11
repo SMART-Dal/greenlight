@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_cloud_patched/g3doc/tutorials/distributed_training_nasnet_with_tensorflow_cloud_method-level.py", line 4, in <module>
+    import tensorflow_cloud as tfc
+ModuleNotFoundError: No module named 'tensorflow_cloud'

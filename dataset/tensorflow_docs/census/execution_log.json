@@ -1,0 +1,6 @@
+TF: 2.7.0
+Beam: 2.46.0
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_tfx_patched/docs/tutorials/transform/census_method-level.py", line 21, in <module>
+    import tensorflow_transform as tft
+ModuleNotFoundError: No module named 'tensorflow_transform'

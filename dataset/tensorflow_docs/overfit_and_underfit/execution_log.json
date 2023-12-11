@@ -1,61 +1,19 @@
-2023-12-07 22:59:59.013758: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 22:59:59.106936: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-12-07 22:59:59.613179: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 22:59:59.613214: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 22:59:59.613218: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-2023-12-07 23:01:37.472151: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-2023-12-07 23:01:37.472199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7ff3bb47d430> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
-Instructions for updating:
-Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7ff47afcd1f0> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-2.11.0
-[EXECUTION] [23:00:00] Waiting before running function for 10 seconds.
-[EXECUTION] [23:00:10] Sensors started
-[STABLE CHECK] [23:00:13] Success: temperature is below threshold.
-[MAIN] [23:00:13] Terminated sensors
-[STABLE CHECK] [23:00:13] Waiting 20 seconds to reach stable state.
+2023-12-09 11:09:47.547621: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2.7.0
+[EXECUTION] [11:08:53] Waiting before running function for 10 seconds.
+[EXECUTION] [11:09:03] Sensors started
+[STABLE CHECK] [11:09:06] Temperature too high: mean is 41.25, which is greater than 40
+[STABLE CHECK] [11:09:06] Temperature is too high.
+[STABLE CHECK] [11:09:06] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [23:00:33] Success: Machine is stable.
-[EXECUTION] [23:00:33] Successfully reached stable state
-[EXECUTION] [23:00:33] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:01:03] Performed tensorflow.keras.utils.get_file() on input and will now save energy data.
-[EXECUTION] [23:01:03] skipping call added, current list is: ['tensorflow.keras.utils.get_file()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 104.0
-4-size 168.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 104.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [23:01:03] Result: {'tensorflow.keras.utils.get_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [23:01:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:01:03] Waiting before running function for 10 seconds.
-[EXECUTION] [23:01:13] Sensors started
-[STABLE CHECK] [23:01:16] Success: temperature is below threshold.
-[MAIN] [23:01:16] Terminated sensors
-[STABLE CHECK] [23:01:16] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [11:09:26] Success: temperature is below threshold.
+[MAIN] [11:09:26] Terminated sensors
+[STABLE CHECK] [11:09:26] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [23:01:36] Success: Machine is stable.
-[EXECUTION] [23:01:36] Successfully reached stable state
-[EXECUTION] [23:01:37] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:02:07] Performed tensorflow.data.experimental.CsvDataset() on input and will now save energy data.
+[STABLE CHECK] [11:09:46] Success: Machine is stable.
+[EXECUTION] [11:09:46] Successfully reached stable state
+[EXECUTION] [11:09:47] waiting idle for 30 seconds after function execution
+[EXECUTION] [11:10:17] Performed tensorflow.data.experimental.CsvDataset() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -310,467 +268,34 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [23:02:07] Result: {'tensorflow.data.experimental.CsvDataset()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
-[EXECUTION] [23:02:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:02:07] Waiting before running function for 10 seconds.
-[EXECUTION] [23:02:17] Sensors started
-[STABLE CHECK] [23:02:20] Success: temperature is below threshold.
-[MAIN] [23:02:20] Terminated sensors
-[STABLE CHECK] [23:02:20] Waiting 20 seconds to reach stable state.
+[EXECUTION] [11:10:17] Result: {'tensorflow.data.experimental.CsvDataset()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
+[EXECUTION] [11:10:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-5.json
+[EXECUTION] [11:10:17] Waiting before running function for 10 seconds.
+[EXECUTION] [11:10:27] Sensors started
+[STABLE CHECK] [11:10:30] Success: temperature is below threshold.
+[MAIN] [11:10:30] Terminated sensors
+[STABLE CHECK] [11:10:30] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [23:02:40] Success: Machine is stable.
-[EXECUTION] [23:02:40] Successfully reached stable state
-[EXECUTION] [23:02:41] Waiting before running function for 10 seconds.
-[EXECUTION] [23:02:51] Sensors started
-[STABLE CHECK] [23:02:55] Success: temperature is below threshold.
-[MAIN] [23:02:55] Terminated sensors
-[STABLE CHECK] [23:02:55] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:03:15] Not stable: stdev/mean is 0.03438798131514897, which is greater than 0.03
-[STABLE CHECK] [23:03:15] Machine is not stable yet.
-[STABLE CHECK] [23:03:15] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:03:35] Success: Machine is stable.
-[EXECUTION] [23:03:35] Successfully reached stable state
-[EXECUTION] [23:03:35] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:04:05] Performed tensorflow.stack() on input and will now save energy data.
-[EXECUTION] [23:04:06] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-4-size 2003008.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 32.0
-4-size 2003040.0
-++++++4++++++
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-4-size 2003008.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 71536.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [23:13:58] Result: {'tensorflow.stack()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
-[EXECUTION] [23:13:58] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:13:58] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:14:28] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch() on input and will now save energy data.
+[STABLE CHECK] [11:10:50] Success: Machine is stable.
+[EXECUTION] [11:10:50] Successfully reached stable state
+[EXECUTION] [11:10:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [11:11:21] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 ++++++5++++++
-5-size 35600.0
+5-size 31896.0
 outside_object_size
-[EXECUTION] [23:14:28] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch()': {'energy_data': {'c
-[EXECUTION] [23:14:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
+[EXECUTION] [11:11:21] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch()': {'energy_data': {'c
+[EXECUTION] [11:11:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-5.json
 tf.Tensor(
 [ 0.8692932  -0.6350818   0.22569026  0.32747006 -0.6899932   0.75420225
  -0.24857314 -1.0920639   0.          1.3749921  -0.6536742   0.9303491
   1.1074361   1.1389043  -1.5781983  -1.0469854   0.          0.65792954
  -0.01045457 -0.04576717  3.1019614   1.35376     0.9795631   0.97807616
   0.92000484  0.72165745  0.98875093  0.87667835], shape=(28,), dtype=float32)
-[EXECUTION] [23:14:31] Waiting before running function for 10 seconds.
-[EXECUTION] [23:14:41] Sensors started
-[STABLE CHECK] [23:14:44] Success: temperature is below threshold.
-[MAIN] [23:14:44] Terminated sensors
-[STABLE CHECK] [23:14:44] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:15:04] Success: Machine is stable.
-[EXECUTION] [23:15:04] Successfully reached stable state
-[EXECUTION] [23:15:04] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:15:34] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache( on input and will now save energy data.
-[EXECUTION] [23:15:34] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 172640.0
-outside_object_size
-[EXECUTION] [23:15:34] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cach
-[EXECUTION] [23:15:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:15:34] Waiting before running function for 10 seconds.
-[EXECUTION] [23:15:44] Sensors started
-[STABLE CHECK] [23:15:47] Success: temperature is below threshold.
-[MAIN] [23:15:47] Terminated sensors
-[STABLE CHECK] [23:15:47] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:16:07] Success: Machine is stable.
-[EXECUTION] [23:16:07] Successfully reached stable state
-[EXECUTION] [23:16:07] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:16:37] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N on input and will now save energy data.
-[EXECUTION] [23:16:37] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 172640.0
-outside_object_size
-[EXECUTION] [23:16:37] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take
-[EXECUTION] [23:16:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:16:37] Waiting before running function for 10 seconds.
-[EXECUTION] [23:16:48] Sensors started
-[STABLE CHECK] [23:16:51] Success: temperature is below threshold.
-[MAIN] [23:16:51] Terminated sensors
-[STABLE CHECK] [23:16:51] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:17:11] Success: Machine is stable.
-[EXECUTION] [23:17:11] Successfully reached stable state
-[EXECUTION] [23:17:11] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:17:41] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache. on input and will now save energy data.
-[EXECUTION] [23:17:41] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache.batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 179816.0
-outside_object_size
-[EXECUTION] [23:17:41] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cach
-[EXECUTION] [23:17:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:17:41] Waiting before running function for 10 seconds.
-[EXECUTION] [23:17:51] Sensors started
-[STABLE CHECK] [23:17:54] Success: temperature is below threshold.
-[MAIN] [23:17:54] Terminated sensors
-[STABLE CHECK] [23:17:54] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:18:14] Success: Machine is stable.
-[EXECUTION] [23:18:14] Successfully reached stable state
-[EXECUTION] [23:18:14] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:18:44] Performed tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N on input and will now save energy data.
-[EXECUTION] [23:18:44] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache.batch()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache.shuffle(BUFFER_SIZE).repeat().batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 186448.0
-outside_object_size
-[EXECUTION] [23:18:44] Result: {'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take
-[EXECUTION] [23:18:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:18:44] Waiting before running function for 10 seconds.
-[EXECUTION] [23:18:54] Sensors started
-[STABLE CHECK] [23:18:57] Success: temperature is below threshold.
-[MAIN] [23:18:57] Terminated sensors
-[STABLE CHECK] [23:18:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:19:17] Success: Machine is stable.
-[EXECUTION] [23:19:17] Successfully reached stable state
-[EXECUTION] [23:19:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:19:47] Performed tensorflow.keras.optimizers.schedules.InverseTimeDecay() on input and will now save energy data.
-[EXECUTION] [23:19:47] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache.batch()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache.shuffle(BUFFER_SIZE).repeat().batch()', 'tensorflow.keras.optimizers.schedules.InverseTimeDecay()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 192.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [23:19:47] Result: {'tensorflow.keras.optimizers.schedules.InverseTimeDecay()': {'energy_data': {'cpu': '{"columns":["t
-[EXECUTION] [23:19:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
-[EXECUTION] [23:19:47] Waiting before running function for 10 seconds.
-[EXECUTION] [23:19:57] Sensors started
-[STABLE CHECK] [23:20:00] Success: temperature is below threshold.
-[MAIN] [23:20:00] Terminated sensors
-[STABLE CHECK] [23:20:00] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:20:20] Success: Machine is stable.
-[EXECUTION] [23:20:20] Successfully reached stable state
-[EXECUTION] [23:20:20] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:20:50] Performed tensorflow.keras.Sequential() on input and will now save energy data.
-[EXECUTION] [23:20:50] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache.batch()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache.shuffle(BUFFER_SIZE).repeat().batch()', 'tensorflow.keras.optimizers.schedules.InverseTimeDecay()', 'tensorflow.keras.Sequential()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 11792.0
-++++++5++++++
-5-size 11432.0
-4-size 23224.0
-++++++5++++++
-5-size 11792.0
-++++++5++++++
-5-size 11432.0
-4-size 23224.0
-++++++4++++++
-++++++5++++++
-5-size 11792.0
-++++++5++++++
-5-size 11432.0
-4-size 23224.0
-++++++5++++++
-5-size 11792.0
-++++++5++++++
-5-size 11432.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [23:20:50] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
-[EXECUTION] [23:20:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
 Model: "sequential"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -784,26 +309,75 @@ Total params: 481
 Trainable params: 481
 Non-trainable params: 0
 _________________________________________________________________
-2023-12-07 23:20:55.608633: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
 
-Epoch: 0, accuracy:0.4896,  binary_crossentropy:0.7681,  loss:0.7681,  val_accuracy:0.4840,  val_binary_crossentropy:0.7260,  val_loss:0.7260,  
+Epoch: 0, accuracy:0.5121,  binary_crossentropy:0.7342,  loss:0.7342,  val_accuracy:0.4870,  val_binary_crossentropy:0.7287,  val_loss:0.7287,  
 ....................................................................................................
-Epoch: 100, accuracy:0.6025,  binary_crossentropy:0.6234,  loss:0.6234,  val_accuracy:0.5970,  val_binary_crossentropy:0.6230,  val_loss:0.6230,  
+Epoch: 100, accuracy:0.5900,  binary_crossentropy:0.6309,  loss:0.6309,  val_accuracy:0.5780,  val_binary_crossentropy:0.6337,  val_loss:0.6337,  
 ....................................................................................................
-Epoch: 200, accuracy:0.6182,  binary_crossentropy:0.6120,  loss:0.6120,  val_accuracy:0.6270,  val_binary_crossentropy:0.6106,  val_loss:0.6106,  
+Epoch: 200, accuracy:0.6052,  binary_crossentropy:0.6206,  loss:0.6206,  val_accuracy:0.5960,  val_binary_crossentropy:0.6217,  val_loss:0.6217,  
 ....................................................................................................
-Epoch: 300, accuracy:0.6366,  binary_crossentropy:0.6023,  loss:0.6023,  val_accuracy:0.6180,  val_binary_crossentropy:0.6044,  val_loss:0.6044,  
+Epoch: 300, accuracy:0.6143,  binary_crossentropy:0.6150,  loss:0.6150,  val_accuracy:0.6050,  val_binary_crossentropy:0.6162,  val_loss:0.6162,  
 ....................................................................................................
-Epoch: 400, accuracy:0.6569,  binary_crossentropy:0.5939,  loss:0.5939,  val_accuracy:0.6230,  val_binary_crossentropy:0.5997,  val_loss:0.5997,  
+Epoch: 400, accuracy:0.6258,  binary_crossentropy:0.6113,  loss:0.6113,  val_accuracy:0.5950,  val_binary_crossentropy:0.6152,  val_loss:0.6152,  
 ....................................................................................................
-Epoch: 500, accuracy:0.6635,  binary_crossentropy:0.5880,  loss:0.5880,  val_accuracy:0.6480,  val_binary_crossentropy:0.5918,  val_loss:0.5918,  
+Epoch: 500, accuracy:0.6291,  binary_crossentropy:0.6075,  loss:0.6075,  val_accuracy:0.6250,  val_binary_crossentropy:0.6084,  val_loss:0.6084,  
 ....................................................................................................
-Epoch: 600, accuracy:0.6671,  binary_crossentropy:0.5845,  loss:0.5845,  val_accuracy:0.6660,  val_binary_crossentropy:0.5910,  val_loss:0.5910,  
+Epoch: 600, accuracy:0.6312,  binary_crossentropy:0.6051,  loss:0.6051,  val_accuracy:0.6120,  val_binary_crossentropy:0.6075,  val_loss:0.6075,  
 ....................................................................................................
-Epoch: 700, accuracy:0.6703,  binary_crossentropy:0.5816,  loss:0.5816,  val_accuracy:0.6530,  val_binary_crossentropy:0.5913,  val_loss:0.5913,  
+Epoch: 700, accuracy:0.6402,  binary_crossentropy:0.6016,  loss:0.6016,  val_accuracy:0.6280,  val_binary_crossentropy:0.6043,  val_loss:0.6043,  
 ....................................................................................................
-Epoch: 800, accuracy:0.6757,  binary_crossentropy:0.5797,  loss:0.5797,  val_accuracy:0.6550,  val_binary_crossentropy:0.5904,  val_loss:0.5904,  
-............................................................................................Model: "sequential_1"
+Epoch: 800, accuracy:0.6444,  binary_crossentropy:0.5984,  loss:0.5984,  val_accuracy:0.6230,  val_binary_crossentropy:0.6037,  val_loss:0.6037,  
+....................................................................................................
+Epoch: 900, accuracy:0.6451,  binary_crossentropy:0.5964,  loss:0.5964,  val_accuracy:0.6280,  val_binary_crossentropy:0.6025,  val_loss:0.6025,  
+....................................................................................................
+Epoch: 1000, accuracy:0.6418,  binary_crossentropy:0.5941,  loss:0.5941,  val_accuracy:0.6340,  val_binary_crossentropy:0.6020,  val_loss:0.6020,  
+....................................................................................................
+Epoch: 1100, accuracy:0.6490,  binary_crossentropy:0.5922,  loss:0.5922,  val_accuracy:0.6300,  val_binary_crossentropy:0.6013,  val_loss:0.6013,  
+....................................................................................................
+Epoch: 1200, accuracy:0.6536,  binary_crossentropy:0.5904,  loss:0.5904,  val_accuracy:0.6310,  val_binary_crossentropy:0.6008,  val_loss:0.6008,  
+....................................................................................................
+Epoch: 1300, accuracy:0.6565,  binary_crossentropy:0.5887,  loss:0.5887,  val_accuracy:0.6360,  val_binary_crossentropy:0.6008,  val_loss:0.6008,  
+....................................................................................................
+Epoch: 1400, accuracy:0.6569,  binary_crossentropy:0.5867,  loss:0.5867,  val_accuracy:0.6310,  val_binary_crossentropy:0.6001,  val_loss:0.6001,  
+....................................................................................................
+Epoch: 1500, accuracy:0.6590,  binary_crossentropy:0.5849,  loss:0.5849,  val_accuracy:0.6420,  val_binary_crossentropy:0.5994,  val_loss:0.5994,  
+....................................................................................................
+Epoch: 1600, accuracy:0.6621,  binary_crossentropy:0.5833,  loss:0.5833,  val_accuracy:0.6310,  val_binary_crossentropy:0.5991,  val_loss:0.5991,  
+....................................................................................................
+Epoch: 1700, accuracy:0.6606,  binary_crossentropy:0.5818,  loss:0.5818,  val_accuracy:0.6310,  val_binary_crossentropy:0.5986,  val_loss:0.5986,  
+....................................................................................................
+Epoch: 1800, accuracy:0.6609,  binary_crossentropy:0.5802,  loss:0.5802,  val_accuracy:0.6400,  val_binary_crossentropy:0.5979,  val_loss:0.5979,  
+....................................................................................................
+Epoch: 1900, accuracy:0.6645,  binary_crossentropy:0.5790,  loss:0.5790,  val_accuracy:0.6350,  val_binary_crossentropy:0.5985,  val_loss:0.5985,  
+....................................................................................................
+Epoch: 2000, accuracy:0.6677,  binary_crossentropy:0.5775,  loss:0.5775,  val_accuracy:0.6360,  val_binary_crossentropy:0.5983,  val_loss:0.5983,  
+....................................................................................................
+Epoch: 2100, accuracy:0.6670,  binary_crossentropy:0.5773,  loss:0.5773,  val_accuracy:0.6410,  val_binary_crossentropy:0.5978,  val_loss:0.5978,  
+....................................................................................................
+Epoch: 2200, accuracy:0.6679,  binary_crossentropy:0.5756,  loss:0.5756,  val_accuracy:0.6420,  val_binary_crossentropy:0.5971,  val_loss:0.5971,  
+....................................................................................................
+Epoch: 2300, accuracy:0.6727,  binary_crossentropy:0.5747,  loss:0.5747,  val_accuracy:0.6380,  val_binary_crossentropy:0.5977,  val_loss:0.5977,  
+....................................................................................................
+Epoch: 2400, accuracy:0.6725,  binary_crossentropy:0.5742,  loss:0.5742,  val_accuracy:0.6510,  val_binary_crossentropy:0.5968,  val_loss:0.5968,  
+....................................................................................................
+Epoch: 2500, accuracy:0.6674,  binary_crossentropy:0.5733,  loss:0.5733,  val_accuracy:0.6520,  val_binary_crossentropy:0.5965,  val_loss:0.5965,  
+....................................................................................................
+Epoch: 2600, accuracy:0.6727,  binary_crossentropy:0.5724,  loss:0.5724,  val_accuracy:0.6480,  val_binary_crossentropy:0.5966,  val_loss:0.5966,  
+....................................................................................................
+Epoch: 2700, accuracy:0.6723,  binary_crossentropy:0.5719,  loss:0.5719,  val_accuracy:0.6490,  val_binary_crossentropy:0.5959,  val_loss:0.5959,  
+....................................................................................................
+Epoch: 2800, accuracy:0.6744,  binary_crossentropy:0.5710,  loss:0.5710,  val_accuracy:0.6440,  val_binary_crossentropy:0.5961,  val_loss:0.5961,  
+....................................................................................................
+Epoch: 2900, accuracy:0.6754,  binary_crossentropy:0.5706,  loss:0.5706,  val_accuracy:0.6530,  val_binary_crossentropy:0.5953,  val_loss:0.5953,  
+....................................................................................................
+Epoch: 3000, accuracy:0.6743,  binary_crossentropy:0.5699,  loss:0.5699,  val_accuracy:0.6490,  val_binary_crossentropy:0.5958,  val_loss:0.5958,  
+....................................................................................................
+Epoch: 3100, accuracy:0.6788,  binary_crossentropy:0.5696,  loss:0.5696,  val_accuracy:0.6380,  val_binary_crossentropy:0.5959,  val_loss:0.5959,  
+....................................................................................................
+Epoch: 3200, accuracy:0.6771,  binary_crossentropy:0.5692,  loss:0.5692,  val_accuracy:0.6490,  val_binary_crossentropy:0.5957,  val_loss:0.5957,  
+....................................................................................................
+Epoch: 3300, accuracy:0.6707,  binary_crossentropy:0.5691,  loss:0.5691,  val_accuracy:0.6470,  val_binary_crossentropy:0.5943,  val_loss:0.5943,  
+......................................................Model: "sequential_1"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -819,22 +393,20 @@ Trainable params: 753
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.4865,  binary_crossentropy:0.7511,  loss:0.7511,  val_accuracy:0.4940,  val_binary_crossentropy:0.7203,  val_loss:0.7203,  
+Epoch: 0, accuracy:0.4884,  binary_crossentropy:0.7041,  loss:0.7041,  val_accuracy:0.4710,  val_binary_crossentropy:0.6969,  val_loss:0.6969,  
 ....................................................................................................
-Epoch: 100, accuracy:0.6284,  binary_crossentropy:0.6117,  loss:0.6117,  val_accuracy:0.6170,  val_binary_crossentropy:0.6105,  val_loss:0.6105,  
+Epoch: 100, accuracy:0.6225,  binary_crossentropy:0.6115,  loss:0.6115,  val_accuracy:0.6300,  val_binary_crossentropy:0.6071,  val_loss:0.6071,  
 ....................................................................................................
-Epoch: 200, accuracy:0.6658,  binary_crossentropy:0.5911,  loss:0.5911,  val_accuracy:0.6390,  val_binary_crossentropy:0.5935,  val_loss:0.5935,  
+Epoch: 200, accuracy:0.6604,  binary_crossentropy:0.5891,  loss:0.5891,  val_accuracy:0.6600,  val_binary_crossentropy:0.5887,  val_loss:0.5887,  
 ....................................................................................................
-Epoch: 300, accuracy:0.6775,  binary_crossentropy:0.5805,  loss:0.5805,  val_accuracy:0.6510,  val_binary_crossentropy:0.5907,  val_loss:0.5907,  
+Epoch: 300, accuracy:0.6722,  binary_crossentropy:0.5752,  loss:0.5752,  val_accuracy:0.6860,  val_binary_crossentropy:0.5795,  val_loss:0.5795,  
 ....................................................................................................
-Epoch: 400, accuracy:0.6845,  binary_crossentropy:0.5753,  loss:0.5753,  val_accuracy:0.6590,  val_binary_crossentropy:0.5866,  val_loss:0.5866,  
+Epoch: 400, accuracy:0.6829,  binary_crossentropy:0.5674,  loss:0.5674,  val_accuracy:0.6630,  val_binary_crossentropy:0.5794,  val_loss:0.5794,  
 ....................................................................................................
-Epoch: 500, accuracy:0.6828,  binary_crossentropy:0.5698,  loss:0.5698,  val_accuracy:0.6760,  val_binary_crossentropy:0.5852,  val_loss:0.5852,  
+Epoch: 500, accuracy:0.6920,  binary_crossentropy:0.5603,  loss:0.5603,  val_accuracy:0.6590,  val_binary_crossentropy:0.5778,  val_loss:0.5778,  
 ....................................................................................................
-Epoch: 600, accuracy:0.6907,  binary_crossentropy:0.5666,  loss:0.5666,  val_accuracy:0.6730,  val_binary_crossentropy:0.5852,  val_loss:0.5852,  
-....................................................................................................
-Epoch: 700, accuracy:0.6946,  binary_crossentropy:0.5647,  loss:0.5647,  val_accuracy:0.6880,  val_binary_crossentropy:0.5857,  val_loss:0.5857,  
-.....................................................Model: "sequential_2"
+Epoch: 600, accuracy:0.6947,  binary_crossentropy:0.5569,  loss:0.5569,  val_accuracy:0.6840,  val_binary_crossentropy:0.5773,  val_loss:0.5773,  
+...........................Model: "sequential_2"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -852,12 +424,12 @@ Trainable params: 10,241
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.5006,  binary_crossentropy:0.6922,  loss:0.6922,  val_accuracy:0.4920,  val_binary_crossentropy:0.6699,  val_loss:0.6699,  
+Epoch: 0, accuracy:0.4811,  binary_crossentropy:0.7036,  loss:0.7036,  val_accuracy:0.4890,  val_binary_crossentropy:0.6789,  val_loss:0.6789,  
 ....................................................................................................
-Epoch: 100, accuracy:0.7123,  binary_crossentropy:0.5323,  loss:0.5323,  val_accuracy:0.6600,  val_binary_crossentropy:0.6017,  val_loss:0.6017,  
+Epoch: 100, accuracy:0.7103,  binary_crossentropy:0.5331,  loss:0.5331,  val_accuracy:0.6460,  val_binary_crossentropy:0.6110,  val_loss:0.6110,  
 ....................................................................................................
-Epoch: 200, accuracy:0.7850,  binary_crossentropy:0.4301,  loss:0.4301,  val_accuracy:0.6570,  val_binary_crossentropy:0.6989,  val_loss:0.6989,  
-..................................................................Model: "sequential_3"
+Epoch: 200, accuracy:0.7816,  binary_crossentropy:0.4366,  loss:0.4366,  val_accuracy:0.6500,  val_binary_crossentropy:0.6826,  val_loss:0.6826,  
+....................................................Model: "sequential_3"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -877,12 +449,12 @@ Trainable params: 803,329
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.5067,  binary_crossentropy:0.8423,  loss:0.8423,  val_accuracy:0.4790,  val_binary_crossentropy:0.6771,  val_loss:0.6771,  
+Epoch: 0, accuracy:0.5104,  binary_crossentropy:0.7777,  loss:0.7777,  val_accuracy:0.5480,  val_binary_crossentropy:0.6807,  val_loss:0.6807,  
 ....................................................................................................
-Epoch: 100, accuracy:1.0000,  binary_crossentropy:0.0024,  loss:0.0024,  val_accuracy:0.6710,  val_binary_crossentropy:1.7516,  val_loss:1.7516,  
+Epoch: 100, accuracy:1.0000,  binary_crossentropy:0.0024,  loss:0.0024,  val_accuracy:0.6710,  val_binary_crossentropy:1.7065,  val_loss:1.7065,  
 ....................................................................................................
-Epoch: 200, accuracy:1.0000,  binary_crossentropy:0.0001,  loss:0.0001,  val_accuracy:0.6720,  val_binary_crossentropy:2.4111,  val_loss:2.4111,  
-..............Model: "sequential_4"
+Epoch: 200, accuracy:1.0000,  binary_crossentropy:0.0002,  loss:0.0002,  val_accuracy:0.6720,  val_binary_crossentropy:2.3309,  val_loss:2.3309,  
+........................Model: "sequential_4"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -902,105 +474,17 @@ Trainable params: 803,329
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.5058,  binary_crossentropy:0.7607,  loss:2.2558,  val_accuracy:0.5030,  val_binary_crossentropy:0.6719,  val_loss:2.0716,  
+Epoch: 0, accuracy:0.5023,  binary_crossentropy:0.7731,  loss:2.2736,  val_accuracy:0.5460,  val_binary_crossentropy:0.6697,  val_loss:2.0811,  
 ....................................................................................................
-Epoch: 100, accuracy:0.6487,  binary_crossentropy:0.5985,  loss:0.6196,  val_accuracy:0.6340,  val_binary_crossentropy:0.5929,  val_loss:0.6141,  
+Epoch: 100, accuracy:0.6583,  binary_crossentropy:0.5971,  loss:0.6201,  val_accuracy:0.6680,  val_binary_crossentropy:0.5863,  val_loss:0.6092,  
 ....................................................................................................
-Epoch: 200, accuracy:0.6656,  binary_crossentropy:0.5863,  loss:0.6072,  val_accuracy:0.6900,  val_binary_crossentropy:0.5845,  val_loss:0.6054,  
+Epoch: 200, accuracy:0.6729,  binary_crossentropy:0.5833,  loss:0.6065,  val_accuracy:0.6850,  val_binary_crossentropy:0.5817,  val_loss:0.6046,  
 ....................................................................................................
-Epoch: 300, accuracy:0.6819,  binary_crossentropy:0.5739,  loss:0.5942,  val_accuracy:0.6760,  val_binary_crossentropy:0.5893,  val_loss:0.6096,  
+Epoch: 300, accuracy:0.6772,  binary_crossentropy:0.5791,  loss:0.6108,  val_accuracy:0.6270,  val_binary_crossentropy:0.5931,  val_loss:0.6246,  
 ....................................................................................................
-Epoch: 400, accuracy:0.6841,  binary_crossentropy:0.5721,  loss:0.5933,  val_accuracy:0.6690,  val_binary_crossentropy:0.5906,  val_loss:0.6119,  
-....................................................................................................
-Epoch: 500, accuracy:0.6945,  binary_crossentropy:0.5649,  loss:0.5874,  val_accuracy:0.6840,  val_binary_crossentropy:0.5870,  val_loss:0.6094,  
-........................................../home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_docs/plots/__init__.py:111: UserWarning: Attempt to set non-positive xlim on a log-scaled axis will be ignored.
+Epoch: 400, accuracy:0.6920,  binary_crossentropy:0.5663,  loss:0.5929,  val_accuracy:0.6580,  val_binary_crossentropy:0.5836,  val_loss:0.6102,  
+............................................./home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_docs/plots/__init__.py:111: UserWarning: Attempt to set non-positive xlim on a log-scaled axis will be ignored.
   plt.xlim(
-[EXECUTION] [23:27:03] Waiting before running function for 10 seconds.
-[EXECUTION] [23:27:13] Sensors started
-[STABLE CHECK] [23:27:16] Temperature too high: mean is 50, which is greater than 40
-[STABLE CHECK] [23:27:16] Temperature is too high.
-[STABLE CHECK] [23:27:16] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:27:36] Temperature too high: mean is 45.05, which is greater than 40
-[STABLE CHECK] [23:27:36] Temperature is too high.
-[STABLE CHECK] [23:27:36] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:27:56] Temperature too high: mean is 43, which is greater than 40
-[STABLE CHECK] [23:27:56] Temperature is too high.
-[STABLE CHECK] [23:27:56] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:28:16] Temperature too high: mean is 41.25, which is greater than 40
-[STABLE CHECK] [23:28:16] Temperature is too high.
-[STABLE CHECK] [23:28:16] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:28:36] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [23:28:36] Temperature is too high.
-[STABLE CHECK] [23:28:36] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:28:56] Temperature too high: mean is 41, which is greater than 40
-[STABLE CHECK] [23:28:56] Temperature is too high.
-[STABLE CHECK] [23:28:56] Waiting 20 seconds to reach low temperature.
-
-[STABLE CHECK] [23:29:16] Temperature too high: mean is 40.75, which is greater than 40
-[STABLE CHECK] [23:29:16] Temperature is too high.
-[MAIN] [23:29:16] Terminated sensors
-[EXECUTION] [23:29:46] Waiting before running function for 10 seconds.
-[EXECUTION] [23:29:56] Sensors started
-[STABLE CHECK] [23:29:59] Success: temperature is below threshold.
-[MAIN] [23:29:59] Terminated sensors
-[STABLE CHECK] [23:29:59] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [23:30:19] Success: Machine is stable.
-[EXECUTION] [23:30:19] Successfully reached stable state
-[EXECUTION] [23:30:19] waiting idle for 30 seconds after function execution
-[EXECUTION] [23:30:50] Performed tensorflow.add_n() on input and will now save energy data.
-[EXECUTION] [23:30:50] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.stack()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.take(N_VALIDATION).cache.batch()', 'tensorflow.data.experimental.CsvDataset.batch(10000).map(pack_row).unbatch.skip(N_VALIDATION).take(N_TRAIN).cache.shuffle(BUFFER_SIZE).repeat().batch()', 'tensorflow.keras.optimizers.schedules.InverseTimeDecay()', 'tensorflow.keras.Sequential()', 'tensorflow.add_n()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-4-size 16.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-4-size 16.0
-++++++4++++++
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-4-size 16.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-++++++1++++++
-1-size 4.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [23:30:50] Result: {'tensorflow.add_n()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,
-[EXECUTION] [23:30:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/overfit_and_underfit/experiment-1.json
 Model: "sequential_5"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -1029,16 +513,14 @@ Trainable params: 803,329
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.5178,  binary_crossentropy:0.7901,  loss:0.7901,  val_accuracy:0.4730,  val_binary_crossentropy:0.6841,  val_loss:0.6841,  
+Epoch: 0, accuracy:0.4983,  binary_crossentropy:0.7956,  loss:0.7956,  val_accuracy:0.5160,  val_binary_crossentropy:0.6812,  val_loss:0.6812,  
 ....................................................................................................
-Epoch: 100, accuracy:0.6562,  binary_crossentropy:0.5964,  loss:0.5964,  val_accuracy:0.6850,  val_binary_crossentropy:0.5716,  val_loss:0.5716,  
+Epoch: 100, accuracy:0.6555,  binary_crossentropy:0.5976,  loss:0.5976,  val_accuracy:0.6970,  val_binary_crossentropy:0.5770,  val_loss:0.5770,  
 ....................................................................................................
-Epoch: 200, accuracy:0.6916,  binary_crossentropy:0.5540,  loss:0.5540,  val_accuracy:0.6680,  val_binary_crossentropy:0.5813,  val_loss:0.5813,  
+Epoch: 200, accuracy:0.6910,  binary_crossentropy:0.5541,  loss:0.5541,  val_accuracy:0.6950,  val_binary_crossentropy:0.5843,  val_loss:0.5843,  
 ....................................................................................................
-Epoch: 300, accuracy:0.7302,  binary_crossentropy:0.5016,  loss:0.5016,  val_accuracy:0.6800,  val_binary_crossentropy:0.6131,  val_loss:0.6131,  
-......./home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_docs/plots/__init__.py:111: UserWarning: Attempt to set non-positive xlim on a log-scaled axis will be ignored.
-  plt.xlim(
-Model: "sequential_6"
+Epoch: 300, accuracy:0.7255,  binary_crossentropy:0.5098,  loss:0.5098,  val_accuracy:0.6880,  val_binary_crossentropy:0.5896,  val_loss:0.5896,  
+................................Model: "sequential_6"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
 =================================================================
@@ -1066,27 +548,21 @@ Trainable params: 803,329
 Non-trainable params: 0
 _________________________________________________________________
 
-Epoch: 0, accuracy:0.5075,  binary_crossentropy:0.8001,  loss:0.9585,  val_accuracy:0.4990,  val_binary_crossentropy:0.6809,  val_loss:0.8387,  
+Epoch: 0, accuracy:0.5090,  binary_crossentropy:0.7990,  loss:0.9573,  val_accuracy:0.4670,  val_binary_crossentropy:0.6863,  val_loss:0.8439,  
 ....................................................................................................
-Epoch: 100, accuracy:0.6520,  binary_crossentropy:0.6046,  loss:0.6347,  val_accuracy:0.6420,  val_binary_crossentropy:0.5853,  val_loss:0.6152,  
+Epoch: 100, accuracy:0.6352,  binary_crossentropy:0.6120,  loss:0.6389,  val_accuracy:0.6320,  val_binary_crossentropy:0.5922,  val_loss:0.6189,  
 ....................................................................................................
-Epoch: 200, accuracy:0.6646,  binary_crossentropy:0.5880,  loss:0.6135,  val_accuracy:0.6700,  val_binary_crossentropy:0.5741,  val_loss:0.5997,  
+Epoch: 200, accuracy:0.6621,  binary_crossentropy:0.5929,  loss:0.6168,  val_accuracy:0.6660,  val_binary_crossentropy:0.5748,  val_loss:0.5987,  
 ....................................................................................................
-Epoch: 300, accuracy:0.6659,  binary_crossentropy:0.5820,  loss:0.6094,  val_accuracy:0.6890,  val_binary_crossentropy:0.5646,  val_loss:0.5920,  
+Epoch: 300, accuracy:0.6691,  binary_crossentropy:0.5827,  loss:0.6101,  val_accuracy:0.6950,  val_binary_crossentropy:0.5688,  val_loss:0.5962,  
 ....................................................................................................
-Epoch: 400, accuracy:0.6759,  binary_crossentropy:0.5780,  loss:0.6068,  val_accuracy:0.7000,  val_binary_crossentropy:0.5538,  val_loss:0.5826,  
+Epoch: 400, accuracy:0.6732,  binary_crossentropy:0.5789,  loss:0.6082,  val_accuracy:0.6790,  val_binary_crossentropy:0.5647,  val_loss:0.5940,  
 ....................................................................................................
-Epoch: 500, accuracy:0.6789,  binary_crossentropy:0.5701,  loss:0.6010,  val_accuracy:0.6890,  val_binary_crossentropy:0.5508,  val_loss:0.5817,  
+Epoch: 500, accuracy:0.6773,  binary_crossentropy:0.5754,  loss:0.6069,  val_accuracy:0.6760,  val_binary_crossentropy:0.5538,  val_loss:0.5853,  
 ....................................................................................................
-Epoch: 600, accuracy:0.6842,  binary_crossentropy:0.5687,  loss:0.6014,  val_accuracy:0.6910,  val_binary_crossentropy:0.5464,  val_loss:0.5791,  
+Epoch: 600, accuracy:0.6844,  binary_crossentropy:0.5665,  loss:0.6004,  val_accuracy:0.6970,  val_binary_crossentropy:0.5490,  val_loss:0.5829,  
 ....................................................................................................
-Epoch: 700, accuracy:0.6908,  binary_crossentropy:0.5621,  loss:0.5958,  val_accuracy:0.7030,  val_binary_crossentropy:0.5447,  val_loss:0.5784,  
+Epoch: 700, accuracy:0.6884,  binary_crossentropy:0.5633,  loss:0.5981,  val_accuracy:0.6940,  val_binary_crossentropy:0.5427,  val_loss:0.5774,  
 ....................................................................................................
-Epoch: 800, accuracy:0.6837,  binary_crossentropy:0.5620,  loss:0.5970,  val_accuracy:0.6810,  val_binary_crossentropy:0.5437,  val_loss:0.5787,  
-....................................................................................................
-Epoch: 900, accuracy:0.6955,  binary_crossentropy:0.5585,  loss:0.5942,  val_accuracy:0.7080,  val_binary_crossentropy:0.5396,  val_loss:0.5753,  
-....................................................................................................
-Epoch: 1000, accuracy:0.6915,  binary_crossentropy:0.5555,  loss:0.5923,  val_accuracy:0.6950,  val_binary_crossentropy:0.5438,  val_loss:0.5806,  
-....................................................................................................
-Epoch: 1100, accuracy:0.7014,  binary_crossentropy:0.5548,  loss:0.5925,  val_accuracy:0.7080,  val_binary_crossentropy:0.5405,  val_loss:0.5783,  
-.....................................................
+Epoch: 800, accuracy:0.6915,  binary_crossentropy:0.5616,  loss:0.5974,  val_accuracy:0.6950,  val_binary_crossentropy:0.5461,  val_loss:0.5819,  
+.....................

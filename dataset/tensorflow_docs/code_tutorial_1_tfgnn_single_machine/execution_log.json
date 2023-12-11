@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/tutorials/log_2022/code_tutorial_1_tfgnn_single_machine_method-level.py", line 8, in <module>
+    from tensorflow_gnn.experimental.in_memory import datasets
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_gnn/experimental/in_memory/datasets.py", line 133, in <module>
+    [tfgnn.NodeSetName], None|interfaces.KeyToFeaturesAccessor]
+TypeError: unsupported operand type(s) for |: 'NoneType' and 'ABCMeta'

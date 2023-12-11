@@ -1,208 +1,21 @@
-WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmp5pgyt7zs
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpkzx6_boh
 WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
-[EXECUTION] [19:02:16] Waiting before running function for 10 seconds.
-[EXECUTION] [19:02:26] Sensors started
-[STABLE CHECK] [19:02:29] Success: temperature is below threshold.
-[MAIN] [19:02:29] Terminated sensors
-[STABLE CHECK] [19:02:29] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:02:49] Success: Machine is stable.
-[EXECUTION] [19:02:49] Successfully reached stable state
-[EXECUTION] [19:02:49] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:03:19] Performed tensorflow.compat.v1.estimator.Estimator() on input and will now save energy data.
-[EXECUTION] [19:03:19] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:03:19] Result: {'tensorflow.compat.v1.estimator.Estimator()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [19:03:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:03:19] Waiting before running function for 10 seconds.
-[EXECUTION] [19:03:29] Sensors started
-[STABLE CHECK] [19:03:32] Success: temperature is below threshold.
-[MAIN] [19:03:32] Terminated sensors
-[STABLE CHECK] [19:03:32] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:03:52] Success: Machine is stable.
-[EXECUTION] [19:03:52] Successfully reached stable state
-[EXECUTION] [19:03:52] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:04:22] Performed tensorflow.compat.v1.estimator.TrainSpec() on input and will now save energy data.
-[EXECUTION] [19:04:22] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:04:22] Result: {'tensorflow.compat.v1.estimator.TrainSpec()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [19:04:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:04:22] Waiting before running function for 10 seconds.
-[EXECUTION] [19:04:32] Sensors started
-[STABLE CHECK] [19:04:35] Success: temperature is below threshold.
-[MAIN] [19:04:35] Terminated sensors
-[STABLE CHECK] [19:04:35] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:04:55] Success: Machine is stable.
-[EXECUTION] [19:04:55] Successfully reached stable state
-[EXECUTION] [19:04:55] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:05:25] Performed tensorflow.compat.v1.estimator.EvalSpec() on input and will now save energy data.
-[EXECUTION] [19:05:25] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:05:25] Result: {'tensorflow.compat.v1.estimator.EvalSpec()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
-[EXECUTION] [19:05:25] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:05:25] Waiting before running function for 10 seconds.
-[EXECUTION] [19:05:35] Sensors started
-[STABLE CHECK] [19:05:38] Success: temperature is below threshold.
-[MAIN] [19:05:38] Terminated sensors
-[STABLE CHECK] [19:05:38] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:05:58] Success: Machine is stable.
-[EXECUTION] [19:05:58] Successfully reached stable state
-[EXECUTION] [19:05:59] Waiting before running function for 10 seconds.
-[EXECUTION] [19:06:09] Sensors started
-[STABLE CHECK] [19:06:12] Success: temperature is below threshold.
-[MAIN] [19:06:12] Terminated sensors
-[STABLE CHECK] [19:06:12] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:06:32] Success: Machine is stable.
-[EXECUTION] [19:06:32] Successfully reached stable state
-[EXECUTION] [19:06:32] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:07:02] Performed tensorflow.compat.v1.layers.Dense(1)() on input and will now save energy data.
-[EXECUTION] [19:07:02] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 124528.0
-4-size 124528.0
-++++++5++++++
-5-size 124528.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:07:02] Result: {'tensorflow.compat.v1.layers.Dense(1)()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
-[EXECUTION] [19:07:02] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:07:02] Waiting before running function for 10 seconds.
-[EXECUTION] [19:07:12] Sensors started
-[STABLE CHECK] [19:07:15] Success: temperature is below threshold.
-[MAIN] [19:07:15] Terminated sensors
-[STABLE CHECK] [19:07:15] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:07:35] Success: Machine is stable.
-[EXECUTION] [19:07:35] Successfully reached stable state
-[EXECUTION] [19:07:35] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:08:05] Performed tensorflow.compat.v1.losses.mean_squared_error() on input and will now save energy data.
-[EXECUTION] [19:08:05] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:08:05] Result: {'tensorflow.compat.v1.losses.mean_squared_error()': {'energy_data': {'cpu': '{"columns":["time_elap
-[EXECUTION] [19:08:05] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:08:05] Waiting before running function for 10 seconds.
-[EXECUTION] [19:08:15] Sensors started
-[STABLE CHECK] [19:08:18] Success: temperature is below threshold.
-[MAIN] [19:08:18] Terminated sensors
-[STABLE CHECK] [19:08:18] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:08:38] Success: Machine is stable.
-[EXECUTION] [19:08:38] Successfully reached stable state
-[EXECUTION] [19:08:38] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:09:08] Performed tensorflow.compat.v1.train.AdagradOptimizer() on input and will now save energy data.
-[EXECUTION] [19:09:08] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:09:08] Result: {'tensorflow.compat.v1.train.AdagradOptimizer()': {'energy_data': {'cpu': '{"columns":["time_elapsed
-[EXECUTION] [19:09:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
 WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/adagrad.py:142: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
 Call initializer instance with the dtype argument instead of passing it to the constructor
-2023-12-08 19:10:12.577014: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-[EXECUTION] [19:09:08] Waiting before running function for 10 seconds.
-[EXECUTION] [19:09:18] Sensors started
-[STABLE CHECK] [19:09:21] Success: temperature is below threshold.
-[MAIN] [19:09:21] Terminated sensors
-[STABLE CHECK] [19:09:21] Waiting 20 seconds to reach stable state.
+2023-12-09 07:25:11.193971: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [07:24:37] Waiting before running function for 10 seconds.
+[EXECUTION] [07:24:47] Sensors started
+[STABLE CHECK] [07:24:50] Success: temperature is below threshold.
+[MAIN] [07:24:50] Terminated sensors
+[STABLE CHECK] [07:24:50] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [19:09:41] Success: Machine is stable.
-[EXECUTION] [19:09:41] Successfully reached stable state
-[EXECUTION] [19:09:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:10:11] Performed tensorflow.compat.v1.train.AdagradOptimizer.minimize() on input and will now save energy data.
-[EXECUTION] [19:10:11] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 330096.0
-4-size 330096.0
-++++++5++++++
-5-size 330096.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 331768.0
-outside_object_size
-[EXECUTION] [19:10:11] Result: {'tensorflow.compat.v1.train.AdagradOptimizer.minimize()': {'energy_data': {'cpu': '{"columns":["tim
-[EXECUTION] [19:10:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:10:13] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:10:43] Performed tensorflow.compat.v1.estimator.train_and_evaluate() on input and will now save energy data.
+[STABLE CHECK] [07:25:10] Success: Machine is stable.
+[EXECUTION] [07:25:10] Successfully reached stable state
+[EXECUTION] [07:25:12] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:25:42] Performed tensorflow.compat.v1.estimator.train_and_evaluate() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -311,201 +124,24 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [19:10:43] Result: {'tensorflow.compat.v1.estimator.train_and_evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
-[EXECUTION] [19:10:43] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:10:43] Waiting before running function for 10 seconds.
-[EXECUTION] [19:10:53] Sensors started
-[STABLE CHECK] [19:10:56] Success: temperature is below threshold.
-[MAIN] [19:10:56] Terminated sensors
-[STABLE CHECK] [19:10:56] Waiting 20 seconds to reach stable state.
+[EXECUTION] [07:25:42] Result: {'tensorflow.compat.v1.estimator.train_and_evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [07:25:42] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-5.json
+[EXECUTION] [07:25:42] Waiting before running function for 10 seconds.
+[EXECUTION] [07:25:52] Sensors started
+[STABLE CHECK] [07:25:55] Temperature too high: mean is 43.9, which is greater than 40
+[STABLE CHECK] [07:25:55] Temperature is too high.
+[STABLE CHECK] [07:25:55] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [19:11:16] Success: Machine is stable.
-[EXECUTION] [19:11:16] Successfully reached stable state
-[EXECUTION] [19:11:16] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:11:47] Performed tensorflow.distribute.cluster_resolver.TFConfigClusterResolver() on input and will now save energy data.
-[EXECUTION] [19:11:47] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:11:47] Result: {'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()': {'energy_data': {'cpu': '{"colu
-[EXECUTION] [19:11:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:11:47] Waiting before running function for 10 seconds.
-[EXECUTION] [19:11:57] Sensors started
-[STABLE CHECK] [19:12:00] Success: temperature is below threshold.
-[MAIN] [19:12:00] Terminated sensors
-[STABLE CHECK] [19:12:00] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [07:26:15] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [07:26:15] Temperature is too high.
+[STABLE CHECK] [07:26:15] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [19:12:20] Success: Machine is stable.
-[EXECUTION] [19:12:20] Successfully reached stable state
-[EXECUTION] [19:12:20] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:12:50] Performed tensorflow.compat.v1.ConfigProto() on input and will now save energy data.
-[EXECUTION] [19:12:50] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:12:50] Result: {'tensorflow.compat.v1.ConfigProto()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
-[EXECUTION] [19:12:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:12:50] Waiting before running function for 10 seconds.
-[EXECUTION] [19:13:00] Sensors started
-[STABLE CHECK] [19:13:03] Success: temperature is below threshold.
-[MAIN] [19:13:03] Terminated sensors
-[STABLE CHECK] [19:13:03] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [07:26:35] Success: temperature is below threshold.
+[MAIN] [07:26:35] Terminated sensors
+[STABLE CHECK] [07:26:35] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [19:13:23] Success: Machine is stable.
-[EXECUTION] [19:13:23] Successfully reached stable state
-[EXECUTION] [19:13:23] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:13:53] Performed tensorflow.distribute.Server() on input and will now save energy data.
-[EXECUTION] [19:13:53] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()', 'tensorflow.distribute.Server()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 2072.0
-4-size 2072.0
-++++++5++++++
-5-size 2072.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-4-size 184.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:13:53] Result: {'tensorflow.distribute.Server()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
-[EXECUTION] [19:13:53] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:13:53] Waiting before running function for 10 seconds.
-[EXECUTION] [19:14:03] Sensors started
-[STABLE CHECK] [19:14:06] Success: temperature is below threshold.
-[MAIN] [19:14:06] Terminated sensors
-[STABLE CHECK] [19:14:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:14:26] Success: Machine is stable.
-[EXECUTION] [19:14:26] Successfully reached stable state
-[EXECUTION] [19:14:26] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:14:56] Performed tensorflow.distribute.experimental.ParameterServerStrategy() on input and will now save energy data.
-[EXECUTION] [19:14:56] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()', 'tensorflow.distribute.Server()', 'tensorflow.distribute.experimental.ParameterServerStrategy()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 424.0
-4-size 424.0
-++++++5++++++
-5-size 424.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:14:56] Result: {'tensorflow.distribute.experimental.ParameterServerStrategy()': {'energy_data': {'cpu': '{"columns"
-[EXECUTION] [19:14:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:14:57] Waiting before running function for 10 seconds.
-[EXECUTION] [19:15:07] Sensors started
-[STABLE CHECK] [19:15:10] Success: temperature is below threshold.
-[MAIN] [19:15:10] Terminated sensors
-[STABLE CHECK] [19:15:10] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:15:30] Success: Machine is stable.
-[EXECUTION] [19:15:30] Successfully reached stable state
-[EXECUTION] [19:15:30] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:16:00] Performed tensorflow.data.Dataset.from_tensor_slices((features, labels)).shuffle(10).repeat().batch() on input and will now save energy data.
-[EXECUTION] [19:16:00] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()', 'tensorflow.distribute.Server()', 'tensorflow.distribute.experimental.ParameterServerStrategy()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).shuffle(10).repeat().batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:16:00] Result: {'tensorflow.data.Dataset.from_tensor_slices((features, labels)).shuffle(10).repeat().batch()': {'en
-[EXECUTION] [19:16:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:16:00] Waiting before running function for 10 seconds.
-[EXECUTION] [19:16:10] Sensors started
-[STABLE CHECK] [19:16:13] Success: temperature is below threshold.
-[MAIN] [19:16:13] Terminated sensors
-[STABLE CHECK] [19:16:13] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:16:33] Success: Machine is stable.
-[EXECUTION] [19:16:33] Successfully reached stable state
-[EXECUTION] [19:16:33] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:17:03] Performed tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).repeat().batch() on input and will now save energy data.
-[EXECUTION] [19:17:03] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()', 'tensorflow.distribute.Server()', 'tensorflow.distribute.experimental.ParameterServerStrategy()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).shuffle(10).repeat().batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).repeat().batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:17:03] Result: {'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).repeat().batch()': {'ener
-[EXECUTION] [19:17:03] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:17:03] Waiting before running function for 10 seconds.
-[EXECUTION] [19:17:13] Sensors started
-[STABLE CHECK] [19:17:16] Success: temperature is below threshold.
-[MAIN] [19:17:16] Terminated sensors
-[STABLE CHECK] [19:17:16] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:17:36] Success: Machine is stable.
-[EXECUTION] [19:17:36] Successfully reached stable state
-[EXECUTION] [19:17:36] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:18:06] Performed tensorflow.keras.models.Sequential() on input and will now save energy data.
-[EXECUTION] [19:18:06] skipping call added, current list is: ['tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.distribute.cluster_resolver.TFConfigClusterResolver()', 'tensorflow.compat.v1.ConfigProto()', 'tensorflow.distribute.Server()', 'tensorflow.distribute.experimental.ParameterServerStrategy()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).shuffle(10).repeat().batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).repeat().batch()', 'tensorflow.keras.models.Sequential()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++4++++++
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++5++++++
-5-size 9376.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:18:06] Result: {'tensorflow.keras.models.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [19:18:06] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/multi_worker_cpu_gpu_training/experiment-1.json
-[EXECUTION] [19:18:06] Waiting before running function for 10 seconds.
-[EXECUTION] [19:18:16] Sensors started
-[STABLE CHECK] [19:18:19] Success: temperature is below threshold.
-[MAIN] [19:18:19] Terminated sensors
-[STABLE CHECK] [19:18:19] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:18:39] Success: Machine is stable.
-[EXECUTION] [19:18:39] Successfully reached stable state
+[STABLE CHECK] [07:26:55] Success: Machine is stable.
+[EXECUTION] [07:26:55] Successfully reached stable state
 Traceback (most recent call last):
   File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/multi_worker_cpu_gpu_training_method-level.py", line 88, in <module>
     optimizer = tf.keras.optimizers.legacy.Adagrad(learning_rate=0.05)

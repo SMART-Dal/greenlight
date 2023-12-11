@@ -1,313 +1,117 @@
-2023-12-08 21:07:41.728134: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpik0n6esn
+2023-12-09 08:47:24.733248: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpsacdrd8c
 WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_estimator/python/estimator/estimator.py:1244: StrategyBase.configure (from tensorflow.python.distribute.distribute_lib) is deprecated and will be removed in a future version.
 Instructions for updating:
 use `update_config_proto` instead.
 /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py:453: UserWarning: To make it possible to preserve tf.data options across serialization boundaries, their implementation has moved to be part of the TensorFlow graph. As a consequence, the options value is in general no longer known at graph construction time. Invoking this method in graph mode retains the legacy behavior of the original implementation, but note that the returned value might not reflect the actual value of the options.
   warnings.warn("To make it possible to preserve tf.data options across "
-WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fc032acd940> and will run it as-is.
-Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
-Cause: name 'fscope' is not defined
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
-[EXECUTION] [21:07:08] Waiting before running function for 10 seconds.
-[EXECUTION] [21:07:18] Sensors started
-[STABLE CHECK] [21:07:21] Success: temperature is below threshold.
-[MAIN] [21:07:21] Terminated sensors
-[STABLE CHECK] [21:07:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:07:41] Success: Machine is stable.
-[EXECUTION] [21:07:41] Successfully reached stable state
-[EXECUTION] [21:07:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:08:11] Performed tensorflow.compat.v1.distribute.MirroredStrategy() on input and will now save energy data.
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:08:11] Result: {'tensorflow.compat.v1.distribute.MirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_el
-[EXECUTION] [21:08:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:08:11] Waiting before running function for 10 seconds.
-[EXECUTION] [21:08:21] Sensors started
-[STABLE CHECK] [21:08:24] Success: temperature is below threshold.
-[MAIN] [21:08:24] Terminated sensors
-[STABLE CHECK] [21:08:24] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:08:44] Not stable: stdev/mean is 0.09313346762737144, which is greater than 0.03
-[STABLE CHECK] [21:08:44] Machine is not stable yet.
-[STABLE CHECK] [21:08:44] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:09:04] Success: Machine is stable.
-[EXECUTION] [21:09:04] Successfully reached stable state
-[EXECUTION] [21:09:04] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:09:34] Performed tensorflow.compat.v1.estimator.RunConfig() on input and will now save energy data.
-[EXECUTION] [21:09:34] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 64.0
-4-size 136.0
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:09:34] Result: {'tensorflow.compat.v1.estimator.RunConfig()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [21:09:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:09:34] Waiting before running function for 10 seconds.
-[EXECUTION] [21:09:45] Sensors started
-[STABLE CHECK] [21:09:48] Success: temperature is below threshold.
-[MAIN] [21:09:48] Terminated sensors
-[STABLE CHECK] [21:09:48] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:10:08] Success: Machine is stable.
-[EXECUTION] [21:10:08] Successfully reached stable state
-[EXECUTION] [21:10:08] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:10:38] Performed tensorflow.compat.v1.estimator.Estimator() on input and will now save energy data.
-[EXECUTION] [21:10:38] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-4-size 120.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:10:38] Result: {'tensorflow.compat.v1.estimator.Estimator()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [21:10:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:10:38] Waiting before running function for 10 seconds.
-[EXECUTION] [21:10:48] Sensors started
-[STABLE CHECK] [21:10:51] Success: temperature is below threshold.
-[MAIN] [21:10:51] Terminated sensors
-[STABLE CHECK] [21:10:51] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:11:11] Not stable: stdev/mean is 0.11480440652217253, which is greater than 0.03
-[STABLE CHECK] [21:11:11] Machine is not stable yet.
-[STABLE CHECK] [21:11:11] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:11:31] Not stable: stdev/mean is 0.06649347019740112, which is greater than 0.03
-[STABLE CHECK] [21:11:31] Machine is not stable yet.
-[STABLE CHECK] [21:11:31] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:11:51] Success: Machine is stable.
-[EXECUTION] [21:11:51] Successfully reached stable state
-[EXECUTION] [21:11:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:12:21] Performed tensorflow.compat.v1.estimator.TrainSpec() on input and will now save energy data.
-[EXECUTION] [21:12:21] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:12:21] Result: {'tensorflow.compat.v1.estimator.TrainSpec()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [21:12:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:12:21] Waiting before running function for 10 seconds.
-[EXECUTION] [21:12:31] Sensors started
-[STABLE CHECK] [21:12:34] Success: temperature is below threshold.
-[MAIN] [21:12:34] Terminated sensors
-[STABLE CHECK] [21:12:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:12:54] Success: Machine is stable.
-[EXECUTION] [21:12:54] Successfully reached stable state
-[EXECUTION] [21:12:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:13:24] Performed tensorflow.compat.v1.estimator.EvalSpec() on input and will now save energy data.
-[EXECUTION] [21:13:24] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:13:24] Result: {'tensorflow.compat.v1.estimator.EvalSpec()': {'energy_data': {'cpu': '{"columns":["time_elapsed","e
-[EXECUTION] [21:13:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:13:24] Waiting before running function for 10 seconds.
-[EXECUTION] [21:13:34] Sensors started
-[STABLE CHECK] [21:13:37] Success: temperature is below threshold.
-[MAIN] [21:13:37] Terminated sensors
-[STABLE CHECK] [21:13:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:13:57] Not stable: stdev/mean is 0.2842110711186023, which is greater than 0.03
-[STABLE CHECK] [21:13:57] Machine is not stable yet.
-[STABLE CHECK] [21:13:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:14:17] Success: Machine is stable.
-[EXECUTION] [21:14:17] Successfully reached stable state
-[EXECUTION] [21:14:18] Waiting before running function for 10 seconds.
-[EXECUTION] [21:14:28] Sensors started
-[STABLE CHECK] [21:14:32] Success: temperature is below threshold.
-[MAIN] [21:14:32] Terminated sensors
-[STABLE CHECK] [21:14:32] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:14:52] Success: Machine is stable.
-[EXECUTION] [21:14:52] Successfully reached stable state
-[EXECUTION] [21:14:53] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:15:23] Performed tensorflow.compat.v1.layers.Dense(1)() on input and will now save energy data.
-WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fc0f71e61f0> and will run it as-is.
-Cause: generators are not supported
-To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
 WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/adagrad.py:142: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
 Call initializer instance with the dtype argument instead of passing it to the constructor
 WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_estimator/python/estimator/util.py:95: DistributedIteratorV1.initialize (from tensorflow.python.distribute.input_lib) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use the iterator's `initializer` property instead.
-2023-12-08 21:22:36.866788: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+2023-12-09 08:48:49.563536: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
 	.  Registered:  device='CPU'
 
-2023-12-08 21:22:36.868490: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+2023-12-09 08:48:49.565331: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
 	.  Registered:  device='CPU'
 
-/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py:453: UserWarning: To make it possible to preserve tf.data options across serialization boundaries, their implementation has moved to be part of the TensorFlow graph. As a consequence, the options value is in general no longer known at graph construction time. Invoking this method in graph mode retains the legacy behavior of the original implementation, but note that the returned value might not reflect the actual value of the options.
-  warnings.warn("To make it possible to preserve tf.data options across "
-2023-12-08 21:22:38.240386: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
+2023-12-09 08:48:50.968592: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorFromStringHandle' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorFromStringHandle}}
 	.  Registered:  device='CPU'
 
-2023-12-08 21:22:38.242040: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
+2023-12-09 08:48:50.970295: W tensorflow/core/grappler/utils/graph_view.cc:836] No registered 'MultiDeviceIteratorGetNextFromShard' OpKernel for GPU devices compatible with node {{node MultiDeviceIteratorGetNextFromShard}}
 	.  Registered:  device='CPU'
 
-[EXECUTION] [21:15:23] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()']
+2023-12-09 08:50:14.417550: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorSliceDataset/_2"
+op: "TensorSliceDataset"
+input: "Placeholder/_0"
+input: "Placeholder/_1"
+attr {
+  key: "Toutput_types"
+  value {
+    list {
+      type: DT_FLOAT
+      type: DT_FLOAT
+    }
+  }
+}
+attr {
+  key: "_cardinality"
+  value {
+    i: 3
+  }
+}
+attr {
+  key: "is_files"
+  value {
+    b: false
+  }
+}
+attr {
+  key: "metadata"
+  value {
+    s: "\n\025TensorSliceDataset:10"
+  }
+}
+attr {
+  key: "output_shapes"
+  value {
+    list {
+      shape {
+        dim {
+          size: 2
+        }
+      }
+      shape {
+        dim {
+          size: 1
+        }
+      }
+    }
+  }
+}
+
+[EXECUTION] [08:46:10] Waiting before running function for 10 seconds.
+[EXECUTION] [08:46:20] Sensors started
+[STABLE CHECK] [08:46:23] Temperature too high: mean is 42, which is greater than 40
+[STABLE CHECK] [08:46:23] Temperature is too high.
+[STABLE CHECK] [08:46:23] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [08:46:44] Temperature too high: mean is 40.95, which is greater than 40
+[STABLE CHECK] [08:46:44] Temperature is too high.
+[STABLE CHECK] [08:46:44] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [08:47:04] Success: temperature is below threshold.
+[MAIN] [08:47:04] Terminated sensors
+[STABLE CHECK] [08:47:04] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:47:24] Success: Machine is stable.
+[EXECUTION] [08:47:24] Successfully reached stable state
+[EXECUTION] [08:47:24] waiting idle for 30 seconds after function execution
+[EXECUTION] [08:47:54] Performed tensorflow.compat.v1.distribute.MirroredStrategy() on input and will now save energy data.
 inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 247384.0
-4-size 247384.0
-++++++5++++++
-5-size 247384.0
 outside_arg_size
 inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [21:16:14] Result: {'tensorflow.compat.v1.layers.Dense(1)()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
-[EXECUTION] [21:16:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:16:14] Waiting before running function for 10 seconds.
-[EXECUTION] [21:16:24] Sensors started
-[STABLE CHECK] [21:16:27] Success: temperature is below threshold.
-[MAIN] [21:16:27] Terminated sensors
-[STABLE CHECK] [21:16:27] Waiting 20 seconds to reach stable state.
+[EXECUTION] [08:47:54] Result: {'tensorflow.compat.v1.distribute.MirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_el
+[EXECUTION] [08:47:54] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-5.json
+[EXECUTION] [08:47:54] Waiting before running function for 10 seconds.
+[EXECUTION] [08:48:04] Sensors started
+[STABLE CHECK] [08:48:07] Success: temperature is below threshold.
+[MAIN] [08:48:07] Terminated sensors
+[STABLE CHECK] [08:48:07] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [21:16:47] Success: Machine is stable.
-[EXECUTION] [21:16:47] Successfully reached stable state
-[EXECUTION] [21:16:47] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:17:17] Performed tensorflow.compat.v1.losses.mean_squared_error() on input and will now save energy data.
-[EXECUTION] [21:17:18] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:17:18] Result: {'tensorflow.compat.v1.losses.mean_squared_error()': {'energy_data': {'cpu': '{"columns":["time_elap
-[EXECUTION] [21:17:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:17:18] Waiting before running function for 10 seconds.
-[EXECUTION] [21:17:28] Sensors started
-[STABLE CHECK] [21:17:31] Success: temperature is below threshold.
-[MAIN] [21:17:31] Terminated sensors
-[STABLE CHECK] [21:17:31] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [08:48:27] Not stable: stdev/mean is 0.1343365460466325, which is greater than 0.03
+[STABLE CHECK] [08:48:27] Machine is not stable yet.
+[STABLE CHECK] [08:48:27] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [21:17:51] Success: Machine is stable.
-[EXECUTION] [21:17:51] Successfully reached stable state
-[EXECUTION] [21:17:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:18:21] Performed tensorflow.compat.v1.train.AdagradOptimizer() on input and will now save energy data.
-[EXECUTION] [21:18:21] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:18:21] Result: {'tensorflow.compat.v1.train.AdagradOptimizer()': {'energy_data': {'cpu': '{"columns":["time_elapsed
-[EXECUTION] [21:18:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:18:21] Waiting before running function for 10 seconds.
-[EXECUTION] [21:18:31] Sensors started
-[STABLE CHECK] [21:18:34] Success: temperature is below threshold.
-[MAIN] [21:18:34] Terminated sensors
-[STABLE CHECK] [21:18:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:18:54] Not stable: stdev/mean is 0.04042529559453582, which is greater than 0.03
-[STABLE CHECK] [21:18:54] Machine is not stable yet.
-[STABLE CHECK] [21:18:54] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:19:14] Not stable: stdev/mean is 0.07452170892631037, which is greater than 0.03
-[STABLE CHECK] [21:19:14] Machine is not stable yet.
-[STABLE CHECK] [21:19:14] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:19:34] Not stable: stdev/mean is 0.058500547005741796, which is greater than 0.03
-[STABLE CHECK] [21:19:34] Machine is not stable yet.
-[STABLE CHECK] [21:19:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:19:54] Success: Machine is stable.
-[EXECUTION] [21:19:54] Successfully reached stable state
-[EXECUTION] [21:19:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:20:24] Performed tensorflow.compat.v1.train.AdagradOptimizer.minimize() on input and will now save energy data.
-[EXECUTION] [21:20:24] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 452040.0
-4-size 452040.0
-++++++5++++++
-5-size 452040.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 453584.0
-outside_object_size
-[EXECUTION] [21:22:36] Result: {'tensorflow.compat.v1.train.AdagradOptimizer.minimize()': {'energy_data': {'cpu': '{"columns":["tim
-[EXECUTION] [21:22:36] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:22:38] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:23:08] Performed tensorflow.compat.v1.estimator.train_and_evaluate() on input and will now save energy data.
+[STABLE CHECK] [08:48:47] Success: Machine is stable.
+[EXECUTION] [08:48:47] Successfully reached stable state
+[EXECUTION] [08:48:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [08:49:21] Performed tensorflow.compat.v1.estimator.train_and_evaluate() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -416,251 +220,24 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [21:23:08] Result: {'tensorflow.compat.v1.estimator.train_and_evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
-[EXECUTION] [21:23:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:23:08] Waiting before running function for 10 seconds.
-[EXECUTION] [21:23:18] Sensors started
-[STABLE CHECK] [21:23:21] Success: temperature is below threshold.
-[MAIN] [21:23:21] Terminated sensors
-[STABLE CHECK] [21:23:21] Waiting 20 seconds to reach stable state.
+[EXECUTION] [08:49:21] Result: {'tensorflow.compat.v1.estimator.train_and_evaluate()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [08:49:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-5.json
+[EXECUTION] [08:49:21] Waiting before running function for 10 seconds.
+[EXECUTION] [08:49:31] Sensors started
+[STABLE CHECK] [08:49:34] Temperature too high: mean is 41.95, which is greater than 40
+[STABLE CHECK] [08:49:34] Temperature is too high.
+[STABLE CHECK] [08:49:34] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [21:23:41] Success: Machine is stable.
-[EXECUTION] [21:23:41] Successfully reached stable state
-[EXECUTION] [21:23:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:24:11] Performed tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch() on input and will now save energy data.
-[EXECUTION] [21:24:11] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:24:11] Result: {'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()': {'energy_data': {'cpu': '
-[EXECUTION] [21:24:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:24:11] Waiting before running function for 10 seconds.
-[EXECUTION] [21:24:21] Sensors started
-[STABLE CHECK] [21:24:24] Success: temperature is below threshold.
-[MAIN] [21:24:24] Terminated sensors
-[STABLE CHECK] [21:24:24] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [08:49:54] Success: temperature is below threshold.
+[MAIN] [08:49:54] Terminated sensors
+[STABLE CHECK] [08:49:54] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [21:24:44] Success: Machine is stable.
-[EXECUTION] [21:24:44] Successfully reached stable state
-[EXECUTION] [21:24:44] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:25:14] Performed tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch() on input and will now save energy data.
-[EXECUTION] [21:25:14] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 32.0
-4-size 32.0
-++++++5++++++
-5-size 32.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:25:14] Result: {'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()': {'energy_data':
-[EXECUTION] [21:25:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:25:14] Waiting before running function for 10 seconds.
-[EXECUTION] [21:25:24] Sensors started
-[STABLE CHECK] [21:25:27] Success: temperature is below threshold.
-[MAIN] [21:25:27] Terminated sensors
-[STABLE CHECK] [21:25:27] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [08:50:14] Success: Machine is stable.
+[EXECUTION] [08:50:14] Successfully reached stable state
 
-[STABLE CHECK] [21:25:47] Success: Machine is stable.
-[EXECUTION] [21:25:47] Successfully reached stable state
-[EXECUTION] [21:25:47] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:26:18] Performed tensorflow.distribute.MirroredStrategy() on input and will now save energy data.
-[EXECUTION] [21:26:18] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()', 'tensorflow.distribute.MirroredStrategy()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:26:18] Result: {'tensorflow.distribute.MirroredStrategy()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
-[EXECUTION] [21:26:18] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:26:18] Waiting before running function for 10 seconds.
-[EXECUTION] [21:26:28] Sensors started
-[STABLE CHECK] [21:26:31] Success: temperature is below threshold.
-[MAIN] [21:26:31] Terminated sensors
-[STABLE CHECK] [21:26:31] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:26:51] Success: Machine is stable.
-[EXECUTION] [21:26:51] Successfully reached stable state
-[EXECUTION] [21:26:51] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:27:21] Performed tensorflow.keras.models.Sequential() on input and will now save energy data.
-[EXECUTION] [21:27:21] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()', 'tensorflow.distribute.MirroredStrategy()', 'tensorflow.keras.models.Sequential()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++4++++++
-++++++5++++++
-5-size 9376.0
-4-size 9376.0
-++++++5++++++
-5-size 9376.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:27:21] Result: {'tensorflow.keras.models.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [21:27:21] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:27:21] Waiting before running function for 10 seconds.
-[EXECUTION] [21:27:31] Sensors started
-[STABLE CHECK] [21:27:34] Success: temperature is below threshold.
-[MAIN] [21:27:34] Terminated sensors
-[STABLE CHECK] [21:27:34] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:27:54] Success: Machine is stable.
-[EXECUTION] [21:27:54] Successfully reached stable state
-[EXECUTION] [21:27:54] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:28:24] Performed tensorflow.keras.optimizers.Adagrad() on input and will now save energy data.
-[EXECUTION] [21:28:24] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()', 'tensorflow.distribute.MirroredStrategy()', 'tensorflow.keras.models.Sequential()', 'tensorflow.keras.optimizers.Adagrad()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [21:28:24] Result: {'tensorflow.keras.optimizers.Adagrad()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energ
-[EXECUTION] [21:28:24] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:28:24] Waiting before running function for 10 seconds.
-2023-12-08 21:32:01.158859: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorSliceDataset/_2"
-op: "TensorSliceDataset"
-input: "Placeholder/_0"
-input: "Placeholder/_1"
-attr {
-  key: "Toutput_types"
-  value {
-    list {
-      type: DT_FLOAT
-      type: DT_FLOAT
-    }
-  }
-}
-attr {
-  key: "_cardinality"
-  value {
-    i: 3
-  }
-}
-attr {
-  key: "is_files"
-  value {
-    b: false
-  }
-}
-attr {
-  key: "metadata"
-  value {
-    s: "\n\025TensorSliceDataset:10"
-  }
-}
-attr {
-  key: "output_shapes"
-  value {
-    list {
-      shape {
-        dim {
-          size: 2
-        }
-      }
-      shape {
-        dim {
-          size: 1
-        }
-      }
-    }
-  }
-}
-
-[EXECUTION] [21:28:34] Sensors started
-[STABLE CHECK] [21:28:37] Success: temperature is below threshold.
-[MAIN] [21:28:37] Terminated sensors
-[STABLE CHECK] [21:28:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:28:57] Not stable: stdev/mean is 0.13757217504594613, which is greater than 0.03
-[STABLE CHECK] [21:28:57] Machine is not stable yet.
-[STABLE CHECK] [21:28:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:29:17] Not stable: stdev/mean is 0.2787005820833424, which is greater than 0.03
-[STABLE CHECK] [21:29:17] Machine is not stable yet.
-[STABLE CHECK] [21:29:17] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:29:37] Not stable: stdev/mean is 0.06515820613886411, which is greater than 0.03
-[STABLE CHECK] [21:29:37] Machine is not stable yet.
-[STABLE CHECK] [21:29:37] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:29:57] Success: Machine is stable.
-[EXECUTION] [21:29:57] Successfully reached stable state
-[EXECUTION] [21:29:57] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:30:27] Performed tensorflow.keras.models.Sequential.compile() on input and will now save energy data.
-[EXECUTION] [21:30:27] skipping call added, current list is: ['tensorflow.compat.v1.estimator.RunConfig()', 'tensorflow.compat.v1.estimator.Estimator()', 'tensorflow.compat.v1.estimator.TrainSpec()', 'tensorflow.compat.v1.estimator.EvalSpec()', 'tensorflow.compat.v1.layers.Dense(1)()', 'tensorflow.compat.v1.losses.mean_squared_error()', 'tensorflow.compat.v1.train.AdagradOptimizer()', 'tensorflow.compat.v1.train.AdagradOptimizer.minimize()', 'tensorflow.data.Dataset.from_tensor_slices((features, labels)).batch()', 'tensorflow.data.Dataset.from_tensor_slices((eval_features, eval_labels)).batch()', 'tensorflow.distribute.MirroredStrategy()', 'tensorflow.keras.models.Sequential()', 'tensorflow.keras.optimizers.Adagrad()', 'tensorflow.keras.models.Sequential.compile()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-4-size 120.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 78512.0
-outside_object_size
-[EXECUTION] [21:30:27] Result: {'tensorflow.keras.models.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [21:30:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:30:27] Waiting before running function for 10 seconds.
-[EXECUTION] [21:30:38] Sensors started
-[STABLE CHECK] [21:30:41] Success: temperature is below threshold.
-[MAIN] [21:30:41] Terminated sensors
-[STABLE CHECK] [21:30:41] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:31:01] Not stable: stdev/mean is 0.12268986507784821, which is greater than 0.03
-[STABLE CHECK] [21:31:01] Machine is not stable yet.
-[STABLE CHECK] [21:31:01] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:31:21] Not stable: stdev/mean is 0.05258101445165893, which is greater than 0.03
-[STABLE CHECK] [21:31:21] Machine is not stable yet.
-[STABLE CHECK] [21:31:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:31:41] Not stable: stdev/mean is 0.08878476213092507, which is greater than 0.03
-[STABLE CHECK] [21:31:41] Machine is not stable yet.
-[STABLE CHECK] [21:31:41] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:32:01] Success: Machine is stable.
-[EXECUTION] [21:32:01] Successfully reached stable state
-
-1/3 [=========>....................] - ETA: 0s - loss: 7.5342
-3/3 [==============================] - 0s 5ms/step - loss: 22.1011
-2023-12-08 21:33:45.001561: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorSliceDataset/_2"
+1/3 [=========>....................] - ETA: 0s - loss: 1.9207
+3/3 [==============================] - 0s 5ms/step - loss: 2.9556
+2023-12-09 08:50:45.032521: W tensorflow/core/grappler/optimizers/data/auto_shard.cc:766] AUTO sharding policy will apply DATA sharding policy as it failed to apply FILE sharding policy because of the following reason: Found an unshardable source dataset: name: "TensorSliceDataset/_2"
 op: "TensorSliceDataset"
 input: "Placeholder/_0"
 input: "Placeholder/_1"
@@ -709,8 +286,8 @@ attr {
   }
 }
 
-[EXECUTION] [21:32:01] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:32:31] Performed tensorflow.keras.models.Sequential.fit() on input and will now save energy data.
+[EXECUTION] [08:50:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [08:50:44] Performed tensorflow.keras.models.Sequential.fit() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++5++++++
@@ -723,50 +300,10 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 ++++++5++++++
-5-size 880800.0
+5-size 871688.0
 outside_object_size
-[EXECUTION] [21:32:31] Result: {'tensorflow.keras.models.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
-[EXECUTION] [21:32:31] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
-[EXECUTION] [21:32:31] Waiting before running function for 10 seconds.
-[EXECUTION] [21:32:41] Sensors started
-[STABLE CHECK] [21:32:44] Temperature too high: mean is 41.5, which is greater than 40
-[STABLE CHECK] [21:32:44] Temperature is too high.
-[STABLE CHECK] [21:32:44] Waiting 20 seconds to reach low temperature.
+[EXECUTION] [08:50:45] Result: {'tensorflow.keras.models.Sequential.fit()': {'energy_data': {'cpu': '{"columns":["time_elapsed","en
+[EXECUTION] [08:50:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-5.json
 
-[STABLE CHECK] [21:33:04] Success: temperature is below threshold.
-[MAIN] [21:33:04] Terminated sensors
-[STABLE CHECK] [21:33:04] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:33:24] Not stable: stdev/mean is 0.0563016775531596, which is greater than 0.03
-[STABLE CHECK] [21:33:24] Machine is not stable yet.
-[STABLE CHECK] [21:33:24] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [21:33:44] Success: Machine is stable.
-[EXECUTION] [21:33:44] Successfully reached stable state
-
-1/3 [=========>....................] - ETA: 0s - loss: 56.8789
-3/3 [==============================] - 0s 4ms/step - loss: 87.2044
-[EXECUTION] [21:33:45] waiting idle for 30 seconds after function execution
-[EXECUTION] [21:34:15] Performed tensorflow.keras.models.Sequential.evaluate() on input and will now save energy data.
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 23000.0
-4-size 23000.0
-++++++5++++++
-5-size 23000.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 1120528.0
-outside_object_size
-[EXECUTION] [21:34:15] Result: {'tensorflow.keras.models.Sequential.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed
-[EXECUTION] [21:34:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mirrored_strategy/experiment-1.json
+1/3 [=========>....................] - ETA: 0s - loss: 3.7364
+3/3 [==============================] - 0s 4ms/step - loss: 4.9031

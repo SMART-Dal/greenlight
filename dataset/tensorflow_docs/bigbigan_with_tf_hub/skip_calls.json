@@ -1,0 +1,1 @@
+["tensorflow.compat.v1.disable_v2_behavior()", "tensorflow.compat.v1.nn.avg_pool()", "tensorflow.compat.v1.concat()", "tensorflow.compat.v1.reduce_mean()", "tensorflow.compat.v1.global_variables_initializer()", "tensorflow.compat.v1.reduce_min()"]

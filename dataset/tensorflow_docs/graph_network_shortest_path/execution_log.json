@@ -1,0 +1,715 @@
+2023-12-10 06:42:54.944732: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+WARNING:tensorflow:Mapping types may not work well with tf.nest. Prefer using MutableMapping for <class 'tensorflow_gnn.graph.graph_tensor._ImmutableMapping'>
+GraphTensor(
+  context=Context(features={}, sizes=[1], shape=(), indices_dtype=tf.int32),
+  node_set_names=['cities'],
+  edge_set_names=['roads'])
+cities NodeSetSpec({'features': {'weight': TensorSpec(shape=(16,), dtype=tf.float64, name=None), 'pos': TensorSpec(shape=(16, 2), dtype=tf.float64, name=None), 'is_start': TensorSpec(shape=(16,), dtype=tf.bool, name=None), 'is_end': TensorSpec(shape=(16,), dtype=tf.bool, name=None), 'is_in_path': TensorSpec(shape=(16,), dtype=tf.bool, name=None)}, 'sizes': TensorSpec(shape=(1,), dtype=tf.int32, name=None)}, TensorShape([]), tf.int32, None)
+roads EdgeSetSpec({'features': {'weight': TensorSpec(shape=(70,), dtype=tf.float64, name=None), 'is_in_path': TensorSpec(shape=(70,), dtype=tf.bool, name=None)}, 'sizes': TensorSpec(shape=(1,), dtype=tf.int32, name=None), 'adjacency': AdjacencySpec({'#index.0': TensorSpec(shape=(70,), dtype=tf.int32, name=None), '#index.1': TensorSpec(shape=(70,), dtype=tf.int32, name=None)}, TensorShape([]), tf.int32, {'#index.0': 'cities', '#index.1': 'cities'})}, TensorShape([]), tf.int32, None)
+encode_process_decode/encoder/context/dense_0/kernel:0 (0, 128) <dtype: 'float32'>
+encode_process_decode/encoder/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_0/kernel:0 (3, 128) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_0/kernel:0 (1, 128) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/encoder/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_0/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_0/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_1/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_1/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_2/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_2/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_3/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_3/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_4/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_4/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_5/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_5/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_6/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_6/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_7/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_7/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_8/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_8/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_9/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_9/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_5:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_4:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast_2:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+WARNING:tensorflow:Gradients do not exist for variables ['encode_process_decode/processor_11/context/dense_0/kernel:0', 'encode_process_decode/processor_11/context/dense_0/bias:0', 'encode_process_decode/processor_11/context/dense_1/kernel:0', 'encode_process_decode/processor_11/context/dense_1/bias:0', 'encode_process_decode/processor_11/context/dense_2/kernel:0', 'encode_process_decode/processor_11/context/dense_2/bias:0', 'encode_process_decode/processor_11/context/layer_norm/gamma:0', 'encode_process_decode/processor_11/context/layer_norm/beta:0'] when minimizing the loss. If you're using `model.compile()`, did you forget to provide a `loss`argument?
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7ff4d7f13e50> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+encode_process_decode/processor_10/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_10/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_10/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_0/kernel:0 (512, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/edges_roads/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/nodes_cities/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_0/kernel:0 (384, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_2/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/processor_11/context/dense_2/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/context/layer_norm/gamma:0 (128,) <dtype: 'float32'>
+encode_process_decode/processor_11/context/layer_norm/beta:0 (128,) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_0/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_2/kernel:0 (128, 2) <dtype: 'float32'>
+encode_process_decode/decoder/nodes_cities/dense_2/bias:0 (2,) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_0/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_0/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_1/kernel:0 (128, 128) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_1/bias:0 (128,) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_2/kernel:0 (128, 2) <dtype: 'float32'>
+encode_process_decode/decoder/edges_roads/dense_2/bias:0 (2,) <dtype: 'float32'>
+[EXECUTION] [06:43:19] Waiting before running function for 10 seconds.
+[EXECUTION] [06:43:29] Sensors started
+[STABLE CHECK] [06:43:33] Temperature too high: mean is 44, which is greater than 40
+[STABLE CHECK] [06:43:33] Temperature is too high.
+[STABLE CHECK] [06:43:33] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [06:43:53] Temperature too high: mean is 44, which is greater than 40
+[STABLE CHECK] [06:43:53] Temperature is too high.
+[STABLE CHECK] [06:43:53] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [06:44:13] Success: temperature is below threshold.
+[MAIN] [06:44:13] Terminated sensors
+[STABLE CHECK] [06:44:13] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [06:44:34] Success: Machine is stable.
+[EXECUTION] [06:44:34] Successfully reached stable state
+[EXECUTION] [06:44:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [06:45:04] Performed tensorflow.keras.optimizers.Adam.apply_gradients() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7ff59eb9a9d0> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 942920.0
+outside_object_size
+[EXECUTION] [06:46:34] Result: {'tensorflow.keras.optimizers.Adam.apply_gradients()': {'energy_data': {'cpu': '{"columns":["time_el
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_11/edge_set_update_11/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_10/edge_set_update_10/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_9/edge_set_update_9/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_8/edge_set_update_8/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_7/edge_set_update_7/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_6/edge_set_update_6/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_5/edge_set_update_5/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_4/edge_set_update_4/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_3/edge_set_update_3/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_2/edge_set_update_2/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_1/edge_set_update_1/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_3:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_2:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast_1:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Reshape_1:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Reshape:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/node_set_update/Cast:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/indexed_slices.py:448: UserWarning: Converting sparse IndexedSlices(IndexedSlices(indices=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_5:0", shape=(None,), dtype=int32), values=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Reshape_4:0", shape=(None, 128), dtype=float32), dense_shape=Tensor("gradient_tape/encode_process_decode/encode_process_decode/processor_0/edge_set_update/Cast_2:0", shape=(2,), dtype=int32))) to a dense Tensor of unknown shape. This may consume a large amount of memory.
+  warnings.warn(
+WARNING:tensorflow:Gradients do not exist for variables ['encode_process_decode/processor_11/context/dense_0/kernel:0', 'encode_process_decode/processor_11/context/dense_0/bias:0', 'encode_process_decode/processor_11/context/dense_1/kernel:0', 'encode_process_decode/processor_11/context/dense_1/bias:0', 'encode_process_decode/processor_11/context/dense_2/kernel:0', 'encode_process_decode/processor_11/context/dense_2/bias:0', 'encode_process_decode/processor_11/context/layer_norm/gamma:0', 'encode_process_decode/processor_11/context/layer_norm/beta:0'] when minimizing the loss. If you're using `model.compile()`, did you forget to provide a `loss`argument?
+[EXECUTION] [06:46:34] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_network_shortest_path/experiment-5.json
+[EXECUTION] [06:46:37] Waiting before running function for 10 seconds.
+[EXECUTION] [06:46:47] Sensors started
+[STABLE CHECK] [06:46:50] Temperature too high: mean is 40.65, which is greater than 40
+[STABLE CHECK] [06:46:50] Temperature is too high.
+[STABLE CHECK] [06:46:50] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [06:47:10] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [06:47:10] Temperature is too high.
+[STABLE CHECK] [06:47:10] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [06:47:30] Success: temperature is below threshold.
+[MAIN] [06:47:30] Terminated sensors
+[STABLE CHECK] [06:47:30] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [06:47:50] Success: Machine is stable.
+[EXECUTION] [06:47:50] Successfully reached stable state
+[EXECUTION] [06:47:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [06:48:21] Performed tensorflow.keras.optimizers.Adam.apply_gradients() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 942888.0
+outside_object_size
+[EXECUTION] [06:49:46] Result: {'tensorflow.keras.optimizers.Adam.apply_gradients()': {'energy_data': {'cpu': '{"columns":["time_el
+[EXECUTION] [06:49:46] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/graph_network_shortest_path/experiment-5.json
+Iteration 0. Losses {'edges': 5.6652493, 'nodes': 0.7274787}. Accuracies {'edges': 0.60298103, 'nodes': 0.09136364}
+Iteration 10. Losses {'edges': 0.52079576, 'nodes': 0.59570724}. Accuracies {'edges': 0.6816976, 'nodes': 0.9015817}
+Iteration 20. Losses {'edges': 0.33022034, 'nodes': 0.5028679}. Accuracies {'edges': 0.7863696, 'nodes': 0.9047619}
+Iteration 30. Losses {'edges': 0.2803989, 'nodes': 0.47015393}. Accuracies {'edges': 0.8104575, 'nodes': 0.911714}
+Iteration 40. Losses {'edges': 0.25804892, 'nodes': 0.4086577}. Accuracies {'edges': 0.8297587, 'nodes': 0.9172063}
+Iteration 50. Losses {'edges': 0.21721488, 'nodes': 0.37779057}. Accuracies {'edges': 0.8346253, 'nodes': 0.9271337}
+Iteration 60. Losses {'edges': 0.20628709, 'nodes': 0.36228278}. Accuracies {'edges': 0.83919597, 'nodes': 0.93570876}
+Iteration 70. Losses {'edges': 0.25527304, 'nodes': 0.45620453}. Accuracies {'edges': 0.7568988, 'nodes': 0.9042461}
+Iteration 80. Losses {'edges': 0.22583535, 'nodes': 0.46177408}. Accuracies {'edges': 0.7606383, 'nodes': 0.9170231}
+Iteration 90. Losses {'edges': 0.2468305, 'nodes': 0.4477902}. Accuracies {'edges': 0.77923787, 'nodes': 0.9132922}
+Iteration 100. Losses {'edges': 0.19037285, 'nodes': 0.33901405}. Accuracies {'edges': 0.83944374, 'nodes': 0.93203497}
+Iteration 110. Losses {'edges': 0.19245823, 'nodes': 0.36231548}. Accuracies {'edges': 0.83627206, 'nodes': 0.93370163}
+Iteration 120. Losses {'edges': 0.17467687, 'nodes': 0.33979464}. Accuracies {'edges': 0.85080147, 'nodes': 0.9430147}
+Iteration 130. Losses {'edges': 0.23243402, 'nodes': 0.36662096}. Accuracies {'edges': 0.8224688, 'nodes': 0.915392}
+Iteration 140. Losses {'edges': 0.15698153, 'nodes': 0.33314714}. Accuracies {'edges': 0.85465837, 'nodes': 0.9447471}
+Iteration 150. Losses {'edges': 0.15779574, 'nodes': 0.32095414}. Accuracies {'edges': 0.8533686, 'nodes': 0.9399478}
+Iteration 160. Losses {'edges': 0.14408648, 'nodes': 0.30335665}. Accuracies {'edges': 0.87435234, 'nodes': 0.94555277}
+Iteration 170. Losses {'edges': 0.11816596, 'nodes': 0.27751353}. Accuracies {'edges': 0.87258685, 'nodes': 0.9547292}
+Iteration 180. Losses {'edges': 0.1115909, 'nodes': 0.25918946}. Accuracies {'edges': 0.89384013, 'nodes': 0.96191245}
+Iteration 190. Losses {'edges': 0.13670102, 'nodes': 0.26048157}. Accuracies {'edges': 0.87782204, 'nodes': 0.9484902}
+Iteration 200. Losses {'edges': 0.1071425, 'nodes': 0.21543056}. Accuracies {'edges': 0.90533334, 'nodes': 0.95211387}
+Iteration 210. Losses {'edges': 0.06852878, 'nodes': 0.16692859}. Accuracies {'edges': 0.9266169, 'nodes': 0.9713424}
+Iteration 220. Losses {'edges': 0.07741651, 'nodes': 0.165119}. Accuracies {'edges': 0.9214381, 'nodes': 0.9665493}
+Iteration 230. Losses {'edges': 0.107775375, 'nodes': 0.17617346}. Accuracies {'edges': 0.9203655, 'nodes': 0.9517918}
+Iteration 240. Losses {'edges': 0.07842441, 'nodes': 0.13039045}. Accuracies {'edges': 0.94871795, 'nodes': 0.96658206}
+Iteration 250. Losses {'edges': 0.05725379, 'nodes': 0.11497637}. Accuracies {'edges': 0.9597925, 'nodes': 0.97932816}
+Iteration 260. Losses {'edges': 0.09297697, 'nodes': 0.17501314}. Accuracies {'edges': 0.93324775, 'nodes': 0.96635437}
+Iteration 270. Losses {'edges': 0.10155553, 'nodes': 0.15024954}. Accuracies {'edges': 0.93682796, 'nodes': 0.95787233}
+Iteration 280. Losses {'edges': 0.07343779, 'nodes': 0.13710916}. Accuracies {'edges': 0.9392813, 'nodes': 0.9691456}
+Iteration 290. Losses {'edges': 0.041428618, 'nodes': 0.08980196}. Accuracies {'edges': 0.9635417, 'nodes': 0.98178667}
+Iteration 300. Losses {'edges': 0.04646584, 'nodes': 0.09016728}. Accuracies {'edges': 0.9650259, 'nodes': 0.9791493}
+Iteration 310. Losses {'edges': 0.047215626, 'nodes': 0.086722426}. Accuracies {'edges': 0.96262884, 'nodes': 0.98041666}
+Iteration 320. Losses {'edges': 0.053508963, 'nodes': 0.10308226}. Accuracies {'edges': 0.9579376, 'nodes': 0.9783362}
+Iteration 330. Losses {'edges': 0.04030303, 'nodes': 0.078599095}. Accuracies {'edges': 0.9640958, 'nodes': 0.98126674}
+Iteration 340. Losses {'edges': 0.044526972, 'nodes': 0.07442317}. Accuracies {'edges': 0.9624665, 'nodes': 0.9807524}
+Iteration 350. Losses {'edges': 0.037756413, 'nodes': 0.07972573}. Accuracies {'edges': 0.9657444, 'nodes': 0.98288506}
+Iteration 360. Losses {'edges': 0.04634356, 'nodes': 0.079887524}. Accuracies {'edges': 0.97070575, 'nodes': 0.9822357}
+Iteration 370. Losses {'edges': 0.035552964, 'nodes': 0.07356287}. Accuracies {'edges': 0.9747004, 'nodes': 0.98427945}
+Iteration 380. Losses {'edges': 0.030714486, 'nodes': 0.05281945}. Accuracies {'edges': 0.9724047, 'nodes': 0.9835782}
+Iteration 390. Losses {'edges': 0.037506897, 'nodes': 0.06428899}. Accuracies {'edges': 0.9635417, 'nodes': 0.9819277}
+Iteration 400. Losses {'edges': 0.056707516, 'nodes': 0.12181961}. Accuracies {'edges': 0.94580644, 'nodes': 0.97547334}
+Iteration 410. Losses {'edges': 0.048538726, 'nodes': 0.0865146}. Accuracies {'edges': 0.96005327, 'nodes': 0.97759855}
+Iteration 420. Losses {'edges': 0.028566819, 'nodes': 0.054323424}. Accuracies {'edges': 0.9784264, 'nodes': 0.9870791}
+Iteration 430. Losses {'edges': 0.04081344, 'nodes': 0.084451996}. Accuracies {'edges': 0.9573901, 'nodes': 0.98035717}
+Iteration 440. Losses {'edges': 0.028601173, 'nodes': 0.047648218}. Accuracies {'edges': 0.97800773, 'nodes': 0.9910714}
+Iteration 450. Losses {'edges': 0.032730397, 'nodes': 0.0721182}. Accuracies {'edges': 0.9724771, 'nodes': 0.9839858}
+Iteration 460. Losses {'edges': 0.048255235, 'nodes': 0.08353213}. Accuracies {'edges': 0.9594771, 'nodes': 0.9779221}
+Iteration 470. Losses {'edges': 0.050276652, 'nodes': 0.08531435}. Accuracies {'edges': 0.9608802, 'nodes': 0.97680414}
+Iteration 480. Losses {'edges': 0.02002115, 'nodes': 0.03737916}. Accuracies {'edges': 0.98859316, 'nodes': 0.9918897}
+Iteration 490. Losses {'edges': 0.035861712, 'nodes': 0.06996645}. Accuracies {'edges': 0.96219033, 'nodes': 0.98215735}
+Iteration 500. Losses {'edges': 0.044632643, 'nodes': 0.086346686}. Accuracies {'edges': 0.9594771, 'nodes': 0.97585344}
+Iteration 510. Losses {'edges': 0.0332902, 'nodes': 0.057393447}. Accuracies {'edges': 0.970013, 'nodes': 0.9815725}
+Iteration 520. Losses {'edges': 0.023528256, 'nodes': 0.040599607}. Accuracies {'edges': 0.98123324, 'nodes': 0.9904762}
+Iteration 530. Losses {'edges': 0.032210477, 'nodes': 0.056040917}. Accuracies {'edges': 0.97073793, 'nodes': 0.9844358}
+Iteration 540. Losses {'edges': 0.024062524, 'nodes': 0.03901023}. Accuracies {'edges': 0.97911227, 'nodes': 0.98747844}
+Iteration 550. Losses {'edges': 0.023027616, 'nodes': 0.04082242}. Accuracies {'edges': 0.9802891, 'nodes': 0.98875433}
+Iteration 560. Losses {'edges': 0.016667558, 'nodes': 0.030007098}. Accuracies {'edges': 0.98395723, 'nodes': 0.9934153}
+Iteration 570. Losses {'edges': 0.031230185, 'nodes': 0.047340844}. Accuracies {'edges': 0.9788079, 'nodes': 0.9838854}
+Iteration 580. Losses {'edges': 0.051752858, 'nodes': 0.0846868}. Accuracies {'edges': 0.9591029, 'nodes': 0.9744624}
+Iteration 590. Losses {'edges': 0.043092214, 'nodes': 0.08518597}. Accuracies {'edges': 0.96153843, 'nodes': 0.98179615}
+Iteration 600. Losses {'edges': 0.037194386, 'nodes': 0.06117667}. Accuracies {'edges': 0.9724656, 'nodes': 0.9845779}
+Iteration 610. Losses {'edges': 0.023988158, 'nodes': 0.035957582}. Accuracies {'edges': 0.9790576, 'nodes': 0.98653346}
+Iteration 620. Losses {'edges': 0.03642427, 'nodes': 0.064491995}. Accuracies {'edges': 0.9768708, 'nodes': 0.98330325}
+Iteration 630. Losses {'edges': 0.03487444, 'nodes': 0.061498214}. Accuracies {'edges': 0.9715026, 'nodes': 0.9835582}
+Iteration 640. Losses {'edges': 0.027032401, 'nodes': 0.04330767}. Accuracies {'edges': 0.97680414, 'nodes': 0.98725575}
+Iteration 650. Losses {'edges': 0.013474516, 'nodes': 0.021382572}. Accuracies {'edges': 0.9936224, 'nodes': 0.9946502}
+Iteration 660. Losses {'edges': 0.022062054, 'nodes': 0.03723294}. Accuracies {'edges': 0.9880795, 'nodes': 0.9911111}
+Iteration 670. Losses {'edges': 0.030750778, 'nodes': 0.05780166}. Accuracies {'edges': 0.9730821, 'nodes': 0.9853448}
+Iteration 680. Losses {'edges': 0.025889108, 'nodes': 0.052460685}. Accuracies {'edges': 0.98039216, 'nodes': 0.9903762}
+Iteration 690. Losses {'edges': 0.0317632, 'nodes': 0.061367705}. Accuracies {'edges': 0.9672346, 'nodes': 0.9843625}
+Iteration 700. Losses {'edges': 0.026905874, 'nodes': 0.04352618}. Accuracies {'edges': 0.97930145, 'nodes': 0.9867635}
+Iteration 710. Losses {'edges': 0.019896517, 'nodes': 0.032382477}. Accuracies {'edges': 0.9842313, 'nodes': 0.990328}
+Iteration 720. Losses {'edges': 0.037037384, 'nodes': 0.058442857}. Accuracies {'edges': 0.9734266, 'nodes': 0.9825368}
+Iteration 730. Losses {'edges': 0.027943503, 'nodes': 0.046893805}. Accuracies {'edges': 0.9799733, 'nodes': 0.9873252}
+Iteration 740. Losses {'edges': 0.02718813, 'nodes': 0.04779338}. Accuracies {'edges': 0.9834816, 'nodes': 0.9897373}
+Iteration 750. Losses {'edges': 0.024751222, 'nodes': 0.038313504}. Accuracies {'edges': 0.9832636, 'nodes': 0.9891201}
+Iteration 760. Losses {'edges': 0.026668867, 'nodes': 0.051538214}. Accuracies {'edges': 0.96811223, 'nodes': 0.9850575}
+Iteration 770. Losses {'edges': 0.014367236, 'nodes': 0.023923166}. Accuracies {'edges': 0.9897698, 'nodes': 0.9930669}
+Iteration 780. Losses {'edges': 0.03151842, 'nodes': 0.051977508}. Accuracies {'edges': 0.97139144, 'nodes': 0.98312235}
+Iteration 790. Losses {'edges': 0.019626956, 'nodes': 0.030271964}. Accuracies {'edges': 0.9879679, 'nodes': 0.9878618}
+Iteration 800. Losses {'edges': 0.028224636, 'nodes': 0.04405437}. Accuracies {'edges': 0.978836, 'nodes': 0.98678416}
+Iteration 810. Losses {'edges': 0.03749509, 'nodes': 0.06212523}. Accuracies {'edges': 0.96556294, 'nodes': 0.97828096}
+Iteration 820. Losses {'edges': 0.014499878, 'nodes': 0.021748474}. Accuracies {'edges': 0.9906166, 'nodes': 0.993891}
+Iteration 830. Losses {'edges': 0.030596515, 'nodes': 0.049573958}. Accuracies {'edges': 0.9750656, 'nodes': 0.9846547}
+Iteration 840. Losses {'edges': 0.029242698, 'nodes': 0.04765915}. Accuracies {'edges': 0.98056996, 'nodes': 0.9851443}
+Iteration 850. Losses {'edges': 0.03975583, 'nodes': 0.06605379}. Accuracies {'edges': 0.9751309, 'nodes': 0.98334795}
+Iteration 860. Losses {'edges': 0.024413597, 'nodes': 0.037238874}. Accuracies {'edges': 0.9764398, 'nodes': 0.9852679}
+Iteration 870. Losses {'edges': 0.021459626, 'nodes': 0.032568917}. Accuracies {'edges': 0.98414797, 'nodes': 0.9873473}
+Iteration 880. Losses {'edges': 0.02761777, 'nodes': 0.047793876}. Accuracies {'edges': 0.97603196, 'nodes': 0.9847069}
+Iteration 890. Losses {'edges': 0.029212942, 'nodes': 0.055513877}. Accuracies {'edges': 0.9787234, 'nodes': 0.9856661}
+Iteration 900. Losses {'edges': 0.027244963, 'nodes': 0.047188763}. Accuracies {'edges': 0.9738806, 'nodes': 0.98588234}
+Iteration 910. Losses {'edges': 0.0327873, 'nodes': 0.054681383}. Accuracies {'edges': 0.972973, 'nodes': 0.9845188}
+Iteration 920. Losses {'edges': 0.03013481, 'nodes': 0.054983243}. Accuracies {'edges': 0.97103274, 'nodes': 0.9856811}
+Iteration 930. Losses {'edges': 0.012432048, 'nodes': 0.022415163}. Accuracies {'edges': 0.9921773, 'nodes': 0.99508196}
+Iteration 940. Losses {'edges': 0.010559643, 'nodes': 0.019191112}. Accuracies {'edges': 0.9910486, 'nodes': 0.99429965}
+Iteration 950. Losses {'edges': 0.02596793, 'nodes': 0.04321577}. Accuracies {'edges': 0.9806701, 'nodes': 0.9877551}
+Iteration 960. Losses {'edges': 0.024980003, 'nodes': 0.044785805}. Accuracies {'edges': 0.98309493, 'nodes': 0.9895485}
+Iteration 970. Losses {'edges': 0.020597229, 'nodes': 0.037191723}. Accuracies {'edges': 0.98191214, 'nodes': 0.9902991}
+Iteration 980. Losses {'edges': 0.022907317, 'nodes': 0.04068602}. Accuracies {'edges': 0.9754522, 'nodes': 0.98705095}
+Iteration 990. Losses {'edges': 0.024602061, 'nodes': 0.043050688}. Accuracies {'edges': 0.9770408, 'nodes': 0.9891847}
+Iteration 1000. Losses {'edges': 0.011783515, 'nodes': 0.023243422}. Accuracies {'edges': 0.9897436, 'nodes': 0.9941957}
+Iteration 1010. Losses {'edges': 0.024357202, 'nodes': 0.04210054}. Accuracies {'edges': 0.9780928, 'nodes': 0.98706895}
+Iteration 1020. Losses {'edges': 0.017317574, 'nodes': 0.030317845}. Accuracies {'edges': 0.9868594, 'nodes': 0.9927536}
+Iteration 1030. Losses {'edges': 0.02542759, 'nodes': 0.04105297}. Accuracies {'edges': 0.9782016, 'nodes': 0.9867094}
+Iteration 1040. Losses {'edges': 0.0215141, 'nodes': 0.034754686}. Accuracies {'edges': 0.98036647, 'nodes': 0.98634815}
+Iteration 1050. Losses {'edges': 0.020940764, 'nodes': 0.033439264}. Accuracies {'edges': 0.9864865, 'nodes': 0.99148536}
+Iteration 1060. Losses {'edges': 0.012406635, 'nodes': 0.021030914}. Accuracies {'edges': 0.990991, 'nodes': 0.99524635}
+Iteration 1070. Losses {'edges': 0.025628041, 'nodes': 0.043415256}. Accuracies {'edges': 0.97573435, 'nodes': 0.9858871}
+Iteration 1080. Losses {'edges': 0.035689417, 'nodes': 0.06303422}. Accuracies {'edges': 0.9671916, 'nodes': 0.9791667}
+Iteration 1090. Losses {'edges': 0.016762936, 'nodes': 0.025797773}. Accuracies {'edges': 0.9904762, 'nodes': 0.99268067}
+Iteration 1100. Losses {'edges': 0.023162385, 'nodes': 0.044781547}. Accuracies {'edges': 0.9734849, 'nodes': 0.99138606}
+Iteration 1110. Losses {'edges': 0.022520375, 'nodes': 0.032540113}. Accuracies {'edges': 0.978022, 'nodes': 0.9873001}
+Iteration 1120. Losses {'edges': 0.023286454, 'nodes': 0.041206103}. Accuracies {'edges': 0.9813333, 'nodes': 0.99001735}
+Iteration 1130. Losses {'edges': 0.020069085, 'nodes': 0.03609152}. Accuracies {'edges': 0.98138297, 'nodes': 0.9909241}
+Iteration 1140. Losses {'edges': 0.017600441, 'nodes': 0.030810058}. Accuracies {'edges': 0.9873257, 'nodes': 0.9923489}
+Iteration 1150. Losses {'edges': 0.015116217, 'nodes': 0.023778982}. Accuracies {'edges': 0.99096775, 'nodes': 0.9947025}
+Iteration 1160. Losses {'edges': 0.017727582, 'nodes': 0.030975478}. Accuracies {'edges': 0.9859515, 'nodes': 0.99226385}
+Iteration 1170. Losses {'edges': 0.016188433, 'nodes': 0.026445048}. Accuracies {'edges': 0.9872449, 'nodes': 0.9925314}
+Iteration 1180. Losses {'edges': 0.019495413, 'nodes': 0.035743486}. Accuracies {'edges': 0.9814586, 'nodes': 0.9901065}
+Iteration 1190. Losses {'edges': 0.016461167, 'nodes': 0.029938636}. Accuracies {'edges': 0.99052775, 'nodes': 0.99321264}
+Iteration 1200. Losses {'edges': 0.023144245, 'nodes': 0.0460909}. Accuracies {'edges': 0.97073793, 'nodes': 0.9852941}
+Iteration 1210. Losses {'edges': 0.018784726, 'nodes': 0.030632103}. Accuracies {'edges': 0.9841689, 'nodes': 0.99022937}
+Iteration 1220. Losses {'edges': 0.016902454, 'nodes': 0.025828991}. Accuracies {'edges': 0.9854305, 'nodes': 0.9895288}
+Iteration 1230. Losses {'edges': 0.02352883, 'nodes': 0.038933452}. Accuracies {'edges': 0.98108447, 'nodes': 0.98817295}
+Iteration 1240. Losses {'edges': 0.024246968, 'nodes': 0.04183319}. Accuracies {'edges': 0.97637796, 'nodes': 0.9892027}
+Iteration 1250. Losses {'edges': 0.03190296, 'nodes': 0.055033073}. Accuracies {'edges': 0.97783935, 'nodes': 0.98578197}
+Iteration 1260. Losses {'edges': 0.030064698, 'nodes': 0.05047541}. Accuracies {'edges': 0.9734849, 'nodes': 0.98548925}
+Iteration 1270. Losses {'edges': 0.018712088, 'nodes': 0.03037933}. Accuracies {'edges': 0.981982, 'nodes': 0.99013966}
+Iteration 1280. Losses {'edges': 0.03154286, 'nodes': 0.04622125}. Accuracies {'edges': 0.9744572, 'nodes': 0.9825893}
+Iteration 1290. Losses {'edges': 0.02526662, 'nodes': 0.042374954}. Accuracies {'edges': 0.97911227, 'nodes': 0.9865997}
+Iteration 1300. Losses {'edges': 0.027838891, 'nodes': 0.048791647}. Accuracies {'edges': 0.9767141, 'nodes': 0.98766446}
+Iteration 1310. Losses {'edges': 0.018774755, 'nodes': 0.03344145}. Accuracies {'edges': 0.9870634, 'nodes': 0.9914911}
+Iteration 1320. Losses {'edges': 0.014255847, 'nodes': 0.021894852}. Accuracies {'edges': 0.9882045, 'nodes': 0.9905914}
+Iteration 1330. Losses {'edges': 0.015641535, 'nodes': 0.024043104}. Accuracies {'edges': 0.993188, 'nodes': 0.99438727}
+Iteration 1340. Losses {'edges': 0.019169971, 'nodes': 0.03284982}. Accuracies {'edges': 0.97966963, 'nodes': 0.98878205}
+Iteration 1350. Losses {'edges': 0.021060819, 'nodes': 0.03540664}. Accuracies {'edges': 0.97919214, 'nodes': 0.9889937}
+Iteration 1360. Losses {'edges': 0.015653713, 'nodes': 0.023485303}. Accuracies {'edges': 0.9882353, 'nodes': 0.99345547}
+Iteration 1370. Losses {'edges': 0.015247719, 'nodes': 0.0230196}. Accuracies {'edges': 0.98791945, 'nodes': 0.9914414}
+Iteration 1380. Losses {'edges': 0.021930402, 'nodes': 0.040051315}. Accuracies {'edges': 0.9823455, 'nodes': 0.9901141}
+Iteration 1390. Losses {'edges': 0.01691332, 'nodes': 0.028716126}. Accuracies {'edges': 0.98791945, 'nodes': 0.99191487}
+Iteration 1400. Losses {'edges': 0.022871286, 'nodes': 0.04188413}. Accuracies {'edges': 0.98264354, 'nodes': 0.9898857}
+Iteration 1410. Losses {'edges': 0.030113323, 'nodes': 0.0496591}. Accuracies {'edges': 0.9798387, 'nodes': 0.9884032}
+Iteration 1420. Losses {'edges': 0.022216933, 'nodes': 0.03544953}. Accuracies {'edges': 0.9829843, 'nodes': 0.9905815}
+Iteration 1430. Losses {'edges': 0.0119373305, 'nodes': 0.018316139}. Accuracies {'edges': 0.98923284, 'nodes': 0.9935121}
+Iteration 1440. Losses {'edges': 0.03060643, 'nodes': 0.05363938}. Accuracies {'edges': 0.9725131, 'nodes': 0.98677474}
+Iteration 1450. Losses {'edges': 0.016773656, 'nodes': 0.027802262}. Accuracies {'edges': 0.98704666, 'nodes': 0.9919899}
+Iteration 1460. Losses {'edges': 0.013284931, 'nodes': 0.02131494}. Accuracies {'edges': 0.9879518, 'nodes': 0.9921875}
+Iteration 1470. Losses {'edges': 0.022528527, 'nodes': 0.0368585}. Accuracies {'edges': 0.9790026, 'nodes': 0.9872359}
+Iteration 1480. Losses {'edges': 0.02798112, 'nodes': 0.045090303}. Accuracies {'edges': 0.9826203, 'nodes': 0.98920864}
+Iteration 1490. Losses {'edges': 0.023657305, 'nodes': 0.038273167}. Accuracies {'edges': 0.9813333, 'nodes': 0.98912096}
+Iteration 1500. Losses {'edges': 0.017454393, 'nodes': 0.028454259}. Accuracies {'edges': 0.9844761, 'nodes': 0.99127907}
+Iteration 1510. Losses {'edges': 0.01303173, 'nodes': 0.021368263}. Accuracies {'edges': 0.9934037, 'nodes': 0.9939707}
+Iteration 1520. Losses {'edges': 0.029993078, 'nodes': 0.05243417}. Accuracies {'edges': 0.97190297, 'nodes': 0.9820408}
+Iteration 1530. Losses {'edges': 0.01933688, 'nodes': 0.030117756}. Accuracies {'edges': 0.9879679, 'nodes': 0.9903035}
+Iteration 1540. Losses {'edges': 0.025562325, 'nodes': 0.041471858}. Accuracies {'edges': 0.97894734, 'nodes': 0.98651004}
+Iteration 1550. Losses {'edges': 0.02457937, 'nodes': 0.03931459}. Accuracies {'edges': 0.98582476, 'nodes': 0.98876405}
+Iteration 1560. Losses {'edges': 0.017277509, 'nodes': 0.030483238}. Accuracies {'edges': 0.98678994, 'nodes': 0.9907485}
+Iteration 1570. Losses {'edges': 0.020830946, 'nodes': 0.036542036}. Accuracies {'edges': 0.9862328, 'nodes': 0.99158376}
+Iteration 1580. Losses {'edges': 0.013659, 'nodes': 0.022103364}. Accuracies {'edges': 0.98940396, 'nodes': 0.9942171}
+Iteration 1590. Losses {'edges': 0.012694359, 'nodes': 0.01918991}. Accuracies {'edges': 0.99088544, 'nodes': 0.9935788}
+Iteration 1600. Losses {'edges': 0.019481102, 'nodes': 0.034408253}. Accuracies {'edges': 0.985, 'nodes': 0.9923756}
+Iteration 1610. Losses {'edges': 0.010183394, 'nodes': 0.0177259}. Accuracies {'edges': 0.99626863, 'nodes': 0.99762845}
+Iteration 1620. Losses {'edges': 0.019943178, 'nodes': 0.03079689}. Accuracies {'edges': 0.9836289, 'nodes': 0.99021524}
+Iteration 1630. Losses {'edges': 0.011293508, 'nodes': 0.018228425}. Accuracies {'edges': 0.9962963, 'nodes': 0.997231}
+Iteration 1640. Losses {'edges': 0.021495417, 'nodes': 0.035041012}. Accuracies {'edges': 0.9843137, 'nodes': 0.9917749}
+Iteration 1650. Losses {'edges': 0.020556334, 'nodes': 0.035218023}. Accuracies {'edges': 0.9832258, 'nodes': 0.98922414}
+Iteration 1660. Losses {'edges': 0.030986818, 'nodes': 0.047061205}. Accuracies {'edges': 0.9778357, 'nodes': 0.98569024}
+Iteration 1670. Losses {'edges': 0.025241941, 'nodes': 0.05543571}. Accuracies {'edges': 0.9722222, 'nodes': 0.9878247}
+Iteration 1680. Losses {'edges': 0.01258944, 'nodes': 0.020316495}. Accuracies {'edges': 0.9878049, 'nodes': 0.9929578}
+Iteration 1690. Losses {'edges': 0.019835569, 'nodes': 0.035239216}. Accuracies {'edges': 0.9807229, 'nodes': 0.98932385}
+Iteration 1700. Losses {'edges': 0.02222751, 'nodes': 0.037003573}. Accuracies {'edges': 0.9799197, 'nodes': 0.9877085}
+Iteration 1710. Losses {'edges': 0.0138922855, 'nodes': 0.02213313}. Accuracies {'edges': 0.9882507, 'nodes': 0.99288255}
+Iteration 1720. Losses {'edges': 0.020069147, 'nodes': 0.026009033}. Accuracies {'edges': 0.98866856, 'nodes': 0.99210525}
+Iteration 1730. Losses {'edges': 0.025342954, 'nodes': 0.042054534}. Accuracies {'edges': 0.9814077, 'nodes': 0.98913044}
+Iteration 1740. Losses {'edges': 0.01801603, 'nodes': 0.029014448}. Accuracies {'edges': 0.98300654, 'nodes': 0.9897541}
+Iteration 1750. Losses {'edges': 0.022716857, 'nodes': 0.0409437}. Accuracies {'edges': 0.9820972, 'nodes': 0.98959166}
+Iteration 1760. Losses {'edges': 0.02584842, 'nodes': 0.051716577}. Accuracies {'edges': 0.9805195, 'nodes': 0.98926115}
+Iteration 1770. Losses {'edges': 0.029457737, 'nodes': 0.05174372}. Accuracies {'edges': 0.9809524, 'nodes': 0.9886935}
+Iteration 1780. Losses {'edges': 0.017978866, 'nodes': 0.028989749}. Accuracies {'edges': 0.9838926, 'nodes': 0.9908925}
+Iteration 1790. Losses {'edges': 0.025585592, 'nodes': 0.046529915}. Accuracies {'edges': 0.9798742, 'nodes': 0.9911402}
+Iteration 1800. Losses {'edges': 0.027386177, 'nodes': 0.0455925}. Accuracies {'edges': 0.97357994, 'nodes': 0.9853826}
+Iteration 1810. Losses {'edges': 0.019076807, 'nodes': 0.028502455}. Accuracies {'edges': 0.98567706, 'nodes': 0.9893436}
+Iteration 1820. Losses {'edges': 0.028258083, 'nodes': 0.050080273}. Accuracies {'edges': 0.9807692, 'nodes': 0.98853755}
+Iteration 1830. Losses {'edges': 0.020428864, 'nodes': 0.033933602}. Accuracies {'edges': 0.97225726, 'nodes': 0.9859155}
+Iteration 1840. Losses {'edges': 0.019540098, 'nodes': 0.031136816}. Accuracies {'edges': 0.9898606, 'nodes': 0.99370575}
+Iteration 1850. Losses {'edges': 0.020987025, 'nodes': 0.034642983}. Accuracies {'edges': 0.9845758, 'nodes': 0.99009085}
+Iteration 1860. Losses {'edges': 0.024494609, 'nodes': 0.035572223}. Accuracies {'edges': 0.9868074, 'nodes': 0.9906417}
+Iteration 1870. Losses {'edges': 0.01887838, 'nodes': 0.03235342}. Accuracies {'edges': 0.98350257, 'nodes': 0.9918033}
+Iteration 1880. Losses {'edges': 0.013998556, 'nodes': 0.021510307}. Accuracies {'edges': 0.9882507, 'nodes': 0.9929453}
+Iteration 1890. Losses {'edges': 0.016306985, 'nodes': 0.024782857}. Accuracies {'edges': 0.98787063, 'nodes': 0.9908925}
+Iteration 1900. Losses {'edges': 0.018532243, 'nodes': 0.02840257}. Accuracies {'edges': 0.98513514, 'nodes': 0.99066216}
+Iteration 1910. Losses {'edges': 0.027797945, 'nodes': 0.045169637}. Accuracies {'edges': 0.9835443, 'nodes': 0.98779494}
+Iteration 1920. Losses {'edges': 0.021353431, 'nodes': 0.036848545}. Accuracies {'edges': 0.9815547, 'nodes': 0.98981327}
+Iteration 1930. Losses {'edges': 0.008772888, 'nodes': 0.012980903}. Accuracies {'edges': 0.9947507, 'nodes': 0.9965547}
+Iteration 1940. Losses {'edges': 0.016587872, 'nodes': 0.026138937}. Accuracies {'edges': 0.99095607, 'nodes': 0.99369216}
+Iteration 1950. Losses {'edges': 0.018953064, 'nodes': 0.031833056}. Accuracies {'edges': 0.9865854, 'nodes': 0.99102265}
+Iteration 1960. Losses {'edges': 0.018876119, 'nodes': 0.028034495}. Accuracies {'edges': 0.9798387, 'nodes': 0.98874885}
+Iteration 1970. Losses {'edges': 0.014492396, 'nodes': 0.025340734}. Accuracies {'edges': 0.98537236, 'nodes': 0.9927474}
+Iteration 1980. Losses {'edges': 0.034433648, 'nodes': 0.06236625}. Accuracies {'edges': 0.980025, 'nodes': 0.9877751}
+Iteration 1990. Losses {'edges': 0.017435286, 'nodes': 0.02715728}. Accuracies {'edges': 0.9895969, 'nodes': 0.9941176}

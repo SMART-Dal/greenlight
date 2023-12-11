@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_tfx_patched/docs/tutorials/tfx/python_function_component_method-level.py", line 15, in <module>
+    from tfx import v1 as tfx
+ModuleNotFoundError: No module named 'tfx'

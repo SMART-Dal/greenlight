@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/research/object_detection/colab_tutorials/inference_from_saved_model_tf2_colab_method-level.py", line 8
+    cd models/research/
+    ^
+IndentationError: expected an indented block

@@ -1,0 +1,12 @@
+[EXECUTION] [07:42:36] Waiting before running function for 10 seconds.
+[EXECUTION] [07:42:46] Sensors started
+[STABLE CHECK] [07:42:49] Success: temperature is below threshold.
+[MAIN] [07:42:49] Terminated sensors
+[STABLE CHECK] [07:42:49] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:43:09] Success: Machine is stable.
+[EXECUTION] [07:43:09] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/research/deeplab/deeplab_demo_method-level.py", line 142, in <module>
+    tf.gfile.MakeDirs(model_dir)
+AttributeError: module 'tensorflow' has no attribute 'gfile'

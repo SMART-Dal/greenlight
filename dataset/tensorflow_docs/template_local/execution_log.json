@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_tfx_patched/docs/tutorials/tfx/template_local_method-level.py", line 2
+    HOME=%env HOME
+         ^
+SyntaxError: invalid syntax

@@ -1,0 +1,90 @@
+2023-12-10 01:47:06.601705: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Running TF-GNN 0.6.1 with TensorFlow 2.7.0.
+graph_schema: context {
+  features {
+    key: "label"
+    value {
+      description: "compound mutagenicity."
+      dtype: DT_INT32
+    }
+  }
+}
+node_sets {
+  key: "atoms"
+  value {
+    features {
+      key: "hidden_state"
+      value {
+        description: "atom type."
+        dtype: DT_FLOAT
+        shape {
+          dim {
+            size: 7
+          }
+        }
+      }
+    }
+  }
+}
+edge_sets {
+  key: "bonds"
+  value {
+    features {
+      key: "hidden_state"
+      value {
+        description: "bond type."
+        dtype: DT_FLOAT
+        shape {
+          dim {
+            size: 4
+          }
+        }
+      }
+    }
+    source: "atoms"
+    target: "atoms"
+  }
+}
+
+[EXECUTION] [01:46:33] Waiting before running function for 10 seconds.
+[EXECUTION] [01:46:43] Sensors started
+[STABLE CHECK] [01:46:46] Success: temperature is below threshold.
+[MAIN] [01:46:46] Terminated sensors
+[STABLE CHECK] [01:46:46] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:47:06] Success: Machine is stable.
+[EXECUTION] [01:47:06] Successfully reached stable state
+[EXECUTION] [01:47:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:47:38] Performed tensorflow.data.TFRecordDataset([train_path]).map() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:47:38] Result: {'tensorflow.data.TFRecordDataset([train_path]).map()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [01:47:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/neurips_teacher_tfgnn_graph_classification_mutag/experiment-5.json
+[EXECUTION] [01:47:38] Waiting before running function for 10 seconds.
+[EXECUTION] [01:47:48] Sensors started
+[STABLE CHECK] [01:47:51] Success: temperature is below threshold.
+[MAIN] [01:47:51] Terminated sensors
+[STABLE CHECK] [01:47:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:48:11] Success: Machine is stable.
+[EXECUTION] [01:48:11] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/tutorials/log_2022/neurips_teacher_tfgnn_graph_classification_mutag_method-level.py", line 39, in <module>
+    (g, y) = train_ds.take(1).get_single_element()
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2630, in get_single_element
+    gen_dataset_ops.dataset_to_single_element(self._variant_tensor,
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/ops/gen_dataset_ops.py", line 1240, in dataset_to_single_element
+    _ops.raise_from_not_ok_status(e, name)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 7107, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.NotFoundError: /home/saurabh/method-energy-dataset/mutag/train.tfrecords; No such file or directory [Op:DatasetToSingleElement]

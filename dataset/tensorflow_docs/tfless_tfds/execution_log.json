@@ -816,23 +816,21 @@ Training...
   0%|          | 0/40 [00:00<?, ?it/s]/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/torch/autograd/__init__.py:251: UserWarning: CUDA initialization: The NVIDIA driver on your system is too old (found version 11060). Please update your GPU driver by downloading and installing a new version from the URL: http://www.nvidia.com/Download/index.aspx Alternatively, go to: https://pytorch.org to install a PyTorch version that has been compiled with your version of the CUDA driver. (Triggered internally at ../c10/cuda/CUDAFunctions.cpp:108.)
   Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
 
- 18%|█▊        | 7/40 [00:00<00:00, 65.34it/s]
- 38%|███▊      | 15/40 [00:00<00:00, 72.07it/s]
- 57%|█████▊    | 23/40 [00:00<00:00, 73.98it/s]
- 78%|███████▊  | 31/40 [00:00<00:00, 73.71it/s]
- 98%|█████████▊| 39/40 [00:00<00:00, 74.87it/s]
-100%|██████████| 40/40 [00:00<00:00, 75.23it/s]
+ 22%|██▎       | 9/40 [00:00<00:00, 81.96it/s]
+ 45%|████▌     | 18/40 [00:00<00:00, 83.72it/s]
+ 68%|██████▊   | 27/40 [00:00<00:00, 85.59it/s]
+ 92%|█████████▎| 37/40 [00:00<00:00, 87.54it/s]
+100%|██████████| 40/40 [00:00<00:00, 88.34it/s]
 Testing...
 
   0%|          | 0/79 [00:00<?, ?it/s]
- 10%|█         | 8/79 [00:00<00:00, 79.84it/s]
- 22%|██▏       | 17/79 [00:00<00:00, 82.62it/s]
- 33%|███▎      | 26/79 [00:00<00:00, 83.75it/s]
- 44%|████▍     | 35/79 [00:00<00:00, 83.31it/s]
- 56%|█████▌    | 44/79 [00:00<00:00, 82.92it/s]
- 67%|██████▋   | 53/79 [00:00<00:00, 82.36it/s]
- 78%|███████▊  | 62/79 [00:00<00:00, 82.52it/s]
- 90%|████████▉ | 71/79 [00:00<00:00, 83.48it/s]
-100%|██████████| 79/79 [00:00<00:00, 83.72it/s]
+ 13%|█▎        | 10/79 [00:00<00:00, 94.27it/s]
+ 25%|██▌       | 20/79 [00:00<00:00, 92.31it/s]
+ 38%|███▊      | 30/79 [00:00<00:00, 92.11it/s]
+ 51%|█████     | 40/79 [00:00<00:00, 91.54it/s]
+ 63%|██████▎   | 50/79 [00:00<00:00, 90.94it/s]
+ 76%|███████▌  | 60/79 [00:00<00:00, 90.48it/s]
+ 89%|████████▊ | 70/79 [00:00<00:00, 90.52it/s]
+100%|██████████| 79/79 [00:00<00:00, 91.98it/s]
 
-Accuracy: 69.83%
+Accuracy: 65.36%

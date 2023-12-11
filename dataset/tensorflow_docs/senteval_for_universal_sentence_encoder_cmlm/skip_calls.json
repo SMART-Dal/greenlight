@@ -1,0 +1,1 @@
+["tensorflow.config.list_physical_devices()", "tensorflow.config.experimental.set_memory_growth()"]

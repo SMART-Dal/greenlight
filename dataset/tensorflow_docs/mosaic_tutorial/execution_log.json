@@ -1,0 +1,31 @@
+2023-12-10 07:48:58.355806: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [07:48:24] Waiting before running function for 10 seconds.
+[EXECUTION] [07:48:34] Sensors started
+[STABLE CHECK] [07:48:37] Success: temperature is below threshold.
+[MAIN] [07:48:37] Terminated sensors
+[STABLE CHECK] [07:48:37] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:48:57] Success: Machine is stable.
+[EXECUTION] [07:48:57] Successfully reached stable state
+[EXECUTION] [07:48:58] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:49:28] Performed tensorflow.saved_model.load() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [07:49:28] Result: {'tensorflow.saved_model.load()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [07:49:28] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/mosaic_tutorial/experiment-5.json
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/mosaic/mosaic_tutorial_method-level.py", line 24, in <module>
+    model_fn = imported.signatures['serving_default']
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/saved_model/signature_serialization.py", line 249, in __getitem__
+    return self._signatures[key]
+KeyError: 'serving_default'

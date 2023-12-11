@@ -1,0 +1,12 @@
+[EXECUTION] [08:37:25] Waiting before running function for 10 seconds.
+[EXECUTION] [08:37:35] Sensors started
+[STABLE CHECK] [08:37:38] Success: temperature is below threshold.
+[MAIN] [08:37:38] Terminated sensors
+[STABLE CHECK] [08:37:38] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:37:58] Success: Machine is stable.
+[EXECUTION] [08:37:58] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/7_Recurrent_Neural_Network/Tutorials/01_Notations_method-level.py", line 11, in <module>
+    rnn_cell = tf.nn.rnn_cell.BasicRNNCell(num_hidden_units)
+AttributeError: module 'tensorflow._api.v2.nn' has no attribute 'rnn_cell'

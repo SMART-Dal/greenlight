@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/astorfi_tensorflow-world_patched/codes/3-neural_networks/recurrent-neural-networks/code/rnn_method-level.py", line 15, in <module>
+    tf.reset_default_graph()
+AttributeError: module 'tensorflow' has no attribute 'reset_default_graph'

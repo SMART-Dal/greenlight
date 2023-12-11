@@ -1,0 +1,1 @@
+["tensorflow.get_logger().setLevel()", "tensorflow.lite.Interpreter()", "tensorflow.lite.Interpreter.allocate_tensors()", "tensorflow.lite.Interpreter.get_input_details()", "tensorflow.lite.Interpreter.get_output_details()"]

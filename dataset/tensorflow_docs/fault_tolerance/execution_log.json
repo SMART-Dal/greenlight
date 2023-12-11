@@ -1,0 +1,110 @@
+2023-12-09 07:10:32.957843: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:From /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/fault_tolerance_method-level.py:38: The name tf.estimator.inputs is deprecated. Please use tf.compat.v1.estimator.inputs instead.
+
+WARNING:tensorflow:From /home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/fault_tolerance_method-level.py:38: The name tf.estimator.inputs.numpy_input_fn is deprecated. Please use tf.compat.v1.estimator.inputs.numpy_input_fn instead.
+
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_queue_runner.py:60: QueueRunner.__init__ (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_estimator/python/estimator/inputs/queues/feeding_functions.py:491: add_queue_runner (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/monitored_session.py:918: start_queue_runners (from tensorflow.python.training.queue_runner_impl) is deprecated and will be removed in a future version.
+Instructions for updating:
+To construct input pipelines, use the `tf.data` module.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/saver.py:1056: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/saver.py:1165: get_checkpoint_mtimes (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file utilities to get mtimes.
+[EXECUTION] [07:10:33] Waiting before running function for 10 seconds.
+[EXECUTION] [07:10:43] Sensors started
+[STABLE CHECK] [07:10:46] Temperature too high: mean is 40.25, which is greater than 40
+[STABLE CHECK] [07:10:46] Temperature is too high.
+[STABLE CHECK] [07:10:46] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [07:11:06] Success: temperature is below threshold.
+[MAIN] [07:11:06] Terminated sensors
+[STABLE CHECK] [07:11:06] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:11:26] Success: Machine is stable.
+[EXECUTION] [07:11:26] Successfully reached stable state
+RuntimeError:Interruption
+[EXECUTION] [07:11:28] Waiting before running function for 10 seconds.
+[EXECUTION] [07:11:38] Sensors started
+[STABLE CHECK] [07:11:41] Temperature too high: mean is 41.15, which is greater than 40
+[STABLE CHECK] [07:11:41] Temperature is too high.
+[STABLE CHECK] [07:11:41] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [07:12:01] Success: temperature is below threshold.
+[MAIN] [07:12:01] Terminated sensors
+[STABLE CHECK] [07:12:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:12:21] Not stable: stdev/mean is 0.03693675514370481, which is greater than 0.03
+[STABLE CHECK] [07:12:21] Machine is not stable yet.
+[STABLE CHECK] [07:12:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:12:41] Not stable: stdev/mean is 0.0785415219623634, which is greater than 0.03
+[STABLE CHECK] [07:12:41] Machine is not stable yet.
+[STABLE CHECK] [07:12:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:13:01] Not stable: stdev/mean is 0.11341621442948925, which is greater than 0.03
+[STABLE CHECK] [07:13:01] Machine is not stable yet.
+[STABLE CHECK] [07:13:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:13:21] Not stable: stdev/mean is 0.07120647979880095, which is greater than 0.03
+[STABLE CHECK] [07:13:21] Machine is not stable yet.
+[STABLE CHECK] [07:13:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:13:41] Not stable: stdev/mean is 0.06817500298139396, which is greater than 0.03
+[STABLE CHECK] [07:13:41] Machine is not stable yet.
+[STABLE CHECK] [07:13:41] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:14:01] Success: Machine is stable.
+[EXECUTION] [07:14:01] Successfully reached stable state
+[EXECUTION] [07:14:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [07:14:32] Performed tensorflow.compat.v1.estimator.DNNClassifier.train() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 3880.0
+outside_object_size
+[EXECUTION] [07:14:32] Result: {'tensorflow.compat.v1.estimator.DNNClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_
+[EXECUTION] [07:14:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/fault_tolerance/experiment-5.json
+[EXECUTION] [07:14:32] Waiting before running function for 10 seconds.
+[EXECUTION] [07:14:42] Sensors started
+[STABLE CHECK] [07:14:45] Success: temperature is below threshold.
+[MAIN] [07:14:45] Terminated sensors
+[STABLE CHECK] [07:14:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:15:05] Not stable: stdev/mean is 0.12902745279652783, which is greater than 0.03
+[STABLE CHECK] [07:15:05] Machine is not stable yet.
+[STABLE CHECK] [07:15:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:15:26] Not stable: stdev/mean is 0.07740906596497817, which is greater than 0.03
+[STABLE CHECK] [07:15:26] Machine is not stable yet.
+[STABLE CHECK] [07:15:26] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [07:15:46] Success: Machine is stable.
+[EXECUTION] [07:15:46] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/guide/migrate/fault_tolerance_method-level.py", line 71, in <module>
+    backup_restore_callback = tf.keras.callbacks.BackupAndRestore(backup_dir=log_dir)
+AttributeError: module 'keras.api._v2.keras.callbacks' has no attribute 'BackupAndRestore'

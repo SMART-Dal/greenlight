@@ -1,0 +1,13 @@
+Commands: ['go' 'stop' 'yes' 'up' 'left' 'right' 'no' 'down']
+[EXECUTION] [11:57:46] Waiting before running function for 10 seconds.
+[EXECUTION] [11:57:56] Sensors started
+[STABLE CHECK] [11:57:59] Success: temperature is below threshold.
+[MAIN] [11:57:59] Terminated sensors
+[STABLE CHECK] [11:57:59] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [11:58:19] Success: Machine is stable.
+[EXECUTION] [11:58:19] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/tutorials/audio/simple_audio_method-level.py", line 33, in <module>
+    (train_ds, val_ds) = tf.keras.utils.audio_dataset_from_directory(directory=data_dir, batch_size=64, validation_split=0.2, seed=0, output_sequence_length=16000, subset='both')
+AttributeError: module 'keras.api._v2.keras.utils' has no attribute 'audio_dataset_from_directory'

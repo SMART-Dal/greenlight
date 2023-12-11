@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_decision-forests_patched/documentation/tutorials/advanced_colab_method-level.py", line 35
+    ?inspector.model_type
+    ^
+SyntaxError: invalid syntax

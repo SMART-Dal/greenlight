@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_tfx_patched/docs/tutorials/tfx/gcp/vertex_pipelines_vertex_training_method-level.py", line 13, in <module>
+    app.kernel.do_shutdown(True)
+AttributeError: 'Application' object has no attribute 'kernel'

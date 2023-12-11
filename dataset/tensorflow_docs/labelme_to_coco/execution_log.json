@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/waste_identification_ml/pre_processing/labelme_to_coco_method-level.py", line 3
+    waste_identification_ml/pre_processing/config/sample_json/ffdeb4cd-43ba-4ca0-a1e6-aa5824005f44.json
+                                                                         ^
+SyntaxError: invalid syntax

@@ -1,0 +1,15 @@
+Size of:
+- Training-set:		1000
+- Test-set:	5
+[EXECUTION] [08:34:08] Waiting before running function for 10 seconds.
+[EXECUTION] [08:34:18] Sensors started
+[STABLE CHECK] [08:34:21] Success: temperature is below threshold.
+[MAIN] [08:34:21] Terminated sensors
+[STABLE CHECK] [08:34:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:34:41] Success: Machine is stable.
+[EXECUTION] [08:34:41] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/7_Recurrent_Neural_Network/Tutorials/04_Many_to_One _with_Variable_Sequence_Length_method-level.py", line 92, in <module>
+    x = tf.placeholder(tf.float32, [None, seq_max_len, input_dim])
+AttributeError: module 'tensorflow' has no attribute 'placeholder'

@@ -1,84 +1,21 @@
-2023-12-07 19:26:02.251903: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 19:26:02.387842: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-12-07 19:26:03.024086: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 19:26:03.024142: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 19:26:03.024147: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-2023-12-07 19:27:41.031532: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-2023-12-07 19:27:41.031569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpjzovytiv
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:396: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+2023-12-09 13:50:59.990914: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+WARNING:tensorflow:Using temporary folder as model directory: /tmp/tmpyw5e20d2
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
 Instructions for updating:
 Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/optimizers/optimizer_v2/adagrad.py:93: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/optimizer_v2/adagrad.py:83: calling Constant.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
 Instructions for updating:
 Call initializer instance with the dtype argument instead of passing it to the constructor
-2023-12-07 19:30:51.172026: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-2023-12-07 19:30:51.185153: W tensorflow/core/common_runtime/type_inference.cc:339] Type inference failed. This indicates an invalid graph that escaped type checking. Error message: INVALID_ARGUMENT: expected compatible input types, but input 1:
-type_id: TFT_OPTIONAL
-args {
-  type_id: TFT_PRODUCT
-  args {
-    type_id: TFT_TENSOR
-    args {
-      type_id: TFT_INT64
-    }
-  }
-}
- is neither a subtype nor a supertype of the combined inputs preceding it:
-type_id: TFT_OPTIONAL
-args {
-  type_id: TFT_PRODUCT
-  args {
-    type_id: TFT_TENSOR
-    args {
-      type_id: TFT_INT32
-    }
-  }
-}
+[EXECUTION] [13:50:26] Waiting before running function for 10 seconds.
+[EXECUTION] [13:50:36] Sensors started
+[STABLE CHECK] [13:50:39] Success: temperature is below threshold.
+[MAIN] [13:50:39] Terminated sensors
+[STABLE CHECK] [13:50:39] Waiting 20 seconds to reach stable state.
 
-	while inferring type of node 'dnn/zero_fraction/cond/output/_18'
-2023-12-07 19:30:52.432521: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
-2023-12-07 19:32:41.954484: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-[EXECUTION] [19:26:04] Waiting before running function for 10 seconds.
-[EXECUTION] [19:26:14] Sensors started
-[STABLE CHECK] [19:26:17] Success: temperature is below threshold.
-[MAIN] [19:26:17] Terminated sensors
-[STABLE CHECK] [19:26:17] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:26:37] Success: Machine is stable.
-[EXECUTION] [19:26:37] Successfully reached stable state
-[EXECUTION] [19:26:37] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:27:07] Performed tensorflow.keras.utils.get_file() on input and will now save energy data.
-[EXECUTION] [19:27:07] skipping call added, current list is: ['tensorflow.keras.utils.get_file()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 128.0
-4-size 200.0
-++++++5++++++
-5-size 72.0
-++++++5++++++
-5-size 128.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:27:07] Result: {'tensorflow.keras.utils.get_file()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
-[EXECUTION] [19:27:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-[EXECUTION] [19:27:07] Waiting before running function for 10 seconds.
-[EXECUTION] [19:27:17] Sensors started
-[STABLE CHECK] [19:27:20] Success: temperature is below threshold.
-[MAIN] [19:27:20] Terminated sensors
-[STABLE CHECK] [19:27:20] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:27:40] Success: Machine is stable.
-[EXECUTION] [19:27:40] Successfully reached stable state
-[EXECUTION] [19:27:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:28:11] Performed tensorflow.estimator.DNNClassifier() on input and will now save energy data.
+[STABLE CHECK] [13:50:59] Success: Machine is stable.
+[EXECUTION] [13:50:59] Successfully reached stable state
+[EXECUTION] [13:50:59] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:51:30] Performed tensorflow.estimator.DNNClassifier() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
@@ -99,144 +36,18 @@ inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [19:28:11] Result: {'tensorflow.estimator.DNNClassifier()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [19:28:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-[EXECUTION] [19:28:11] Waiting before running function for 10 seconds.
-[EXECUTION] [19:28:21] Sensors started
-[STABLE CHECK] [19:28:24] Success: temperature is below threshold.
-[MAIN] [19:28:24] Terminated sensors
-[STABLE CHECK] [19:28:24] Waiting 20 seconds to reach stable state.
+[EXECUTION] [13:51:30] Result: {'tensorflow.estimator.DNNClassifier()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [13:51:30] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-5.json
+[EXECUTION] [13:51:30] Waiting before running function for 10 seconds.
+[EXECUTION] [13:51:40] Sensors started
+[STABLE CHECK] [13:51:43] Success: temperature is below threshold.
+[MAIN] [13:51:43] Terminated sensors
+[STABLE CHECK] [13:51:43] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [19:28:44] Success: Machine is stable.
-[EXECUTION] [19:28:44] Successfully reached stable state
-[EXECUTION] [19:28:44] Waiting before running function for 10 seconds.
-[EXECUTION] [19:28:54] Sensors started
-[STABLE CHECK] [19:28:57] Success: temperature is below threshold.
-[MAIN] [19:28:57] Terminated sensors
-[STABLE CHECK] [19:28:57] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:29:17] Success: Machine is stable.
-[EXECUTION] [19:29:17] Successfully reached stable state
-[EXECUTION] [19:29:17] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:29:47] Performed tensorflow.data.Dataset.from_tensor_slices() on input and will now save energy data.
-[EXECUTION] [19:29:47] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.data.Dataset.from_tensor_slices()']
-inside_arg_size
-++++++4++++++
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 256.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 20944.0
-4-size 21200.0
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 256.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 20944.0
-4-size 21200.0
-++++++4++++++
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 256.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 20944.0
-4-size 21200.0
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 256.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 20944.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [19:29:47] Result: {'tensorflow.data.Dataset.from_tensor_slices()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [19:29:47] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-[EXECUTION] [19:29:47] Waiting before running function for 10 seconds.
-[EXECUTION] [19:29:57] Sensors started
-[STABLE CHECK] [19:30:00] Success: temperature is below threshold.
-[MAIN] [19:30:00] Terminated sensors
-[STABLE CHECK] [19:30:00] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:30:20] Success: Machine is stable.
-[EXECUTION] [19:30:20] Successfully reached stable state
-[EXECUTION] [19:30:20] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:30:50] Performed tensorflow.data.Dataset.from_tensor_slices.shuffle(1000).repeat() on input and will now save energy data.
-[EXECUTION] [19:30:50] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle(1000).repeat()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 102328.0
-outside_object_size
-[EXECUTION] [19:30:50] Result: {'tensorflow.data.Dataset.from_tensor_slices.shuffle(1000).repeat()': {'energy_data': {'cpu': '{"col
-[EXECUTION] [19:30:50] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-[EXECUTION] [19:31:18] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:31:48] Performed tensorflow.estimator.DNNClassifier.train() on input and will now save energy data.
+[STABLE CHECK] [13:52:03] Success: Machine is stable.
+[EXECUTION] [13:52:03] Successfully reached stable state
+[EXECUTION] [13:52:45] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:53:15] Performed tensorflow.estimator.DNNClassifier.train() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
@@ -255,22 +66,18 @@ inside_object_size
 ++++++5++++++
 5-size 3912.0
 outside_object_size
-[EXECUTION] [19:31:48] Result: {'tensorflow.estimator.DNNClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
-[EXECUTION] [19:31:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-[EXECUTION] [19:31:48] Waiting before running function for 10 seconds.
-[EXECUTION] [19:31:58] Sensors started
-[STABLE CHECK] [19:32:01] Success: temperature is below threshold.
-[MAIN] [19:32:01] Terminated sensors
-[STABLE CHECK] [19:32:01] Waiting 20 seconds to reach stable state.
+[EXECUTION] [13:53:15] Result: {'tensorflow.estimator.DNNClassifier.train()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [13:53:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-5.json
+[EXECUTION] [13:53:15] Waiting before running function for 10 seconds.
+[EXECUTION] [13:53:25] Sensors started
+[STABLE CHECK] [13:53:28] Success: temperature is below threshold.
+[MAIN] [13:53:28] Terminated sensors
+[STABLE CHECK] [13:53:28] Waiting 20 seconds to reach stable state.
 
-[STABLE CHECK] [19:32:21] Not stable: stdev/mean is 0.036973357659066335, which is greater than 0.03
-[STABLE CHECK] [19:32:21] Machine is not stable yet.
-[STABLE CHECK] [19:32:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:32:41] Success: Machine is stable.
-[EXECUTION] [19:32:41] Successfully reached stable state
-[EXECUTION] [19:32:42] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:33:12] Performed tensorflow.estimator.DNNClassifier.evaluate() on input and will now save energy data.
+[STABLE CHECK] [13:53:48] Success: Machine is stable.
+[EXECUTION] [13:53:48] Successfully reached stable state
+[EXECUTION] [13:53:48] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:54:19] Performed tensorflow.estimator.DNNClassifier.evaluate() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
@@ -285,39 +92,11 @@ inside_object_size
 ++++++5++++++
 5-size 3912.0
 outside_object_size
-[EXECUTION] [19:33:12] Result: {'tensorflow.estimator.DNNClassifier.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed
-2023-12-07 19:34:15.781424: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-[EXECUTION] [19:33:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
+[EXECUTION] [13:54:19] Result: {'tensorflow.estimator.DNNClassifier.evaluate()': {'energy_data': {'cpu': '{"columns":["time_elapsed
+[EXECUTION] [13:54:19] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-5.json
 
-Test set accuracy: 0.867
+Test set accuracy: 0.667
 
-[EXECUTION] [19:33:12] Waiting before running function for 10 seconds.
-[EXECUTION] [19:33:22] Sensors started
-[STABLE CHECK] [19:33:25] Success: temperature is below threshold.
-[MAIN] [19:33:25] Terminated sensors
-[STABLE CHECK] [19:33:25] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [19:33:45] Success: Machine is stable.
-[EXECUTION] [19:33:45] Successfully reached stable state
-[EXECUTION] [19:33:45] waiting idle for 30 seconds after function execution
-[EXECUTION] [19:34:15] Performed tensorflow.estimator.DNNClassifier.predict() on input and will now save energy data.
-[EXECUTION] [19:34:15] skipping call added, current list is: ['tensorflow.keras.utils.get_file()', 'tensorflow.data.Dataset.from_tensor_slices()', 'tensorflow.data.Dataset.from_tensor_slices.shuffle(1000).repeat()', 'tensorflow.estimator.DNNClassifier.predict()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-4-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 3912.0
-outside_object_size
-[EXECUTION] [19:34:15] Result: {'tensorflow.estimator.DNNClassifier.predict()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [19:34:15] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/premade/experiment-1.json
-Prediction is "Setosa" (72.3%), expected "Setosa"
-Prediction is "Versicolor" (36.8%), expected "Versicolor"
-Prediction is "Virginica" (38.0%), expected "Virginica"
+Prediction is "Setosa" (81.3%), expected "Setosa"
+Prediction is "Virginica" (45.3%), expected "Versicolor"
+Prediction is "Virginica" (57.3%), expected "Virginica"

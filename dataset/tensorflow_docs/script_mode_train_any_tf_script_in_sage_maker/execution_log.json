@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/aws_sagemaker-tensorflow-training-toolkit_patched/examples/script_mode_train_any_tf_script_in_sage_maker_method-level.py", line 51
+    wget -q -t 3 https://storage.googleapis.com/tensorflow/libtensorflow/libtensorflow-cpu-linux-x86_64-1.11.0.tar.gz
+               ^
+SyntaxError: invalid syntax

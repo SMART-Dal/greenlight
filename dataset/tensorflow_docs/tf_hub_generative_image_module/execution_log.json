@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/tf_hub_generative_image_module_method-level.py", line 26, in <module>
+    from skimage import transform
+ModuleNotFoundError: No module named 'skimage'

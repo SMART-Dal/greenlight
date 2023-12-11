@@ -1,6 +1,6 @@
-2023-12-08 05:26:58.597501: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 14:57:33.741460: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
 Tensorflow version:  2.7.0
 Tensorflow is built with CUDA:  True
 All devices:  [PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU'), PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
 GPU devices:  [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
-tf.Tensor(5.3654585, shape=(), dtype=float32)
+tf.Tensor(-2.2903094, shape=(), dtype=float32)

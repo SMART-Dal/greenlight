@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/7_Recurrent_Neural_Network/Tutorials/02_Static_vs_Dynamic_RNN_method-level.py", line 4, in <module>
+    from tensorflow.contrib import rnn
+ModuleNotFoundError: No module named 'tensorflow.contrib'

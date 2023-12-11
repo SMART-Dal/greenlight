@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_agents_patched/docs/tutorials/3_policies_tutorial_method-level.py", line 7, in <module>
+    import tensorflow_probability as tfp
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/__init__.py", line 20, in <module>
+    from tensorflow_probability import substrates
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/substrates/__init__.py", line 17, in <module>
+    from tensorflow_probability.python.internal import all_util
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/python/__init__.py", line 138, in <module>
+    dir(globals()[pkg_name])  # Forces loading the package from its lazy loader.
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 57, in __dir__
+    module = self._load()
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/python/internal/lazy_loader.py", line 37, in _load
+    self._on_first_access()
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_probability/python/__init__.py", line 59, in _validate_tf_environment
+    raise ImportError(
+ImportError: This version of TensorFlow Probability requires TensorFlow version >= 2.11; Detected an installation of version 2.7.0. Please upgrade TensorFlow to proceed.

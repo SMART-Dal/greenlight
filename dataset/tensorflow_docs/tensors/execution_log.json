@@ -1,29 +1,4 @@
-2023-12-08 04:21:35.622638: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-[EXECUTION] [04:21:02] Waiting before running function for 10 seconds.
-[EXECUTION] [04:21:12] Sensors started
-[STABLE CHECK] [04:21:15] Success: temperature is below threshold.
-[MAIN] [04:21:15] Terminated sensors
-[STABLE CHECK] [04:21:15] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [04:21:35] Success: Machine is stable.
-[EXECUTION] [04:21:35] Successfully reached stable state
-[EXECUTION] [04:21:35] waiting idle for 30 seconds after function execution
-[EXECUTION] [04:22:05] Performed tensorflow.constant() on input and will now save energy data.
-[EXECUTION] [04:22:05] skipping call added, current list is: ['tensorflow.constant()']
-inside_arg_size
-++++++4++++++
-++++++5++++++
-5-size 24.0
-4-size 24.0
-++++++5++++++
-5-size 24.0
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [04:22:05] Result: {'tensorflow.constant()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":
-[EXECUTION] [04:22:05] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensors/experiment-1.json
+2023-12-09 15:13:46.252776: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
 Print constant tensor 0 of rank 0
 Show full tensor: tf.Tensor(0, shape=(), dtype=int32)
 Tensor: tf.Tensor([1 2 3], shape=(3,), dtype=int32)
@@ -36,35 +11,6 @@ tf.Tensor(
 [[ 8 12]
  [ 8 12]], shape=(2, 2), dtype=int32) 
 
-[EXECUTION] [04:22:05] Waiting before running function for 10 seconds.
-[EXECUTION] [04:22:15] Sensors started
-[STABLE CHECK] [04:22:18] Success: temperature is below threshold.
-[MAIN] [04:22:18] Terminated sensors
-[STABLE CHECK] [04:22:18] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [04:22:38] Success: Machine is stable.
-[EXECUTION] [04:22:38] Successfully reached stable state
-[EXECUTION] [04:22:38] waiting idle for 30 seconds after function execution
-[EXECUTION] [04:23:08] Performed tensorflow.ones() on input and will now save energy data.
-[EXECUTION] [04:23:08] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.ones()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-4-size 112.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [04:23:08] Result: {'tensorflow.ones()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
-[EXECUTION] [04:23:08] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensors/experiment-1.json
 Tensor: tf.Tensor(
 [[[1. 1. 1. 1. 1. 1.]
   [1. 1. 1. 1. 1. 1.]
@@ -90,36 +36,5 @@ array([[6],
        [9]], dtype=int32)>>
 Original tensor:  tf.Tensor([1 2 3 4], shape=(4,), dtype=int32)
 Tensor type before casting:  <dtype: 'int32'>
-[EXECUTION] [04:23:08] Waiting before running function for 10 seconds.
-[EXECUTION] [04:23:18] Sensors started
-[STABLE CHECK] [04:23:21] Success: temperature is below threshold.
-[MAIN] [04:23:21] Terminated sensors
-[STABLE CHECK] [04:23:21] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [04:23:41] Success: Machine is stable.
-[EXECUTION] [04:23:41] Successfully reached stable state
-[EXECUTION] [04:23:41] waiting idle for 30 seconds after function execution
-[EXECUTION] [04:24:12] Performed tensorflow.cast() on input and will now save energy data.
-[EXECUTION] [04:24:12] skipping call added, current list is: ['tensorflow.constant()', 'tensorflow.ones()', 'tensorflow.cast()']
-inside_arg_size
-++++++4++++++
-++++++1++++++
-1-size 16.0
-4-size 16.0
-++++++1++++++
-1-size 16.0
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-4-size 56.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [04:24:12] Result: {'tensorflow.cast()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1
-[EXECUTION] [04:24:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tensors/experiment-1.json
 New tensor:  tf.Tensor([1. 2. 3. 4.], shape=(4,), dtype=float32)
 Tensor type after casting:  <dtype: 'float32'>

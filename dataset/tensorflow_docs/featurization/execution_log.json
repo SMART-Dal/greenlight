@@ -1,0 +1,996 @@
+2023-12-11 01:45:06.414873: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+Downloading and preparing dataset 4.70 MiB (download: 4.70 MiB, generated: 32.41 MiB, total: 37.10 MiB) to /home/saurabh/tensorflow_datasets/movielens/100k-ratings/0.1.1...
+
+Dl Completed...: 0 url [00:00, ? url/s]
+
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...:   0%|          | 0/4 [00:00<?, ? MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+
+Dl Size...:  25%|██▌       | 1/4 [00:00<00:02,  1.23 MiB/s][A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...:  25%|██▌       | 1/4 [00:00<00:02,  1.23 MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...:  50%|█████     | 2/4 [00:00<00:01,  1.23 MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+
+Dl Size...:  75%|███████▌  | 3/4 [00:00<00:00,  3.76 MiB/s][A
+Dl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+
+Dl Size...:  75%|███████▌  | 3/4 [00:00<00:00,  3.76 MiB/s][A
+
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+Dl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...: 0 file [00:01, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/1 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/2 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/3 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/4 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/5 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/6 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/7 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/8 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/9 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/10 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/11 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/12 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/13 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/14 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/15 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/16 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/17 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/18 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/19 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/20 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/21 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/22 [00:01<?, ? file/s][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   0%|          | 0/23 [00:01<?, ? file/s][A[A
+
+
+Extraction completed...:   4%|▍         | 1/23 [00:01<00:28,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   4%|▍         | 1/23 [00:01<00:28,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:   9%|▊         | 2/23 [00:01<00:27,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  13%|█▎        | 3/23 [00:01<00:25,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  17%|█▋        | 4/23 [00:01<00:24,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  22%|██▏       | 5/23 [00:01<00:23,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  26%|██▌       | 6/23 [00:01<00:21,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  30%|███       | 7/23 [00:01<00:20,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  35%|███▍      | 8/23 [00:01<00:19,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  39%|███▉      | 9/23 [00:01<00:18,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  43%|████▎     | 10/23 [00:01<00:16,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  48%|████▊     | 11/23 [00:01<00:15,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  52%|█████▏    | 12/23 [00:01<00:14,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  57%|█████▋    | 13/23 [00:01<00:12,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  61%|██████    | 14/23 [00:01<00:11,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  65%|██████▌   | 15/23 [00:01<00:10,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  70%|██████▉   | 16/23 [00:01<00:09,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  74%|███████▍  | 17/23 [00:01<00:07,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  78%|███████▊  | 18/23 [00:01<00:06,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  83%|████████▎ | 19/23 [00:01<00:05,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  87%|████████▋ | 20/23 [00:01<00:03,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  91%|█████████▏| 21/23 [00:01<00:02,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...:  96%|█████████▌| 22/23 [00:01<00:01,  1.29s/ file][A[A
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.19s/ url]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  4.36 MiB/s][A
+
+
+Extraction completed...: 100%|██████████| 23/23 [00:01<00:00,  1.29s/ file][A[A
+Extraction completed...: 100%|██████████| 23/23 [00:01<00:00, 17.80 file/s]
+
+Dl Size...: 100%|██████████| 4/4 [00:01<00:00,  3.09 MiB/s]
+
+Dl Completed...: 100%|██████████| 1/1 [00:01<00:00,  1.29s/ url]
+
+Generating splits...:   0%|          | 0/1 [00:00<?, ? splits/s]
+
+Generating train examples...:   0%|          | 0/100000 [00:00<?, ? examples/s][A
+
+Generating train examples...:   0%|          | 193/100000 [00:00<00:51, 1927.58 examples/s][A
+
+Generating train examples...:   1%|          | 641/100000 [00:00<00:29, 3426.04 examples/s][A
+
+Generating train examples...:   1%|          | 1090/100000 [00:00<00:25, 3909.04 examples/s][A
+
+Generating train examples...:   2%|▏         | 1543/100000 [00:00<00:23, 4151.65 examples/s][A
+
+Generating train examples...:   2%|▏         | 1995/100000 [00:00<00:22, 4283.36 examples/s][A
+
+Generating train examples...:   2%|▏         | 2446/100000 [00:00<00:22, 4359.37 examples/s][A
+
+Generating train examples...:   3%|▎         | 2899/100000 [00:00<00:21, 4413.72 examples/s][A
+
+Generating train examples...:   3%|▎         | 3352/100000 [00:00<00:21, 4450.66 examples/s][A
+
+Generating train examples...:   4%|▍         | 3806/100000 [00:00<00:21, 4476.27 examples/s][A
+
+Generating train examples...:   4%|▍         | 4259/100000 [00:01<00:21, 4491.19 examples/s][A
+
+Generating train examples...:   5%|▍         | 4713/100000 [00:01<00:21, 4503.23 examples/s][A
+
+Generating train examples...:   5%|▌         | 5166/100000 [00:01<00:21, 4509.13 examples/s][A
+
+Generating train examples...:   6%|▌         | 5619/100000 [00:01<00:20, 4515.15 examples/s][A
+
+Generating train examples...:   6%|▌         | 6072/100000 [00:01<00:20, 4518.54 examples/s][A
+
+Generating train examples...:   7%|▋         | 6525/100000 [00:01<00:20, 4519.47 examples/s][A
+
+Generating train examples...:   7%|▋         | 6980/100000 [00:01<00:20, 4525.76 examples/s][A
+
+Generating train examples...:   7%|▋         | 7433/100000 [00:01<00:20, 4526.39 examples/s][A
+
+Generating train examples...:   8%|▊         | 7887/100000 [00:01<00:20, 4527.97 examples/s][A
+
+Generating train examples...:   8%|▊         | 8341/100000 [00:01<00:20, 4528.63 examples/s][A
+
+Generating train examples...:   9%|▉         | 8794/100000 [00:02<00:20, 4520.41 examples/s][A
+
+Generating train examples...:   9%|▉         | 9247/100000 [00:02<00:20, 4520.46 examples/s][A
+
+Generating train examples...:  10%|▉         | 9700/100000 [00:02<00:19, 4520.60 examples/s][A
+
+Generating train examples...:  10%|█         | 10153/100000 [00:02<00:19, 4523.08 examples/s][A
+
+Generating train examples...:  11%|█         | 10606/100000 [00:02<00:19, 4524.39 examples/s][A
+
+Generating train examples...:  11%|█         | 11060/100000 [00:02<00:19, 4528.92 examples/s][A
+
+Generating train examples...:  12%|█▏        | 11514/100000 [00:02<00:19, 4529.35 examples/s][A
+
+Generating train examples...:  12%|█▏        | 11968/100000 [00:02<00:19, 4530.51 examples/s][A
+
+Generating train examples...:  12%|█▏        | 12422/100000 [00:02<00:19, 4531.76 examples/s][A
+
+Generating train examples...:  13%|█▎        | 12876/100000 [00:02<00:19, 4531.32 examples/s][A
+
+Generating train examples...:  13%|█▎        | 13330/100000 [00:03<00:19, 4529.30 examples/s][A
+
+Generating train examples...:  14%|█▍        | 13784/100000 [00:03<00:19, 4530.04 examples/s][A
+
+Generating train examples...:  14%|█▍        | 14238/100000 [00:03<00:18, 4528.31 examples/s][A
+
+Generating train examples...:  15%|█▍        | 14692/100000 [00:03<00:18, 4529.19 examples/s][A
+
+Generating train examples...:  15%|█▌        | 15146/100000 [00:03<00:18, 4531.09 examples/s][A
+
+Generating train examples...:  16%|█▌        | 15600/100000 [00:03<00:18, 4532.14 examples/s][A
+
+Generating train examples...:  16%|█▌        | 16054/100000 [00:03<00:18, 4530.31 examples/s][A
+
+Generating train examples...:  17%|█▋        | 16508/100000 [00:03<00:18, 4531.65 examples/s][A
+
+Generating train examples...:  17%|█▋        | 16962/100000 [00:03<00:18, 4531.51 examples/s][A
+
+Generating train examples...:  17%|█▋        | 17416/100000 [00:03<00:18, 4530.27 examples/s][A
+
+Generating train examples...:  18%|█▊        | 17870/100000 [00:04<00:18, 4531.31 examples/s][A
+
+Generating train examples...:  18%|█▊        | 18324/100000 [00:04<00:18, 4530.57 examples/s][A
+
+Generating train examples...:  19%|█▉        | 18778/100000 [00:04<00:17, 4527.29 examples/s][A
+
+Generating train examples...:  19%|█▉        | 19232/100000 [00:04<00:17, 4528.06 examples/s][A
+
+Generating train examples...:  20%|█▉        | 19699/100000 [00:04<00:17, 4568.07 examples/s][A
+
+Generating train examples...:  20%|██        | 20227/100000 [00:04<00:16, 4779.72 examples/s][A
+
+Generating train examples...:  21%|██        | 20770/100000 [00:04<00:15, 4972.74 examples/s][A
+
+Generating train examples...:  21%|██▏       | 21314/100000 [00:04<00:15, 5111.36 examples/s][A
+
+Generating train examples...:  22%|██▏       | 21858/100000 [00:04<00:15, 5209.03 examples/s][A
+
+Generating train examples...:  22%|██▏       | 22401/100000 [00:04<00:14, 5273.24 examples/s][A
+
+Generating train examples...:  23%|██▎       | 22935/100000 [00:05<00:14, 5291.02 examples/s][A
+
+Generating train examples...:  23%|██▎       | 23465/100000 [00:05<00:14, 5290.57 examples/s][A
+
+Generating train examples...:  24%|██▍       | 24003/100000 [00:05<00:14, 5314.52 examples/s][A
+
+Generating train examples...:  25%|██▍       | 24539/100000 [00:05<00:14, 5325.76 examples/s][A
+
+Generating train examples...:  25%|██▌       | 25076/100000 [00:05<00:14, 5338.58 examples/s][A
+
+Generating train examples...:  26%|██▌       | 25610/100000 [00:05<00:13, 5331.63 examples/s][A
+
+Generating train examples...:  26%|██▌       | 26151/100000 [00:05<00:13, 5352.81 examples/s][A
+
+Generating train examples...:  27%|██▋       | 26693/100000 [00:05<00:13, 5370.32 examples/s][A
+
+Generating train examples...:  27%|██▋       | 27239/100000 [00:05<00:13, 5394.04 examples/s][A
+
+Generating train examples...:  28%|██▊       | 27784/100000 [00:05<00:13, 5409.40 examples/s][A
+
+Generating train examples...:  28%|██▊       | 28325/100000 [00:06<00:13, 5400.38 examples/s][A
+
+Generating train examples...:  29%|██▉       | 28866/100000 [00:06<00:13, 5401.53 examples/s][A
+
+Generating train examples...:  29%|██▉       | 29407/100000 [00:06<00:13, 5403.52 examples/s][A
+
+Generating train examples...:  30%|██▉       | 29954/100000 [00:06<00:12, 5421.00 examples/s][A
+
+Generating train examples...:  30%|███       | 30497/100000 [00:06<00:12, 5416.17 examples/s][A
+
+Generating train examples...:  31%|███       | 31041/100000 [00:06<00:12, 5420.96 examples/s][A
+
+Generating train examples...:  32%|███▏      | 31585/100000 [00:06<00:12, 5425.82 examples/s][A
+
+Generating train examples...:  32%|███▏      | 32128/100000 [00:06<00:12, 5426.10 examples/s][A
+
+Generating train examples...:  33%|███▎      | 32671/100000 [00:06<00:12, 5422.52 examples/s][A
+
+Generating train examples...:  33%|███▎      | 33215/100000 [00:06<00:12, 5425.06 examples/s][A
+
+Generating train examples...:  34%|███▍      | 33759/100000 [00:07<00:12, 5427.76 examples/s][A
+
+Generating train examples...:  34%|███▍      | 34302/100000 [00:07<00:12, 5428.07 examples/s][A
+
+Generating train examples...:  35%|███▍      | 34849/100000 [00:07<00:11, 5437.81 examples/s][A
+
+Generating train examples...:  35%|███▌      | 35393/100000 [00:07<00:11, 5436.10 examples/s][A
+
+Generating train examples...:  36%|███▌      | 35938/100000 [00:07<00:11, 5437.95 examples/s][A
+
+Generating train examples...:  36%|███▋      | 36482/100000 [00:07<00:11, 5427.79 examples/s][A
+
+Generating train examples...:  37%|███▋      | 37028/100000 [00:07<00:11, 5435.74 examples/s][A
+
+Generating train examples...:  38%|███▊      | 37572/100000 [00:07<00:11, 5435.64 examples/s][A
+
+Generating train examples...:  38%|███▊      | 38116/100000 [00:07<00:11, 5436.76 examples/s][A
+
+Generating train examples...:  39%|███▊      | 38660/100000 [00:07<00:11, 5434.10 examples/s][A
+
+Generating train examples...:  39%|███▉      | 39204/100000 [00:08<00:11, 5422.82 examples/s][A
+
+Generating train examples...:  40%|███▉      | 39747/100000 [00:08<00:11, 5423.56 examples/s][A
+
+Generating train examples...:  40%|████      | 40292/100000 [00:08<00:10, 5430.65 examples/s][A
+
+Generating train examples...:  41%|████      | 40837/100000 [00:08<00:10, 5433.72 examples/s][A
+
+Generating train examples...:  41%|████▏     | 41381/100000 [00:08<00:10, 5435.08 examples/s][A
+
+Generating train examples...:  42%|████▏     | 41926/100000 [00:08<00:10, 5439.21 examples/s][A
+
+Generating train examples...:  42%|████▏     | 42470/100000 [00:08<00:10, 5438.69 examples/s][A
+
+Generating train examples...:  43%|████▎     | 43015/100000 [00:08<00:10, 5439.76 examples/s][A
+
+Generating train examples...:  44%|████▎     | 43559/100000 [00:08<00:10, 5405.66 examples/s][A
+
+Generating train examples...:  44%|████▍     | 44102/100000 [00:08<00:10, 5410.74 examples/s][A
+
+Generating train examples...:  45%|████▍     | 44646/100000 [00:09<00:10, 5417.27 examples/s][A
+
+Generating train examples...:  45%|████▌     | 45189/100000 [00:09<00:10, 5419.62 examples/s][A
+
+Generating train examples...:  46%|████▌     | 45735/100000 [00:09<00:09, 5431.08 examples/s][A
+
+Generating train examples...:  46%|████▋     | 46280/100000 [00:09<00:09, 5435.78 examples/s][A
+
+Generating train examples...:  47%|████▋     | 46824/100000 [00:09<00:09, 5405.19 examples/s][A
+
+Generating train examples...:  47%|████▋     | 47365/100000 [00:09<00:09, 5376.91 examples/s][A
+
+Generating train examples...:  48%|████▊     | 47909/100000 [00:09<00:09, 5394.40 examples/s][A
+
+Generating train examples...:  48%|████▊     | 48453/100000 [00:09<00:09, 5407.86 examples/s][A
+
+Generating train examples...:  49%|████▉     | 48994/100000 [00:09<00:09, 5399.96 examples/s][A
+
+Generating train examples...:  50%|████▉     | 49535/100000 [00:09<00:09, 5399.99 examples/s][A
+
+Generating train examples...:  50%|█████     | 50080/100000 [00:10<00:09, 5413.41 examples/s][A
+
+Generating train examples...:  51%|█████     | 50622/100000 [00:10<00:09, 5405.94 examples/s][A
+
+Generating train examples...:  51%|█████     | 51167/100000 [00:10<00:09, 5418.17 examples/s][A
+
+Generating train examples...:  52%|█████▏    | 51710/100000 [00:10<00:08, 5420.16 examples/s][A
+
+Generating train examples...:  52%|█████▏    | 52255/100000 [00:10<00:08, 5427.59 examples/s][A
+
+Generating train examples...:  53%|█████▎    | 52798/100000 [00:10<00:08, 5392.16 examples/s][A
+
+Generating train examples...:  53%|█████▎    | 53339/100000 [00:10<00:08, 5396.69 examples/s][A
+
+Generating train examples...:  54%|█████▍    | 53886/100000 [00:10<00:08, 5417.69 examples/s][A
+
+Generating train examples...:  54%|█████▍    | 54431/100000 [00:10<00:08, 5425.26 examples/s][A
+
+Generating train examples...:  55%|█████▍    | 54975/100000 [00:10<00:08, 5427.17 examples/s][A
+
+Generating train examples...:  56%|█████▌    | 55518/100000 [00:11<00:08, 5410.69 examples/s][A
+
+Generating train examples...:  56%|█████▌    | 56060/100000 [00:11<00:08, 5379.91 examples/s][A
+
+Generating train examples...:  57%|█████▋    | 56599/100000 [00:11<00:08, 5351.62 examples/s][A
+
+Generating train examples...:  57%|█████▋    | 57143/100000 [00:11<00:07, 5376.41 examples/s][A
+
+Generating train examples...:  58%|█████▊    | 57681/100000 [00:11<00:07, 5362.72 examples/s][A
+
+Generating train examples...:  58%|█████▊    | 58220/100000 [00:11<00:07, 5368.68 examples/s][A
+
+Generating train examples...:  59%|█████▉    | 58764/100000 [00:11<00:07, 5388.85 examples/s][A
+
+Generating train examples...:  59%|█████▉    | 59306/100000 [00:11<00:07, 5396.61 examples/s][A
+
+Generating train examples...:  60%|█████▉    | 59846/100000 [00:11<00:07, 5388.94 examples/s][A
+
+Generating train examples...:  60%|██████    | 60392/100000 [00:11<00:07, 5409.00 examples/s][A
+
+Generating train examples...:  61%|██████    | 60933/100000 [00:12<00:07, 5408.85 examples/s][A
+
+Generating train examples...:  61%|██████▏   | 61477/100000 [00:12<00:07, 5417.96 examples/s][A
+
+Generating train examples...:  62%|██████▏   | 62022/100000 [00:12<00:06, 5426.41 examples/s][A
+
+Generating train examples...:  63%|██████▎   | 62565/100000 [00:12<00:06, 5424.66 examples/s][A
+
+Generating train examples...:  63%|██████▎   | 63110/100000 [00:12<00:06, 5430.90 examples/s][A
+
+Generating train examples...:  64%|██████▎   | 63655/100000 [00:12<00:06, 5434.32 examples/s][A
+
+Generating train examples...:  64%|██████▍   | 64202/100000 [00:12<00:06, 5443.72 examples/s][A
+
+Generating train examples...:  65%|██████▍   | 64747/100000 [00:12<00:06, 5441.56 examples/s][A
+
+Generating train examples...:  65%|██████▌   | 65292/100000 [00:12<00:06, 5434.38 examples/s][A
+
+Generating train examples...:  66%|██████▌   | 65836/100000 [00:12<00:06, 5431.67 examples/s][A
+
+Generating train examples...:  66%|██████▋   | 66380/100000 [00:13<00:06, 5428.82 examples/s][A
+
+Generating train examples...:  67%|██████▋   | 66923/100000 [00:13<00:06, 5424.67 examples/s][A
+
+Generating train examples...:  67%|██████▋   | 67468/100000 [00:13<00:05, 5429.96 examples/s][A
+
+Generating train examples...:  68%|██████▊   | 68013/100000 [00:13<00:05, 5434.47 examples/s][A
+
+Generating train examples...:  69%|██████▊   | 68557/100000 [00:13<00:05, 5434.60 examples/s][A
+
+Generating train examples...:  69%|██████▉   | 69101/100000 [00:13<00:05, 5434.60 examples/s][A
+
+Generating train examples...:  70%|██████▉   | 69647/100000 [00:13<00:05, 5440.99 examples/s][A
+
+Generating train examples...:  70%|███████   | 70192/100000 [00:13<00:05, 5441.12 examples/s][A
+
+Generating train examples...:  71%|███████   | 70737/100000 [00:13<00:05, 5437.61 examples/s][A
+
+Generating train examples...:  71%|███████▏  | 71282/100000 [00:13<00:05, 5441.00 examples/s][A
+
+Generating train examples...:  72%|███████▏  | 71827/100000 [00:14<00:05, 5438.56 examples/s][A
+
+Generating train examples...:  72%|███████▏  | 72371/100000 [00:14<00:05, 5432.09 examples/s][A
+
+Generating train examples...:  73%|███████▎  | 72915/100000 [00:14<00:04, 5426.27 examples/s][A
+
+Generating train examples...:  73%|███████▎  | 73459/100000 [00:14<00:04, 5429.70 examples/s][A
+
+Generating train examples...:  74%|███████▍  | 74002/100000 [00:14<00:04, 5403.79 examples/s][A
+
+Generating train examples...:  75%|███████▍  | 74543/100000 [00:14<00:04, 5384.67 examples/s][A
+
+Generating train examples...:  75%|███████▌  | 75090/100000 [00:14<00:04, 5407.43 examples/s][A
+
+Generating train examples...:  76%|███████▌  | 75633/100000 [00:14<00:04, 5413.42 examples/s][A
+
+Generating train examples...:  76%|███████▌  | 76179/100000 [00:14<00:04, 5425.85 examples/s][A
+
+Generating train examples...:  77%|███████▋  | 76724/100000 [00:14<00:04, 5431.27 examples/s][A
+
+Generating train examples...:  77%|███████▋  | 77268/100000 [00:15<00:04, 5432.28 examples/s][A
+
+Generating train examples...:  78%|███████▊  | 77812/100000 [00:15<00:04, 5425.66 examples/s][A
+
+Generating train examples...:  78%|███████▊  | 78355/100000 [00:15<00:03, 5423.47 examples/s][A
+
+Generating train examples...:  79%|███████▉  | 78898/100000 [00:15<00:03, 5422.24 examples/s][A
+
+Generating train examples...:  79%|███████▉  | 79441/100000 [00:15<00:03, 5412.20 examples/s][A
+
+Generating train examples...:  80%|███████▉  | 79983/100000 [00:15<00:03, 5374.01 examples/s][A
+
+Generating train examples...:  81%|████████  | 80527/100000 [00:15<00:03, 5392.82 examples/s][A
+
+Generating train examples...:  81%|████████  | 81072/100000 [00:15<00:03, 5409.11 examples/s][A
+
+Generating train examples...:  82%|████████▏ | 81616/100000 [00:15<00:03, 5416.56 examples/s][A
+
+Generating train examples...:  82%|████████▏ | 82159/100000 [00:15<00:03, 5417.84 examples/s][A
+
+Generating train examples...:  83%|████████▎ | 82701/100000 [00:16<00:03, 5413.04 examples/s][A
+
+Generating train examples...:  83%|████████▎ | 83245/100000 [00:16<00:03, 5420.63 examples/s][A
+
+Generating train examples...:  84%|████████▍ | 83788/100000 [00:16<00:02, 5407.88 examples/s][A
+
+Generating train examples...:  84%|████████▍ | 84333/100000 [00:16<00:02, 5418.95 examples/s][A
+
+Generating train examples...:  85%|████████▍ | 84878/100000 [00:16<00:02, 5426.63 examples/s][A
+
+Generating train examples...:  85%|████████▌ | 85421/100000 [00:16<00:02, 5425.78 examples/s][A
+
+Generating train examples...:  86%|████████▌ | 85965/100000 [00:16<00:02, 5427.95 examples/s][A
+
+Generating train examples...:  87%|████████▋ | 86509/100000 [00:16<00:02, 5429.25 examples/s][A
+
+Generating train examples...:  87%|████████▋ | 87055/100000 [00:16<00:02, 5436.76 examples/s][A
+
+Generating train examples...:  88%|████████▊ | 87600/100000 [00:16<00:02, 5440.30 examples/s][A
+
+Generating train examples...:  88%|████████▊ | 88145/100000 [00:17<00:02, 5410.58 examples/s][A
+
+Generating train examples...:  89%|████████▊ | 88689/100000 [00:17<00:02, 5418.12 examples/s][A
+
+Generating train examples...:  89%|████████▉ | 89231/100000 [00:17<00:01, 5418.51 examples/s][A
+
+Generating train examples...:  90%|████████▉ | 89777/100000 [00:17<00:01, 5430.78 examples/s][A
+
+Generating train examples...:  90%|█████████ | 90321/100000 [00:17<00:01, 5429.76 examples/s][A
+
+Generating train examples...:  91%|█████████ | 90864/100000 [00:17<00:01, 5428.84 examples/s][A
+
+Generating train examples...:  91%|█████████▏| 91410/100000 [00:17<00:01, 5437.40 examples/s][A
+
+Generating train examples...:  92%|█████████▏| 91954/100000 [00:17<00:01, 5437.01 examples/s][A
+
+Generating train examples...:  92%|█████████▏| 92498/100000 [00:17<00:01, 5434.29 examples/s][A
+
+Generating train examples...:  93%|█████████▎| 93044/100000 [00:17<00:01, 5439.36 examples/s][A
+
+Generating train examples...:  94%|█████████▎| 93588/100000 [00:18<00:01, 5426.61 examples/s][A
+
+Generating train examples...:  94%|█████████▍| 94131/100000 [00:18<00:01, 5426.87 examples/s][A
+
+Generating train examples...:  95%|█████████▍| 94677/100000 [00:18<00:00, 5436.06 examples/s][A
+
+Generating train examples...:  95%|█████████▌| 95221/100000 [00:18<00:00, 5406.36 examples/s][A
+
+Generating train examples...:  96%|█████████▌| 95762/100000 [00:18<00:00, 5376.37 examples/s][A
+
+Generating train examples...:  96%|█████████▋| 96301/100000 [00:18<00:00, 5379.47 examples/s][A
+
+Generating train examples...:  97%|█████████▋| 96839/100000 [00:18<00:00, 5328.61 examples/s][A
+
+Generating train examples...:  97%|█████████▋| 97375/100000 [00:18<00:00, 5335.48 examples/s][A
+
+Generating train examples...:  98%|█████████▊| 97914/100000 [00:18<00:00, 5350.25 examples/s][A
+
+Generating train examples...:  98%|█████████▊| 98450/100000 [00:18<00:00, 5344.40 examples/s][A
+
+Generating train examples...:  99%|█████████▉| 98985/100000 [00:19<00:00, 5332.05 examples/s][A
+
+Generating train examples...: 100%|█████████▉| 99519/100000 [00:19<00:00, 5330.89 examples/s][A
+
+                                                                                             [A
+
+Shuffling /home/saurabh/tensorflow_datasets/movielens/100k-ratings/0.1.1.incompletePD4FAZ/movielens-train.tfrecord*...:   0%|          | 0/100000 [00:00<?, ? examples/s][A
+
+Shuffling /home/saurabh/tensorflow_datasets/movielens/100k-ratings/0.1.1.incompletePD4FAZ/movielens-train.tfrecord*...:  44%|████▍     | 44395/100000 [00:00<00:00, 443927.14 examples/s][A
+
+                                                                                                                                                                                         [A
+Generating splits...: 100%|██████████| 1/1 [00:19<00:00, 19.46s/ splits]
+                                                                        
+2023-12-11 01:45:29.102712: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-11 01:45:29.266326: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:Layers in a Sequential model should only have a single input tensor, but we receive a <class 'list'> input: ['Star Wars (1977)']
+Consider rewriting this model with the Functional API.
+WARNING:tensorflow:Layers in a Sequential model should only have a single input tensor, but we receive a <class 'list'> input: ['Star Wars (1977)']
+Consider rewriting this model with the Functional API.
+Dataset movielens downloaded and prepared to /home/saurabh/tensorflow_datasets/movielens/100k-ratings/0.1.1. Subsequent calls will reuse this data.
+{'bucketized_user_age': 45.0,
+ 'movie_genres': array([7]),
+ 'movie_id': b'357',
+ 'movie_title': b"One Flew Over the Cuckoo's Nest (1975)",
+ 'raw_user_age': 46.0,
+ 'timestamp': 879024327,
+ 'user_gender': True,
+ 'user_id': b'138',
+ 'user_occupation_label': 4,
+ 'user_occupation_text': b'doctor',
+ 'user_rating': 4.0,
+ 'user_zip_code': b'53211'}
+[EXECUTION] [01:45:29] Waiting before running function for 10 seconds.
+[EXECUTION] [01:45:39] Sensors started
+[STABLE CHECK] [01:45:42] Success: temperature is below threshold.
+[MAIN] [01:45:42] Terminated sensors
+[STABLE CHECK] [01:45:42] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:46:02] Success: Machine is stable.
+[EXECUTION] [01:46:02] Successfully reached stable state
+[EXECUTION] [01:46:02] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:46:32] Performed tensorflow.keras.layers.StringLookup() on input and will now save energy data.
+[EXECUTION] [01:46:32] skipping call added, current list is: ['tensorflow.keras.layers.StringLookup()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:46:32] Result: {'tensorflow.keras.layers.StringLookup()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ener
+[EXECUTION] [01:46:32] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+[EXECUTION] [01:46:32] Waiting before running function for 10 seconds.
+[EXECUTION] [01:46:42] Sensors started
+[STABLE CHECK] [01:46:45] Success: temperature is below threshold.
+[MAIN] [01:46:45] Terminated sensors
+[STABLE CHECK] [01:46:45] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:47:05] Not stable: stdev/mean is 0.09031591896200156, which is greater than 0.03
+[STABLE CHECK] [01:47:05] Machine is not stable yet.
+[STABLE CHECK] [01:47:05] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:47:25] Success: Machine is stable.
+[EXECUTION] [01:47:25] Successfully reached stable state
+[EXECUTION] [01:51:08] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:51:38] Performed tensorflow.keras.layers.StringLookup.adapt() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 240264.0
+4-size 240264.0
+++++++5++++++
+5-size 240264.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 95896.0
+outside_object_size
+[EXECUTION] [01:51:38] Result: {'tensorflow.keras.layers.StringLookup.adapt()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [01:51:38] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+Vocabulary: ['[UNK]', 'Star Wars (1977)', 'Contact (1997)']
+[EXECUTION] [01:51:38] Waiting before running function for 10 seconds.
+[EXECUTION] [01:51:48] Sensors started
+[STABLE CHECK] [01:51:51] Temperature too high: mean is 46, which is greater than 40
+[STABLE CHECK] [01:51:51] Temperature is too high.
+[STABLE CHECK] [01:51:51] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:52:11] Temperature too high: mean is 41.85, which is greater than 40
+[STABLE CHECK] [01:52:11] Temperature is too high.
+[STABLE CHECK] [01:52:11] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:52:31] Temperature too high: mean is 40.2, which is greater than 40
+[STABLE CHECK] [01:52:31] Temperature is too high.
+[STABLE CHECK] [01:52:31] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [01:52:51] Success: temperature is below threshold.
+[MAIN] [01:52:51] Terminated sensors
+[STABLE CHECK] [01:52:51] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:53:11] Success: Machine is stable.
+[EXECUTION] [01:53:11] Successfully reached stable state
+[EXECUTION] [01:53:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:53:41] Performed tensorflow.keras.layers.Hashing() on input and will now save energy data.
+[EXECUTION] [01:53:41] skipping call added, current list is: ['tensorflow.keras.layers.StringLookup()', 'tensorflow.keras.layers.Hashing()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:53:41] Result: {'tensorflow.keras.layers.Hashing()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J
+[EXECUTION] [01:53:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+[EXECUTION] [01:53:41] Waiting before running function for 10 seconds.
+[EXECUTION] [01:53:51] Sensors started
+[STABLE CHECK] [01:53:54] Success: temperature is below threshold.
+[MAIN] [01:53:54] Terminated sensors
+[STABLE CHECK] [01:53:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:54:14] Success: Machine is stable.
+[EXECUTION] [01:54:14] Successfully reached stable state
+[EXECUTION] [01:54:14] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:54:44] Performed tensorflow.keras.layers.Embedding() on input and will now save energy data.
+[EXECUTION] [01:54:44] skipping call added, current list is: ['tensorflow.keras.layers.StringLookup()', 'tensorflow.keras.layers.Hashing()', 'tensorflow.keras.layers.Embedding()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+4-size 128.0
+++++++5++++++
+5-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:54:44] Result: {'tensorflow.keras.layers.Embedding()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy 
+[EXECUTION] [01:54:44] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+[EXECUTION] [01:54:44] Waiting before running function for 10 seconds.
+[EXECUTION] [01:54:55] Sensors started
+[STABLE CHECK] [01:54:58] Success: temperature is below threshold.
+[MAIN] [01:54:58] Terminated sensors
+[STABLE CHECK] [01:54:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:55:18] Success: Machine is stable.
+[EXECUTION] [01:55:18] Successfully reached stable state
+[EXECUTION] [01:55:18] waiting idle for 30 seconds after function execution
+[EXECUTION] [01:55:48] Performed tensorflow.keras.Sequential() on input and will now save energy data.
+[EXECUTION] [01:55:48] skipping call added, current list is: ['tensorflow.keras.layers.StringLookup()', 'tensorflow.keras.layers.Hashing()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.keras.Sequential()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 96440.0
+++++++5++++++
+5-size 9360.0
+4-size 105800.0
+++++++5++++++
+5-size 96440.0
+++++++5++++++
+5-size 9360.0
+4-size 105800.0
+++++++4++++++
+++++++5++++++
+5-size 96440.0
+++++++5++++++
+5-size 9360.0
+4-size 105800.0
+++++++5++++++
+5-size 96440.0
+++++++5++++++
+5-size 9360.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [01:55:48] Result: {'tensorflow.keras.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [01:55:48] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+[EXECUTION] [01:55:48] Waiting before running function for 10 seconds.
+[EXECUTION] [01:55:58] Sensors started
+[STABLE CHECK] [01:56:01] Success: temperature is below threshold.
+[MAIN] [01:56:01] Terminated sensors
+[STABLE CHECK] [01:56:01] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:56:21] Success: Machine is stable.
+[EXECUTION] [01:56:21] Successfully reached stable state
+[EXECUTION] [02:00:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:00:37] Performed tensorflow.keras.layers.StringLookup.adapt() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 240328.0
+4-size 240328.0
+++++++5++++++
+5-size 240328.0
+outside_arg_size
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+WARNING:tensorflow:vocab_size is deprecated, please use vocabulary_size.
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 96760.0
+outside_object_size
+[EXECUTION] [02:00:37] Result: {'tensorflow.keras.layers.StringLookup.adapt()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
+[EXECUTION] [02:00:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+Timestamp: 879024327.
+Timestamp: 875654590.
+Timestamp: 882075110.
+[EXECUTION] [02:00:37] Waiting before running function for 10 seconds.
+[EXECUTION] [02:00:47] Sensors started
+[STABLE CHECK] [02:00:50] Temperature too high: mean is 47, which is greater than 40
+[STABLE CHECK] [02:00:50] Temperature is too high.
+[STABLE CHECK] [02:00:50] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:01:10] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [02:01:10] Temperature is too high.
+[STABLE CHECK] [02:01:10] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:01:30] Temperature too high: mean is 41.25, which is greater than 40
+[STABLE CHECK] [02:01:30] Temperature is too high.
+[STABLE CHECK] [02:01:30] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [02:01:50] Success: temperature is below threshold.
+[MAIN] [02:01:50] Terminated sensors
+[STABLE CHECK] [02:01:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:02:10] Success: Machine is stable.
+[EXECUTION] [02:02:10] Successfully reached stable state
+[EXECUTION] [02:02:10] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:02:40] Performed tensorflow.keras.layers.Normalization() on input and will now save energy data.
+[EXECUTION] [02:02:40] skipping call added, current list is: ['tensorflow.keras.layers.StringLookup()', 'tensorflow.keras.layers.Hashing()', 'tensorflow.keras.layers.Embedding()', 'tensorflow.keras.Sequential()', 'tensorflow.keras.layers.Normalization()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:02:40] Result: {'tensorflow.keras.layers.Normalization()': {'energy_data': {'cpu': '{"columns":["time_elapsed","ene
+[EXECUTION] [02:02:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/featurization/experiment-1.json
+[EXECUTION] [02:02:40] Waiting before running function for 10 seconds.
+[EXECUTION] [02:02:50] Sensors started
+[STABLE CHECK] [02:02:53] Success: temperature is below threshold.
+[MAIN] [02:02:53] Terminated sensors

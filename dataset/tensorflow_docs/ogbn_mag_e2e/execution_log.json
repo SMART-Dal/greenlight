@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/notebooks/ogbn_mag_e2e_method-level.py", line 128
+    gpu_list = !nvidia-smi -L
+               ^
+SyntaxError: invalid syntax

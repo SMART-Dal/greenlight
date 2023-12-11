@@ -1,0 +1,48 @@
+2023-12-10 08:23:15.062287: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+[EXECUTION] [08:22:41] Waiting before running function for 10 seconds.
+[EXECUTION] [08:22:51] Sensors started
+[STABLE CHECK] [08:22:54] Success: temperature is below threshold.
+[MAIN] [08:22:54] Terminated sensors
+[STABLE CHECK] [08:22:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:23:14] Success: Machine is stable.
+[EXECUTION] [08:23:14] Successfully reached stable state
+[EXECUTION] [08:23:15] waiting idle for 30 seconds after function execution
+[EXECUTION] [08:23:45] Performed tensorflow.add() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+4-size 64.0
+++++++5++++++
+5-size 32.0
+++++++5++++++
+5-size 32.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [08:23:45] Result: {'tensorflow.add()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"index":[0,1,
+[EXECUTION] [08:23:45] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/1_Graph_and_Session/experiment-5.json
+tf.Tensor(5, shape=(), dtype=int32)
+[EXECUTION] [08:23:45] Waiting before running function for 10 seconds.
+[EXECUTION] [08:23:55] Sensors started
+[STABLE CHECK] [08:23:58] Success: temperature is below threshold.
+[MAIN] [08:23:58] Terminated sensors
+[STABLE CHECK] [08:23:58] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:24:18] Success: Machine is stable.
+[EXECUTION] [08:24:18] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/1_TensorFlow_Basics/Tutorials/1_Graph_and_Session_method-level.py", line 18, in <module>
+    sess = tf.Session()
+AttributeError: module 'tensorflow' has no attribute 'Session'

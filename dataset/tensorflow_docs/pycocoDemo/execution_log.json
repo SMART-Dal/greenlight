@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/dbeker_faster-rcnn-tensorflow-python3_patched/data/coco/PythonAPI/pycocoDemo_method-level.py", line 13
+    print 'COCO categories: \n\n', ' '.join(nms)
+          ^
+SyntaxError: invalid syntax

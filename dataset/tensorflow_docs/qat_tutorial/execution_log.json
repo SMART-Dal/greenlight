@@ -1,0 +1,14 @@
+[EXECUTION] [08:02:15] Waiting before running function for 10 seconds.
+[EXECUTION] [08:02:25] Sensors started
+[STABLE CHECK] [08:02:28] Success: temperature is below threshold.
+[MAIN] [08:02:28] Terminated sensors
+[STABLE CHECK] [08:02:28] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:02:48] Success: Machine is stable.
+[EXECUTION] [08:02:48] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/qat/vision/docs/qat_tutorial_method-level.py", line 71, in <module>
+    interpreter.set_tensor(input_details[0]['index'], image_array)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/lite/python/interpreter.py", line 705, in set_tensor
+    self._interpreter.SetTensor(tensor_index, value)
+ValueError: Cannot set tensor: Got value of type UINT8 but expected type FLOAT32 for input 0, name: sequential_1_input 

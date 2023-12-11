@@ -1,0 +1,10 @@
+2023-12-10 08:05:44.376313: E tensorflow/core/framework/node_def_util.cc:630] NodeDef mentions attribute validate_shape which is not in the op definition: Op<name=AssignVariableOp; signature=resource:resource, value:dtype -> ; attr=dtype:type; is_stateful=true> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node quant_predictions/transform/logits/LastValueQuant/AssignMinLast}}
+2023-12-10 08:05:44.801966: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 08:05:49.373599: E tensorflow/core/framework/node_def_util.cc:630] NodeDef mentions attribute validate_shape which is not in the op definition: Op<name=AssignVariableOp; signature=resource:resource, value:dtype -> ; attr=dtype:type; is_stateful=true> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node quant_transformer_layer_1/quant_attention/LastValueQuant/AssignMinLast}}
+2023-12-10 08:05:55.112244: E tensorflow/core/framework/node_def_util.cc:630] NodeDef mentions attribute validate_shape which is not in the op definition: Op<name=AssignVariableOp; signature=resource:resource, value:dtype -> ; attr=dtype:type; is_stateful=true> This may be expected if your graph generating binary is newer  than this binary. Unknown attributes will be ignored. NodeDef: {{node quant_bottleneck_input/dense/LastValueQuant/AssignMinLast}}
+(1, 384)
+(1, 384)
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/qat/nlp/docs/MobileBERT_QAT_tutorial_method-level.py", line 56, in <module>
+    with open(tflite_file, 'rb') as fp:
+FileNotFoundError: [Errno 2] No such file or directory: 'model_qat.tflite'

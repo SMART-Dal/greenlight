@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/research/slim/slim_walkthrough_method-level.py", line 10, in <module>
+    from datasets import dataset_utils
+ImportError: cannot import name 'dataset_utils' from 'datasets' (unknown location)

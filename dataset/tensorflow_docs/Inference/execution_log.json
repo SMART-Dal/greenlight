@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/waste_identification_ml/model_inference/Inference_method-level.py", line 22, in <module>
+    from object_detection.utils import visualization_utils as viz_utils
+ModuleNotFoundError: No module named 'object_detection'

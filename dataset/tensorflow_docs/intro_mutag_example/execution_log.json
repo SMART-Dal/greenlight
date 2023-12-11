@@ -1,0 +1,44 @@
+2023-12-10 01:59:31.865399: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+Running TF-GNN 0.6.1 with TensorFlow 2.7.0.
+[EXECUTION] [01:58:58] Waiting before running function for 10 seconds.
+[EXECUTION] [01:59:08] Sensors started
+[STABLE CHECK] [01:59:11] Success: temperature is below threshold.
+[MAIN] [01:59:11] Terminated sensors
+[STABLE CHECK] [01:59:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [01:59:31] Success: Machine is stable.
+[EXECUTION] [01:59:31] Successfully reached stable state
+[EXECUTION] [01:59:34] waiting idle for 30 seconds after function execution
+[EXECUTION] [02:00:04] Performed tensorflow.data.TFRecordDataset([train_path]).map() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 0.0
+4-size 0.0
+++++++5++++++
+5-size 0.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [02:00:04] Result: {'tensorflow.data.TFRecordDataset([train_path]).map()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [02:00:04] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/intro_mutag_example/experiment-5.json
+[EXECUTION] [02:00:04] Waiting before running function for 10 seconds.
+[EXECUTION] [02:00:14] Sensors started
+[STABLE CHECK] [02:00:17] Success: temperature is below threshold.
+[MAIN] [02:00:17] Terminated sensors
+[STABLE CHECK] [02:00:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [02:00:37] Success: Machine is stable.
+[EXECUTION] [02:00:37] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/notebooks/intro_mutag_example_method-level.py", line 32, in <module>
+    (g, y) = train_ds.take(1).get_single_element()
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/data/ops/dataset_ops.py", line 2630, in get_single_element
+    gen_dataset_ops.dataset_to_single_element(self._variant_tensor,
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/ops/gen_dataset_ops.py", line 1240, in dataset_to_single_element
+    _ops.raise_from_not_ok_status(e, name)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/framework/ops.py", line 7107, in raise_from_not_ok_status
+    raise core._status_to_exception(e) from None  # pylint: disable=protected-access
+tensorflow.python.framework.errors_impl.NotFoundError: /home/saurabh/method-energy-dataset/mutag/train.tfrecords; No such file or directory [Op:DatasetToSingleElement]

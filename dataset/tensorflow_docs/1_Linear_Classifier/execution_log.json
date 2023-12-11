@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/2_Linear_Classifier/Tutorials/1_Linear_Classifier_method-level.py", line 44, in <module>
+    (x_train, y_train, x_valid, y_valid) = load_data(mode='train')
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/2_Linear_Classifier/Tutorials/1_Linear_Classifier_method-level.py", line 22, in load_data
+    from tensorflow.examples.tutorials.mnist import input_data
+ModuleNotFoundError: No module named 'tensorflow.examples'

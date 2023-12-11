@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_quantum_patched/docs/tutorials/mnist_method-level.py", line 12, in <module>
+    import tensorflow_quantum as tfq
+ModuleNotFoundError: No module named 'tensorflow_quantum'

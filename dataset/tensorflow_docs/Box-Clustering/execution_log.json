@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/yunyang1994_tensorflow-yolov3_patched/docs/Box-Clustering_method-level.py", line 78, in <module>
+    train_image, seen_train_labels = parse_annotation(train_annot_folder,train_image_folder, labels=LABELS)
+  File "/home/saurabh/method-energy-dataset/projects/yunyang1994_tensorflow-yolov3_patched/docs/Box-Clustering_method-level.py", line 23, in parse_annotation
+    for ann in sorted(os.listdir(ann_dir)):
+FileNotFoundError: [Errno 2] No such file or directory: '../../VOCdevkit/VOC2012/Annotations/'

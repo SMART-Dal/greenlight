@@ -1,0 +1,48 @@
+2023-12-10 14:46:46.752879: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 14:48:14.832978: W tensorflow/core/framework/cpu_allocator_impl.cc:82] Allocation of 575296560 exceeds 10% of free system memory.
+TF Version:  2.7.0
+TF Hub version:  0.13.0
+Eager mode enabled:  True
+GPU available:  [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+[EXECUTION] [14:46:46] Waiting before running function for 10 seconds.
+[EXECUTION] [14:46:56] Sensors started
+[STABLE CHECK] [14:46:59] Temperature too high: mean is 43, which is greater than 40
+[STABLE CHECK] [14:46:59] Temperature is too high.
+[STABLE CHECK] [14:46:59] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [14:47:19] Success: temperature is below threshold.
+[MAIN] [14:47:19] Terminated sensors
+[STABLE CHECK] [14:47:19] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [14:47:40] Success: Machine is stable.
+[EXECUTION] [14:47:40] Successfully reached stable state
+[EXECUTION] [14:47:40] waiting idle for 30 seconds after function execution
+[EXECUTION] [14:48:10] Performed tensorflow.nn.avg_pool() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++1++++++
+1-size 786432.0
+4-size 786432.0
+++++++1++++++
+1-size 786432.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [14:48:10] Result: {'tensorflow.nn.avg_pool()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],"inde
+[EXECUTION] [14:48:10] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/tf2_arbitrary_image_stylization/experiment-5.json

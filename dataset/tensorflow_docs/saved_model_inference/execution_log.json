@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_models_patched/official/projects/waste_identification_ml/deprecated_model_inference/saved_model_inference_method-level.py", line 22
+    mkdir material material_form plastic_type
+          ^
+SyntaxError: invalid syntax

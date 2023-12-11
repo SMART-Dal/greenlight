@@ -1,0 +1,8 @@
+/home/saurabh/method-energy-dataset/projects/ahmetozlu_vehicle_counting_tensorflow_patched/venv/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat_method-level.py:1: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  from imp import reload
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/ahmetozlu_vehicle_counting_tensorflow_patched/venv/lib/python3.10/site-packages/matplotlib/backends/web_backend/nbagg_uat_method-level.py", line 7, in <module>
+    import matplotlib.backends.backend_nbagg
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/matplotlib/backends/backend_nbagg.py", line 12, in <module>
+    from ipykernel.comm import Comm
+ModuleNotFoundError: No module named 'ipykernel'

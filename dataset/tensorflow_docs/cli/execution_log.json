@@ -1,0 +1,4 @@
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_datasets_patched/docs/cli_method-level.py", line 1
+    ls -1 my_dataset/
+          ^
+SyntaxError: invalid syntax

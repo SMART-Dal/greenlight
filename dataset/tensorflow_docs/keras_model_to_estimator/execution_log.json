@@ -1,98 +1,71 @@
-2023-12-07 18:45:10.806236: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-07 18:45:10.943544: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-12-07 18:45:11.591138: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 18:45:11.591196: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-07 18:45:11.591201: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
-2023-12-07 18:45:47.013108: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:42] Overriding orig_value setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
-2023-12-07 18:45:47.013162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-[EXECUTION] [18:45:13] Waiting before running function for 10 seconds.
-[EXECUTION] [18:45:23] Sensors started
-[STABLE CHECK] [18:45:26] Success: temperature is below threshold.
-[MAIN] [18:45:26] Terminated sensors
-[STABLE CHECK] [18:45:26] Waiting 20 seconds to reach stable state.
+2023-12-09 13:33:37.849907: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-09 13:34:08.131201: W tensorflow/core/kernels/data/cache_dataset_ops.cc:768] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:414: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:400: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:414: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:414: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
+  warnings.warn('`tf.keras.backend.set_learning_phase` is deprecated and '
+/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/engine/training_v1.py:2057: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
+  updates = self.state_updates
+[EXECUTION] [13:32:44] Waiting before running function for 10 seconds.
+[EXECUTION] [13:32:54] Sensors started
+[STABLE CHECK] [13:32:57] Temperature too high: mean is 40.5, which is greater than 40
+[STABLE CHECK] [13:32:57] Temperature is too high.
+[STABLE CHECK] [13:32:57] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [18:45:46] Success: Machine is stable.
-[EXECUTION] [18:45:46] Successfully reached stable state
-[EXECUTION] [18:45:47] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:46:17] Performed tensorflow.keras.models.Sequential() on input and will now save energy data.
+[STABLE CHECK] [13:33:17] Success: temperature is below threshold.
+[MAIN] [13:33:17] Terminated sensors
+[STABLE CHECK] [13:33:17] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:33:37] Success: Machine is stable.
+[EXECUTION] [13:33:37] Successfully reached stable state
+[EXECUTION] [13:33:37] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:34:07] Performed tensorflow.keras.models.Sequential() on input and will now save energy data.
 inside_arg_size
 ++++++4++++++
 ++++++4++++++
 ++++++5++++++
-5-size 11792.0
+5-size 9568.0
 ++++++5++++++
-5-size 9320.0
+5-size 5760.0
 ++++++5++++++
-5-size 11432.0
-4-size 32544.0
+5-size 9408.0
+4-size 24736.0
 ++++++5++++++
-5-size 11792.0
+5-size 9568.0
 ++++++5++++++
-5-size 9320.0
+5-size 5760.0
 ++++++5++++++
-5-size 11432.0
-4-size 32544.0
+5-size 9408.0
+4-size 24736.0
 ++++++4++++++
 ++++++5++++++
-5-size 11792.0
+5-size 9568.0
 ++++++5++++++
-5-size 9320.0
+5-size 5760.0
 ++++++5++++++
-5-size 11432.0
-4-size 32544.0
+5-size 9408.0
+4-size 24736.0
 ++++++5++++++
-5-size 11792.0
+5-size 9568.0
 ++++++5++++++
-5-size 9320.0
+5-size 5760.0
 ++++++5++++++
-5-size 11432.0
+5-size 9408.0
 outside_arg_size
 inside_kwarg_size
 outside_kwarg_size
 inside_object_size
 outside_object_size
-[EXECUTION] [18:46:17] Result: {'tensorflow.keras.models.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
-[EXECUTION] [18:46:17] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
-[EXECUTION] [18:46:17] Waiting before running function for 10 seconds.
-[EXECUTION] [18:46:27] Sensors started
-[STABLE CHECK] [18:46:30] Success: temperature is below threshold.
-[MAIN] [18:46:30] Terminated sensors
-[STABLE CHECK] [18:46:30] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [18:46:50] Success: Machine is stable.
-[EXECUTION] [18:46:50] Successfully reached stable state
-[EXECUTION] [18:46:50] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:47:20] Performed tensorflow.keras.models.Sequential.compile() on input and will now save energy data.
-[EXECUTION] [18:47:20] skipping call added, current list is: ['tensorflow.keras.models.Sequential.compile()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-4-size 120.0
-++++++5++++++
-5-size 56.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 104896.0
-outside_object_size
-[EXECUTION] [18:47:20] Result: {'tensorflow.keras.models.Sequential.compile()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [18:47:20] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
-[EXECUTION] [18:47:20] Waiting before running function for 10 seconds.
-[EXECUTION] [18:47:30] Sensors started
-[STABLE CHECK] [18:47:33] Success: temperature is below threshold.
-[MAIN] [18:47:33] Terminated sensors
-[STABLE CHECK] [18:47:33] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [18:47:53] Success: Machine is stable.
-[EXECUTION] [18:47:53] Successfully reached stable state
+[EXECUTION] [13:34:07] Result: {'tensorflow.keras.models.Sequential()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy
+[EXECUTION] [13:34:07] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-5.json
 Model: "sequential"
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
@@ -108,46 +81,6 @@ Total params: 131
 Trainable params: 131
 Non-trainable params: 0
 _________________________________________________________________
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
-Instructions for updating:
-Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analyzer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
-Instructions for updating:
-Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/issues/56089
-2023-12-07 18:48:23.852074: W tensorflow/core/kernels/data/cache_dataset_ops.cc:856] The calling iterator did not fully read the dataset being cached. In order to avoid unexpected truncation of the dataset, the partially cached contents of the dataset  will be discarded. This can happen if you have an input pipeline similar to `dataset.cache().take(k).repeat()`. You should use `dataset.take(k).cache().repeat()` instead.
-WARNING:absl:You are using `tf.keras.optimizers.experimental.Optimizer` in TF estimator, which only supports `tf.keras.optimizers.legacy.Optimizer`. Automatically converting your optimizer to `tf.keras.optimizers.legacy.Optimizer`.
-/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:451: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
-  warnings.warn(
-2023-12-07 18:48:57.200038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-2023-12-07 18:48:57.231241: W tensorflow/c/c_api.cc:291] Operation '{name:'training/Adam/dense_1/kernel/v/Assign' id:213 op device:{requested: '', assigned: ''} def:{{{node training/Adam/dense_1/kernel/v/Assign}} = AssignVariableOp[_has_manual_control_dependencies=true, dtype=DT_FLOAT, validate_shape=false](training/Adam/dense_1/kernel/v, training/Adam/dense_1/kernel/v/Initializer/zeros)}}' was changed by setting attribute after it was run by a session. This mutation will have no effect, and will trigger an error in the future. Either don't modify nodes after running them or create a new session.
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:396: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
-WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/training/training_util.py:396: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
-Instructions for updating:
-Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
-/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:451: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
-  warnings.warn(
-2023-12-07 18:50:00.812660: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-2023-12-07 18:50:01.990992: I tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:630] TensorFloat-32 will be used for the matrix multiplication. This will only be logged once.
-/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/backend.py:451: UserWarning: `tf.keras.backend.set_learning_phase` is deprecated and will be removed after 2020-10-11. To update it, simply pass a True/False value to the `training` argument of the `__call__` method of your layer or model.
-  warnings.warn(
-/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/keras/engine/training_v1.py:2333: UserWarning: `Model.state_updates` will be removed in a future version. This property should not be used in TensorFlow 2.0, as `updates` are applied automatically.
-  updates = self.state_updates
-2023-12-07 18:51:27.066748: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 6103 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 3070 Ti, pci bus id: 0000:8a:00.0, compute capability: 8.6
-[EXECUTION] [18:47:53] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:48:23] Performed tensorflow.keras.models.Sequential.summary() on input and will now save energy data.
-[EXECUTION] [18:48:23] skipping call added, current list is: ['tensorflow.keras.models.Sequential.compile()', 'tensorflow.keras.models.Sequential.summary()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 104896.0
-outside_object_size
-[EXECUTION] [18:48:23] Result: {'tensorflow.keras.models.Sequential.summary()': {'energy_data': {'cpu': '{"columns":["time_elapsed"
-[EXECUTION] [18:48:23] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
 {'dense_input': <tf.Tensor: shape=(32, 4), dtype=float32, numpy=
 array([[5.1, 3.4, 1.5, 0.2],
        [7.7, 3. , 6.1, 2.3],
@@ -182,45 +115,28 @@ array([[5.1, 3.4, 1.5, 0.2],
        [6.7, 3. , 5. , 1.7],
        [5.7, 2.6, 3.5, 1. ]], dtype=float32)>}
 tf.Tensor([0 2 1 2 0 1 1 1 0 2 1 0 2 0 0 0 0 0 2 2 2 2 2 0 2 0 2 1 1 1 1 1], shape=(32,), dtype=int64)
-[EXECUTION] [18:48:23] Waiting before running function for 10 seconds.
-[EXECUTION] [18:48:33] Sensors started
-[STABLE CHECK] [18:48:36] Success: temperature is below threshold.
-[MAIN] [18:48:36] Terminated sensors
-[STABLE CHECK] [18:48:36] Waiting 20 seconds to reach stable state.
+[EXECUTION] [13:34:08] Waiting before running function for 10 seconds.
+[EXECUTION] [13:34:18] Sensors started
+[STABLE CHECK] [13:34:21] Temperature too high: mean is 44.2, which is greater than 40
+[STABLE CHECK] [13:34:21] Temperature is too high.
+[STABLE CHECK] [13:34:21] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [18:48:56] Success: Machine is stable.
-[EXECUTION] [18:48:56] Successfully reached stable state
-[EXECUTION] [18:48:57] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:49:27] Performed tensorflow.keras.estimator.model_to_estimator() on input and will now save energy data.
-[EXECUTION] [18:49:27] skipping call added, current list is: ['tensorflow.keras.models.Sequential.compile()', 'tensorflow.keras.models.Sequential.summary()', 'tensorflow.keras.estimator.model_to_estimator()']
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-4-size 128.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 64.0
-outside_kwarg_size
-inside_object_size
-outside_object_size
-[EXECUTION] [18:49:27] Result: {'tensorflow.keras.estimator.model_to_estimator()': {'energy_data': {'cpu': '{"columns":["time_elaps
-[EXECUTION] [18:49:27] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
-[EXECUTION] [18:49:27] Waiting before running function for 10 seconds.
-[EXECUTION] [18:49:37] Sensors started
-[STABLE CHECK] [18:49:40] Success: temperature is below threshold.
-[MAIN] [18:49:40] Terminated sensors
-[STABLE CHECK] [18:49:40] Waiting 20 seconds to reach stable state.
+[STABLE CHECK] [13:34:41] Temperature too high: mean is 41, which is greater than 40
+[STABLE CHECK] [13:34:41] Temperature is too high.
+[STABLE CHECK] [13:34:41] Waiting 20 seconds to reach low temperature.
 
-[STABLE CHECK] [18:50:00] Success: Machine is stable.
-[EXECUTION] [18:50:00] Successfully reached stable state
-[EXECUTION] [18:50:03] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:50:33] Performed tensorflow.keras.estimator.model_to_estimator.train() on input and will now save energy data.
+[STABLE CHECK] [13:35:01] Temperature too high: mean is 40.7, which is greater than 40
+[STABLE CHECK] [13:35:01] Temperature is too high.
+[STABLE CHECK] [13:35:01] Waiting 20 seconds to reach low temperature.
+
+[STABLE CHECK] [13:35:21] Success: temperature is below threshold.
+[MAIN] [13:35:21] Terminated sensors
+[STABLE CHECK] [13:35:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [13:35:41] Success: Machine is stable.
+[EXECUTION] [13:35:41] Successfully reached stable state
+[EXECUTION] [13:35:44] waiting idle for 30 seconds after function execution
+[EXECUTION] [13:36:14] Performed tensorflow.keras.estimator.model_to_estimator.train() on input and will now save energy data.
 inside_arg_size
 outside_arg_size
 inside_kwarg_size
@@ -239,40 +155,6 @@ inside_object_size
 ++++++5++++++
 5-size 4264.0
 outside_object_size
-[EXECUTION] [18:50:33] Result: {'tensorflow.keras.estimator.model_to_estimator.train()': {'energy_data': {'cpu': '{"columns":["time
-[EXECUTION] [18:50:33] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
-[EXECUTION] [18:50:33] Waiting before running function for 10 seconds.
-[EXECUTION] [18:50:43] Sensors started
-[STABLE CHECK] [18:50:46] Success: temperature is below threshold.
-[MAIN] [18:50:46] Terminated sensors
-[STABLE CHECK] [18:50:46] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [18:51:06] Not stable: stdev/mean is 0.032613109779518895, which is greater than 0.03
-[STABLE CHECK] [18:51:06] Machine is not stable yet.
-[STABLE CHECK] [18:51:06] Waiting 20 seconds to reach stable state.
-
-[STABLE CHECK] [18:51:26] Success: Machine is stable.
-[EXECUTION] [18:51:26] Successfully reached stable state
-[EXECUTION] [18:51:27] waiting idle for 30 seconds after function execution
-[EXECUTION] [18:51:57] Performed tensorflow.keras.estimator.model_to_estimator.evaluate() on input and will now save energy data.
-inside_arg_size
-outside_arg_size
-inside_kwarg_size
-++++++4++++++
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-4-size 120.0
-++++++5++++++
-5-size 64.0
-++++++5++++++
-5-size 56.0
-outside_kwarg_size
-inside_object_size
-++++++5++++++
-5-size 4264.0
-outside_object_size
-[EXECUTION] [18:51:57] Result: {'tensorflow.keras.estimator.model_to_estimator.evaluate()': {'energy_data': {'cpu': '{"columns":["t
-[EXECUTION] [18:51:57] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-1.json
-Eval result: {'loss': 0.59040815, 'global_step': 500}
+[EXECUTION] [13:36:14] Result: {'tensorflow.keras.estimator.model_to_estimator.train()': {'energy_data': {'cpu': '{"columns":["time
+[EXECUTION] [13:36:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/keras_model_to_estimator/experiment-5.json
+Eval result: {'loss': 0.37998572, 'global_step': 500}

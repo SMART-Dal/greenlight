@@ -1,0 +1,24 @@
+2023-12-10 15:02:14.544028: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 15:02:14.551148: W tensorflow/core/framework/op_kernel.cc:1745] OP_REQUIRES failed at whole_file_read_ops.cc:116 : NOT_FOUND: original.png; No such file or directory
+[EXECUTION] [15:01:40] Waiting before running function for 10 seconds.
+[EXECUTION] [15:01:50] Sensors started
+[STABLE CHECK] [15:01:53] Success: temperature is below threshold.
+[MAIN] [15:01:53] Terminated sensors
+[STABLE CHECK] [15:01:53] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [15:02:13] Success: Machine is stable.
+[EXECUTION] [15:02:13] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/image_enhancing_method-level.py", line 69, in <module>
+    hr_image = preprocess_image(IMAGE_PATH)
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_docs_patched/site/en/hub/tutorials/image_enhancing_method-level.py", line 26, in preprocess_image
+    hr_image = tf.image.decode_image(tf.io.read_file(image_path))
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/ops/io_ops.py", line 137, in read_file
+    return gen_io_ops.read_file(filename, name)
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/ops/gen_io_ops.py", line 566, in read_file
+    return read_file_eager_fallback(
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/ops/gen_io_ops.py", line 589, in read_file_eager_fallback
+    _result = _execute.execute(b"ReadFile", 1, inputs=_inputs_flat,
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 58, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.NotFoundError: original.png; No such file or directory [Op:ReadFile]

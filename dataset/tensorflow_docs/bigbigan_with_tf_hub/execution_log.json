@@ -1,0 +1,320 @@
+WARNING:tensorflow:From /home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow/python/compat/v2_compat.py:111: disable_resource_variables (from tensorflow.python.ops.variable_scope) is deprecated and will be removed in a future version.
+Instructions for updating:
+non-resource variables are not supported in the long term
+[EXECUTION] [23:16:57] Waiting before running function for 10 seconds.
+[EXECUTION] [23:17:07] Sensors started
+[STABLE CHECK] [23:17:10] Success: temperature is below threshold.
+[MAIN] [23:17:10] Terminated sensors
+[STABLE CHECK] [23:17:10] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:17:30] Success: Machine is stable.
+[EXECUTION] [23:17:30] Successfully reached stable state
+[EXECUTION] [23:17:30] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:18:00] Performed tensorflow.compat.v1.disable_v2_behavior() on input and will now save energy data.
+[EXECUTION] [23:18:00] skipping call added, current list is: ['tensorflow.compat.v1.disable_v2_behavior()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:18:00] Result: {'tensorflow.compat.v1.disable_v2_behavior()': {'energy_data': {'cpu': '{"columns":["time_elapsed","
+[EXECUTION] [23:18:00] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+Signature: generate
+Inputs: {'z': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>}
+Outputs: {'default': <hub.ParsedTensorInfo shape=(?, 128, 128, 3) dtype=float32 is_sparse=False>,
+ 'upsampled': <hub.ParsedTensorInfo shape=(?, 256, 256, 3) dtype=float32 is_sparse=False>}
+
+Signature: discriminate
+Inputs: {'x': <hub.ParsedTensorInfo shape=(?, 128, 128, 3) dtype=float32 is_sparse=False>,
+ 'z': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>}
+Outputs: {'score_x': <hub.ParsedTensorInfo shape=(?,) dtype=float32 is_sparse=False>,
+ 'score_xz': <hub.ParsedTensorInfo shape=(?,) dtype=float32 is_sparse=False>,
+ 'score_z': <hub.ParsedTensorInfo shape=(?,) dtype=float32 is_sparse=False>}
+
+Signature: default
+Inputs: {'x': <hub.ParsedTensorInfo shape=(?, 256, 256, 3) dtype=float32 is_sparse=False>}
+Outputs: {'default': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>}
+
+Signature: encode
+Inputs: {'x': <hub.ParsedTensorInfo shape=(?, 256, 256, 3) dtype=float32 is_sparse=False>}
+Outputs: {'avepool_feat': <hub.ParsedTensorInfo shape=(?, 2048) dtype=float32 is_sparse=False>,
+ 'bn_crelu_feat': <hub.ParsedTensorInfo shape=(?, 4096) dtype=float32 is_sparse=False>,
+ 'default': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>,
+ 'z_mean': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>,
+ 'z_sample': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>,
+ 'z_stdev': <hub.ParsedTensorInfo shape=(?, 120) dtype=float32 is_sparse=False>}
+
+[EXECUTION] [23:18:58] Waiting before running function for 10 seconds.
+[EXECUTION] [23:19:08] Sensors started
+[STABLE CHECK] [23:19:11] Success: temperature is below threshold.
+[MAIN] [23:19:11] Terminated sensors
+[STABLE CHECK] [23:19:11] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:19:31] Success: Machine is stable.
+[EXECUTION] [23:19:31] Successfully reached stable state
+[EXECUTION] [23:19:31] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:20:01] Performed tensorflow.compat.v1.nn.avg_pool() on input and will now save energy data.
+[EXECUTION] [23:20:01] skipping call added, current list is: ['tensorflow.compat.v1.disable_v2_behavior()', 'tensorflow.compat.v1.nn.avg_pool()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 156281896.0
+4-size 156281896.0
+++++++5++++++
+5-size 156281896.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+4-size 168.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:20:22] Result: {'tensorflow.compat.v1.nn.avg_pool()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [23:20:22] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:20:39] Waiting before running function for 10 seconds.
+[EXECUTION] [23:20:49] Sensors started
+[STABLE CHECK] [23:20:52] Success: temperature is below threshold.
+[MAIN] [23:20:52] Terminated sensors
+[STABLE CHECK] [23:20:52] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:21:12] Success: Machine is stable.
+[EXECUTION] [23:21:12] Successfully reached stable state
+[EXECUTION] [23:21:13] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:21:43] Performed tensorflow.compat.v1.concat() on input and will now save energy data.
+[EXECUTION] [23:21:43] skipping call added, current list is: ['tensorflow.compat.v1.disable_v2_behavior()', 'tensorflow.compat.v1.nn.avg_pool()', 'tensorflow.compat.v1.concat()']
+inside_arg_size
+++++++4++++++
+++++++4++++++
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+4-size 982253208.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+4-size 982253208.0
+++++++4++++++
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+4-size 982253208.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+++++++5++++++
+5-size 327417736.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 56.0
+4-size 56.0
+++++++5++++++
+5-size 56.0
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:26:11] Result: {'tensorflow.compat.v1.concat()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"],
+[EXECUTION] [23:26:11] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:26:18] Waiting before running function for 10 seconds.
+[EXECUTION] [23:26:28] Sensors started
+[STABLE CHECK] [23:26:31] Success: temperature is below threshold.
+[MAIN] [23:26:31] Terminated sensors
+[STABLE CHECK] [23:26:31] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:26:51] Success: Machine is stable.
+[EXECUTION] [23:26:51] Successfully reached stable state
+[EXECUTION] [23:26:51] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:27:21] Performed tensorflow.compat.v1.reduce_mean() on input and will now save energy data.
+[EXECUTION] [23:27:21] skipping call added, current list is: ['tensorflow.compat.v1.disable_v2_behavior()', 'tensorflow.compat.v1.nn.avg_pool()', 'tensorflow.compat.v1.concat()', 'tensorflow.compat.v1.reduce_mean()']
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 379321080.0
+4-size 379321080.0
+++++++5++++++
+5-size 379321080.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:28:14] Result: {'tensorflow.compat.v1.reduce_mean()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [23:28:14] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:28:14] Waiting before running function for 10 seconds.
+[EXECUTION] [23:28:24] Sensors started
+[STABLE CHECK] [23:28:27] Success: temperature is below threshold.
+[MAIN] [23:28:27] Terminated sensors
+[STABLE CHECK] [23:28:27] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:28:47] Not stable: stdev/mean is 0.09779000996547796, which is greater than 0.03
+[STABLE CHECK] [23:28:47] Machine is not stable yet.
+[STABLE CHECK] [23:28:47] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:29:07] Success: Machine is stable.
+[EXECUTION] [23:29:07] Successfully reached stable state
+[EXECUTION] [23:29:07] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:29:37] Performed tensorflow.compat.v1.global_variables_initializer() on input and will now save energy data.
+[EXECUTION] [23:29:37] skipping call added, current list is: ['tensorflow.compat.v1.disable_v2_behavior()', 'tensorflow.compat.v1.nn.avg_pool()', 'tensorflow.compat.v1.concat()', 'tensorflow.compat.v1.reduce_mean()', 'tensorflow.compat.v1.global_variables_initializer()']
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+2023-12-10 23:30:11.698491: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2023-12-10 23:33:50.857029: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.66GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:50.857075: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.66GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.024263: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.61GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.024297: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.61GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.047492: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.61GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.047517: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.61GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.320166: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.72GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.320192: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.72GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.718307: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:33:51.718344: W tensorflow/core/common_runtime/bfc_allocator.cc:275] Allocator (GPU_0_bfc) ran out of memory trying to allocate 3.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2023-12-10 23:35:40.959587: W tensorflow/core/platform/cloud/google_auth_provider.cc:184] All attempts to get a Google authentication bearer token failed, returning an empty token. Retrieving token from files failed with "NOT_FOUND: Could not locate the credentials file.". Retrieving token from GCE failed with "FAILED_PRECONDITION: Error executing an HTTP request: libcurl code 6 meaning 'Couldn't resolve host name', error details: Could not resolve host: metadata".
+outside_object_size
+[EXECUTION] [23:29:37] Result: {'tensorflow.compat.v1.global_variables_initializer()': {'energy_data': {'cpu': '{"columns":["time_e
+[EXECUTION] [23:29:37] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:29:37] Waiting before running function for 10 seconds.
+[EXECUTION] [23:29:47] Sensors started
+[STABLE CHECK] [23:29:50] Success: temperature is below threshold.
+[MAIN] [23:29:50] Terminated sensors
+[STABLE CHECK] [23:29:50] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:30:10] Success: Machine is stable.
+[EXECUTION] [23:30:10] Successfully reached stable state
+[EXECUTION] [23:30:11] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:30:41] Performed tensorflow.compat.v1.Session() on input and will now save energy data.
+inside_arg_size
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+outside_object_size
+[EXECUTION] [23:30:41] Result: {'tensorflow.compat.v1.Session()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (J)"]
+[EXECUTION] [23:30:41] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:30:41] Waiting before running function for 10 seconds.
+[EXECUTION] [23:30:51] Sensors started
+[STABLE CHECK] [23:30:54] Success: temperature is below threshold.
+[MAIN] [23:30:54] Terminated sensors
+[STABLE CHECK] [23:30:54] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:31:14] Success: Machine is stable.
+[EXECUTION] [23:31:14] Successfully reached stable state
+[EXECUTION] [23:31:23] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:31:53] Performed tensorflow.compat.v1.Session.run() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 379339000.0
+4-size 379339000.0
+++++++5++++++
+5-size 379339000.0
+outside_arg_size
+inside_kwarg_size
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 379340072.0
+outside_object_size
+[EXECUTION] [23:33:12] Result: {'tensorflow.compat.v1.Session.run()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [23:33:12] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+[EXECUTION] [23:33:12] Waiting before running function for 10 seconds.
+[EXECUTION] [23:33:22] Sensors started
+[STABLE CHECK] [23:33:25] Success: temperature is below threshold.
+[MAIN] [23:33:25] Terminated sensors
+[STABLE CHECK] [23:33:25] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:33:45] Success: Machine is stable.
+[EXECUTION] [23:33:45] Successfully reached stable state
+[EXECUTION] [23:33:52] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:34:22] Performed tensorflow.compat.v1.Session.run() on input and will now save energy data.
+inside_arg_size
+++++++4++++++
+++++++5++++++
+5-size 379339000.0
+4-size 379339000.0
+++++++5++++++
+5-size 379339000.0
+outside_arg_size
+inside_kwarg_size
+++++++4++++++
+++++++5++++++
+5-size 64.0
+4-size 64.0
+++++++5++++++
+5-size 64.0
+outside_kwarg_size
+inside_object_size
+++++++5++++++
+5-size 379340072.0
+outside_object_size
+[EXECUTION] [23:35:40] Result: {'tensorflow.compat.v1.Session.run()': {'energy_data': {'cpu': '{"columns":["time_elapsed","energy (
+[EXECUTION] [23:35:40] Data written to file /home/saurabh/method-energy-dataset/dataset/tensorflow_docs/bigbigan_with_tf_hub/experiment-1.json
+samples shape: (32, 128, 128, 3)
+<IPython.core.display.Image object>
+Downloading and preparing dataset 218.21 MiB (download: 218.21 MiB, generated: 221.83 MiB, total: 440.05 MiB) to /home/saurabh/tensorflow_datasets/tf_flowers/3.0.1...
+
+Dl Completed...:   0%|          | 0/5 [00:00<?, ? file/s]
+Dl Completed...:  20%|██        | 1/5 [00:00<00:00,  5.71 file/s]
+Dl Completed...:  20%|██        | 1/5 [00:00<00:00,  5.71 file/s]
+Dl Completed...:  40%|████      | 2/5 [00:00<00:00,  5.71 file/s]
+Dl Completed...:  60%|██████    | 3/5 [00:00<00:00,  5.71 file/s]
+Dl Completed...:  80%|████████  | 4/5 [00:03<00:00,  1.12 file/s]
+Dl Completed...:  80%|████████  | 4/5 [00:03<00:00,  1.12 file/s]
+Dl Completed...: 100%|██████████| 5/5 [00:03<00:00,  1.30 file/s]
+Dl Completed...: 100%|██████████| 5/5 [00:03<00:00,  1.30 file/s]
+Dl Completed...: 100%|██████████| 5/5 [00:03<00:00,  1.31 file/s]
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fa5ab7848b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function parse_perf at 0x7fa5ab7848b0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: name 'fscope' is not defined
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+Dataset tf_flowers downloaded and prepared to /home/saurabh/tensorflow_datasets/tf_flowers/3.0.1. Subsequent calls will reuse this data.
+[EXECUTION] [23:35:46] Waiting before running function for 10 seconds.
+[EXECUTION] [23:35:57] Sensors started
+[STABLE CHECK] [23:36:00] Success: temperature is below threshold.
+[MAIN] [23:36:00] Terminated sensors
+[STABLE CHECK] [23:36:00] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:36:21] Not stable: stdev/mean is 0.0520303021804154, which is greater than 0.03
+[STABLE CHECK] [23:36:21] Machine is not stable yet.
+[STABLE CHECK] [23:36:21] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [23:36:41] Success: Machine is stable.
+[EXECUTION] [23:36:41] Successfully reached stable state
+[EXECUTION] [23:36:41] waiting idle for 30 seconds after function execution
+[EXECUTION] [23:37:11] Performed tensorflow.compat.v1.reduce_min() on input and will now save energy data.
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fa670fdef70> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING:tensorflow:AutoGraph could not transform <function _make_iterencode at 0x7fa670fdef70> and will run it as-is.
+Cause: generators are not supported
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert

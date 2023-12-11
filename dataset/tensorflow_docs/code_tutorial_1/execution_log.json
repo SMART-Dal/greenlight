@@ -1,12 +1,8 @@
-2023-12-08 04:10:31.799066: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
-To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2023-12-08 04:10:31.939729: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
-2023-12-08 04:10:32.570767: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-08 04:10:32.570824: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/saurabh/miniconda3/envs/tf2/lib
-2023-12-08 04:10:32.570829: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
 Traceback (most recent call last):
-  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/tutorials/kdd_2023/code_tutorial_1_method-level.py", line 27, in <module>
-    from tensorflow_gnn.experimental.in_memory import datasets
-  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_gnn/experimental/in_memory/datasets.py", line 133, in <module>
-    [tfgnn.NodeSetName], None|interfaces.KeyToFeaturesAccessor]
-TypeError: unsupported operand type(s) for |: 'NoneType' and 'ABCMeta'
+  File "/home/saurabh/method-energy-dataset/projects/tensorflow_gnn_patched/examples/tutorials/kdd_2023/code_tutorial_1_method-level.py", line 7, in <module>
+    from tensorflow_gnn import runner
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_gnn/runner/__init__.py", line 28, in <module>
+    from tensorflow_gnn.runner.utils import strategies
+  File "/home/saurabh/miniconda3/envs/tf2/lib/python3.9/site-packages/tensorflow_gnn/runner/utils/strategies.py", line 22, in <module>
+    class ParameterServerStrategy(tf.distribute.ParameterServerStrategy):
+AttributeError: module 'tensorflow._api.v2.distribute' has no attribute 'ParameterServerStrategy'

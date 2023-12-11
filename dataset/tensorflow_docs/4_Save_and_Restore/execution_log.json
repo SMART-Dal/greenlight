@@ -1,0 +1,12 @@
+[EXECUTION] [08:26:42] Waiting before running function for 10 seconds.
+[EXECUTION] [08:26:52] Sensors started
+[STABLE CHECK] [08:26:55] Success: temperature is below threshold.
+[MAIN] [08:26:55] Terminated sensors
+[STABLE CHECK] [08:26:55] Waiting 20 seconds to reach stable state.
+
+[STABLE CHECK] [08:27:15] Success: Machine is stable.
+[EXECUTION] [08:27:15] Successfully reached stable state
+Traceback (most recent call last):
+  File "/home/saurabh/method-energy-dataset/projects/easy-tensorflow_easy-tensorflow_patched/1_TensorFlow_Basics/Tutorials/4_Save_and_Restore_method-level.py", line 12, in <module>
+    a = tf.get_variable('A', initializer=tf.constant(3, shape=[2]))
+AttributeError: module 'tensorflow' has no attribute 'get_variable'
