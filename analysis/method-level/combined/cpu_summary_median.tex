@@ -1,0 +1,54 @@
+\begin{tabular}{llrrrrrrrrr}
+ & function & exec time (s) & total & total (normalised) & lag time (s) & lag & lag (normalised) & total + lag (normalised) & stdev power & avg power \\
+0 & tensorflow.compat.v1.lite.TFLiteConverter.from_saved_model & 0.06 & 16.95 & -0.24 & 0.50 & 34.93 & 0.55 & 0.31 & nan & 16.95 \\
+1 & tensorflow.compat.v1.lite.TFLiteConverter.from_keras_model_file.convert & 0.71 & 34.85 & 0.61 & 17.52 & 652.48 & 36.21 & 36.83 & 0.62 & 17.42 \\
+2 & tensorflow.keras.models.load_model.save & 0.40 & 17.32 & 0.11 & 27.53 & 1012.80 & 49.08 & 49.19 & nan & 17.32 \\
+3 & tensorflow.convert_to_tensor & 0.56 & 17.13 & -0.17 & 17.02 & 659.25 & 53.65 & 53.48 & nan & 17.13 \\
+4 & tensorflow.saved_model.save & 0.37 & 17.19 & -0.10 & 18.02 & 666.40 & 26.60 & 26.49 & nan & 17.19 \\
+5 & tensorflow.profiler.experimental.start & 0.58 & 17.22 & -0.15 & 16.52 & 631.00 & 40.38 & 40.23 & nan & 17.22 \\
+6 & tensorflow.keras.utils.get_file & 5.96 & 247.60 & 38.94 & 1.00 & 61.22 & 9.05 & 47.99 & 1.96 & 20.97 \\
+7 & tensorflow.keras.applications.MobileNet & 1.97 & 68.14 & 16.71 & 18.02 & 721.79 & 87.48 & 104.19 & 4.90 & 24.39 \\
+8 & tensorflow.RaggedTensor.from_uniform_row_length & 0.11 & 17.50 & -0.04 & 17.02 & 631.94 & 18.01 & 17.97 & nan & 17.50 \\
+9 & tensorflow.keras.optimizers.Adam.apply_gradients & 0.63 & 17.11 & -0.82 & 0.50 & 43.50 & 7.63 & 6.81 & nan & 17.11 \\
+10 & tensorflow.data.TFRecordDataset.map & 2.86 & 150.81 & 64.73 & 18.52 & 741.58 & 87.39 & 152.12 & 11.10 & 26.79 \\
+11 & tensorflow.estimator.DNNClassifier & 0.66 & 17.46 & 0.20 & 17.52 & 720.31 & 99.11 & 99.32 & nan & 17.46 \\
+12 & tensorflow.estimator.DNNClassifier.evaluate & 0.81 & 17.49 & 0.09 & 17.52 & 655.76 & 29.23 & 29.32 & nan & 17.49 \\
+13 & tensorflow.compat.v1.estimator.Estimator.evaluate & 0.26 & 17.14 & -0.03 & 23.53 & 857.70 & 33.73 & 33.71 & nan & 17.14 \\
+14 & tensorflow.nn.avg_pool & 0.76 & 36.61 & 2.04 & 16.52 & 617.53 & 29.92 & 31.96 & 1.70 & 18.30 \\
+15 & tensorflow.keras.applications.MobileNetV2 & 0.97 & 36.97 & 2.40 & 17.02 & 640.30 & 35.32 & 37.72 & 1.68 & 18.48 \\
+16 & tensorflow.keras.applications.MobileNetV2.predict & 3.34 & 161.63 & 40.83 & 17.52 & 654.18 & 32.91 & 73.74 & 3.20 & 24.83 \\
+17 & tensorflow.data.experimental.CsvDataset & 0.69 & 35.46 & 0.86 & 18.02 & 675.69 & 35.58 & 36.44 & 0.88 & 17.73 \\
+18 & tensorflow.keras.models.Sequential.fit & 0.26 & 17.17 & -0.08 & 20.03 & 740.15 & 32.82 & 32.74 & nan & 17.17 \\
+19 & tensorflow.lite.TFLiteConverter.from_keras_model.convert & 8.83 & 604.85 & 291.28 & 16.52 & 667.67 & 75.36 & 366.64 & 9.87 & 41.40 \\
+20 & tensorflow.keras.layers.Normalization.adapt & 1.27 & 63.38 & 10.88 & 17.02 & 635.89 & 23.43 & 34.32 & 4.77 & 19.81 \\
+21 & tensorflow.keras.utils.audio_dataset_from_directory & 1.21 & 59.50 & 7.67 & 17.02 & 634.81 & 30.08 & 37.75 & 2.85 & 19.60 \\
+22 & tensorflow.keras.layers.StringLookup.adapt & 225.69 & 10505.74 & 2487.52 & 15.02 & 565.54 & 14.40 & 2501.92 & 0.40 & 23.30 \\
+23 & tensorflow.keras.layers.TextVectorization.adapt & 397.12 & 18547.55 & 4863.94 & 27.53 & 1011.94 & 45.63 & 4909.57 & 0.41 & 23.38 \\
+24 & tensorflow.keras.Model.normalized_timestamp.adapt & 2.16 & 109.95 & 21.65 & 16.52 & 656.03 & 55.61 & 77.26 & 3.58 & 24.18 \\
+25 & tensorflow.keras.Model.title_text_embedding.layers[0].adapt & 393.76 & 18520.81 & 4820.52 & 17.52 & 655.47 & 28.77 & 4849.29 & 0.65 & 23.44 \\
+26 & tensorflow.compat.v1.Session & 0.73 & 17.34 & -0.34 & 16.02 & 619.58 & 36.26 & 35.92 & nan & 17.34 \\
+27 & tensorflow.compat.v1.Session.run & 6.31 & 307.73 & 96.41 & 17.02 & 694.32 & 77.97 & 174.38 & 3.77 & 25.62 \\
+28 & tensorflow.keras.datasets.mnist.load_data & 0.28 & 17.20 & -0.09 & 3.50 & 144.16 & 5.84 & 5.75 & nan & 17.20 \\
+29 & tensorflow.data.Dataset.from_tensor_slices.shuffle.batch & 0.85 & 17.86 & 0.34 & 16.52 & 665.94 & 70.36 & 70.71 & nan & 17.86 \\
+30 & tensorflow.keras.models.Sequential.numpy & 0.79 & 36.61 & 2.03 & 18.02 & 675.33 & 35.65 & 37.68 & 1.31 & 18.30 \\
+31 & tensorflow.keras.losses.SparseCategoricalCrossentropy.numpy & 0.05 & 17.31 & -0.06 & 18.02 & 666.11 & 23.35 & 23.28 & nan & 17.31 \\
+32 & tensorflow.linalg.solve & 1.56 & 63.15 & 11.33 & 21.53 & 793.99 & 34.02 & 45.36 & 3.03 & 22.34 \\
+33 & tensorflow.keras.Model.fit & 3.53 & 158.20 & 37.87 & 23.53 & 866.62 & 41.52 & 79.40 & 3.59 & 23.77 \\
+34 & tensorflow.compat.v1.distribute.MirroredStrategy & 0.50 & 42.15 & 0.93 & 15.02 & 1287.75 & 9.83 & 10.76 & nan & 42.15 \\
+35 & tensorflow.keras.estimator.model_to_estimator & 3.00 & 137.33 & 34.14 & 18.52 & 704.22 & 50.66 & 84.79 & 3.50 & 24.75 \\
+36 & tensorflow.keras.estimator.model_to_estimator.train & 9.24 & 563.77 & 236.33 & 17.02 & 651.67 & 48.49 & 284.82 & 7.86 & 26.57 \\
+37 & tensorflow.keras.estimator.model_to_estimator.evaluate & 3.87 & 193.48 & 55.52 & 18.02 & 687.91 & 49.86 & 105.39 & 3.92 & 24.49 \\
+38 & tensorflow.keras.layers.DenseFeatures.numpy & 0.06 & 17.09 & -0.26 & 17.52 & 644.13 & 19.36 & 19.09 & nan & 17.09 \\
+39 & tensorflow.estimator.LinearClassifier.train & 1.10 & 37.34 & 3.05 & 21.03 & 778.64 & 41.50 & 44.56 & 2.08 & 18.67 \\
+40 & tensorflow.estimator.LinearClassifier.evaluate & 2.22 & 88.02 & 18.90 & 17.52 & 660.06 & 38.02 & 56.92 & 3.29 & 23.33 \\
+41 & tensorflow.keras.datasets.cifar10.load_data & 1.32 & 58.17 & 5.55 & 0.50 & 43.79 & 8.71 & 14.27 & 3.33 & 17.56 \\
+42 & tensorflow.estimator.LinearClassifier.train.evaluate & 1.64 & 84.40 & 15.22 & 19.52 & 737.40 & 45.57 & 60.79 & 4.27 & 21.20 \\
+43 & tensorflow.estimator.Estimator.train & 0.25 & 17.04 & -0.16 & 17.02 & 665.48 & 63.54 & 63.38 & nan & 17.04 \\
+44 & tensorflow.estimator.LinearClassifier.export_saved_model & 0.14 & 17.09 & -0.12 & 18.02 & 665.45 & 28.86 & 28.74 & nan & 17.09 \\
+45 & tensorflow.estimator.LinearRegressor.train & 2.75 & 160.98 & 58.16 & 18.02 & 701.53 & 67.46 & 125.62 & 8.26 & 25.52 \\
+46 & tensorflow.estimator.LinearRegressor.evaluate & 0.92 & 39.05 & 4.76 & 21.53 & 807.31 & 52.91 & 57.67 & 3.57 & 19.52 \\
+47 & tensorflow.compat.v1.estimator.DNNClassifier.train & 1.97 & 92.32 & 22.98 & 19.52 & 745.97 & 52.53 & 75.51 & 5.05 & 23.14 \\
+48 & tensorflow.keras.models.Model.fit & 3.13 & 163.62 & 42.60 & 24.03 & 898.14 & 50.98 & 93.58 & 4.18 & 24.60 \\
+49 & tensorflow.keras.Model.evaluate & 1.33 & 38.68 & 4.10 & 18.52 & 695.13 & 38.06 & 42.16 & 3.05 & 19.34 \\
+50 & method-level (sum) & 1099.54 & 51759.46 & 13318.54 & 842.56 & 32746.49 & 2009.26 & 15327.81 & 112.62 & 1055.52 \\
+\end{tabular}
