@@ -113,7 +113,7 @@ def energy_disribution():
 def get_func_signatures():
     # read final_dataset.json that has list of dictionaries and create a list of all keys
     # unique_func = 0
-    with open('dataset/final_dataset.json', 'r') as f:
+    with open('analysis/cumulative_data/experiment-1.json', 'r') as f:
         data = json.load(f)
         keys = []
         for d in data:
@@ -142,6 +142,6 @@ def appendix_summary_dfs_all_experiments():
 if __name__ == "__main__":
     # get_energy_data()
     # energy_disribution()
-    # get_func_signatures()
-    appendix_summary_dfs_all_experiments()
+    get_func_signatures()
+    # appendix_summary_dfs_all_experiments()
     pass

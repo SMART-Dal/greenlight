@@ -3,7 +3,7 @@ import os
 import subprocess
 import json
 import shutil
-from fecom.patching.repo_patching import patch_project
+from codegreen.fecom.patching.repo_patching import patch_project
 from utils.metadata import get_repo_metadata, get_script_path
 from pathlib import Path
 from fecom.patching.patching_config import EXPERIMENT_DIR
@@ -111,7 +111,7 @@ def project_patcher(
 #         with open(os.path.join(data_dir, repo_name, "git_metadata.json"), "w") as git_metadata_file:
 #             json.dump(git_metadata, git_metadata_file)
 
-directory_names = ["tensorflow_docs"]
+directory_names = ["tensorflow_quantum"]
 for repo_name in directory_names:
 # repo_name = "akanyaani_gpt-2-tensorflow2"
     repo_dir = os.path.join(repositories_dir, repo_name)
